@@ -1,4 +1,4 @@
-package com.aicareercoach.mobile.ui.screens
+package com.aicareercoach.mobile.ui.screens.auth
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -67,7 +67,7 @@ fun LandingScreen(
         Spacer(Modifier.height(12.dp))
 
         Text(
-            "Personalized, 24/7 AI-powered career coaching, CV critique, and interview prep tailored specifically for university students.",
+            "Built for Strathmore University students — 24/7 AI coaching, CV critique, and interview prep grounded in a career knowledge base.",
             style = MaterialTheme.typography.bodyLarge,
             color = TextSecondary,
             textAlign = TextAlign.Center

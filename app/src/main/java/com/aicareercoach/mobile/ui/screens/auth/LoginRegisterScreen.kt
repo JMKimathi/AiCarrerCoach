@@ -1,4 +1,4 @@
-package com.aicareercoach.mobile.ui.screens
+package com.aicareercoach.mobile.ui.screens.auth
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -17,30 +17,47 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.aicareercoach.mobile.data.UserSession
+import com.aicareercoach.mobile.data.network.ApiClient
 import com.aicareercoach.mobile.ui.components.AppTextField
 import com.aicareercoach.mobile.ui.components.PrimaryButton
 import com.aicareercoach.mobile.ui.theme.AICareerCoachTheme
 import com.aicareercoach.mobile.ui.theme.TextSecondary
+import kotlinx.coroutines.launch
 
 @Composable
 fun LoginRegisterScreen(
     startInRegister: Boolean = false,
-    onAuthenticated: (isAdmin: Boolean) -> Unit = {},
+    onAuthenticated: (UserSession) -> Unit = {},
+    onForgotPassword: () -> Unit = {},
     onBack: () -> Unit = {}
 ) {
     var isLoginMode by remember(startInRegister) { mutableStateOf(!startInRegister) }
     var name by remember { mutableStateOf("") }
+    var course by remember { mutableStateOf("") }
+    var careerGoal by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var error by remember { mutableStateOf<String?>(null) }
+    var submitting by remember { mutableStateOf(false) }
+    val scope = rememberCoroutineScope()
 
-    fun submit(asAdmin: Boolean) {
+    fun submit() {
         if (email.isBlank() || password.isBlank() || (!isLoginMode && name.isBlank())) {
             error = "Please fill in all required fields."
             return
         }
+        if (!isLoginMode && password.length < 8) {
+            error = "Use a password with at least 8 characters."
+            return
+        }
+        submitting = true
         error = null
-        onAuthenticated(asAdmin)
+        scope.launch {
+            val result = ApiClient.authenticate(!isLoginMode, name, email, password, course, careerGoal)
+            submitting = false
+            if (result.session != null) onAuthenticated(result.session) else error = result.error
+        }
     }
 
     Column(
@@ -56,13 +73,18 @@ fun LoginRegisterScreen(
         }
 
         Text(
-            if (isLoginMode) "Welcome back" else "Create your account",
+            when {
+                !isLoginMode -> "Create your account"
+                else -> "Welcome back"
+            },
             style = MaterialTheme.typography.headlineLarge
         )
         Spacer(Modifier.height(6.dp))
         Text(
-            if (isLoginMode) "Log in to continue your career coaching journey."
-            else "Sign up to get personalized, AI-powered career guidance.",
+            when {
+                !isLoginMode -> "Sign up to get personalized, AI-powered career guidance."
+                else -> "Log in to continue your career coaching journey."
+            },
             style = MaterialTheme.typography.bodyMedium,
             color = TextSecondary
         )
@@ -91,6 +113,10 @@ fun LoginRegisterScreen(
         if (!isLoginMode) {
             AppTextField(label = "Full Name", value = name, onValueChange = { name = it })
             Spacer(Modifier.height(14.dp))
+            AppTextField(label = "Course (optional)", value = course, onValueChange = { course = it })
+            Spacer(Modifier.height(14.dp))
+            AppTextField(label = "Career goal (optional)", value = careerGoal, onValueChange = { careerGoal = it })
+            Spacer(Modifier.height(14.dp))
         }
         AppTextField(label = "Email Address", value = email, onValueChange = { email = it })
         Spacer(Modifier.height(14.dp))
@@ -102,7 +128,9 @@ fun LoginRegisterScreen(
                 "Forgot password?",
                 style = MaterialTheme.typography.labelLarge,
                 color = MaterialTheme.colorScheme.primary,
-                modifier = Modifier.align(Alignment.End)
+                modifier = Modifier
+                    .align(Alignment.End)
+                    .clickable(onClick = onForgotPassword)
             )
         }
 
@@ -114,21 +142,15 @@ fun LoginRegisterScreen(
         Spacer(Modifier.height(24.dp))
 
         PrimaryButton(
-            text = if (isLoginMode) "Log In" else "Create Account",
-            onClick = { submit(asAdmin = false) }
+            text = when {
+                !isLoginMode -> "Create Account"
+                else -> "Log In"
+            },
+            enabled = !submitting,
+            onClick = { submit() }
         )
 
-        if (isLoginMode) {
-            Spacer(Modifier.height(8.dp))
-            TextButton(
-                onClick = { submit(asAdmin = true) },
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                Text("Sign in as administrator")
-            }
-        }
-
-        Spacer(Modifier.height(12.dp))
+        Spacer(Modifier.height(16.dp))
 
         Text(
             "By continuing, you agree to our Terms of Service and Privacy Policy.",

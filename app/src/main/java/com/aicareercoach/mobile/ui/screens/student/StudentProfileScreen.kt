@@ -1,4 +1,4 @@
-package com.aicareercoach.mobile.ui.screens
+package com.aicareercoach.mobile.ui.screens.student
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -19,16 +19,19 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.aicareercoach.mobile.data.UserSession
 import com.aicareercoach.mobile.ui.components.SectionCard
 import com.aicareercoach.mobile.ui.theme.*
 
 @Composable
 fun StudentProfileScreen(
-    name: String = "Faith Wanjiku",
-    email: String = "faith.wanjiku@strathmore.edu",
+    session: UserSession = UserSession("John Mwiti", "john.mwiti@strathmore.edu"),
+    onEditProfile: () -> Unit = {},
     onOpenChat: () -> Unit = {},
     onOpenResources: () -> Unit = {},
     onOpenFeedback: () -> Unit = {},
+    onOpenHelp: () -> Unit = {},
+    onOpenPrivacy: () -> Unit = {},
     onLogOut: () -> Unit = {}
 ) {
     Column(
@@ -52,26 +55,27 @@ fun StudentProfileScreen(
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    name.split(" ").mapNotNull { it.firstOrNull() }.take(2).joinToString(""),
+                    session.initials,
                     style = MaterialTheme.typography.headlineMedium,
                     color = BluePrimary,
                     fontWeight = FontWeight.Bold
                 )
             }
             Spacer(Modifier.height(12.dp))
-            Text(name, style = MaterialTheme.typography.titleLarge, color = Color.White)
-            Text(email, style = MaterialTheme.typography.bodyMedium, color = Color.White.copy(alpha = 0.85f))
+            Text(session.name, style = MaterialTheme.typography.titleLarge, color = Color.White)
+            Text(session.email, style = MaterialTheme.typography.bodyMedium, color = Color.White.copy(alpha = 0.85f))
+            Spacer(Modifier.height(6.dp))
+            Text(session.course, style = MaterialTheme.typography.bodySmall, color = Color.White.copy(alpha = 0.9f))
+            Text(session.careerGoal, style = MaterialTheme.typography.bodySmall, color = Color.White.copy(alpha = 0.9f))
         }
 
         Column(modifier = Modifier.padding(20.dp)) {
             SectionCard {
-                ProfileRow(Icons.Default.Person, "Edit Profile")
+                ProfileRow(Icons.Default.Person, "Edit Profile", onEditProfile)
                 HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
-                ProfileRow(Icons.Default.Description, "My CVs & Documents", onOpenResources)
+                ProfileRow(Icons.Default.Description, "Career Resources", onOpenResources)
                 HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
-                ProfileRow(Icons.Default.History, "Chat History", onOpenChat)
-                HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
-                ProfileRow(Icons.Default.Notifications, "Notification Preferences")
+                ProfileRow(Icons.Default.Chat, "Open Career Coach", onOpenChat)
             }
 
             Spacer(Modifier.height(16.dp))
@@ -79,9 +83,9 @@ fun StudentProfileScreen(
             SectionCard {
                 ProfileRow(Icons.Default.Feedback, "Send Feedback", onOpenFeedback)
                 HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
-                ProfileRow(Icons.Default.HelpOutline, "Help & Support")
+                ProfileRow(Icons.Default.HelpOutline, "Help & Support", onOpenHelp)
                 HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
-                ProfileRow(Icons.Default.PrivacyTip, "Privacy Policy")
+                ProfileRow(Icons.Default.PrivacyTip, "Privacy Policy", onOpenPrivacy)
             }
 
             Spacer(Modifier.height(20.dp))
