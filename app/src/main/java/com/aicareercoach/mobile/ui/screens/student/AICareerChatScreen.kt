@@ -1,9 +1,10 @@
-package com.aicareercoach.mobile.ui.screens
+package com.aicareercoach.mobile.ui.screens.student
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -18,44 +19,65 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.aicareercoach.mobile.data.UserSession
+import com.aicareercoach.mobile.data.network.ApiClient
 import com.aicareercoach.mobile.ui.theme.AICareerCoachTheme
 import com.aicareercoach.mobile.ui.theme.BlueLight
 import com.aicareercoach.mobile.ui.theme.TextSecondary
 import kotlinx.coroutines.launch
 
-private data class ChatMessage(val text: String, val fromUser: Boolean)
+private data class ChatMessage(
+    val text: String,
+    val fromUser: Boolean,
+    val sources: List<String> = emptyList()
+)
 
 @Composable
-fun AICareerChatScreen() {
+fun AICareerChatScreen(
+    session: UserSession = UserSession("John Mwiti", "john.mwiti@strathmore.edu"),
+    seedQuestion: String? = null,
+    onSeedConsumed: () -> Unit = {}
+) {
     val messages = remember {
-        mutableStateListOf(
-            ChatMessage("Hi! I'm your AI Career Coach. Ask me anything about careers, CVs, or interviews.", fromUser = false),
-            ChatMessage("What roles suit a computer science graduate interested in AI?", fromUser = true),
-            ChatMessage(
-                "Based on your profile and current market resources, strong options include Machine Learning Engineer, " +
-                    "AI Product Analyst, and Data Scientist. These typically require Python, familiarity with ML " +
-                    "frameworks, and a portfolio of applied projects.",
-                fromUser = false
-            ),
-        )
+        mutableStateListOf<ChatMessage>()
     }
     var input by remember { mutableStateOf("") }
+    var typing by remember { mutableStateOf(false) }
+    var currentSessionId by remember { mutableStateOf<String?>(null) }
     val listState = rememberLazyListState()
     val scope = rememberCoroutineScope()
+    val suggestions = listOf("How do I improve my CV?", "Interview preparation", "Careers in AI")
 
-    fun send() {
-        val text = input.trim()
-        if (text.isEmpty()) return
-        messages.add(ChatMessage(text, fromUser = true))
+    fun send(text: String) {
+        val trimmed = text.trim()
+        if (trimmed.isEmpty() || typing) return
+        messages.add(ChatMessage(trimmed, fromUser = true))
         input = ""
-        messages.add(
-            ChatMessage(
-                "That's a great question. I'll ground this in the career knowledge base and share a practical next step once the backend is connected.",
-                fromUser = false
-            )
-        )
+        typing = true
         scope.launch {
+            val netResp = ApiClient.sendChatMessage(trimmed, token = session.token, sessionId = currentSessionId)
+            if (netResp != null && netResp.response.isNotBlank()) {
+                currentSessionId = netResp.sessionId
+                messages.add(
+                    ChatMessage(
+                        text = netResp.response,
+                        fromUser = false,
+                        sources = netResp.sources
+                    )
+                )
+            } else {
+                messages.add(ChatMessage("The coach could not reach the backend. Check that the API is running, then try again.", fromUser = false))
+            }
+            typing = false
             listState.animateScrollToItem(messages.lastIndex)
+        }
+    }
+
+    LaunchedEffect(seedQuestion) {
+        val question = seedQuestion
+        if (!question.isNullOrBlank()) {
+            send(question)
+            onSeedConsumed()
         }
     }
 
@@ -83,10 +105,19 @@ fun AICareerChatScreen() {
             Spacer(Modifier.width(10.dp))
             Column {
                 Text("AI Career Coach", style = MaterialTheme.typography.titleMedium)
-                Text("Grounded in your career knowledge base", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                Text("Answers cite your knowledge base", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
             }
         }
         HorizontalDivider()
+
+        LazyRow(
+            modifier = Modifier.padding(horizontal = 16.dp, vertical = 10.dp),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            items(suggestions) { chip ->
+                AssistChip(onClick = { send(chip) }, label = { Text(chip) })
+            }
+        }
 
         LazyColumn(
             state = listState,
@@ -94,10 +125,15 @@ fun AICareerChatScreen() {
                 .weight(1f)
                 .padding(horizontal = 16.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp),
-            contentPadding = PaddingValues(vertical = 16.dp)
+            contentPadding = PaddingValues(vertical = 8.dp)
         ) {
             items(messages) { message ->
                 ChatBubble(message)
+            }
+            if (typing) {
+                item {
+                    Text("Coach is typing…", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                }
             }
         }
 
@@ -121,7 +157,7 @@ fun AICareerChatScreen() {
                     .size(48.dp)
                     .clip(RoundedCornerShape(24.dp))
                     .background(MaterialTheme.colorScheme.primary)
-                    .clickable(onClick = { send() }),
+                    .clickable(onClick = { send(input) }),
                 contentAlignment = Alignment.Center
             ) {
                 Icon(Icons.Default.ArrowUpward, contentDescription = "Send", tint = Color.White)
@@ -132,9 +168,9 @@ fun AICareerChatScreen() {
 
 @Composable
 private fun ChatBubble(message: ChatMessage) {
-    Row(
+    Column(
         modifier = Modifier.fillMaxWidth(),
-        horizontalArrangement = if (message.fromUser) Arrangement.End else Arrangement.Start
+        horizontalAlignment = if (message.fromUser) Alignment.End else Alignment.Start
     ) {
         Box(
             modifier = Modifier
@@ -153,6 +189,15 @@ private fun ChatBubble(message: ChatMessage) {
                 message.text,
                 color = if (message.fromUser) Color.White else Color(0xFF111827),
                 style = MaterialTheme.typography.bodyMedium
+            )
+        }
+        if (!message.fromUser && message.sources.isNotEmpty()) {
+            Spacer(Modifier.height(6.dp))
+            Text(
+                "Sources: ${message.sources.joinToString(" · ")}",
+                style = MaterialTheme.typography.bodySmall,
+                color = TextSecondary,
+                modifier = Modifier.widthIn(max = 280.dp)
             )
         }
     }
