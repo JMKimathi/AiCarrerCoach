@@ -1,0 +1,162 @@
+{
+  "pipeline_version": "career-data-build-v1",
+  "input_directory": "C:\\Users\\Mwiti\\Downloads\\Datasets",
+  "output_directory": "C:\\Users\\Mwiti\\Downloads\\AICareerCoach\\ml\\data\\processed\\derived",
+  "generated_at_utc": "2026-09-28T13:11:23.218229+00:00",
+  "source_files": {
+    "essential_skills.csv": {
+      "size_bytes": 2328135,
+      "modified_at": "2026-09-28T12:36:25.561235+00:00",
+      "required_columns_validated": true
+    },
+    "software_skills.csv": {
+      "size_bytes": 3557545,
+      "modified_at": "2026-09-28T12:35:36.332498+00:00",
+      "required_columns_validated": true
+    },
+    "skills.csv": {
+      "size_bytes": 679,
+      "modified_at": "2026-09-28T12:28:50.119377+00:00",
+      "required_columns_validated": true
+    },
+    "job_skills.csv": {
+      "size_bytes": 3506651,
+      "modified_at": "2026-09-28T12:28:49.990579+00:00",
+      "required_columns_validated": true
+    },
+    "postings.csv": {
+      "size_bytes": 516843769,
+      "modified_at": "2026-09-28T12:28:58.496811+00:00",
+      "required_columns_validated": true
+    }
+  },
+  "optional_onet_files": {},
+  "onet": {
+    "essential_skill_rows": 18200,
+    "software_skill_rows": 31821,
+    "occupation_profiles": 923,
+    "optional_onet_rows": {},
+    "optional_onet_files_missing": [
+      "career_interests",
+      "job_zones",
+      "work_activities"
+    ],
+    "output": "onet_occupation_skills.jsonl"
+  },
+  "linkedin": {
+    "postings_rows": 123849,
+    "unique_posting_ids": 123849,
+    "postings_with_joined_skills": 122096,
+    "unique_skill_codes": 35,
+    "job_skill_join_ids": 126807,
+    "job_skill_rows_with_unknown_codes": 0,
+    "duplicate_job_rows_skipped": 0,
+    "distinct_locations": 8526,
+    "likely_kenya_postings": 0,
+    "unknown_posting_dates": 0,
+    "posting_years": {
+      "2024": 123849
+    },
+    "work_types": {
+      "Contract": 12117,
+      "Full-time": 98814,
+      "Internship": 983,
+      "Other": 487,
+      "Part-time": 9696,
+      "Temporary": 1190,
+      "Volunteer": 562
+    },
+    "top_locations": [
+      [
+        "United States",
+        8125
+      ],
+      [
+        "New York, NY",
+        2756
+      ],
+      [
+        "Chicago, IL",
+        1834
+      ],
+      [
+        "Houston, TX",
+        1762
+      ],
+      [
+        "Dallas, TX",
+        1383
+      ],
+      [
+        "Atlanta, GA",
+        1363
+      ],
+      [
+        "Boston, MA",
+        1176
+      ],
+      [
+        "Austin, TX",
+        1083
+      ],
+      [
+        "Charlotte, NC",
+        1075
+      ],
+      [
+        "Phoenix, AZ",
+        1059
+      ],
+      [
+        "Washington, DC",
+        985
+      ],
+      [
+        "Los Angeles, CA",
+        972
+      ],
+      [
+        "San Francisco, CA",
+        884
+      ],
+      [
+        "New York City Metropolitan Area",
+        837
+      ],
+      [
+        "Seattle, WA",
+        818
+      ],
+      [
+        "San Diego, CA",
+        790
+      ],
+      [
+        "Denver, CO",
+        787
+      ],
+      [
+        "Philadelphia, PA",
+        711
+      ],
+      [
+        "Tampa, FL",
+        659
+      ],
+      [
+        "Miami, FL",
+        643
+      ]
+    ],
+    "skill_demand_rows": 187563,
+    "output": "linkedin_job_skill_demand.csv",
+    "location_note": "Kenya count is a simple location-string heuristic (country name or common city names); review before using it as a market statistic."
+  },
+  "not_included": [
+    "job_descriptions.csv (separate global dataset; not merged)",
+    "company and employee tables",
+    "benefit and salary tables",
+    "student profiles or assessment answers"
+  ],
+  "interpretation": "LinkedIn counts describe skills mentioned in postings. O*NET profiles describe U.S. occupational skill requirements. Neither is a labeled student career-success dataset."
+}

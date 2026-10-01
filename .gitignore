@@ -17,15 +17,6 @@ bin/
 gen/
 out/
 .navigation/
-ml/.venv/
-backend/.venv/
-backend/*.db
-backend/*.sqlite
-backend/*.sqlite3
 ml/models/
 ml/metrics/
-__pycache__/
-.ipynb_checkpoints/
-.env
-.env.*
-!.env.example
+**/__pycache__/
