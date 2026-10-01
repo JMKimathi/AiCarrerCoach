@@ -16,3 +16,6 @@ bin/
 gen/
 out/
 .navigation/
+ml/models/
+ml/metrics/
+**/__pycache__/
