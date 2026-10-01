@@ -1,4 +1,4 @@
-# AI Career Coach — Mobile App (Jetpack Compose)
+# AI Career Coach - Mobile App (Jetpack Compose)
 
 Android front-end for the AI Career Coaching Chatbot final year project. Built with
 **Kotlin + Jetpack Compose + Material 3**.
