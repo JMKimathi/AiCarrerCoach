@@ -1,6 +1,7 @@
-"""Build small, traceable career data tables from the downloaded CSV exports.
+"""Build small, traceable career data tables from downloaded CSV and Excel exports.
 
-Reads only the LinkedIn postings/skills join and the two O*NET skills tables.
+Reads the LinkedIn postings/skills join and available O*NET occupation, skills,
+interests, activities, and job-zone tables.
 It does not retain job descriptions, company details, contact information, or
 demographic fields. Job-market counts and O*NET occupation profiles are kept as
 separate outputs because they answer different questions.
@@ -24,13 +25,40 @@ DEFAULT_INPUT_DIR = Path.home() / "Downloads" / "Datasets"
 DEFAULT_OUTPUT_DIR = ROOT_DIR / "ml" / "data" / "processed" / "derived"
 OPTIONAL_ONET_ALIASES = {
     "career_interests": {"careerinteresttypes", "careerinterests", "interests"},
+    "specific_interests": {"specificinterestareas", "specificinterests"},
     "work_activities": {"workactivities", "activities"},
     "job_zones": {"jobzones"},
+    "occupation_data": {"occupationdata"},
+    "job_titles": {"jobtitles"},
 }
 
 
 def open_csv(path: Path):
     return path.open("r", encoding="utf-8-sig", newline="", errors="replace")
+
+
+def read_rows(path: Path):
+    """Yield row dictionaries from a CSV or the first worksheet in an XLSX."""
+    if path.suffix.casefold() == ".csv":
+        with open_csv(path) as handle:
+            yield from csv.DictReader(handle)
+        return
+    if path.suffix.casefold() == ".xlsx":
+        try:
+            from openpyxl import load_workbook
+        except ImportError as exc:
+            raise RuntimeError("Excel inputs require openpyxl; run `pip install openpyxl`.") from exc
+        workbook = load_workbook(path, read_only=True, data_only=True)
+        try:
+            rows = workbook[workbook.sheetnames[0]].iter_rows(values_only=True)
+            headers = [str(value).strip() if value is not None else "" for value in next(rows, ())]
+            for values in rows:
+                yield {header: ("" if value is None else str(value).strip())
+                       for header, value in zip(headers, values) if header}
+        finally:
+            workbook.close()
+        return
+    raise ValueError(f"Unsupported input format: {path.name}")
 
 
 def validate_columns(path: Path, required: set[str]) -> set[str]:
@@ -52,7 +80,7 @@ def clean_id(value: str | None) -> str:
 
 def find_optional_onet_files(input_dir: Path) -> dict[str, Path]:
     found = {}
-    for path in input_dir.glob("*.csv"):
+    for path in (*input_dir.glob("*.csv"), *input_dir.glob("*.xlsx")):
         normalized_name = re.sub(r"[^a-z]", "", path.stem.casefold())
         for category, aliases in OPTIONAL_ONET_ALIASES.items():
             if normalized_name in aliases:
@@ -67,8 +95,11 @@ def ensure_profile(profiles: dict[str, dict], code: str, title: str) -> dict:
         "essential_skills": {},
         "software_skills": {},
         "career_interests": {},
+        "specific_interests": {},
         "work_activities": {},
         "job_zone": "",
+        "description": "",
+        "job_titles": [],
     })
 
 
@@ -111,26 +142,38 @@ def build_onet_profiles(input_dir: Path, output_dir: Path, optional_files: dict[
     optional_rows = {}
     optional_requirements = {
         "career_interests": {"O*NET-SOC Code", "Title", "Element Name", "Scale Name", "Data Value"},
+        "specific_interests": {"O*NET-SOC Code", "Title", "Element Name", "Scale Name", "Data Value"},
         "work_activities": {"O*NET-SOC Code", "Title", "Element Name", "Scale Name", "Data Value"},
         "job_zones": {"O*NET-SOC Code", "Title", "Job Zone"},
+        "occupation_data": {"O*NET-SOC Code", "Title", "Description"},
+        "job_titles": {"O*NET-SOC Code", "Title", "Job Title", "Short Title"},
     }
     for category, path in optional_files.items():
-        validate_columns(path, optional_requirements[category])
+        if path.suffix.casefold() == ".csv":
+            validate_columns(path, optional_requirements[category])
         optional_rows[category] = 0
-        with open_csv(path) as handle:
-            for row in csv.DictReader(handle):
-                code = (row.get("O*NET-SOC Code") or "").strip()
-                if not code:
-                    continue
-                profile = ensure_profile(profiles, code, (row.get("Title") or "").strip())
-                if category in ("career_interests", "work_activities"):
-                    element = (row.get("Element Name") or "").strip()
-                    if element:
-                        scale = (row.get("Scale Name") or "").strip() or "unspecified"
-                        profile[category].setdefault(element, {})[scale] = (row.get("Data Value") or "").strip()
-                else:
-                    profile["job_zone"] = (row.get("Job Zone") or "").strip()
-                optional_rows[category] += 1
+        for row in read_rows(path):
+            missing = optional_requirements[category] - set(row)
+            if missing:
+                raise ValueError(f"{path.name} is missing required columns: {sorted(missing)}")
+            code = (row.get("O*NET-SOC Code") or "").strip()
+            if not code:
+                continue
+            profile = ensure_profile(profiles, code, (row.get("Title") or "").strip())
+            if category in ("career_interests", "specific_interests", "work_activities"):
+                element = (row.get("Element Name") or "").strip()
+                if element:
+                    scale = (row.get("Scale Name") or "").strip() or "unspecified"
+                    profile[category].setdefault(element, {})[scale] = (row.get("Data Value") or "").strip()
+            elif category == "job_zones":
+                profile["job_zone"] = (row.get("Job Zone") or "").strip()
+            elif category == "occupation_data":
+                profile["description"] = (row.get("Description") or "").strip()
+            else:
+                title = (row.get("Job Title") or row.get("Short Title") or "").strip()
+                if title and title not in profile["job_titles"]:
+                    profile["job_titles"].append(title)
+            optional_rows[category] += 1
 
     output_path = output_dir / "onet_occupation_skills.jsonl"
     with output_path.open("w", encoding="utf-8", newline="\n") as handle:
@@ -144,6 +187,9 @@ def build_onet_profiles(input_dir: Path, output_dir: Path, optional_files: dict[
             ]
             profile["career_interests"] = [
                 {"name": name, **values} for name, values in sorted(profile["career_interests"].items())
+            ]
+            profile["specific_interests"] = [
+                {"name": name, **values} for name, values in sorted(profile["specific_interests"].items())
             ]
             profile["work_activities"] = [
                 {"name": name, **values} for name, values in sorted(profile["work_activities"].items())
@@ -314,7 +360,7 @@ def main() -> None:
             "benefit and salary tables",
             "student profiles or assessment answers",
         ],
-        "interpretation": "LinkedIn counts describe skills mentioned in postings. O*NET profiles describe U.S. occupational skill requirements. Neither is a labeled student career-success dataset.",
+        "interpretation": "LinkedIn counts describe skills mentioned in postings. O*NET profiles describe U.S. occupational skill requirements, interests, activities, and preparation zones. Neither is a labeled student career-success dataset.",
     }
     manifest_path = args.output_dir / "career_data_manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

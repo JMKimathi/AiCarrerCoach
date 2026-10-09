@@ -19,4 +19,8 @@ out/
 .navigation/
 ml/models/
 ml/metrics/
+.env
+*.db
+ml/data/processed/chunk_embeddings.npy
+ml/data/processed/chunk_embeddings_manifest.json
 **/__pycache__/

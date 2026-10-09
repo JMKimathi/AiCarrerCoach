@@ -46,6 +46,12 @@ def main() -> None:
             ROOT_DIR,
         )
 
+    run_step(
+        "Prepare searchable article and O*NET knowledge chunks",
+        [sys.executable, str(ROOT_DIR / "ml" / "src" / "run_pipeline.py"), "--prepare-only"],
+        ROOT_DIR,
+    )
+
     if args.train_classifier:
         command = [sys.executable, str(ROOT_DIR / "ml" / "src" / "train_career_model.py")]
         if args.promote_model:

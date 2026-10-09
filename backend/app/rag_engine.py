@@ -2,11 +2,15 @@ import json
 import logging
 import os
 import re
+import sys
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from backend.app.config import settings
+
+sys.path.append(str(settings.MODEL_DIR.parents[1] / "src"))
+from embedding_cache import load_or_create_embeddings
 
 logger = logging.getLogger(__name__)
 
@@ -29,9 +33,14 @@ class RAGEngine:
         self.chunks: List[Dict[str, Any]] = json.loads(settings.CHUNKS_PATH.read_text(encoding="utf-8"))
         self.corpus = [c["content"] for c in self.chunks]
 
-        print(f"[RAG] Pre-computing embeddings for {len(self.corpus)} knowledge chunks...")
-        self.corpus_embeddings = self.model.encode(
-            self.corpus, convert_to_numpy=True, normalize_embeddings=True
+        print(f"[RAG] Loading or building embeddings for {len(self.corpus)} knowledge chunks...")
+        self.corpus_embeddings = load_or_create_embeddings(
+            self.chunks,
+            settings.CHUNKS_PATH,
+            settings.MODEL_DIR,
+            settings.CHUNK_EMBEDDINGS_PATH,
+            settings.CHUNK_EMBEDDINGS_MANIFEST_PATH,
+            model=self.model,
         )
         print("[RAG] Knowledge Base Vector Index is READY.")
 

@@ -28,6 +28,8 @@ class Settings:
     # AI Models
     MODEL_DIR: Path = ML_DIR / "models" / "career-retriever"
     CHUNKS_PATH: Path = ML_DIR / "data" / "processed" / "chunks.json"
+    CHUNK_EMBEDDINGS_PATH: Path = ML_DIR / "data" / "processed" / "chunk_embeddings.npy"
+    CHUNK_EMBEDDINGS_MANIFEST_PATH: Path = ML_DIR / "data" / "processed" / "chunk_embeddings_manifest.json"
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
 
     # Security
