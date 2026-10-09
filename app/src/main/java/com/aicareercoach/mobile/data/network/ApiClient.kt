@@ -27,7 +27,7 @@ data class NetworkChatResponse(
 object ApiClient {
     // Physical-device development: use the PC's Wi-Fi IPv4 address. For an Android emulator,
     // switch this to 10.0.2.2, which routes to the host machine.
-    var baseUrl: String = "http://10.99.223.211:8000/api"
+    var baseUrl: String = "http://192.168.100.3:8000/api"
 
     suspend fun authenticate(
         register: Boolean, name: String, email: String, password: String, course: String = "", careerGoal: String = ""
