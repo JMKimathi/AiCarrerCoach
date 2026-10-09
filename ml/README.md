@@ -30,7 +30,7 @@ Open the `notebooks` folder. In the kernel menu pick **AI Career Coach**.
 
 ## Run in this order
 
-1. `01_prepare_knowledge_base.ipynb` — split articles into chunks  
+1. `01_prepare_knowledge_base.ipynb` — split articles and generated O*NET profiles into searchable chunks  
 2. `02_train_retriever.ipynb` — fine-tune MiniLM (first run downloads the model)  
 3. `03_evaluate_retrieval.ipynb` — Recall@1 / Recall@3 vs baseline, saves a chart  
 
@@ -58,7 +58,7 @@ The current `tech_career_dataset.csv` has 26,000 rows, 13 labels, and 4,053 exac
 
 ## One-run pipeline and Colab
 
-`python ml/src/run_career_pipeline.py --input-dir "C:\Users\Mwiti\Downloads\Datasets"` rebuilds the normalized market and occupation tables. Add `--train-classifier` to train a new versioned classifier from the separately labeled project dataset; add `--promote-model` only after reviewing that run's test metrics. `--train-retriever` runs the separate retrieval training/evaluation workflow. No API key is needed for data preparation or model training.
+`python ml/src/run_career_pipeline.py --input-dir "C:\Users\Mwiti\Downloads\Datasets"` rebuilds the normalized market and occupation tables, indexes O*NET profiles with the career guides, and saves a reusable embedding cache for faster API startup. Restart the API after rebuilding so it reloads `chunks.json`. Add `--train-classifier` to train a new versioned classifier from the separately labeled project dataset; add `--promote-model` only after reviewing that run's test metrics. `--train-retriever` runs the separate retrieval training/evaluation workflow. No API key is needed for data preparation or model training.
 
 The Colab orchestrator is [notebooks/00_full_career_pipeline_colab.ipynb](notebooks/00_full_career_pipeline_colab.ipynb). Put the project folder and `Datasets` folder in Google Drive, update the notebook paths if necessary, then run its cells. Classifier and retriever training are off by default.
 
@@ -80,6 +80,6 @@ After downloading the LinkedIn and O*NET CSVs into `C:\Users\Mwiti\Downloads\Dat
 python ml/src/build_career_datasets.py --input-dir "C:\Users\Mwiti\Downloads\Datasets"
 ```
 
-The builder joins `postings.csv` to `job_skills.csv` and `skills.csv`, aggregates posting counts by location, title, and skill, and creates O*NET occupation profiles from `essential_skills.csv` and `software_skills.csv`. It will also incorporate O*NET Career Interest Types, Work Activities, and Job Zones CSVs when those files are present (filenames are detected by category). It does not merge in the separate `job_descriptions.csv` source or copy posting descriptions, company data, salary, or personal/contact fields. Outputs are under `ml/data/processed/derived/` with a source/interpretation manifest.
+The builder joins `postings.csv` to `job_skills.csv` and `skills.csv`, aggregates posting counts by location, title, and skill, and creates O*NET occupation profiles from `essential_skills.csv` and `software_skills.csv`. It also reads the O*NET Excel files `Occupation Data.xlsx`, `Job Titles.xlsx`, `Job Zones.xlsx`, and `Work Activities.xlsx`, plus Career Interest Types and Specific Interest Areas CSVs when present. These add readable occupation descriptions, title aliases, typical work, interest profiles, and preparation levels. Install `openpyxl` with the ML requirements for Excel support. It does not merge in the separate `job_descriptions.csv` source or copy LinkedIn posting descriptions, company data, salary, or personal/contact fields. Outputs are under `ml/data/processed/derived/` with a source/interpretation manifest.
 
-The current LinkedIn export has 123,849 postings from 2024, with 122,096 joined to skills. Its 35-code skill dictionary is coarse, and a location-name scan found zero likely Kenya postings, so this export can help exercise the pipeline but should not be used for Kenya job-demand claims. The O*NET files currently present cover skills only; career interests, work activities, and job zones remain useful additions. Neither job postings nor O*NET occupational profiles are student-success labels, so they remain separate from student-fit training data.
+The current LinkedIn export has 123,849 postings from 2024, with 122,096 joined to skills. Its 35-code skill dictionary is coarse, and a location-name scan found zero likely Kenya postings, so this export can help exercise the pipeline but should not be used for Kenya job-demand claims. The available O*NET files now include occupation descriptions and title aliases, skills, career and specific interests, work activities, and job zones. O*NET describes U.S. occupations, so use it as a career exploration reference and adapt local training details when Kenyan sources become available. Neither job postings nor O*NET occupational profiles are student-success labels, so they remain separate from student-fit training data.
