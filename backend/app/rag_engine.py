@@ -1,6 +1,7 @@
 import json
 import logging
 import os
+import random
 import re
 import sys
 from pathlib import Path
@@ -68,17 +69,39 @@ class RAGEngine:
         student_name: str = "Student",
         course: str = "BSc Computer Science",
         career_goal: str = "Roles in AI and data",
-        top_k: int = 3,
+        top_k: int = 5,
         supplemental_docs: Optional[List[Dict[str, Any]]] = None,
         conversation_history: Optional[List[Dict[str, str]]] = None,
     ) -> Dict[str, Any]:
         normalized_query = " ".join(query.lower().strip().split())
-        if normalized_query.strip(" .,!?…") in {
-            "hi", "hello", "hey", "good morning", "good afternoon", "good evening",
-            "how are you", "thanks", "thank you",
-        }:
+        normalized_query = re.sub(r"[.!?,…]+$", "", normalized_query)
+        greetings = {
+            "hi", "hi there", "hello", "hello there", "hey", "hey there", "hey coach",
+            "hello coach", "good morning", "good afternoon", "good evening", "good day",
+            "how are you", "how are you doing", "how is it going", "how's it going",
+            "what's up", "whats up", "howdy", "yo", "sup", "habari", "jambo", "niaje",
+            "mambo", "sasa",
+        }
+        if normalized_query in greetings:
             return {
-                "response": "Hi! I’m here to help you explore career paths, improve your CV, prepare for interviews, or plan your next step. What would you like to work on?",
+                "response": random.choice([
+                    "Hi! What would you like help with today: exploring careers, building skills, improving your CV, or preparing for an interview?",
+                    "Hello! Tell me what you’re working toward, and we can take it one step at a time. Are you exploring options or focused on a particular career?",
+                    "Hey, good to hear from you. I can help you compare career paths, plan what to learn next, or practise for an interview. Where should we start?",
+                    "Hi there! If you’re not sure where to begin, tell me what subjects or activities you enjoy and I’ll help you explore some possible paths.",
+                    "Hello! You can ask me about Kenyan occupation options, the skills a role uses, study plans, CVs, or interviews. What’s on your mind?",
+                    "I’m doing well, thanks for asking! What would be useful right now: career ideas, advice for a specific role, or help preparing for an opportunity?",
+                ]),
+                "sources": [],
+                "source_details": [],
+            }
+        if normalized_query in {"thanks", "thank you", "asante", "thanks coach"}:
+            return {
+                "response": random.choice([
+                    "You’re welcome! Would you like to explore another career option or work through a next step?",
+                    "You’re welcome. I’m here if you want to keep going with your career plan.",
+                    "Happy to help! What else would you like to figure out?",
+                ]),
                 "sources": [],
                 "source_details": [],
             }
@@ -125,6 +148,13 @@ class RAGEngine:
                     "follow-up questions without restarting the discussion. Personalize guidance using the profile "
                     "when relevant. Ground factual career guidance in the verified knowledge base passages; if they "
                     "do not cover something, say so briefly and ask a focused follow-up instead of inventing facts. "
+                    "When suggesting several options, use distinct occupation titles supported by the retrieved passages. "
+                    "For broad career-exploration questions, offer up to three distinct options when the context supports them, "
+                    "briefly explain each, and ask which one the student wants to explore; do not claim a personal fit without evidence. "
+                    "KeSCO is a Kenyan occupation taxonomy and supports job titles and classification groups only; it does "
+                    "not establish current vacancies, salaries, or detailed requirements. O*NET is a U.S. occupational "
+                    "reference, so label its guidance as a transferable reference rather than a Kenyan rule. Do not claim "
+                    "that similarly named KeSCO and O*NET occupations have been formally mapped unless the context says so. "
                     "Be encouraging, specific, and professional, with a focus on students and Kenya."
                 )
 

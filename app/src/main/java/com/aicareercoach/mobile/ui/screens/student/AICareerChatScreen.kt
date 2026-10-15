@@ -46,7 +46,16 @@ fun AICareerChatScreen(
     var currentSessionId by remember { mutableStateOf<String?>(null) }
     val listState = rememberLazyListState()
     val scope = rememberCoroutineScope()
-    val suggestions = listOf("How do I improve my CV?", "Interview preparation", "Careers in AI")
+    val suggestions = listOf(
+        "Show me Kenyan technology career paths",
+        "Compare software developer and data analyst careers",
+        "What skills do cybersecurity analysts need?",
+        "How can I prepare for a data career while studying?",
+        "How do I improve my CV?",
+        "Help me prepare for an interview",
+        "What does a software developer do?",
+        "I’m unsure what career suits me. Ask me questions."
+    )
 
     fun send(text: String) {
         val trimmed = text.trim()
