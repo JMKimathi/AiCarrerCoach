@@ -91,7 +91,7 @@ def chat_with_coach(
             student_name=student.full_name,
             course=student.course or "Not provided",
             career_goal=student.career_goal or "Not provided",
-            top_k=3,
+            top_k=5,
             supplemental_docs=supplemental,
             conversation_history=conversation_history,
         )
