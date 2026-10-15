@@ -1,7 +1,8 @@
 """Build small, traceable career data tables from downloaded CSV and Excel exports.
 
 Reads the LinkedIn postings/skills join and available O*NET occupation, skills,
-interests, activities, and job-zone tables.
+interests, activities, and job-zone tables, plus the optional Kenyan KeSCO
+occupation taxonomy.
 It does not retain job descriptions, company details, contact information, or
 demographic fields. Job-market counts and O*NET occupation profiles are kept as
 separate outputs because they answer different questions.
@@ -308,6 +309,65 @@ def build_linkedin_skill_demand(input_dir: Path, output_dir: Path) -> dict:
     }
 
 
+def build_kesco_occupations(input_dir: Path, output_dir: Path) -> dict:
+    """Keep KeSCO individual job titles and their immediate hierarchy context."""
+    path = input_dir / "KeSCO_Full_Taxonomy.csv"
+    if not path.is_file():
+        return {"available": False, "reason": "KeSCO_Full_Taxonomy.csv not found"}
+
+    required = {"Level", "Code", "Name", "Parent Code", "Parent Name"}
+    validate_columns(path, required)
+    seen_rows = set()
+    occupations = []
+    hierarchy_counts = Counter()
+    exact_duplicates = 0
+    repeated_codes = Counter()
+    with open_csv(path) as handle:
+        for row in csv.DictReader(handle):
+            level = (row.get("Level") or "").strip()
+            code = (row.get("Code") or "").strip()
+            name = (row.get("Name") or "").strip()
+            parent_code = clean_id(row.get("Parent Code"))
+            parent_name = (row.get("Parent Name") or "").strip()
+            if not (level and code and name):
+                continue
+            normalized = (level, code, name, parent_code, parent_name)
+            if normalized in seen_rows:
+                exact_duplicates += 1
+                continue
+            seen_rows.add(normalized)
+            hierarchy_counts[level] += 1
+            if level == "OT":
+                repeated_codes[code] += 1
+                occupations.append({
+                    "kesco_code": code,
+                    "occupation_title": name,
+                    "parent_code": parent_code,
+                    "parent_title": parent_name,
+                    "classification_level": level,
+                    "source": "KeSCO Full Taxonomy (Kenya)",
+                })
+
+    output_path = output_dir / "kesco_occupations.jsonl"
+    with output_path.open("w", encoding="utf-8", newline="\n") as handle:
+        for item in sorted(occupations, key=lambda value: (value["occupation_title"].casefold(), value["kesco_code"])):
+            handle.write(json.dumps(item, ensure_ascii=False) + "\n")
+
+    return {
+        "available": True,
+        "source_file": path.name,
+        "source_size_bytes": path.stat().st_size,
+        "hierarchy_rows": sum(hierarchy_counts.values()),
+        "rows_by_level": dict(sorted(hierarchy_counts.items())),
+        "individual_occupation_titles": len(occupations),
+        "distinct_occupation_codes": len(repeated_codes),
+        "codes_with_multiple_titles": sum(1 for count in repeated_codes.values() if count > 1),
+        "exact_duplicate_rows_skipped": exact_duplicates,
+        "output": output_path.name,
+        "fields_retained": ["kesco_code", "occupation_title", "parent_code", "parent_title", "classification_level", "source"],
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input-dir", type=Path, default=DEFAULT_INPUT_DIR)
@@ -352,6 +412,7 @@ def main() -> None:
             category: {"filename": path.name, "size_bytes": path.stat().st_size}
             for category, path in optional_onet_files.items()
         },
+        "kesco": build_kesco_occupations(args.input_dir, args.output_dir),
         "onet": build_onet_profiles(args.input_dir, args.output_dir, optional_onet_files),
         "linkedin": build_linkedin_skill_demand(args.input_dir, args.output_dir),
         "not_included": [
@@ -360,7 +421,7 @@ def main() -> None:
             "benefit and salary tables",
             "student profiles or assessment answers",
         ],
-        "interpretation": "LinkedIn counts describe skills mentioned in postings. O*NET profiles describe U.S. occupational skill requirements, interests, activities, and preparation zones. Neither is a labeled student career-success dataset.",
+        "interpretation": "KeSCO supplies Kenyan occupation titles and classification hierarchy, not current vacancy demand or student-fit labels. LinkedIn counts describe skills mentioned in postings. O*NET profiles describe U.S. occupational skill requirements, interests, activities, and preparation zones. None is a labeled student career-success dataset.",
     }
     manifest_path = args.output_dir / "career_data_manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
