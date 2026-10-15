@@ -73,6 +73,33 @@ def step_1_prepare_knowledge_base():
                     "content": segment,
                 })
 
+    # KeSCO contributes Kenyan occupation names and their local classification
+    # context. These entries describe the taxonomy, not current labour demand.
+    kesco_profiles = ROOT / "data" / "processed" / "derived" / "kesco_occupations.jsonl"
+    if kesco_profiles.is_file():
+        title_counts = {}
+        for line in kesco_profiles.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            occupation = json.loads(line)
+            code = occupation.get("kesco_code", "").strip()
+            role = occupation.get("occupation_title", "").strip()
+            parent = occupation.get("parent_title", "").strip()
+            if not code or not role:
+                continue
+            title_counts[code] = title_counts.get(code, 0) + 1
+            resource_id = f"kesco_{code}_{title_counts[code]}"
+            context = f"Occupation: {role} (KeSCO Kenya code {code})."
+            if parent:
+                context += f" Classification group: {parent}."
+            context += " Source: Kenya Standard Classification of Occupations (KeSCO); this is a taxonomy entry, not a current vacancy or salary claim."
+            records.append({
+                "chunk_id": resource_id,
+                "resource_id": resource_id,
+                "title": f"{role} (KeSCO Kenya occupation)",
+                "content": context,
+            })
+
     CHUNKS.parent.mkdir(parents=True, exist_ok=True)
     CHUNKS.write_text(json.dumps(records, indent=2), encoding="utf-8")
     print("Preparing a reusable vector cache for faster API startup...")
@@ -87,7 +114,10 @@ def step_1_prepare_knowledge_base():
         model=embedder,
     )
     print(f"Cached {len(embeddings)} vectors.")
-    print(f"Indexed {len(md_files)} written resources and {len(records) - sum(1 for r in records if r['resource_id'].startswith('onet_'))} resource chunks, plus {sum(1 for r in records if r['resource_id'].startswith('onet_'))} O*NET occupation chunks.")
+    resource_chunks = sum(1 for r in records if not r["resource_id"].startswith(("onet_", "kesco_")))
+    onet_chunks = sum(1 for r in records if r["resource_id"].startswith("onet_"))
+    kesco_chunks = sum(1 for r in records if r["resource_id"].startswith("kesco_"))
+    print(f"Indexed {len(md_files)} written resources ({resource_chunks} chunks), {onet_chunks} O*NET occupation chunks, and {kesco_chunks} KeSCO Kenya occupation chunks.")
     print(f"Saved to: {CHUNKS}\n")
     return records
 

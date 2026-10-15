@@ -2,7 +2,7 @@
   "pipeline_version": "career-data-build-v1",
   "input_directory": "C:\\Users\\Mwiti\\Downloads\\Datasets",
   "output_directory": "C:\\Users\\Mwiti\\Downloads\\AICareerCoach\\ml\\data\\processed\\derived",
-  "generated_at_utc": "2026-10-09T08:34:55.094176+00:00",
+  "generated_at_utc": "2026-10-11T13:45:04.595381+00:00",
   "source_files": {
     "essential_skills.csv": {
       "size_bytes": 2328135,
@@ -55,6 +55,32 @@
       "filename": "Work Activities.xlsx",
       "size_bytes": 4294510
     }
+  },
+  "kesco": {
+    "available": true,
+    "source_file": "KeSCO_Full_Taxonomy.csv",
+    "source_size_bytes": 515208,
+    "hierarchy_rows": 6543,
+    "rows_by_level": {
+      "L1": 9,
+      "L2": 40,
+      "L3": 138,
+      "L4": 438,
+      "OT": 5918
+    },
+    "individual_occupation_titles": 5918,
+    "distinct_occupation_codes": 5897,
+    "codes_with_multiple_titles": 20,
+    "exact_duplicate_rows_skipped": 1,
+    "output": "kesco_occupations.jsonl",
+    "fields_retained": [
+      "kesco_code",
+      "occupation_title",
+      "parent_code",
+      "parent_title",
+      "classification_level",
+      "source"
+    ]
   },
   "onet": {
     "essential_skill_rows": 18200,
@@ -186,5 +212,5 @@
     "benefit and salary tables",
     "student profiles or assessment answers"
   ],
-  "interpretation": "LinkedIn counts describe skills mentioned in postings. O*NET profiles describe U.S. occupational skill requirements, interests, activities, and preparation zones. Neither is a labeled student career-success dataset."
+  "interpretation": "KeSCO supplies Kenyan occupation titles and classification hierarchy, not current vacancy demand or student-fit labels. LinkedIn counts describe skills mentioned in postings. O*NET profiles describe U.S. occupational skill requirements, interests, activities, and preparation zones. None is a labeled student career-success dataset."
 }
