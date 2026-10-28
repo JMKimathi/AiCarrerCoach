@@ -30,7 +30,8 @@ fun LoginRegisterScreen(
     startInRegister: Boolean = false,
     onAuthenticated: (UserSession) -> Unit = {},
     onForgotPassword: () -> Unit = {},
-    onBack: () -> Unit = {}
+    onBack: () -> Unit = {},
+    onBackendSettings: () -> Unit = {}
 ) {
     var isLoginMode by remember(startInRegister) { mutableStateOf(!startInRegister) }
     var name by remember { mutableStateOf("") }
@@ -159,6 +160,9 @@ fun LoginRegisterScreen(
             textAlign = TextAlign.Center,
             modifier = Modifier.fillMaxWidth()
         )
+        TextButton(onClick = onBackendSettings, modifier = Modifier.fillMaxWidth()) {
+            Text("Backend connection settings")
+        }
         Spacer(Modifier.height(24.dp))
     }
 }

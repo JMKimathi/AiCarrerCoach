@@ -30,6 +30,7 @@ fun StudentProfileScreen(
     onOpenChat: () -> Unit = {},
     onOpenResources: () -> Unit = {},
     onOpenFeedback: () -> Unit = {},
+    onBackendSettings: () -> Unit = {},
     onOpenHelp: () -> Unit = {},
     onOpenPrivacy: () -> Unit = {},
     onLogOut: () -> Unit = {}
@@ -82,6 +83,8 @@ fun StudentProfileScreen(
 
             SectionCard {
                 ProfileRow(Icons.Default.Feedback, "Send Feedback", onOpenFeedback)
+                HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
+                ProfileRow(Icons.Default.Wifi, "Backend connection", onBackendSettings)
                 HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
                 ProfileRow(Icons.Default.HelpOutline, "Help & Support", onOpenHelp)
                 HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))

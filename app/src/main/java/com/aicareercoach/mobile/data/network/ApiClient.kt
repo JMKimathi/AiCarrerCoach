@@ -1,5 +1,8 @@
 package com.aicareercoach.mobile.data.network
 
+import android.content.Context
+import android.net.ConnectivityManager
+import android.net.Network
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import android.util.Log
@@ -25,16 +28,98 @@ data class NetworkChatResponse(
 )
 
 object ApiClient {
-    // Physical-device development: use the PC's Wi-Fi IPv4 address. For an Android emulator,
-    // switch this to 10.0.2.2, which routes to the host machine.
-    var baseUrl: String = "http://192.168.100.3:8000/api"
+    // Confirmed laptop address on the current home Wi-Fi. The hotspot address is saved from the settings screen.
+    private const val DEFAULT_BASE_URL = "http://192.168.100.3:8000/api"
+    private const val PREFS_NAME = "backend_connection"
+    private const val ENDPOINTS_KEY = "saved_endpoints"
+    private const val HEALTH_CACHE_MS = 5_000L
+
+    @Volatile private var baseUrl: String = DEFAULT_BASE_URL
+    @Volatile private var candidateBaseUrls: List<String> = listOf(DEFAULT_BASE_URL)
+    @Volatile private var checkedAt: Long = 0L
+    @Volatile private var appContext: Context? = null
+
+    fun initialize(context: Context) {
+        val applicationContext = context.applicationContext
+        appContext = applicationContext
+        val saved = runCatching {
+            val raw = applicationContext.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+                .getString(ENDPOINTS_KEY, null)
+            if (raw == null) emptyList() else {
+                val values = JSONArray(raw)
+                (0 until values.length()).mapNotNull { normalizeEndpoint(values.optString(it)) }.distinct()
+            }
+        }.getOrDefault(emptyList())
+        candidateBaseUrls = saved.ifEmpty { listOf(DEFAULT_BASE_URL) }
+
+        val connectivity = applicationContext.getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager
+        runCatching {
+            connectivity?.registerDefaultNetworkCallback(object : ConnectivityManager.NetworkCallback() {
+                override fun onAvailable(network: Network) { checkedAt = 0L }
+                override fun onLost(network: Network) { checkedAt = 0L }
+                override fun onCapabilitiesChanged(network: Network, networkCapabilities: android.net.NetworkCapabilities) {
+                    checkedAt = 0L
+                }
+            })
+        }
+    }
+
+    fun configuredEndpoints(): List<String> = candidateBaseUrls
+
+    fun saveEndpoints(endpoints: List<String>) {
+        val normalized = endpoints.mapNotNull(::normalizeEndpoint).distinct()
+        candidateBaseUrls = normalized.ifEmpty { listOf(DEFAULT_BASE_URL) }
+        appContext?.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            ?.edit()
+            ?.putString(ENDPOINTS_KEY, JSONArray(candidateBaseUrls).toString())
+            ?.apply()
+        checkedAt = 0L
+    }
+
+    private fun normalizeEndpoint(value: String): String? {
+        var endpoint = value.trim().trimEnd('/')
+        if (endpoint.isBlank()) return null
+        if (!endpoint.startsWith("http://") && !endpoint.startsWith("https://")) endpoint = "http://$endpoint"
+        if (!endpoint.contains(":8000")) endpoint = "$endpoint:8000"
+        if (!endpoint.endsWith("/api")) endpoint = "$endpoint/api"
+        return endpoint
+    }
+
+    private suspend fun resolveBaseUrl(): String {
+        val now = System.currentTimeMillis()
+        if (now - checkedAt < HEALTH_CACHE_MS) return baseUrl
+        for (candidate in candidateBaseUrls) {
+            if (checkHealthAt(candidate)) {
+                baseUrl = candidate
+                checkedAt = System.currentTimeMillis()
+                return candidate
+            }
+        }
+        checkedAt = System.currentTimeMillis()
+        return baseUrl
+    }
+
+    private suspend fun checkHealthAt(endpoint: String): Boolean = withContext(Dispatchers.IO) {
+        try {
+            val conn = (URL("$endpoint/health").openConnection() as HttpURLConnection).apply {
+                requestMethod = "GET"
+                connectTimeout = 1200
+                readTimeout = 1200
+            }
+            try { conn.responseCode == 200 } finally { conn.disconnect() }
+        } catch (_: Exception) {
+            false
+        }
+    }
+
+    private suspend fun endpointUrl(path: String): URL = URL("${resolveBaseUrl()}$path")
 
     suspend fun authenticate(
         register: Boolean, name: String, email: String, password: String, course: String = "", careerGoal: String = ""
     ): AuthResult = withContext(Dispatchers.IO) {
         try {
             val path = if (register) "register" else "login"
-            val conn = (URL("$baseUrl/auth/$path").openConnection() as HttpURLConnection).apply {
+            val conn = (endpointUrl("/auth/$path").openConnection() as HttpURLConnection).apply {
                 requestMethod = "POST"
                 connectTimeout = 5000
                 readTimeout = 10000
@@ -80,7 +165,7 @@ object ApiClient {
 
     suspend fun updateProfile(session: UserSession, name: String, course: String, careerGoal: String): UserSession? = withContext(Dispatchers.IO) {
         try {
-            val conn = (URL("$baseUrl/auth/me").openConnection() as HttpURLConnection).apply {
+            val conn = (endpointUrl("/auth/me").openConnection() as HttpURLConnection).apply {
                 requestMethod = "PUT"
                 connectTimeout = 5000
                 readTimeout = 10000
@@ -107,7 +192,7 @@ object ApiClient {
 
     suspend fun getResources(token: String): List<CareerResource>? = withContext(Dispatchers.IO) {
         try {
-            val conn = (URL("$baseUrl/resources").openConnection() as HttpURLConnection).apply {
+            val conn = (endpointUrl("/resources").openConnection() as HttpURLConnection).apply {
                 requestMethod = "GET"
                 connectTimeout = 4000
                 readTimeout = 7000
@@ -126,7 +211,7 @@ object ApiClient {
 
     suspend fun getAdminOverview(token: String): AdminOverview? = withContext(Dispatchers.IO) {
         try {
-            val conn = (URL("$baseUrl/admin/overview").openConnection() as HttpURLConnection).apply {
+            val conn = (endpointUrl("/admin/overview").openConnection() as HttpURLConnection).apply {
                 setRequestProperty("Authorization", "Bearer $token")
                 connectTimeout = 4000
                 readTimeout = 7000
@@ -144,7 +229,7 @@ object ApiClient {
 
     suspend fun getAdminStudents(token: String): List<StudentAccount>? = withContext(Dispatchers.IO) {
         try {
-            val conn = (URL("$baseUrl/admin/students").openConnection() as HttpURLConnection).apply {
+            val conn = (endpointUrl("/admin/students").openConnection() as HttpURLConnection).apply {
                 setRequestProperty("Authorization", "Bearer $token")
                 connectTimeout = 4000
                 readTimeout = 7000
@@ -168,7 +253,7 @@ object ApiClient {
         token: String, skills: List<String>, interests: List<String>, activities: List<String>
     ): CareerAssessmentResult? = withContext(Dispatchers.IO) {
         try {
-            val conn = (URL("$baseUrl/career/assess").openConnection() as HttpURLConnection).apply {
+            val conn = (endpointUrl("/career/assess").openConnection() as HttpURLConnection).apply {
                 requestMethod = "POST"
                 connectTimeout = 5000
                 readTimeout = 15000
@@ -207,7 +292,7 @@ object ApiClient {
 
     suspend fun createResource(token: String, title: String, category: String, content: String): CareerResource? = withContext(Dispatchers.IO) {
         try {
-            val conn = (URL("$baseUrl/resources").openConnection() as HttpURLConnection).apply {
+            val conn = (endpointUrl("/resources").openConnection() as HttpURLConnection).apply {
                 requestMethod = "POST"
                 connectTimeout = 4000
                 readTimeout = 7000
@@ -224,22 +309,17 @@ object ApiClient {
     }
 
     suspend fun checkHealth(): Boolean = withContext(Dispatchers.IO) {
-        try {
-            val url = URL("$baseUrl/health")
-            val conn = (url.openConnection() as HttpURLConnection).apply {
-                requestMethod = "GET"
-                connectTimeout = 3000
-                readTimeout = 3000
-            }
-            conn.responseCode == 200
-        } catch (e: Exception) {
-            false
-        }
+        candidateBaseUrls.any { checkHealthAt(it) }
+    }
+
+    suspend fun checkHealth(endpoint: String): Boolean {
+        val normalized = normalizeEndpoint(endpoint) ?: return false
+        return checkHealthAt(normalized)
     }
 
     suspend fun sendChatMessage(query: String, token: String, sessionId: String? = null): NetworkChatResponse? = withContext(Dispatchers.IO) {
         try {
-            val url = URL("$baseUrl/chat")
+            val url = endpointUrl("/chat")
             val conn = (url.openConnection() as HttpURLConnection).apply {
                 requestMethod = "POST"
                 connectTimeout = 8000
@@ -293,7 +373,7 @@ object ApiClient {
         sessionId: String? = null
     ): Boolean = withContext(Dispatchers.IO) {
         try {
-            val url = URL("$baseUrl/feedback")
+            val url = endpointUrl("/feedback")
             val conn = (url.openConnection() as HttpURLConnection).apply {
                 requestMethod = "POST"
                 connectTimeout = 5000

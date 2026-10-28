@@ -14,6 +14,7 @@ import com.aicareercoach.mobile.ui.theme.AICareerCoachTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        com.aicareercoach.mobile.data.network.ApiClient.initialize(applicationContext)
         enableEdgeToEdge()
         setContent {
             AICareerCoachTheme(darkTheme = false) {

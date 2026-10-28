@@ -28,9 +28,9 @@ Check that the API is running at `http://127.0.0.1:8000/api/health`; interactive
 
 ### 2. Run Android
 
-Open the repository root in Android Studio, allow Gradle to sync, and run the `app` configuration on an emulator or device. The Android emulator uses `http://10.0.2.2:8000/api` to reach the API on the host computer.
+Open the repository root in Android Studio, allow Gradle to sync, and run the `app` configuration on an emulator or device. From the landing or sign-in screen, open **Backend connection settings** to save one or more reachable API addresses. For an Android emulator, use `http://10.0.2.2:8000/api`.
 
-For a physical phone, configure the app to use the computer's local network IP address, such as `http://192.168.x.x:8000/api`. Keep the phone and computer on the same Wi-Fi or hotspot network, and allow the API through the computer's firewall if prompted.
+For a physical phone, save the laptop's IPv4 address once for each network you use (for example, home Wi-Fi and phone hotspot) as `http://<laptop-ip>:8000/api`. Find each address with `ipconfig` while the laptop is connected to that network. Keep the phone and laptop on the same network and allow the API through the computer's firewall if prompted. The app checks the saved addresses after network changes and uses the one whose health endpoint responds.
 
 Students can register through the app. To create the first administrator locally, stop the API and run:
 
