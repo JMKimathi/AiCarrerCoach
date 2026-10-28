@@ -30,7 +30,8 @@ import com.aicareercoach.mobile.ui.theme.TextSecondary
 @Composable
 fun LandingScreen(
     onGetStarted: () -> Unit = {},
-    onLogIn: () -> Unit = {}
+    onLogIn: () -> Unit = {},
+    onBackendSettings: () -> Unit = {}
 ) {
     Column(
         modifier = Modifier
@@ -102,6 +103,9 @@ fun LandingScreen(
         PrimaryButton(text = "Get Started", onClick = onGetStarted)
         Spacer(Modifier.height(12.dp))
         SecondaryButton(text = "Log In", onClick = onLogIn)
+        TextButton(onClick = onBackendSettings) {
+            Text("Backend connection settings")
+        }
 
         Spacer(Modifier.height(28.dp))
     }

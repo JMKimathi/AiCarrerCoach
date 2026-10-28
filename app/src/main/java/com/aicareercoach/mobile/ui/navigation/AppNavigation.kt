@@ -45,6 +45,7 @@ import com.aicareercoach.mobile.ui.screens.admin.AdminUsersScreen
 import com.aicareercoach.mobile.ui.screens.auth.ForgotPasswordScreen
 import com.aicareercoach.mobile.ui.screens.auth.LandingScreen
 import com.aicareercoach.mobile.ui.screens.auth.LoginRegisterScreen
+import com.aicareercoach.mobile.ui.screens.shared.BackendConnectionScreen
 import com.aicareercoach.mobile.ui.screens.shared.SimpleInfoScreen
 import com.aicareercoach.mobile.ui.screens.student.AICareerChatScreen
 import com.aicareercoach.mobile.ui.screens.student.CareerResourcesScreen
@@ -59,6 +60,7 @@ object Routes {
     const val Landing = "landing"
     const val Auth = "auth"
     const val ForgotPassword = "forgot"
+    const val BackendConnection = "backendConnection"
     const val Student = "student"
     const val Dashboard = "dashboard"
     const val Chat = "chat"
@@ -134,8 +136,13 @@ fun AppNavigation(
         composable(Routes.Landing) {
             LandingScreen(
                 onGetStarted = { navController.navigate("${Routes.Auth}?register=true") },
-                onLogIn = { navController.navigate("${Routes.Auth}?register=false") }
+                onLogIn = { navController.navigate("${Routes.Auth}?register=false") },
+                onBackendSettings = { navController.navigate(Routes.BackendConnection) }
             )
+        }
+
+        composable(Routes.BackendConnection) {
+            BackendConnectionScreen(onBack = { navController.popBackStack() })
         }
 
         composable(
@@ -151,6 +158,7 @@ fun AppNavigation(
                 startInRegister = entry.arguments?.getBoolean("register") == true,
                 onBack = { navController.popBackStack() },
                 onForgotPassword = { navController.navigate(Routes.ForgotPassword) },
+                onBackendSettings = { navController.navigate(Routes.BackendConnection) },
                 onAuthenticated = { next ->
                     session = next
                     goHome(if (next.isAdmin) Routes.Admin else Routes.Student)
@@ -175,7 +183,8 @@ fun AppNavigation(
                 onLogOut = { logOut(Routes.Student) }
             ) else LandingScreen(
                 onGetStarted = { navController.navigate("${Routes.Auth}?register=true") },
-                onLogIn = { navController.navigate("${Routes.Auth}?register=false") }
+                onLogIn = { navController.navigate("${Routes.Auth}?register=false") },
+                onBackendSettings = { navController.navigate(Routes.BackendConnection) }
             )
         }
 
@@ -196,7 +205,8 @@ fun AppNavigation(
                 onLogOut = { logOut(Routes.Admin) }
             ) else LandingScreen(
                 onGetStarted = { navController.navigate("${Routes.Auth}?register=true") },
-                onLogIn = { navController.navigate("${Routes.Auth}?register=false") }
+                onLogIn = { navController.navigate("${Routes.Auth}?register=false") },
+                onBackendSettings = { navController.navigate(Routes.BackendConnection) }
             )
         }
     }
@@ -297,6 +307,7 @@ private fun StudentHome(
                     onOpenChat = { tabNav.navigateToTab(Routes.Chat) },
                     onOpenResources = { tabNav.navigateToTab(Routes.Resources) },
                     onOpenFeedback = onOpenFeedback,
+                    onBackendSettings = { tabNav.navigate(Routes.BackendConnection) },
                     onOpenHelp = { tabNav.navigate(Routes.Help) },
                     onOpenPrivacy = { tabNav.navigate(Routes.Privacy) },
                     onLogOut = onLogOut
@@ -311,6 +322,9 @@ private fun StudentHome(
                         tabNav.popBackStack()
                     }
                 )
+            }
+            composable(Routes.BackendConnection) {
+                BackendConnectionScreen(onBack = { tabNav.popBackStack() })
             }
             composable(Routes.Help) {
                 SimpleInfoScreen(
