@@ -6,8 +6,26 @@ from pathlib import Path
 # Set up paths
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT / "src"))
-from config import RESOURCES, CHUNKS, QA, TRAINED_DIR, METRICS, chunk_text
+from config import RESOURCES, CHUNKS, QA, TRAINED_DIR, CANDIDATE_DIR, METRICS, chunk_text
 from embedding_cache import load_or_create_embeddings
+
+
+def load_cached_base_retriever():
+    """Load the downloaded MiniLM snapshot without requiring internet access."""
+    from huggingface_hub import snapshot_download
+    from sentence_transformers import SentenceTransformer
+
+    try:
+        local_path = snapshot_download(
+            repo_id="sentence-transformers/all-MiniLM-L6-v2",
+            local_files_only=True,
+        )
+    except Exception as exc:
+        raise RuntimeError(
+            "The all-MiniLM-L6-v2 base model is not available in the local Hugging Face cache. "
+            "Download it once with internet access, then rerun the candidate training."
+        ) from exc
+    return SentenceTransformer(local_path)
 
 
 def step_1_prepare_knowledge_base():
@@ -28,77 +46,51 @@ def step_1_prepare_knowledge_base():
                 "content": chunk,
             })
 
-    # Add structured O*NET profiles to the same index the backend loads.
-    # LinkedIn skill counts are intentionally excluded because this export has
-    # no likely Kenya postings and must not imply local demand.
-    onet_profiles = ROOT / "data" / "processed" / "derived" / "onet_occupation_skills.jsonl"
-    if onet_profiles.is_file():
-        for line in onet_profiles.read_text(encoding="utf-8").splitlines():
-            if not line.strip():
-                continue
-            profile = json.loads(line)
-            code = profile.get("onet_soc_code", "").strip()
-            role = profile.get("occupation_title", "Occupation").strip()
-            if not code or not role:
-                continue
-            resource_id = f"onet_{code}"
-            source_note = "Source: O*NET 31.0 U.S. occupational reference; local requirements may differ."
-            zone = profile.get("job_zone", "")
-            description = profile.get("description", "").strip()
-            if len(description) > 420:
-                description = description[:420].rsplit(" ", 1)[0] + "…"
-            fields = [f"Occupation: {role} (O*NET-SOC {code}).", description]
-            if zone:
-                fields.append(f"Preparation reference: O*NET Job Zone {zone} (U.S. reference, not a Kenyan qualification requirement).")
-            aliases = "; ".join(profile.get("job_titles", [])[:4])
-            if aliases:
-                fields.append(f"Also called: {aliases}.")
-            for label, values, limit in (
-                ("Essential skills", profile.get("essential_skills", []), 4),
-                ("Software skills", profile.get("software_skills", []), 2),
-                ("Interests", profile.get("career_interests", []), 6),
-                ("Specific interest areas", profile.get("specific_interests", []), 3),
-                ("Typical work", profile.get("work_activities", []), 4),
-            ):
-                text = _format_profile_values(_select_profile_values(values, limit))
-                if text:
-                    fields.append(f"{label}: {text}.")
-            fields.append(source_note)
-            content = "\n".join(field for field in fields if field)
-            for index, segment in enumerate(_split_profile_text(content, max_chars=1500)):
-                records.append({
-                    "chunk_id": f"{resource_id}_{index}",
-                    "resource_id": resource_id,
-                    "title": f"{role} (O*NET occupation profile)",
-                    "content": segment,
-                })
-
-    # KeSCO contributes Kenyan occupation names and their local classification
-    # context. These entries describe the taxonomy, not current labour demand.
-    kesco_profiles = ROOT / "data" / "processed" / "derived" / "kesco_occupations.jsonl"
-    if kesco_profiles.is_file():
-        title_counts = {}
-        for line in kesco_profiles.read_text(encoding="utf-8").splitlines():
-            if not line.strip():
-                continue
-            occupation = json.loads(line)
-            code = occupation.get("kesco_code", "").strip()
-            role = occupation.get("occupation_title", "").strip()
-            parent = occupation.get("parent_title", "").strip()
-            if not code or not role:
-                continue
-            title_counts[code] = title_counts.get(code, 0) + 1
-            resource_id = f"kesco_{code}_{title_counts[code]}"
-            context = f"Occupation: {role} (KeSCO Kenya code {code})."
-            if parent:
-                context += f" Classification group: {parent}."
-            context += " Source: Kenya Standard Classification of Occupations (KeSCO); this is a taxonomy entry, not a current vacancy or salary claim."
+    # This synthetic pathway library is the only structured career dataset
+    # used by the advice retrieval pipeline. Downloaded source-derived exports
+    # are intentionally excluded from runtime advice.
+    dataset = ROOT / "data" / "synthetic" / "career_feedback_dataset.jsonl"
+    if not dataset.is_file():
+        raise FileNotFoundError(f"Synthetic career dataset is missing: {dataset}. Run ml/src/build_synthetic_career_dataset.py first.")
+    pathways = [json.loads(line) for line in dataset.read_text(encoding="utf-8").splitlines() if line.strip()]
+    occupation_chunks = 0
+    for item in pathways:
+        fields = [
+            f"Career pathway: {item['occupation_title']} ({item['sector']}).",
+            f"Synthetic illustrative data: {item['limitations']}",
+            f"Overview: {item['role_summary']}",
+        ]
+        for label, key in (
+            ("Related courses", "related_courses"),
+            ("Requirements and qualification notes", "requirements_and_qualification_notes"),
+            ("Interest signals", "interest_signals"),
+            ("Skills", "skills"), ("Preferred activities", "preferred_activities"),
+            ("Example entry roles", "entry_level_roles"), ("Preparation ideas", "preparation_pathway"),
+            ("Projects and practice", "portfolio_or_practice_ideas"),
+            ("Application channel types", "application_channel_types"),
+            ("Sample interview questions", "sample_interview_questions"),
+            ("Example student questions", "example_student_queries"),
+            ("CV tailoring", "cv_tailoring_guidance"), ("Possible progression", "progression_options"),
+            ("Limitations", "limitations"),
+        ):
+            values = item[key]
+            fields.append(f"{label}: " + ("; ".join(values) if isinstance(values, list) else values))
+        fields.append(f"Local verification: {item['local_verification_note']}")
+        content = "\n".join(fields)
+        for index, segment in enumerate(_split_profile_text(content, max_chars=1500)):
             records.append({
-                "chunk_id": resource_id,
-                "resource_id": resource_id,
-                "title": f"{role} (KeSCO Kenya occupation)",
-                "content": context,
+                "chunk_id": f"synthetic_{item['record_id']}_{index}",
+                "resource_id": f"synthetic_{item['record_id']}",
+                "title": f"{item['occupation_title']} — {item['sector']} (illustrative)",
+                "content": segment,
             })
+            occupation_chunks += 1
+
+    # The wider career catalogue (ml/data/careers) is indexed alongside the pathway
+    # library when its tables have been generated. Without them this adds nothing.
+    from career_chunks import build_career_chunks
+    catalogue_records = build_career_chunks(ROOT / "data" / "careers")
+    records.extend(catalogue_records)
 
     CHUNKS.parent.mkdir(parents=True, exist_ok=True)
     CHUNKS.write_text(json.dumps(records, indent=2), encoding="utf-8")
@@ -114,10 +106,10 @@ def step_1_prepare_knowledge_base():
         model=embedder,
     )
     print(f"Cached {len(embeddings)} vectors.")
-    resource_chunks = sum(1 for r in records if not r["resource_id"].startswith(("onet_", "kesco_")))
-    onet_chunks = sum(1 for r in records if r["resource_id"].startswith("onet_"))
-    kesco_chunks = sum(1 for r in records if r["resource_id"].startswith("kesco_"))
-    print(f"Indexed {len(md_files)} written resources ({resource_chunks} chunks), {onet_chunks} O*NET occupation chunks, and {kesco_chunks} KeSCO Kenya occupation chunks.")
+    resource_chunks = sum(1 for r in records if not r["resource_id"].startswith(("synthetic_", "career_")))
+    print(f"Indexed {len(md_files)} written resources ({resource_chunks} chunks) and {occupation_chunks} synthetic pathway chunks.")
+    catalogue_roles = len({r["resource_id"] for r in catalogue_records})
+    print(f"Indexed {catalogue_roles} career catalogue roles ({len(catalogue_records)} chunks).")
     print(f"Saved to: {CHUNKS}\n")
     return records
 
@@ -177,6 +169,8 @@ def _split_profile_text(text, max_chars=700):
 
 def step_2_train_retriever():
     import pandas as pd
+    import random
+    import torch
     from torch.utils.data import DataLoader
     from sentence_transformers import SentenceTransformer, InputExample, losses
 
@@ -184,38 +178,58 @@ def step_2_train_retriever():
     print("STEP 2: Fine-tuning retriever model (all-MiniLM-L6-v2)...")
     print("=" * 60)
     df = pd.read_csv(QA)
-    train_df = df[df["split"] == "train"]
-    print(f"Loaded {len(train_df)} training question-passage pairs.")
+    random.seed(42)
+    torch.manual_seed(42)
+    authored_train = df[df["split"] == "train"]
+    examples = [InputExample(texts=[row.query, row.positive_passage])
+                for row in authored_train.itertuples(index=False)]
+    dataset = ROOT / "data" / "synthetic" / "career_feedback_dataset.jsonl"
+    pathway_pairs = 0
+    if dataset.is_file():
+        for line in dataset.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            path = json.loads(line)
+            passage = "\n".join([
+                f"Career pathway: {path['occupation_title']} ({path['sector']}).",
+                path["role_summary"], path["requirements_and_qualification_notes"],
+                "Skills: " + ", ".join(path["skills"]),
+                "Preparation: " + "; ".join(path["preparation_pathway"]),
+                "Practice: " + "; ".join(path["portfolio_or_practice_ideas"]),
+                "CV advice: " + path["cv_tailoring_guidance"],
+            ])
+            for query in path.get("example_student_queries", [])[:2]:
+                examples.append(InputExample(texts=[query, passage]))
+                pathway_pairs += 1
+    if len(examples) < 32:
+        raise ValueError("Retriever training needs at least 32 unique authored and pathway pairs; add reviewed examples first.")
+    print(f"Loaded {len(authored_train)} authored guide pairs and {pathway_pairs} balanced synthetic pathway pairs ({len(examples)} total).")
 
-    examples = [
-        InputExample(texts=[row.query, row.positive_passage])
-        for row in train_df.itertuples(index=False)
-    ]
-    loader = DataLoader(examples, shuffle=True, batch_size=4)
+    loader = DataLoader(examples, shuffle=True, batch_size=8)
 
-    print("Loading base SentenceTransformer('all-MiniLM-L6-v2')...")
-    model = SentenceTransformer("all-MiniLM-L6-v2")
+    print("Loading the locally cached base MiniLM model...")
+    model = load_cached_base_retriever()
     train_loss = losses.MultipleNegativesRankingLoss(model)
 
-    TRAINED_DIR.mkdir(parents=True, exist_ok=True)
-    print(f"Training for 4 epochs with MultipleNegativesRankingLoss...")
+    CANDIDATE_DIR.mkdir(parents=True, exist_ok=True)
+    print("Training for 2 epochs with MultipleNegativesRankingLoss; pathway examples are balanced at two per occupation.")
     model.fit(
         train_objectives=[(loader, train_loss)],
-        epochs=4,
+        epochs=2,
         warmup_steps=5,
         show_progress_bar=True,
-        output_path=str(TRAINED_DIR),
+        output_path=str(CANDIDATE_DIR),
     )
     chunks = json.loads(CHUNKS.read_text(encoding="utf-8"))
     load_or_create_embeddings(
         chunks,
         CHUNKS,
-        TRAINED_DIR,
-        ROOT / "data" / "processed" / "chunk_embeddings.npy",
-        ROOT / "data" / "processed" / "chunk_embeddings_manifest.json",
+        CANDIDATE_DIR,
+        ROOT / "data" / "processed" / "candidate_chunk_embeddings.npy",
+        ROOT / "data" / "processed" / "candidate_chunk_embeddings_manifest.json",
         model=model,
     )
-    print(f"Fine-tuned retriever successfully saved to: {TRAINED_DIR}\n")
+    print(f"Candidate retriever saved for review at: {CANDIDATE_DIR}\n")
     return model
 
 
@@ -230,32 +244,109 @@ def step_3_evaluate_retrieval():
     print("=" * 60)
     chunks = json.loads(CHUNKS.read_text(encoding="utf-8"))
     eval_df = pd.read_csv(QA).query("split == 'eval'")
+    evaluation_pairs = [(row.query, row.resource_id, "authored_guides") for row in eval_df.itertuples(index=False)]
+    real_eval_path = ROOT / "data" / "evaluation" / "student_queries_eval.csv"
+    real_eval_count = 0
+    if real_eval_path.is_file():
+        real_df = pd.read_csv(real_eval_path).fillna("")
+        required_columns = {
+            "query_id", "query", "expected_resource_id", "sector",
+            "consent_confirmed", "deidentified", "human_reviewed",
+        }
+        missing_columns = required_columns - set(real_df.columns)
+        if missing_columns:
+            raise ValueError(f"Real evaluation file is missing columns: {sorted(missing_columns)}")
+        known_resources = {chunk["resource_id"] for chunk in chunks}
+        accepted = {"true", "yes", "1"}
+        for row in real_df.itertuples(index=False):
+            if not all(str(getattr(row, key)).strip().casefold() in accepted
+                       for key in ("consent_confirmed", "deidentified", "human_reviewed")):
+                continue
+            query = str(row.query).strip()
+            target = str(row.expected_resource_id).strip()
+            if not query or not target:
+                continue
+            if target not in known_resources:
+                raise ValueError(f"Unknown expected_resource_id '{target}' in {real_eval_path}")
+            evaluation_pairs.append((query, target, "real_student_queries"))
+            real_eval_count += 1
+    synthetic_dataset = ROOT / "data" / "synthetic" / "career_feedback_dataset.jsonl"
+    if synthetic_dataset.is_file():
+        for line in synthetic_dataset.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            pathway = json.loads(line)
+            target = f"synthetic_{pathway['record_id']}"
+            evaluation_pairs.extend((query, target, "synthetic_pathways") for query in pathway.get("retrieval_eval_queries", []))
     corpus = [c["content"] for c in chunks]
     resource_ids = [c["resource_id"] for c in chunks]
 
-    def compute_recall_at_k(model, k):
+    def compute_ranking_metrics(model):
+        if not evaluation_pairs:
+            raise ValueError("qa_pairs.csv must contain at least one row with split='eval'.")
         doc_emb = model.encode(corpus, convert_to_numpy=True, normalize_embeddings=True)
-        hits = 0
-        for row in eval_df.itertuples(index=False):
-            q = model.encode([row.query], convert_to_numpy=True, normalize_embeddings=True)[0]
-            scores = doc_emb @ q
-            top = np.argsort(-scores)[:k]
-            retrieved = {resource_ids[i] for i in top}
-            if row.resource_id in retrieved:
-                hits += 1
-        return hits / len(eval_df)
+        chunks_by_resource = {}
+        for index, resource_id in enumerate(resource_ids):
+            chunks_by_resource.setdefault(resource_id, []).append(index)
+        grouped = {}
+        for query, target_resource, group in evaluation_pairs:
+            q = model.encode([query], convert_to_numpy=True, normalize_embeddings=True)[0]
+            # Rank distinct resources by their best matching chunk so a guide
+            # split into many chunks does not crowd other resources out.
+            scores = {
+                resource_id: float(np.max(doc_emb[indices] @ q))
+                for resource_id, indices in chunks_by_resource.items()
+            }
+            ranked_resources = sorted(scores, key=scores.get, reverse=True)
+            try:
+                rank = ranked_resources.index(target_resource) + 1
+            except ValueError:
+                rank = len(ranked_resources) + 1
+            values = grouped.setdefault(group, {
+                "count": 0,
+                "recall@1": 0.0,
+                "recall@3": 0.0,
+                "mrr": 0.0,
+                "ndcg@3": 0.0,
+            })
+            values["count"] += 1
+            values["recall@1"] += float(rank <= 1)
+            values["recall@3"] += float(rank <= 3)
+            values["mrr"] += 1.0 / rank
+            if rank <= 3:
+                gain = 1.0 / np.log2(rank + 1)
+                values["ndcg@3"] += gain
+        return {
+            group: {key: round(value / values["count"], 4) for key, value in values.items() if key != "count"}
+            | {"questions": values["count"]}
+            for group, values in grouped.items()
+        }
 
     print("Evaluating baseline 'all-MiniLM-L6-v2'...")
-    baseline = SentenceTransformer("all-MiniLM-L6-v2")
-    print(f"Evaluating fine-tuned model from '{TRAINED_DIR}'...")
-    trained = SentenceTransformer(str(TRAINED_DIR))
+    baseline = load_cached_base_retriever()
+    evaluation_model_path = CANDIDATE_DIR if CANDIDATE_DIR.is_dir() else TRAINED_DIR
+    print(f"Evaluating retriever from '{evaluation_model_path}'...")
+    trained = SentenceTransformer(str(evaluation_model_path))
 
+    baseline_metrics = compute_ranking_metrics(baseline)
+    candidate_metrics = compute_ranking_metrics(trained)
+    active = SentenceTransformer(str(TRAINED_DIR))
+    active_metrics = compute_ranking_metrics(active)
+    authored_count = sum(1 for _, _, group in evaluation_pairs if group == "authored_guides")
+    synthetic_count = sum(1 for _, _, group in evaluation_pairs if group == "synthetic_pathways")
     results = {
-        "baseline_recall@1": round(compute_recall_at_k(baseline, 1), 4),
-        "baseline_recall@3": round(compute_recall_at_k(baseline, 3), 4),
-        "trained_recall@1": round(compute_recall_at_k(trained, 1), 4),
-        "trained_recall@3": round(compute_recall_at_k(trained, 3), 4),
-        "eval_questions": int(len(eval_df)),
+        "baseline_metrics_by_group": baseline_metrics,
+        "candidate_metrics_by_group": candidate_metrics,
+        "active_metrics_by_group": active_metrics,
+        "authored_guide_questions": authored_count,
+        "real_student_questions": real_eval_count,
+        "synthetic_pathway_diagnostics": synthetic_count,
+        "total_queries": len(evaluation_pairs),
+        "eval_target_resources": int(len({target for _, target, _ in evaluation_pairs})),
+        "candidate_model_path": str(evaluation_model_path),
+        "candidate_selected_by_backend_when_present": True,
+        "metric_type": "Information-retrieval ranking diagnostics only; these are not model accuracy, career-fit accuracy, or job-outcome measures.",
+        "evaluation_scope_note": "Authored guide set has eight questions. Synthetic pathway checks are generated from the same synthetic records and measure indexing consistency only; they are not independent real-student evaluations. Collect consented, de-identified student queries and human relevance judgements before making quality claims.",
     }
 
     METRICS.parent.mkdir(parents=True, exist_ok=True)
@@ -263,29 +354,32 @@ def step_3_evaluate_retrieval():
     print("\n--- EVALUATION RESULTS ---")
     print(json.dumps(results, indent=2))
 
-    # Generate Chapter 5 comparison chart
-    labels = ["Recall@1", "Recall@3"]
-    x = np.arange(len(labels))
-    plt.figure(figsize=(7, 4.5))
-    bar1 = plt.bar(x - 0.18, [results["baseline_recall@1"], results["baseline_recall@3"]], 0.35, label="MiniLM Baseline", color="#4A90E2")
-    bar2 = plt.bar(x + 0.18, [results["trained_recall@1"], results["trained_recall@3"]], 0.35, label="Fine-Tuned Retriever", color="#2ECC71")
-
-    # Add values on top of bars
-    for bar in bar1:
-        height = bar.get_height()
-        plt.annotate(f"{height:.0%}", xy=(bar.get_x() + bar.get_width() / 2, height),
-                     xytext=(0, 3), textcoords="offset points", ha='center', va='bottom', fontweight='bold')
-    for bar in bar2:
-        height = bar.get_height()
-        plt.annotate(f"{height:.0%}", xy=(bar.get_x() + bar.get_width() / 2, height),
-                     xytext=(0, 3), textcoords="offset points", ha='center', va='bottom', fontweight='bold')
-
-    plt.xticks(x, labels, fontsize=11, fontweight='bold')
-    plt.ylim(0, 1.15)
-    plt.ylabel("Retrieval Score", fontsize=11)
-    plt.title("Career Knowledge-Base Retrieval: Baseline vs. Fine-Tuned", fontsize=12, fontweight='bold')
-    plt.legend(loc="upper left")
-    plt.grid(axis='y', linestyle='--', alpha=0.5)
+    # Compare ranking quality separately by query source. These are not accuracy scores.
+    group_labels = {
+        "authored_guides": f"Authored guides (n={authored_count})",
+        "real_student_queries": f"Reviewed student queries (n={real_eval_count})",
+        "synthetic_pathways": f"Synthetic diagnostics (n={synthetic_count})",
+    }
+    groups = [group for group in group_labels if group in baseline_metrics]
+    labels = [group_labels[group] for group in groups]
+    x = np.arange(len(groups))
+    plt.figure(figsize=(8, 4.8))
+    for metrics, label, color, offset in (
+        (baseline_metrics, "Base MiniLM", "#4A90E2", -0.24),
+        (active_metrics, "Previous retriever", "#F39C12", 0.0),
+        (candidate_metrics, "Balanced candidate", "#2ECC71", 0.24),
+    ):
+        values = [metrics[group]["mrr"] for group in groups]
+        bars = plt.bar(x + offset, values, 0.23, label=label, color=color)
+        for bar, value in zip(bars, values):
+            plt.annotate(f"{value:.2f}", xy=(bar.get_x() + bar.get_width() / 2, value),
+                         xytext=(0, 3), textcoords="offset points", ha='center', va='bottom', fontsize=8)
+    plt.xticks(x, labels, fontsize=9)
+    plt.ylim(0, 1.12)
+    plt.ylabel("Mean reciprocal rank (search position)")
+    plt.title("Retrieval ranking diagnostic — not career or model accuracy")
+    plt.legend(loc="lower right")
+    plt.grid(axis='y', linestyle='--', alpha=0.4)
     plt.tight_layout()
 
     chart_path = METRICS.with_suffix(".png")
@@ -328,7 +422,12 @@ def main():
     parser = argparse.ArgumentParser(description="Prepare or train the career knowledge retrieval pipeline.")
     parser.add_argument("--prepare-only", action="store_true",
                         help="Rebuild searchable chunks without training the retriever.")
+    parser.add_argument("--evaluate-only", action="store_true",
+                        help="Evaluate baseline, current, and candidate retrievers without training.")
     args = parser.parse_args()
+    if args.evaluate_only:
+        step_3_evaluate_retrieval()
+        return
     if args.prepare_only:
         step_1_prepare_knowledge_base()
         return

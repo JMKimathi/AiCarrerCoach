@@ -1,13 +1,4 @@
-"""Run the career-data preparation pipeline and optionally train its models.
-
-Examples:
-  python ml/src/run_career_pipeline.py --input-dir "C:/Users/Mwiti/Downloads/Datasets"
-  python ml/src/run_career_pipeline.py --input-dir "C:/Users/Mwiti/Downloads/Datasets" --train-classifier
-  python ml/src/run_career_pipeline.py --input-dir "C:/Users/Mwiti/Downloads/Datasets" --train-classifier --promote-model
-
-The job-market tables, O*NET occupation profiles, career classifier, and RAG
-retriever remain separate artifacts with separate evaluation purposes.
-"""
+"""Generate the synthetic pathway library and career catalogue, then prepare the searchable index."""
 
 import argparse
 import subprocess
@@ -18,6 +9,17 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[2]
 
 
+CATALOGUE_STEPS = [
+    ("Build the career catalogue and skills", "build_career_catalogue.py"),
+    ("Build education requirements and pathway stages", "build_career_pathways.py"),
+    ("Build CV templates", "build_cv_templates.py"),
+    ("Build the interview question bank", "build_interview_questions.py"),
+    ("Link official sources to careers", "build_career_resources.py"),
+    ("Build opportunity templates", "build_opportunities.py"),
+    ("Build the hybrid training data", "build_training_data.py"),
+]
+
+
 def run_step(label: str, command: list[str], cwd: Path) -> None:
     print(f"\n=== {label} ===", flush=True)
     subprocess.run(command, cwd=cwd, check=True)
@@ -25,38 +27,31 @@ def run_step(label: str, command: list[str], cwd: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--input-dir", type=Path, default=Path.home() / "Downloads" / "Datasets")
-    parser.add_argument("--skip-data-build", action="store_true")
-    parser.add_argument("--train-classifier", action="store_true",
-                        help="Train a new classifier from ml/data/tech_career_dataset.csv.")
-    parser.add_argument("--promote-model", action="store_true",
-                        help="Promote the trained classifier after saving versioned evaluation artifacts.")
+    parser.add_argument("--skip-data-build", action="store_true",
+                        help="Use the already generated synthetic dataset.")
+    parser.add_argument("--skip-catalogue-build", action="store_true",
+                        help="Use the already generated career catalogue tables in ml/data/careers.")
     parser.add_argument("--train-retriever", action="store_true",
                         help="Run the separate question-answer retrieval fine-tuning pipeline.")
     args = parser.parse_args()
 
-    if args.promote_model and not args.train_classifier:
-        parser.error("--promote-model requires --train-classifier")
-
     if not args.skip_data_build:
         run_step(
-            "Build normalized O*NET and LinkedIn-derived tables",
-            [sys.executable, str(ROOT_DIR / "ml" / "src" / "build_career_datasets.py"),
-             "--input-dir", str(args.input_dir)],
+            "Generate the unified synthetic career pathway dataset",
+            [sys.executable, str(ROOT_DIR / "ml" / "src" / "build_synthetic_career_dataset.py")],
             ROOT_DIR,
         )
 
+    if not args.skip_catalogue_build:
+        # Order matters: later builders read the role list from the catalogue builder.
+        for label, script in CATALOGUE_STEPS:
+            run_step(label, [sys.executable, str(ROOT_DIR / "ml" / "src" / script)], ROOT_DIR)
+
     run_step(
-        "Prepare searchable article and O*NET knowledge chunks",
+        "Prepare searchable article, pathway and career catalogue chunks",
         [sys.executable, str(ROOT_DIR / "ml" / "src" / "run_pipeline.py"), "--prepare-only"],
         ROOT_DIR,
     )
-
-    if args.train_classifier:
-        command = [sys.executable, str(ROOT_DIR / "ml" / "src" / "train_career_model.py")]
-        if args.promote_model:
-            command.append("--promote")
-        run_step("Train and evaluate versioned career-role classifier", command, ROOT_DIR)
 
     if args.train_retriever:
         run_step(
