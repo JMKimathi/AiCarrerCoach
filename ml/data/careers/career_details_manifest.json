@@ -1,0 +1,26 @@
+{
+  "careers": 452,
+  "title_rows": 12866,
+  "titles_per_career_min": 26,
+  "titles_per_career_max": 39,
+  "titles_by_type": {
+    "alternative": 354,
+    "specialism": 354,
+    "entry": 3133,
+    "progression": 1808,
+    "leadership": 2707,
+    "beyond": 2710,
+    "lateral": 1800
+  },
+  "task_rows": 2771,
+  "tool_rows": 2326,
+  "related_rows": 4517,
+  "careers_with_no_related_roles": 0,
+  "work_setting_rows": 4972,
+  "roles_with_authored_detail": 59,
+  "roles_using_category_defaults": 393,
+  "authored_roles_by_category": {
+    "Technology and Data": 30,
+    "Engineering and Built Environment": 29
+  }
+}
