@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from backend.app.config import settings
 from backend.app.database import seed_database, engine
 from backend.app.rag_engine import RAGEngine
-from backend.app.routers import auth, chat, resources, feedback, admin, career
+from backend.app.routers import auth, chat, resources, feedback, admin, career, careers
 
 
 @asynccontextmanager
@@ -53,6 +53,7 @@ app.include_router(resources.router, prefix=settings.API_PREFIX)
 app.include_router(feedback.router, prefix=settings.API_PREFIX)
 app.include_router(admin.router, prefix=settings.API_PREFIX)
 app.include_router(career.router, prefix=settings.API_PREFIX)
+app.include_router(careers.router, prefix=settings.API_PREFIX)
 
 
 @app.get("/")
