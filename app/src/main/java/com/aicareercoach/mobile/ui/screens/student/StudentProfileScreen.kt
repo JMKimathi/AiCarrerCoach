@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
@@ -44,7 +45,7 @@ fun StudentProfileScreen(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(BluePrimary)
+                .background(Brush.verticalGradient(listOf(BluePrimary, BluePrimaryDark)))
                 .padding(top = 36.dp, bottom = 28.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -66,8 +67,12 @@ fun StudentProfileScreen(
             Text(session.name, style = MaterialTheme.typography.titleLarge, color = Color.White)
             Text(session.email, style = MaterialTheme.typography.bodyMedium, color = Color.White.copy(alpha = 0.85f))
             Spacer(Modifier.height(6.dp))
-            Text(session.course, style = MaterialTheme.typography.bodySmall, color = Color.White.copy(alpha = 0.9f))
-            Text(session.careerGoal, style = MaterialTheme.typography.bodySmall, color = Color.White.copy(alpha = 0.9f))
+            if (session.course.isNotBlank()) {
+                Text(session.course, style = MaterialTheme.typography.bodySmall, color = Color.White.copy(alpha = 0.9f))
+            }
+            if (session.careerGoal.isNotBlank()) {
+                Text(session.careerGoal, style = MaterialTheme.typography.bodySmall, color = Color.White.copy(alpha = 0.9f))
+            }
         }
 
         Column(modifier = Modifier.padding(20.dp)) {
@@ -84,7 +89,7 @@ fun StudentProfileScreen(
             SectionCard {
                 ProfileRow(Icons.Default.Feedback, "Send Feedback", onOpenFeedback)
                 HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
-                ProfileRow(Icons.Default.Wifi, "Backend connection", onBackendSettings)
+                ProfileRow(Icons.Default.Wifi, "Connection settings", onBackendSettings)
                 HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
                 ProfileRow(Icons.Default.HelpOutline, "Help & Support", onOpenHelp)
                 HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))

@@ -84,7 +84,7 @@ fun LoginRegisterScreen(
         Text(
             when {
                 !isLoginMode -> "Create an account to explore careers, build your CV and practise interviews."
-                else -> "Log in to continue your career coaching journey."
+                else -> "Good to see you again. Log in to pick up where you left off."
             },
             style = MaterialTheme.typography.bodyMedium,
             color = TextSecondary
@@ -161,7 +161,7 @@ fun LoginRegisterScreen(
             modifier = Modifier.fillMaxWidth()
         )
         TextButton(onClick = onBackendSettings, modifier = Modifier.fillMaxWidth()) {
-            Text("Backend connection settings")
+            Text("Connection settings", style = MaterialTheme.typography.labelMedium, color = TextSecondary)
         }
         Spacer(Modifier.height(24.dp))
     }

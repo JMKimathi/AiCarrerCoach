@@ -11,6 +11,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -50,13 +51,21 @@ fun StudentDashboardScreen(
         .joinToString(" · ")
         .ifBlank { "Add your course and career goal so advice fits you." }
 
+    val greeting = remember {
+        when (java.util.Calendar.getInstance().get(java.util.Calendar.HOUR_OF_DAY)) {
+            in 5..11 -> "Good morning"
+            in 12..16 -> "Good afternoon"
+            else -> "Good evening"
+        }
+    }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
             .background(SurfaceAlt)
     ) {
         AppTopBar(
-            title = "Hi, ${session.firstName}",
+            title = "$greeting, ${session.firstName}",
             subtitle = "Let's get you ready for what's next",
             onProfileClick = onOpenProfile
         )
