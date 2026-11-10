@@ -1,0 +1,59 @@
+{
+  "chunks_sha256": "28e9d5e83e0b4782e330ee1e226143b83fba74cd17a4c1b0062befa0b6f2f071",
+  "model_files": [
+    {
+      "path": "1_Pooling\\config.json",
+      "size": 94,
+      "modified_ns": 1793594315035358500
+    },
+    {
+      "path": "2_Normalize\\config.json",
+      "size": 100,
+      "modified_ns": 1793594315043237500
+    },
+    {
+      "path": "config.json",
+      "size": 776,
+      "modified_ns": 1793594314789497600
+    },
+    {
+      "path": "config_sentence_transformers.json",
+      "size": 295,
+      "modified_ns": 1793594314768216800
+    },
+    {
+      "path": "model.safetensors",
+      "size": 90864192,
+      "modified_ns": 1793594314926959700
+    },
+    {
+      "path": "modules.json",
+      "size": 432,
+      "modified_ns": 1793594315045249700
+    },
+    {
+      "path": "README.md",
+      "size": 18366,
+      "modified_ns": 1793594316413423400
+    },
+    {
+      "path": "sentence_bert_config.json",
+      "size": 250,
+      "modified_ns": 1793594315005404900
+    },
+    {
+      "path": "tokenizer.json",
+      "size": 711649,
+      "modified_ns": 1793594314981785800
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 617,
+      "modified_ns": 1793594314953437000
+    }
+  ],
+  "shape": [
+    3684,
+    384
+  ]
+}

@@ -1,8 +1,8 @@
 {
-  "pipeline_version": "career-data-build-v1",
+  "pipeline_version": "career-data-build-v2",
   "input_directory": "C:\\Users\\Mwiti\\Downloads\\Datasets",
   "output_directory": "C:\\Users\\Mwiti\\Downloads\\AICareerCoach\\ml\\data\\processed\\derived",
-  "generated_at_utc": "2026-10-11T13:45:04.595381+00:00",
+  "generated_at_utc": "2026-11-02T04:00:20.099242+00:00",
   "source_files": {
     "essential_skills.csv": {
       "size_bytes": 2328135,
@@ -206,11 +206,24 @@
     "output": "linkedin_job_skill_demand.csv",
     "location_note": "Kenya count is a simple location-string heuristic (country name or common city names); review before using it as a market statistic."
   },
+  "career_catalogue": {
+    "output": "career_catalogue.jsonl",
+    "records": 6934,
+    "onet_records": 1016,
+    "kesco_records": 5918,
+    "unavailable_from_current_sources": [
+      "Kenyan licensing and professional registration requirements",
+      "verified application destinations and current vacancies",
+      "sector-specific interview questions and CV examples",
+      "student career-success labels"
+    ],
+    "mapping_policy": "O*NET and KeSCO records remain separately attributed unless a verified crosswalk is supplied."
+  },
   "not_included": [
     "job_descriptions.csv (separate global dataset; not merged)",
     "company and employee tables",
     "benefit and salary tables",
     "student profiles or assessment answers"
   ],
-  "interpretation": "KeSCO supplies Kenyan occupation titles and classification hierarchy, not current vacancy demand or student-fit labels. LinkedIn counts describe skills mentioned in postings. O*NET profiles describe U.S. occupational skill requirements, interests, activities, and preparation zones. None is a labeled student career-success dataset."
+  "interpretation": "career_catalogue.jsonl is a normalized search catalogue, not a synthetic student training set. KeSCO supplies Kenyan occupation titles and classification hierarchy, not current vacancy demand or student-fit labels. LinkedIn counts describe skills mentioned in postings. O*NET profiles describe U.S. occupational skill requirements, interests, activities, and preparation zones. None is a labeled student career-success dataset."
 }
