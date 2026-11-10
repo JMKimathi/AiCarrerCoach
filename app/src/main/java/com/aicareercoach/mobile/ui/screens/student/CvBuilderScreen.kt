@@ -1,6 +1,8 @@
 package com.aicareercoach.mobile.ui.screens.student
 
 import android.content.Intent
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
@@ -19,6 +21,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.unit.dp
 import com.aicareercoach.mobile.data.CvExperience
+import com.aicareercoach.mobile.data.CvPdfWriter
 import com.aicareercoach.mobile.data.CvProject
 import com.aicareercoach.mobile.data.CvRequest
 import com.aicareercoach.mobile.data.CvResult
@@ -82,6 +85,23 @@ fun CvBuilderScreen(
     val scope = rememberCoroutineScope()
     val clipboard = LocalClipboardManager.current
     val context = LocalContext.current
+    var saveMessage by remember { mutableStateOf<String?>(null) }
+    // Opens the phone's own "save file" screen, so no storage permission is needed.
+    val savePdf = rememberLauncherForActivityResult(
+        ActivityResultContracts.CreateDocument("application/pdf")
+    ) { uri ->
+        val cv = result
+        if (uri != null && cv != null) {
+            saveMessage = runCatching {
+                val stream = context.contentResolver.openOutputStream(uri)
+                    ?: throw IllegalStateException("The chosen location could not be opened.")
+                stream.use { CvPdfWriter.write(cv.markdown, it) }
+            }.fold(
+                onSuccess = { "Your CV was saved as a PDF." },
+                onFailure = { "The PDF could not be saved. Try again or choose another folder." }
+            )
+        }
+    }
 
     LaunchedEffect(session.token, careerId) {
         ApiClient.getCareerDetail(session.token, careerId)?.let { roleTitle = it.roleTitle }
@@ -224,6 +244,18 @@ fun CvBuilderScreen(
                     Text(current.note, style = MaterialTheme.typography.bodySmall, color = TextMuted)
                 }
                 PrimaryButton(
+                    text = "Download as PDF",
+                    onClick = {
+                        saveMessage = null
+                        val safeTitle = current.roleTitle.replace("/", "-").ifBlank { "My" }
+                        savePdf.launch("$safeTitle CV.pdf")
+                    }
+                )
+                val saved = saveMessage
+                if (saved != null) {
+                    Text(saved, style = MaterialTheme.typography.bodyMedium, color = TextSecondary)
+                }
+                SecondaryButton(
                     text = "Copy CV text",
                     onClick = { clipboard.setText(AnnotatedString(current.markdown)) }
                 )
