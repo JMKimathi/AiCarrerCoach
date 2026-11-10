@@ -28,6 +28,7 @@ object CvPdfWriter {
         val namePaint = textPaint(20f, true, Color.BLACK)
         val headingPaint = textPaint(13f, true, Color.rgb(37, 99, 235))
         val bodyPaint = textPaint(10.5f, false, Color.rgb(17, 24, 39))
+        val boldPaint = textPaint(10.5f, true, Color.rgb(17, 24, 39))
         val notePaint = textPaint(9f, false, Color.GRAY)
         val contentWidth = (PAGE_WIDTH - 2 * MARGIN).toInt()
 
@@ -65,6 +66,12 @@ object CvPdfWriter {
                     line.startsWith("> ") -> {
                         text = line.removePrefix("> ")
                         paint = notePaint
+                        spaceBefore = 6f
+                    }
+                    raw.trimStart().startsWith("**") -> {
+                        // Entry headings such as a job title or project name.
+                        text = line
+                        paint = boldPaint
                         spaceBefore = 6f
                     }
                     else -> {
