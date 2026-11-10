@@ -5,6 +5,7 @@ CAREER-001,Software Developer,issue trackers,authored,synthetic,true
 CAREER-001,Software Developer,CI pipelines,authored,synthetic,true
 CAREER-001,Software Developer,relational databases,authored,synthetic,true
 CAREER-001,Software Developer,REST APIs,authored,synthetic,true
+CAREER-001,Software Developer,Docker,authored,synthetic,true
 CAREER-002,Mobile Application Developer,Android Studio,authored,synthetic,true
 CAREER-002,Mobile Application Developer,Kotlin,authored,synthetic,true
 CAREER-002,Mobile Application Developer,Jetpack Compose,authored,synthetic,true
@@ -12,6 +13,7 @@ CAREER-002,Mobile Application Developer,Xcode and Swift,authored,synthetic,true
 CAREER-002,Mobile Application Developer,Flutter,authored,synthetic,true
 CAREER-002,Mobile Application Developer,Firebase,authored,synthetic,true
 CAREER-002,Mobile Application Developer,Git,authored,synthetic,true
+CAREER-002,Mobile Application Developer,Postman,authored,synthetic,true
 CAREER-003,Web Developer,HTML and CSS,authored,synthetic,true
 CAREER-003,Web Developer,JavaScript and TypeScript,authored,synthetic,true
 CAREER-003,Web Developer,React or Vue,authored,synthetic,true
@@ -19,12 +21,14 @@ CAREER-003,Web Developer,Node.js,authored,synthetic,true
 CAREER-003,Web Developer,browser developer tools,authored,synthetic,true
 CAREER-003,Web Developer,Git,authored,synthetic,true
 CAREER-003,Web Developer,WordPress,authored,synthetic,true
+CAREER-003,Web Developer,Figma for design handoff,authored,synthetic,true
 CAREER-004,Data Analyst,SQL,authored,synthetic,true
 CAREER-004,Data Analyst,Excel,authored,synthetic,true
 CAREER-004,Data Analyst,Power BI or Tableau,authored,synthetic,true
 CAREER-004,Data Analyst,Python or R,authored,synthetic,true
 CAREER-004,Data Analyst,Google Sheets,authored,synthetic,true
 CAREER-004,Data Analyst,survey tools,authored,synthetic,true
+CAREER-004,Data Analyst,DHIS2 or similar data platforms,authored,synthetic,true
 CAREER-005,Data Scientist,Python,authored,synthetic,true
 CAREER-005,Data Scientist,pandas and scikit-learn,authored,synthetic,true
 CAREER-005,Data Scientist,Jupyter notebooks,authored,synthetic,true
@@ -32,6 +36,7 @@ CAREER-005,Data Scientist,SQL,authored,synthetic,true
 CAREER-005,Data Scientist,statistical methods,authored,synthetic,true
 CAREER-005,Data Scientist,Git,authored,synthetic,true
 CAREER-005,Data Scientist,cloud notebooks,authored,synthetic,true
+CAREER-005,Data Scientist,Power BI or Tableau,authored,synthetic,true
 CAREER-006,Machine Learning Engineer,Python,authored,synthetic,true
 CAREER-006,Machine Learning Engineer,PyTorch or TensorFlow,authored,synthetic,true
 CAREER-006,Machine Learning Engineer,Docker,authored,synthetic,true
@@ -39,6 +44,7 @@ CAREER-006,Machine Learning Engineer,cloud ML services,authored,synthetic,true
 CAREER-006,Machine Learning Engineer,experiment trackers,authored,synthetic,true
 CAREER-006,Machine Learning Engineer,Git,authored,synthetic,true
 CAREER-006,Machine Learning Engineer,REST APIs,authored,synthetic,true
+CAREER-006,Machine Learning Engineer,vector databases,authored,synthetic,true
 CAREER-007,Data Engineer,SQL,authored,synthetic,true
 CAREER-007,Data Engineer,Python,authored,synthetic,true
 CAREER-007,Data Engineer,Airflow or similar schedulers,authored,synthetic,true
@@ -46,12 +52,14 @@ CAREER-007,Data Engineer,cloud data warehouses,authored,synthetic,true
 CAREER-007,Data Engineer,Spark,authored,synthetic,true
 CAREER-007,Data Engineer,dbt,authored,synthetic,true
 CAREER-007,Data Engineer,Git,authored,synthetic,true
+CAREER-007,Data Engineer,Kafka,authored,synthetic,true
 CAREER-008,Cloud Engineer,"AWS, Azure or Google Cloud",authored,synthetic,true
 CAREER-008,Cloud Engineer,Terraform,authored,synthetic,true
 CAREER-008,Cloud Engineer,Linux,authored,synthetic,true
 CAREER-008,Cloud Engineer,Docker and Kubernetes,authored,synthetic,true
 CAREER-008,Cloud Engineer,monitoring tools,authored,synthetic,true
 CAREER-008,Cloud Engineer,scripting in Bash or Python,authored,synthetic,true
+CAREER-008,Cloud Engineer,cloud cost dashboards,authored,synthetic,true
 CAREER-009,DevOps Engineer,Git,authored,synthetic,true
 CAREER-009,DevOps Engineer,Jenkins or GitHub Actions,authored,synthetic,true
 CAREER-009,DevOps Engineer,Docker,authored,synthetic,true
@@ -59,18 +67,21 @@ CAREER-009,DevOps Engineer,Kubernetes,authored,synthetic,true
 CAREER-009,DevOps Engineer,Terraform or Ansible,authored,synthetic,true
 CAREER-009,DevOps Engineer,Linux,authored,synthetic,true
 CAREER-009,DevOps Engineer,Prometheus and Grafana,authored,synthetic,true
+CAREER-009,DevOps Engineer,secrets management tools such as Vault,authored,synthetic,true
 CAREER-010,Cybersecurity Analyst,SIEM platforms,authored,synthetic,true
 CAREER-010,Cybersecurity Analyst,vulnerability scanners,authored,synthetic,true
 CAREER-010,Cybersecurity Analyst,Wireshark,authored,synthetic,true
 CAREER-010,Cybersecurity Analyst,endpoint protection tools,authored,synthetic,true
 CAREER-010,Cybersecurity Analyst,Linux,authored,synthetic,true
 CAREER-010,Cybersecurity Analyst,ticketing systems,authored,synthetic,true
+CAREER-010,Cybersecurity Analyst,threat intelligence feeds,authored,synthetic,true
 CAREER-011,Network Engineer,Cisco IOS,authored,synthetic,true
 CAREER-011,Network Engineer,routers and switches,authored,synthetic,true
 CAREER-011,Network Engineer,firewalls,authored,synthetic,true
 CAREER-011,Network Engineer,Wireshark,authored,synthetic,true
 CAREER-011,Network Engineer,network monitoring tools,authored,synthetic,true
 CAREER-011,Network Engineer,cabling testers,authored,synthetic,true
+CAREER-011,Network Engineer,network automation with Python or Ansible,authored,synthetic,true
 CAREER-012,Database Administrator,PostgreSQL,authored,synthetic,true
 CAREER-012,Database Administrator,MySQL,authored,synthetic,true
 CAREER-012,Database Administrator,SQL Server or Oracle,authored,synthetic,true
@@ -78,780 +89,910 @@ CAREER-012,Database Administrator,backup tools,authored,synthetic,true
 CAREER-012,Database Administrator,monitoring dashboards,authored,synthetic,true
 CAREER-012,Database Administrator,SQL,authored,synthetic,true
 CAREER-012,Database Administrator,shell scripting,authored,synthetic,true
+CAREER-012,Database Administrator,MongoDB or other NoSQL databases,authored,synthetic,true
 CAREER-013,UI/UX Designer,Figma,authored,synthetic,true
 CAREER-013,UI/UX Designer,prototyping tools,authored,synthetic,true
 CAREER-013,UI/UX Designer,user testing tools,authored,synthetic,true
 CAREER-013,UI/UX Designer,whiteboarding tools,authored,synthetic,true
 CAREER-013,UI/UX Designer,design systems,authored,synthetic,true
 CAREER-013,UI/UX Designer,basic HTML and CSS,authored,synthetic,true
+CAREER-013,UI/UX Designer,Adobe Illustrator and Photoshop,authored,synthetic,true
 CAREER-014,Quality Assurance Engineer,test management tools,authored,synthetic,true
 CAREER-014,Quality Assurance Engineer,Selenium or Playwright,authored,synthetic,true
 CAREER-014,Quality Assurance Engineer,Postman,authored,synthetic,true
 CAREER-014,Quality Assurance Engineer,issue trackers,authored,synthetic,true
 CAREER-014,Quality Assurance Engineer,Git,authored,synthetic,true
 CAREER-014,Quality Assurance Engineer,device emulators,authored,synthetic,true
+CAREER-014,Quality Assurance Engineer,load testing tools such as JMeter,authored,synthetic,true
 CAREER-015,IT Support Specialist,ticketing systems,authored,synthetic,true
 CAREER-015,IT Support Specialist,Windows and Microsoft 365,authored,synthetic,true
 CAREER-015,IT Support Specialist,remote support tools,authored,synthetic,true
 CAREER-015,IT Support Specialist,Active Directory,authored,synthetic,true
 CAREER-015,IT Support Specialist,basic networking tools,authored,synthetic,true
 CAREER-015,IT Support Specialist,hardware toolkits,authored,synthetic,true
+CAREER-015,IT Support Specialist,antivirus and backup tools,authored,synthetic,true
 CAREER-016,Systems Analyst,process modelling tools,authored,synthetic,true
 CAREER-016,Systems Analyst,UML,authored,synthetic,true
 CAREER-016,Systems Analyst,spreadsheets,authored,synthetic,true
 CAREER-016,Systems Analyst,SQL,authored,synthetic,true
 CAREER-016,Systems Analyst,requirements trackers,authored,synthetic,true
 CAREER-016,Systems Analyst,presentation tools,authored,synthetic,true
+CAREER-016,Systems Analyst,wireframing tools,authored,synthetic,true
 CAREER-017,Embedded Systems Engineer,C and C++,authored,synthetic,true
 CAREER-017,Embedded Systems Engineer,microcontrollers such as STM32 or ESP32,authored,synthetic,true
 CAREER-017,Embedded Systems Engineer,oscilloscopes and multimeters,authored,synthetic,true
 CAREER-017,Embedded Systems Engineer,debuggers,authored,synthetic,true
 CAREER-017,Embedded Systems Engineer,Arduino and Raspberry Pi,authored,synthetic,true
 CAREER-017,Embedded Systems Engineer,Git,authored,synthetic,true
+CAREER-017,Embedded Systems Engineer,logic analysers,authored,synthetic,true
 CAREER-018,Technology Product Manager,roadmapping tools,authored,synthetic,true
 CAREER-018,Technology Product Manager,analytics dashboards,authored,synthetic,true
 CAREER-018,Technology Product Manager,issue trackers,authored,synthetic,true
 CAREER-018,Technology Product Manager,prototyping tools,authored,synthetic,true
 CAREER-018,Technology Product Manager,spreadsheets,authored,synthetic,true
 CAREER-018,Technology Product Manager,user research tools,authored,synthetic,true
+CAREER-018,Technology Product Manager,SQL for product data,authored,synthetic,true
 CAREER-019,Civil Engineer,AutoCAD,authored,synthetic,true
 CAREER-019,Civil Engineer,Civil 3D,authored,synthetic,true
 CAREER-019,Civil Engineer,surveying equipment,authored,synthetic,true
 CAREER-019,Civil Engineer,structural analysis software,authored,synthetic,true
 CAREER-019,Civil Engineer,project scheduling tools,authored,synthetic,true
 CAREER-019,Civil Engineer,spreadsheets,authored,synthetic,true
+CAREER-019,Civil Engineer,materials testing equipment,authored,synthetic,true
 CAREER-020,Structural Engineer,structural analysis software such as ETABS or Prokon,authored,synthetic,true
 CAREER-020,Structural Engineer,AutoCAD,authored,synthetic,true
 CAREER-020,Structural Engineer,Revit,authored,synthetic,true
 CAREER-020,Structural Engineer,spreadsheets,authored,synthetic,true
 CAREER-020,Structural Engineer,design codes,authored,synthetic,true
 CAREER-020,Structural Engineer,site testing equipment,authored,synthetic,true
+CAREER-020,Structural Engineer,Tekla Structures,authored,synthetic,true
 CAREER-021,Mechanical Engineer,SolidWorks or AutoCAD,authored,synthetic,true
 CAREER-021,Mechanical Engineer,maintenance management systems,authored,synthetic,true
 CAREER-021,Mechanical Engineer,measuring instruments,authored,synthetic,true
 CAREER-021,Mechanical Engineer,simulation tools,authored,synthetic,true
 CAREER-021,Mechanical Engineer,spreadsheets,authored,synthetic,true
 CAREER-021,Mechanical Engineer,workshop tools,authored,synthetic,true
+CAREER-021,Mechanical Engineer,vibration analysers,authored,synthetic,true
 CAREER-022,Electrical Engineer,AutoCAD Electrical,authored,synthetic,true
 CAREER-022,Electrical Engineer,power system software such as ETAP,authored,synthetic,true
 CAREER-022,Electrical Engineer,multimeters and testers,authored,synthetic,true
 CAREER-022,Electrical Engineer,PLC software,authored,synthetic,true
 CAREER-022,Electrical Engineer,spreadsheets,authored,synthetic,true
 CAREER-022,Electrical Engineer,wiring regulations,authored,synthetic,true
+CAREER-022,Electrical Engineer,power quality analysers,authored,synthetic,true
 CAREER-023,Electronics and Telecommunications Engineer,spectrum analysers,authored,synthetic,true
 CAREER-023,Electronics and Telecommunications Engineer,network planning tools,authored,synthetic,true
 CAREER-023,Electronics and Telecommunications Engineer,oscilloscopes,authored,synthetic,true
 CAREER-023,Electronics and Telecommunications Engineer,fibre testers,authored,synthetic,true
 CAREER-023,Electronics and Telecommunications Engineer,circuit design software,authored,synthetic,true
 CAREER-023,Electronics and Telecommunications Engineer,vendor management systems,authored,synthetic,true
+CAREER-023,Electronics and Telecommunications Engineer,soldering and rework stations,authored,synthetic,true
 CAREER-024,Mechatronics Engineer,PLC programming software,authored,synthetic,true
 CAREER-024,Mechatronics Engineer,SCADA,authored,synthetic,true
 CAREER-024,Mechatronics Engineer,SolidWorks,authored,synthetic,true
 CAREER-024,Mechatronics Engineer,microcontrollers,authored,synthetic,true
 CAREER-024,Mechatronics Engineer,sensors and actuators,authored,synthetic,true
 CAREER-024,Mechatronics Engineer,MATLAB,authored,synthetic,true
+CAREER-024,Mechatronics Engineer,pneumatic and hydraulic systems,authored,synthetic,true
 CAREER-025,Chemical Engineer,process simulation software such as Aspen,authored,synthetic,true
 CAREER-025,Chemical Engineer,control systems,authored,synthetic,true
 CAREER-025,Chemical Engineer,laboratory instruments,authored,synthetic,true
 CAREER-025,Chemical Engineer,spreadsheets,authored,synthetic,true
 CAREER-025,Chemical Engineer,P&ID drawings,authored,synthetic,true
 CAREER-025,Chemical Engineer,safety analysis methods,authored,synthetic,true
+CAREER-025,Chemical Engineer,"flow, pressure and temperature instruments",authored,synthetic,true
 CAREER-026,Architect,AutoCAD,authored,synthetic,true
 CAREER-026,Architect,Revit or ArchiCAD,authored,synthetic,true
 CAREER-026,Architect,SketchUp,authored,synthetic,true
 CAREER-026,Architect,rendering software,authored,synthetic,true
 CAREER-026,Architect,Adobe tools,authored,synthetic,true
 CAREER-026,Architect,building regulations,authored,synthetic,true
+CAREER-026,Architect,Lumion or Enscape,authored,synthetic,true
 CAREER-027,Quantity Surveyor,measurement software,authored,synthetic,true
 CAREER-027,Quantity Surveyor,spreadsheets,authored,synthetic,true
 CAREER-027,Quantity Surveyor,AutoCAD,authored,synthetic,true
 CAREER-027,Quantity Surveyor,cost databases,authored,synthetic,true
 CAREER-027,Quantity Surveyor,contract forms,authored,synthetic,true
 CAREER-027,Quantity Surveyor,project management tools,authored,synthetic,true
+CAREER-027,Quantity Surveyor,CostX or similar estimating software,authored,synthetic,true
 CAREER-028,Land Surveyor,total stations,authored,synthetic,true
 CAREER-028,Land Surveyor,GNSS receivers,authored,synthetic,true
 CAREER-028,Land Surveyor,levels,authored,synthetic,true
 CAREER-028,Land Surveyor,drones,authored,synthetic,true
 CAREER-028,Land Surveyor,AutoCAD Civil 3D,authored,synthetic,true
 CAREER-028,Land Surveyor,GIS software,authored,synthetic,true
+CAREER-028,Land Surveyor,survey processing software,authored,synthetic,true
 CAREER-029,Urban and Regional Planner,GIS software,authored,synthetic,true
 CAREER-029,Urban and Regional Planner,AutoCAD,authored,synthetic,true
 CAREER-029,Urban and Regional Planner,planning regulations,authored,synthetic,true
 CAREER-029,Urban and Regional Planner,survey and census data,authored,synthetic,true
 CAREER-029,Urban and Regional Planner,presentation tools,authored,synthetic,true
 CAREER-029,Urban and Regional Planner,consultation methods,authored,synthetic,true
+CAREER-029,Urban and Regional Planner,satellite imagery,authored,synthetic,true
 CAREER-030,Construction Project Manager,MS Project or Primavera,authored,synthetic,true
 CAREER-030,Construction Project Manager,spreadsheets,authored,synthetic,true
 CAREER-030,Construction Project Manager,drawings and BIM viewers,authored,synthetic,true
 CAREER-030,Construction Project Manager,contract forms,authored,synthetic,true
 CAREER-030,Construction Project Manager,site reporting tools,authored,synthetic,true
 CAREER-030,Construction Project Manager,safety management systems,authored,synthetic,true
+CAREER-030,Construction Project Manager,cost reports,authored,synthetic,true
 CAREER-031,Geospatial and GIS Specialist,QGIS,authored,synthetic,true
 CAREER-031,Geospatial and GIS Specialist,ArcGIS,authored,synthetic,true
 CAREER-031,Geospatial and GIS Specialist,Google Earth Engine,authored,synthetic,true
 CAREER-031,Geospatial and GIS Specialist,PostGIS,authored,synthetic,true
 CAREER-031,Geospatial and GIS Specialist,GPS devices,authored,synthetic,true
 CAREER-031,Geospatial and GIS Specialist,Python,authored,synthetic,true
+CAREER-031,Geospatial and GIS Specialist,mobile data collection apps such as KoboToolbox,authored,synthetic,true
 CAREER-032,Water and Sanitation Engineer,EPANET,authored,synthetic,true
 CAREER-032,Water and Sanitation Engineer,AutoCAD,authored,synthetic,true
 CAREER-032,Water and Sanitation Engineer,Civil 3D,authored,synthetic,true
 CAREER-032,Water and Sanitation Engineer,water quality testing kits,authored,synthetic,true
 CAREER-032,Water and Sanitation Engineer,GIS software,authored,synthetic,true
 CAREER-032,Water and Sanitation Engineer,spreadsheets,authored,synthetic,true
+CAREER-032,Water and Sanitation Engineer,flow meters and pressure loggers,authored,synthetic,true
 CAREER-033,Biomedical Engineer,electrical safety analysers,authored,synthetic,true
 CAREER-033,Biomedical Engineer,multimeters and oscilloscopes,authored,synthetic,true
 CAREER-033,Biomedical Engineer,calibration equipment,authored,synthetic,true
 CAREER-033,Biomedical Engineer,maintenance management systems,authored,synthetic,true
 CAREER-033,Biomedical Engineer,service manuals,authored,synthetic,true
 CAREER-033,Biomedical Engineer,hand tools,authored,synthetic,true
+CAREER-033,Biomedical Engineer,patient simulators and test devices,authored,synthetic,true
 CAREER-034,Industrial Engineer,process mapping tools,authored,synthetic,true
 CAREER-034,Industrial Engineer,spreadsheets,authored,synthetic,true
 CAREER-034,Industrial Engineer,simulation software,authored,synthetic,true
 CAREER-034,Industrial Engineer,statistical tools such as Minitab,authored,synthetic,true
 CAREER-034,Industrial Engineer,ERP systems,authored,synthetic,true
 CAREER-034,Industrial Engineer,time study tools,authored,synthetic,true
+CAREER-034,Industrial Engineer,Power BI,authored,synthetic,true
 CAREER-035,Building Services Engineer,AutoCAD MEP,authored,synthetic,true
 CAREER-035,Building Services Engineer,Revit,authored,synthetic,true
 CAREER-035,Building Services Engineer,load calculation software,authored,synthetic,true
 CAREER-035,Building Services Engineer,lighting design software,authored,synthetic,true
 CAREER-035,Building Services Engineer,spreadsheets,authored,synthetic,true
 CAREER-035,Building Services Engineer,building codes,authored,synthetic,true
+CAREER-035,Building Services Engineer,building management systems,authored,synthetic,true
 CAREER-036,Environmental Engineer,sampling and monitoring equipment,authored,synthetic,true
 CAREER-036,Environmental Engineer,GIS software,authored,synthetic,true
 CAREER-036,Environmental Engineer,AutoCAD,authored,synthetic,true
 CAREER-036,Environmental Engineer,modelling tools,authored,synthetic,true
 CAREER-036,Environmental Engineer,environmental regulations,authored,synthetic,true
 CAREER-036,Environmental Engineer,spreadsheets,authored,synthetic,true
+CAREER-036,Environmental Engineer,laboratory analysers,authored,synthetic,true
 CAREER-037,Medical Doctor,stethoscope and diagnostic sets,authored,synthetic,true
 CAREER-037,Medical Doctor,electronic medical records,authored,synthetic,true
 CAREER-037,Medical Doctor,clinical guidelines and formularies,authored,synthetic,true
 CAREER-037,Medical Doctor,ECG machines,authored,synthetic,true
 CAREER-037,Medical Doctor,point-of-care test kits,authored,synthetic,true
 CAREER-037,Medical Doctor,drug reference apps,authored,synthetic,true
+CAREER-037,Medical Doctor,ultrasound for bedside assessment,authored,synthetic,true
 CAREER-038,Clinical Officer,diagnostic sets,authored,synthetic,true
 CAREER-038,Clinical Officer,electronic medical records,authored,synthetic,true
 CAREER-038,Clinical Officer,national treatment guidelines,authored,synthetic,true
 CAREER-038,Clinical Officer,rapid test kits,authored,synthetic,true
 CAREER-038,Clinical Officer,minor theatre instruments,authored,synthetic,true
 CAREER-038,Clinical Officer,patient registers,authored,synthetic,true
+CAREER-038,Clinical Officer,pulse oximeters,authored,synthetic,true
 CAREER-039,Registered Nurse,vital signs monitors,authored,synthetic,true
 CAREER-039,Registered Nurse,infusion pumps,authored,synthetic,true
 CAREER-039,Registered Nurse,medication charts,authored,synthetic,true
 CAREER-039,Registered Nurse,nursing care plans,authored,synthetic,true
 CAREER-039,Registered Nurse,electronic medical records,authored,synthetic,true
 CAREER-039,Registered Nurse,glucometers,authored,synthetic,true
+CAREER-039,Registered Nurse,pulse oximeters,authored,synthetic,true
 CAREER-040,Pharmacist,pharmacy dispensing software,authored,synthetic,true
 CAREER-040,Pharmacist,drug formularies,authored,synthetic,true
 CAREER-040,Pharmacist,interaction checkers,authored,synthetic,true
 CAREER-040,Pharmacist,stock management systems,authored,synthetic,true
 CAREER-040,Pharmacist,cold-chain equipment,authored,synthetic,true
 CAREER-040,Pharmacist,compounding equipment,authored,synthetic,true
+CAREER-040,Pharmacist,antimicrobial stewardship guidelines,authored,synthetic,true
 CAREER-041,Dentist,dental chair and handpieces,authored,synthetic,true
 CAREER-041,Dentist,dental X-ray units,authored,synthetic,true
 CAREER-041,Dentist,sterilisation autoclaves,authored,synthetic,true
 CAREER-041,Dentist,restorative materials,authored,synthetic,true
 CAREER-041,Dentist,dental practice software,authored,synthetic,true
 CAREER-041,Dentist,hand instruments,authored,synthetic,true
+CAREER-041,Dentist,intraoral cameras and scanners,authored,synthetic,true
 CAREER-042,Medical Laboratory Technologist,microscopes,authored,synthetic,true
 CAREER-042,Medical Laboratory Technologist,haematology and chemistry analysers,authored,synthetic,true
 CAREER-042,Medical Laboratory Technologist,centrifuges,authored,synthetic,true
 CAREER-042,Medical Laboratory Technologist,laboratory information systems,authored,synthetic,true
 CAREER-042,Medical Laboratory Technologist,biosafety cabinets,authored,synthetic,true
 CAREER-042,Medical Laboratory Technologist,rapid diagnostic kits,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,GeneXpert and PCR platforms,authored,synthetic,true
 CAREER-043,Radiographer,X-ray machines,authored,synthetic,true
 CAREER-043,Radiographer,CT and MRI scanners,authored,synthetic,true
 CAREER-043,Radiographer,ultrasound machines,authored,synthetic,true
 CAREER-043,Radiographer,PACS imaging systems,authored,synthetic,true
 CAREER-043,Radiographer,radiation dosimeters,authored,synthetic,true
 CAREER-043,Radiographer,lead protective equipment,authored,synthetic,true
+CAREER-043,Radiographer,contrast injectors,authored,synthetic,true
 CAREER-044,Physiotherapist,exercise equipment,authored,synthetic,true
 CAREER-044,Physiotherapist,electrotherapy machines,authored,synthetic,true
 CAREER-044,Physiotherapist,goniometers,authored,synthetic,true
 CAREER-044,Physiotherapist,treatment plinths,authored,synthetic,true
 CAREER-044,Physiotherapist,walking aids,authored,synthetic,true
 CAREER-044,Physiotherapist,outcome measurement scales,authored,synthetic,true
+CAREER-044,Physiotherapist,therapeutic ultrasound,authored,synthetic,true
 CAREER-045,Nutritionist and Dietitian,anthropometric equipment,authored,synthetic,true
 CAREER-045,Nutritionist and Dietitian,growth charts,authored,synthetic,true
 CAREER-045,Nutritionist and Dietitian,food composition tables,authored,synthetic,true
 CAREER-045,Nutritionist and Dietitian,diet analysis software,authored,synthetic,true
 CAREER-045,Nutritionist and Dietitian,MUAC tapes,authored,synthetic,true
 CAREER-045,Nutritionist and Dietitian,nutrition counselling guides,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,body composition analysers,authored,synthetic,true
 CAREER-046,Occupational Therapist,splinting materials,authored,synthetic,true
 CAREER-046,Occupational Therapist,assistive devices,authored,synthetic,true
 CAREER-046,Occupational Therapist,standardised assessments,authored,synthetic,true
 CAREER-046,Occupational Therapist,therapy play equipment,authored,synthetic,true
 CAREER-046,Occupational Therapist,adaptive tools,authored,synthetic,true
 CAREER-046,Occupational Therapist,activity analysis forms,authored,synthetic,true
+CAREER-046,Occupational Therapist,sensory integration equipment,authored,synthetic,true
 CAREER-047,Psychologist,psychometric tests,authored,synthetic,true
 CAREER-047,Psychologist,therapy manuals such as CBT workbooks,authored,synthetic,true
 CAREER-047,Psychologist,case-note systems,authored,synthetic,true
 CAREER-047,Psychologist,screening questionnaires,authored,synthetic,true
 CAREER-047,Psychologist,teletherapy platforms,authored,synthetic,true
 CAREER-047,Psychologist,outcome rating scales,authored,synthetic,true
+CAREER-047,Psychologist,diagnostic manuals such as the DSM-5,authored,synthetic,true
 CAREER-048,Public Health Officer,inspection checklists,authored,synthetic,true
 CAREER-048,Public Health Officer,water testing kits,authored,synthetic,true
 CAREER-048,Public Health Officer,public health law and regulations,authored,synthetic,true
 CAREER-048,Public Health Officer,DHIS2 reporting,authored,synthetic,true
 CAREER-048,Public Health Officer,GPS and mapping tools,authored,synthetic,true
 CAREER-048,Public Health Officer,sampling equipment,authored,synthetic,true
+CAREER-048,Public Health Officer,fumigation and spraying equipment,authored,synthetic,true
 CAREER-049,Epidemiologist,R or Stata,authored,synthetic,true
 CAREER-049,Epidemiologist,Epi Info,authored,synthetic,true
 CAREER-049,Epidemiologist,DHIS2,authored,synthetic,true
 CAREER-049,Epidemiologist,GIS mapping software,authored,synthetic,true
 CAREER-049,Epidemiologist,survey tools such as KoboToolbox,authored,synthetic,true
 CAREER-049,Epidemiologist,Excel,authored,synthetic,true
+CAREER-049,Epidemiologist,Python,authored,synthetic,true
 CAREER-050,Health Records and Information Officer,electronic medical records,authored,synthetic,true
 CAREER-050,Health Records and Information Officer,DHIS2,authored,synthetic,true
 CAREER-050,Health Records and Information Officer,ICD coding manuals,authored,synthetic,true
 CAREER-050,Health Records and Information Officer,Excel,authored,synthetic,true
 CAREER-050,Health Records and Information Officer,filing and tracking systems,authored,synthetic,true
 CAREER-050,Health Records and Information Officer,patient registers,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,master patient indexes,authored,synthetic,true
 CAREER-051,Health Informatics Specialist,OpenMRS or similar EMRs,authored,synthetic,true
 CAREER-051,Health Informatics Specialist,DHIS2,authored,synthetic,true
 CAREER-051,Health Informatics Specialist,SQL,authored,synthetic,true
 CAREER-051,Health Informatics Specialist,HL7 and FHIR standards,authored,synthetic,true
 CAREER-051,Health Informatics Specialist,Power BI or Tableau,authored,synthetic,true
 CAREER-051,Health Informatics Specialist,Excel,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Python or R,authored,synthetic,true
 CAREER-052,Biomedical Scientist,PCR machines,authored,synthetic,true
 CAREER-052,Biomedical Scientist,ELISA readers,authored,synthetic,true
 CAREER-052,Biomedical Scientist,microscopes,authored,synthetic,true
 CAREER-052,Biomedical Scientist,flow cytometers,authored,synthetic,true
 CAREER-052,Biomedical Scientist,R or GraphPad,authored,synthetic,true
 CAREER-052,Biomedical Scientist,laboratory notebooks,authored,synthetic,true
+CAREER-052,Biomedical Scientist,DNA sequencers,authored,synthetic,true
 CAREER-053,Health Services Manager,hospital management systems,authored,synthetic,true
 CAREER-053,Health Services Manager,Excel,authored,synthetic,true
 CAREER-053,Health Services Manager,DHIS2,authored,synthetic,true
 CAREER-053,Health Services Manager,budgeting tools,authored,synthetic,true
 CAREER-053,Health Services Manager,quality improvement frameworks,authored,synthetic,true
 CAREER-053,Health Services Manager,HR and payroll systems,authored,synthetic,true
+CAREER-053,Health Services Manager,electronic medical records,authored,synthetic,true
 CAREER-054,Community Health Promoter,household registers,authored,synthetic,true
 CAREER-054,Community Health Promoter,MUAC tapes,authored,synthetic,true
 CAREER-054,Community Health Promoter,mobile reporting apps such as eCHIS,authored,synthetic,true
 CAREER-054,Community Health Promoter,referral forms,authored,synthetic,true
 CAREER-054,Community Health Promoter,health education flipcharts,authored,synthetic,true
 CAREER-054,Community Health Promoter,basic first-aid kits,authored,synthetic,true
+CAREER-054,Community Health Promoter,blood pressure machines,authored,synthetic,true
 CAREER-055,Accountant,accounting software such as QuickBooks or Sage,authored,synthetic,true
 CAREER-055,Accountant,ERP systems such as SAP,authored,synthetic,true
 CAREER-055,Accountant,Excel,authored,synthetic,true
 CAREER-055,Accountant,bank portals,authored,synthetic,true
 CAREER-055,Accountant,tax filing portals such as iTax,authored,synthetic,true
 CAREER-055,Accountant,IFRS standards,authored,synthetic,true
+CAREER-055,Accountant,Power BI,authored,synthetic,true
 CAREER-056,Auditor,audit software such as CaseWare or TeamMate,authored,synthetic,true
 CAREER-056,Auditor,Excel,authored,synthetic,true
 CAREER-056,Auditor,data analytics tools such as IDEA or ACL,authored,synthetic,true
 CAREER-056,Auditor,auditing standards,authored,synthetic,true
 CAREER-056,Auditor,sampling methods,authored,synthetic,true
 CAREER-056,Auditor,client accounting systems,authored,synthetic,true
+CAREER-056,Auditor,audit sampling tools,authored,synthetic,true
 CAREER-057,Financial Analyst,Excel,authored,synthetic,true
 CAREER-057,Financial Analyst,Power BI or Tableau,authored,synthetic,true
 CAREER-057,Financial Analyst,ERP systems,authored,synthetic,true
 CAREER-057,Financial Analyst,SQL,authored,synthetic,true
 CAREER-057,Financial Analyst,PowerPoint,authored,synthetic,true
 CAREER-057,Financial Analyst,financial modelling methods,authored,synthetic,true
+CAREER-057,Financial Analyst,Python for analysis,authored,synthetic,true
 CAREER-058,Investment Analyst,Excel,authored,synthetic,true
 CAREER-058,Investment Analyst,Bloomberg or Refinitiv terminals,authored,synthetic,true
 CAREER-058,Investment Analyst,valuation models,authored,synthetic,true
 CAREER-058,Investment Analyst,company filings,authored,synthetic,true
 CAREER-058,Investment Analyst,NSE and market data,authored,synthetic,true
 CAREER-058,Investment Analyst,PowerPoint,authored,synthetic,true
+CAREER-058,Investment Analyst,Python or R,authored,synthetic,true
 CAREER-059,Banking Relationship Officer,core banking systems,authored,synthetic,true
 CAREER-059,Banking Relationship Officer,CRM systems,authored,synthetic,true
 CAREER-059,Banking Relationship Officer,loan origination systems,authored,synthetic,true
 CAREER-059,Banking Relationship Officer,Excel,authored,synthetic,true
 CAREER-059,Banking Relationship Officer,credit reference bureau reports,authored,synthetic,true
 CAREER-059,Banking Relationship Officer,digital banking platforms,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,internet and mobile banking platforms,authored,synthetic,true
 CAREER-060,Credit Analyst,Excel,authored,synthetic,true
 CAREER-060,Credit Analyst,credit scoring models,authored,synthetic,true
 CAREER-060,Credit Analyst,credit reference bureau reports,authored,synthetic,true
 CAREER-060,Credit Analyst,core banking systems,authored,synthetic,true
 CAREER-060,Credit Analyst,financial spreading tools,authored,synthetic,true
 CAREER-060,Credit Analyst,loan origination systems,authored,synthetic,true
+CAREER-060,Credit Analyst,Power BI,authored,synthetic,true
 CAREER-061,Risk Analyst,Excel,authored,synthetic,true
 CAREER-061,Risk Analyst,SQL,authored,synthetic,true
 CAREER-061,Risk Analyst,risk management systems,authored,synthetic,true
 CAREER-061,Risk Analyst,Python or R,authored,synthetic,true
 CAREER-061,Risk Analyst,Basel and regulator guidelines,authored,synthetic,true
 CAREER-061,Risk Analyst,Power BI,authored,synthetic,true
+CAREER-061,Risk Analyst,risk heat maps,authored,synthetic,true
 CAREER-062,Actuarial Analyst,Excel and VBA,authored,synthetic,true
 CAREER-062,Actuarial Analyst,R or Python,authored,synthetic,true
 CAREER-062,Actuarial Analyst,actuarial software such as Prophet,authored,synthetic,true
 CAREER-062,Actuarial Analyst,SQL,authored,synthetic,true
 CAREER-062,Actuarial Analyst,mortality tables,authored,synthetic,true
 CAREER-062,Actuarial Analyst,statistical methods,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Power BI,authored,synthetic,true
 CAREER-063,Insurance Underwriter,underwriting systems,authored,synthetic,true
 CAREER-063,Insurance Underwriter,rating tables and guidelines,authored,synthetic,true
 CAREER-063,Insurance Underwriter,Excel,authored,synthetic,true
 CAREER-063,Insurance Underwriter,policy administration systems,authored,synthetic,true
 CAREER-063,Insurance Underwriter,risk survey reports,authored,synthetic,true
 CAREER-063,Insurance Underwriter,broker portals,authored,synthetic,true
+CAREER-063,Insurance Underwriter,reinsurance treaties,authored,synthetic,true
 CAREER-064,Tax Consultant,tax filing portals such as iTax,authored,synthetic,true
 CAREER-064,Tax Consultant,Excel,authored,synthetic,true
 CAREER-064,Tax Consultant,accounting software,authored,synthetic,true
 CAREER-064,Tax Consultant,tax legislation and case law,authored,synthetic,true
 CAREER-064,Tax Consultant,tax computation templates,authored,synthetic,true
 CAREER-064,Tax Consultant,document management systems,authored,synthetic,true
+CAREER-064,Tax Consultant,eTIMS and electronic invoicing,authored,synthetic,true
 CAREER-065,Treasury Officer,treasury management systems,authored,synthetic,true
 CAREER-065,Treasury Officer,Bloomberg or Refinitiv,authored,synthetic,true
 CAREER-065,Treasury Officer,SWIFT,authored,synthetic,true
 CAREER-065,Treasury Officer,Excel,authored,synthetic,true
 CAREER-065,Treasury Officer,bank portals,authored,synthetic,true
 CAREER-065,Treasury Officer,core banking systems,authored,synthetic,true
+CAREER-065,Treasury Officer,cash-flow forecasting models,authored,synthetic,true
 CAREER-066,Fintech Product Analyst,SQL,authored,synthetic,true
 CAREER-066,Fintech Product Analyst,Excel,authored,synthetic,true
 CAREER-066,Fintech Product Analyst,product analytics tools such as Mixpanel,authored,synthetic,true
 CAREER-066,Fintech Product Analyst,Jira,authored,synthetic,true
 CAREER-066,Fintech Product Analyst,Power BI or Tableau,authored,synthetic,true
 CAREER-066,Fintech Product Analyst,Figma for reviewing designs,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Python,authored,synthetic,true
 CAREER-067,Compliance Officer,regulatory guidelines,authored,synthetic,true
 CAREER-067,Compliance Officer,compliance monitoring tools,authored,synthetic,true
 CAREER-067,Compliance Officer,KYC screening systems,authored,synthetic,true
 CAREER-067,Compliance Officer,Excel,authored,synthetic,true
 CAREER-067,Compliance Officer,policy management systems,authored,synthetic,true
 CAREER-067,Compliance Officer,case management tools,authored,synthetic,true
+CAREER-067,Compliance Officer,sanctions lists,authored,synthetic,true
 CAREER-068,Microfinance Officer,loan management systems,authored,synthetic,true
 CAREER-068,Microfinance Officer,mobile money platforms,authored,synthetic,true
 CAREER-068,Microfinance Officer,field tablets and apps,authored,synthetic,true
 CAREER-068,Microfinance Officer,credit reference bureau reports,authored,synthetic,true
 CAREER-068,Microfinance Officer,Excel,authored,synthetic,true
 CAREER-068,Microfinance Officer,loan appraisal forms,authored,synthetic,true
+CAREER-068,Microfinance Officer,savings group records,authored,synthetic,true
 CAREER-069,Securities Dealer,exchange trading systems such as the NSE trading platform,authored,synthetic,true
 CAREER-069,Securities Dealer,Bloomberg or Refinitiv,authored,synthetic,true
 CAREER-069,Securities Dealer,order management systems,authored,synthetic,true
 CAREER-069,Securities Dealer,central depository systems,authored,synthetic,true
 CAREER-069,Securities Dealer,Excel,authored,synthetic,true
 CAREER-069,Securities Dealer,market data feeds,authored,synthetic,true
+CAREER-069,Securities Dealer,client relationship systems,authored,synthetic,true
 CAREER-070,Financial Planner,financial planning software,authored,synthetic,true
 CAREER-070,Financial Planner,Excel,authored,synthetic,true
 CAREER-070,Financial Planner,risk profiling questionnaires,authored,synthetic,true
 CAREER-070,Financial Planner,unit trust and pension fact sheets,authored,synthetic,true
 CAREER-070,Financial Planner,CRM systems,authored,synthetic,true
 CAREER-070,Financial Planner,retirement calculators,authored,synthetic,true
+CAREER-070,Financial Planner,investment platforms,authored,synthetic,true
 CAREER-071,Forensic Accountant,data analytics tools such as IDEA or ACL,authored,synthetic,true
 CAREER-071,Forensic Accountant,Excel,authored,synthetic,true
 CAREER-071,Forensic Accountant,accounting systems,authored,synthetic,true
 CAREER-071,Forensic Accountant,e-discovery tools,authored,synthetic,true
 CAREER-071,Forensic Accountant,case management systems,authored,synthetic,true
 CAREER-071,Forensic Accountant,bank statement analysis tools,authored,synthetic,true
+CAREER-071,Forensic Accountant,link analysis tools,authored,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,mobile money platforms such as M-Pesa,authored,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,payment gateways and APIs,authored,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,reconciliation tools,authored,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,Excel,authored,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,SQL,authored,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,card scheme rules,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,ISO 20022 and payment message standards,authored,synthetic,true
 CAREER-073,Marketing Executive,Excel,authored,synthetic,true
 CAREER-073,Marketing Executive,Canva or Adobe tools,authored,synthetic,true
 CAREER-073,Marketing Executive,social media platforms,authored,synthetic,true
 CAREER-073,Marketing Executive,email marketing tools such as Mailchimp,authored,synthetic,true
 CAREER-073,Marketing Executive,Google Analytics,authored,synthetic,true
 CAREER-073,Marketing Executive,CRM systems,authored,synthetic,true
+CAREER-073,Marketing Executive,survey tools,authored,synthetic,true
 CAREER-074,Digital Marketing Specialist,Google Ads,authored,synthetic,true
 CAREER-074,Digital Marketing Specialist,Meta Ads Manager,authored,synthetic,true
 CAREER-074,Digital Marketing Specialist,Google Analytics,authored,synthetic,true
 CAREER-074,Digital Marketing Specialist,SEO tools such as Semrush,authored,synthetic,true
 CAREER-074,Digital Marketing Specialist,email platforms such as Mailchimp,authored,synthetic,true
 CAREER-074,Digital Marketing Specialist,Canva,authored,synthetic,true
+CAREER-074,Digital Marketing Specialist,CRM systems such as HubSpot,authored,synthetic,true
 CAREER-075,Brand Manager,retail audit data such as Nielsen,authored,synthetic,true
 CAREER-075,Brand Manager,Excel,authored,synthetic,true
 CAREER-075,Brand Manager,PowerPoint,authored,synthetic,true
 CAREER-075,Brand Manager,brand guidelines,authored,synthetic,true
 CAREER-075,Brand Manager,consumer research reports,authored,synthetic,true
 CAREER-075,Brand Manager,media planning reports,authored,synthetic,true
+CAREER-075,Brand Manager,social listening tools,authored,synthetic,true
 CAREER-076,Sales Executive,CRM systems such as Salesforce or HubSpot,authored,synthetic,true
 CAREER-076,Sales Executive,Excel,authored,synthetic,true
 CAREER-076,Sales Executive,quotation templates,authored,synthetic,true
 CAREER-076,Sales Executive,route planning apps,authored,synthetic,true
 CAREER-076,Sales Executive,WhatsApp Business,authored,synthetic,true
 CAREER-076,Sales Executive,presentation tools,authored,synthetic,true
+CAREER-076,Sales Executive,LinkedIn Sales Navigator,authored,synthetic,true
 CAREER-077,Business Development Officer,CRM systems,authored,synthetic,true
 CAREER-077,Business Development Officer,Excel,authored,synthetic,true
 CAREER-077,Business Development Officer,PowerPoint,authored,synthetic,true
 CAREER-077,Business Development Officer,LinkedIn,authored,synthetic,true
 CAREER-077,Business Development Officer,tender portals,authored,synthetic,true
 CAREER-077,Business Development Officer,proposal templates,authored,synthetic,true
+CAREER-077,Business Development Officer,market research reports,authored,synthetic,true
 CAREER-078,Entrepreneur and Startup Founder,business model canvas,authored,synthetic,true
 CAREER-078,Entrepreneur and Startup Founder,Excel cash-flow models,authored,synthetic,true
 CAREER-078,Entrepreneur and Startup Founder,pitch decks,authored,synthetic,true
 CAREER-078,Entrepreneur and Startup Founder,mobile money and payment tools,authored,synthetic,true
 CAREER-078,Entrepreneur and Startup Founder,accounting software,authored,synthetic,true
 CAREER-078,Entrepreneur and Startup Founder,business registration portals such as eCitizen,authored,synthetic,true
+CAREER-078,Entrepreneur and Startup Founder,social media and WhatsApp Business,authored,synthetic,true
 CAREER-079,Business Analyst,Excel,authored,synthetic,true
 CAREER-079,Business Analyst,SQL,authored,synthetic,true
 CAREER-079,Business Analyst,process mapping tools such as Visio,authored,synthetic,true
 CAREER-079,Business Analyst,Jira and Confluence,authored,synthetic,true
 CAREER-079,Business Analyst,Power BI,authored,synthetic,true
 CAREER-079,Business Analyst,PowerPoint,authored,synthetic,true
+CAREER-079,Business Analyst,Figma or wireframing tools,authored,synthetic,true
 CAREER-080,Human Resource Officer,HR information systems,authored,synthetic,true
 CAREER-080,Human Resource Officer,payroll software,authored,synthetic,true
 CAREER-080,Human Resource Officer,Excel,authored,synthetic,true
 CAREER-080,Human Resource Officer,applicant tracking systems,authored,synthetic,true
 CAREER-080,Human Resource Officer,employment law references,authored,synthetic,true
 CAREER-080,Human Resource Officer,performance appraisal tools,authored,synthetic,true
+CAREER-080,Human Resource Officer,statutory portals for NSSF and health insurance,authored,synthetic,true
 CAREER-081,Talent Acquisition Specialist,applicant tracking systems,authored,synthetic,true
 CAREER-081,Talent Acquisition Specialist,LinkedIn Recruiter,authored,synthetic,true
 CAREER-081,Talent Acquisition Specialist,job boards,authored,synthetic,true
 CAREER-081,Talent Acquisition Specialist,interview scorecards,authored,synthetic,true
 CAREER-081,Talent Acquisition Specialist,Excel,authored,synthetic,true
 CAREER-081,Talent Acquisition Specialist,assessment platforms,authored,synthetic,true
+CAREER-081,Talent Acquisition Specialist,video interviewing tools,authored,synthetic,true
 CAREER-082,Customer Experience Manager,CRM and ticketing systems such as Zendesk,authored,synthetic,true
 CAREER-082,Customer Experience Manager,survey tools,authored,synthetic,true
 CAREER-082,Customer Experience Manager,NPS and CSAT dashboards,authored,synthetic,true
 CAREER-082,Customer Experience Manager,Excel,authored,synthetic,true
 CAREER-082,Customer Experience Manager,call centre software,authored,synthetic,true
 CAREER-082,Customer Experience Manager,journey mapping templates,authored,synthetic,true
+CAREER-082,Customer Experience Manager,Power BI,authored,synthetic,true
 CAREER-083,Management Consultant,PowerPoint,authored,synthetic,true
 CAREER-083,Management Consultant,Excel,authored,synthetic,true
 CAREER-083,Management Consultant,analysis frameworks,authored,synthetic,true
 CAREER-083,Management Consultant,survey and interview guides,authored,synthetic,true
 CAREER-083,Management Consultant,Power BI,authored,synthetic,true
 CAREER-083,Management Consultant,project plans,authored,synthetic,true
+CAREER-083,Management Consultant,Power BI or Tableau,authored,synthetic,true
 CAREER-084,Market Research Analyst,SPSS,authored,synthetic,true
 CAREER-084,Market Research Analyst,Excel,authored,synthetic,true
 CAREER-084,Market Research Analyst,survey platforms such as SurveyCTO or Qualtrics,authored,synthetic,true
 CAREER-084,Market Research Analyst,PowerPoint,authored,synthetic,true
 CAREER-084,Market Research Analyst,Power BI,authored,synthetic,true
 CAREER-084,Market Research Analyst,sampling methods,authored,synthetic,true
+CAREER-084,Market Research Analyst,NVivo,authored,synthetic,true
 CAREER-085,Project Manager,MS Project,authored,synthetic,true
 CAREER-085,Project Manager,Jira or Trello,authored,synthetic,true
 CAREER-085,Project Manager,Excel,authored,synthetic,true
 CAREER-085,Project Manager,Gantt charts,authored,synthetic,true
 CAREER-085,Project Manager,risk registers,authored,synthetic,true
 CAREER-085,Project Manager,project reports,authored,synthetic,true
+CAREER-085,Project Manager,PRINCE2 or PMBOK methods,authored,synthetic,true
 CAREER-086,E-commerce Manager,Shopify or WooCommerce,authored,synthetic,true
 CAREER-086,E-commerce Manager,marketplace seller portals such as Jumia,authored,synthetic,true
 CAREER-086,E-commerce Manager,Google Analytics,authored,synthetic,true
 CAREER-086,E-commerce Manager,payment gateways,authored,synthetic,true
 CAREER-086,E-commerce Manager,Excel,authored,synthetic,true
 CAREER-086,E-commerce Manager,inventory systems,authored,synthetic,true
+CAREER-086,E-commerce Manager,Meta and Google Ads,authored,synthetic,true
 CAREER-087,Public Relations Officer,media monitoring tools,authored,synthetic,true
 CAREER-087,Public Relations Officer,press lists,authored,synthetic,true
 CAREER-087,Public Relations Officer,social media platforms,authored,synthetic,true
 CAREER-087,Public Relations Officer,Canva,authored,synthetic,true
 CAREER-087,Public Relations Officer,newsletter tools,authored,synthetic,true
 CAREER-087,Public Relations Officer,Word and PowerPoint,authored,synthetic,true
+CAREER-087,Public Relations Officer,media analytics dashboards,authored,synthetic,true
 CAREER-088,Retail Manager,point-of-sale systems,authored,synthetic,true
 CAREER-088,Retail Manager,inventory management systems,authored,synthetic,true
 CAREER-088,Retail Manager,Excel,authored,synthetic,true
 CAREER-088,Retail Manager,planograms,authored,synthetic,true
 CAREER-088,Retail Manager,staff rota tools,authored,synthetic,true
 CAREER-088,Retail Manager,mobile money and card terminals,authored,synthetic,true
+CAREER-088,Retail Manager,CCTV and loss-prevention systems,authored,synthetic,true
 CAREER-089,Corporate Strategy Analyst,Excel,authored,synthetic,true
 CAREER-089,Corporate Strategy Analyst,PowerPoint,authored,synthetic,true
 CAREER-089,Corporate Strategy Analyst,Power BI,authored,synthetic,true
 CAREER-089,Corporate Strategy Analyst,strategy frameworks,authored,synthetic,true
 CAREER-089,Corporate Strategy Analyst,market databases,authored,synthetic,true
 CAREER-089,Corporate Strategy Analyst,balanced scorecards,authored,synthetic,true
+CAREER-089,Corporate Strategy Analyst,financial databases,authored,synthetic,true
 CAREER-090,Social Enterprise Manager,Excel,authored,synthetic,true
 CAREER-090,Social Enterprise Manager,impact measurement frameworks,authored,synthetic,true
 CAREER-090,Social Enterprise Manager,CRM and donor tools,authored,synthetic,true
 CAREER-090,Social Enterprise Manager,accounting software,authored,synthetic,true
 CAREER-090,Social Enterprise Manager,survey tools such as KoboToolbox,authored,synthetic,true
 CAREER-090,Social Enterprise Manager,mobile money platforms,authored,synthetic,true
+CAREER-090,Social Enterprise Manager,theory of change models,authored,synthetic,true
 CAREER-091,Advocate,Kenya Law Reports and other law databases,authored,synthetic,true
 CAREER-091,Advocate,court e-filing systems,authored,synthetic,true
 CAREER-091,Advocate,Word,authored,synthetic,true
 CAREER-091,Advocate,case management software,authored,synthetic,true
 CAREER-091,Advocate,legal precedents,authored,synthetic,true
 CAREER-091,Advocate,billing software,authored,synthetic,true
+CAREER-091,Advocate,virtual court platforms,authored,synthetic,true
 CAREER-092,Corporate Lawyer,Word with tracked changes,authored,synthetic,true
 CAREER-092,Corporate Lawyer,virtual data rooms,authored,synthetic,true
 CAREER-092,Corporate Lawyer,law databases,authored,synthetic,true
 CAREER-092,Corporate Lawyer,company registry portals,authored,synthetic,true
 CAREER-092,Corporate Lawyer,contract templates,authored,synthetic,true
 CAREER-092,Corporate Lawyer,document management systems,authored,synthetic,true
+CAREER-092,Corporate Lawyer,e-signature tools,authored,synthetic,true
 CAREER-093,Legal Officer,Word,authored,synthetic,true
 CAREER-093,Legal Officer,contract management systems,authored,synthetic,true
 CAREER-093,Legal Officer,law databases,authored,synthetic,true
 CAREER-093,Legal Officer,Excel registers,authored,synthetic,true
 CAREER-093,Legal Officer,e-signature tools,authored,synthetic,true
 CAREER-093,Legal Officer,document management systems,authored,synthetic,true
+CAREER-093,Legal Officer,company registry portals,authored,synthetic,true
 CAREER-094,Paralegal,court e-filing systems,authored,synthetic,true
 CAREER-094,Paralegal,Word,authored,synthetic,true
 CAREER-094,Paralegal,case management software,authored,synthetic,true
 CAREER-094,Paralegal,law databases,authored,synthetic,true
 CAREER-094,Paralegal,registry portals such as eCitizen,authored,synthetic,true
 CAREER-094,Paralegal,scanners and filing systems,authored,synthetic,true
+CAREER-094,Paralegal,document management systems,authored,synthetic,true
 CAREER-095,Judicial Officer,case tracking systems,authored,synthetic,true
 CAREER-095,Judicial Officer,law reports and statutes,authored,synthetic,true
 CAREER-095,Judicial Officer,court recording systems,authored,synthetic,true
 CAREER-095,Judicial Officer,virtual court platforms,authored,synthetic,true
 CAREER-095,Judicial Officer,sentencing guidelines,authored,synthetic,true
 CAREER-095,Judicial Officer,bench books,authored,synthetic,true
+CAREER-095,Judicial Officer,e-filing systems,authored,synthetic,true
 CAREER-096,State Counsel,law databases,authored,synthetic,true
 CAREER-096,State Counsel,court e-filing systems,authored,synthetic,true
 CAREER-096,State Counsel,Word,authored,synthetic,true
 CAREER-096,State Counsel,government legal opinions and circulars,authored,synthetic,true
 CAREER-096,State Counsel,statutes and the Constitution,authored,synthetic,true
 CAREER-096,State Counsel,case registers,authored,synthetic,true
+CAREER-096,State Counsel,virtual court platforms,authored,synthetic,true
 CAREER-097,Compliance and Regulatory Officer,regulatory guidelines,authored,synthetic,true
 CAREER-097,Compliance and Regulatory Officer,compliance registers,authored,synthetic,true
 CAREER-097,Compliance and Regulatory Officer,regulator reporting portals,authored,synthetic,true
 CAREER-097,Compliance and Regulatory Officer,Excel,authored,synthetic,true
 CAREER-097,Compliance and Regulatory Officer,inspection checklists,authored,synthetic,true
 CAREER-097,Compliance and Regulatory Officer,policy management systems,authored,synthetic,true
+CAREER-097,Compliance and Regulatory Officer,licensing databases,authored,synthetic,true
 CAREER-098,Human Rights Officer,documentation and case databases,authored,synthetic,true
 CAREER-098,Human Rights Officer,interview guides,authored,synthetic,true
 CAREER-098,Human Rights Officer,human rights treaties and the Constitution,authored,synthetic,true
 CAREER-098,Human Rights Officer,report templates,authored,synthetic,true
 CAREER-098,Human Rights Officer,secure communication tools,authored,synthetic,true
 CAREER-098,Human Rights Officer,survey tools,authored,synthetic,true
+CAREER-098,Human Rights Officer,treaty body reporting guidelines,authored,synthetic,true
 CAREER-099,Legal Researcher,Kenya Law Reports,authored,synthetic,true
 CAREER-099,Legal Researcher,LexisNexis or Westlaw,authored,synthetic,true
 CAREER-099,Legal Researcher,Word,authored,synthetic,true
 CAREER-099,Legal Researcher,citation guides,authored,synthetic,true
 CAREER-099,Legal Researcher,parliamentary records,authored,synthetic,true
 CAREER-099,Legal Researcher,reference managers,authored,synthetic,true
+CAREER-099,Legal Researcher,AI-assisted legal research tools,authored,synthetic,true
 CAREER-100,Contracts Manager,contract management systems,authored,synthetic,true
 CAREER-100,Contracts Manager,Word,authored,synthetic,true
 CAREER-100,Contracts Manager,Excel registers,authored,synthetic,true
 CAREER-100,Contracts Manager,standard forms such as FIDIC,authored,synthetic,true
 CAREER-100,Contracts Manager,e-signature tools,authored,synthetic,true
 CAREER-100,Contracts Manager,procurement systems,authored,synthetic,true
+CAREER-100,Contracts Manager,risk registers,authored,synthetic,true
 CAREER-101,Mediator and Arbitrator,arbitration rules and statutes,authored,synthetic,true
 CAREER-101,Mediator and Arbitrator,virtual hearing platforms,authored,synthetic,true
 CAREER-101,Mediator and Arbitrator,Word,authored,synthetic,true
 CAREER-101,Mediator and Arbitrator,case bundles,authored,synthetic,true
 CAREER-101,Mediator and Arbitrator,mediation frameworks,authored,synthetic,true
 CAREER-101,Mediator and Arbitrator,institutional rules such as those of arbitration centres,authored,synthetic,true
+CAREER-101,Mediator and Arbitrator,case management software,authored,synthetic,true
 CAREER-102,Intellectual Property Specialist,IP registry portals such as KIPI and ARIPO,authored,synthetic,true
 CAREER-102,Intellectual Property Specialist,WIPO databases,authored,synthetic,true
 CAREER-102,Intellectual Property Specialist,trademark search tools,authored,synthetic,true
 CAREER-102,Intellectual Property Specialist,Word,authored,synthetic,true
 CAREER-102,Intellectual Property Specialist,docketing systems,authored,synthetic,true
 CAREER-102,Intellectual Property Specialist,IP statutes,authored,synthetic,true
+CAREER-102,Intellectual Property Specialist,copyright registry portals,authored,synthetic,true
 CAREER-103,Conveyancing Officer,land registry portals such as Ardhisasa,authored,synthetic,true
 CAREER-103,Conveyancing Officer,stamp duty via iTax,authored,synthetic,true
 CAREER-103,Conveyancing Officer,Word,authored,synthetic,true
 CAREER-103,Conveyancing Officer,conveyancing precedents,authored,synthetic,true
 CAREER-103,Conveyancing Officer,land statutes,authored,synthetic,true
 CAREER-103,Conveyancing Officer,file tracking registers,authored,synthetic,true
+CAREER-103,Conveyancing Officer,bank security documentation checklists,authored,synthetic,true
 CAREER-104,Company Secretary,company registry portals such as eCitizen BRS,authored,synthetic,true
 CAREER-104,Company Secretary,board portal software,authored,synthetic,true
 CAREER-104,Company Secretary,Word,authored,synthetic,true
 CAREER-104,Company Secretary,statutory registers,authored,synthetic,true
 CAREER-104,Company Secretary,governance codes,authored,synthetic,true
 CAREER-104,Company Secretary,Excel,authored,synthetic,true
+CAREER-104,Company Secretary,share registry systems,authored,synthetic,true
 CAREER-105,Legislative Drafter,legislative drafting manuals,authored,synthetic,true
 CAREER-105,Legislative Drafter,law databases,authored,synthetic,true
 CAREER-105,Legislative Drafter,Word,authored,synthetic,true
 CAREER-105,Legislative Drafter,statutes and the Constitution,authored,synthetic,true
 CAREER-105,Legislative Drafter,parliamentary records,authored,synthetic,true
 CAREER-105,Legislative Drafter,drafting templates,authored,synthetic,true
+CAREER-105,Legislative Drafter,comparative legislation databases,authored,synthetic,true
 CAREER-106,Elections and Governance Officer,voter registration systems,authored,synthetic,true
 CAREER-106,Elections and Governance Officer,results transmission systems,authored,synthetic,true
 CAREER-106,Elections and Governance Officer,Excel,authored,synthetic,true
 CAREER-106,Elections and Governance Officer,GIS mapping,authored,synthetic,true
 CAREER-106,Elections and Governance Officer,survey tools,authored,synthetic,true
 CAREER-106,Elections and Governance Officer,training manuals,authored,synthetic,true
+CAREER-106,Elections and Governance Officer,biometric voter identification kits,authored,synthetic,true
 CAREER-107,Primary School Teacher,schemes of work and lesson plans,authored,synthetic,true
 CAREER-107,Primary School Teacher,curriculum designs,authored,synthetic,true
 CAREER-107,Primary School Teacher,textbooks and charts,authored,synthetic,true
 CAREER-107,Primary School Teacher,assessment rubrics and portfolios,authored,synthetic,true
 CAREER-107,Primary School Teacher,learner progress records,authored,synthetic,true
 CAREER-107,Primary School Teacher,digital learning tablets,authored,synthetic,true
+CAREER-107,Primary School Teacher,storybooks and class libraries,authored,synthetic,true
 CAREER-108,Secondary School Teacher,schemes of work,authored,synthetic,true
 CAREER-108,Secondary School Teacher,subject syllabuses,authored,synthetic,true
 CAREER-108,Secondary School Teacher,laboratory or subject equipment,authored,synthetic,true
 CAREER-108,Secondary School Teacher,past papers and marking schemes,authored,synthetic,true
 CAREER-108,Secondary School Teacher,school management systems,authored,synthetic,true
 CAREER-108,Secondary School Teacher,projectors and presentations,authored,synthetic,true
+CAREER-108,Secondary School Teacher,learning management systems,authored,synthetic,true
 CAREER-109,Early Childhood Educator,play and learning materials,authored,synthetic,true
 CAREER-109,Early Childhood Educator,storybooks and songs,authored,synthetic,true
 CAREER-109,Early Childhood Educator,child observation checklists,authored,synthetic,true
 CAREER-109,Early Childhood Educator,pre-primary curriculum designs,authored,synthetic,true
 CAREER-109,Early Childhood Educator,art and craft supplies,authored,synthetic,true
 CAREER-109,Early Childhood Educator,outdoor play equipment,authored,synthetic,true
+CAREER-109,Early Childhood Educator,child health and growth records,authored,synthetic,true
 CAREER-110,Special Needs Educator,individual education plans,authored,synthetic,true
 CAREER-110,Special Needs Educator,Braille and tactile materials,authored,synthetic,true
 CAREER-110,Special Needs Educator,sign language,authored,synthetic,true
 CAREER-110,Special Needs Educator,assistive technology,authored,synthetic,true
 CAREER-110,Special Needs Educator,visual schedules,authored,synthetic,true
 CAREER-110,Special Needs Educator,assessment tools,authored,synthetic,true
+CAREER-110,Special Needs Educator,communication boards and AAC apps,authored,synthetic,true
 CAREER-111,University Lecturer,learning management systems such as Moodle,authored,synthetic,true
 CAREER-111,University Lecturer,presentation tools,authored,synthetic,true
 CAREER-111,University Lecturer,reference managers,authored,synthetic,true
 CAREER-111,University Lecturer,research databases,authored,synthetic,true
 CAREER-111,University Lecturer,plagiarism checkers such as Turnitin,authored,synthetic,true
 CAREER-111,University Lecturer,statistical software,authored,synthetic,true
+CAREER-111,University Lecturer,online meeting and lecture recording tools,authored,synthetic,true
 CAREER-112,Education Officer,education management information systems such as NEMIS,authored,synthetic,true
 CAREER-112,Education Officer,school inspection tools,authored,synthetic,true
 CAREER-112,Education Officer,Excel,authored,synthetic,true
 CAREER-112,Education Officer,policy circulars,authored,synthetic,true
 CAREER-112,Education Officer,reporting templates,authored,synthetic,true
 CAREER-112,Education Officer,training manuals,authored,synthetic,true
+CAREER-112,Education Officer,Word and PowerPoint,authored,synthetic,true
 CAREER-113,Curriculum Developer,curriculum frameworks,authored,synthetic,true
 CAREER-113,Curriculum Developer,learning outcome taxonomies such as Bloom's,authored,synthetic,true
 CAREER-113,Curriculum Developer,Word,authored,synthetic,true
 CAREER-113,Curriculum Developer,assessment rubrics,authored,synthetic,true
 CAREER-113,Curriculum Developer,curriculum mapping templates,authored,synthetic,true
 CAREER-113,Curriculum Developer,evaluation tools,authored,synthetic,true
+CAREER-113,Curriculum Developer,learning management systems,authored,synthetic,true
 CAREER-114,Instructional Designer,Articulate Storyline or Rise,authored,synthetic,true
 CAREER-114,Instructional Designer,learning management systems,authored,synthetic,true
 CAREER-114,Instructional Designer,storyboard templates,authored,synthetic,true
 CAREER-114,Instructional Designer,ADDIE and similar models,authored,synthetic,true
 CAREER-114,Instructional Designer,Canva,authored,synthetic,true
 CAREER-114,Instructional Designer,video editing tools,authored,synthetic,true
+CAREER-114,Instructional Designer,H5P,authored,synthetic,true
 CAREER-115,School Counsellor,counselling frameworks,authored,synthetic,true
 CAREER-115,School Counsellor,career interest inventories,authored,synthetic,true
 CAREER-115,School Counsellor,referral directories,authored,synthetic,true
 CAREER-115,School Counsellor,case notes,authored,synthetic,true
 CAREER-115,School Counsellor,life skills curricula,authored,synthetic,true
 CAREER-115,School Counsellor,screening questionnaires,authored,synthetic,true
+CAREER-115,School Counsellor,child protection policies,authored,synthetic,true
 CAREER-116,Educational Technologist,Moodle or Google Classroom,authored,synthetic,true
 CAREER-116,Educational Technologist,video conferencing tools,authored,synthetic,true
 CAREER-116,Educational Technologist,content authoring tools,authored,synthetic,true
 CAREER-116,Educational Technologist,school devices and networks,authored,synthetic,true
 CAREER-116,Educational Technologist,learning analytics dashboards,authored,synthetic,true
 CAREER-116,Educational Technologist,interactive whiteboards,authored,synthetic,true
+CAREER-116,Educational Technologist,student information systems,authored,synthetic,true
 CAREER-117,TVET Trainer,workshop tools and machines,authored,synthetic,true
 CAREER-117,TVET Trainer,occupational standards,authored,synthetic,true
 CAREER-117,TVET Trainer,competency assessment tools,authored,synthetic,true
 CAREER-117,TVET Trainer,training plans,authored,synthetic,true
 CAREER-117,TVET Trainer,safety equipment,authored,synthetic,true
 CAREER-117,TVET Trainer,learning management systems,authored,synthetic,true
+CAREER-117,TVET Trainer,simulators and training rigs,authored,synthetic,true
 CAREER-118,Librarian and Information Officer,library systems such as Koha,authored,synthetic,true
 CAREER-118,Librarian and Information Officer,classification schemes such as Dewey,authored,synthetic,true
 CAREER-118,Librarian and Information Officer,online databases and e-journals,authored,synthetic,true
 CAREER-118,Librarian and Information Officer,institutional repositories,authored,synthetic,true
 CAREER-118,Librarian and Information Officer,barcode scanners,authored,synthetic,true
 CAREER-118,Librarian and Information Officer,reference managers,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,plagiarism checkers,authored,synthetic,true
 CAREER-119,School Head and Administrator,school management systems,authored,synthetic,true
 CAREER-119,School Head and Administrator,NEMIS,authored,synthetic,true
 CAREER-119,School Head and Administrator,Excel,authored,synthetic,true
 CAREER-119,School Head and Administrator,timetabling software,authored,synthetic,true
 CAREER-119,School Head and Administrator,financial records,authored,synthetic,true
 CAREER-119,School Head and Administrator,policy and regulation documents,authored,synthetic,true
+CAREER-119,School Head and Administrator,teacher appraisal systems,authored,synthetic,true
 CAREER-120,Language Teacher,textbooks and readers,authored,synthetic,true
 CAREER-120,Language Teacher,audio and video materials,authored,synthetic,true
 CAREER-120,Language Teacher,language learning apps,authored,synthetic,true
 CAREER-120,Language Teacher,language proficiency frameworks such as CEFR,authored,synthetic,true
 CAREER-120,Language Teacher,flashcards,authored,synthetic,true
 CAREER-120,Language Teacher,past exam papers,authored,synthetic,true
+CAREER-120,Language Teacher,online language platforms,authored,synthetic,true
 CAREER-121,Adult Education Facilitator,adult literacy primers,authored,synthetic,true
 CAREER-121,Adult Education Facilitator,flipcharts,authored,synthetic,true
 CAREER-121,Adult Education Facilitator,participatory learning methods,authored,synthetic,true
 CAREER-121,Adult Education Facilitator,attendance registers,authored,synthetic,true
 CAREER-121,Adult Education Facilitator,mobile phones for digital literacy,authored,synthetic,true
 CAREER-121,Adult Education Facilitator,assessment tools,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,radio and audio lessons,authored,synthetic,true
 CAREER-122,Corporate Trainer,PowerPoint,authored,synthetic,true
 CAREER-122,Corporate Trainer,learning management systems,authored,synthetic,true
 CAREER-122,Corporate Trainer,video meeting tools,authored,synthetic,true
 CAREER-122,Corporate Trainer,training needs analysis templates,authored,synthetic,true
 CAREER-122,Corporate Trainer,evaluation forms,authored,synthetic,true
 CAREER-122,Corporate Trainer,e-learning authoring tools,authored,synthetic,true
+CAREER-122,Corporate Trainer,skills matrices,authored,synthetic,true
 CAREER-123,Learning Coach and Tutor,past papers and revision books,authored,synthetic,true
 CAREER-123,Learning Coach and Tutor,video meeting tools,authored,synthetic,true
 CAREER-123,Learning Coach and Tutor,online whiteboards,authored,synthetic,true
 CAREER-123,Learning Coach and Tutor,practice question banks,authored,synthetic,true
 CAREER-123,Learning Coach and Tutor,progress trackers,authored,synthetic,true
 CAREER-123,Learning Coach and Tutor,educational apps,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,learning management systems,authored,synthetic,true
 CAREER-124,Agronomist,soil test kits and lab reports,authored,synthetic,true
 CAREER-124,Agronomist,crop scouting apps,authored,synthetic,true
 CAREER-124,Agronomist,GPS and mapping tools,authored,synthetic,true
 CAREER-124,Agronomist,spray calibration tools,authored,synthetic,true
 CAREER-124,Agronomist,Excel,authored,synthetic,true
 CAREER-124,Agronomist,weather and advisory services,authored,synthetic,true
+CAREER-124,Agronomist,drones for crop monitoring,authored,synthetic,true
 CAREER-125,Agricultural Extension Officer,training flipcharts and manuals,authored,synthetic,true
 CAREER-125,Agricultural Extension Officer,demonstration plots,authored,synthetic,true
 CAREER-125,Agricultural Extension Officer,mobile advisory apps,authored,synthetic,true
 CAREER-125,Agricultural Extension Officer,survey tools such as KoboToolbox,authored,synthetic,true
 CAREER-125,Agricultural Extension Officer,motorbike and field kit,authored,synthetic,true
 CAREER-125,Agricultural Extension Officer,farmer registers,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,radio and SMS advisory platforms,authored,synthetic,true
 CAREER-126,Agribusiness Manager,Excel budgets,authored,synthetic,true
 CAREER-126,Agribusiness Manager,farm management software,authored,synthetic,true
 CAREER-126,Agribusiness Manager,market price information services,authored,synthetic,true
 CAREER-126,Agribusiness Manager,accounting software,authored,synthetic,true
 CAREER-126,Agribusiness Manager,mobile money platforms,authored,synthetic,true
 CAREER-126,Agribusiness Manager,contract templates,authored,synthetic,true
+CAREER-126,Agribusiness Manager,traceability systems,authored,synthetic,true
 CAREER-127,Veterinary Doctor,surgical and diagnostic instruments,authored,synthetic,true
 CAREER-127,Veterinary Doctor,veterinary drugs and vaccines,authored,synthetic,true
 CAREER-127,Veterinary Doctor,cold-chain boxes,authored,synthetic,true
 CAREER-127,Veterinary Doctor,laboratory tests,authored,synthetic,true
 CAREER-127,Veterinary Doctor,ultrasound scanners,authored,synthetic,true
 CAREER-127,Veterinary Doctor,clinic management software,authored,synthetic,true
+CAREER-127,Veterinary Doctor,X-ray machines,authored,synthetic,true
 CAREER-128,Animal Health Technician,veterinary drugs and vaccines,authored,synthetic,true
 CAREER-128,Animal Health Technician,syringes and field kits,authored,synthetic,true
 CAREER-128,Animal Health Technician,artificial insemination equipment,authored,synthetic,true
 CAREER-128,Animal Health Technician,cold-chain boxes,authored,synthetic,true
 CAREER-128,Animal Health Technician,spray pumps,authored,synthetic,true
 CAREER-128,Animal Health Technician,treatment records,authored,synthetic,true
+CAREER-128,Animal Health Technician,ear tags and applicators,authored,synthetic,true
 CAREER-129,Horticulturist,fertigation and drip irrigation systems,authored,synthetic,true
 CAREER-129,Horticulturist,greenhouse structures,authored,synthetic,true
 CAREER-129,Horticulturist,scouting tools,authored,synthetic,true
 CAREER-129,Horticulturist,pH and EC meters,authored,synthetic,true
 CAREER-129,Horticulturist,certification standards such as GlobalG.A.P.,authored,synthetic,true
 CAREER-129,Horticulturist,production records,authored,synthetic,true
+CAREER-129,Horticulturist,cold rooms and pre-coolers,authored,synthetic,true
 CAREER-130,Soil Scientist,soil augers and sampling kits,authored,synthetic,true
 CAREER-130,Soil Scientist,laboratory analysers,authored,synthetic,true
 CAREER-130,Soil Scientist,pH and EC meters,authored,synthetic,true
 CAREER-130,Soil Scientist,GIS software,authored,synthetic,true
 CAREER-130,Soil Scientist,GPS,authored,synthetic,true
 CAREER-130,Soil Scientist,soil classification manuals,authored,synthetic,true
+CAREER-130,Soil Scientist,soil spectrometers,authored,synthetic,true
 CAREER-131,Food Scientist,laboratory testing equipment,authored,synthetic,true
 CAREER-131,Food Scientist,processing equipment,authored,synthetic,true
 CAREER-131,Food Scientist,HACCP plans,authored,synthetic,true
 CAREER-131,Food Scientist,food standards such as KEBS and Codex,authored,synthetic,true
 CAREER-131,Food Scientist,sensory evaluation methods,authored,synthetic,true
 CAREER-131,Food Scientist,pH meters and refractometers,authored,synthetic,true
+CAREER-131,Food Scientist,texture and colour analysers,authored,synthetic,true
 CAREER-132,Food Safety Officer,HACCP plans,authored,synthetic,true
 CAREER-132,Food Safety Officer,inspection checklists,authored,synthetic,true
 CAREER-132,Food Safety Officer,thermometers and swab kits,authored,synthetic,true
 CAREER-132,Food Safety Officer,food safety standards such as ISO 22000,authored,synthetic,true
 CAREER-132,Food Safety Officer,sampling equipment,authored,synthetic,true
 CAREER-132,Food Safety Officer,audit report templates,authored,synthetic,true
+CAREER-132,Food Safety Officer,rapid test kits for aflatoxin and residues,authored,synthetic,true
 CAREER-133,Fisheries and Aquaculture Officer,water quality test kits,authored,synthetic,true
 CAREER-133,Fisheries and Aquaculture Officer,"ponds, cages and nets",authored,synthetic,true
 CAREER-133,Fisheries and Aquaculture Officer,hatchery equipment,authored,synthetic,true
 CAREER-133,Fisheries and Aquaculture Officer,weighing scales,authored,synthetic,true
 CAREER-133,Fisheries and Aquaculture Officer,fish feed charts,authored,synthetic,true
 CAREER-133,Fisheries and Aquaculture Officer,catch data records,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,boats and GPS,authored,synthetic,true
 CAREER-134,Forestry Officer,GPS and GIS,authored,synthetic,true
 CAREER-134,Forestry Officer,tree measurement tools such as calipers and clinometers,authored,synthetic,true
 CAREER-134,Forestry Officer,nursery equipment,authored,synthetic,true
 CAREER-134,Forestry Officer,forest management plans,authored,synthetic,true
 CAREER-134,Forestry Officer,drones and satellite images,authored,synthetic,true
 CAREER-134,Forestry Officer,firefighting equipment,authored,synthetic,true
+CAREER-134,Forestry Officer,chainsaws and harvesting tools,authored,synthetic,true
 CAREER-135,Environmental Consultant,impact assessment guidelines,authored,synthetic,true
 CAREER-135,Environmental Consultant,"water, air and noise testing equipment",authored,synthetic,true
 CAREER-135,Environmental Consultant,GIS software,authored,synthetic,true
 CAREER-135,Environmental Consultant,environmental regulations,authored,synthetic,true
 CAREER-135,Environmental Consultant,stakeholder consultation tools,authored,synthetic,true
 CAREER-135,Environmental Consultant,ISO 14001,authored,synthetic,true
+CAREER-135,Environmental Consultant,air dispersion and noise models,authored,synthetic,true
 CAREER-136,Climate Change Analyst,climate datasets and models,authored,synthetic,true
 CAREER-136,Climate Change Analyst,GIS software,authored,synthetic,true
 CAREER-136,Climate Change Analyst,greenhouse gas accounting tools,authored,synthetic,true
 CAREER-136,Climate Change Analyst,Excel,authored,synthetic,true
 CAREER-136,Climate Change Analyst,R or Python,authored,synthetic,true
 CAREER-136,Climate Change Analyst,vulnerability assessment frameworks,authored,synthetic,true
+CAREER-136,Climate Change Analyst,climate finance tracking tools,authored,synthetic,true
 CAREER-137,Wildlife Conservation Officer,GPS and patrol tools such as SMART,authored,synthetic,true
 CAREER-137,Wildlife Conservation Officer,camera traps,authored,synthetic,true
 CAREER-137,Wildlife Conservation Officer,binoculars and field guides,authored,synthetic,true
 CAREER-137,Wildlife Conservation Officer,GIS software,authored,synthetic,true
 CAREER-137,Wildlife Conservation Officer,radios,authored,synthetic,true
 CAREER-137,Wildlife Conservation Officer,tracking collars,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,drones and aerial survey equipment,authored,synthetic,true
 CAREER-138,Water Resources Officer,flow meters and gauges,authored,synthetic,true
 CAREER-138,Water Resources Officer,water quality test kits,authored,synthetic,true
 CAREER-138,Water Resources Officer,GIS software,authored,synthetic,true
 CAREER-138,Water Resources Officer,hydrological models,authored,synthetic,true
 CAREER-138,Water Resources Officer,data loggers,authored,synthetic,true
 CAREER-138,Water Resources Officer,borehole logging equipment,authored,synthetic,true
+CAREER-138,Water Resources Officer,remote sensing data,authored,synthetic,true
 CAREER-139,Agricultural Economist,Stata or R,authored,synthetic,true
 CAREER-139,Agricultural Economist,Excel,authored,synthetic,true
 CAREER-139,Agricultural Economist,household survey data,authored,synthetic,true
 CAREER-139,Agricultural Economist,survey tools such as KoboToolbox,authored,synthetic,true
 CAREER-139,Agricultural Economist,market information systems,authored,synthetic,true
 CAREER-139,Agricultural Economist,economic models,authored,synthetic,true
+CAREER-139,Agricultural Economist,GIS software,authored,synthetic,true
 CAREER-140,Precision Agriculture Technician,agricultural drones,authored,synthetic,true
 CAREER-140,Precision Agriculture Technician,GIS software such as QGIS,authored,synthetic,true
 CAREER-140,Precision Agriculture Technician,soil moisture and weather sensors,authored,synthetic,true
 CAREER-140,Precision Agriculture Technician,GPS receivers,authored,synthetic,true
 CAREER-140,Precision Agriculture Technician,farm management platforms,authored,synthetic,true
 CAREER-140,Precision Agriculture Technician,satellite imagery,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Python or R for farm data,authored,synthetic,true
 CAREER-141,Waste Management Officer,collection vehicles and equipment,authored,synthetic,true
 CAREER-141,Waste Management Officer,weighbridges,authored,synthetic,true
 CAREER-141,Waste Management Officer,route planning tools,authored,synthetic,true
 CAREER-141,Waste Management Officer,waste regulations,authored,synthetic,true
 CAREER-141,Waste Management Officer,protective equipment,authored,synthetic,true
 CAREER-141,Waste Management Officer,Excel,authored,synthetic,true
+CAREER-141,Waste Management Officer,composting and biogas equipment,authored,synthetic,true
 CAREER-142,Journalist,content management systems,authored,synthetic,true
 CAREER-142,Journalist,voice recorders and smartphones,authored,synthetic,true
 CAREER-142,Journalist,fact-checking and open-source verification tools,authored,synthetic,true
@@ -1803,552 +1944,644 @@ CAREER-277,Site Reliability Engineer,Prometheus and Grafana,authored,synthetic,t
 CAREER-277,Site Reliability Engineer,scripting languages,authored,synthetic,true
 CAREER-277,Site Reliability Engineer,cloud platforms,authored,synthetic,true
 CAREER-277,Site Reliability Engineer,on-call tools,authored,synthetic,true
+CAREER-277,Site Reliability Engineer,Terraform,authored,synthetic,true
 CAREER-278,Solutions Architect,architecture diagramming tools,authored,synthetic,true
 CAREER-278,Solutions Architect,cloud platforms,authored,synthetic,true
 CAREER-278,Solutions Architect,API design tools,authored,synthetic,true
 CAREER-278,Solutions Architect,modelling notations,authored,synthetic,true
 CAREER-278,Solutions Architect,cost calculators,authored,synthetic,true
 CAREER-278,Solutions Architect,documentation tools,authored,synthetic,true
+CAREER-278,Solutions Architect,Terraform and infrastructure templates,authored,synthetic,true
 CAREER-279,Business Intelligence Developer,Power BI or Tableau,authored,synthetic,true
 CAREER-279,Business Intelligence Developer,SQL,authored,synthetic,true
 CAREER-279,Business Intelligence Developer,data warehouses,authored,synthetic,true
 CAREER-279,Business Intelligence Developer,DAX,authored,synthetic,true
 CAREER-279,Business Intelligence Developer,Excel,authored,synthetic,true
 CAREER-279,Business Intelligence Developer,ETL tools,authored,synthetic,true
+CAREER-279,Business Intelligence Developer,Python,authored,synthetic,true
 CAREER-280,Penetration Tester,Kali Linux,authored,synthetic,true
 CAREER-280,Penetration Tester,Burp Suite,authored,synthetic,true
 CAREER-280,Penetration Tester,Nmap,authored,synthetic,true
 CAREER-280,Penetration Tester,Metasploit,authored,synthetic,true
 CAREER-280,Penetration Tester,scripting in Python,authored,synthetic,true
 CAREER-280,Penetration Tester,reporting templates,authored,synthetic,true
+CAREER-280,Penetration Tester,password and wireless auditing tools,authored,synthetic,true
 CAREER-281,Blockchain Developer,Solidity,authored,synthetic,true
 CAREER-281,Blockchain Developer,Ethereum tooling,authored,synthetic,true
 CAREER-281,Blockchain Developer,JavaScript or TypeScript,authored,synthetic,true
 CAREER-281,Blockchain Developer,test networks,authored,synthetic,true
 CAREER-281,Blockchain Developer,wallets,authored,synthetic,true
 CAREER-281,Blockchain Developer,Git,authored,synthetic,true
+CAREER-281,Blockchain Developer,Hardhat or Foundry,authored,synthetic,true
 CAREER-282,Natural Language Processing Engineer,Python,authored,synthetic,true
 CAREER-282,Natural Language Processing Engineer,Hugging Face Transformers,authored,synthetic,true
 CAREER-282,Natural Language Processing Engineer,PyTorch,authored,synthetic,true
 CAREER-282,Natural Language Processing Engineer,vector databases,authored,synthetic,true
 CAREER-282,Natural Language Processing Engineer,evaluation toolkits,authored,synthetic,true
 CAREER-282,Natural Language Processing Engineer,Git,authored,synthetic,true
+CAREER-282,Natural Language Processing Engineer,LangChain or similar frameworks,authored,synthetic,true
 CAREER-283,Computer Vision Engineer,Python,authored,synthetic,true
 CAREER-283,Computer Vision Engineer,OpenCV,authored,synthetic,true
 CAREER-283,Computer Vision Engineer,PyTorch or TensorFlow,authored,synthetic,true
 CAREER-283,Computer Vision Engineer,annotation tools,authored,synthetic,true
 CAREER-283,Computer Vision Engineer,GPUs,authored,synthetic,true
 CAREER-283,Computer Vision Engineer,Git,authored,synthetic,true
+CAREER-283,Computer Vision Engineer,edge devices such as NVIDIA Jetson,authored,synthetic,true
 CAREER-284,IT Project Manager,project scheduling tools,authored,synthetic,true
 CAREER-284,IT Project Manager,Jira or Trello,authored,synthetic,true
 CAREER-284,IT Project Manager,spreadsheets,authored,synthetic,true
 CAREER-284,IT Project Manager,reporting dashboards,authored,synthetic,true
 CAREER-284,IT Project Manager,collaboration tools,authored,synthetic,true
 CAREER-284,IT Project Manager,risk registers,authored,synthetic,true
+CAREER-284,IT Project Manager,Confluence,authored,synthetic,true
 CAREER-285,ERP Consultant,"SAP, Odoo or Microsoft Dynamics",authored,synthetic,true
 CAREER-285,ERP Consultant,SQL,authored,synthetic,true
 CAREER-285,ERP Consultant,process mapping tools,authored,synthetic,true
 CAREER-285,ERP Consultant,spreadsheets,authored,synthetic,true
 CAREER-285,ERP Consultant,ticketing systems,authored,synthetic,true
 CAREER-285,ERP Consultant,training materials,authored,synthetic,true
+CAREER-285,ERP Consultant,data migration templates,authored,synthetic,true
 CAREER-286,Data Protection Officer,privacy management tools,authored,synthetic,true
 CAREER-286,Data Protection Officer,data inventories,authored,synthetic,true
 CAREER-286,Data Protection Officer,policy templates,authored,synthetic,true
 CAREER-286,Data Protection Officer,risk registers,authored,synthetic,true
 CAREER-286,Data Protection Officer,spreadsheets,authored,synthetic,true
 CAREER-286,Data Protection Officer,e-learning tools,authored,synthetic,true
+CAREER-286,Data Protection Officer,consent and cookie management tools,authored,synthetic,true
 CAREER-287,IT Auditor,audit management tools,authored,synthetic,true
 CAREER-287,IT Auditor,data analysis tools such as ACL or IDEA,authored,synthetic,true
 CAREER-287,IT Auditor,SQL,authored,synthetic,true
 CAREER-287,IT Auditor,spreadsheets,authored,synthetic,true
 CAREER-287,IT Auditor,control frameworks,authored,synthetic,true
 CAREER-287,IT Auditor,reporting templates,authored,synthetic,true
+CAREER-287,IT Auditor,COBIT and ISO 27001,authored,synthetic,true
 CAREER-288,Technical Writer,Markdown,authored,synthetic,true
 CAREER-288,Technical Writer,docs-as-code tools,authored,synthetic,true
 CAREER-288,Technical Writer,Git,authored,synthetic,true
 CAREER-288,Technical Writer,API tools such as Postman,authored,synthetic,true
 CAREER-288,Technical Writer,screenshot and diagram tools,authored,synthetic,true
 CAREER-288,Technical Writer,style guides,authored,synthetic,true
+CAREER-288,Technical Writer,Confluence or similar wikis,authored,synthetic,true
 CAREER-289,Aerospace Engineer,CAD software such as CATIA,authored,synthetic,true
 CAREER-289,Aerospace Engineer,simulation tools,authored,synthetic,true
 CAREER-289,Aerospace Engineer,MATLAB,authored,synthetic,true
 CAREER-289,Aerospace Engineer,wind tunnel and test rigs,authored,synthetic,true
 CAREER-289,Aerospace Engineer,technical manuals,authored,synthetic,true
 CAREER-289,Aerospace Engineer,airworthiness regulations,authored,synthetic,true
+CAREER-289,Aerospace Engineer,finite element analysis software,authored,synthetic,true
 CAREER-290,Agricultural Engineer,AutoCAD,authored,synthetic,true
 CAREER-290,Agricultural Engineer,irrigation design software,authored,synthetic,true
 CAREER-290,Agricultural Engineer,surveying equipment,authored,synthetic,true
 CAREER-290,Agricultural Engineer,GIS software,authored,synthetic,true
 CAREER-290,Agricultural Engineer,farm machinery,authored,synthetic,true
 CAREER-290,Agricultural Engineer,spreadsheets,authored,synthetic,true
+CAREER-290,Agricultural Engineer,soil moisture sensors,authored,synthetic,true
 CAREER-291,Marine Engineer,marine diesel engines,authored,synthetic,true
 CAREER-291,Marine Engineer,engine room systems,authored,synthetic,true
 CAREER-291,Marine Engineer,diagnostic instruments,authored,synthetic,true
 CAREER-291,Marine Engineer,maintenance management systems,authored,synthetic,true
 CAREER-291,Marine Engineer,safety equipment,authored,synthetic,true
 CAREER-291,Marine Engineer,technical manuals,authored,synthetic,true
+CAREER-291,Marine Engineer,engine room simulators,authored,synthetic,true
 CAREER-292,Geotechnical Engineer,drilling and sampling equipment,authored,synthetic,true
 CAREER-292,Geotechnical Engineer,soil laboratory equipment,authored,synthetic,true
 CAREER-292,Geotechnical Engineer,slope and foundation software such as PLAXIS,authored,synthetic,true
 CAREER-292,Geotechnical Engineer,AutoCAD,authored,synthetic,true
 CAREER-292,Geotechnical Engineer,spreadsheets,authored,synthetic,true
 CAREER-292,Geotechnical Engineer,field testing kits,authored,synthetic,true
+CAREER-292,Geotechnical Engineer,cone penetration test rigs,authored,synthetic,true
 CAREER-293,Highway and Transport Engineer,Civil 3D,authored,synthetic,true
 CAREER-293,Highway and Transport Engineer,pavement design software,authored,synthetic,true
 CAREER-293,Highway and Transport Engineer,traffic modelling tools,authored,synthetic,true
 CAREER-293,Highway and Transport Engineer,surveying equipment,authored,synthetic,true
 CAREER-293,Highway and Transport Engineer,materials testing equipment,authored,synthetic,true
 CAREER-293,Highway and Transport Engineer,spreadsheets,authored,synthetic,true
+CAREER-293,Highway and Transport Engineer,road asset management systems,authored,synthetic,true
 CAREER-294,Telecommunications Network Planner,radio planning tools such as Atoll,authored,synthetic,true
 CAREER-294,Telecommunications Network Planner,GIS software,authored,synthetic,true
 CAREER-294,Telecommunications Network Planner,link budget calculators,authored,synthetic,true
 CAREER-294,Telecommunications Network Planner,drive-test tools,authored,synthetic,true
 CAREER-294,Telecommunications Network Planner,spreadsheets,authored,synthetic,true
 CAREER-294,Telecommunications Network Planner,network performance systems,authored,synthetic,true
+CAREER-294,Telecommunications Network Planner,Google Earth and terrain data,authored,synthetic,true
 CAREER-295,Robotics Engineer,ROS,authored,synthetic,true
 CAREER-295,Robotics Engineer,Python and C++,authored,synthetic,true
 CAREER-295,Robotics Engineer,simulation tools such as Gazebo,authored,synthetic,true
 CAREER-295,Robotics Engineer,CAD software,authored,synthetic,true
 CAREER-295,Robotics Engineer,microcontrollers,authored,synthetic,true
 CAREER-295,Robotics Engineer,sensors and actuators,authored,synthetic,true
+CAREER-295,Robotics Engineer,3D printers and prototyping tools,authored,synthetic,true
 CAREER-296,Fire Safety Engineer,fire system design software,authored,synthetic,true
 CAREER-296,Fire Safety Engineer,AutoCAD,authored,synthetic,true
 CAREER-296,Fire Safety Engineer,hydraulic calculation tools,authored,synthetic,true
 CAREER-296,Fire Safety Engineer,building codes,authored,synthetic,true
 CAREER-296,Fire Safety Engineer,testing instruments,authored,synthetic,true
 CAREER-296,Fire Safety Engineer,risk assessment templates,authored,synthetic,true
+CAREER-296,Fire Safety Engineer,fire and evacuation modelling software,authored,synthetic,true
 CAREER-297,Materials Engineer,universal testing machines,authored,synthetic,true
 CAREER-297,Materials Engineer,microscopes,authored,synthetic,true
 CAREER-297,Materials Engineer,hardness testers,authored,synthetic,true
 CAREER-297,Materials Engineer,laboratory equipment,authored,synthetic,true
 CAREER-297,Materials Engineer,standards such as ISO and ASTM,authored,synthetic,true
 CAREER-297,Materials Engineer,spreadsheets,authored,synthetic,true
+CAREER-297,Materials Engineer,non-destructive testing equipment,authored,synthetic,true
 CAREER-298,Landscape Architect,AutoCAD,authored,synthetic,true
 CAREER-298,Landscape Architect,SketchUp,authored,synthetic,true
 CAREER-298,Landscape Architect,rendering tools,authored,synthetic,true
 CAREER-298,Landscape Architect,plant databases,authored,synthetic,true
 CAREER-298,Landscape Architect,GIS software,authored,synthetic,true
 CAREER-298,Landscape Architect,Adobe tools,authored,synthetic,true
+CAREER-298,Landscape Architect,Lumion,authored,synthetic,true
 CAREER-299,Facilities Manager,maintenance management systems,authored,synthetic,true
 CAREER-299,Facilities Manager,building management systems,authored,synthetic,true
 CAREER-299,Facilities Manager,spreadsheets,authored,synthetic,true
 CAREER-299,Facilities Manager,contract management tools,authored,synthetic,true
 CAREER-299,Facilities Manager,inspection checklists,authored,synthetic,true
 CAREER-299,Facilities Manager,budgeting tools,authored,synthetic,true
+CAREER-299,Facilities Manager,helpdesk ticketing systems,authored,synthetic,true
 CAREER-300,Surgeon,surgical instruments,authored,synthetic,true
 CAREER-300,Surgeon,operating theatre equipment,authored,synthetic,true
 CAREER-300,Surgeon,laparoscopic towers,authored,synthetic,true
 CAREER-300,Surgeon,imaging such as CT and X-ray,authored,synthetic,true
 CAREER-300,Surgeon,electronic medical records,authored,synthetic,true
 CAREER-300,Surgeon,surgical safety checklists,authored,synthetic,true
+CAREER-300,Surgeon,diathermy and energy devices,authored,synthetic,true
 CAREER-301,Paediatrician,growth charts,authored,synthetic,true
 CAREER-301,Paediatrician,paediatric dosing references,authored,synthetic,true
 CAREER-301,Paediatrician,incubators and warmers,authored,synthetic,true
 CAREER-301,Paediatrician,pulse oximeters,authored,synthetic,true
 CAREER-301,Paediatrician,electronic medical records,authored,synthetic,true
 CAREER-301,Paediatrician,paediatric emergency protocols,authored,synthetic,true
+CAREER-301,Paediatrician,phototherapy units,authored,synthetic,true
 CAREER-302,Midwife,partographs,authored,synthetic,true
 CAREER-302,Midwife,foetal dopplers,authored,synthetic,true
 CAREER-302,Midwife,delivery sets,authored,synthetic,true
 CAREER-302,Midwife,newborn resuscitation equipment,authored,synthetic,true
 CAREER-302,Midwife,mother and child health booklets,authored,synthetic,true
 CAREER-302,Midwife,blood pressure monitors,authored,synthetic,true
+CAREER-302,Midwife,vacuum delivery equipment,authored,synthetic,true
 CAREER-303,Optometrist,phoropters and trial lens sets,authored,synthetic,true
 CAREER-303,Optometrist,slit lamps,authored,synthetic,true
 CAREER-303,Optometrist,autorefractors,authored,synthetic,true
 CAREER-303,Optometrist,ophthalmoscopes,authored,synthetic,true
 CAREER-303,Optometrist,tonometers,authored,synthetic,true
 CAREER-303,Optometrist,optical practice software,authored,synthetic,true
+CAREER-303,Optometrist,retinal cameras,authored,synthetic,true
 CAREER-304,Pharmaceutical Technologist,pharmacy dispensing software,authored,synthetic,true
 CAREER-304,Pharmaceutical Technologist,stock cards and bin cards,authored,synthetic,true
 CAREER-304,Pharmaceutical Technologist,counting trays,authored,synthetic,true
 CAREER-304,Pharmaceutical Technologist,drug reference guides,authored,synthetic,true
 CAREER-304,Pharmaceutical Technologist,cold-chain fridges,authored,synthetic,true
 CAREER-304,Pharmaceutical Technologist,point-of-sale systems,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,electronic logistics management systems,authored,synthetic,true
 CAREER-305,Dental Technologist,dental laboratory handpieces,authored,synthetic,true
 CAREER-305,Dental Technologist,casting machines,authored,synthetic,true
 CAREER-305,Dental Technologist,porcelain furnaces,authored,synthetic,true
 CAREER-305,Dental Technologist,articulators,authored,synthetic,true
 CAREER-305,Dental Technologist,CAD/CAM milling systems,authored,synthetic,true
 CAREER-305,Dental Technologist,waxes and acrylics,authored,synthetic,true
+CAREER-305,Dental Technologist,dental 3D printers,authored,synthetic,true
 CAREER-306,Orthopaedic Technologist,plaster and casting materials,authored,synthetic,true
 CAREER-306,Orthopaedic Technologist,ovens and vacuum formers,authored,synthetic,true
 CAREER-306,Orthopaedic Technologist,hand and bench tools,authored,synthetic,true
 CAREER-306,Orthopaedic Technologist,alignment jigs,authored,synthetic,true
 CAREER-306,Orthopaedic Technologist,thermoplastics,authored,synthetic,true
 CAREER-306,Orthopaedic Technologist,measuring instruments,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,3D scanners and printers,authored,synthetic,true
 CAREER-307,Speech and Language Therapist,standardised language assessments,authored,synthetic,true
 CAREER-307,Speech and Language Therapist,picture and communication boards,authored,synthetic,true
 CAREER-307,Speech and Language Therapist,AAC devices and apps,authored,synthetic,true
 CAREER-307,Speech and Language Therapist,therapy games and materials,authored,synthetic,true
 CAREER-307,Speech and Language Therapist,audio recorders,authored,synthetic,true
 CAREER-307,Speech and Language Therapist,swallowing assessment kits,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,video recording for therapy review,authored,synthetic,true
 CAREER-308,Emergency Medical Technician,ambulance equipment,authored,synthetic,true
 CAREER-308,Emergency Medical Technician,defibrillators,authored,synthetic,true
 CAREER-308,Emergency Medical Technician,oxygen and airway kits,authored,synthetic,true
 CAREER-308,Emergency Medical Technician,spinal boards and stretchers,authored,synthetic,true
 CAREER-308,Emergency Medical Technician,trauma kits,authored,synthetic,true
 CAREER-308,Emergency Medical Technician,radio and dispatch systems,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,portable ventilators and monitors,authored,synthetic,true
 CAREER-309,Health Economist,Stata or R,authored,synthetic,true
 CAREER-309,Health Economist,Excel models,authored,synthetic,true
 CAREER-309,Health Economist,TreeAge or similar modelling tools,authored,synthetic,true
 CAREER-309,Health Economist,national health accounts data,authored,synthetic,true
 CAREER-309,Health Economist,survey datasets,authored,synthetic,true
 CAREER-309,Health Economist,literature databases,authored,synthetic,true
+CAREER-309,Health Economist,DHIS2 and health facility data,authored,synthetic,true
 CAREER-310,Medical Social Worker,case management forms,authored,synthetic,true
 CAREER-310,Medical Social Worker,assessment tools,authored,synthetic,true
 CAREER-310,Medical Social Worker,referral directories,authored,synthetic,true
 CAREER-310,Medical Social Worker,counselling frameworks,authored,synthetic,true
 CAREER-310,Medical Social Worker,hospital information systems,authored,synthetic,true
 CAREER-310,Medical Social Worker,case registers,authored,synthetic,true
+CAREER-310,Medical Social Worker,social health insurance portals,authored,synthetic,true
 CAREER-311,Medical Sales Representative,CRM systems,authored,synthetic,true
 CAREER-311,Medical Sales Representative,product detail aids,authored,synthetic,true
 CAREER-311,Medical Sales Representative,sales reports in Excel,authored,synthetic,true
 CAREER-311,Medical Sales Representative,clinical study summaries,authored,synthetic,true
 CAREER-311,Medical Sales Representative,presentation tools,authored,synthetic,true
 CAREER-311,Medical Sales Representative,route planning apps,authored,synthetic,true
+CAREER-311,Medical Sales Representative,tender and quotation documents,authored,synthetic,true
 CAREER-312,Bank Operations Officer,core banking systems,authored,synthetic,true
 CAREER-312,Bank Operations Officer,SWIFT,authored,synthetic,true
 CAREER-312,Bank Operations Officer,cheque clearing systems,authored,synthetic,true
 CAREER-312,Bank Operations Officer,cash counting machines,authored,synthetic,true
 CAREER-312,Bank Operations Officer,Excel,authored,synthetic,true
 CAREER-312,Bank Operations Officer,queue management systems,authored,synthetic,true
+CAREER-312,Bank Operations Officer,ATM monitoring systems,authored,synthetic,true
 CAREER-313,Financial Controller,ERP systems such as SAP or Oracle,authored,synthetic,true
 CAREER-313,Financial Controller,Excel,authored,synthetic,true
 CAREER-313,Financial Controller,consolidation tools,authored,synthetic,true
 CAREER-313,Financial Controller,IFRS standards,authored,synthetic,true
 CAREER-313,Financial Controller,Power BI,authored,synthetic,true
 CAREER-313,Financial Controller,budgeting systems,authored,synthetic,true
+CAREER-313,Financial Controller,treasury systems,authored,synthetic,true
 CAREER-314,Pension Fund Administrator,pension administration systems,authored,synthetic,true
 CAREER-314,Pension Fund Administrator,Excel,authored,synthetic,true
 CAREER-314,Pension Fund Administrator,retirement benefits regulations,authored,synthetic,true
 CAREER-314,Pension Fund Administrator,scheme rules,authored,synthetic,true
 CAREER-314,Pension Fund Administrator,document management systems,authored,synthetic,true
 CAREER-314,Pension Fund Administrator,member portals,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,actuarial valuation reports,authored,synthetic,true
 CAREER-315,Insurance Claims Analyst,claims management systems,authored,synthetic,true
 CAREER-315,Insurance Claims Analyst,policy administration systems,authored,synthetic,true
 CAREER-315,Insurance Claims Analyst,Excel,authored,synthetic,true
 CAREER-315,Insurance Claims Analyst,assessor and garage reports,authored,synthetic,true
 CAREER-315,Insurance Claims Analyst,medical tariff guides,authored,synthetic,true
 CAREER-315,Insurance Claims Analyst,fraud checklists,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,telematics and photo assessment apps,authored,synthetic,true
 CAREER-316,Islamic Finance Specialist,Islamic contract structures such as murabaha and ijara,authored,synthetic,true
 CAREER-316,Islamic Finance Specialist,AAOIFI standards,authored,synthetic,true
 CAREER-316,Islamic Finance Specialist,core banking systems,authored,synthetic,true
 CAREER-316,Islamic Finance Specialist,Excel,authored,synthetic,true
 CAREER-316,Islamic Finance Specialist,Sharia board rulings,authored,synthetic,true
 CAREER-316,Islamic Finance Specialist,product documentation,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Islamic Financial Services Board standards,authored,synthetic,true
 CAREER-317,SACCO Manager,SACCO management systems,authored,synthetic,true
 CAREER-317,SACCO Manager,mobile banking platforms,authored,synthetic,true
 CAREER-317,SACCO Manager,Excel,authored,synthetic,true
 CAREER-317,SACCO Manager,regulator reporting templates,authored,synthetic,true
 CAREER-317,SACCO Manager,accounting software,authored,synthetic,true
 CAREER-317,SACCO Manager,loan management modules,authored,synthetic,true
+CAREER-317,SACCO Manager,credit reference bureau reports,authored,synthetic,true
 CAREER-318,Equity Trader,trading platforms,authored,synthetic,true
 CAREER-318,Equity Trader,Bloomberg or Refinitiv,authored,synthetic,true
 CAREER-318,Equity Trader,order management systems,authored,synthetic,true
 CAREER-318,Equity Trader,Excel,authored,synthetic,true
 CAREER-318,Equity Trader,charting tools,authored,synthetic,true
 CAREER-318,Equity Trader,market data feeds,authored,synthetic,true
+CAREER-318,Equity Trader,Python for backtesting,authored,synthetic,true
 CAREER-319,Budget Analyst,Excel,authored,synthetic,true
 CAREER-319,Budget Analyst,budgeting systems such as IFMIS,authored,synthetic,true
 CAREER-319,Budget Analyst,ERP systems,authored,synthetic,true
 CAREER-319,Budget Analyst,Power BI,authored,synthetic,true
 CAREER-319,Budget Analyst,budget guidelines and circulars,authored,synthetic,true
 CAREER-319,Budget Analyst,forecasting templates,authored,synthetic,true
+CAREER-319,Budget Analyst,public finance regulations,authored,synthetic,true
 CAREER-320,Anti-Money Laundering Analyst,transaction monitoring systems,authored,synthetic,true
 CAREER-320,Anti-Money Laundering Analyst,sanctions screening tools such as World-Check,authored,synthetic,true
 CAREER-320,Anti-Money Laundering Analyst,core banking systems,authored,synthetic,true
 CAREER-320,Anti-Money Laundering Analyst,Excel,authored,synthetic,true
 CAREER-320,Anti-Money Laundering Analyst,case management systems,authored,synthetic,true
 CAREER-320,Anti-Money Laundering Analyst,regulator reporting portals,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,SQL,authored,synthetic,true
 CAREER-321,Cost Accountant,ERP systems such as SAP,authored,synthetic,true
 CAREER-321,Cost Accountant,Excel,authored,synthetic,true
 CAREER-321,Cost Accountant,costing models,authored,synthetic,true
 CAREER-321,Cost Accountant,inventory systems,authored,synthetic,true
 CAREER-321,Cost Accountant,Power BI,authored,synthetic,true
 CAREER-321,Cost Accountant,accounting software,authored,synthetic,true
+CAREER-321,Cost Accountant,bills of materials,authored,synthetic,true
 CAREER-322,Venture Capital Analyst,Excel,authored,synthetic,true
 CAREER-322,Venture Capital Analyst,pitch decks and data rooms,authored,synthetic,true
 CAREER-322,Venture Capital Analyst,CRM tools such as Affinity,authored,synthetic,true
 CAREER-322,Venture Capital Analyst,cap table tools,authored,synthetic,true
 CAREER-322,Venture Capital Analyst,market databases such as Crunchbase,authored,synthetic,true
 CAREER-322,Venture Capital Analyst,PowerPoint,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,legal term sheets,authored,synthetic,true
 CAREER-323,Real Estate Agent,property listing portals,authored,synthetic,true
 CAREER-323,Real Estate Agent,CRM systems,authored,synthetic,true
 CAREER-323,Real Estate Agent,social media,authored,synthetic,true
 CAREER-323,Real Estate Agent,smartphone photography,authored,synthetic,true
 CAREER-323,Real Estate Agent,tenancy and sale agreement templates,authored,synthetic,true
 CAREER-323,Real Estate Agent,Excel,authored,synthetic,true
+CAREER-323,Real Estate Agent,virtual tour and video tools,authored,synthetic,true
 CAREER-324,Property Manager,property management software,authored,synthetic,true
 CAREER-324,Property Manager,Excel,authored,synthetic,true
 CAREER-324,Property Manager,mobile money and bank portals,authored,synthetic,true
 CAREER-324,Property Manager,lease templates,authored,synthetic,true
 CAREER-324,Property Manager,maintenance logs,authored,synthetic,true
 CAREER-324,Property Manager,accounting software,authored,synthetic,true
+CAREER-324,Property Manager,smart metering and access systems,authored,synthetic,true
 CAREER-325,Administrative Assistant,Microsoft Word and Excel,authored,synthetic,true
 CAREER-325,Administrative Assistant,email and calendar tools,authored,synthetic,true
 CAREER-325,Administrative Assistant,filing systems,authored,synthetic,true
 CAREER-325,Administrative Assistant,printers and scanners,authored,synthetic,true
 CAREER-325,Administrative Assistant,video meeting tools,authored,synthetic,true
 CAREER-325,Administrative Assistant,petty cash records,authored,synthetic,true
+CAREER-325,Administrative Assistant,PowerPoint,authored,synthetic,true
 CAREER-326,Executive Assistant,Outlook or Google Workspace,authored,synthetic,true
 CAREER-326,Executive Assistant,PowerPoint,authored,synthetic,true
 CAREER-326,Executive Assistant,Excel,authored,synthetic,true
 CAREER-326,Executive Assistant,travel booking tools,authored,synthetic,true
 CAREER-326,Executive Assistant,video meeting tools,authored,synthetic,true
 CAREER-326,Executive Assistant,board portal software,authored,synthetic,true
+CAREER-326,Executive Assistant,task management tools,authored,synthetic,true
 CAREER-327,Customer Service Representative,CRM and ticketing systems,authored,synthetic,true
 CAREER-327,Customer Service Representative,call centre software,authored,synthetic,true
 CAREER-327,Customer Service Representative,knowledge bases,authored,synthetic,true
 CAREER-327,Customer Service Representative,live chat tools,authored,synthetic,true
 CAREER-327,Customer Service Representative,WhatsApp Business,authored,synthetic,true
 CAREER-327,Customer Service Representative,Excel,authored,synthetic,true
+CAREER-327,Customer Service Representative,email and SMS tools,authored,synthetic,true
 CAREER-328,Call Centre Team Leader,call centre software,authored,synthetic,true
 CAREER-328,Call Centre Team Leader,quality monitoring scorecards,authored,synthetic,true
 CAREER-328,Call Centre Team Leader,workforce management tools,authored,synthetic,true
 CAREER-328,Call Centre Team Leader,CRM systems,authored,synthetic,true
 CAREER-328,Call Centre Team Leader,Excel,authored,synthetic,true
 CAREER-328,Call Centre Team Leader,real-time dashboards,authored,synthetic,true
+CAREER-328,Call Centre Team Leader,knowledge base tools,authored,synthetic,true
 CAREER-329,Innovation Manager,design thinking toolkits,authored,synthetic,true
 CAREER-329,Innovation Manager,Miro or similar whiteboards,authored,synthetic,true
 CAREER-329,Innovation Manager,business model canvas,authored,synthetic,true
 CAREER-329,Innovation Manager,Excel,authored,synthetic,true
 CAREER-329,Innovation Manager,prototyping tools such as Figma,authored,synthetic,true
 CAREER-329,Innovation Manager,PowerPoint,authored,synthetic,true
+CAREER-329,Innovation Manager,Jira or Trello,authored,synthetic,true
 CAREER-330,Product Owner,Jira,authored,synthetic,true
 CAREER-330,Product Owner,Confluence,authored,synthetic,true
 CAREER-330,Product Owner,Figma,authored,synthetic,true
 CAREER-330,Product Owner,product analytics tools,authored,synthetic,true
 CAREER-330,Product Owner,roadmap tools,authored,synthetic,true
 CAREER-330,Product Owner,Miro,authored,synthetic,true
+CAREER-330,Product Owner,SQL,authored,synthetic,true
 CAREER-331,Growth Marketer,Google Analytics,authored,synthetic,true
 CAREER-331,Growth Marketer,A/B testing tools,authored,synthetic,true
 CAREER-331,Growth Marketer,Meta and Google Ads,authored,synthetic,true
 CAREER-331,Growth Marketer,SQL,authored,synthetic,true
 CAREER-331,Growth Marketer,product analytics tools such as Mixpanel,authored,synthetic,true
 CAREER-331,Growth Marketer,email automation tools,authored,synthetic,true
+CAREER-331,Growth Marketer,CRM systems,authored,synthetic,true
 CAREER-332,Export Trade Officer,customs systems such as iCMS,authored,synthetic,true
 CAREER-332,Export Trade Officer,Incoterms,authored,synthetic,true
 CAREER-332,Export Trade Officer,letters of credit,authored,synthetic,true
 CAREER-332,Export Trade Officer,Excel,authored,synthetic,true
 CAREER-332,Export Trade Officer,trade portals,authored,synthetic,true
 CAREER-332,Export Trade Officer,shipping documents,authored,synthetic,true
+CAREER-332,Export Trade Officer,certificate of origin systems,authored,synthetic,true
 CAREER-333,Office Manager,Excel,authored,synthetic,true
 CAREER-333,Office Manager,email and calendar tools,authored,synthetic,true
 CAREER-333,Office Manager,accounting or petty cash tools,authored,synthetic,true
 CAREER-333,Office Manager,asset registers,authored,synthetic,true
 CAREER-333,Office Manager,procurement forms,authored,synthetic,true
 CAREER-333,Office Manager,video meeting tools,authored,synthetic,true
+CAREER-333,Office Manager,visitor and access control systems,authored,synthetic,true
 CAREER-334,Franchise and Distribution Manager,distributor management systems,authored,synthetic,true
 CAREER-334,Franchise and Distribution Manager,CRM systems,authored,synthetic,true
 CAREER-334,Franchise and Distribution Manager,Excel,authored,synthetic,true
 CAREER-334,Franchise and Distribution Manager,sales dashboards,authored,synthetic,true
 CAREER-334,Franchise and Distribution Manager,franchise agreements,authored,synthetic,true
 CAREER-334,Franchise and Distribution Manager,route planning tools,authored,synthetic,true
+CAREER-334,Franchise and Distribution Manager,merchandising audit apps,authored,synthetic,true
 CAREER-335,Prosecutor,case management systems,authored,synthetic,true
 CAREER-335,Prosecutor,law reports and statutes,authored,synthetic,true
 CAREER-335,Prosecutor,charging guidelines,authored,synthetic,true
 CAREER-335,Prosecutor,court e-filing systems,authored,synthetic,true
 CAREER-335,Prosecutor,Word,authored,synthetic,true
 CAREER-335,Prosecutor,evidence registers,authored,synthetic,true
+CAREER-335,Prosecutor,virtual court platforms,authored,synthetic,true
 CAREER-336,Environmental Lawyer,environmental statutes and regulations,authored,synthetic,true
 CAREER-336,Environmental Lawyer,law databases,authored,synthetic,true
 CAREER-336,Environmental Lawyer,impact assessment reports,authored,synthetic,true
 CAREER-336,Environmental Lawyer,land registry portals,authored,synthetic,true
 CAREER-336,Environmental Lawyer,Word,authored,synthetic,true
 CAREER-336,Environmental Lawyer,court e-filing systems,authored,synthetic,true
+CAREER-336,Environmental Lawyer,GIS maps,authored,synthetic,true
 CAREER-337,Family Lawyer,law databases,authored,synthetic,true
 CAREER-337,Family Lawyer,court e-filing systems,authored,synthetic,true
 CAREER-337,Family Lawyer,Word,authored,synthetic,true
 CAREER-337,Family Lawyer,succession forms and precedents,authored,synthetic,true
 CAREER-337,Family Lawyer,case management software,authored,synthetic,true
 CAREER-337,Family Lawyer,mediation frameworks,authored,synthetic,true
+CAREER-337,Family Lawyer,virtual court platforms,authored,synthetic,true
 CAREER-338,Tax Lawyer,tax statutes and finance acts,authored,synthetic,true
 CAREER-338,Tax Lawyer,tax tribunal decisions,authored,synthetic,true
 CAREER-338,Tax Lawyer,law databases,authored,synthetic,true
 CAREER-338,Tax Lawyer,iTax,authored,synthetic,true
 CAREER-338,Tax Lawyer,Word,authored,synthetic,true
 CAREER-338,Tax Lawyer,Excel,authored,synthetic,true
+CAREER-338,Tax Lawyer,double taxation agreements,authored,synthetic,true
 CAREER-339,Court Clerk,case tracking systems,authored,synthetic,true
 CAREER-339,Court Clerk,court e-filing systems,authored,synthetic,true
 CAREER-339,Court Clerk,court recording equipment,authored,synthetic,true
 CAREER-339,Court Clerk,Word,authored,synthetic,true
 CAREER-339,Court Clerk,registry registers,authored,synthetic,true
 CAREER-339,Court Clerk,payment systems,authored,synthetic,true
+CAREER-339,Court Clerk,virtual court platforms,authored,synthetic,true
 CAREER-340,Legal Aid Officer,case management databases,authored,synthetic,true
 CAREER-340,Legal Aid Officer,intake forms,authored,synthetic,true
 CAREER-340,Legal Aid Officer,self-help legal guides,authored,synthetic,true
 CAREER-340,Legal Aid Officer,law databases,authored,synthetic,true
 CAREER-340,Legal Aid Officer,Word,authored,synthetic,true
 CAREER-340,Legal Aid Officer,referral directories,authored,synthetic,true
+CAREER-340,Legal Aid Officer,mobile legal aid clinic kits,authored,synthetic,true
 CAREER-341,Data Privacy Counsel,data protection statutes and regulations,authored,synthetic,true
 CAREER-341,Data Privacy Counsel,privacy management tools,authored,synthetic,true
 CAREER-341,Data Privacy Counsel,data inventories and records of processing,authored,synthetic,true
 CAREER-341,Data Privacy Counsel,Word,authored,synthetic,true
 CAREER-341,Data Privacy Counsel,impact assessment templates,authored,synthetic,true
 CAREER-341,Data Privacy Counsel,regulator portals,authored,synthetic,true
+CAREER-341,Data Privacy Counsel,consent management tools,authored,synthetic,true
 CAREER-342,Ombudsman Officer,complaints management systems,authored,synthetic,true
 CAREER-342,Ombudsman Officer,investigation templates,authored,synthetic,true
 CAREER-342,Ombudsman Officer,statutes on administrative justice,authored,synthetic,true
 CAREER-342,Ombudsman Officer,Word,authored,synthetic,true
 CAREER-342,Ombudsman Officer,Excel,authored,synthetic,true
 CAREER-342,Ombudsman Officer,mediation frameworks,authored,synthetic,true
+CAREER-342,Ombudsman Officer,access to information laws,authored,synthetic,true
 CAREER-343,Anti-Corruption Investigator,case management systems,authored,synthetic,true
 CAREER-343,Anti-Corruption Investigator,financial analysis tools,authored,synthetic,true
 CAREER-343,Anti-Corruption Investigator,digital forensics tools,authored,synthetic,true
 CAREER-343,Anti-Corruption Investigator,Excel,authored,synthetic,true
 CAREER-343,Anti-Corruption Investigator,anti-corruption statutes,authored,synthetic,true
 CAREER-343,Anti-Corruption Investigator,evidence registers,authored,synthetic,true
+CAREER-343,Anti-Corruption Investigator,open-source intelligence tools,authored,synthetic,true
 CAREER-344,Land Registrar,land information systems such as Ardhisasa,authored,synthetic,true
 CAREER-344,Land Registrar,land registers and maps,authored,synthetic,true
 CAREER-344,Land Registrar,land statutes,authored,synthetic,true
 CAREER-344,Land Registrar,Word,authored,synthetic,true
 CAREER-344,Land Registrar,scanners and records systems,authored,synthetic,true
 CAREER-344,Land Registrar,registry index maps,authored,synthetic,true
+CAREER-344,Land Registrar,cadastral maps,authored,synthetic,true
 CAREER-345,Legal Technologist,document automation tools,authored,synthetic,true
 CAREER-345,Legal Technologist,contract management systems,authored,synthetic,true
 CAREER-345,Legal Technologist,e-discovery platforms,authored,synthetic,true
 CAREER-345,Legal Technologist,Excel and SQL,authored,synthetic,true
 CAREER-345,Legal Technologist,no-code workflow tools,authored,synthetic,true
 CAREER-345,Legal Technologist,Python,authored,synthetic,true
+CAREER-345,Legal Technologist,AI contract review tools,authored,synthetic,true
 CAREER-346,Examinations Officer,examination management systems,authored,synthetic,true
 CAREER-346,Examinations Officer,Excel,authored,synthetic,true
 CAREER-346,Examinations Officer,national examination portals,authored,synthetic,true
 CAREER-346,Examinations Officer,secure storage,authored,synthetic,true
 CAREER-346,Examinations Officer,timetabling tools,authored,synthetic,true
 CAREER-346,Examinations Officer,student information systems,authored,synthetic,true
+CAREER-346,Examinations Officer,optical mark readers,authored,synthetic,true
 CAREER-347,Education Researcher,"Stata, R or SPSS",authored,synthetic,true
 CAREER-347,Education Researcher,survey tools such as KoboToolbox,authored,synthetic,true
 CAREER-347,Education Researcher,qualitative analysis tools such as NVivo,authored,synthetic,true
 CAREER-347,Education Researcher,Excel,authored,synthetic,true
 CAREER-347,Education Researcher,learning assessment tools,authored,synthetic,true
 CAREER-347,Education Researcher,reference managers,authored,synthetic,true
+CAREER-347,Education Researcher,Python,authored,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,sports equipment,authored,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,training plans,authored,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,stopwatches and fitness tests,authored,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,first-aid kits,authored,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,video analysis apps,authored,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,PE curriculum designs,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,fitness tracking apps,authored,synthetic,true
 CAREER-349,Music Teacher,pianos and keyboards,authored,synthetic,true
 CAREER-349,Music Teacher,classroom instruments,authored,synthetic,true
 CAREER-349,Music Teacher,sheet music,authored,synthetic,true
 CAREER-349,Music Teacher,notation software such as MuseScore,authored,synthetic,true
 CAREER-349,Music Teacher,audio equipment,authored,synthetic,true
 CAREER-349,Music Teacher,graded exam syllabuses,authored,synthetic,true
+CAREER-349,Music Teacher,digital audio workstations,authored,synthetic,true
 CAREER-350,STEM Educator,Scratch,authored,synthetic,true
 CAREER-350,STEM Educator,Arduino and micro:bit kits,authored,synthetic,true
 CAREER-350,STEM Educator,robotics kits,authored,synthetic,true
 CAREER-350,STEM Educator,laboratory equipment,authored,synthetic,true
 CAREER-350,STEM Educator,Python,authored,synthetic,true
 CAREER-350,STEM Educator,3D printers,authored,synthetic,true
+CAREER-350,STEM Educator,simulation tools such as PhET,authored,synthetic,true
 CAREER-351,Sign Language Interpreter,Kenyan Sign Language,authored,synthetic,true
 CAREER-351,Sign Language Interpreter,interpreting codes of ethics,authored,synthetic,true
 CAREER-351,Sign Language Interpreter,video interpreting platforms,authored,synthetic,true
 CAREER-351,Sign Language Interpreter,subject glossaries,authored,synthetic,true
 CAREER-351,Sign Language Interpreter,preparation notes,authored,synthetic,true
 CAREER-351,Sign Language Interpreter,captioning tools,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,tactile signing for deaf-blind people,authored,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,standards assessment tools,authored,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,lesson observation forms,authored,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,inspection report templates,authored,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,policy and standards documents,authored,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,Excel,authored,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,education information systems,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,student and graduate survey tools,authored,synthetic,true
 CAREER-353,Dean of Students,student information systems,authored,synthetic,true
 CAREER-353,Dean of Students,case management records,authored,synthetic,true
 CAREER-353,Dean of Students,student handbooks and policies,authored,synthetic,true
 CAREER-353,Dean of Students,event planning tools,authored,synthetic,true
 CAREER-353,Dean of Students,survey tools,authored,synthetic,true
 CAREER-353,Dean of Students,Excel,authored,synthetic,true
+CAREER-353,Dean of Students,counselling and health referral systems,authored,synthetic,true
 CAREER-354,E-learning Content Developer,Articulate Storyline,authored,synthetic,true
 CAREER-354,E-learning Content Developer,H5P,authored,synthetic,true
 CAREER-354,E-learning Content Developer,video editors such as Camtasia,authored,synthetic,true
 CAREER-354,E-learning Content Developer,Canva or Adobe tools,authored,synthetic,true
 CAREER-354,E-learning Content Developer,learning management systems,authored,synthetic,true
 CAREER-354,E-learning Content Developer,SCORM packages,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Adobe Premiere Pro,authored,synthetic,true
 CAREER-355,Career Guidance Officer,career interest assessments,authored,synthetic,true
 CAREER-355,Career Guidance Officer,job boards and LinkedIn,authored,synthetic,true
 CAREER-355,Career Guidance Officer,CV templates,authored,synthetic,true
 CAREER-355,Career Guidance Officer,career services platforms,authored,synthetic,true
 CAREER-355,Career Guidance Officer,Excel,authored,synthetic,true
 CAREER-355,Career Guidance Officer,presentation tools,authored,synthetic,true
+CAREER-355,Career Guidance Officer,psychometric tests,authored,synthetic,true
 CAREER-356,Admissions Officer,student information systems,authored,synthetic,true
 CAREER-356,Admissions Officer,CRM systems,authored,synthetic,true
 CAREER-356,Admissions Officer,application portals,authored,synthetic,true
 CAREER-356,Admissions Officer,Excel,authored,synthetic,true
 CAREER-356,Admissions Officer,email and messaging tools,authored,synthetic,true
 CAREER-356,Admissions Officer,presentation materials,authored,synthetic,true
+CAREER-356,Admissions Officer,placement service portals such as KUCCPS,authored,synthetic,true
 CAREER-357,Dairy Technologist,pasteurisers and homogenisers,authored,synthetic,true
 CAREER-357,Dairy Technologist,lactometers and milk analysers,authored,synthetic,true
 CAREER-357,Dairy Technologist,cleaning-in-place systems,authored,synthetic,true
 CAREER-357,Dairy Technologist,cold storage,authored,synthetic,true
 CAREER-357,Dairy Technologist,HACCP plans,authored,synthetic,true
 CAREER-357,Dairy Technologist,laboratory test kits,authored,synthetic,true
+CAREER-357,Dairy Technologist,packaging and filling machines,authored,synthetic,true
 CAREER-358,Poultry Farm Manager,feeders and drinkers,authored,synthetic,true
 CAREER-358,Poultry Farm Manager,brooders and incubators,authored,synthetic,true
 CAREER-358,Poultry Farm Manager,vaccination equipment,authored,synthetic,true
 CAREER-358,Poultry Farm Manager,weighing scales,authored,synthetic,true
 CAREER-358,Poultry Farm Manager,flock records,authored,synthetic,true
 CAREER-358,Poultry Farm Manager,feed formulation tools,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,automated climate control systems,authored,synthetic,true
 CAREER-359,Apiculturist,Langstroth and top-bar hives,authored,synthetic,true
 CAREER-359,Apiculturist,bee suits and smokers,authored,synthetic,true
 CAREER-359,Apiculturist,hive tools,authored,synthetic,true
 CAREER-359,Apiculturist,honey extractors,authored,synthetic,true
 CAREER-359,Apiculturist,refractometers,authored,synthetic,true
 CAREER-359,Apiculturist,packaging equipment,authored,synthetic,true
+CAREER-359,Apiculturist,pollen traps and wax foundation machines,authored,synthetic,true
 CAREER-360,Irrigation Technician,drip lines and fittings,authored,synthetic,true
 CAREER-360,Irrigation Technician,pumps and solar pump kits,authored,synthetic,true
 CAREER-360,Irrigation Technician,pressure gauges and flow meters,authored,synthetic,true
 CAREER-360,Irrigation Technician,pipe tools,authored,synthetic,true
 CAREER-360,Irrigation Technician,soil moisture sensors,authored,synthetic,true
 CAREER-360,Irrigation Technician,irrigation design software,authored,synthetic,true
+CAREER-360,Irrigation Technician,GPS and levelling instruments,authored,synthetic,true
 CAREER-361,Seed Technologist,germination chambers,authored,synthetic,true
 CAREER-361,Seed Technologist,moisture meters,authored,synthetic,true
 CAREER-361,Seed Technologist,seed cleaners and graders,authored,synthetic,true
 CAREER-361,Seed Technologist,purity testing tools,authored,synthetic,true
 CAREER-361,Seed Technologist,seed certification standards such as ISTA rules,authored,synthetic,true
 CAREER-361,Seed Technologist,seed treatment equipment,authored,synthetic,true
+CAREER-361,Seed Technologist,seed laboratory information systems,authored,synthetic,true
 CAREER-362,Range Management Officer,GIS software and satellite vegetation data,authored,synthetic,true
 CAREER-362,Range Management Officer,GPS,authored,synthetic,true
 CAREER-362,Range Management Officer,rangeland assessment methods,authored,synthetic,true
 CAREER-362,Range Management Officer,drought early warning bulletins,authored,synthetic,true
 CAREER-362,Range Management Officer,survey tools,authored,synthetic,true
 CAREER-362,Range Management Officer,grazing plans,authored,synthetic,true
+CAREER-362,Range Management Officer,drones for vegetation mapping,authored,synthetic,true
 CAREER-363,Coffee and Tea Quality Controller,cupping and tasting sets,authored,synthetic,true
 CAREER-363,Coffee and Tea Quality Controller,moisture meters,authored,synthetic,true
 CAREER-363,Coffee and Tea Quality Controller,sample roasters and grinders,authored,synthetic,true
 CAREER-363,Coffee and Tea Quality Controller,grading screens,authored,synthetic,true
 CAREER-363,Coffee and Tea Quality Controller,scoring sheets such as SCA cupping forms,authored,synthetic,true
 CAREER-363,Coffee and Tea Quality Controller,factory processing records,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,colour sorters and density tables,authored,synthetic,true
 CAREER-364,Environmental Educator,education materials and posters,authored,synthetic,true
 CAREER-364,Environmental Educator,field guides,authored,synthetic,true
 CAREER-364,Environmental Educator,presentation tools,authored,synthetic,true
 CAREER-364,Environmental Educator,activity kits,authored,synthetic,true
 CAREER-364,Environmental Educator,social media,authored,synthetic,true
 CAREER-364,Environmental Educator,evaluation forms,authored,synthetic,true
+CAREER-364,Environmental Educator,video and photography equipment,authored,synthetic,true
 CAREER-365,Carbon Project Officer,carbon standards such as Verra and Gold Standard,authored,synthetic,true
 CAREER-365,Carbon Project Officer,GIS and remote sensing,authored,synthetic,true
 CAREER-365,Carbon Project Officer,survey tools,authored,synthetic,true
 CAREER-365,Carbon Project Officer,Excel,authored,synthetic,true
 CAREER-365,Carbon Project Officer,emission calculation methodologies,authored,synthetic,true
 CAREER-365,Carbon Project Officer,GPS,authored,synthetic,true
+CAREER-365,Carbon Project Officer,carbon registry platforms,authored,synthetic,true
 CAREER-366,Plant Pathologist,microscopes,authored,synthetic,true
 CAREER-366,Plant Pathologist,culture media and incubators,authored,synthetic,true
 CAREER-366,Plant Pathologist,PCR and ELISA kits,authored,synthetic,true
 CAREER-366,Plant Pathologist,plant clinic tools,authored,synthetic,true
 CAREER-366,Plant Pathologist,diagnostic guides,authored,synthetic,true
 CAREER-366,Plant Pathologist,spray trial equipment,authored,synthetic,true
+CAREER-366,Plant Pathologist,greenhouses and growth chambers,authored,synthetic,true
 CAREER-367,Livestock Production Officer,ration formulation tools,authored,synthetic,true
 CAREER-367,Livestock Production Officer,weighing bands and scales,authored,synthetic,true
 CAREER-367,Livestock Production Officer,breeding and milk records,authored,synthetic,true
 CAREER-367,Livestock Production Officer,fodder choppers and silage equipment,authored,synthetic,true
 CAREER-367,Livestock Production Officer,survey tools,authored,synthetic,true
 CAREER-367,Livestock Production Officer,training manuals,authored,synthetic,true
+CAREER-367,Livestock Production Officer,milking machines and coolers,authored,synthetic,true
 CAREER-368,Greenhouse Manager,greenhouse structures and climate controls,authored,synthetic,true
 CAREER-368,Greenhouse Manager,drip and fertigation systems,authored,synthetic,true
 CAREER-368,Greenhouse Manager,pH and EC meters,authored,synthetic,true
 CAREER-368,Greenhouse Manager,hydroponic systems,authored,synthetic,true
 CAREER-368,Greenhouse Manager,scouting records,authored,synthetic,true
 CAREER-368,Greenhouse Manager,production software,authored,synthetic,true
+CAREER-368,Greenhouse Manager,biological pest control agents,authored,synthetic,true
 CAREER-369,Documentary Filmmaker,cinema and mirrorless cameras,authored,synthetic,true
 CAREER-369,Documentary Filmmaker,audio recorders and lavalier microphones,authored,synthetic,true
 CAREER-369,Documentary Filmmaker,Premiere Pro or DaVinci Resolve,authored,synthetic,true
