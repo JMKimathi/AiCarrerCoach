@@ -8,6 +8,7 @@ QA = DATA / "qa_pairs.csv"
 MODELS = ROOT / "models"
 BASELINE_DIR = MODELS / "minilm-baseline"
 TRAINED_DIR = MODELS / "career-retriever"
+CANDIDATE_DIR = MODELS / "career-retriever-candidate"
 METRICS = ROOT / "metrics" / "retrieval_metrics.json"
 
 
