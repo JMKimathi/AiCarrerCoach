@@ -1125,8 +1125,8 @@ CAREER-029,Urban and Regional Planner,Regulator or standards officer,beyond,cate
 CAREER-029,Urban and Regional Planner,Expert witness or arbitrator,beyond,category_default,synthetic,true
 CAREER-029,Urban and Regional Planner,Transport Planner,lateral,derived,synthetic,true
 CAREER-029,Urban and Regional Planner,Urban Development Officer,lateral,derived,synthetic,true
-CAREER-029,Urban and Regional Planner,Climate Change Analyst,lateral,derived,synthetic,true
 CAREER-029,Urban and Regional Planner,Gender and Inclusion Officer,lateral,derived,synthetic,true
+CAREER-029,Urban and Regional Planner,Climate Change Analyst,lateral,derived,synthetic,true
 CAREER-030,Construction Project Manager,Construction Manager,alternative,authored,synthetic,true
 CAREER-030,Construction Project Manager,Site Manager,alternative,authored,synthetic,true
 CAREER-030,Construction Project Manager,Project Manager,alternative,authored,synthetic,true
@@ -1202,7 +1202,7 @@ CAREER-031,Geospatial and GIS Specialist,Expert witness or arbitrator,beyond,cat
 CAREER-031,Geospatial and GIS Specialist,Land Surveyor,lateral,derived,synthetic,true
 CAREER-031,Geospatial and GIS Specialist,Landscape Architect,lateral,derived,synthetic,true
 CAREER-031,Geospatial and GIS Specialist,Urban and Regional Planner,lateral,derived,synthetic,true
-CAREER-031,Geospatial and GIS Specialist,Telecommunications Network Planner,lateral,derived,synthetic,true
+CAREER-031,Geospatial and GIS Specialist,Precision Agriculture Technician,lateral,derived,synthetic,true
 CAREER-032,Water and Sanitation Engineer,Water Engineer,alternative,authored,synthetic,true
 CAREER-032,Water and Sanitation Engineer,WASH Engineer,alternative,authored,synthetic,true
 CAREER-032,Water and Sanitation Engineer,Water Supply Engineer,alternative,authored,synthetic,true
@@ -1278,8 +1278,8 @@ CAREER-033,Biomedical Engineer,Lecturer or researcher,beyond,category_default,sy
 CAREER-033,Biomedical Engineer,Regulator or standards officer,beyond,category_default,synthetic,true
 CAREER-033,Biomedical Engineer,Expert witness or arbitrator,beyond,category_default,synthetic,true
 CAREER-033,Biomedical Engineer,Mechatronics Engineer,lateral,derived,synthetic,true
-CAREER-033,Biomedical Engineer,Precision Agriculture Technician,lateral,derived,synthetic,true
 CAREER-033,Biomedical Engineer,Fintech Product Analyst,lateral,derived,synthetic,true
+CAREER-033,Biomedical Engineer,Precision Agriculture Technician,lateral,derived,synthetic,true
 CAREER-033,Biomedical Engineer,Electronics and Telecommunications Engineer,lateral,derived,synthetic,true
 CAREER-034,Industrial Engineer,Process Improvement Engineer,alternative,authored,synthetic,true
 CAREER-034,Industrial Engineer,Operations Engineer,alternative,authored,synthetic,true
@@ -1734,8 +1734,8 @@ CAREER-045,Nutritionist and Dietitian,Clinical researcher,beyond,category_defaul
 CAREER-045,Nutritionist and Dietitian,Lecturer or clinical instructor,beyond,category_default,synthetic,true
 CAREER-045,Nutritionist and Dietitian,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-045,Nutritionist and Dietitian,Regulator or policy adviser,beyond,category_default,synthetic,true
-CAREER-045,Nutritionist and Dietitian,Environmental Educator,lateral,derived,synthetic,true
 CAREER-045,Nutritionist and Dietitian,Community Mobiliser,lateral,derived,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Environmental Educator,lateral,derived,synthetic,true
 CAREER-045,Nutritionist and Dietitian,Legal Aid Officer,lateral,derived,synthetic,true
 CAREER-045,Nutritionist and Dietitian,Community Health Promoter,lateral,derived,synthetic,true
 CAREER-046,Occupational Therapist,Occupational Therapy Officer,alternative,authored,synthetic,true
@@ -1811,9 +1811,9 @@ CAREER-047,Psychologist,Lecturer or clinical instructor,beyond,category_default,
 CAREER-047,Psychologist,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-047,Psychologist,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-047,Psychologist,Medical Social Worker,lateral,derived,synthetic,true
+CAREER-047,Psychologist,School Counsellor,lateral,derived,synthetic,true
 CAREER-047,Psychologist,Counsellor,lateral,derived,synthetic,true
 CAREER-047,Psychologist,Social Worker,lateral,derived,synthetic,true
-CAREER-047,Psychologist,School Counsellor,lateral,derived,synthetic,true
 CAREER-048,Public Health Officer,Environmental Health Officer,alternative,authored,synthetic,true
 CAREER-048,Public Health Officer,Public Health Inspector,alternative,authored,synthetic,true
 CAREER-048,Public Health Officer,Health Promotion Officer,alternative,authored,synthetic,true
@@ -1849,9 +1849,9 @@ CAREER-048,Public Health Officer,Lecturer or clinical instructor,beyond,category
 CAREER-048,Public Health Officer,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-048,Public Health Officer,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-048,Public Health Officer,County Government Officer,lateral,derived,synthetic,true
-CAREER-048,Public Health Officer,School Head and Administrator,lateral,derived,synthetic,true
+CAREER-048,Public Health Officer,Range Management Officer,lateral,derived,synthetic,true
 CAREER-048,Public Health Officer,Cultural Heritage Officer,lateral,derived,synthetic,true
-CAREER-048,Public Health Officer,Wildlife Conservation Officer,lateral,derived,synthetic,true
+CAREER-048,Public Health Officer,Gender and Inclusion Officer,lateral,derived,synthetic,true
 CAREER-049,Epidemiologist,Disease Surveillance Officer,alternative,authored,synthetic,true
 CAREER-049,Epidemiologist,Field Epidemiologist,alternative,authored,synthetic,true
 CAREER-049,Epidemiologist,Public Health Analyst,alternative,authored,synthetic,true
@@ -1927,7 +1927,7 @@ CAREER-050,Health Records and Information Officer,Regulator or policy adviser,be
 CAREER-050,Health Records and Information Officer,Government Statistician,lateral,derived,synthetic,true
 CAREER-050,Health Records and Information Officer,Court Clerk,lateral,derived,synthetic,true
 CAREER-050,Health Records and Information Officer,Compliance and Regulatory Officer,lateral,derived,synthetic,true
-CAREER-050,Health Records and Information Officer,Administrative Assistant,lateral,derived,synthetic,true
+CAREER-050,Health Records and Information Officer,Admissions Officer,lateral,derived,synthetic,true
 CAREER-051,Health Informatics Specialist,Digital Health Specialist,alternative,authored,synthetic,true
 CAREER-051,Health Informatics Specialist,Health Information Systems Officer,alternative,authored,synthetic,true
 CAREER-051,Health Informatics Specialist,EMR Implementation Specialist,alternative,authored,synthetic,true
@@ -3199,8 +3199,8 @@ CAREER-083,Management Consultant,Non-executive director,beyond,category_default,
 CAREER-083,Management Consultant,Investor or mentor,beyond,category_default,synthetic,true
 CAREER-083,Management Consultant,Science Communicator,lateral,derived,synthetic,true
 CAREER-083,Management Consultant,Corporate Strategy Analyst,lateral,derived,synthetic,true
-CAREER-083,Management Consultant,Economist,lateral,derived,synthetic,true
-CAREER-083,Management Consultant,Trade Policy Analyst,lateral,derived,synthetic,true
+CAREER-083,Management Consultant,Curriculum Developer,lateral,derived,synthetic,true
+CAREER-083,Management Consultant,Corporate Trainer,lateral,derived,synthetic,true
 CAREER-084,Market Research Analyst,Research Executive,alternative,authored,synthetic,true
 CAREER-084,Market Research Analyst,Insights Analyst,alternative,authored,synthetic,true
 CAREER-084,Market Research Analyst,Consumer Insights Analyst,alternative,authored,synthetic,true
@@ -3238,8 +3238,8 @@ CAREER-084,Market Research Analyst,Non-executive director,beyond,category_defaul
 CAREER-084,Market Research Analyst,Investor or mentor,beyond,category_default,synthetic,true
 CAREER-084,Market Research Analyst,Risk Analyst,lateral,derived,synthetic,true
 CAREER-084,Market Research Analyst,Business Analyst,lateral,derived,synthetic,true
-CAREER-084,Market Research Analyst,Marine Scientist,lateral,derived,synthetic,true
-CAREER-084,Market Research Analyst,Government Statistician,lateral,derived,synthetic,true
+CAREER-084,Market Research Analyst,Education Researcher,lateral,derived,synthetic,true
+CAREER-084,Market Research Analyst,Agricultural Economist,lateral,derived,synthetic,true
 CAREER-085,Project Manager,Project Coordinator,alternative,authored,synthetic,true
 CAREER-085,Project Manager,Project Officer,alternative,authored,synthetic,true
 CAREER-085,Project Manager,Programme Manager,alternative,authored,synthetic,true
@@ -4088,9 +4088,21 @@ CAREER-106,Elections and Governance Officer,Lecturer in law,beyond,category_defa
 CAREER-106,Elections and Governance Officer,Policy adviser,beyond,category_default,synthetic,true
 CAREER-106,Elections and Governance Officer,Elected or appointed public office,beyond,category_default,synthetic,true
 CAREER-106,Elections and Governance Officer,Human Rights Officer,lateral,derived,synthetic,true
+CAREER-106,Elections and Governance Officer,Education Officer,lateral,derived,synthetic,true
 CAREER-106,Elections and Governance Officer,Ombudsman Officer,lateral,derived,synthetic,true
 CAREER-106,Elections and Governance Officer,Anti-Corruption Investigator,lateral,derived,synthetic,true
-CAREER-106,Elections and Governance Officer,Environmental Consultant,lateral,derived,synthetic,true
+CAREER-107,Primary School Teacher,Class Teacher,alternative,authored,synthetic,true
+CAREER-107,Primary School Teacher,Grade Teacher,alternative,authored,synthetic,true
+CAREER-107,Primary School Teacher,Primary Educator,alternative,authored,synthetic,true
+CAREER-107,Primary School Teacher,Lower Primary Teacher,alternative,authored,synthetic,true
+CAREER-107,Primary School Teacher,Upper Primary Teacher,alternative,authored,synthetic,true
+CAREER-107,Primary School Teacher,Assistant Teacher,alternative,authored,synthetic,true
+CAREER-107,Primary School Teacher,Primary School Teacher (lower primary),specialism,authored,synthetic,true
+CAREER-107,Primary School Teacher,Primary School Teacher (upper primary),specialism,authored,synthetic,true
+CAREER-107,Primary School Teacher,Primary School Teacher (literacy and numeracy),specialism,authored,synthetic,true
+CAREER-107,Primary School Teacher,Primary School Teacher (competency-based curriculum delivery),specialism,authored,synthetic,true
+CAREER-107,Primary School Teacher,Primary School Teacher (multi-grade teaching),specialism,authored,synthetic,true
+CAREER-107,Primary School Teacher,Primary School Teacher (remedial teaching),specialism,authored,synthetic,true
 CAREER-107,Primary School Teacher,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-107,Primary School Teacher,Intern teacher,entry,derived,synthetic,true
 CAREER-107,Primary School Teacher,Teaching assistant,entry,derived,synthetic,true
@@ -4115,9 +4127,21 @@ CAREER-107,Primary School Teacher,Teacher trainer,beyond,category_default,synthe
 CAREER-107,Primary School Teacher,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-107,Primary School Teacher,Education policy adviser,beyond,category_default,synthetic,true
 CAREER-107,Primary School Teacher,Secondary School Teacher,lateral,derived,synthetic,true
-CAREER-107,Primary School Teacher,Music Teacher,lateral,derived,synthetic,true
 CAREER-107,Primary School Teacher,Language Teacher,lateral,derived,synthetic,true
+CAREER-107,Primary School Teacher,Music Teacher,lateral,derived,synthetic,true
 CAREER-107,Primary School Teacher,Social Worker,lateral,derived,synthetic,true
+CAREER-108,Secondary School Teacher,High School Teacher,alternative,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Subject Teacher,alternative,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Junior Secondary Teacher,alternative,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Class Teacher,alternative,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Form Teacher,alternative,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Graduate Teacher,alternative,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Secondary School Teacher (mathematics and sciences),specialism,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Secondary School Teacher (languages),specialism,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Secondary School Teacher (humanities),specialism,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Secondary School Teacher (technical and applied subjects),specialism,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Secondary School Teacher (examination preparation),specialism,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Secondary School Teacher (junior secondary teaching),specialism,authored,synthetic,true
 CAREER-108,Secondary School Teacher,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-108,Secondary School Teacher,Intern teacher,entry,derived,synthetic,true
 CAREER-108,Secondary School Teacher,Teaching assistant,entry,derived,synthetic,true
@@ -4143,8 +4167,20 @@ CAREER-108,Secondary School Teacher,Ed-tech content developer,beyond,category_de
 CAREER-108,Secondary School Teacher,Education policy adviser,beyond,category_default,synthetic,true
 CAREER-108,Secondary School Teacher,Primary School Teacher,lateral,derived,synthetic,true
 CAREER-108,Secondary School Teacher,Music Teacher,lateral,derived,synthetic,true
-CAREER-108,Secondary School Teacher,University Lecturer,lateral,derived,synthetic,true
 CAREER-108,Secondary School Teacher,Language Teacher,lateral,derived,synthetic,true
+CAREER-108,Secondary School Teacher,University Lecturer,lateral,derived,synthetic,true
+CAREER-109,Early Childhood Educator,Pre-Primary Teacher,alternative,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Nursery Teacher,alternative,authored,synthetic,true
+CAREER-109,Early Childhood Educator,ECDE Teacher,alternative,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Kindergarten Teacher,alternative,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Playgroup Teacher,alternative,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Daycare Caregiver,alternative,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Early Childhood Educator (pre-primary teaching),specialism,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Early Childhood Educator (play-based learning),specialism,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Early Childhood Educator (early literacy and numeracy),specialism,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Early Childhood Educator (Montessori approach),specialism,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Early Childhood Educator (daycare),specialism,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Early Childhood Educator (child development assessment),specialism,authored,synthetic,true
 CAREER-109,Early Childhood Educator,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-109,Early Childhood Educator,Intern teacher,entry,derived,synthetic,true
 CAREER-109,Early Childhood Educator,Teaching assistant,entry,derived,synthetic,true
@@ -4171,7 +4207,19 @@ CAREER-109,Early Childhood Educator,Education policy adviser,beyond,category_def
 CAREER-109,Early Childhood Educator,Youth Worker,lateral,derived,synthetic,true
 CAREER-109,Early Childhood Educator,Child Protection Officer,lateral,derived,synthetic,true
 CAREER-109,Early Childhood Educator,Children's Home Manager,lateral,derived,synthetic,true
-CAREER-109,Early Childhood Educator,Special Needs Educator,lateral,derived,synthetic,true
+CAREER-109,Early Childhood Educator,Primary School Teacher,lateral,derived,synthetic,true
+CAREER-110,Special Needs Educator,Special Education Teacher,alternative,authored,synthetic,true
+CAREER-110,Special Needs Educator,Inclusive Education Teacher,alternative,authored,synthetic,true
+CAREER-110,Special Needs Educator,Learning Support Teacher,alternative,authored,synthetic,true
+CAREER-110,Special Needs Educator,SNE Teacher,alternative,authored,synthetic,true
+CAREER-110,Special Needs Educator,Resource Teacher,alternative,authored,synthetic,true
+CAREER-110,Special Needs Educator,Shadow Teacher,alternative,authored,synthetic,true
+CAREER-110,Special Needs Educator,Special Needs Educator (learning disabilities),specialism,authored,synthetic,true
+CAREER-110,Special Needs Educator,Special Needs Educator (autism),specialism,authored,synthetic,true
+CAREER-110,Special Needs Educator,Special Needs Educator (hearing impairment),specialism,authored,synthetic,true
+CAREER-110,Special Needs Educator,Special Needs Educator (visual impairment),specialism,authored,synthetic,true
+CAREER-110,Special Needs Educator,Special Needs Educator (intellectual disability),specialism,authored,synthetic,true
+CAREER-110,Special Needs Educator,Special Needs Educator (inclusive classroom support),specialism,authored,synthetic,true
 CAREER-110,Special Needs Educator,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-110,Special Needs Educator,Intern teacher,entry,derived,synthetic,true
 CAREER-110,Special Needs Educator,Teaching assistant,entry,derived,synthetic,true
@@ -4195,16 +4243,26 @@ CAREER-110,Special Needs Educator,School owner,beyond,category_default,synthetic
 CAREER-110,Special Needs Educator,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-110,Special Needs Educator,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-110,Special Needs Educator,Education policy adviser,beyond,category_default,synthetic,true
+CAREER-110,Special Needs Educator,Primary School Teacher,lateral,derived,synthetic,true
 CAREER-110,Special Needs Educator,Adult Education Facilitator,lateral,derived,synthetic,true
 CAREER-110,Special Needs Educator,Early Childhood Educator,lateral,derived,synthetic,true
-CAREER-110,Special Needs Educator,Corporate Trainer,lateral,derived,synthetic,true
-CAREER-110,Special Needs Educator,STEM Educator,lateral,derived,synthetic,true
+CAREER-110,Special Needs Educator,Language Teacher,lateral,derived,synthetic,true
+CAREER-111,University Lecturer,Assistant Lecturer,alternative,authored,synthetic,true
+CAREER-111,University Lecturer,Tutorial Fellow,alternative,authored,synthetic,true
+CAREER-111,University Lecturer,Senior Lecturer,alternative,authored,synthetic,true
+CAREER-111,University Lecturer,Teaching Assistant,alternative,authored,synthetic,true
+CAREER-111,University Lecturer,Adjunct Lecturer,alternative,authored,synthetic,true
+CAREER-111,University Lecturer,Graduate Assistant,alternative,authored,synthetic,true
+CAREER-111,University Lecturer,University Lecturer (undergraduate teaching),specialism,authored,synthetic,true
+CAREER-111,University Lecturer,University Lecturer (postgraduate supervision),specialism,authored,synthetic,true
+CAREER-111,University Lecturer,University Lecturer (academic research),specialism,authored,synthetic,true
+CAREER-111,University Lecturer,University Lecturer (curriculum review),specialism,authored,synthetic,true
+CAREER-111,University Lecturer,University Lecturer (community engagement),specialism,authored,synthetic,true
+CAREER-111,University Lecturer,University Lecturer (online and blended teaching),specialism,authored,synthetic,true
 CAREER-111,University Lecturer,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-111,University Lecturer,Intern teacher,entry,derived,synthetic,true
-CAREER-111,University Lecturer,Teaching assistant,entry,derived,synthetic,true
 CAREER-111,University Lecturer,Assistant University Lecturer,entry,derived,synthetic,true
 CAREER-111,University Lecturer,Part-time or relief University Lecturer,entry,derived,synthetic,true
-CAREER-111,University Lecturer,Graduate assistant,entry,derived,synthetic,true
 CAREER-111,University Lecturer,Volunteer tutor,entry,derived,synthetic,true
 CAREER-111,University Lecturer,Senior University Lecturer,progression,derived,synthetic,true
 CAREER-111,University Lecturer,Lead University Lecturer,progression,derived,synthetic,true
@@ -4223,9 +4281,21 @@ CAREER-111,University Lecturer,Teacher trainer,beyond,category_default,synthetic
 CAREER-111,University Lecturer,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-111,University Lecturer,Education policy adviser,beyond,category_default,synthetic,true
 CAREER-111,University Lecturer,Secondary School Teacher,lateral,derived,synthetic,true
-CAREER-111,University Lecturer,Curriculum Developer,lateral,derived,synthetic,true
 CAREER-111,University Lecturer,Education Researcher,lateral,derived,synthetic,true
-CAREER-111,University Lecturer,Primary School Teacher,lateral,derived,synthetic,true
+CAREER-111,University Lecturer,Curriculum Developer,lateral,derived,synthetic,true
+CAREER-111,University Lecturer,Librarian and Information Officer,lateral,derived,synthetic,true
+CAREER-112,Education Officer,Sub-County Education Officer,alternative,authored,synthetic,true
+CAREER-112,Education Officer,Curriculum Support Officer,alternative,authored,synthetic,true
+CAREER-112,Education Officer,Education Programme Officer,alternative,authored,synthetic,true
+CAREER-112,Education Officer,Schools Officer,alternative,authored,synthetic,true
+CAREER-112,Education Officer,County Education Officer,alternative,authored,synthetic,true
+CAREER-112,Education Officer,Field Education Officer,alternative,authored,synthetic,true
+CAREER-112,Education Officer,Education Officer (school supervision),specialism,authored,synthetic,true
+CAREER-112,Education Officer,Education Officer (education programmes),specialism,authored,synthetic,true
+CAREER-112,Education Officer,Education Officer (teacher support),specialism,authored,synthetic,true
+CAREER-112,Education Officer,Education Officer (education data),specialism,authored,synthetic,true
+CAREER-112,Education Officer,Education Officer (school registration),specialism,authored,synthetic,true
+CAREER-112,Education Officer,Education Officer (policy implementation),specialism,authored,synthetic,true
 CAREER-112,Education Officer,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-112,Education Officer,Intern teacher,entry,derived,synthetic,true
 CAREER-112,Education Officer,Teaching assistant,entry,derived,synthetic,true
@@ -4249,10 +4319,22 @@ CAREER-112,Education Officer,School owner,beyond,category_default,synthetic,true
 CAREER-112,Education Officer,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-112,Education Officer,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-112,Education Officer,Education policy adviser,beyond,category_default,synthetic,true
-CAREER-112,Education Officer,Public Administrator,lateral,derived,synthetic,true
 CAREER-112,Education Officer,Quality Assurance and Standards Officer,lateral,derived,synthetic,true
+CAREER-112,Education Officer,Elections and Governance Officer,lateral,derived,synthetic,true
+CAREER-112,Education Officer,Public Administrator,lateral,derived,synthetic,true
 CAREER-112,Education Officer,ICT Policy Officer,lateral,derived,synthetic,true
-CAREER-112,Education Officer,Probation Officer,lateral,derived,synthetic,true
+CAREER-113,Curriculum Developer,Curriculum Specialist,alternative,authored,synthetic,true
+CAREER-113,Curriculum Developer,Curriculum Designer,alternative,authored,synthetic,true
+CAREER-113,Curriculum Developer,Curriculum Officer,alternative,authored,synthetic,true
+CAREER-113,Curriculum Developer,Subject Panel Member,alternative,authored,synthetic,true
+CAREER-113,Curriculum Developer,Learning Materials Developer,alternative,authored,synthetic,true
+CAREER-113,Curriculum Developer,Curriculum Coordinator,alternative,authored,synthetic,true
+CAREER-113,Curriculum Developer,Curriculum Developer (curriculum design),specialism,authored,synthetic,true
+CAREER-113,Curriculum Developer,Curriculum Developer (syllabus writing),specialism,authored,synthetic,true
+CAREER-113,Curriculum Developer,Curriculum Developer (learning materials),specialism,authored,synthetic,true
+CAREER-113,Curriculum Developer,Curriculum Developer (assessment design),specialism,authored,synthetic,true
+CAREER-113,Curriculum Developer,Curriculum Developer (competency-based curriculum),specialism,authored,synthetic,true
+CAREER-113,Curriculum Developer,Curriculum Developer (teacher guides),specialism,authored,synthetic,true
 CAREER-113,Curriculum Developer,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-113,Curriculum Developer,Intern teacher,entry,derived,synthetic,true
 CAREER-113,Curriculum Developer,Teaching assistant,entry,derived,synthetic,true
@@ -4276,10 +4358,22 @@ CAREER-113,Curriculum Developer,School owner,beyond,category_default,synthetic,t
 CAREER-113,Curriculum Developer,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-113,Curriculum Developer,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-113,Curriculum Developer,Education policy adviser,beyond,category_default,synthetic,true
+CAREER-113,Curriculum Developer,Management Consultant,lateral,derived,synthetic,true
 CAREER-113,Curriculum Developer,Copywriter,lateral,derived,synthetic,true
-CAREER-113,Curriculum Developer,Cultural Heritage Officer,lateral,derived,synthetic,true
 CAREER-113,Curriculum Developer,Economist,lateral,derived,synthetic,true
-CAREER-113,Curriculum Developer,Trade Policy Analyst,lateral,derived,synthetic,true
+CAREER-113,Curriculum Developer,Curator,lateral,derived,synthetic,true
+CAREER-114,Instructional Designer,Learning Designer,alternative,authored,synthetic,true
+CAREER-114,Instructional Designer,Learning Experience Designer,alternative,authored,synthetic,true
+CAREER-114,Instructional Designer,Course Designer,alternative,authored,synthetic,true
+CAREER-114,Instructional Designer,E-learning Designer,alternative,authored,synthetic,true
+CAREER-114,Instructional Designer,Training Designer,alternative,authored,synthetic,true
+CAREER-114,Instructional Designer,Curriculum Designer,alternative,authored,synthetic,true
+CAREER-114,Instructional Designer,Instructional Designer (e-learning courses),specialism,authored,synthetic,true
+CAREER-114,Instructional Designer,Instructional Designer (blended learning),specialism,authored,synthetic,true
+CAREER-114,Instructional Designer,Instructional Designer (corporate training design),specialism,authored,synthetic,true
+CAREER-114,Instructional Designer,Instructional Designer (microlearning),specialism,authored,synthetic,true
+CAREER-114,Instructional Designer,Instructional Designer (assessment design),specialism,authored,synthetic,true
+CAREER-114,Instructional Designer,Instructional Designer (learning analytics),specialism,authored,synthetic,true
 CAREER-114,Instructional Designer,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-114,Instructional Designer,Intern teacher,entry,derived,synthetic,true
 CAREER-114,Instructional Designer,Teaching assistant,entry,derived,synthetic,true
@@ -4304,9 +4398,21 @@ CAREER-114,Instructional Designer,Teacher trainer,beyond,category_default,synthe
 CAREER-114,Instructional Designer,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-114,Instructional Designer,Education policy adviser,beyond,category_default,synthetic,true
 CAREER-114,Instructional Designer,E-learning Content Developer,lateral,derived,synthetic,true
-CAREER-114,Instructional Designer,Motion Graphics Designer,lateral,derived,synthetic,true
 CAREER-114,Instructional Designer,Corporate Trainer,lateral,derived,synthetic,true
-CAREER-114,Instructional Designer,Animator,lateral,derived,synthetic,true
+CAREER-114,Instructional Designer,Video Producer,lateral,derived,synthetic,true
+CAREER-114,Instructional Designer,Motion Graphics Designer,lateral,derived,synthetic,true
+CAREER-115,School Counsellor,Guidance and Counselling Teacher,alternative,authored,synthetic,true
+CAREER-115,School Counsellor,Student Counsellor,alternative,authored,synthetic,true
+CAREER-115,School Counsellor,Guidance Counsellor,alternative,authored,synthetic,true
+CAREER-115,School Counsellor,School Psychologist,alternative,authored,synthetic,true
+CAREER-115,School Counsellor,Pastoral Care Officer,alternative,authored,synthetic,true
+CAREER-115,School Counsellor,Counselling Officer,alternative,authored,synthetic,true
+CAREER-115,School Counsellor,School Counsellor (individual counselling),specialism,authored,synthetic,true
+CAREER-115,School Counsellor,School Counsellor (career guidance),specialism,authored,synthetic,true
+CAREER-115,School Counsellor,School Counsellor (peer counselling programmes),specialism,authored,synthetic,true
+CAREER-115,School Counsellor,School Counsellor (crisis support),specialism,authored,synthetic,true
+CAREER-115,School Counsellor,School Counsellor (life skills),specialism,authored,synthetic,true
+CAREER-115,School Counsellor,School Counsellor (behaviour support),specialism,authored,synthetic,true
 CAREER-115,School Counsellor,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-115,School Counsellor,Intern teacher,entry,derived,synthetic,true
 CAREER-115,School Counsellor,Teaching assistant,entry,derived,synthetic,true
@@ -4330,10 +4436,22 @@ CAREER-115,School Counsellor,School owner,beyond,category_default,synthetic,true
 CAREER-115,School Counsellor,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-115,School Counsellor,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-115,School Counsellor,Education policy adviser,beyond,category_default,synthetic,true
-CAREER-115,School Counsellor,Social Worker,lateral,derived,synthetic,true
 CAREER-115,School Counsellor,Medical Social Worker,lateral,derived,synthetic,true
-CAREER-115,School Counsellor,Addiction Counsellor,lateral,derived,synthetic,true
+CAREER-115,School Counsellor,Social Worker,lateral,derived,synthetic,true
 CAREER-115,School Counsellor,Dean of Students,lateral,derived,synthetic,true
+CAREER-115,School Counsellor,Psychologist,lateral,derived,synthetic,true
+CAREER-116,Educational Technologist,EdTech Specialist,alternative,authored,synthetic,true
+CAREER-116,Educational Technologist,Learning Technologist,alternative,authored,synthetic,true
+CAREER-116,Educational Technologist,ICT Integration Officer,alternative,authored,synthetic,true
+CAREER-116,Educational Technologist,Digital Learning Officer,alternative,authored,synthetic,true
+CAREER-116,Educational Technologist,E-learning Administrator,alternative,authored,synthetic,true
+CAREER-116,Educational Technologist,ICT Teacher,alternative,authored,synthetic,true
+CAREER-116,Educational Technologist,Educational Technologist (learning management systems),specialism,authored,synthetic,true
+CAREER-116,Educational Technologist,Educational Technologist (classroom ICT integration),specialism,authored,synthetic,true
+CAREER-116,Educational Technologist,Educational Technologist (digital content),specialism,authored,synthetic,true
+CAREER-116,Educational Technologist,Educational Technologist (teacher training),specialism,authored,synthetic,true
+CAREER-116,Educational Technologist,Educational Technologist (learning analytics),specialism,authored,synthetic,true
+CAREER-116,Educational Technologist,Educational Technologist (device programmes),specialism,authored,synthetic,true
 CAREER-116,Educational Technologist,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-116,Educational Technologist,Intern teacher,entry,derived,synthetic,true
 CAREER-116,Educational Technologist,Teaching assistant,entry,derived,synthetic,true
@@ -4360,7 +4478,19 @@ CAREER-116,Educational Technologist,Education policy adviser,beyond,category_def
 CAREER-116,Educational Technologist,E-learning Content Developer,lateral,derived,synthetic,true
 CAREER-116,Educational Technologist,Tourism Marketing Officer,lateral,derived,synthetic,true
 CAREER-116,Educational Technologist,Instructional Designer,lateral,derived,synthetic,true
-CAREER-116,Educational Technologist,Curriculum Developer,lateral,derived,synthetic,true
+CAREER-116,Educational Technologist,Education Officer,lateral,derived,synthetic,true
+CAREER-117,TVET Trainer,Technical Trainer,alternative,authored,synthetic,true
+CAREER-117,TVET Trainer,Vocational Instructor,alternative,authored,synthetic,true
+CAREER-117,TVET Trainer,Polytechnic Trainer,alternative,authored,synthetic,true
+CAREER-117,TVET Trainer,Trade Instructor,alternative,authored,synthetic,true
+CAREER-117,TVET Trainer,Workshop Instructor,alternative,authored,synthetic,true
+CAREER-117,TVET Trainer,Competency-Based Trainer,alternative,authored,synthetic,true
+CAREER-117,TVET Trainer,TVET Trainer (engineering trades),specialism,authored,synthetic,true
+CAREER-117,TVET Trainer,TVET Trainer (ICT),specialism,authored,synthetic,true
+CAREER-117,TVET Trainer,TVET Trainer (hospitality),specialism,authored,synthetic,true
+CAREER-117,TVET Trainer,TVET Trainer (building and construction),specialism,authored,synthetic,true
+CAREER-117,TVET Trainer,TVET Trainer (business courses),specialism,authored,synthetic,true
+CAREER-117,TVET Trainer,TVET Trainer (competency-based assessment),specialism,authored,synthetic,true
 CAREER-117,TVET Trainer,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-117,TVET Trainer,Intern teacher,entry,derived,synthetic,true
 CAREER-117,TVET Trainer,Teaching assistant,entry,derived,synthetic,true
@@ -4384,10 +4514,22 @@ CAREER-117,TVET Trainer,School owner,beyond,category_default,synthetic,true
 CAREER-117,TVET Trainer,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-117,TVET Trainer,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-117,TVET Trainer,Education policy adviser,beyond,category_default,synthetic,true
-CAREER-117,TVET Trainer,Curriculum Developer,lateral,derived,synthetic,true
-CAREER-117,TVET Trainer,Corporate Trainer,lateral,derived,synthetic,true
 CAREER-117,TVET Trainer,Sports Coach and PE Teacher,lateral,derived,synthetic,true
-CAREER-117,TVET Trainer,Language Teacher,lateral,derived,synthetic,true
+CAREER-117,TVET Trainer,Primary School Teacher,lateral,derived,synthetic,true
+CAREER-117,TVET Trainer,Instructional Designer,lateral,derived,synthetic,true
+CAREER-117,TVET Trainer,Adult Education Facilitator,lateral,derived,synthetic,true
+CAREER-118,Librarian and Information Officer,Librarian,alternative,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Library Assistant,alternative,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Information Officer,alternative,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Records Officer,alternative,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Knowledge Management Officer,alternative,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Digital Librarian,alternative,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Librarian and Information Officer (academic libraries),specialism,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Librarian and Information Officer (school libraries),specialism,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Librarian and Information Officer (digital libraries),specialism,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Librarian and Information Officer (records management),specialism,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Librarian and Information Officer (cataloguing),specialism,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Librarian and Information Officer (information literacy),specialism,authored,synthetic,true
 CAREER-118,Librarian and Information Officer,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-118,Librarian and Information Officer,Intern teacher,entry,derived,synthetic,true
 CAREER-118,Librarian and Information Officer,Teaching assistant,entry,derived,synthetic,true
@@ -4411,10 +4553,22 @@ CAREER-118,Librarian and Information Officer,School owner,beyond,category_defaul
 CAREER-118,Librarian and Information Officer,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-118,Librarian and Information Officer,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-118,Librarian and Information Officer,Education policy adviser,beyond,category_default,synthetic,true
-CAREER-118,Librarian and Information Officer,E-learning Content Developer,lateral,derived,synthetic,true
-CAREER-118,Librarian and Information Officer,Educational Technologist,lateral,derived,synthetic,true
-CAREER-118,Librarian and Information Officer,UI/UX Designer,lateral,derived,synthetic,true
-CAREER-118,Librarian and Information Officer,Illustrator,lateral,derived,synthetic,true
+CAREER-118,Librarian and Information Officer,Primary School Teacher,lateral,derived,synthetic,true
+CAREER-118,Librarian and Information Officer,University Lecturer,lateral,derived,synthetic,true
+CAREER-118,Librarian and Information Officer,Quality Assurance and Standards Officer,lateral,derived,synthetic,true
+CAREER-118,Librarian and Information Officer,Admissions Officer,lateral,derived,synthetic,true
+CAREER-119,School Head and Administrator,Head Teacher,alternative,authored,synthetic,true
+CAREER-119,School Head and Administrator,Principal,alternative,authored,synthetic,true
+CAREER-119,School Head and Administrator,Deputy Head Teacher,alternative,authored,synthetic,true
+CAREER-119,School Head and Administrator,School Director,alternative,authored,synthetic,true
+CAREER-119,School Head and Administrator,Deputy Principal,alternative,authored,synthetic,true
+CAREER-119,School Head and Administrator,School Manager,alternative,authored,synthetic,true
+CAREER-119,School Head and Administrator,School Head and Administrator (school leadership),specialism,authored,synthetic,true
+CAREER-119,School Head and Administrator,School Head and Administrator (curriculum supervision),specialism,authored,synthetic,true
+CAREER-119,School Head and Administrator,School Head and Administrator (school finance),specialism,authored,synthetic,true
+CAREER-119,School Head and Administrator,School Head and Administrator (staff management),specialism,authored,synthetic,true
+CAREER-119,School Head and Administrator,School Head and Administrator (parent and community relations),specialism,authored,synthetic,true
+CAREER-119,School Head and Administrator,School Head and Administrator (school development planning),specialism,authored,synthetic,true
 CAREER-119,School Head and Administrator,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-119,School Head and Administrator,Intern teacher,entry,derived,synthetic,true
 CAREER-119,School Head and Administrator,Teaching assistant,entry,derived,synthetic,true
@@ -4426,7 +4580,6 @@ CAREER-119,School Head and Administrator,Senior School Head and Administrator,pr
 CAREER-119,School Head and Administrator,Lead School Head and Administrator,progression,derived,synthetic,true
 CAREER-119,School Head and Administrator,Head of subject or department,progression,derived,synthetic,true
 CAREER-119,School Head and Administrator,Senior lecturer or master trainer,progression,derived,synthetic,true
-CAREER-119,School Head and Administrator,Deputy head teacher,leadership,category_default,synthetic,true
 CAREER-119,School Head and Administrator,Head teacher or principal,leadership,category_default,synthetic,true
 CAREER-119,School Head and Administrator,Dean or head of school,leadership,category_default,synthetic,true
 CAREER-119,School Head and Administrator,Director of Studies,leadership,category_default,synthetic,true
@@ -4438,10 +4591,22 @@ CAREER-119,School Head and Administrator,School owner,beyond,category_default,sy
 CAREER-119,School Head and Administrator,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-119,School Head and Administrator,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-119,School Head and Administrator,Education policy adviser,beyond,category_default,synthetic,true
-CAREER-119,School Head and Administrator,County Government Officer,lateral,derived,synthetic,true
 CAREER-119,School Head and Administrator,Adult Education Facilitator,lateral,derived,synthetic,true
-CAREER-119,School Head and Administrator,Cultural Heritage Officer,lateral,derived,synthetic,true
-CAREER-119,School Head and Administrator,Wildlife Conservation Officer,lateral,derived,synthetic,true
+CAREER-119,School Head and Administrator,County Government Officer,lateral,derived,synthetic,true
+CAREER-119,School Head and Administrator,Gender and Inclusion Officer,lateral,derived,synthetic,true
+CAREER-119,School Head and Administrator,Hotel Manager,lateral,derived,synthetic,true
+CAREER-120,Language Teacher,English Teacher,alternative,authored,synthetic,true
+CAREER-120,Language Teacher,Kiswahili Teacher,alternative,authored,synthetic,true
+CAREER-120,Language Teacher,Foreign Language Teacher,alternative,authored,synthetic,true
+CAREER-120,Language Teacher,ESL Teacher,alternative,authored,synthetic,true
+CAREER-120,Language Teacher,French Teacher,alternative,authored,synthetic,true
+CAREER-120,Language Teacher,Language Instructor,alternative,authored,synthetic,true
+CAREER-120,Language Teacher,Language Teacher (English),specialism,authored,synthetic,true
+CAREER-120,Language Teacher,Language Teacher (Kiswahili),specialism,authored,synthetic,true
+CAREER-120,Language Teacher,"Language Teacher (French, German and other foreign languages)",specialism,authored,synthetic,true
+CAREER-120,Language Teacher,Language Teacher (English as a second language),specialism,authored,synthetic,true
+CAREER-120,Language Teacher,Language Teacher (exam preparation),specialism,authored,synthetic,true
+CAREER-120,Language Teacher,Language Teacher (business language training),specialism,authored,synthetic,true
 CAREER-120,Language Teacher,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-120,Language Teacher,Intern teacher,entry,derived,synthetic,true
 CAREER-120,Language Teacher,Teaching assistant,entry,derived,synthetic,true
@@ -4465,10 +4630,22 @@ CAREER-120,Language Teacher,School owner,beyond,category_default,synthetic,true
 CAREER-120,Language Teacher,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-120,Language Teacher,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-120,Language Teacher,Education policy adviser,beyond,category_default,synthetic,true
-CAREER-120,Language Teacher,Primary School Teacher,lateral,derived,synthetic,true
 CAREER-120,Language Teacher,Sign Language Interpreter,lateral,derived,synthetic,true
-CAREER-120,Language Teacher,Translator and Interpreter,lateral,derived,synthetic,true
 CAREER-120,Language Teacher,Secondary School Teacher,lateral,derived,synthetic,true
+CAREER-120,Language Teacher,Primary School Teacher,lateral,derived,synthetic,true
+CAREER-120,Language Teacher,Translator and Interpreter,lateral,derived,synthetic,true
+CAREER-121,Adult Education Facilitator,Adult Literacy Teacher,alternative,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Adult Educator,alternative,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Community Learning Facilitator,alternative,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Literacy Instructor,alternative,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Continuing Education Tutor,alternative,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Community Trainer,alternative,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Adult Education Facilitator (adult literacy),specialism,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Adult Education Facilitator (numeracy),specialism,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Adult Education Facilitator (financial literacy),specialism,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Adult Education Facilitator (community skills training),specialism,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Adult Education Facilitator (continuing education),specialism,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Adult Education Facilitator (digital literacy),specialism,authored,synthetic,true
 CAREER-121,Adult Education Facilitator,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-121,Adult Education Facilitator,Intern teacher,entry,derived,synthetic,true
 CAREER-121,Adult Education Facilitator,Teaching assistant,entry,derived,synthetic,true
@@ -4496,6 +4673,18 @@ CAREER-121,Adult Education Facilitator,Corporate Trainer,lateral,derived,synthet
 CAREER-121,Adult Education Facilitator,School Head and Administrator,lateral,derived,synthetic,true
 CAREER-121,Adult Education Facilitator,Gender and Inclusion Officer,lateral,derived,synthetic,true
 CAREER-121,Adult Education Facilitator,Range Management Officer,lateral,derived,synthetic,true
+CAREER-122,Corporate Trainer,Training Officer,alternative,authored,synthetic,true
+CAREER-122,Corporate Trainer,Learning and Development Officer,alternative,authored,synthetic,true
+CAREER-122,Corporate Trainer,Training Facilitator,alternative,authored,synthetic,true
+CAREER-122,Corporate Trainer,Training Specialist,alternative,authored,synthetic,true
+CAREER-122,Corporate Trainer,Learning and Development Manager,alternative,authored,synthetic,true
+CAREER-122,Corporate Trainer,Staff Trainer,alternative,authored,synthetic,true
+CAREER-122,Corporate Trainer,Corporate Trainer (soft skills training),specialism,authored,synthetic,true
+CAREER-122,Corporate Trainer,Corporate Trainer (sales and service training),specialism,authored,synthetic,true
+CAREER-122,Corporate Trainer,Corporate Trainer (leadership development),specialism,authored,synthetic,true
+CAREER-122,Corporate Trainer,Corporate Trainer (onboarding),specialism,authored,synthetic,true
+CAREER-122,Corporate Trainer,Corporate Trainer (technical and systems training),specialism,authored,synthetic,true
+CAREER-122,Corporate Trainer,Corporate Trainer (training evaluation),specialism,authored,synthetic,true
 CAREER-122,Corporate Trainer,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-122,Corporate Trainer,Intern teacher,entry,derived,synthetic,true
 CAREER-122,Corporate Trainer,Teaching assistant,entry,derived,synthetic,true
@@ -4519,10 +4708,22 @@ CAREER-122,Corporate Trainer,School owner,beyond,category_default,synthetic,true
 CAREER-122,Corporate Trainer,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-122,Corporate Trainer,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-122,Corporate Trainer,Education policy adviser,beyond,category_default,synthetic,true
-CAREER-122,Corporate Trainer,Adult Education Facilitator,lateral,derived,synthetic,true
 CAREER-122,Corporate Trainer,Instructional Designer,lateral,derived,synthetic,true
+CAREER-122,Corporate Trainer,Adult Education Facilitator,lateral,derived,synthetic,true
 CAREER-122,Corporate Trainer,Corporate Strategy Analyst,lateral,derived,synthetic,true
-CAREER-122,Corporate Trainer,Public Procurement Officer,lateral,derived,synthetic,true
+CAREER-122,Corporate Trainer,Environmental Educator,lateral,derived,synthetic,true
+CAREER-123,Learning Coach and Tutor,Private Tutor,alternative,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Academic Coach,alternative,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Home Tutor,alternative,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Online Tutor,alternative,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Study Skills Coach,alternative,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Remedial Tutor,alternative,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Learning Coach and Tutor (one-to-one tuition),specialism,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Learning Coach and Tutor (exam preparation),specialism,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Learning Coach and Tutor (study skills),specialism,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Learning Coach and Tutor (online tutoring),specialism,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Learning Coach and Tutor (homework support),specialism,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Learning Coach and Tutor (remedial support),specialism,authored,synthetic,true
 CAREER-123,Learning Coach and Tutor,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-123,Learning Coach and Tutor,Intern teacher,entry,derived,synthetic,true
 CAREER-123,Learning Coach and Tutor,Teaching assistant,entry,derived,synthetic,true
@@ -4546,10 +4747,22 @@ CAREER-123,Learning Coach and Tutor,School owner,beyond,category_default,synthet
 CAREER-123,Learning Coach and Tutor,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-123,Learning Coach and Tutor,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-123,Learning Coach and Tutor,Education policy adviser,beyond,category_default,synthetic,true
-CAREER-123,Learning Coach and Tutor,Instructional Designer,lateral,derived,synthetic,true
-CAREER-123,Learning Coach and Tutor,Curriculum Developer,lateral,derived,synthetic,true
-CAREER-123,Learning Coach and Tutor,School Counsellor,lateral,derived,synthetic,true
-CAREER-123,Learning Coach and Tutor,E-learning Content Developer,lateral,derived,synthetic,true
+CAREER-123,Learning Coach and Tutor,Language Teacher,lateral,derived,synthetic,true
+CAREER-123,Learning Coach and Tutor,Educational Technologist,lateral,derived,synthetic,true
+CAREER-123,Learning Coach and Tutor,Primary School Teacher,lateral,derived,synthetic,true
+CAREER-123,Learning Coach and Tutor,Music Teacher,lateral,derived,synthetic,true
+CAREER-124,Agronomist,Crop Agronomist,alternative,authored,synthetic,true
+CAREER-124,Agronomist,Field Agronomist,alternative,authored,synthetic,true
+CAREER-124,Agronomist,Technical Agronomist,alternative,authored,synthetic,true
+CAREER-124,Agronomist,Crop Advisor,alternative,authored,synthetic,true
+CAREER-124,Agronomist,Farm Agronomist,alternative,authored,synthetic,true
+CAREER-124,Agronomist,Sales Agronomist,alternative,authored,synthetic,true
+CAREER-124,Agronomist,Agronomist (cereals and field crops),specialism,authored,synthetic,true
+CAREER-124,Agronomist,Agronomist (horticultural crops),specialism,authored,synthetic,true
+CAREER-124,Agronomist,Agronomist (soil fertility),specialism,authored,synthetic,true
+CAREER-124,Agronomist,Agronomist (crop protection),specialism,authored,synthetic,true
+CAREER-124,Agronomist,Agronomist (seed and variety trials),specialism,authored,synthetic,true
+CAREER-124,Agronomist,Agronomist (irrigated crops),specialism,authored,synthetic,true
 CAREER-124,Agronomist,Attachment student (crop production),entry,derived,synthetic,true
 CAREER-124,Agronomist,Agronomist intern,entry,derived,synthetic,true
 CAREER-124,Agronomist,Field assistant,entry,derived,synthetic,true
@@ -4574,9 +4787,21 @@ CAREER-124,Agronomist,Lecturer or trainer,beyond,category_default,synthetic,true
 CAREER-124,Agronomist,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-124,Agronomist,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-124,Agronomist,Greenhouse Manager,lateral,derived,synthetic,true
-CAREER-124,Agronomist,Plant Pathologist,lateral,derived,synthetic,true
 CAREER-124,Agronomist,Horticulturist,lateral,derived,synthetic,true
-CAREER-124,Agronomist,Irrigation Technician,lateral,derived,synthetic,true
+CAREER-124,Agronomist,Precision Agriculture Technician,lateral,derived,synthetic,true
+CAREER-124,Agronomist,Soil Scientist,lateral,derived,synthetic,true
+CAREER-125,Agricultural Extension Officer,Extension Agent,alternative,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Field Officer,alternative,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Farmer Trainer,alternative,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Agricultural Officer,alternative,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Ward Agricultural Officer,alternative,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Farmer Advisory Officer,alternative,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Agricultural Extension Officer (crop extension),specialism,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Agricultural Extension Officer (livestock extension),specialism,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Agricultural Extension Officer (farmer groups and cooperatives),specialism,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Agricultural Extension Officer (demonstration plots),specialism,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Agricultural Extension Officer (climate-smart agriculture),specialism,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Agricultural Extension Officer (digital advisory),specialism,authored,synthetic,true
 CAREER-125,Agricultural Extension Officer,Attachment student (farmer advisory),entry,derived,synthetic,true
 CAREER-125,Agricultural Extension Officer,Agricultural Extension Officer intern,entry,derived,synthetic,true
 CAREER-125,Agricultural Extension Officer,Field assistant,entry,derived,synthetic,true
@@ -4601,9 +4826,21 @@ CAREER-125,Agricultural Extension Officer,Lecturer or trainer,beyond,category_de
 CAREER-125,Agricultural Extension Officer,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-125,Agricultural Extension Officer,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-125,Agricultural Extension Officer,Apiculturist,lateral,derived,synthetic,true
-CAREER-125,Agricultural Extension Officer,Grants Manager,lateral,derived,synthetic,true
-CAREER-125,Agricultural Extension Officer,Journalist,lateral,derived,synthetic,true
-CAREER-125,Agricultural Extension Officer,Research Assistant,lateral,derived,synthetic,true
+CAREER-125,Agricultural Extension Officer,Health Records and Information Officer,lateral,derived,synthetic,true
+CAREER-125,Agricultural Extension Officer,Environmental Scientist,lateral,derived,synthetic,true
+CAREER-125,Agricultural Extension Officer,Government Statistician,lateral,derived,synthetic,true
+CAREER-126,Agribusiness Manager,Agribusiness Officer,alternative,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Farm Business Manager,alternative,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Value Chain Manager,alternative,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Agribusiness Development Officer,alternative,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Commercial Farm Manager,alternative,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Aggregation Manager,alternative,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Agribusiness Manager (value chain development),specialism,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Agribusiness Manager (farm management),specialism,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Agribusiness Manager (agro-input supply),specialism,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Agribusiness Manager (produce aggregation and marketing),specialism,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Agribusiness Manager (agricultural finance),specialism,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Agribusiness Manager (export horticulture),specialism,authored,synthetic,true
 CAREER-126,Agribusiness Manager,Attachment student (agricultural value chains),entry,derived,synthetic,true
 CAREER-126,Agribusiness Manager,Agribusiness Manager intern,entry,derived,synthetic,true
 CAREER-126,Agribusiness Manager,Field assistant,entry,derived,synthetic,true
@@ -4627,10 +4864,22 @@ CAREER-126,Agribusiness Manager,Researcher,beyond,category_default,synthetic,tru
 CAREER-126,Agribusiness Manager,Lecturer or trainer,beyond,category_default,synthetic,true
 CAREER-126,Agribusiness Manager,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-126,Agribusiness Manager,Policy or regulatory officer,beyond,category_default,synthetic,true
-CAREER-126,Agribusiness Manager,Hotel Sales Manager,lateral,derived,synthetic,true
-CAREER-126,Agribusiness Manager,Category Manager,lateral,derived,synthetic,true
 CAREER-126,Agribusiness Manager,Business Development Officer,lateral,derived,synthetic,true
-CAREER-126,Agribusiness Manager,Diplomat and Foreign Service Officer,lateral,derived,synthetic,true
+CAREER-126,Agribusiness Manager,Real Estate Agent,lateral,derived,synthetic,true
+CAREER-126,Agribusiness Manager,Corporate Lawyer,lateral,derived,synthetic,true
+CAREER-126,Agribusiness Manager,Contracts Manager,lateral,derived,synthetic,true
+CAREER-127,Veterinary Doctor,Veterinarian,alternative,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Veterinary Surgeon,alternative,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Veterinary Officer,alternative,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Livestock Veterinarian,alternative,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Small Animal Vet,alternative,authored,synthetic,true
+CAREER-127,Veterinary Doctor,County Veterinary Officer,alternative,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Veterinary Doctor (livestock practice),specialism,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Veterinary Doctor (small animal practice),specialism,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Veterinary Doctor (veterinary public health),specialism,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Veterinary Doctor (wildlife medicine),specialism,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Veterinary Doctor (poultry health),specialism,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Veterinary Doctor (disease control),specialism,authored,synthetic,true
 CAREER-127,Veterinary Doctor,Attachment student (animal health),entry,derived,synthetic,true
 CAREER-127,Veterinary Doctor,Veterinary Doctor intern,entry,derived,synthetic,true
 CAREER-127,Veterinary Doctor,Field assistant,entry,derived,synthetic,true
@@ -4656,8 +4905,20 @@ CAREER-127,Veterinary Doctor,Input supplier or agro-dealer,beyond,category_defau
 CAREER-127,Veterinary Doctor,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-127,Veterinary Doctor,Animal Health Technician,lateral,derived,synthetic,true
 CAREER-127,Veterinary Doctor,Plant Pathologist,lateral,derived,synthetic,true
-CAREER-127,Veterinary Doctor,Livestock Production Officer,lateral,derived,synthetic,true
-CAREER-127,Veterinary Doctor,Greenhouse Manager,lateral,derived,synthetic,true
+CAREER-127,Veterinary Doctor,Soil Scientist,lateral,derived,synthetic,true
+CAREER-127,Veterinary Doctor,Seed Technologist,lateral,derived,synthetic,true
+CAREER-128,Animal Health Technician,Animal Health Assistant,alternative,authored,synthetic,true
+CAREER-128,Animal Health Technician,Veterinary Paraprofessional,alternative,authored,synthetic,true
+CAREER-128,Animal Health Technician,Livestock Health Assistant,alternative,authored,synthetic,true
+CAREER-128,Animal Health Technician,Veterinary Technician,alternative,authored,synthetic,true
+CAREER-128,Animal Health Technician,Artificial Insemination Technician,alternative,authored,synthetic,true
+CAREER-128,Animal Health Technician,Meat Inspector,alternative,authored,synthetic,true
+CAREER-128,Animal Health Technician,Animal Health Technician (livestock treatment support),specialism,authored,synthetic,true
+CAREER-128,Animal Health Technician,Animal Health Technician (vaccination campaigns),specialism,authored,synthetic,true
+CAREER-128,Animal Health Technician,Animal Health Technician (artificial insemination),specialism,authored,synthetic,true
+CAREER-128,Animal Health Technician,Animal Health Technician (meat inspection),specialism,authored,synthetic,true
+CAREER-128,Animal Health Technician,Animal Health Technician (tick and parasite control),specialism,authored,synthetic,true
+CAREER-128,Animal Health Technician,Animal Health Technician (agrovet practice),specialism,authored,synthetic,true
 CAREER-128,Animal Health Technician,Attachment student (livestock health support),entry,derived,synthetic,true
 CAREER-128,Animal Health Technician,Animal Health Technician intern,entry,derived,synthetic,true
 CAREER-128,Animal Health Technician,Field assistant,entry,derived,synthetic,true
@@ -4682,9 +4943,21 @@ CAREER-128,Animal Health Technician,Lecturer or trainer,beyond,category_default,
 CAREER-128,Animal Health Technician,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-128,Animal Health Technician,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-128,Animal Health Technician,Poultry Farm Manager,lateral,derived,synthetic,true
+CAREER-128,Animal Health Technician,Pharmaceutical Technologist,lateral,derived,synthetic,true
+CAREER-128,Animal Health Technician,Veterinary Doctor,lateral,derived,synthetic,true
 CAREER-128,Animal Health Technician,Laboratory Technician,lateral,derived,synthetic,true
-CAREER-128,Animal Health Technician,Community Mobiliser,lateral,derived,synthetic,true
-CAREER-128,Animal Health Technician,Radiation Protection Officer,lateral,derived,synthetic,true
+CAREER-129,Horticulturist,Horticultural Officer,alternative,authored,synthetic,true
+CAREER-129,Horticulturist,Horticulture Supervisor,alternative,authored,synthetic,true
+CAREER-129,Horticulturist,Flower Farm Supervisor,alternative,authored,synthetic,true
+CAREER-129,Horticulturist,Nursery Manager,alternative,authored,synthetic,true
+CAREER-129,Horticulturist,Production Supervisor,alternative,authored,synthetic,true
+CAREER-129,Horticulturist,Horticultural Technician,alternative,authored,synthetic,true
+CAREER-129,Horticulturist,Horticulturist (cut flowers),specialism,authored,synthetic,true
+CAREER-129,Horticulturist,Horticulturist (vegetables),specialism,authored,synthetic,true
+CAREER-129,Horticulturist,Horticulturist (fruit orchards),specialism,authored,synthetic,true
+CAREER-129,Horticulturist,Horticulturist (nurseries and propagation),specialism,authored,synthetic,true
+CAREER-129,Horticulturist,Horticulturist (export horticulture),specialism,authored,synthetic,true
+CAREER-129,Horticulturist,Horticulturist (landscaping plants),specialism,authored,synthetic,true
 CAREER-129,Horticulturist,"Attachment student (fruits, vegetables and flowers)",entry,derived,synthetic,true
 CAREER-129,Horticulturist,Horticulturist intern,entry,derived,synthetic,true
 CAREER-129,Horticulturist,Field assistant,entry,derived,synthetic,true
@@ -4710,8 +4983,20 @@ CAREER-129,Horticulturist,Input supplier or agro-dealer,beyond,category_default,
 CAREER-129,Horticulturist,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-129,Horticulturist,Greenhouse Manager,lateral,derived,synthetic,true
 CAREER-129,Horticulturist,Agronomist,lateral,derived,synthetic,true
-CAREER-129,Horticulturist,Veterinary Doctor,lateral,derived,synthetic,true
-CAREER-129,Horticulturist,Animal Health Technician,lateral,derived,synthetic,true
+CAREER-129,Horticulturist,Seed Technologist,lateral,derived,synthetic,true
+CAREER-129,Horticulturist,Coffee and Tea Quality Controller,lateral,derived,synthetic,true
+CAREER-130,Soil Scientist,Soil Surveyor,alternative,authored,synthetic,true
+CAREER-130,Soil Scientist,Soil Analyst,alternative,authored,synthetic,true
+CAREER-130,Soil Scientist,Soil Fertility Specialist,alternative,authored,synthetic,true
+CAREER-130,Soil Scientist,Land Evaluation Officer,alternative,authored,synthetic,true
+CAREER-130,Soil Scientist,Soil Laboratory Technologist,alternative,authored,synthetic,true
+CAREER-130,Soil Scientist,Pedologist,alternative,authored,synthetic,true
+CAREER-130,Soil Scientist,Soil Scientist (soil fertility),specialism,authored,synthetic,true
+CAREER-130,Soil Scientist,Soil Scientist (soil survey and mapping),specialism,authored,synthetic,true
+CAREER-130,Soil Scientist,Soil Scientist (soil and water conservation),specialism,authored,synthetic,true
+CAREER-130,Soil Scientist,Soil Scientist (land evaluation),specialism,authored,synthetic,true
+CAREER-130,Soil Scientist,Soil Scientist (soil laboratory analysis),specialism,authored,synthetic,true
+CAREER-130,Soil Scientist,Soil Scientist (soil health),specialism,authored,synthetic,true
 CAREER-130,Soil Scientist,Attachment student (soil and land management),entry,derived,synthetic,true
 CAREER-130,Soil Scientist,Soil Scientist intern,entry,derived,synthetic,true
 CAREER-130,Soil Scientist,Field assistant,entry,derived,synthetic,true
@@ -4735,10 +5020,22 @@ CAREER-130,Soil Scientist,Researcher,beyond,category_default,synthetic,true
 CAREER-130,Soil Scientist,Lecturer or trainer,beyond,category_default,synthetic,true
 CAREER-130,Soil Scientist,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-130,Soil Scientist,Policy or regulatory officer,beyond,category_default,synthetic,true
-CAREER-130,Soil Scientist,Environmental Scientist,lateral,derived,synthetic,true
 CAREER-130,Soil Scientist,Seed Technologist,lateral,derived,synthetic,true
+CAREER-130,Soil Scientist,Environmental Scientist,lateral,derived,synthetic,true
 CAREER-130,Soil Scientist,Forensic Scientist,lateral,derived,synthetic,true
 CAREER-130,Soil Scientist,Microbiologist,lateral,derived,synthetic,true
+CAREER-131,Food Scientist,Food Technologist,alternative,authored,synthetic,true
+CAREER-131,Food Scientist,Product Development Technologist,alternative,authored,synthetic,true
+CAREER-131,Food Scientist,Quality Assurance Technologist,alternative,authored,synthetic,true
+CAREER-131,Food Scientist,Food Processing Officer,alternative,authored,synthetic,true
+CAREER-131,Food Scientist,Research and Development Technologist,alternative,authored,synthetic,true
+CAREER-131,Food Scientist,Production Technologist,alternative,authored,synthetic,true
+CAREER-131,Food Scientist,Food Scientist (product development),specialism,authored,synthetic,true
+CAREER-131,Food Scientist,Food Scientist (food processing),specialism,authored,synthetic,true
+CAREER-131,Food Scientist,Food Scientist (quality assurance),specialism,authored,synthetic,true
+CAREER-131,Food Scientist,Food Scientist (food microbiology),specialism,authored,synthetic,true
+CAREER-131,Food Scientist,Food Scientist (packaging and shelf life),specialism,authored,synthetic,true
+CAREER-131,Food Scientist,Food Scientist (sensory evaluation),specialism,authored,synthetic,true
 CAREER-131,Food Scientist,Attachment student (food processing),entry,derived,synthetic,true
 CAREER-131,Food Scientist,Food Scientist intern,entry,derived,synthetic,true
 CAREER-131,Food Scientist,Field assistant,entry,derived,synthetic,true
@@ -4765,7 +5062,19 @@ CAREER-131,Food Scientist,Policy or regulatory officer,beyond,category_default,s
 CAREER-131,Food Scientist,Dairy Technologist,lateral,derived,synthetic,true
 CAREER-131,Food Scientist,Leather Technologist,lateral,derived,synthetic,true
 CAREER-131,Food Scientist,Catering Manager,lateral,derived,synthetic,true
-CAREER-131,Food Scientist,Food Safety Officer,lateral,derived,synthetic,true
+CAREER-131,Food Scientist,Seed Technologist,lateral,derived,synthetic,true
+CAREER-132,Food Safety Officer,Food Inspector,alternative,authored,synthetic,true
+CAREER-132,Food Safety Officer,Food Safety Auditor,alternative,authored,synthetic,true
+CAREER-132,Food Safety Officer,Quality Assurance Officer,alternative,authored,synthetic,true
+CAREER-132,Food Safety Officer,Hygiene Officer,alternative,authored,synthetic,true
+CAREER-132,Food Safety Officer,Public Health Officer (Food),alternative,authored,synthetic,true
+CAREER-132,Food Safety Officer,HACCP Coordinator,alternative,authored,synthetic,true
+CAREER-132,Food Safety Officer,Food Safety Officer (food premises inspection),specialism,authored,synthetic,true
+CAREER-132,Food Safety Officer,Food Safety Officer (HACCP systems),specialism,authored,synthetic,true
+CAREER-132,Food Safety Officer,Food Safety Officer (food safety audits),specialism,authored,synthetic,true
+CAREER-132,Food Safety Officer,Food Safety Officer (hygiene training),specialism,authored,synthetic,true
+CAREER-132,Food Safety Officer,Food Safety Officer (export certification),specialism,authored,synthetic,true
+CAREER-132,Food Safety Officer,Food Safety Officer (food law enforcement),specialism,authored,synthetic,true
 CAREER-132,Food Safety Officer,Attachment student (food safety and inspection),entry,derived,synthetic,true
 CAREER-132,Food Safety Officer,Food Safety Officer intern,entry,derived,synthetic,true
 CAREER-132,Food Safety Officer,Field assistant,entry,derived,synthetic,true
@@ -4791,8 +5100,20 @@ CAREER-132,Food Safety Officer,Input supplier or agro-dealer,beyond,category_def
 CAREER-132,Food Safety Officer,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-132,Food Safety Officer,Aircraft Maintenance Engineer,lateral,derived,synthetic,true
 CAREER-132,Food Safety Officer,Customs Officer,lateral,derived,synthetic,true
+CAREER-132,Food Safety Officer,Public Health Officer,lateral,derived,synthetic,true
 CAREER-132,Food Safety Officer,Food Scientist,lateral,derived,synthetic,true
-CAREER-132,Food Safety Officer,Carbon Project Officer,lateral,derived,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Fisheries Officer,alternative,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Aquaculture Technician,alternative,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Fish Farm Manager,alternative,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Fisheries Extension Officer,alternative,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Hatchery Manager,alternative,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Fisheries Inspector,alternative,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Fisheries and Aquaculture Officer (pond aquaculture),specialism,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Fisheries and Aquaculture Officer (cage farming),specialism,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Fisheries and Aquaculture Officer (hatchery management),specialism,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Fisheries and Aquaculture Officer (capture fisheries management),specialism,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Fisheries and Aquaculture Officer (fish quality and inspection),specialism,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Fisheries and Aquaculture Officer (fisheries extension),specialism,authored,synthetic,true
 CAREER-133,Fisheries and Aquaculture Officer,Attachment student (aquatic resources),entry,derived,synthetic,true
 CAREER-133,Fisheries and Aquaculture Officer,Fisheries and Aquaculture Officer intern,entry,derived,synthetic,true
 CAREER-133,Fisheries and Aquaculture Officer,Field assistant,entry,derived,synthetic,true
@@ -4817,9 +5138,21 @@ CAREER-133,Fisheries and Aquaculture Officer,Lecturer or trainer,beyond,category
 CAREER-133,Fisheries and Aquaculture Officer,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-133,Fisheries and Aquaculture Officer,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-133,Fisheries and Aquaculture Officer,Livestock Production Officer,lateral,derived,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Poultry Farm Manager,lateral,derived,synthetic,true
 CAREER-133,Fisheries and Aquaculture Officer,Water Resources Officer,lateral,derived,synthetic,true
-CAREER-133,Fisheries and Aquaculture Officer,Irrigation Technician,lateral,derived,synthetic,true
-CAREER-133,Fisheries and Aquaculture Officer,Soil Scientist,lateral,derived,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Animal Health Technician,lateral,derived,synthetic,true
+CAREER-134,Forestry Officer,Forester,alternative,authored,synthetic,true
+CAREER-134,Forestry Officer,Forest Ranger,alternative,authored,synthetic,true
+CAREER-134,Forestry Officer,Forest Manager,alternative,authored,synthetic,true
+CAREER-134,Forestry Officer,Agroforestry Officer,alternative,authored,synthetic,true
+CAREER-134,Forestry Officer,Plantation Manager,alternative,authored,synthetic,true
+CAREER-134,Forestry Officer,Forest Conservator,alternative,authored,synthetic,true
+CAREER-134,Forestry Officer,Forestry Officer (plantation forestry),specialism,authored,synthetic,true
+CAREER-134,Forestry Officer,Forestry Officer (natural forest conservation),specialism,authored,synthetic,true
+CAREER-134,Forestry Officer,Forestry Officer (agroforestry),specialism,authored,synthetic,true
+CAREER-134,Forestry Officer,Forestry Officer (tree nurseries),specialism,authored,synthetic,true
+CAREER-134,Forestry Officer,Forestry Officer (community forestry),specialism,authored,synthetic,true
+CAREER-134,Forestry Officer,Forestry Officer (forest inventory),specialism,authored,synthetic,true
 CAREER-134,Forestry Officer,Attachment student (forests and tree resources),entry,derived,synthetic,true
 CAREER-134,Forestry Officer,Forestry Officer intern,entry,derived,synthetic,true
 CAREER-134,Forestry Officer,Field assistant,entry,derived,synthetic,true
@@ -4843,10 +5176,22 @@ CAREER-134,Forestry Officer,Researcher,beyond,category_default,synthetic,true
 CAREER-134,Forestry Officer,Lecturer or trainer,beyond,category_default,synthetic,true
 CAREER-134,Forestry Officer,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-134,Forestry Officer,Policy or regulatory officer,beyond,category_default,synthetic,true
-CAREER-134,Forestry Officer,Water Resources Officer,lateral,derived,synthetic,true
+CAREER-134,Forestry Officer,Range Management Officer,lateral,derived,synthetic,true
 CAREER-134,Forestry Officer,Wildlife Conservation Officer,lateral,derived,synthetic,true
-CAREER-134,Forestry Officer,Carbon Project Officer,lateral,derived,synthetic,true
-CAREER-134,Forestry Officer,Fisheries and Aquaculture Officer,lateral,derived,synthetic,true
+CAREER-134,Forestry Officer,Water Resources Officer,lateral,derived,synthetic,true
+CAREER-134,Forestry Officer,Precision Agriculture Technician,lateral,derived,synthetic,true
+CAREER-135,Environmental Consultant,Environmental Impact Assessment Expert,alternative,authored,synthetic,true
+CAREER-135,Environmental Consultant,Environmental Officer,alternative,authored,synthetic,true
+CAREER-135,Environmental Consultant,Environmental Auditor,alternative,authored,synthetic,true
+CAREER-135,Environmental Consultant,Environmental Scientist,alternative,authored,synthetic,true
+CAREER-135,Environmental Consultant,Sustainability Consultant,alternative,authored,synthetic,true
+CAREER-135,Environmental Consultant,Environmental Specialist,alternative,authored,synthetic,true
+CAREER-135,Environmental Consultant,Environmental Consultant (environmental impact assessment),specialism,authored,synthetic,true
+CAREER-135,Environmental Consultant,Environmental Consultant (environmental audits),specialism,authored,synthetic,true
+CAREER-135,Environmental Consultant,Environmental Consultant (pollution control),specialism,authored,synthetic,true
+CAREER-135,Environmental Consultant,Environmental Consultant (social impact assessment),specialism,authored,synthetic,true
+CAREER-135,Environmental Consultant,Environmental Consultant (environmental management systems),specialism,authored,synthetic,true
+CAREER-135,Environmental Consultant,Environmental Consultant (waste and effluent management),specialism,authored,synthetic,true
 CAREER-135,Environmental Consultant,Attachment student (environmental advisory),entry,derived,synthetic,true
 CAREER-135,Environmental Consultant,Environmental Consultant intern,entry,derived,synthetic,true
 CAREER-135,Environmental Consultant,Field assistant,entry,derived,synthetic,true
@@ -4870,10 +5215,22 @@ CAREER-135,Environmental Consultant,Researcher,beyond,category_default,synthetic
 CAREER-135,Environmental Consultant,Lecturer or trainer,beyond,category_default,synthetic,true
 CAREER-135,Environmental Consultant,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-135,Environmental Consultant,Policy or regulatory officer,beyond,category_default,synthetic,true
-CAREER-135,Environmental Consultant,Quality Assurance and Standards Officer,lateral,derived,synthetic,true
+CAREER-135,Environmental Consultant,Environmental Engineer,lateral,derived,synthetic,true
 CAREER-135,Environmental Consultant,Wildlife Conservation Officer,lateral,derived,synthetic,true
-CAREER-135,Environmental Consultant,Probation Officer,lateral,derived,synthetic,true
-CAREER-135,Environmental Consultant,Geologist,lateral,derived,synthetic,true
+CAREER-135,Environmental Consultant,IT Auditor,lateral,derived,synthetic,true
+CAREER-135,Environmental Consultant,ICT Policy Officer,lateral,derived,synthetic,true
+CAREER-136,Climate Change Analyst,Climate Change Officer,alternative,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Climate Adaptation Specialist,alternative,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Climate Policy Analyst,alternative,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Climate Risk Analyst,alternative,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Climate Finance Officer,alternative,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Resilience Officer,alternative,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Climate Change Analyst (climate adaptation),specialism,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Climate Change Analyst (greenhouse gas inventories),specialism,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Climate Change Analyst (climate risk assessment),specialism,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Climate Change Analyst (climate finance),specialism,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Climate Change Analyst (climate policy),specialism,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Climate Change Analyst (early warning and resilience),specialism,authored,synthetic,true
 CAREER-136,Climate Change Analyst,Attachment student (climate adaptation),entry,derived,synthetic,true
 CAREER-136,Climate Change Analyst,Climate Change Analyst intern,entry,derived,synthetic,true
 CAREER-136,Climate Change Analyst,Field assistant,entry,derived,synthetic,true
@@ -4899,8 +5256,20 @@ CAREER-136,Climate Change Analyst,Input supplier or agro-dealer,beyond,category_
 CAREER-136,Climate Change Analyst,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-136,Climate Change Analyst,Meteorologist,lateral,derived,synthetic,true
 CAREER-136,Climate Change Analyst,Transport Planner,lateral,derived,synthetic,true
+CAREER-136,Climate Change Analyst,Urban and Regional Planner,lateral,derived,synthetic,true
 CAREER-136,Climate Change Analyst,Gender and Inclusion Officer,lateral,derived,synthetic,true
-CAREER-136,Climate Change Analyst,Language Teacher,lateral,derived,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Wildlife Ranger,alternative,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Conservation Officer,alternative,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Park Warden,alternative,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Wildlife Ecologist,alternative,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Community Conservancy Officer,alternative,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Research Assistant (Wildlife),alternative,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Wildlife Conservation Officer (protected area management),specialism,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Wildlife Conservation Officer (anti-poaching),specialism,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Wildlife Conservation Officer (wildlife monitoring),specialism,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Wildlife Conservation Officer (community conservancies),specialism,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Wildlife Conservation Officer (human-wildlife conflict),specialism,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Wildlife Conservation Officer (ecological research),specialism,authored,synthetic,true
 CAREER-137,Wildlife Conservation Officer,Attachment student (conservation),entry,derived,synthetic,true
 CAREER-137,Wildlife Conservation Officer,Wildlife Conservation Officer intern,entry,derived,synthetic,true
 CAREER-137,Wildlife Conservation Officer,Field assistant,entry,derived,synthetic,true
@@ -4924,10 +5293,22 @@ CAREER-137,Wildlife Conservation Officer,Researcher,beyond,category_default,synt
 CAREER-137,Wildlife Conservation Officer,Lecturer or trainer,beyond,category_default,synthetic,true
 CAREER-137,Wildlife Conservation Officer,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-137,Wildlife Conservation Officer,Policy or regulatory officer,beyond,category_default,synthetic,true
-CAREER-137,Wildlife Conservation Officer,Environmental Consultant,lateral,derived,synthetic,true
 CAREER-137,Wildlife Conservation Officer,Range Management Officer,lateral,derived,synthetic,true
-CAREER-137,Wildlife Conservation Officer,School Head and Administrator,lateral,derived,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Environmental Consultant,lateral,derived,synthetic,true
 CAREER-137,Wildlife Conservation Officer,Cultural Heritage Officer,lateral,derived,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Public Health Officer,lateral,derived,synthetic,true
+CAREER-138,Water Resources Officer,Hydrologist,alternative,authored,synthetic,true
+CAREER-138,Water Resources Officer,Water Officer,alternative,authored,synthetic,true
+CAREER-138,Water Resources Officer,Water Resources Engineer,alternative,authored,synthetic,true
+CAREER-138,Water Resources Officer,Catchment Officer,alternative,authored,synthetic,true
+CAREER-138,Water Resources Officer,Water Quality Officer,alternative,authored,synthetic,true
+CAREER-138,Water Resources Officer,Hydrogeologist,alternative,authored,synthetic,true
+CAREER-138,Water Resources Officer,Water Resources Officer (surface water),specialism,authored,synthetic,true
+CAREER-138,Water Resources Officer,Water Resources Officer (groundwater),specialism,authored,synthetic,true
+CAREER-138,Water Resources Officer,Water Resources Officer (water quality),specialism,authored,synthetic,true
+CAREER-138,Water Resources Officer,Water Resources Officer (catchment management),specialism,authored,synthetic,true
+CAREER-138,Water Resources Officer,Water Resources Officer (water allocation and permits),specialism,authored,synthetic,true
+CAREER-138,Water Resources Officer,Water Resources Officer (flood and drought monitoring),specialism,authored,synthetic,true
 CAREER-138,Water Resources Officer,Attachment student (water resources),entry,derived,synthetic,true
 CAREER-138,Water Resources Officer,Water Resources Officer intern,entry,derived,synthetic,true
 CAREER-138,Water Resources Officer,Field assistant,entry,derived,synthetic,true
@@ -4953,8 +5334,20 @@ CAREER-138,Water Resources Officer,Input supplier or agro-dealer,beyond,category
 CAREER-138,Water Resources Officer,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-138,Water Resources Officer,Urban Development Officer,lateral,derived,synthetic,true
 CAREER-138,Water Resources Officer,Disability Inclusion Officer,lateral,derived,synthetic,true
-CAREER-138,Water Resources Officer,Forestry Officer,lateral,derived,synthetic,true
+CAREER-138,Water Resources Officer,Range Management Officer,lateral,derived,synthetic,true
 CAREER-138,Water Resources Officer,Fisheries and Aquaculture Officer,lateral,derived,synthetic,true
+CAREER-139,Agricultural Economist,Agricultural Policy Analyst,alternative,authored,synthetic,true
+CAREER-139,Agricultural Economist,Market Analyst,alternative,authored,synthetic,true
+CAREER-139,Agricultural Economist,Research Economist,alternative,authored,synthetic,true
+CAREER-139,Agricultural Economist,Value Chain Analyst,alternative,authored,synthetic,true
+CAREER-139,Agricultural Economist,Monitoring and Evaluation Officer,alternative,authored,synthetic,true
+CAREER-139,Agricultural Economist,Farm Economist,alternative,authored,synthetic,true
+CAREER-139,Agricultural Economist,Agricultural Economist (agricultural policy),specialism,authored,synthetic,true
+CAREER-139,Agricultural Economist,Agricultural Economist (market and price analysis),specialism,authored,synthetic,true
+CAREER-139,Agricultural Economist,Agricultural Economist (farm economics),specialism,authored,synthetic,true
+CAREER-139,Agricultural Economist,Agricultural Economist (value chain analysis),specialism,authored,synthetic,true
+CAREER-139,Agricultural Economist,Agricultural Economist (impact evaluation),specialism,authored,synthetic,true
+CAREER-139,Agricultural Economist,Agricultural Economist (food security),specialism,authored,synthetic,true
 CAREER-139,Agricultural Economist,Attachment student (agricultural economics),entry,derived,synthetic,true
 CAREER-139,Agricultural Economist,Agricultural Economist intern,entry,derived,synthetic,true
 CAREER-139,Agricultural Economist,Field assistant,entry,derived,synthetic,true
@@ -4978,10 +5371,22 @@ CAREER-139,Agricultural Economist,Researcher,beyond,category_default,synthetic,t
 CAREER-139,Agricultural Economist,Lecturer or trainer,beyond,category_default,synthetic,true
 CAREER-139,Agricultural Economist,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-139,Agricultural Economist,Policy or regulatory officer,beyond,category_default,synthetic,true
-CAREER-139,Agricultural Economist,Economist,lateral,derived,synthetic,true
-CAREER-139,Agricultural Economist,Trade Policy Analyst,lateral,derived,synthetic,true
 CAREER-139,Agricultural Economist,Health Economist,lateral,derived,synthetic,true
-CAREER-139,Agricultural Economist,Demand Planner,lateral,derived,synthetic,true
+CAREER-139,Agricultural Economist,Education Researcher,lateral,derived,synthetic,true
+CAREER-139,Agricultural Economist,Economist,lateral,derived,synthetic,true
+CAREER-139,Agricultural Economist,Market Research Analyst,lateral,derived,synthetic,true
+CAREER-140,Precision Agriculture Technician,Agritech Technician,alternative,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Drone Operator,alternative,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Farm Data Technician,alternative,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Precision Farming Specialist,alternative,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,GIS Technician (Agriculture),alternative,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Smart Farming Technician,alternative,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Precision Agriculture Technician (drone mapping and spraying),specialism,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Precision Agriculture Technician (soil and crop sensors),specialism,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Precision Agriculture Technician (GPS-guided machinery),specialism,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Precision Agriculture Technician (farm data platforms),specialism,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Precision Agriculture Technician (variable-rate application),specialism,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Precision Agriculture Technician (remote sensing),specialism,authored,synthetic,true
 CAREER-140,Precision Agriculture Technician,Attachment student (agricultural technology),entry,derived,synthetic,true
 CAREER-140,Precision Agriculture Technician,Precision Agriculture Technician intern,entry,derived,synthetic,true
 CAREER-140,Precision Agriculture Technician,Field assistant,entry,derived,synthetic,true
@@ -5008,7 +5413,19 @@ CAREER-140,Precision Agriculture Technician,Policy or regulatory officer,beyond,
 CAREER-140,Precision Agriculture Technician,Research Assistant,lateral,derived,synthetic,true
 CAREER-140,Precision Agriculture Technician,Monitoring and Evaluation Officer,lateral,derived,synthetic,true
 CAREER-140,Precision Agriculture Technician,Biomedical Engineer,lateral,derived,synthetic,true
-CAREER-140,Precision Agriculture Technician,Carbon Project Officer,lateral,derived,synthetic,true
+CAREER-140,Precision Agriculture Technician,Agronomist,lateral,derived,synthetic,true
+CAREER-141,Waste Management Officer,Solid Waste Officer,alternative,authored,synthetic,true
+CAREER-141,Waste Management Officer,Environmental Health Officer,alternative,authored,synthetic,true
+CAREER-141,Waste Management Officer,Recycling Coordinator,alternative,authored,synthetic,true
+CAREER-141,Waste Management Officer,Sanitation Officer,alternative,authored,synthetic,true
+CAREER-141,Waste Management Officer,Waste Operations Supervisor,alternative,authored,synthetic,true
+CAREER-141,Waste Management Officer,Circular Economy Officer,alternative,authored,synthetic,true
+CAREER-141,Waste Management Officer,Waste Management Officer (solid waste collection),specialism,authored,synthetic,true
+CAREER-141,Waste Management Officer,Waste Management Officer (recycling and recovery),specialism,authored,synthetic,true
+CAREER-141,Waste Management Officer,Waste Management Officer (landfill and dumpsite operations),specialism,authored,synthetic,true
+CAREER-141,Waste Management Officer,Waste Management Officer (hazardous waste),specialism,authored,synthetic,true
+CAREER-141,Waste Management Officer,Waste Management Officer (wastewater and sludge),specialism,authored,synthetic,true
+CAREER-141,Waste Management Officer,Waste Management Officer (circular economy),specialism,authored,synthetic,true
 CAREER-141,Waste Management Officer,Attachment student (solid and liquid waste),entry,derived,synthetic,true
 CAREER-141,Waste Management Officer,Waste Management Officer intern,entry,derived,synthetic,true
 CAREER-141,Waste Management Officer,Field assistant,entry,derived,synthetic,true
@@ -5033,9 +5450,9 @@ CAREER-141,Waste Management Officer,Lecturer or trainer,beyond,category_default,
 CAREER-141,Waste Management Officer,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-141,Waste Management Officer,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-141,Waste Management Officer,Construction Project Manager,lateral,derived,synthetic,true
+CAREER-141,Waste Management Officer,Poultry Farm Manager,lateral,derived,synthetic,true
 CAREER-141,Waste Management Officer,Environmental Educator,lateral,derived,synthetic,true
-CAREER-141,Waste Management Officer,Wildlife Conservation Officer,lateral,derived,synthetic,true
-CAREER-141,Waste Management Officer,Range Management Officer,lateral,derived,synthetic,true
+CAREER-141,Waste Management Officer,Environmental Consultant,lateral,derived,synthetic,true
 CAREER-142,Journalist,Journalist intern,entry,derived,synthetic,true
 CAREER-142,Journalist,Attachment student (news reporting),entry,derived,synthetic,true
 CAREER-142,Journalist,Junior Journalist,entry,derived,synthetic,true
@@ -5599,8 +6016,8 @@ CAREER-162,Front Office Officer,Cruise or international hotel roles,beyond,categ
 CAREER-162,Front Office Officer,Events entrepreneur,beyond,category_default,synthetic,true
 CAREER-162,Front Office Officer,Volunteer Coordinator,lateral,derived,synthetic,true
 CAREER-162,Front Office Officer,Consular Officer,lateral,derived,synthetic,true
-CAREER-162,Front Office Officer,Language Teacher,lateral,derived,synthetic,true
 CAREER-162,Front Office Officer,Meteorologist,lateral,derived,synthetic,true
+CAREER-162,Front Office Officer,Flight Dispatcher,lateral,derived,synthetic,true
 CAREER-163,Chef,Attachment student (culinary arts),entry,derived,synthetic,true
 CAREER-163,Chef,Chef intern,entry,derived,synthetic,true
 CAREER-163,Chef,Trainee Chef,entry,derived,synthetic,true
@@ -5976,9 +6393,9 @@ CAREER-176,Barista and Coffee Specialist,Destination marketing role,beyond,categ
 CAREER-176,Barista and Coffee Specialist,Cruise or international hotel roles,beyond,category_default,synthetic,true
 CAREER-176,Barista and Coffee Specialist,Events entrepreneur,beyond,category_default,synthetic,true
 CAREER-176,Barista and Coffee Specialist,Bartender and Mixologist,lateral,derived,synthetic,true
-CAREER-176,Barista and Coffee Specialist,Coffee and Tea Quality Controller,lateral,derived,synthetic,true
 CAREER-176,Barista and Coffee Specialist,Tour Operator,lateral,derived,synthetic,true
 CAREER-176,Barista and Coffee Specialist,Airline Reservations Agent,lateral,derived,synthetic,true
+CAREER-176,Barista and Coffee Specialist,Cabin Crew Member,lateral,derived,synthetic,true
 CAREER-177,Housekeeping Manager,Attachment student (accommodation services),entry,derived,synthetic,true
 CAREER-177,Housekeeping Manager,Housekeeping Manager intern,entry,derived,synthetic,true
 CAREER-177,Housekeeping Manager,Trainee Housekeeping Manager,entry,derived,synthetic,true
@@ -6056,10 +6473,10 @@ CAREER-179,Cultural Heritage Officer,Trainer or lecturer,beyond,category_default
 CAREER-179,Cultural Heritage Officer,Destination marketing role,beyond,category_default,synthetic,true
 CAREER-179,Cultural Heritage Officer,Cruise or international hotel roles,beyond,category_default,synthetic,true
 CAREER-179,Cultural Heritage Officer,Events entrepreneur,beyond,category_default,synthetic,true
-CAREER-179,Cultural Heritage Officer,School Head and Administrator,lateral,derived,synthetic,true
 CAREER-179,Cultural Heritage Officer,Curator,lateral,derived,synthetic,true
-CAREER-179,Cultural Heritage Officer,Wildlife Conservation Officer,lateral,derived,synthetic,true
 CAREER-179,Cultural Heritage Officer,County Government Officer,lateral,derived,synthetic,true
+CAREER-179,Cultural Heritage Officer,Science Communicator,lateral,derived,synthetic,true
+CAREER-179,Cultural Heritage Officer,Gender and Inclusion Officer,lateral,derived,synthetic,true
 CAREER-180,Research Scientist,Attachment student (scientific research),entry,derived,synthetic,true
 CAREER-180,Research Scientist,Research intern,entry,derived,synthetic,true
 CAREER-180,Research Scientist,Laboratory assistant,entry,derived,synthetic,true
@@ -6111,8 +6528,8 @@ CAREER-181,Laboratory Technician,Science communicator,beyond,category_default,sy
 CAREER-181,Laboratory Technician,Consultant,beyond,category_default,synthetic,true
 CAREER-181,Laboratory Technician,Science-based entrepreneur,beyond,category_default,synthetic,true
 CAREER-181,Laboratory Technician,Radiation Protection Officer,lateral,derived,synthetic,true
-CAREER-181,Laboratory Technician,Animal Health Technician,lateral,derived,synthetic,true
 CAREER-181,Laboratory Technician,Community Mobiliser,lateral,derived,synthetic,true
+CAREER-181,Laboratory Technician,Prisons Officer,lateral,derived,synthetic,true
 CAREER-181,Laboratory Technician,Poultry Farm Manager,lateral,derived,synthetic,true
 CAREER-182,Chemist,Attachment student (chemistry),entry,derived,synthetic,true
 CAREER-182,Chemist,Research intern,entry,derived,synthetic,true
@@ -6353,9 +6770,9 @@ CAREER-190,Meteorologist,Science policy adviser,beyond,category_default,syntheti
 CAREER-190,Meteorologist,Science communicator,beyond,category_default,synthetic,true
 CAREER-190,Meteorologist,Consultant,beyond,category_default,synthetic,true
 CAREER-190,Meteorologist,Science-based entrepreneur,beyond,category_default,synthetic,true
-CAREER-190,Meteorologist,Climate Change Analyst,lateral,derived,synthetic,true
 CAREER-190,Meteorologist,Inventory Planner,lateral,derived,synthetic,true
 CAREER-190,Meteorologist,Flight Dispatcher,lateral,derived,synthetic,true
+CAREER-190,Meteorologist,Climate Change Analyst,lateral,derived,synthetic,true
 CAREER-190,Meteorologist,Volunteer Coordinator,lateral,derived,synthetic,true
 CAREER-191,Bioinformatician,Attachment student (computational biology),entry,derived,synthetic,true
 CAREER-191,Bioinformatician,Research intern,entry,derived,synthetic,true
@@ -6382,8 +6799,8 @@ CAREER-191,Bioinformatician,Consultant,beyond,category_default,synthetic,true
 CAREER-191,Bioinformatician,Science-based entrepreneur,beyond,category_default,synthetic,true
 CAREER-191,Bioinformatician,Demand Planner,lateral,derived,synthetic,true
 CAREER-191,Bioinformatician,Economist,lateral,derived,synthetic,true
-CAREER-191,Bioinformatician,Agricultural Economist,lateral,derived,synthetic,true
 CAREER-191,Bioinformatician,Data Analyst,lateral,derived,synthetic,true
+CAREER-191,Bioinformatician,Health Economist,lateral,derived,synthetic,true
 CAREER-192,Research Assistant,Attachment student (research support),entry,derived,synthetic,true
 CAREER-192,Research Assistant,Research intern,entry,derived,synthetic,true
 CAREER-192,Research Assistant,Laboratory assistant,entry,derived,synthetic,true
@@ -6409,7 +6826,7 @@ CAREER-192,Research Assistant,Science-based entrepreneur,beyond,category_default
 CAREER-192,Research Assistant,Monitoring and Evaluation Officer,lateral,derived,synthetic,true
 CAREER-192,Research Assistant,Environmental Scientist,lateral,derived,synthetic,true
 CAREER-192,Research Assistant,Fundraising Officer,lateral,derived,synthetic,true
-CAREER-192,Research Assistant,Precision Agriculture Technician,lateral,derived,synthetic,true
+CAREER-192,Research Assistant,Government Statistician,lateral,derived,synthetic,true
 CAREER-193,Science Communicator,Attachment student (science communication),entry,derived,synthetic,true
 CAREER-193,Science Communicator,Research intern,entry,derived,synthetic,true
 CAREER-193,Science Communicator,Laboratory assistant,entry,derived,synthetic,true
@@ -6865,8 +7282,8 @@ CAREER-209,Aircraft Maintenance Engineer,Regulator or port authority roles,beyon
 CAREER-209,Aircraft Maintenance Engineer,International postings,beyond,category_default,synthetic,true
 CAREER-209,Aircraft Maintenance Engineer,Public Transport Operations Manager,lateral,derived,synthetic,true
 CAREER-209,Aircraft Maintenance Engineer,Laboratory Manager,lateral,derived,synthetic,true
-CAREER-209,Aircraft Maintenance Engineer,Food Safety Officer,lateral,derived,synthetic,true
 CAREER-209,Aircraft Maintenance Engineer,Customs Officer,lateral,derived,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,Facilities Manager,lateral,derived,synthetic,true
 CAREER-210,Marine Officer,Attachment student (maritime operations),entry,derived,synthetic,true
 CAREER-210,Marine Officer,Marine Officer intern,entry,derived,synthetic,true
 CAREER-210,Marine Officer,Graduate trainee (maritime operations),entry,derived,synthetic,true
@@ -7080,9 +7497,9 @@ CAREER-217,Transport Planner,Humanitarian logistics roles,beyond,category_defaul
 CAREER-217,Transport Planner,Regulator or port authority roles,beyond,category_default,synthetic,true
 CAREER-217,Transport Planner,International postings,beyond,category_default,synthetic,true
 CAREER-217,Transport Planner,Public Policy Analyst,lateral,derived,synthetic,true
-CAREER-217,Transport Planner,Climate Change Analyst,lateral,derived,synthetic,true
 CAREER-217,Transport Planner,ICT Policy Officer,lateral,derived,synthetic,true
 CAREER-217,Transport Planner,Statistician,lateral,derived,synthetic,true
+CAREER-217,Transport Planner,Development Planning Officer,lateral,derived,synthetic,true
 CAREER-218,Social Worker,Attachment student (social work),entry,derived,synthetic,true
 CAREER-218,Social Worker,Volunteer in social work,entry,derived,synthetic,true
 CAREER-218,Social Worker,Social Worker intern,entry,derived,synthetic,true
@@ -7106,8 +7523,8 @@ CAREER-218,Social Worker,Researcher or evaluator,beyond,category_default,synthet
 CAREER-218,Social Worker,Lecturer or trainer,beyond,category_default,synthetic,true
 CAREER-218,Social Worker,Policy adviser,beyond,category_default,synthetic,true
 CAREER-218,Social Worker,International organisation roles,beyond,category_default,synthetic,true
-CAREER-218,Social Worker,School Counsellor,lateral,derived,synthetic,true
 CAREER-218,Social Worker,Medical Social Worker,lateral,derived,synthetic,true
+CAREER-218,Social Worker,School Counsellor,lateral,derived,synthetic,true
 CAREER-218,Social Worker,Probation Officer,lateral,derived,synthetic,true
 CAREER-218,Social Worker,Refugee Protection Officer,lateral,derived,synthetic,true
 CAREER-219,Community Development Officer,Attachment student (community development),entry,derived,synthetic,true
@@ -7297,8 +7714,8 @@ CAREER-225,Humanitarian Aid Worker,Policy adviser,beyond,category_default,synthe
 CAREER-225,Humanitarian Aid Worker,International organisation roles,beyond,category_default,synthetic,true
 CAREER-225,Humanitarian Aid Worker,Rehabilitation Officer,lateral,derived,synthetic,true
 CAREER-225,Humanitarian Aid Worker,Disaster Risk Management Officer,lateral,derived,synthetic,true
-CAREER-225,Humanitarian Aid Worker,Adult Education Facilitator,lateral,derived,synthetic,true
 CAREER-225,Humanitarian Aid Worker,Port Operations Officer,lateral,derived,synthetic,true
+CAREER-225,Humanitarian Aid Worker,Adult Education Facilitator,lateral,derived,synthetic,true
 CAREER-226,Gender and Inclusion Officer,Attachment student (gender and social inclusion),entry,derived,synthetic,true
 CAREER-226,Gender and Inclusion Officer,Volunteer in gender and social inclusion,entry,derived,synthetic,true
 CAREER-226,Gender and Inclusion Officer,Gender and Inclusion Officer intern,entry,derived,synthetic,true
@@ -7351,8 +7768,8 @@ CAREER-227,Disability Inclusion Officer,Policy adviser,beyond,category_default,s
 CAREER-227,Disability Inclusion Officer,International organisation roles,beyond,category_default,synthetic,true
 CAREER-227,Disability Inclusion Officer,Gender and Inclusion Officer,lateral,derived,synthetic,true
 CAREER-227,Disability Inclusion Officer,Safeguarding Adviser,lateral,derived,synthetic,true
-CAREER-227,Disability Inclusion Officer,Water Resources Officer,lateral,derived,synthetic,true
 CAREER-227,Disability Inclusion Officer,Urban Development Officer,lateral,derived,synthetic,true
+CAREER-227,Disability Inclusion Officer,Water Resources Officer,lateral,derived,synthetic,true
 CAREER-228,Peacebuilding Officer,Attachment student (peace and conflict),entry,derived,synthetic,true
 CAREER-228,Peacebuilding Officer,Volunteer in peace and conflict,entry,derived,synthetic,true
 CAREER-228,Peacebuilding Officer,Peacebuilding Officer intern,entry,derived,synthetic,true
@@ -7431,9 +7848,9 @@ CAREER-230,Volunteer Coordinator,Lecturer or trainer,beyond,category_default,syn
 CAREER-230,Volunteer Coordinator,Policy adviser,beyond,category_default,synthetic,true
 CAREER-230,Volunteer Coordinator,International organisation roles,beyond,category_default,synthetic,true
 CAREER-230,Volunteer Coordinator,Consular Officer,lateral,derived,synthetic,true
-CAREER-230,Volunteer Coordinator,Language Teacher,lateral,derived,synthetic,true
 CAREER-230,Volunteer Coordinator,Front Office Officer,lateral,derived,synthetic,true
 CAREER-230,Volunteer Coordinator,Meteorologist,lateral,derived,synthetic,true
+CAREER-230,Volunteer Coordinator,Flight Dispatcher,lateral,derived,synthetic,true
 CAREER-231,Fundraising Officer,Attachment student (resource mobilisation),entry,derived,synthetic,true
 CAREER-231,Fundraising Officer,Volunteer in resource mobilisation,entry,derived,synthetic,true
 CAREER-231,Fundraising Officer,Fundraising Officer intern,entry,derived,synthetic,true
@@ -7485,9 +7902,9 @@ CAREER-232,Community Mobiliser,Lecturer or trainer,beyond,category_default,synth
 CAREER-232,Community Mobiliser,Policy adviser,beyond,category_default,synthetic,true
 CAREER-232,Community Mobiliser,International organisation roles,beyond,category_default,synthetic,true
 CAREER-232,Community Mobiliser,Environmental Educator,lateral,derived,synthetic,true
-CAREER-232,Community Mobiliser,Animal Health Technician,lateral,derived,synthetic,true
 CAREER-232,Community Mobiliser,Laboratory Technician,lateral,derived,synthetic,true
-CAREER-232,Community Mobiliser,Poultry Farm Manager,lateral,derived,synthetic,true
+CAREER-232,Community Mobiliser,Radiation Protection Officer,lateral,derived,synthetic,true
+CAREER-232,Community Mobiliser,Prisons Officer,lateral,derived,synthetic,true
 CAREER-233,Refugee Protection Officer,Attachment student (forced displacement),entry,derived,synthetic,true
 CAREER-233,Refugee Protection Officer,Volunteer in forced displacement,entry,derived,synthetic,true
 CAREER-233,Refugee Protection Officer,Refugee Protection Officer intern,entry,derived,synthetic,true
@@ -7540,8 +7957,8 @@ CAREER-234,Probation Officer,Policy adviser,beyond,category_default,synthetic,tr
 CAREER-234,Probation Officer,International organisation roles,beyond,category_default,synthetic,true
 CAREER-234,Probation Officer,Social Worker,lateral,derived,synthetic,true
 CAREER-234,Probation Officer,Sociologist,lateral,derived,synthetic,true
-CAREER-234,Probation Officer,Quality Assurance and Standards Officer,lateral,derived,synthetic,true
-CAREER-234,Probation Officer,Environmental Consultant,lateral,derived,synthetic,true
+CAREER-234,Probation Officer,Public Administrator,lateral,derived,synthetic,true
+CAREER-234,Probation Officer,Economist,lateral,derived,synthetic,true
 CAREER-235,Sociologist,Attachment student (social research),entry,derived,synthetic,true
 CAREER-235,Sociologist,Volunteer in social research,entry,derived,synthetic,true
 CAREER-235,Sociologist,Sociologist intern,entry,derived,synthetic,true
@@ -7567,8 +7984,8 @@ CAREER-235,Sociologist,Policy adviser,beyond,category_default,synthetic,true
 CAREER-235,Sociologist,International organisation roles,beyond,category_default,synthetic,true
 CAREER-235,Sociologist,Economist,lateral,derived,synthetic,true
 CAREER-235,Sociologist,Intelligence Analyst,lateral,derived,synthetic,true
-CAREER-235,Sociologist,Education Researcher,lateral,derived,synthetic,true
 CAREER-235,Sociologist,Development Planning Officer,lateral,derived,synthetic,true
+CAREER-235,Sociologist,Probation Officer,lateral,derived,synthetic,true
 CAREER-236,Public Administrator,Attachment student (public administration),entry,derived,synthetic,true
 CAREER-236,Public Administrator,Public service intern,entry,derived,synthetic,true
 CAREER-236,Public Administrator,Graduate trainee (public administration),entry,derived,synthetic,true
@@ -7592,10 +8009,10 @@ CAREER-236,Public Administrator,Researcher at a policy institute,beyond,category
 CAREER-236,Public Administrator,Lecturer,beyond,category_default,synthetic,true
 CAREER-236,Public Administrator,Elected office,beyond,category_default,synthetic,true
 CAREER-236,Public Administrator,Board or commission member,beyond,category_default,synthetic,true
-CAREER-236,Public Administrator,Education Officer,lateral,derived,synthetic,true
 CAREER-236,Public Administrator,ICT Policy Officer,lateral,derived,synthetic,true
 CAREER-236,Public Administrator,Public Auditor,lateral,derived,synthetic,true
 CAREER-236,Public Administrator,Economist,lateral,derived,synthetic,true
+CAREER-236,Public Administrator,Development Planning Officer,lateral,derived,synthetic,true
 CAREER-237,Public Policy Analyst,Attachment student (policy analysis),entry,derived,synthetic,true
 CAREER-237,Public Policy Analyst,Public service intern,entry,derived,synthetic,true
 CAREER-237,Public Policy Analyst,Graduate trainee (policy analysis),entry,derived,synthetic,true
@@ -7622,7 +8039,7 @@ CAREER-237,Public Policy Analyst,Board or commission member,beyond,category_defa
 CAREER-237,Public Policy Analyst,Transport Planner,lateral,derived,synthetic,true
 CAREER-237,Public Policy Analyst,ICT Policy Officer,lateral,derived,synthetic,true
 CAREER-237,Public Policy Analyst,Development Planning Officer,lateral,derived,synthetic,true
-CAREER-237,Public Policy Analyst,Education Researcher,lateral,derived,synthetic,true
+CAREER-237,Public Policy Analyst,International Relations Analyst,lateral,derived,synthetic,true
 CAREER-238,Economist,Attachment student (economic analysis),entry,derived,synthetic,true
 CAREER-238,Economist,Public service intern,entry,derived,synthetic,true
 CAREER-238,Economist,Graduate trainee (economic analysis),entry,derived,synthetic,true
@@ -7673,10 +8090,10 @@ CAREER-239,Development Economist,Researcher at a policy institute,beyond,categor
 CAREER-239,Development Economist,Lecturer,beyond,category_default,synthetic,true
 CAREER-239,Development Economist,Elected office,beyond,category_default,synthetic,true
 CAREER-239,Development Economist,Board or commission member,beyond,category_default,synthetic,true
-CAREER-239,Development Economist,Agricultural Economist,lateral,derived,synthetic,true
 CAREER-239,Development Economist,Data Protection Officer,lateral,derived,synthetic,true
 CAREER-239,Development Economist,Economist,lateral,derived,synthetic,true
 CAREER-239,Development Economist,Development Planning Officer,lateral,derived,synthetic,true
+CAREER-239,Development Economist,Public Policy Analyst,lateral,derived,synthetic,true
 CAREER-240,County Government Officer,Attachment student (devolved government),entry,derived,synthetic,true
 CAREER-240,County Government Officer,Public service intern,entry,derived,synthetic,true
 CAREER-240,County Government Officer,Graduate trainee (devolved government),entry,derived,synthetic,true
@@ -7701,9 +8118,9 @@ CAREER-240,County Government Officer,Lecturer,beyond,category_default,synthetic,
 CAREER-240,County Government Officer,Elected office,beyond,category_default,synthetic,true
 CAREER-240,County Government Officer,Board or commission member,beyond,category_default,synthetic,true
 CAREER-240,County Government Officer,Public Finance Officer,lateral,derived,synthetic,true
-CAREER-240,County Government Officer,School Head and Administrator,lateral,derived,synthetic,true
-CAREER-240,County Government Officer,Range Management Officer,lateral,derived,synthetic,true
 CAREER-240,County Government Officer,Grants Manager,lateral,derived,synthetic,true
+CAREER-240,County Government Officer,Events Planner,lateral,derived,synthetic,true
+CAREER-240,County Government Officer,Cultural Heritage Officer,lateral,derived,synthetic,true
 CAREER-241,Diplomat and Foreign Service Officer,Attachment student (foreign affairs),entry,derived,synthetic,true
 CAREER-241,Diplomat and Foreign Service Officer,Public service intern,entry,derived,synthetic,true
 CAREER-241,Diplomat and Foreign Service Officer,Graduate trainee (foreign affairs),entry,derived,synthetic,true
@@ -7944,9 +8361,9 @@ CAREER-249,Parliamentary Researcher,Lecturer,beyond,category_default,synthetic,t
 CAREER-249,Parliamentary Researcher,Elected office,beyond,category_default,synthetic,true
 CAREER-249,Parliamentary Researcher,Board or commission member,beyond,category_default,synthetic,true
 CAREER-249,Parliamentary Researcher,Public Policy Analyst,lateral,derived,synthetic,true
-CAREER-249,Parliamentary Researcher,Education Researcher,lateral,derived,synthetic,true
 CAREER-249,Parliamentary Researcher,Curator,lateral,derived,synthetic,true
 CAREER-249,Parliamentary Researcher,International Relations Analyst,lateral,derived,synthetic,true
+CAREER-249,Parliamentary Researcher,Communications Officer,lateral,derived,synthetic,true
 CAREER-250,Government Statistician,Attachment student (official statistics),entry,derived,synthetic,true
 CAREER-250,Government Statistician,Public service intern,entry,derived,synthetic,true
 CAREER-250,Government Statistician,Graduate trainee (official statistics),entry,derived,synthetic,true
@@ -8024,10 +8441,10 @@ CAREER-252,Urban Development Officer,Researcher at a policy institute,beyond,cat
 CAREER-252,Urban Development Officer,Lecturer,beyond,category_default,synthetic,true
 CAREER-252,Urban Development Officer,Elected office,beyond,category_default,synthetic,true
 CAREER-252,Urban Development Officer,Board or commission member,beyond,category_default,synthetic,true
-CAREER-252,Urban Development Officer,Water Resources Officer,lateral,derived,synthetic,true
 CAREER-252,Urban Development Officer,Transport Planner,lateral,derived,synthetic,true
 CAREER-252,Urban Development Officer,Gender and Inclusion Officer,lateral,derived,synthetic,true
 CAREER-252,Urban Development Officer,Urban and Regional Planner,lateral,derived,synthetic,true
+CAREER-252,Urban Development Officer,Disability Inclusion Officer,lateral,derived,synthetic,true
 CAREER-253,Disaster Risk Management Officer,Attachment student (disaster preparedness),entry,derived,synthetic,true
 CAREER-253,Disaster Risk Management Officer,Public service intern,entry,derived,synthetic,true
 CAREER-253,Disaster Risk Management Officer,Graduate trainee (disaster preparedness),entry,derived,synthetic,true
@@ -8618,10 +9035,10 @@ CAREER-274,Occupational Health and Safety Officer,Trainer at a TVET institution,
 CAREER-274,Occupational Health and Safety Officer,Inspector or assessor,beyond,category_default,synthetic,true
 CAREER-274,Occupational Health and Safety Officer,Supplier or dealer,beyond,category_default,synthetic,true
 CAREER-274,Occupational Health and Safety Officer,Work abroad on contracts,beyond,category_default,synthetic,true
-CAREER-274,Occupational Health and Safety Officer,Food Safety Officer,lateral,derived,synthetic,true
 CAREER-274,Occupational Health and Safety Officer,Crane and Plant Operator,lateral,derived,synthetic,true
 CAREER-274,Occupational Health and Safety Officer,Solar PV Technician,lateral,derived,synthetic,true
 CAREER-274,Occupational Health and Safety Officer,Aircraft Maintenance Engineer,lateral,derived,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,Facilities Manager,lateral,derived,synthetic,true
 CAREER-275,Energy Auditor,Apprentice Energy Auditor,entry,derived,synthetic,true
 CAREER-275,Energy Auditor,Attachment student (energy efficiency),entry,derived,synthetic,true
 CAREER-275,Energy Auditor,Trainee Energy Auditor,entry,derived,synthetic,true
@@ -8829,9 +9246,9 @@ CAREER-280,Penetration Tester,Technical trainer or lecturer,beyond,category_defa
 CAREER-280,Penetration Tester,Developer advocate,beyond,category_default,synthetic,true
 CAREER-280,Penetration Tester,Product Manager,beyond,category_default,synthetic,true
 CAREER-280,Penetration Tester,IT Auditor,lateral,derived,synthetic,true
-CAREER-280,Penetration Tester,Quality Assurance and Standards Officer,lateral,derived,synthetic,true
-CAREER-280,Penetration Tester,Intelligence Analyst,lateral,derived,synthetic,true
 CAREER-280,Penetration Tester,Environmental Consultant,lateral,derived,synthetic,true
+CAREER-280,Penetration Tester,Intelligence Analyst,lateral,derived,synthetic,true
+CAREER-280,Penetration Tester,Sociologist,lateral,derived,synthetic,true
 CAREER-281,Blockchain Developer,Smart Contract Developer,alternative,authored,synthetic,true
 CAREER-281,Blockchain Developer,Web3 Developer,alternative,authored,synthetic,true
 CAREER-281,Blockchain Developer,Distributed Ledger Engineer,alternative,authored,synthetic,true
@@ -9757,8 +10174,8 @@ CAREER-304,Pharmaceutical Technologist,Lecturer or clinical instructor,beyond,ca
 CAREER-304,Pharmaceutical Technologist,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-304,Pharmaceutical Technologist,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-304,Pharmaceutical Technologist,Pharmacist,lateral,derived,synthetic,true
-CAREER-304,Pharmaceutical Technologist,Community Mobiliser,lateral,derived,synthetic,true
 CAREER-304,Pharmaceutical Technologist,Animal Health Technician,lateral,derived,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Community Mobiliser,lateral,derived,synthetic,true
 CAREER-304,Pharmaceutical Technologist,Laboratory Technician,lateral,derived,synthetic,true
 CAREER-305,Dental Technologist,Dental Technician,alternative,authored,synthetic,true
 CAREER-305,Dental Technologist,Dental Laboratory Technologist,alternative,authored,synthetic,true
@@ -10567,8 +10984,8 @@ CAREER-325,Administrative Assistant,Non-executive director,beyond,category_defau
 CAREER-325,Administrative Assistant,Investor or mentor,beyond,category_default,synthetic,true
 CAREER-325,Administrative Assistant,Court Clerk,lateral,derived,synthetic,true
 CAREER-325,Administrative Assistant,Office Manager,lateral,derived,synthetic,true
-CAREER-325,Administrative Assistant,Call Centre Team Leader,lateral,derived,synthetic,true
 CAREER-325,Administrative Assistant,Examinations Officer,lateral,derived,synthetic,true
+CAREER-325,Administrative Assistant,Call Centre Team Leader,lateral,derived,synthetic,true
 CAREER-326,Executive Assistant,Personal Assistant,alternative,authored,synthetic,true
 CAREER-326,Executive Assistant,Executive Secretary,alternative,authored,synthetic,true
 CAREER-326,Executive Assistant,Executive Administrator,alternative,authored,synthetic,true
@@ -10604,10 +11021,10 @@ CAREER-326,Executive Assistant,Agency founder,beyond,category_default,synthetic,
 CAREER-326,Executive Assistant,Lecturer or corporate trainer,beyond,category_default,synthetic,true
 CAREER-326,Executive Assistant,Non-executive director,beyond,category_default,synthetic,true
 CAREER-326,Executive Assistant,Investor or mentor,beyond,category_default,synthetic,true
+CAREER-326,Executive Assistant,Examinations Officer,lateral,derived,synthetic,true
 CAREER-326,Executive Assistant,Administrative Assistant,lateral,derived,synthetic,true
 CAREER-326,Executive Assistant,Office Manager,lateral,derived,synthetic,true
-CAREER-326,Executive Assistant,Counsellor,lateral,derived,synthetic,true
-CAREER-326,Executive Assistant,Examinations Officer,lateral,derived,synthetic,true
+CAREER-326,Executive Assistant,Sign Language Interpreter,lateral,derived,synthetic,true
 CAREER-327,Customer Service Representative,Customer Care Agent,alternative,authored,synthetic,true
 CAREER-327,Customer Service Representative,Call Centre Agent,alternative,authored,synthetic,true
 CAREER-327,Customer Service Representative,Customer Support Agent,alternative,authored,synthetic,true
@@ -10684,8 +11101,8 @@ CAREER-328,Call Centre Team Leader,Non-executive director,beyond,category_defaul
 CAREER-328,Call Centre Team Leader,Investor or mentor,beyond,category_default,synthetic,true
 CAREER-328,Call Centre Team Leader,Administrative Assistant,lateral,derived,synthetic,true
 CAREER-328,Call Centre Team Leader,Operations Manager,lateral,derived,synthetic,true
-CAREER-328,Call Centre Team Leader,Volunteer Coordinator,lateral,derived,synthetic,true
 CAREER-328,Call Centre Team Leader,Examinations Officer,lateral,derived,synthetic,true
+CAREER-328,Call Centre Team Leader,Volunteer Coordinator,lateral,derived,synthetic,true
 CAREER-329,Innovation Manager,Innovation Lead,alternative,authored,synthetic,true
 CAREER-329,Innovation Manager,Innovation Officer,alternative,authored,synthetic,true
 CAREER-329,Innovation Manager,New Ventures Manager,alternative,authored,synthetic,true
@@ -10721,8 +11138,8 @@ CAREER-329,Innovation Manager,Agency founder,beyond,category_default,synthetic,t
 CAREER-329,Innovation Manager,Lecturer or corporate trainer,beyond,category_default,synthetic,true
 CAREER-329,Innovation Manager,Non-executive director,beyond,category_default,synthetic,true
 CAREER-329,Innovation Manager,Investor or mentor,beyond,category_default,synthetic,true
-CAREER-329,Innovation Manager,Environmental Educator,lateral,derived,synthetic,true
 CAREER-329,Innovation Manager,Corporate Trainer,lateral,derived,synthetic,true
+CAREER-329,Innovation Manager,Environmental Educator,lateral,derived,synthetic,true
 CAREER-329,Innovation Manager,Community Mobiliser,lateral,derived,synthetic,true
 CAREER-329,Innovation Manager,Adult Education Facilitator,lateral,derived,synthetic,true
 CAREER-330,Product Owner,Product Manager,alternative,authored,synthetic,true
@@ -11150,10 +11567,10 @@ CAREER-340,Legal Aid Officer,Legal consultant,beyond,category_default,synthetic,
 CAREER-340,Legal Aid Officer,Lecturer in law,beyond,category_default,synthetic,true
 CAREER-340,Legal Aid Officer,Policy adviser,beyond,category_default,synthetic,true
 CAREER-340,Legal Aid Officer,Elected or appointed public office,beyond,category_default,synthetic,true
+CAREER-340,Legal Aid Officer,Environmental Educator,lateral,derived,synthetic,true
 CAREER-340,Legal Aid Officer,Community Health Promoter,lateral,derived,synthetic,true
 CAREER-340,Legal Aid Officer,Medical Social Worker,lateral,derived,synthetic,true
 CAREER-340,Legal Aid Officer,Social Worker,lateral,derived,synthetic,true
-CAREER-340,Legal Aid Officer,Nutritionist and Dietitian,lateral,derived,synthetic,true
 CAREER-341,Data Privacy Counsel,Data Protection Officer,alternative,authored,synthetic,true
 CAREER-341,Data Privacy Counsel,Privacy Counsel,alternative,authored,synthetic,true
 CAREER-341,Data Privacy Counsel,Privacy Lawyer,alternative,authored,synthetic,true
@@ -11348,6 +11765,18 @@ CAREER-345,Legal Technologist,Business Analyst,lateral,derived,synthetic,true
 CAREER-345,Legal Technologist,Risk Analyst,lateral,derived,synthetic,true
 CAREER-345,Legal Technologist,Market Research Analyst,lateral,derived,synthetic,true
 CAREER-345,Legal Technologist,Forensic Accountant,lateral,derived,synthetic,true
+CAREER-346,Examinations Officer,Exams Officer,alternative,authored,synthetic,true
+CAREER-346,Examinations Officer,Assessment Officer,alternative,authored,synthetic,true
+CAREER-346,Examinations Officer,Examinations Coordinator,alternative,authored,synthetic,true
+CAREER-346,Examinations Officer,Examinations Administrator,alternative,authored,synthetic,true
+CAREER-346,Examinations Officer,Test Administrator,alternative,authored,synthetic,true
+CAREER-346,Examinations Officer,Examinations Clerk,alternative,authored,synthetic,true
+CAREER-346,Examinations Officer,Examinations Officer (exam registration),specialism,authored,synthetic,true
+CAREER-346,Examinations Officer,Examinations Officer (exam timetabling),specialism,authored,synthetic,true
+CAREER-346,Examinations Officer,Examinations Officer (invigilation),specialism,authored,synthetic,true
+CAREER-346,Examinations Officer,Examinations Officer (marking coordination),specialism,authored,synthetic,true
+CAREER-346,Examinations Officer,Examinations Officer (results processing),specialism,authored,synthetic,true
+CAREER-346,Examinations Officer,Examinations Officer (exam security),specialism,authored,synthetic,true
 CAREER-346,Examinations Officer,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-346,Examinations Officer,Intern teacher,entry,derived,synthetic,true
 CAREER-346,Examinations Officer,Teaching assistant,entry,derived,synthetic,true
@@ -11371,10 +11800,22 @@ CAREER-346,Examinations Officer,School owner,beyond,category_default,synthetic,t
 CAREER-346,Examinations Officer,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-346,Examinations Officer,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-346,Examinations Officer,Education policy adviser,beyond,category_default,synthetic,true
+CAREER-346,Examinations Officer,Administrative Assistant,lateral,derived,synthetic,true
 CAREER-346,Examinations Officer,Sign Language Interpreter,lateral,derived,synthetic,true
 CAREER-346,Examinations Officer,Court Clerk,lateral,derived,synthetic,true
-CAREER-346,Examinations Officer,Administrative Assistant,lateral,derived,synthetic,true
-CAREER-346,Examinations Officer,Volunteer Coordinator,lateral,derived,synthetic,true
+CAREER-346,Examinations Officer,Construction Project Manager,lateral,derived,synthetic,true
+CAREER-347,Education Researcher,Research Officer,alternative,authored,synthetic,true
+CAREER-347,Education Researcher,Education Research Associate,alternative,authored,synthetic,true
+CAREER-347,Education Researcher,Learning Assessment Specialist,alternative,authored,synthetic,true
+CAREER-347,Education Researcher,Research Fellow,alternative,authored,synthetic,true
+CAREER-347,Education Researcher,Monitoring and Evaluation Officer,alternative,authored,synthetic,true
+CAREER-347,Education Researcher,Policy Analyst (Education),alternative,authored,synthetic,true
+CAREER-347,Education Researcher,Education Researcher (learning assessment),specialism,authored,synthetic,true
+CAREER-347,Education Researcher,Education Researcher (education policy),specialism,authored,synthetic,true
+CAREER-347,Education Researcher,Education Researcher (programme evaluation),specialism,authored,synthetic,true
+CAREER-347,Education Researcher,Education Researcher (classroom research),specialism,authored,synthetic,true
+CAREER-347,Education Researcher,Education Researcher (education data analysis),specialism,authored,synthetic,true
+CAREER-347,Education Researcher,Education Researcher (early grade reading and maths),specialism,authored,synthetic,true
 CAREER-347,Education Researcher,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-347,Education Researcher,Intern teacher,entry,derived,synthetic,true
 CAREER-347,Education Researcher,Teaching assistant,entry,derived,synthetic,true
@@ -11398,10 +11839,22 @@ CAREER-347,Education Researcher,School owner,beyond,category_default,synthetic,t
 CAREER-347,Education Researcher,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-347,Education Researcher,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-347,Education Researcher,Education policy adviser,beyond,category_default,synthetic,true
-CAREER-347,Education Researcher,Public Policy Analyst,lateral,derived,synthetic,true
-CAREER-347,Education Researcher,Research Scientist,lateral,derived,synthetic,true
-CAREER-347,Education Researcher,Sociologist,lateral,derived,synthetic,true
-CAREER-347,Education Researcher,Materials Scientist,lateral,derived,synthetic,true
+CAREER-347,Education Researcher,Agricultural Economist,lateral,derived,synthetic,true
+CAREER-347,Education Researcher,Research and Learning Officer,lateral,derived,synthetic,true
+CAREER-347,Education Researcher,Market Research Analyst,lateral,derived,synthetic,true
+CAREER-347,Education Researcher,Legal Researcher,lateral,derived,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Physical Education Teacher,alternative,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Games Teacher,alternative,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Sports Coach,alternative,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Athletics Coach,alternative,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Football Coach,alternative,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Sports Instructor,alternative,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Sports Coach and PE Teacher (physical education),specialism,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Sports Coach and PE Teacher (athletics),specialism,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Sports Coach and PE Teacher (football),specialism,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Sports Coach and PE Teacher (rugby and basketball),specialism,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Sports Coach and PE Teacher (swimming),specialism,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Sports Coach and PE Teacher (fitness and conditioning),specialism,authored,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,Intern teacher,entry,derived,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,Teaching assistant,entry,derived,synthetic,true
@@ -11426,9 +11879,21 @@ CAREER-348,Sports Coach and PE Teacher,Teacher trainer,beyond,category_default,s
 CAREER-348,Sports Coach and PE Teacher,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,Education policy adviser,beyond,category_default,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,Sports and Recreation Officer,lateral,derived,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Mining Engineer,lateral,derived,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,Production Supervisor,lateral,derived,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,Port Operations Officer,lateral,derived,synthetic,true
-CAREER-348,Sports Coach and PE Teacher,Mining Engineer,lateral,derived,synthetic,true
+CAREER-349,Music Teacher,Music Instructor,alternative,authored,synthetic,true
+CAREER-349,Music Teacher,Music Tutor,alternative,authored,synthetic,true
+CAREER-349,Music Teacher,Choir Director,alternative,authored,synthetic,true
+CAREER-349,Music Teacher,Instrumental Teacher,alternative,authored,synthetic,true
+CAREER-349,Music Teacher,Band Director,alternative,authored,synthetic,true
+CAREER-349,Music Teacher,Vocal Coach,alternative,authored,synthetic,true
+CAREER-349,Music Teacher,Music Teacher (music theory),specialism,authored,synthetic,true
+CAREER-349,Music Teacher,Music Teacher (piano and keyboard),specialism,authored,synthetic,true
+CAREER-349,Music Teacher,Music Teacher (voice and choir),specialism,authored,synthetic,true
+CAREER-349,Music Teacher,Music Teacher (guitar and strings),specialism,authored,synthetic,true
+CAREER-349,Music Teacher,Music Teacher (African traditional music),specialism,authored,synthetic,true
+CAREER-349,Music Teacher,Music Teacher (music exam preparation),specialism,authored,synthetic,true
 CAREER-349,Music Teacher,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-349,Music Teacher,Intern teacher,entry,derived,synthetic,true
 CAREER-349,Music Teacher,Teaching assistant,entry,derived,synthetic,true
@@ -11452,10 +11917,22 @@ CAREER-349,Music Teacher,School owner,beyond,category_default,synthetic,true
 CAREER-349,Music Teacher,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-349,Music Teacher,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-349,Music Teacher,Education policy adviser,beyond,category_default,synthetic,true
-CAREER-349,Music Teacher,Primary School Teacher,lateral,derived,synthetic,true
 CAREER-349,Music Teacher,Secondary School Teacher,lateral,derived,synthetic,true
+CAREER-349,Music Teacher,Primary School Teacher,lateral,derived,synthetic,true
 CAREER-349,Music Teacher,Language Teacher,lateral,derived,synthetic,true
 CAREER-349,Music Teacher,Adult Education Facilitator,lateral,derived,synthetic,true
+CAREER-350,STEM Educator,Science Teacher,alternative,authored,synthetic,true
+CAREER-350,STEM Educator,Coding Instructor,alternative,authored,synthetic,true
+CAREER-350,STEM Educator,Robotics Instructor,alternative,authored,synthetic,true
+CAREER-350,STEM Educator,STEM Facilitator,alternative,authored,synthetic,true
+CAREER-350,STEM Educator,STEM Club Coordinator,alternative,authored,synthetic,true
+CAREER-350,STEM Educator,Maker Space Instructor,alternative,authored,synthetic,true
+CAREER-350,STEM Educator,STEM Educator (coding for young learners),specialism,authored,synthetic,true
+CAREER-350,STEM Educator,STEM Educator (robotics),specialism,authored,synthetic,true
+CAREER-350,STEM Educator,STEM Educator (science experiments),specialism,authored,synthetic,true
+CAREER-350,STEM Educator,STEM Educator (maker and design projects),specialism,authored,synthetic,true
+CAREER-350,STEM Educator,STEM Educator (mathematics enrichment),specialism,authored,synthetic,true
+CAREER-350,STEM Educator,STEM Educator (science fairs and competitions),specialism,authored,synthetic,true
 CAREER-350,STEM Educator,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-350,STEM Educator,Intern teacher,entry,derived,synthetic,true
 CAREER-350,STEM Educator,Teaching assistant,entry,derived,synthetic,true
@@ -11480,9 +11957,21 @@ CAREER-350,STEM Educator,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-350,STEM Educator,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-350,STEM Educator,Education policy adviser,beyond,category_default,synthetic,true
 CAREER-350,STEM Educator,Youth Worker,lateral,derived,synthetic,true
-CAREER-350,STEM Educator,Early Childhood Educator,lateral,derived,synthetic,true
-CAREER-350,STEM Educator,Educational Technologist,lateral,derived,synthetic,true
 CAREER-350,STEM Educator,Adult Education Facilitator,lateral,derived,synthetic,true
+CAREER-350,STEM Educator,Curriculum Developer,lateral,derived,synthetic,true
+CAREER-350,STEM Educator,Early Childhood Educator,lateral,derived,synthetic,true
+CAREER-351,Sign Language Interpreter,Kenyan Sign Language Interpreter,alternative,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Educational Interpreter,alternative,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Sign Language Instructor,alternative,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Deaf Education Assistant,alternative,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Conference Interpreter,alternative,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Court Interpreter,alternative,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Sign Language Interpreter (classroom interpreting),specialism,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Sign Language Interpreter (conference and media interpreting),specialism,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Sign Language Interpreter (medical interpreting),specialism,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Sign Language Interpreter (court interpreting),specialism,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Sign Language Interpreter (sign language teaching),specialism,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Sign Language Interpreter (deaf-blind interpreting),specialism,authored,synthetic,true
 CAREER-351,Sign Language Interpreter,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-351,Sign Language Interpreter,Intern teacher,entry,derived,synthetic,true
 CAREER-351,Sign Language Interpreter,Teaching assistant,entry,derived,synthetic,true
@@ -11510,6 +11999,18 @@ CAREER-351,Sign Language Interpreter,Translator and Interpreter,lateral,derived,
 CAREER-351,Sign Language Interpreter,Language Teacher,lateral,derived,synthetic,true
 CAREER-351,Sign Language Interpreter,Examinations Officer,lateral,derived,synthetic,true
 CAREER-351,Sign Language Interpreter,Counsellor,lateral,derived,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Quality Assurance Officer,alternative,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,School Inspector,alternative,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Standards Officer,alternative,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Quality Assurance Auditor,alternative,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Academic Quality Officer,alternative,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Accreditation Officer,alternative,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Quality Assurance and Standards Officer (school inspection),specialism,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Quality Assurance and Standards Officer (standards assessment),specialism,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Quality Assurance and Standards Officer (teacher appraisal),specialism,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Quality Assurance and Standards Officer (institutional accreditation),specialism,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Quality Assurance and Standards Officer (programme review),specialism,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Quality Assurance and Standards Officer (improvement planning),specialism,authored,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,Intern teacher,entry,derived,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,Teaching assistant,entry,derived,synthetic,true
@@ -11533,10 +12034,22 @@ CAREER-352,Quality Assurance and Standards Officer,School owner,beyond,category_
 CAREER-352,Quality Assurance and Standards Officer,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,Education policy adviser,beyond,category_default,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,Environmental Consultant,lateral,derived,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,Education Officer,lateral,derived,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,Probation Officer,lateral,derived,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,Public Administrator,lateral,derived,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,IT Auditor,lateral,derived,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Auditor,lateral,derived,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Ombudsman Officer,lateral,derived,synthetic,true
+CAREER-353,Dean of Students,Student Affairs Officer,alternative,authored,synthetic,true
+CAREER-353,Dean of Students,Dean of Student Affairs,alternative,authored,synthetic,true
+CAREER-353,Dean of Students,Student Welfare Officer,alternative,authored,synthetic,true
+CAREER-353,Dean of Students,Student Life Manager,alternative,authored,synthetic,true
+CAREER-353,Dean of Students,Assistant Dean,alternative,authored,synthetic,true
+CAREER-353,Dean of Students,Student Services Officer,alternative,authored,synthetic,true
+CAREER-353,Dean of Students,Dean of Students (student welfare),specialism,authored,synthetic,true
+CAREER-353,Dean of Students,Dean of Students (discipline),specialism,authored,synthetic,true
+CAREER-353,Dean of Students,Dean of Students (clubs and student leadership),specialism,authored,synthetic,true
+CAREER-353,Dean of Students,Dean of Students (accommodation),specialism,authored,synthetic,true
+CAREER-353,Dean of Students,Dean of Students (counselling and wellness),specialism,authored,synthetic,true
+CAREER-353,Dean of Students,Dean of Students (student events),specialism,authored,synthetic,true
 CAREER-353,Dean of Students,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-353,Dean of Students,Intern teacher,entry,derived,synthetic,true
 CAREER-353,Dean of Students,Teaching assistant,entry,derived,synthetic,true
@@ -11561,9 +12074,21 @@ CAREER-353,Dean of Students,Teacher trainer,beyond,category_default,synthetic,tr
 CAREER-353,Dean of Students,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-353,Dean of Students,Education policy adviser,beyond,category_default,synthetic,true
 CAREER-353,Dean of Students,School Counsellor,lateral,derived,synthetic,true
-CAREER-353,Dean of Students,Social Worker,lateral,derived,synthetic,true
 CAREER-353,Dean of Students,Medical Social Worker,lateral,derived,synthetic,true
+CAREER-353,Dean of Students,Social Worker,lateral,derived,synthetic,true
 CAREER-353,Dean of Students,Probation Officer,lateral,derived,synthetic,true
+CAREER-354,E-learning Content Developer,E-learning Developer,alternative,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Digital Content Developer,alternative,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Multimedia Developer,alternative,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Course Developer,alternative,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Learning Content Creator,alternative,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Educational Video Producer,alternative,authored,synthetic,true
+CAREER-354,E-learning Content Developer,E-learning Content Developer (interactive courses),specialism,authored,synthetic,true
+CAREER-354,E-learning Content Developer,E-learning Content Developer (educational video),specialism,authored,synthetic,true
+CAREER-354,E-learning Content Developer,E-learning Content Developer (animation),specialism,authored,synthetic,true
+CAREER-354,E-learning Content Developer,E-learning Content Developer (quizzes and assessments),specialism,authored,synthetic,true
+CAREER-354,E-learning Content Developer,E-learning Content Developer (mobile learning),specialism,authored,synthetic,true
+CAREER-354,E-learning Content Developer,E-learning Content Developer (accessibility),specialism,authored,synthetic,true
 CAREER-354,E-learning Content Developer,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-354,E-learning Content Developer,Intern teacher,entry,derived,synthetic,true
 CAREER-354,E-learning Content Developer,Teaching assistant,entry,derived,synthetic,true
@@ -11589,8 +12114,20 @@ CAREER-354,E-learning Content Developer,Ed-tech content developer,beyond,categor
 CAREER-354,E-learning Content Developer,Education policy adviser,beyond,category_default,synthetic,true
 CAREER-354,E-learning Content Developer,Instructional Designer,lateral,derived,synthetic,true
 CAREER-354,E-learning Content Developer,Educational Technologist,lateral,derived,synthetic,true
-CAREER-354,E-learning Content Developer,Curriculum Developer,lateral,derived,synthetic,true
-CAREER-354,E-learning Content Developer,Content Creator,lateral,derived,synthetic,true
+CAREER-354,E-learning Content Developer,Corporate Trainer,lateral,derived,synthetic,true
+CAREER-354,E-learning Content Developer,Adult Education Facilitator,lateral,derived,synthetic,true
+CAREER-355,Career Guidance Officer,Careers Advisor,alternative,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Career Counsellor,alternative,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Career Services Officer,alternative,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Careers Coach,alternative,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Placement Officer,alternative,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Employability Officer,alternative,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Career Guidance Officer (career counselling),specialism,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Career Guidance Officer (CV and interview coaching),specialism,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Career Guidance Officer (internship and job placement),specialism,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Career Guidance Officer (employer relations),specialism,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Career Guidance Officer (career fairs),specialism,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Career Guidance Officer (graduate tracking),specialism,authored,synthetic,true
 CAREER-355,Career Guidance Officer,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-355,Career Guidance Officer,Intern teacher,entry,derived,synthetic,true
 CAREER-355,Career Guidance Officer,Teaching assistant,entry,derived,synthetic,true
@@ -11614,10 +12151,22 @@ CAREER-355,Career Guidance Officer,School owner,beyond,category_default,syntheti
 CAREER-355,Career Guidance Officer,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-355,Career Guidance Officer,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-355,Career Guidance Officer,Education policy adviser,beyond,category_default,synthetic,true
+CAREER-355,Career Guidance Officer,Talent Acquisition Specialist,lateral,derived,synthetic,true
 CAREER-355,Career Guidance Officer,School Counsellor,lateral,derived,synthetic,true
-CAREER-355,Career Guidance Officer,Language Teacher,lateral,derived,synthetic,true
-CAREER-355,Career Guidance Officer,Dean of Students,lateral,derived,synthetic,true
-CAREER-355,Career Guidance Officer,Education Officer,lateral,derived,synthetic,true
+CAREER-355,Career Guidance Officer,Corporate Trainer,lateral,derived,synthetic,true
+CAREER-355,Career Guidance Officer,Admissions Officer,lateral,derived,synthetic,true
+CAREER-356,Admissions Officer,Admissions Counsellor,alternative,authored,synthetic,true
+CAREER-356,Admissions Officer,Student Recruitment Officer,alternative,authored,synthetic,true
+CAREER-356,Admissions Officer,Admissions Assistant,alternative,authored,synthetic,true
+CAREER-356,Admissions Officer,Enrolment Officer,alternative,authored,synthetic,true
+CAREER-356,Admissions Officer,Registrar's Assistant,alternative,authored,synthetic,true
+CAREER-356,Admissions Officer,Marketing and Admissions Officer,alternative,authored,synthetic,true
+CAREER-356,Admissions Officer,Admissions Officer (application processing),specialism,authored,synthetic,true
+CAREER-356,Admissions Officer,Admissions Officer (student recruitment),specialism,authored,synthetic,true
+CAREER-356,Admissions Officer,Admissions Officer (school outreach),specialism,authored,synthetic,true
+CAREER-356,Admissions Officer,Admissions Officer (international admissions),specialism,authored,synthetic,true
+CAREER-356,Admissions Officer,Admissions Officer (scholarships),specialism,authored,synthetic,true
+CAREER-356,Admissions Officer,Admissions Officer (enrolment data),specialism,authored,synthetic,true
 CAREER-356,Admissions Officer,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-356,Admissions Officer,Intern teacher,entry,derived,synthetic,true
 CAREER-356,Admissions Officer,Teaching assistant,entry,derived,synthetic,true
@@ -11641,10 +12190,22 @@ CAREER-356,Admissions Officer,School owner,beyond,category_default,synthetic,tru
 CAREER-356,Admissions Officer,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-356,Admissions Officer,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-356,Admissions Officer,Education policy adviser,beyond,category_default,synthetic,true
-CAREER-356,Admissions Officer,Public Procurement Officer,lateral,derived,synthetic,true
-CAREER-356,Admissions Officer,Lands Officer,lateral,derived,synthetic,true
 CAREER-356,Admissions Officer,Health Records and Information Officer,lateral,derived,synthetic,true
-CAREER-356,Admissions Officer,Court Clerk,lateral,derived,synthetic,true
+CAREER-356,Admissions Officer,Administrative Assistant,lateral,derived,synthetic,true
+CAREER-356,Admissions Officer,Land Registrar,lateral,derived,synthetic,true
+CAREER-356,Admissions Officer,Public Procurement Officer,lateral,derived,synthetic,true
+CAREER-357,Dairy Technologist,Dairy Processing Technologist,alternative,authored,synthetic,true
+CAREER-357,Dairy Technologist,Dairy Plant Operator,alternative,authored,synthetic,true
+CAREER-357,Dairy Technologist,Milk Quality Officer,alternative,authored,synthetic,true
+CAREER-357,Dairy Technologist,Dairy Production Supervisor,alternative,authored,synthetic,true
+CAREER-357,Dairy Technologist,Dairy Technician,alternative,authored,synthetic,true
+CAREER-357,Dairy Technologist,Cheese Maker,alternative,authored,synthetic,true
+CAREER-357,Dairy Technologist,Dairy Technologist (milk reception and testing),specialism,authored,synthetic,true
+CAREER-357,Dairy Technologist,Dairy Technologist (pasteurisation),specialism,authored,synthetic,true
+CAREER-357,Dairy Technologist,Dairy Technologist (yoghurt and fermented milk),specialism,authored,synthetic,true
+CAREER-357,Dairy Technologist,Dairy Technologist (cheese and butter),specialism,authored,synthetic,true
+CAREER-357,Dairy Technologist,Dairy Technologist (quality assurance),specialism,authored,synthetic,true
+CAREER-357,Dairy Technologist,Dairy Technologist (cooling and collection),specialism,authored,synthetic,true
 CAREER-357,Dairy Technologist,Attachment student (milk processing),entry,derived,synthetic,true
 CAREER-357,Dairy Technologist,Dairy Technologist intern,entry,derived,synthetic,true
 CAREER-357,Dairy Technologist,Field assistant,entry,derived,synthetic,true
@@ -11669,9 +12230,21 @@ CAREER-357,Dairy Technologist,Lecturer or trainer,beyond,category_default,synthe
 CAREER-357,Dairy Technologist,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-357,Dairy Technologist,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-357,Dairy Technologist,Food Scientist,lateral,derived,synthetic,true
-CAREER-357,Dairy Technologist,Hairdresser and Beauty Therapist,lateral,derived,synthetic,true
 CAREER-357,Dairy Technologist,Crane and Plant Operator,lateral,derived,synthetic,true
+CAREER-357,Dairy Technologist,Hairdresser and Beauty Therapist,lateral,derived,synthetic,true
 CAREER-357,Dairy Technologist,Seed Technologist,lateral,derived,synthetic,true
+CAREER-358,Poultry Farm Manager,Poultry Farm Supervisor,alternative,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Poultry Production Manager,alternative,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Layer Farm Manager,alternative,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Broiler Farm Manager,alternative,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Hatchery Manager,alternative,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Poultry Technician,alternative,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Poultry Farm Manager (broiler production),specialism,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Poultry Farm Manager (layer and egg production),specialism,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Poultry Farm Manager (hatchery operations),specialism,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Poultry Farm Manager (indigenous poultry),specialism,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Poultry Farm Manager (feed management),specialism,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Poultry Farm Manager (biosecurity),specialism,authored,synthetic,true
 CAREER-358,Poultry Farm Manager,Attachment student (poultry production),entry,derived,synthetic,true
 CAREER-358,Poultry Farm Manager,Poultry Farm Manager intern,entry,derived,synthetic,true
 CAREER-358,Poultry Farm Manager,Field assistant,entry,derived,synthetic,true
@@ -11699,6 +12272,18 @@ CAREER-358,Poultry Farm Manager,Animal Health Technician,lateral,derived,synthet
 CAREER-358,Poultry Farm Manager,Laboratory Technician,lateral,derived,synthetic,true
 CAREER-358,Poultry Farm Manager,Community Mobiliser,lateral,derived,synthetic,true
 CAREER-358,Poultry Farm Manager,Radiation Protection Officer,lateral,derived,synthetic,true
+CAREER-359,Apiculturist,Beekeeper,alternative,authored,synthetic,true
+CAREER-359,Apiculturist,Apiary Manager,alternative,authored,synthetic,true
+CAREER-359,Apiculturist,Beekeeping Officer,alternative,authored,synthetic,true
+CAREER-359,Apiculturist,Honey Processor,alternative,authored,synthetic,true
+CAREER-359,Apiculturist,Bee Extension Officer,alternative,authored,synthetic,true
+CAREER-359,Apiculturist,Apiary Technician,alternative,authored,synthetic,true
+CAREER-359,Apiculturist,Apiculturist (honey production),specialism,authored,synthetic,true
+CAREER-359,Apiculturist,Apiculturist (hive management),specialism,authored,synthetic,true
+CAREER-359,Apiculturist,Apiculturist (queen rearing),specialism,authored,synthetic,true
+CAREER-359,Apiculturist,Apiculturist (honey processing and packaging),specialism,authored,synthetic,true
+CAREER-359,Apiculturist,Apiculturist (pollination services),specialism,authored,synthetic,true
+CAREER-359,Apiculturist,Apiculturist (beeswax and other hive products),specialism,authored,synthetic,true
 CAREER-359,Apiculturist,Attachment student (beekeeping),entry,derived,synthetic,true
 CAREER-359,Apiculturist,Apiculturist intern,entry,derived,synthetic,true
 CAREER-359,Apiculturist,Field assistant,entry,derived,synthetic,true
@@ -11724,8 +12309,20 @@ CAREER-359,Apiculturist,Input supplier or agro-dealer,beyond,category_default,sy
 CAREER-359,Apiculturist,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-359,Apiculturist,Agricultural Extension Officer,lateral,derived,synthetic,true
 CAREER-359,Apiculturist,Food Scientist,lateral,derived,synthetic,true
-CAREER-359,Apiculturist,Dairy Technologist,lateral,derived,synthetic,true
-CAREER-359,Apiculturist,Coffee and Tea Quality Controller,lateral,derived,synthetic,true
+CAREER-359,Apiculturist,Livestock Production Officer,lateral,derived,synthetic,true
+CAREER-359,Apiculturist,Seed Technologist,lateral,derived,synthetic,true
+CAREER-360,Irrigation Technician,Irrigation Officer,alternative,authored,synthetic,true
+CAREER-360,Irrigation Technician,Irrigation Installer,alternative,authored,synthetic,true
+CAREER-360,Irrigation Technician,Irrigation Engineer's Assistant,alternative,authored,synthetic,true
+CAREER-360,Irrigation Technician,Drip Irrigation Technician,alternative,authored,synthetic,true
+CAREER-360,Irrigation Technician,Water Technician,alternative,authored,synthetic,true
+CAREER-360,Irrigation Technician,Irrigation Supervisor,alternative,authored,synthetic,true
+CAREER-360,Irrigation Technician,Irrigation Technician (drip irrigation),specialism,authored,synthetic,true
+CAREER-360,Irrigation Technician,Irrigation Technician (sprinkler systems),specialism,authored,synthetic,true
+CAREER-360,Irrigation Technician,Irrigation Technician (centre pivots),specialism,authored,synthetic,true
+CAREER-360,Irrigation Technician,Irrigation Technician (solar pumping),specialism,authored,synthetic,true
+CAREER-360,Irrigation Technician,Irrigation Technician (greenhouse irrigation),specialism,authored,synthetic,true
+CAREER-360,Irrigation Technician,Irrigation Technician (smallholder irrigation schemes),specialism,authored,synthetic,true
 CAREER-360,Irrigation Technician,Attachment student (irrigation systems),entry,derived,synthetic,true
 CAREER-360,Irrigation Technician,Irrigation Technician intern,entry,derived,synthetic,true
 CAREER-360,Irrigation Technician,Field assistant,entry,derived,synthetic,true
@@ -11752,7 +12349,19 @@ CAREER-360,Irrigation Technician,Policy or regulatory officer,beyond,category_de
 CAREER-360,Irrigation Technician,Hydrologist,lateral,derived,synthetic,true
 CAREER-360,Irrigation Technician,Geothermal Technician,lateral,derived,synthetic,true
 CAREER-360,Irrigation Technician,Biogas Technician,lateral,derived,synthetic,true
-CAREER-360,Irrigation Technician,Agronomist,lateral,derived,synthetic,true
+CAREER-360,Irrigation Technician,Greenhouse Manager,lateral,derived,synthetic,true
+CAREER-361,Seed Technologist,Seed Analyst,alternative,authored,synthetic,true
+CAREER-361,Seed Technologist,Seed Inspector,alternative,authored,synthetic,true
+CAREER-361,Seed Technologist,Seed Production Officer,alternative,authored,synthetic,true
+CAREER-361,Seed Technologist,Seed Quality Officer,alternative,authored,synthetic,true
+CAREER-361,Seed Technologist,Seed Processing Supervisor,alternative,authored,synthetic,true
+CAREER-361,Seed Technologist,Seed Certification Officer,alternative,authored,synthetic,true
+CAREER-361,Seed Technologist,Seed Technologist (seed production),specialism,authored,synthetic,true
+CAREER-361,Seed Technologist,Seed Technologist (seed testing),specialism,authored,synthetic,true
+CAREER-361,Seed Technologist,Seed Technologist (seed certification),specialism,authored,synthetic,true
+CAREER-361,Seed Technologist,Seed Technologist (seed processing),specialism,authored,synthetic,true
+CAREER-361,Seed Technologist,Seed Technologist (variety maintenance),specialism,authored,synthetic,true
+CAREER-361,Seed Technologist,Seed Technologist (seed storage),specialism,authored,synthetic,true
 CAREER-361,Seed Technologist,Attachment student (seed production),entry,derived,synthetic,true
 CAREER-361,Seed Technologist,Seed Technologist intern,entry,derived,synthetic,true
 CAREER-361,Seed Technologist,Field assistant,entry,derived,synthetic,true
@@ -11780,6 +12389,18 @@ CAREER-361,Seed Technologist,Soil Scientist,lateral,derived,synthetic,true
 CAREER-361,Seed Technologist,Microbiologist,lateral,derived,synthetic,true
 CAREER-361,Seed Technologist,Forensic Scientist,lateral,derived,synthetic,true
 CAREER-361,Seed Technologist,Environmental Scientist,lateral,derived,synthetic,true
+CAREER-362,Range Management Officer,Rangeland Officer,alternative,authored,synthetic,true
+CAREER-362,Range Management Officer,Rangeland Ecologist,alternative,authored,synthetic,true
+CAREER-362,Range Management Officer,Pastoral Livelihoods Officer,alternative,authored,synthetic,true
+CAREER-362,Range Management Officer,Grazing Coordinator,alternative,authored,synthetic,true
+CAREER-362,Range Management Officer,Drylands Officer,alternative,authored,synthetic,true
+CAREER-362,Range Management Officer,Rangeland Technician,alternative,authored,synthetic,true
+CAREER-362,Range Management Officer,Range Management Officer (grazing management),specialism,authored,synthetic,true
+CAREER-362,Range Management Officer,Range Management Officer (rangeland rehabilitation),specialism,authored,synthetic,true
+CAREER-362,Range Management Officer,Range Management Officer (pastoral livelihoods),specialism,authored,synthetic,true
+CAREER-362,Range Management Officer,Range Management Officer (drought management),specialism,authored,synthetic,true
+CAREER-362,Range Management Officer,Range Management Officer (water points),specialism,authored,synthetic,true
+CAREER-362,Range Management Officer,Range Management Officer (rangeland monitoring),specialism,authored,synthetic,true
 CAREER-362,Range Management Officer,Attachment student (rangelands and pastoral systems),entry,derived,synthetic,true
 CAREER-362,Range Management Officer,Range Management Officer intern,entry,derived,synthetic,true
 CAREER-362,Range Management Officer,Field assistant,entry,derived,synthetic,true
@@ -11806,7 +12427,19 @@ CAREER-362,Range Management Officer,Policy or regulatory officer,beyond,category
 CAREER-362,Range Management Officer,Wildlife Conservation Officer,lateral,derived,synthetic,true
 CAREER-362,Range Management Officer,County Government Officer,lateral,derived,synthetic,true
 CAREER-362,Range Management Officer,Adult Education Facilitator,lateral,derived,synthetic,true
-CAREER-362,Range Management Officer,School Head and Administrator,lateral,derived,synthetic,true
+CAREER-362,Range Management Officer,Public Health Officer,lateral,derived,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Coffee Cupper,alternative,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Tea Taster,alternative,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Quality Controller,alternative,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Coffee Liquorer,alternative,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Factory Quality Officer,alternative,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Quality Assurance Officer,alternative,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Coffee and Tea Quality Controller (coffee cupping),specialism,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Coffee and Tea Quality Controller (tea tasting),specialism,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Coffee and Tea Quality Controller (grading),specialism,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Coffee and Tea Quality Controller (factory processing quality),specialism,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Coffee and Tea Quality Controller (export quality),specialism,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Coffee and Tea Quality Controller (certification),specialism,authored,synthetic,true
 CAREER-363,Coffee and Tea Quality Controller,Attachment student (beverage crop quality),entry,derived,synthetic,true
 CAREER-363,Coffee and Tea Quality Controller,Coffee and Tea Quality Controller intern,entry,derived,synthetic,true
 CAREER-363,Coffee and Tea Quality Controller,Field assistant,entry,derived,synthetic,true
@@ -11832,8 +12465,20 @@ CAREER-363,Coffee and Tea Quality Controller,Input supplier or agro-dealer,beyon
 CAREER-363,Coffee and Tea Quality Controller,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-363,Coffee and Tea Quality Controller,Barista and Coffee Specialist,lateral,derived,synthetic,true
 CAREER-363,Coffee and Tea Quality Controller,Food Scientist,lateral,derived,synthetic,true
-CAREER-363,Coffee and Tea Quality Controller,Dairy Technologist,lateral,derived,synthetic,true
-CAREER-363,Coffee and Tea Quality Controller,Agronomist,lateral,derived,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Seed Technologist,lateral,derived,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Horticulturist,lateral,derived,synthetic,true
+CAREER-364,Environmental Educator,Conservation Educator,alternative,authored,synthetic,true
+CAREER-364,Environmental Educator,Environmental Education Officer,alternative,authored,synthetic,true
+CAREER-364,Environmental Educator,Outreach Officer,alternative,authored,synthetic,true
+CAREER-364,Environmental Educator,Eco-Club Coordinator,alternative,authored,synthetic,true
+CAREER-364,Environmental Educator,Nature Guide,alternative,authored,synthetic,true
+CAREER-364,Environmental Educator,Community Awareness Officer,alternative,authored,synthetic,true
+CAREER-364,Environmental Educator,Environmental Educator (school environmental programmes),specialism,authored,synthetic,true
+CAREER-364,Environmental Educator,Environmental Educator (community awareness),specialism,authored,synthetic,true
+CAREER-364,Environmental Educator,Environmental Educator (conservation education),specialism,authored,synthetic,true
+CAREER-364,Environmental Educator,Environmental Educator (climate education),specialism,authored,synthetic,true
+CAREER-364,Environmental Educator,Environmental Educator (eco-clubs),specialism,authored,synthetic,true
+CAREER-364,Environmental Educator,Environmental Educator (visitor education),specialism,authored,synthetic,true
 CAREER-364,Environmental Educator,Attachment student (environmental awareness),entry,derived,synthetic,true
 CAREER-364,Environmental Educator,Environmental Educator intern,entry,derived,synthetic,true
 CAREER-364,Environmental Educator,Field assistant,entry,derived,synthetic,true
@@ -11858,9 +12503,21 @@ CAREER-364,Environmental Educator,Lecturer or trainer,beyond,category_default,sy
 CAREER-364,Environmental Educator,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-364,Environmental Educator,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-364,Environmental Educator,Community Mobiliser,lateral,derived,synthetic,true
-CAREER-364,Environmental Educator,Adult Education Facilitator,lateral,derived,synthetic,true
-CAREER-364,Environmental Educator,Innovation Manager,lateral,derived,synthetic,true
+CAREER-364,Environmental Educator,Legal Aid Officer,lateral,derived,synthetic,true
 CAREER-364,Environmental Educator,Corporate Trainer,lateral,derived,synthetic,true
+CAREER-364,Environmental Educator,Adult Education Facilitator,lateral,derived,synthetic,true
+CAREER-365,Carbon Project Officer,Carbon Analyst,alternative,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Carbon Project Developer,alternative,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Carbon Monitoring Officer,alternative,authored,synthetic,true
+CAREER-365,Carbon Project Officer,MRV Officer,alternative,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Climate Project Officer,alternative,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Carbon Markets Associate,alternative,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Carbon Project Officer (forestry and land-use carbon),specialism,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Carbon Project Officer (clean cooking projects),specialism,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Carbon Project Officer (renewable energy carbon),specialism,authored,synthetic,true
+CAREER-365,Carbon Project Officer,"Carbon Project Officer (monitoring, reporting and verification)",specialism,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Carbon Project Officer (community benefit sharing),specialism,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Carbon Project Officer (carbon standards),specialism,authored,synthetic,true
 CAREER-365,Carbon Project Officer,Attachment student (carbon markets),entry,derived,synthetic,true
 CAREER-365,Carbon Project Officer,Carbon Project Officer intern,entry,derived,synthetic,true
 CAREER-365,Carbon Project Officer,Field assistant,entry,derived,synthetic,true
@@ -11885,9 +12542,21 @@ CAREER-365,Carbon Project Officer,Lecturer or trainer,beyond,category_default,sy
 CAREER-365,Carbon Project Officer,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-365,Carbon Project Officer,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-365,Carbon Project Officer,Wildlife Conservation Officer,lateral,derived,synthetic,true
-CAREER-365,Carbon Project Officer,Monitoring and Evaluation Officer,lateral,derived,synthetic,true
-CAREER-365,Carbon Project Officer,Research Assistant,lateral,derived,synthetic,true
-CAREER-365,Carbon Project Officer,Food Safety Officer,lateral,derived,synthetic,true
+CAREER-365,Carbon Project Officer,Range Management Officer,lateral,derived,synthetic,true
+CAREER-365,Carbon Project Officer,Precision Agriculture Technician,lateral,derived,synthetic,true
+CAREER-365,Carbon Project Officer,Climate Change Analyst,lateral,derived,synthetic,true
+CAREER-366,Plant Pathologist,Plant Doctor,alternative,authored,synthetic,true
+CAREER-366,Plant Pathologist,Crop Protection Specialist,alternative,authored,synthetic,true
+CAREER-366,Plant Pathologist,Plant Health Inspector,alternative,authored,synthetic,true
+CAREER-366,Plant Pathologist,Phytosanitary Officer,alternative,authored,synthetic,true
+CAREER-366,Plant Pathologist,Plant Disease Diagnostician,alternative,authored,synthetic,true
+CAREER-366,Plant Pathologist,Crop Protection Officer,alternative,authored,synthetic,true
+CAREER-366,Plant Pathologist,Plant Pathologist (fungal diseases),specialism,authored,synthetic,true
+CAREER-366,Plant Pathologist,Plant Pathologist (bacterial and viral diseases),specialism,authored,synthetic,true
+CAREER-366,Plant Pathologist,Plant Pathologist (disease diagnostics),specialism,authored,synthetic,true
+CAREER-366,Plant Pathologist,Plant Pathologist (integrated pest management),specialism,authored,synthetic,true
+CAREER-366,Plant Pathologist,Plant Pathologist (plant quarantine),specialism,authored,synthetic,true
+CAREER-366,Plant Pathologist,Plant Pathologist (disease resistance research),specialism,authored,synthetic,true
 CAREER-366,Plant Pathologist,Attachment student (crop diseases),entry,derived,synthetic,true
 CAREER-366,Plant Pathologist,Plant Pathologist intern,entry,derived,synthetic,true
 CAREER-366,Plant Pathologist,Field assistant,entry,derived,synthetic,true
@@ -11911,10 +12580,22 @@ CAREER-366,Plant Pathologist,Researcher,beyond,category_default,synthetic,true
 CAREER-366,Plant Pathologist,Lecturer or trainer,beyond,category_default,synthetic,true
 CAREER-366,Plant Pathologist,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-366,Plant Pathologist,Policy or regulatory officer,beyond,category_default,synthetic,true
-CAREER-366,Plant Pathologist,Entomologist,lateral,derived,synthetic,true
+CAREER-366,Plant Pathologist,Biomedical Scientist,lateral,derived,synthetic,true
 CAREER-366,Plant Pathologist,Research Scientist,lateral,derived,synthetic,true
+CAREER-366,Plant Pathologist,Entomologist,lateral,derived,synthetic,true
 CAREER-366,Plant Pathologist,Toxicologist,lateral,derived,synthetic,true
-CAREER-366,Plant Pathologist,Pharmacologist,lateral,derived,synthetic,true
+CAREER-367,Livestock Production Officer,Livestock Officer,alternative,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Animal Production Officer,alternative,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Livestock Extension Officer,alternative,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Dairy Officer,alternative,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Animal Scientist,alternative,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Ranch Manager,alternative,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Livestock Production Officer (dairy production),specialism,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Livestock Production Officer (beef production),specialism,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Livestock Production Officer (sheep and goats),specialism,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Livestock Production Officer (animal nutrition),specialism,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Livestock Production Officer (breeding),specialism,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Livestock Production Officer (pasture and fodder),specialism,authored,synthetic,true
 CAREER-367,Livestock Production Officer,Attachment student (livestock systems),entry,derived,synthetic,true
 CAREER-367,Livestock Production Officer,Livestock Production Officer intern,entry,derived,synthetic,true
 CAREER-367,Livestock Production Officer,Field assistant,entry,derived,synthetic,true
@@ -11939,9 +12620,21 @@ CAREER-367,Livestock Production Officer,Lecturer or trainer,beyond,category_defa
 CAREER-367,Livestock Production Officer,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-367,Livestock Production Officer,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-367,Livestock Production Officer,Fisheries and Aquaculture Officer,lateral,derived,synthetic,true
-CAREER-367,Livestock Production Officer,Animal Health Technician,lateral,derived,synthetic,true
+CAREER-367,Livestock Production Officer,Poultry Farm Manager,lateral,derived,synthetic,true
 CAREER-367,Livestock Production Officer,Agricultural Extension Officer,lateral,derived,synthetic,true
-CAREER-367,Livestock Production Officer,Agronomist,lateral,derived,synthetic,true
+CAREER-367,Livestock Production Officer,Apiculturist,lateral,derived,synthetic,true
+CAREER-368,Greenhouse Manager,Greenhouse Supervisor,alternative,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Greenhouse Grower,alternative,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Protected Cultivation Manager,alternative,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Production Manager,alternative,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Grower,alternative,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Greenhouse Technician,alternative,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Greenhouse Manager (tomatoes and capsicum),specialism,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Greenhouse Manager (cut flowers),specialism,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Greenhouse Manager (herbs),specialism,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Greenhouse Manager (seedling propagation),specialism,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Greenhouse Manager (hydroponics),specialism,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Greenhouse Manager (climate control),specialism,authored,synthetic,true
 CAREER-368,Greenhouse Manager,Attachment student (protected cultivation),entry,derived,synthetic,true
 CAREER-368,Greenhouse Manager,Greenhouse Manager intern,entry,derived,synthetic,true
 CAREER-368,Greenhouse Manager,Field assistant,entry,derived,synthetic,true
@@ -11965,10 +12658,10 @@ CAREER-368,Greenhouse Manager,Researcher,beyond,category_default,synthetic,true
 CAREER-368,Greenhouse Manager,Lecturer or trainer,beyond,category_default,synthetic,true
 CAREER-368,Greenhouse Manager,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-368,Greenhouse Manager,Policy or regulatory officer,beyond,category_default,synthetic,true
-CAREER-368,Greenhouse Manager,Warehouse Manager,lateral,derived,synthetic,true
 CAREER-368,Greenhouse Manager,Agronomist,lateral,derived,synthetic,true
+CAREER-368,Greenhouse Manager,Horticulturist,lateral,derived,synthetic,true
+CAREER-368,Greenhouse Manager,Warehouse Manager,lateral,derived,synthetic,true
 CAREER-368,Greenhouse Manager,Food and Beverage Manager,lateral,derived,synthetic,true
-CAREER-368,Greenhouse Manager,Housekeeping Manager,lateral,derived,synthetic,true
 CAREER-369,Documentary Filmmaker,Documentary Filmmaker intern,entry,derived,synthetic,true
 CAREER-369,Documentary Filmmaker,Attachment student (non-fiction film),entry,derived,synthetic,true
 CAREER-369,Documentary Filmmaker,Junior Documentary Filmmaker,entry,derived,synthetic,true
@@ -12128,8 +12821,8 @@ CAREER-374,Motion Graphics Designer,Brand or communications consultant,beyond,ca
 CAREER-374,Motion Graphics Designer,Festival or arts programme director,beyond,category_default,synthetic,true
 CAREER-374,Motion Graphics Designer,Animator,lateral,derived,synthetic,true
 CAREER-374,Motion Graphics Designer,Graphic Designer,lateral,derived,synthetic,true
-CAREER-374,Motion Graphics Designer,Instructional Designer,lateral,derived,synthetic,true
 CAREER-374,Motion Graphics Designer,Video Producer,lateral,derived,synthetic,true
+CAREER-374,Motion Graphics Designer,Instructional Designer,lateral,derived,synthetic,true
 CAREER-375,Voice-over Artist,Voice-over Artist intern,entry,derived,synthetic,true
 CAREER-375,Voice-over Artist,Attachment student (voice performance),entry,derived,synthetic,true
 CAREER-375,Voice-over Artist,Junior Voice-over Artist,entry,derived,synthetic,true
@@ -12641,7 +13334,7 @@ CAREER-393,Environmental Scientist,Consultant,beyond,category_default,synthetic,
 CAREER-393,Environmental Scientist,Science-based entrepreneur,beyond,category_default,synthetic,true
 CAREER-393,Environmental Scientist,Marine Scientist,lateral,derived,synthetic,true
 CAREER-393,Environmental Scientist,Forensic Scientist,lateral,derived,synthetic,true
-CAREER-393,Environmental Scientist,Soil Scientist,lateral,derived,synthetic,true
+CAREER-393,Environmental Scientist,Chemist,lateral,derived,synthetic,true
 CAREER-394,Toxicologist,Attachment student (toxicology),entry,derived,synthetic,true
 CAREER-394,Toxicologist,Research intern,entry,derived,synthetic,true
 CAREER-394,Toxicologist,Laboratory assistant,entry,derived,synthetic,true
@@ -12803,7 +13496,7 @@ CAREER-399,Radiation Protection Officer,Science-based entrepreneur,beyond,catego
 CAREER-399,Radiation Protection Officer,Laboratory Technician,lateral,derived,synthetic,true
 CAREER-399,Radiation Protection Officer,Toxicologist,lateral,derived,synthetic,true
 CAREER-399,Radiation Protection Officer,Safeguarding Adviser,lateral,derived,synthetic,true
-CAREER-399,Radiation Protection Officer,Animal Health Technician,lateral,derived,synthetic,true
+CAREER-399,Radiation Protection Officer,Community Mobiliser,lateral,derived,synthetic,true
 CAREER-400,Laboratory Manager,Attachment student (laboratory management),entry,derived,synthetic,true
 CAREER-400,Laboratory Manager,Research intern,entry,derived,synthetic,true
 CAREER-400,Laboratory Manager,Laboratory assistant,entry,derived,synthetic,true
@@ -13096,9 +13789,9 @@ CAREER-410,Category Manager,Humanitarian logistics roles,beyond,category_default
 CAREER-410,Category Manager,Regulator or port authority roles,beyond,category_default,synthetic,true
 CAREER-410,Category Manager,International postings,beyond,category_default,synthetic,true
 CAREER-410,Category Manager,Hotel Sales Manager,lateral,derived,synthetic,true
-CAREER-410,Category Manager,Agribusiness Manager,lateral,derived,synthetic,true
 CAREER-410,Category Manager,Contracts Manager,lateral,derived,synthetic,true
 CAREER-410,Category Manager,Procurement Officer,lateral,derived,synthetic,true
+CAREER-410,Category Manager,Diplomat and Foreign Service Officer,lateral,derived,synthetic,true
 CAREER-411,Supplier Quality Engineer,Attachment student (supplier quality),entry,derived,synthetic,true
 CAREER-411,Supplier Quality Engineer,Supplier Quality Engineer intern,entry,derived,synthetic,true
 CAREER-411,Supplier Quality Engineer,Graduate trainee (supplier quality),entry,derived,synthetic,true
@@ -13392,9 +14085,9 @@ CAREER-421,Advocacy Officer,Researcher or evaluator,beyond,category_default,synt
 CAREER-421,Advocacy Officer,Lecturer or trainer,beyond,category_default,synthetic,true
 CAREER-421,Advocacy Officer,Policy adviser,beyond,category_default,synthetic,true
 CAREER-421,Advocacy Officer,International organisation roles,beyond,category_default,synthetic,true
+CAREER-421,Advocacy Officer,Marketing Executive,lateral,derived,synthetic,true
 CAREER-421,Advocacy Officer,Agricultural Economist,lateral,derived,synthetic,true
 CAREER-421,Advocacy Officer,Education Researcher,lateral,derived,synthetic,true
-CAREER-421,Advocacy Officer,Marketing Executive,lateral,derived,synthetic,true
 CAREER-421,Advocacy Officer,Legislative Drafter,lateral,derived,synthetic,true
 CAREER-422,Livelihoods Officer,Attachment student (economic empowerment),entry,derived,synthetic,true
 CAREER-422,Livelihoods Officer,Volunteer in economic empowerment,entry,derived,synthetic,true
@@ -13476,7 +14169,7 @@ CAREER-424,Research and Learning Officer,International organisation roles,beyond
 CAREER-424,Research and Learning Officer,Monitoring and Evaluation Officer,lateral,derived,synthetic,true
 CAREER-424,Research and Learning Officer,Research Scientist,lateral,derived,synthetic,true
 CAREER-424,Research and Learning Officer,Public Policy Analyst,lateral,derived,synthetic,true
-CAREER-424,Research and Learning Officer,Education Researcher,lateral,derived,synthetic,true
+CAREER-424,Research and Learning Officer,Materials Scientist,lateral,derived,synthetic,true
 CAREER-425,Children's Home Manager,Attachment student (residential child care),entry,derived,synthetic,true
 CAREER-425,Children's Home Manager,Volunteer in residential child care,entry,derived,synthetic,true
 CAREER-425,Children's Home Manager,Children's Home Manager intern,entry,derived,synthetic,true
@@ -13608,9 +14301,9 @@ CAREER-429,Prisons Officer,Researcher at a policy institute,beyond,category_defa
 CAREER-429,Prisons Officer,Lecturer,beyond,category_default,synthetic,true
 CAREER-429,Prisons Officer,Elected office,beyond,category_default,synthetic,true
 CAREER-429,Prisons Officer,Board or commission member,beyond,category_default,synthetic,true
-CAREER-429,Prisons Officer,Animal Health Technician,lateral,derived,synthetic,true
 CAREER-429,Prisons Officer,Laboratory Technician,lateral,derived,synthetic,true
 CAREER-429,Prisons Officer,Community Mobiliser,lateral,derived,synthetic,true
+CAREER-429,Prisons Officer,Radiation Protection Officer,lateral,derived,synthetic,true
 CAREER-429,Prisons Officer,Poultry Farm Manager,lateral,derived,synthetic,true
 CAREER-430,Fire and Rescue Officer,Attachment student (emergency response),entry,derived,synthetic,true
 CAREER-430,Fire and Rescue Officer,Public service intern,entry,derived,synthetic,true
@@ -13717,9 +14410,9 @@ CAREER-433,Public Procurement Officer,Lecturer,beyond,category_default,synthetic
 CAREER-433,Public Procurement Officer,Elected office,beyond,category_default,synthetic,true
 CAREER-433,Public Procurement Officer,Board or commission member,beyond,category_default,synthetic,true
 CAREER-433,Public Procurement Officer,Lands Officer,lateral,derived,synthetic,true
-CAREER-433,Public Procurement Officer,Instructional Designer,lateral,derived,synthetic,true
-CAREER-433,Public Procurement Officer,Admissions Officer,lateral,derived,synthetic,true
 CAREER-433,Public Procurement Officer,Court Clerk,lateral,derived,synthetic,true
+CAREER-433,Public Procurement Officer,Administrative Assistant,lateral,derived,synthetic,true
+CAREER-433,Public Procurement Officer,Land Registrar,lateral,derived,synthetic,true
 CAREER-434,Lands Officer,Attachment student (land administration),entry,derived,synthetic,true
 CAREER-434,Lands Officer,Public service intern,entry,derived,synthetic,true
 CAREER-434,Lands Officer,Graduate trainee (land administration),entry,derived,synthetic,true
@@ -13745,8 +14438,8 @@ CAREER-434,Lands Officer,Elected office,beyond,category_default,synthetic,true
 CAREER-434,Lands Officer,Board or commission member,beyond,category_default,synthetic,true
 CAREER-434,Lands Officer,Public Procurement Officer,lateral,derived,synthetic,true
 CAREER-434,Lands Officer,Land Registrar,lateral,derived,synthetic,true
-CAREER-434,Lands Officer,Admissions Officer,lateral,derived,synthetic,true
 CAREER-434,Lands Officer,Court Clerk,lateral,derived,synthetic,true
+CAREER-434,Lands Officer,Administrative Assistant,lateral,derived,synthetic,true
 CAREER-435,Labour Officer,Attachment student (labour administration),entry,derived,synthetic,true
 CAREER-435,Labour Officer,Public service intern,entry,derived,synthetic,true
 CAREER-435,Labour Officer,Graduate trainee (labour administration),entry,derived,synthetic,true
@@ -13799,8 +14492,8 @@ CAREER-436,Consular Officer,Elected office,beyond,category_default,synthetic,tru
 CAREER-436,Consular Officer,Board or commission member,beyond,category_default,synthetic,true
 CAREER-436,Consular Officer,Air Traffic Controller,lateral,derived,synthetic,true
 CAREER-436,Consular Officer,Volunteer Coordinator,lateral,derived,synthetic,true
-CAREER-436,Consular Officer,Language Teacher,lateral,derived,synthetic,true
 CAREER-436,Consular Officer,Front Office Officer,lateral,derived,synthetic,true
+CAREER-436,Consular Officer,Meteorologist,lateral,derived,synthetic,true
 CAREER-437,Records and Archives Officer,Attachment student (public records),entry,derived,synthetic,true
 CAREER-437,Records and Archives Officer,Public service intern,entry,derived,synthetic,true
 CAREER-437,Records and Archives Officer,Graduate trainee (public records),entry,derived,synthetic,true
@@ -13879,9 +14572,9 @@ CAREER-439,Painter and Decorator,Inspector or assessor,beyond,category_default,s
 CAREER-439,Painter and Decorator,Supplier or dealer,beyond,category_default,synthetic,true
 CAREER-439,Painter and Decorator,Work abroad on contracts,beyond,category_default,synthetic,true
 CAREER-439,Painter and Decorator,Carpenter and Joiner,lateral,derived,synthetic,true
-CAREER-439,Painter and Decorator,Admissions Officer,lateral,derived,synthetic,true
 CAREER-439,Painter and Decorator,Barista and Coffee Specialist,lateral,derived,synthetic,true
 CAREER-439,Painter and Decorator,Laboratory Technician,lateral,derived,synthetic,true
+CAREER-439,Painter and Decorator,Bartender and Mixologist,lateral,derived,synthetic,true
 CAREER-440,Tailor and Dressmaker,Apprentice Tailor and Dressmaker,entry,derived,synthetic,true
 CAREER-440,Tailor and Dressmaker,Attachment student (garment making),entry,derived,synthetic,true
 CAREER-440,Tailor and Dressmaker,Trainee Tailor and Dressmaker,entry,derived,synthetic,true
@@ -14014,8 +14707,8 @@ CAREER-444,Biogas Technician,Inspector or assessor,beyond,category_default,synth
 CAREER-444,Biogas Technician,Supplier or dealer,beyond,category_default,synthetic,true
 CAREER-444,Biogas Technician,Work abroad on contracts,beyond,category_default,synthetic,true
 CAREER-444,Biogas Technician,Geothermal Technician,lateral,derived,synthetic,true
-CAREER-444,Biogas Technician,Irrigation Technician,lateral,derived,synthetic,true
 CAREER-444,Biogas Technician,ERP Consultant,lateral,derived,synthetic,true
+CAREER-444,Biogas Technician,Irrigation Technician,lateral,derived,synthetic,true
 CAREER-444,Biogas Technician,Automotive Technician,lateral,derived,synthetic,true
 CAREER-445,Boiler Operator,Apprentice Boiler Operator,entry,derived,synthetic,true
 CAREER-445,Boiler Operator,Attachment student (steam systems),entry,derived,synthetic,true

@@ -642,181 +642,216 @@ CAREER-106,Elections and Governance Officer,Excel,authored,synthetic,true
 CAREER-106,Elections and Governance Officer,GIS mapping,authored,synthetic,true
 CAREER-106,Elections and Governance Officer,survey tools,authored,synthetic,true
 CAREER-106,Elections and Governance Officer,training manuals,authored,synthetic,true
-CAREER-107,Primary School Teacher,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-107,Primary School Teacher,curriculum designs,category_default,synthetic,true
-CAREER-107,Primary School Teacher,learning management systems,category_default,synthetic,true
-CAREER-107,Primary School Teacher,presentation and classroom tools,category_default,synthetic,true
-CAREER-107,Primary School Teacher,assessment records,category_default,synthetic,true
-CAREER-108,Secondary School Teacher,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-108,Secondary School Teacher,curriculum designs,category_default,synthetic,true
-CAREER-108,Secondary School Teacher,learning management systems,category_default,synthetic,true
-CAREER-108,Secondary School Teacher,presentation and classroom tools,category_default,synthetic,true
-CAREER-108,Secondary School Teacher,assessment records,category_default,synthetic,true
-CAREER-109,Early Childhood Educator,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-109,Early Childhood Educator,curriculum designs,category_default,synthetic,true
-CAREER-109,Early Childhood Educator,learning management systems,category_default,synthetic,true
-CAREER-109,Early Childhood Educator,presentation and classroom tools,category_default,synthetic,true
-CAREER-109,Early Childhood Educator,assessment records,category_default,synthetic,true
-CAREER-110,Special Needs Educator,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-110,Special Needs Educator,curriculum designs,category_default,synthetic,true
-CAREER-110,Special Needs Educator,learning management systems,category_default,synthetic,true
-CAREER-110,Special Needs Educator,presentation and classroom tools,category_default,synthetic,true
-CAREER-110,Special Needs Educator,assessment records,category_default,synthetic,true
-CAREER-111,University Lecturer,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-111,University Lecturer,curriculum designs,category_default,synthetic,true
-CAREER-111,University Lecturer,learning management systems,category_default,synthetic,true
-CAREER-111,University Lecturer,presentation and classroom tools,category_default,synthetic,true
-CAREER-111,University Lecturer,assessment records,category_default,synthetic,true
-CAREER-112,Education Officer,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-112,Education Officer,curriculum designs,category_default,synthetic,true
-CAREER-112,Education Officer,learning management systems,category_default,synthetic,true
-CAREER-112,Education Officer,presentation and classroom tools,category_default,synthetic,true
-CAREER-112,Education Officer,assessment records,category_default,synthetic,true
-CAREER-113,Curriculum Developer,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-113,Curriculum Developer,curriculum designs,category_default,synthetic,true
-CAREER-113,Curriculum Developer,learning management systems,category_default,synthetic,true
-CAREER-113,Curriculum Developer,presentation and classroom tools,category_default,synthetic,true
-CAREER-113,Curriculum Developer,assessment records,category_default,synthetic,true
-CAREER-114,Instructional Designer,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-114,Instructional Designer,curriculum designs,category_default,synthetic,true
-CAREER-114,Instructional Designer,learning management systems,category_default,synthetic,true
-CAREER-114,Instructional Designer,presentation and classroom tools,category_default,synthetic,true
-CAREER-114,Instructional Designer,assessment records,category_default,synthetic,true
-CAREER-115,School Counsellor,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-115,School Counsellor,curriculum designs,category_default,synthetic,true
-CAREER-115,School Counsellor,learning management systems,category_default,synthetic,true
-CAREER-115,School Counsellor,presentation and classroom tools,category_default,synthetic,true
-CAREER-115,School Counsellor,assessment records,category_default,synthetic,true
-CAREER-116,Educational Technologist,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-116,Educational Technologist,curriculum designs,category_default,synthetic,true
-CAREER-116,Educational Technologist,learning management systems,category_default,synthetic,true
-CAREER-116,Educational Technologist,presentation and classroom tools,category_default,synthetic,true
-CAREER-116,Educational Technologist,assessment records,category_default,synthetic,true
-CAREER-117,TVET Trainer,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-117,TVET Trainer,curriculum designs,category_default,synthetic,true
-CAREER-117,TVET Trainer,learning management systems,category_default,synthetic,true
-CAREER-117,TVET Trainer,presentation and classroom tools,category_default,synthetic,true
-CAREER-117,TVET Trainer,assessment records,category_default,synthetic,true
-CAREER-118,Librarian and Information Officer,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-118,Librarian and Information Officer,curriculum designs,category_default,synthetic,true
-CAREER-118,Librarian and Information Officer,learning management systems,category_default,synthetic,true
-CAREER-118,Librarian and Information Officer,presentation and classroom tools,category_default,synthetic,true
-CAREER-118,Librarian and Information Officer,assessment records,category_default,synthetic,true
-CAREER-119,School Head and Administrator,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-119,School Head and Administrator,curriculum designs,category_default,synthetic,true
-CAREER-119,School Head and Administrator,learning management systems,category_default,synthetic,true
-CAREER-119,School Head and Administrator,presentation and classroom tools,category_default,synthetic,true
-CAREER-119,School Head and Administrator,assessment records,category_default,synthetic,true
-CAREER-120,Language Teacher,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-120,Language Teacher,curriculum designs,category_default,synthetic,true
-CAREER-120,Language Teacher,learning management systems,category_default,synthetic,true
-CAREER-120,Language Teacher,presentation and classroom tools,category_default,synthetic,true
-CAREER-120,Language Teacher,assessment records,category_default,synthetic,true
-CAREER-121,Adult Education Facilitator,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-121,Adult Education Facilitator,curriculum designs,category_default,synthetic,true
-CAREER-121,Adult Education Facilitator,learning management systems,category_default,synthetic,true
-CAREER-121,Adult Education Facilitator,presentation and classroom tools,category_default,synthetic,true
-CAREER-121,Adult Education Facilitator,assessment records,category_default,synthetic,true
-CAREER-122,Corporate Trainer,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-122,Corporate Trainer,curriculum designs,category_default,synthetic,true
-CAREER-122,Corporate Trainer,learning management systems,category_default,synthetic,true
-CAREER-122,Corporate Trainer,presentation and classroom tools,category_default,synthetic,true
-CAREER-122,Corporate Trainer,assessment records,category_default,synthetic,true
-CAREER-123,Learning Coach and Tutor,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-123,Learning Coach and Tutor,curriculum designs,category_default,synthetic,true
-CAREER-123,Learning Coach and Tutor,learning management systems,category_default,synthetic,true
-CAREER-123,Learning Coach and Tutor,presentation and classroom tools,category_default,synthetic,true
-CAREER-123,Learning Coach and Tutor,assessment records,category_default,synthetic,true
-CAREER-124,Agronomist,field data collection apps,category_default,synthetic,true
-CAREER-124,Agronomist,GPS devices,category_default,synthetic,true
-CAREER-124,Agronomist,sampling and testing kits,category_default,synthetic,true
-CAREER-124,Agronomist,spreadsheets,category_default,synthetic,true
-CAREER-124,Agronomist,farm or laboratory equipment,category_default,synthetic,true
-CAREER-125,Agricultural Extension Officer,field data collection apps,category_default,synthetic,true
-CAREER-125,Agricultural Extension Officer,GPS devices,category_default,synthetic,true
-CAREER-125,Agricultural Extension Officer,sampling and testing kits,category_default,synthetic,true
-CAREER-125,Agricultural Extension Officer,spreadsheets,category_default,synthetic,true
-CAREER-125,Agricultural Extension Officer,farm or laboratory equipment,category_default,synthetic,true
-CAREER-126,Agribusiness Manager,field data collection apps,category_default,synthetic,true
-CAREER-126,Agribusiness Manager,GPS devices,category_default,synthetic,true
-CAREER-126,Agribusiness Manager,sampling and testing kits,category_default,synthetic,true
-CAREER-126,Agribusiness Manager,spreadsheets,category_default,synthetic,true
-CAREER-126,Agribusiness Manager,farm or laboratory equipment,category_default,synthetic,true
-CAREER-127,Veterinary Doctor,field data collection apps,category_default,synthetic,true
-CAREER-127,Veterinary Doctor,GPS devices,category_default,synthetic,true
-CAREER-127,Veterinary Doctor,sampling and testing kits,category_default,synthetic,true
-CAREER-127,Veterinary Doctor,spreadsheets,category_default,synthetic,true
-CAREER-127,Veterinary Doctor,farm or laboratory equipment,category_default,synthetic,true
-CAREER-128,Animal Health Technician,field data collection apps,category_default,synthetic,true
-CAREER-128,Animal Health Technician,GPS devices,category_default,synthetic,true
-CAREER-128,Animal Health Technician,sampling and testing kits,category_default,synthetic,true
-CAREER-128,Animal Health Technician,spreadsheets,category_default,synthetic,true
-CAREER-128,Animal Health Technician,farm or laboratory equipment,category_default,synthetic,true
-CAREER-129,Horticulturist,field data collection apps,category_default,synthetic,true
-CAREER-129,Horticulturist,GPS devices,category_default,synthetic,true
-CAREER-129,Horticulturist,sampling and testing kits,category_default,synthetic,true
-CAREER-129,Horticulturist,spreadsheets,category_default,synthetic,true
-CAREER-129,Horticulturist,farm or laboratory equipment,category_default,synthetic,true
-CAREER-130,Soil Scientist,field data collection apps,category_default,synthetic,true
-CAREER-130,Soil Scientist,GPS devices,category_default,synthetic,true
-CAREER-130,Soil Scientist,sampling and testing kits,category_default,synthetic,true
-CAREER-130,Soil Scientist,spreadsheets,category_default,synthetic,true
-CAREER-130,Soil Scientist,farm or laboratory equipment,category_default,synthetic,true
-CAREER-131,Food Scientist,field data collection apps,category_default,synthetic,true
-CAREER-131,Food Scientist,GPS devices,category_default,synthetic,true
-CAREER-131,Food Scientist,sampling and testing kits,category_default,synthetic,true
-CAREER-131,Food Scientist,spreadsheets,category_default,synthetic,true
-CAREER-131,Food Scientist,farm or laboratory equipment,category_default,synthetic,true
-CAREER-132,Food Safety Officer,field data collection apps,category_default,synthetic,true
-CAREER-132,Food Safety Officer,GPS devices,category_default,synthetic,true
-CAREER-132,Food Safety Officer,sampling and testing kits,category_default,synthetic,true
-CAREER-132,Food Safety Officer,spreadsheets,category_default,synthetic,true
-CAREER-132,Food Safety Officer,farm or laboratory equipment,category_default,synthetic,true
-CAREER-133,Fisheries and Aquaculture Officer,field data collection apps,category_default,synthetic,true
-CAREER-133,Fisheries and Aquaculture Officer,GPS devices,category_default,synthetic,true
-CAREER-133,Fisheries and Aquaculture Officer,sampling and testing kits,category_default,synthetic,true
-CAREER-133,Fisheries and Aquaculture Officer,spreadsheets,category_default,synthetic,true
-CAREER-133,Fisheries and Aquaculture Officer,farm or laboratory equipment,category_default,synthetic,true
-CAREER-134,Forestry Officer,field data collection apps,category_default,synthetic,true
-CAREER-134,Forestry Officer,GPS devices,category_default,synthetic,true
-CAREER-134,Forestry Officer,sampling and testing kits,category_default,synthetic,true
-CAREER-134,Forestry Officer,spreadsheets,category_default,synthetic,true
-CAREER-134,Forestry Officer,farm or laboratory equipment,category_default,synthetic,true
-CAREER-135,Environmental Consultant,field data collection apps,category_default,synthetic,true
-CAREER-135,Environmental Consultant,GPS devices,category_default,synthetic,true
-CAREER-135,Environmental Consultant,sampling and testing kits,category_default,synthetic,true
-CAREER-135,Environmental Consultant,spreadsheets,category_default,synthetic,true
-CAREER-135,Environmental Consultant,farm or laboratory equipment,category_default,synthetic,true
-CAREER-136,Climate Change Analyst,field data collection apps,category_default,synthetic,true
-CAREER-136,Climate Change Analyst,GPS devices,category_default,synthetic,true
-CAREER-136,Climate Change Analyst,sampling and testing kits,category_default,synthetic,true
-CAREER-136,Climate Change Analyst,spreadsheets,category_default,synthetic,true
-CAREER-136,Climate Change Analyst,farm or laboratory equipment,category_default,synthetic,true
-CAREER-137,Wildlife Conservation Officer,field data collection apps,category_default,synthetic,true
-CAREER-137,Wildlife Conservation Officer,GPS devices,category_default,synthetic,true
-CAREER-137,Wildlife Conservation Officer,sampling and testing kits,category_default,synthetic,true
-CAREER-137,Wildlife Conservation Officer,spreadsheets,category_default,synthetic,true
-CAREER-137,Wildlife Conservation Officer,farm or laboratory equipment,category_default,synthetic,true
-CAREER-138,Water Resources Officer,field data collection apps,category_default,synthetic,true
-CAREER-138,Water Resources Officer,GPS devices,category_default,synthetic,true
-CAREER-138,Water Resources Officer,sampling and testing kits,category_default,synthetic,true
-CAREER-138,Water Resources Officer,spreadsheets,category_default,synthetic,true
-CAREER-138,Water Resources Officer,farm or laboratory equipment,category_default,synthetic,true
-CAREER-139,Agricultural Economist,field data collection apps,category_default,synthetic,true
-CAREER-139,Agricultural Economist,GPS devices,category_default,synthetic,true
-CAREER-139,Agricultural Economist,sampling and testing kits,category_default,synthetic,true
-CAREER-139,Agricultural Economist,spreadsheets,category_default,synthetic,true
-CAREER-139,Agricultural Economist,farm or laboratory equipment,category_default,synthetic,true
-CAREER-140,Precision Agriculture Technician,field data collection apps,category_default,synthetic,true
-CAREER-140,Precision Agriculture Technician,GPS devices,category_default,synthetic,true
-CAREER-140,Precision Agriculture Technician,sampling and testing kits,category_default,synthetic,true
-CAREER-140,Precision Agriculture Technician,spreadsheets,category_default,synthetic,true
-CAREER-140,Precision Agriculture Technician,farm or laboratory equipment,category_default,synthetic,true
-CAREER-141,Waste Management Officer,field data collection apps,category_default,synthetic,true
-CAREER-141,Waste Management Officer,GPS devices,category_default,synthetic,true
-CAREER-141,Waste Management Officer,sampling and testing kits,category_default,synthetic,true
-CAREER-141,Waste Management Officer,spreadsheets,category_default,synthetic,true
-CAREER-141,Waste Management Officer,farm or laboratory equipment,category_default,synthetic,true
+CAREER-107,Primary School Teacher,schemes of work and lesson plans,authored,synthetic,true
+CAREER-107,Primary School Teacher,curriculum designs,authored,synthetic,true
+CAREER-107,Primary School Teacher,textbooks and charts,authored,synthetic,true
+CAREER-107,Primary School Teacher,assessment rubrics and portfolios,authored,synthetic,true
+CAREER-107,Primary School Teacher,learner progress records,authored,synthetic,true
+CAREER-107,Primary School Teacher,digital learning tablets,authored,synthetic,true
+CAREER-108,Secondary School Teacher,schemes of work,authored,synthetic,true
+CAREER-108,Secondary School Teacher,subject syllabuses,authored,synthetic,true
+CAREER-108,Secondary School Teacher,laboratory or subject equipment,authored,synthetic,true
+CAREER-108,Secondary School Teacher,past papers and marking schemes,authored,synthetic,true
+CAREER-108,Secondary School Teacher,school management systems,authored,synthetic,true
+CAREER-108,Secondary School Teacher,projectors and presentations,authored,synthetic,true
+CAREER-109,Early Childhood Educator,play and learning materials,authored,synthetic,true
+CAREER-109,Early Childhood Educator,storybooks and songs,authored,synthetic,true
+CAREER-109,Early Childhood Educator,child observation checklists,authored,synthetic,true
+CAREER-109,Early Childhood Educator,pre-primary curriculum designs,authored,synthetic,true
+CAREER-109,Early Childhood Educator,art and craft supplies,authored,synthetic,true
+CAREER-109,Early Childhood Educator,outdoor play equipment,authored,synthetic,true
+CAREER-110,Special Needs Educator,individual education plans,authored,synthetic,true
+CAREER-110,Special Needs Educator,Braille and tactile materials,authored,synthetic,true
+CAREER-110,Special Needs Educator,sign language,authored,synthetic,true
+CAREER-110,Special Needs Educator,assistive technology,authored,synthetic,true
+CAREER-110,Special Needs Educator,visual schedules,authored,synthetic,true
+CAREER-110,Special Needs Educator,assessment tools,authored,synthetic,true
+CAREER-111,University Lecturer,learning management systems such as Moodle,authored,synthetic,true
+CAREER-111,University Lecturer,presentation tools,authored,synthetic,true
+CAREER-111,University Lecturer,reference managers,authored,synthetic,true
+CAREER-111,University Lecturer,research databases,authored,synthetic,true
+CAREER-111,University Lecturer,plagiarism checkers such as Turnitin,authored,synthetic,true
+CAREER-111,University Lecturer,statistical software,authored,synthetic,true
+CAREER-112,Education Officer,education management information systems such as NEMIS,authored,synthetic,true
+CAREER-112,Education Officer,school inspection tools,authored,synthetic,true
+CAREER-112,Education Officer,Excel,authored,synthetic,true
+CAREER-112,Education Officer,policy circulars,authored,synthetic,true
+CAREER-112,Education Officer,reporting templates,authored,synthetic,true
+CAREER-112,Education Officer,training manuals,authored,synthetic,true
+CAREER-113,Curriculum Developer,curriculum frameworks,authored,synthetic,true
+CAREER-113,Curriculum Developer,learning outcome taxonomies such as Bloom's,authored,synthetic,true
+CAREER-113,Curriculum Developer,Word,authored,synthetic,true
+CAREER-113,Curriculum Developer,assessment rubrics,authored,synthetic,true
+CAREER-113,Curriculum Developer,curriculum mapping templates,authored,synthetic,true
+CAREER-113,Curriculum Developer,evaluation tools,authored,synthetic,true
+CAREER-114,Instructional Designer,Articulate Storyline or Rise,authored,synthetic,true
+CAREER-114,Instructional Designer,learning management systems,authored,synthetic,true
+CAREER-114,Instructional Designer,storyboard templates,authored,synthetic,true
+CAREER-114,Instructional Designer,ADDIE and similar models,authored,synthetic,true
+CAREER-114,Instructional Designer,Canva,authored,synthetic,true
+CAREER-114,Instructional Designer,video editing tools,authored,synthetic,true
+CAREER-115,School Counsellor,counselling frameworks,authored,synthetic,true
+CAREER-115,School Counsellor,career interest inventories,authored,synthetic,true
+CAREER-115,School Counsellor,referral directories,authored,synthetic,true
+CAREER-115,School Counsellor,case notes,authored,synthetic,true
+CAREER-115,School Counsellor,life skills curricula,authored,synthetic,true
+CAREER-115,School Counsellor,screening questionnaires,authored,synthetic,true
+CAREER-116,Educational Technologist,Moodle or Google Classroom,authored,synthetic,true
+CAREER-116,Educational Technologist,video conferencing tools,authored,synthetic,true
+CAREER-116,Educational Technologist,content authoring tools,authored,synthetic,true
+CAREER-116,Educational Technologist,school devices and networks,authored,synthetic,true
+CAREER-116,Educational Technologist,learning analytics dashboards,authored,synthetic,true
+CAREER-116,Educational Technologist,interactive whiteboards,authored,synthetic,true
+CAREER-117,TVET Trainer,workshop tools and machines,authored,synthetic,true
+CAREER-117,TVET Trainer,occupational standards,authored,synthetic,true
+CAREER-117,TVET Trainer,competency assessment tools,authored,synthetic,true
+CAREER-117,TVET Trainer,training plans,authored,synthetic,true
+CAREER-117,TVET Trainer,safety equipment,authored,synthetic,true
+CAREER-117,TVET Trainer,learning management systems,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,library systems such as Koha,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,classification schemes such as Dewey,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,online databases and e-journals,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,institutional repositories,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,barcode scanners,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,reference managers,authored,synthetic,true
+CAREER-119,School Head and Administrator,school management systems,authored,synthetic,true
+CAREER-119,School Head and Administrator,NEMIS,authored,synthetic,true
+CAREER-119,School Head and Administrator,Excel,authored,synthetic,true
+CAREER-119,School Head and Administrator,timetabling software,authored,synthetic,true
+CAREER-119,School Head and Administrator,financial records,authored,synthetic,true
+CAREER-119,School Head and Administrator,policy and regulation documents,authored,synthetic,true
+CAREER-120,Language Teacher,textbooks and readers,authored,synthetic,true
+CAREER-120,Language Teacher,audio and video materials,authored,synthetic,true
+CAREER-120,Language Teacher,language learning apps,authored,synthetic,true
+CAREER-120,Language Teacher,language proficiency frameworks such as CEFR,authored,synthetic,true
+CAREER-120,Language Teacher,flashcards,authored,synthetic,true
+CAREER-120,Language Teacher,past exam papers,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,adult literacy primers,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,flipcharts,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,participatory learning methods,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,attendance registers,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,mobile phones for digital literacy,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,assessment tools,authored,synthetic,true
+CAREER-122,Corporate Trainer,PowerPoint,authored,synthetic,true
+CAREER-122,Corporate Trainer,learning management systems,authored,synthetic,true
+CAREER-122,Corporate Trainer,video meeting tools,authored,synthetic,true
+CAREER-122,Corporate Trainer,training needs analysis templates,authored,synthetic,true
+CAREER-122,Corporate Trainer,evaluation forms,authored,synthetic,true
+CAREER-122,Corporate Trainer,e-learning authoring tools,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,past papers and revision books,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,video meeting tools,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,online whiteboards,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,practice question banks,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,progress trackers,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,educational apps,authored,synthetic,true
+CAREER-124,Agronomist,soil test kits and lab reports,authored,synthetic,true
+CAREER-124,Agronomist,crop scouting apps,authored,synthetic,true
+CAREER-124,Agronomist,GPS and mapping tools,authored,synthetic,true
+CAREER-124,Agronomist,spray calibration tools,authored,synthetic,true
+CAREER-124,Agronomist,Excel,authored,synthetic,true
+CAREER-124,Agronomist,weather and advisory services,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,training flipcharts and manuals,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,demonstration plots,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,mobile advisory apps,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,survey tools such as KoboToolbox,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,motorbike and field kit,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,farmer registers,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Excel budgets,authored,synthetic,true
+CAREER-126,Agribusiness Manager,farm management software,authored,synthetic,true
+CAREER-126,Agribusiness Manager,market price information services,authored,synthetic,true
+CAREER-126,Agribusiness Manager,accounting software,authored,synthetic,true
+CAREER-126,Agribusiness Manager,mobile money platforms,authored,synthetic,true
+CAREER-126,Agribusiness Manager,contract templates,authored,synthetic,true
+CAREER-127,Veterinary Doctor,surgical and diagnostic instruments,authored,synthetic,true
+CAREER-127,Veterinary Doctor,veterinary drugs and vaccines,authored,synthetic,true
+CAREER-127,Veterinary Doctor,cold-chain boxes,authored,synthetic,true
+CAREER-127,Veterinary Doctor,laboratory tests,authored,synthetic,true
+CAREER-127,Veterinary Doctor,ultrasound scanners,authored,synthetic,true
+CAREER-127,Veterinary Doctor,clinic management software,authored,synthetic,true
+CAREER-128,Animal Health Technician,veterinary drugs and vaccines,authored,synthetic,true
+CAREER-128,Animal Health Technician,syringes and field kits,authored,synthetic,true
+CAREER-128,Animal Health Technician,artificial insemination equipment,authored,synthetic,true
+CAREER-128,Animal Health Technician,cold-chain boxes,authored,synthetic,true
+CAREER-128,Animal Health Technician,spray pumps,authored,synthetic,true
+CAREER-128,Animal Health Technician,treatment records,authored,synthetic,true
+CAREER-129,Horticulturist,fertigation and drip irrigation systems,authored,synthetic,true
+CAREER-129,Horticulturist,greenhouse structures,authored,synthetic,true
+CAREER-129,Horticulturist,scouting tools,authored,synthetic,true
+CAREER-129,Horticulturist,pH and EC meters,authored,synthetic,true
+CAREER-129,Horticulturist,certification standards such as GlobalG.A.P.,authored,synthetic,true
+CAREER-129,Horticulturist,production records,authored,synthetic,true
+CAREER-130,Soil Scientist,soil augers and sampling kits,authored,synthetic,true
+CAREER-130,Soil Scientist,laboratory analysers,authored,synthetic,true
+CAREER-130,Soil Scientist,pH and EC meters,authored,synthetic,true
+CAREER-130,Soil Scientist,GIS software,authored,synthetic,true
+CAREER-130,Soil Scientist,GPS,authored,synthetic,true
+CAREER-130,Soil Scientist,soil classification manuals,authored,synthetic,true
+CAREER-131,Food Scientist,laboratory testing equipment,authored,synthetic,true
+CAREER-131,Food Scientist,processing equipment,authored,synthetic,true
+CAREER-131,Food Scientist,HACCP plans,authored,synthetic,true
+CAREER-131,Food Scientist,food standards such as KEBS and Codex,authored,synthetic,true
+CAREER-131,Food Scientist,sensory evaluation methods,authored,synthetic,true
+CAREER-131,Food Scientist,pH meters and refractometers,authored,synthetic,true
+CAREER-132,Food Safety Officer,HACCP plans,authored,synthetic,true
+CAREER-132,Food Safety Officer,inspection checklists,authored,synthetic,true
+CAREER-132,Food Safety Officer,thermometers and swab kits,authored,synthetic,true
+CAREER-132,Food Safety Officer,food safety standards such as ISO 22000,authored,synthetic,true
+CAREER-132,Food Safety Officer,sampling equipment,authored,synthetic,true
+CAREER-132,Food Safety Officer,audit report templates,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,water quality test kits,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,"ponds, cages and nets",authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,hatchery equipment,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,weighing scales,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,fish feed charts,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,catch data records,authored,synthetic,true
+CAREER-134,Forestry Officer,GPS and GIS,authored,synthetic,true
+CAREER-134,Forestry Officer,tree measurement tools such as calipers and clinometers,authored,synthetic,true
+CAREER-134,Forestry Officer,nursery equipment,authored,synthetic,true
+CAREER-134,Forestry Officer,forest management plans,authored,synthetic,true
+CAREER-134,Forestry Officer,drones and satellite images,authored,synthetic,true
+CAREER-134,Forestry Officer,firefighting equipment,authored,synthetic,true
+CAREER-135,Environmental Consultant,impact assessment guidelines,authored,synthetic,true
+CAREER-135,Environmental Consultant,"water, air and noise testing equipment",authored,synthetic,true
+CAREER-135,Environmental Consultant,GIS software,authored,synthetic,true
+CAREER-135,Environmental Consultant,environmental regulations,authored,synthetic,true
+CAREER-135,Environmental Consultant,stakeholder consultation tools,authored,synthetic,true
+CAREER-135,Environmental Consultant,ISO 14001,authored,synthetic,true
+CAREER-136,Climate Change Analyst,climate datasets and models,authored,synthetic,true
+CAREER-136,Climate Change Analyst,GIS software,authored,synthetic,true
+CAREER-136,Climate Change Analyst,greenhouse gas accounting tools,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Excel,authored,synthetic,true
+CAREER-136,Climate Change Analyst,R or Python,authored,synthetic,true
+CAREER-136,Climate Change Analyst,vulnerability assessment frameworks,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,GPS and patrol tools such as SMART,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,camera traps,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,binoculars and field guides,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,GIS software,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,radios,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,tracking collars,authored,synthetic,true
+CAREER-138,Water Resources Officer,flow meters and gauges,authored,synthetic,true
+CAREER-138,Water Resources Officer,water quality test kits,authored,synthetic,true
+CAREER-138,Water Resources Officer,GIS software,authored,synthetic,true
+CAREER-138,Water Resources Officer,hydrological models,authored,synthetic,true
+CAREER-138,Water Resources Officer,data loggers,authored,synthetic,true
+CAREER-138,Water Resources Officer,borehole logging equipment,authored,synthetic,true
+CAREER-139,Agricultural Economist,Stata or R,authored,synthetic,true
+CAREER-139,Agricultural Economist,Excel,authored,synthetic,true
+CAREER-139,Agricultural Economist,household survey data,authored,synthetic,true
+CAREER-139,Agricultural Economist,survey tools such as KoboToolbox,authored,synthetic,true
+CAREER-139,Agricultural Economist,market information systems,authored,synthetic,true
+CAREER-139,Agricultural Economist,economic models,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,agricultural drones,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,GIS software such as QGIS,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,soil moisture and weather sensors,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,GPS receivers,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,farm management platforms,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,satellite imagery,authored,synthetic,true
+CAREER-141,Waste Management Officer,collection vehicles and equipment,authored,synthetic,true
+CAREER-141,Waste Management Officer,weighbridges,authored,synthetic,true
+CAREER-141,Waste Management Officer,route planning tools,authored,synthetic,true
+CAREER-141,Waste Management Officer,waste regulations,authored,synthetic,true
+CAREER-141,Waste Management Officer,protective equipment,authored,synthetic,true
+CAREER-141,Waste Management Officer,Excel,authored,synthetic,true
 CAREER-142,Journalist,Adobe Creative Cloud,category_default,synthetic,true
 CAREER-142,Journalist,cameras and audio equipment,category_default,synthetic,true
 CAREER-142,Journalist,editing software,category_default,synthetic,true
@@ -1906,121 +1941,144 @@ CAREER-345,Legal Technologist,e-discovery platforms,authored,synthetic,true
 CAREER-345,Legal Technologist,Excel and SQL,authored,synthetic,true
 CAREER-345,Legal Technologist,no-code workflow tools,authored,synthetic,true
 CAREER-345,Legal Technologist,Python,authored,synthetic,true
-CAREER-346,Examinations Officer,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-346,Examinations Officer,curriculum designs,category_default,synthetic,true
-CAREER-346,Examinations Officer,learning management systems,category_default,synthetic,true
-CAREER-346,Examinations Officer,presentation and classroom tools,category_default,synthetic,true
-CAREER-346,Examinations Officer,assessment records,category_default,synthetic,true
-CAREER-347,Education Researcher,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-347,Education Researcher,curriculum designs,category_default,synthetic,true
-CAREER-347,Education Researcher,learning management systems,category_default,synthetic,true
-CAREER-347,Education Researcher,presentation and classroom tools,category_default,synthetic,true
-CAREER-347,Education Researcher,assessment records,category_default,synthetic,true
-CAREER-348,Sports Coach and PE Teacher,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-348,Sports Coach and PE Teacher,curriculum designs,category_default,synthetic,true
-CAREER-348,Sports Coach and PE Teacher,learning management systems,category_default,synthetic,true
-CAREER-348,Sports Coach and PE Teacher,presentation and classroom tools,category_default,synthetic,true
-CAREER-348,Sports Coach and PE Teacher,assessment records,category_default,synthetic,true
-CAREER-349,Music Teacher,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-349,Music Teacher,curriculum designs,category_default,synthetic,true
-CAREER-349,Music Teacher,learning management systems,category_default,synthetic,true
-CAREER-349,Music Teacher,presentation and classroom tools,category_default,synthetic,true
-CAREER-349,Music Teacher,assessment records,category_default,synthetic,true
-CAREER-350,STEM Educator,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-350,STEM Educator,curriculum designs,category_default,synthetic,true
-CAREER-350,STEM Educator,learning management systems,category_default,synthetic,true
-CAREER-350,STEM Educator,presentation and classroom tools,category_default,synthetic,true
-CAREER-350,STEM Educator,assessment records,category_default,synthetic,true
-CAREER-351,Sign Language Interpreter,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-351,Sign Language Interpreter,curriculum designs,category_default,synthetic,true
-CAREER-351,Sign Language Interpreter,learning management systems,category_default,synthetic,true
-CAREER-351,Sign Language Interpreter,presentation and classroom tools,category_default,synthetic,true
-CAREER-351,Sign Language Interpreter,assessment records,category_default,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,curriculum designs,category_default,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,learning management systems,category_default,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,presentation and classroom tools,category_default,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,assessment records,category_default,synthetic,true
-CAREER-353,Dean of Students,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-353,Dean of Students,curriculum designs,category_default,synthetic,true
-CAREER-353,Dean of Students,learning management systems,category_default,synthetic,true
-CAREER-353,Dean of Students,presentation and classroom tools,category_default,synthetic,true
-CAREER-353,Dean of Students,assessment records,category_default,synthetic,true
-CAREER-354,E-learning Content Developer,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-354,E-learning Content Developer,curriculum designs,category_default,synthetic,true
-CAREER-354,E-learning Content Developer,learning management systems,category_default,synthetic,true
-CAREER-354,E-learning Content Developer,presentation and classroom tools,category_default,synthetic,true
-CAREER-354,E-learning Content Developer,assessment records,category_default,synthetic,true
-CAREER-355,Career Guidance Officer,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-355,Career Guidance Officer,curriculum designs,category_default,synthetic,true
-CAREER-355,Career Guidance Officer,learning management systems,category_default,synthetic,true
-CAREER-355,Career Guidance Officer,presentation and classroom tools,category_default,synthetic,true
-CAREER-355,Career Guidance Officer,assessment records,category_default,synthetic,true
-CAREER-356,Admissions Officer,schemes of work and lesson plans,category_default,synthetic,true
-CAREER-356,Admissions Officer,curriculum designs,category_default,synthetic,true
-CAREER-356,Admissions Officer,learning management systems,category_default,synthetic,true
-CAREER-356,Admissions Officer,presentation and classroom tools,category_default,synthetic,true
-CAREER-356,Admissions Officer,assessment records,category_default,synthetic,true
-CAREER-357,Dairy Technologist,field data collection apps,category_default,synthetic,true
-CAREER-357,Dairy Technologist,GPS devices,category_default,synthetic,true
-CAREER-357,Dairy Technologist,sampling and testing kits,category_default,synthetic,true
-CAREER-357,Dairy Technologist,spreadsheets,category_default,synthetic,true
-CAREER-357,Dairy Technologist,farm or laboratory equipment,category_default,synthetic,true
-CAREER-358,Poultry Farm Manager,field data collection apps,category_default,synthetic,true
-CAREER-358,Poultry Farm Manager,GPS devices,category_default,synthetic,true
-CAREER-358,Poultry Farm Manager,sampling and testing kits,category_default,synthetic,true
-CAREER-358,Poultry Farm Manager,spreadsheets,category_default,synthetic,true
-CAREER-358,Poultry Farm Manager,farm or laboratory equipment,category_default,synthetic,true
-CAREER-359,Apiculturist,field data collection apps,category_default,synthetic,true
-CAREER-359,Apiculturist,GPS devices,category_default,synthetic,true
-CAREER-359,Apiculturist,sampling and testing kits,category_default,synthetic,true
-CAREER-359,Apiculturist,spreadsheets,category_default,synthetic,true
-CAREER-359,Apiculturist,farm or laboratory equipment,category_default,synthetic,true
-CAREER-360,Irrigation Technician,field data collection apps,category_default,synthetic,true
-CAREER-360,Irrigation Technician,GPS devices,category_default,synthetic,true
-CAREER-360,Irrigation Technician,sampling and testing kits,category_default,synthetic,true
-CAREER-360,Irrigation Technician,spreadsheets,category_default,synthetic,true
-CAREER-360,Irrigation Technician,farm or laboratory equipment,category_default,synthetic,true
-CAREER-361,Seed Technologist,field data collection apps,category_default,synthetic,true
-CAREER-361,Seed Technologist,GPS devices,category_default,synthetic,true
-CAREER-361,Seed Technologist,sampling and testing kits,category_default,synthetic,true
-CAREER-361,Seed Technologist,spreadsheets,category_default,synthetic,true
-CAREER-361,Seed Technologist,farm or laboratory equipment,category_default,synthetic,true
-CAREER-362,Range Management Officer,field data collection apps,category_default,synthetic,true
-CAREER-362,Range Management Officer,GPS devices,category_default,synthetic,true
-CAREER-362,Range Management Officer,sampling and testing kits,category_default,synthetic,true
-CAREER-362,Range Management Officer,spreadsheets,category_default,synthetic,true
-CAREER-362,Range Management Officer,farm or laboratory equipment,category_default,synthetic,true
-CAREER-363,Coffee and Tea Quality Controller,field data collection apps,category_default,synthetic,true
-CAREER-363,Coffee and Tea Quality Controller,GPS devices,category_default,synthetic,true
-CAREER-363,Coffee and Tea Quality Controller,sampling and testing kits,category_default,synthetic,true
-CAREER-363,Coffee and Tea Quality Controller,spreadsheets,category_default,synthetic,true
-CAREER-363,Coffee and Tea Quality Controller,farm or laboratory equipment,category_default,synthetic,true
-CAREER-364,Environmental Educator,field data collection apps,category_default,synthetic,true
-CAREER-364,Environmental Educator,GPS devices,category_default,synthetic,true
-CAREER-364,Environmental Educator,sampling and testing kits,category_default,synthetic,true
-CAREER-364,Environmental Educator,spreadsheets,category_default,synthetic,true
-CAREER-364,Environmental Educator,farm or laboratory equipment,category_default,synthetic,true
-CAREER-365,Carbon Project Officer,field data collection apps,category_default,synthetic,true
-CAREER-365,Carbon Project Officer,GPS devices,category_default,synthetic,true
-CAREER-365,Carbon Project Officer,sampling and testing kits,category_default,synthetic,true
-CAREER-365,Carbon Project Officer,spreadsheets,category_default,synthetic,true
-CAREER-365,Carbon Project Officer,farm or laboratory equipment,category_default,synthetic,true
-CAREER-366,Plant Pathologist,field data collection apps,category_default,synthetic,true
-CAREER-366,Plant Pathologist,GPS devices,category_default,synthetic,true
-CAREER-366,Plant Pathologist,sampling and testing kits,category_default,synthetic,true
-CAREER-366,Plant Pathologist,spreadsheets,category_default,synthetic,true
-CAREER-366,Plant Pathologist,farm or laboratory equipment,category_default,synthetic,true
-CAREER-367,Livestock Production Officer,field data collection apps,category_default,synthetic,true
-CAREER-367,Livestock Production Officer,GPS devices,category_default,synthetic,true
-CAREER-367,Livestock Production Officer,sampling and testing kits,category_default,synthetic,true
-CAREER-367,Livestock Production Officer,spreadsheets,category_default,synthetic,true
-CAREER-367,Livestock Production Officer,farm or laboratory equipment,category_default,synthetic,true
-CAREER-368,Greenhouse Manager,field data collection apps,category_default,synthetic,true
-CAREER-368,Greenhouse Manager,GPS devices,category_default,synthetic,true
-CAREER-368,Greenhouse Manager,sampling and testing kits,category_default,synthetic,true
-CAREER-368,Greenhouse Manager,spreadsheets,category_default,synthetic,true
-CAREER-368,Greenhouse Manager,farm or laboratory equipment,category_default,synthetic,true
+CAREER-346,Examinations Officer,examination management systems,authored,synthetic,true
+CAREER-346,Examinations Officer,Excel,authored,synthetic,true
+CAREER-346,Examinations Officer,national examination portals,authored,synthetic,true
+CAREER-346,Examinations Officer,secure storage,authored,synthetic,true
+CAREER-346,Examinations Officer,timetabling tools,authored,synthetic,true
+CAREER-346,Examinations Officer,student information systems,authored,synthetic,true
+CAREER-347,Education Researcher,"Stata, R or SPSS",authored,synthetic,true
+CAREER-347,Education Researcher,survey tools such as KoboToolbox,authored,synthetic,true
+CAREER-347,Education Researcher,qualitative analysis tools such as NVivo,authored,synthetic,true
+CAREER-347,Education Researcher,Excel,authored,synthetic,true
+CAREER-347,Education Researcher,learning assessment tools,authored,synthetic,true
+CAREER-347,Education Researcher,reference managers,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,sports equipment,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,training plans,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,stopwatches and fitness tests,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,first-aid kits,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,video analysis apps,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,PE curriculum designs,authored,synthetic,true
+CAREER-349,Music Teacher,pianos and keyboards,authored,synthetic,true
+CAREER-349,Music Teacher,classroom instruments,authored,synthetic,true
+CAREER-349,Music Teacher,sheet music,authored,synthetic,true
+CAREER-349,Music Teacher,notation software such as MuseScore,authored,synthetic,true
+CAREER-349,Music Teacher,audio equipment,authored,synthetic,true
+CAREER-349,Music Teacher,graded exam syllabuses,authored,synthetic,true
+CAREER-350,STEM Educator,Scratch,authored,synthetic,true
+CAREER-350,STEM Educator,Arduino and micro:bit kits,authored,synthetic,true
+CAREER-350,STEM Educator,robotics kits,authored,synthetic,true
+CAREER-350,STEM Educator,laboratory equipment,authored,synthetic,true
+CAREER-350,STEM Educator,Python,authored,synthetic,true
+CAREER-350,STEM Educator,3D printers,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Kenyan Sign Language,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,interpreting codes of ethics,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,video interpreting platforms,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,subject glossaries,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,preparation notes,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,captioning tools,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,standards assessment tools,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,lesson observation forms,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,inspection report templates,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,policy and standards documents,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Excel,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,education information systems,authored,synthetic,true
+CAREER-353,Dean of Students,student information systems,authored,synthetic,true
+CAREER-353,Dean of Students,case management records,authored,synthetic,true
+CAREER-353,Dean of Students,student handbooks and policies,authored,synthetic,true
+CAREER-353,Dean of Students,event planning tools,authored,synthetic,true
+CAREER-353,Dean of Students,survey tools,authored,synthetic,true
+CAREER-353,Dean of Students,Excel,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Articulate Storyline,authored,synthetic,true
+CAREER-354,E-learning Content Developer,H5P,authored,synthetic,true
+CAREER-354,E-learning Content Developer,video editors such as Camtasia,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Canva or Adobe tools,authored,synthetic,true
+CAREER-354,E-learning Content Developer,learning management systems,authored,synthetic,true
+CAREER-354,E-learning Content Developer,SCORM packages,authored,synthetic,true
+CAREER-355,Career Guidance Officer,career interest assessments,authored,synthetic,true
+CAREER-355,Career Guidance Officer,job boards and LinkedIn,authored,synthetic,true
+CAREER-355,Career Guidance Officer,CV templates,authored,synthetic,true
+CAREER-355,Career Guidance Officer,career services platforms,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Excel,authored,synthetic,true
+CAREER-355,Career Guidance Officer,presentation tools,authored,synthetic,true
+CAREER-356,Admissions Officer,student information systems,authored,synthetic,true
+CAREER-356,Admissions Officer,CRM systems,authored,synthetic,true
+CAREER-356,Admissions Officer,application portals,authored,synthetic,true
+CAREER-356,Admissions Officer,Excel,authored,synthetic,true
+CAREER-356,Admissions Officer,email and messaging tools,authored,synthetic,true
+CAREER-356,Admissions Officer,presentation materials,authored,synthetic,true
+CAREER-357,Dairy Technologist,pasteurisers and homogenisers,authored,synthetic,true
+CAREER-357,Dairy Technologist,lactometers and milk analysers,authored,synthetic,true
+CAREER-357,Dairy Technologist,cleaning-in-place systems,authored,synthetic,true
+CAREER-357,Dairy Technologist,cold storage,authored,synthetic,true
+CAREER-357,Dairy Technologist,HACCP plans,authored,synthetic,true
+CAREER-357,Dairy Technologist,laboratory test kits,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,feeders and drinkers,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,brooders and incubators,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,vaccination equipment,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,weighing scales,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,flock records,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,feed formulation tools,authored,synthetic,true
+CAREER-359,Apiculturist,Langstroth and top-bar hives,authored,synthetic,true
+CAREER-359,Apiculturist,bee suits and smokers,authored,synthetic,true
+CAREER-359,Apiculturist,hive tools,authored,synthetic,true
+CAREER-359,Apiculturist,honey extractors,authored,synthetic,true
+CAREER-359,Apiculturist,refractometers,authored,synthetic,true
+CAREER-359,Apiculturist,packaging equipment,authored,synthetic,true
+CAREER-360,Irrigation Technician,drip lines and fittings,authored,synthetic,true
+CAREER-360,Irrigation Technician,pumps and solar pump kits,authored,synthetic,true
+CAREER-360,Irrigation Technician,pressure gauges and flow meters,authored,synthetic,true
+CAREER-360,Irrigation Technician,pipe tools,authored,synthetic,true
+CAREER-360,Irrigation Technician,soil moisture sensors,authored,synthetic,true
+CAREER-360,Irrigation Technician,irrigation design software,authored,synthetic,true
+CAREER-361,Seed Technologist,germination chambers,authored,synthetic,true
+CAREER-361,Seed Technologist,moisture meters,authored,synthetic,true
+CAREER-361,Seed Technologist,seed cleaners and graders,authored,synthetic,true
+CAREER-361,Seed Technologist,purity testing tools,authored,synthetic,true
+CAREER-361,Seed Technologist,seed certification standards such as ISTA rules,authored,synthetic,true
+CAREER-361,Seed Technologist,seed treatment equipment,authored,synthetic,true
+CAREER-362,Range Management Officer,GIS software and satellite vegetation data,authored,synthetic,true
+CAREER-362,Range Management Officer,GPS,authored,synthetic,true
+CAREER-362,Range Management Officer,rangeland assessment methods,authored,synthetic,true
+CAREER-362,Range Management Officer,drought early warning bulletins,authored,synthetic,true
+CAREER-362,Range Management Officer,survey tools,authored,synthetic,true
+CAREER-362,Range Management Officer,grazing plans,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,cupping and tasting sets,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,moisture meters,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,sample roasters and grinders,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,grading screens,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,scoring sheets such as SCA cupping forms,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,factory processing records,authored,synthetic,true
+CAREER-364,Environmental Educator,education materials and posters,authored,synthetic,true
+CAREER-364,Environmental Educator,field guides,authored,synthetic,true
+CAREER-364,Environmental Educator,presentation tools,authored,synthetic,true
+CAREER-364,Environmental Educator,activity kits,authored,synthetic,true
+CAREER-364,Environmental Educator,social media,authored,synthetic,true
+CAREER-364,Environmental Educator,evaluation forms,authored,synthetic,true
+CAREER-365,Carbon Project Officer,carbon standards such as Verra and Gold Standard,authored,synthetic,true
+CAREER-365,Carbon Project Officer,GIS and remote sensing,authored,synthetic,true
+CAREER-365,Carbon Project Officer,survey tools,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Excel,authored,synthetic,true
+CAREER-365,Carbon Project Officer,emission calculation methodologies,authored,synthetic,true
+CAREER-365,Carbon Project Officer,GPS,authored,synthetic,true
+CAREER-366,Plant Pathologist,microscopes,authored,synthetic,true
+CAREER-366,Plant Pathologist,culture media and incubators,authored,synthetic,true
+CAREER-366,Plant Pathologist,PCR and ELISA kits,authored,synthetic,true
+CAREER-366,Plant Pathologist,plant clinic tools,authored,synthetic,true
+CAREER-366,Plant Pathologist,diagnostic guides,authored,synthetic,true
+CAREER-366,Plant Pathologist,spray trial equipment,authored,synthetic,true
+CAREER-367,Livestock Production Officer,ration formulation tools,authored,synthetic,true
+CAREER-367,Livestock Production Officer,weighing bands and scales,authored,synthetic,true
+CAREER-367,Livestock Production Officer,breeding and milk records,authored,synthetic,true
+CAREER-367,Livestock Production Officer,fodder choppers and silage equipment,authored,synthetic,true
+CAREER-367,Livestock Production Officer,survey tools,authored,synthetic,true
+CAREER-367,Livestock Production Officer,training manuals,authored,synthetic,true
+CAREER-368,Greenhouse Manager,greenhouse structures and climate controls,authored,synthetic,true
+CAREER-368,Greenhouse Manager,drip and fertigation systems,authored,synthetic,true
+CAREER-368,Greenhouse Manager,pH and EC meters,authored,synthetic,true
+CAREER-368,Greenhouse Manager,hydroponic systems,authored,synthetic,true
+CAREER-368,Greenhouse Manager,scouting records,authored,synthetic,true
+CAREER-368,Greenhouse Manager,production software,authored,synthetic,true
 CAREER-369,Documentary Filmmaker,Adobe Creative Cloud,category_default,synthetic,true
 CAREER-369,Documentary Filmmaker,cameras and audio equipment,category_default,synthetic,true
 CAREER-369,Documentary Filmmaker,editing software,category_default,synthetic,true

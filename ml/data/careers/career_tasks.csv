@@ -741,216 +741,251 @@ CAREER-106,Elections and Governance Officer,Monitor polling and tallying,authore
 CAREER-106,Elections and Governance Officer,Write observation and programme reports,authored,synthetic,true
 CAREER-106,Elections and Governance Officer,Work with parties and civil society,authored,synthetic,true
 CAREER-106,Elections and Governance Officer,Manage election data,authored,synthetic,true
-CAREER-107,Primary School Teacher,Plan and deliver lessons or sessions in primary education,category_default,synthetic,true
-CAREER-107,Primary School Teacher,Assess learners and give feedback,category_default,synthetic,true
-CAREER-107,Primary School Teacher,Keep records of progress,category_default,synthetic,true
-CAREER-107,Primary School Teacher,Support learners with different needs,category_default,synthetic,true
-CAREER-107,Primary School Teacher,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-107,Primary School Teacher,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-108,Secondary School Teacher,Plan and deliver lessons or sessions in secondary education,category_default,synthetic,true
-CAREER-108,Secondary School Teacher,Assess learners and give feedback,category_default,synthetic,true
-CAREER-108,Secondary School Teacher,Keep records of progress,category_default,synthetic,true
-CAREER-108,Secondary School Teacher,Support learners with different needs,category_default,synthetic,true
-CAREER-108,Secondary School Teacher,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-108,Secondary School Teacher,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-109,Early Childhood Educator,Plan and deliver lessons or sessions in early years,category_default,synthetic,true
-CAREER-109,Early Childhood Educator,Assess learners and give feedback,category_default,synthetic,true
-CAREER-109,Early Childhood Educator,Keep records of progress,category_default,synthetic,true
-CAREER-109,Early Childhood Educator,Support learners with different needs,category_default,synthetic,true
-CAREER-109,Early Childhood Educator,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-109,Early Childhood Educator,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-110,Special Needs Educator,Plan and deliver lessons or sessions in inclusive education,category_default,synthetic,true
-CAREER-110,Special Needs Educator,Assess learners and give feedback,category_default,synthetic,true
-CAREER-110,Special Needs Educator,Keep records of progress,category_default,synthetic,true
-CAREER-110,Special Needs Educator,Support learners with different needs,category_default,synthetic,true
-CAREER-110,Special Needs Educator,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-110,Special Needs Educator,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-111,University Lecturer,Plan and deliver lessons or sessions in higher education,category_default,synthetic,true
-CAREER-111,University Lecturer,Assess learners and give feedback,category_default,synthetic,true
-CAREER-111,University Lecturer,Keep records of progress,category_default,synthetic,true
-CAREER-111,University Lecturer,Support learners with different needs,category_default,synthetic,true
-CAREER-111,University Lecturer,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-111,University Lecturer,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-112,Education Officer,Plan and deliver lessons or sessions in education administration,category_default,synthetic,true
-CAREER-112,Education Officer,Assess learners and give feedback,category_default,synthetic,true
-CAREER-112,Education Officer,Keep records of progress,category_default,synthetic,true
-CAREER-112,Education Officer,Support learners with different needs,category_default,synthetic,true
-CAREER-112,Education Officer,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-112,Education Officer,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-113,Curriculum Developer,Plan and deliver lessons or sessions in curriculum design,category_default,synthetic,true
-CAREER-113,Curriculum Developer,Assess learners and give feedback,category_default,synthetic,true
-CAREER-113,Curriculum Developer,Keep records of progress,category_default,synthetic,true
-CAREER-113,Curriculum Developer,Support learners with different needs,category_default,synthetic,true
-CAREER-113,Curriculum Developer,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-113,Curriculum Developer,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-114,Instructional Designer,Plan and deliver lessons or sessions in learning design,category_default,synthetic,true
-CAREER-114,Instructional Designer,Assess learners and give feedback,category_default,synthetic,true
-CAREER-114,Instructional Designer,Keep records of progress,category_default,synthetic,true
-CAREER-114,Instructional Designer,Support learners with different needs,category_default,synthetic,true
-CAREER-114,Instructional Designer,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-114,Instructional Designer,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-115,School Counsellor,Plan and deliver lessons or sessions in learner guidance,category_default,synthetic,true
-CAREER-115,School Counsellor,Assess learners and give feedback,category_default,synthetic,true
-CAREER-115,School Counsellor,Keep records of progress,category_default,synthetic,true
-CAREER-115,School Counsellor,Support learners with different needs,category_default,synthetic,true
-CAREER-115,School Counsellor,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-115,School Counsellor,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-116,Educational Technologist,Plan and deliver lessons or sessions in learning technology,category_default,synthetic,true
-CAREER-116,Educational Technologist,Assess learners and give feedback,category_default,synthetic,true
-CAREER-116,Educational Technologist,Keep records of progress,category_default,synthetic,true
-CAREER-116,Educational Technologist,Support learners with different needs,category_default,synthetic,true
-CAREER-116,Educational Technologist,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-116,Educational Technologist,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-117,TVET Trainer,Plan and deliver lessons or sessions in technical and vocational training,category_default,synthetic,true
-CAREER-117,TVET Trainer,Assess learners and give feedback,category_default,synthetic,true
-CAREER-117,TVET Trainer,Keep records of progress,category_default,synthetic,true
-CAREER-117,TVET Trainer,Support learners with different needs,category_default,synthetic,true
-CAREER-117,TVET Trainer,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-117,TVET Trainer,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-118,Librarian and Information Officer,Plan and deliver lessons or sessions in library services,category_default,synthetic,true
-CAREER-118,Librarian and Information Officer,Assess learners and give feedback,category_default,synthetic,true
-CAREER-118,Librarian and Information Officer,Keep records of progress,category_default,synthetic,true
-CAREER-118,Librarian and Information Officer,Support learners with different needs,category_default,synthetic,true
-CAREER-118,Librarian and Information Officer,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-118,Librarian and Information Officer,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-119,School Head and Administrator,Plan and deliver lessons or sessions in school leadership,category_default,synthetic,true
-CAREER-119,School Head and Administrator,Assess learners and give feedback,category_default,synthetic,true
-CAREER-119,School Head and Administrator,Keep records of progress,category_default,synthetic,true
-CAREER-119,School Head and Administrator,Support learners with different needs,category_default,synthetic,true
-CAREER-119,School Head and Administrator,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-119,School Head and Administrator,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-120,Language Teacher,Plan and deliver lessons or sessions in language teaching,category_default,synthetic,true
-CAREER-120,Language Teacher,Assess learners and give feedback,category_default,synthetic,true
-CAREER-120,Language Teacher,Keep records of progress,category_default,synthetic,true
-CAREER-120,Language Teacher,Support learners with different needs,category_default,synthetic,true
-CAREER-120,Language Teacher,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-120,Language Teacher,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-121,Adult Education Facilitator,Plan and deliver lessons or sessions in adult and community learning,category_default,synthetic,true
-CAREER-121,Adult Education Facilitator,Assess learners and give feedback,category_default,synthetic,true
-CAREER-121,Adult Education Facilitator,Keep records of progress,category_default,synthetic,true
-CAREER-121,Adult Education Facilitator,Support learners with different needs,category_default,synthetic,true
-CAREER-121,Adult Education Facilitator,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-121,Adult Education Facilitator,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-122,Corporate Trainer,Plan and deliver lessons or sessions in workplace learning,category_default,synthetic,true
-CAREER-122,Corporate Trainer,Assess learners and give feedback,category_default,synthetic,true
-CAREER-122,Corporate Trainer,Keep records of progress,category_default,synthetic,true
-CAREER-122,Corporate Trainer,Support learners with different needs,category_default,synthetic,true
-CAREER-122,Corporate Trainer,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-122,Corporate Trainer,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-123,Learning Coach and Tutor,Plan and deliver lessons or sessions in learner support,category_default,synthetic,true
-CAREER-123,Learning Coach and Tutor,Assess learners and give feedback,category_default,synthetic,true
-CAREER-123,Learning Coach and Tutor,Keep records of progress,category_default,synthetic,true
-CAREER-123,Learning Coach and Tutor,Support learners with different needs,category_default,synthetic,true
-CAREER-123,Learning Coach and Tutor,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-123,Learning Coach and Tutor,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-124,Agronomist,Visit farms or field sites for crop production,category_default,synthetic,true
-CAREER-124,Agronomist,Collect samples and record data,category_default,synthetic,true
-CAREER-124,Agronomist,Advise farmers or communities,category_default,synthetic,true
-CAREER-124,Agronomist,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-124,Agronomist,Write reports,category_default,synthetic,true
-CAREER-124,Agronomist,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-125,Agricultural Extension Officer,Visit farms or field sites for farmer advisory,category_default,synthetic,true
-CAREER-125,Agricultural Extension Officer,Collect samples and record data,category_default,synthetic,true
-CAREER-125,Agricultural Extension Officer,Advise farmers or communities,category_default,synthetic,true
-CAREER-125,Agricultural Extension Officer,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-125,Agricultural Extension Officer,Write reports,category_default,synthetic,true
-CAREER-125,Agricultural Extension Officer,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-126,Agribusiness Manager,Visit farms or field sites for agricultural value chains,category_default,synthetic,true
-CAREER-126,Agribusiness Manager,Collect samples and record data,category_default,synthetic,true
-CAREER-126,Agribusiness Manager,Advise farmers or communities,category_default,synthetic,true
-CAREER-126,Agribusiness Manager,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-126,Agribusiness Manager,Write reports,category_default,synthetic,true
-CAREER-126,Agribusiness Manager,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-127,Veterinary Doctor,Visit farms or field sites for animal health,category_default,synthetic,true
-CAREER-127,Veterinary Doctor,Collect samples and record data,category_default,synthetic,true
-CAREER-127,Veterinary Doctor,Advise farmers or communities,category_default,synthetic,true
-CAREER-127,Veterinary Doctor,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-127,Veterinary Doctor,Write reports,category_default,synthetic,true
-CAREER-127,Veterinary Doctor,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-128,Animal Health Technician,Visit farms or field sites for livestock health support,category_default,synthetic,true
-CAREER-128,Animal Health Technician,Collect samples and record data,category_default,synthetic,true
-CAREER-128,Animal Health Technician,Advise farmers or communities,category_default,synthetic,true
-CAREER-128,Animal Health Technician,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-128,Animal Health Technician,Write reports,category_default,synthetic,true
-CAREER-128,Animal Health Technician,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-129,Horticulturist,"Visit farms or field sites for fruits, vegetables and flowers",category_default,synthetic,true
-CAREER-129,Horticulturist,Collect samples and record data,category_default,synthetic,true
-CAREER-129,Horticulturist,Advise farmers or communities,category_default,synthetic,true
-CAREER-129,Horticulturist,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-129,Horticulturist,Write reports,category_default,synthetic,true
-CAREER-129,Horticulturist,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-130,Soil Scientist,Visit farms or field sites for soil and land management,category_default,synthetic,true
-CAREER-130,Soil Scientist,Collect samples and record data,category_default,synthetic,true
-CAREER-130,Soil Scientist,Advise farmers or communities,category_default,synthetic,true
-CAREER-130,Soil Scientist,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-130,Soil Scientist,Write reports,category_default,synthetic,true
-CAREER-130,Soil Scientist,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-131,Food Scientist,Visit farms or field sites for food processing,category_default,synthetic,true
-CAREER-131,Food Scientist,Collect samples and record data,category_default,synthetic,true
-CAREER-131,Food Scientist,Advise farmers or communities,category_default,synthetic,true
-CAREER-131,Food Scientist,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-131,Food Scientist,Write reports,category_default,synthetic,true
-CAREER-131,Food Scientist,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-132,Food Safety Officer,Visit farms or field sites for food safety and inspection,category_default,synthetic,true
-CAREER-132,Food Safety Officer,Collect samples and record data,category_default,synthetic,true
-CAREER-132,Food Safety Officer,Advise farmers or communities,category_default,synthetic,true
-CAREER-132,Food Safety Officer,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-132,Food Safety Officer,Write reports,category_default,synthetic,true
-CAREER-132,Food Safety Officer,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-133,Fisheries and Aquaculture Officer,Visit farms or field sites for aquatic resources,category_default,synthetic,true
-CAREER-133,Fisheries and Aquaculture Officer,Collect samples and record data,category_default,synthetic,true
-CAREER-133,Fisheries and Aquaculture Officer,Advise farmers or communities,category_default,synthetic,true
-CAREER-133,Fisheries and Aquaculture Officer,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-133,Fisheries and Aquaculture Officer,Write reports,category_default,synthetic,true
-CAREER-133,Fisheries and Aquaculture Officer,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-134,Forestry Officer,Visit farms or field sites for forests and tree resources,category_default,synthetic,true
-CAREER-134,Forestry Officer,Collect samples and record data,category_default,synthetic,true
-CAREER-134,Forestry Officer,Advise farmers or communities,category_default,synthetic,true
-CAREER-134,Forestry Officer,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-134,Forestry Officer,Write reports,category_default,synthetic,true
-CAREER-134,Forestry Officer,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-135,Environmental Consultant,Visit farms or field sites for environmental advisory,category_default,synthetic,true
-CAREER-135,Environmental Consultant,Collect samples and record data,category_default,synthetic,true
-CAREER-135,Environmental Consultant,Advise farmers or communities,category_default,synthetic,true
-CAREER-135,Environmental Consultant,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-135,Environmental Consultant,Write reports,category_default,synthetic,true
-CAREER-135,Environmental Consultant,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-136,Climate Change Analyst,Visit farms or field sites for climate adaptation,category_default,synthetic,true
-CAREER-136,Climate Change Analyst,Collect samples and record data,category_default,synthetic,true
-CAREER-136,Climate Change Analyst,Advise farmers or communities,category_default,synthetic,true
-CAREER-136,Climate Change Analyst,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-136,Climate Change Analyst,Write reports,category_default,synthetic,true
-CAREER-136,Climate Change Analyst,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-137,Wildlife Conservation Officer,Visit farms or field sites for conservation,category_default,synthetic,true
-CAREER-137,Wildlife Conservation Officer,Collect samples and record data,category_default,synthetic,true
-CAREER-137,Wildlife Conservation Officer,Advise farmers or communities,category_default,synthetic,true
-CAREER-137,Wildlife Conservation Officer,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-137,Wildlife Conservation Officer,Write reports,category_default,synthetic,true
-CAREER-137,Wildlife Conservation Officer,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-138,Water Resources Officer,Visit farms or field sites for water resources,category_default,synthetic,true
-CAREER-138,Water Resources Officer,Collect samples and record data,category_default,synthetic,true
-CAREER-138,Water Resources Officer,Advise farmers or communities,category_default,synthetic,true
-CAREER-138,Water Resources Officer,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-138,Water Resources Officer,Write reports,category_default,synthetic,true
-CAREER-138,Water Resources Officer,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-139,Agricultural Economist,Visit farms or field sites for agricultural economics,category_default,synthetic,true
-CAREER-139,Agricultural Economist,Collect samples and record data,category_default,synthetic,true
-CAREER-139,Agricultural Economist,Advise farmers or communities,category_default,synthetic,true
-CAREER-139,Agricultural Economist,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-139,Agricultural Economist,Write reports,category_default,synthetic,true
-CAREER-139,Agricultural Economist,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-140,Precision Agriculture Technician,Visit farms or field sites for agricultural technology,category_default,synthetic,true
-CAREER-140,Precision Agriculture Technician,Collect samples and record data,category_default,synthetic,true
-CAREER-140,Precision Agriculture Technician,Advise farmers or communities,category_default,synthetic,true
-CAREER-140,Precision Agriculture Technician,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-140,Precision Agriculture Technician,Write reports,category_default,synthetic,true
-CAREER-140,Precision Agriculture Technician,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-141,Waste Management Officer,Visit farms or field sites for solid and liquid waste,category_default,synthetic,true
-CAREER-141,Waste Management Officer,Collect samples and record data,category_default,synthetic,true
-CAREER-141,Waste Management Officer,Advise farmers or communities,category_default,synthetic,true
-CAREER-141,Waste Management Officer,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-141,Waste Management Officer,Write reports,category_default,synthetic,true
-CAREER-141,Waste Management Officer,Follow safety and environmental rules,category_default,synthetic,true
+CAREER-107,Primary School Teacher,Plan lessons and schemes of work,authored,synthetic,true
+CAREER-107,Primary School Teacher,Teach several subjects to one class,authored,synthetic,true
+CAREER-107,Primary School Teacher,Assess learners and record progress,authored,synthetic,true
+CAREER-107,Primary School Teacher,Manage classroom behaviour,authored,synthetic,true
+CAREER-107,Primary School Teacher,Prepare teaching aids,authored,synthetic,true
+CAREER-107,Primary School Teacher,Meet parents about progress,authored,synthetic,true
+CAREER-107,Primary School Teacher,Supervise learners during breaks and activities,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Plan and teach subject lessons,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Set and mark assignments and exams,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Run practicals or discussions,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Track and report student performance,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Guide students on subject choices,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Lead clubs and games,authored,synthetic,true
+CAREER-108,Secondary School Teacher,Serve on duty rosters,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Plan play-based activities,authored,synthetic,true
+CAREER-109,Early Childhood Educator,"Teach early reading, counting and language",authored,synthetic,true
+CAREER-109,Early Childhood Educator,Care for children's safety and hygiene,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Observe and record each child's development,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Make learning materials,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Talk with parents daily,authored,synthetic,true
+CAREER-109,Early Childhood Educator,Settle new children,authored,synthetic,true
+CAREER-110,Special Needs Educator,Assess each learner's needs,authored,synthetic,true
+CAREER-110,Special Needs Educator,Write individual education plans,authored,synthetic,true
+CAREER-110,Special Needs Educator,Adapt lessons and materials,authored,synthetic,true
+CAREER-110,Special Needs Educator,Teach in small groups or one to one,authored,synthetic,true
+CAREER-110,Special Needs Educator,Work with therapists and parents,authored,synthetic,true
+CAREER-110,Special Needs Educator,Track progress against goals,authored,synthetic,true
+CAREER-110,Special Needs Educator,Advise class teachers on inclusion,authored,synthetic,true
+CAREER-111,University Lecturer,Prepare and deliver lectures,authored,synthetic,true
+CAREER-111,University Lecturer,Set and mark exams and coursework,authored,synthetic,true
+CAREER-111,University Lecturer,Supervise student projects and theses,authored,synthetic,true
+CAREER-111,University Lecturer,Do research and publish papers,authored,synthetic,true
+CAREER-111,University Lecturer,Apply for research grants,authored,synthetic,true
+CAREER-111,University Lecturer,Advise students,authored,synthetic,true
+CAREER-111,University Lecturer,Serve on department committees,authored,synthetic,true
+CAREER-112,Education Officer,Visit and support schools,authored,synthetic,true
+CAREER-112,Education Officer,Monitor teaching and school standards,authored,synthetic,true
+CAREER-112,Education Officer,Collect and report education data,authored,synthetic,true
+CAREER-112,Education Officer,Coordinate exams and programmes,authored,synthetic,true
+CAREER-112,Education Officer,Train teachers and heads,authored,synthetic,true
+CAREER-112,Education Officer,Handle school registration and complaints,authored,synthetic,true
+CAREER-112,Education Officer,Implement ministry policy,authored,synthetic,true
+CAREER-113,Curriculum Developer,Research learner and subject needs,authored,synthetic,true
+CAREER-113,Curriculum Developer,Write learning outcomes and syllabuses,authored,synthetic,true
+CAREER-113,Curriculum Developer,Develop teacher guides and learner materials,authored,synthetic,true
+CAREER-113,Curriculum Developer,Pilot materials in schools,authored,synthetic,true
+CAREER-113,Curriculum Developer,Review textbooks,authored,synthetic,true
+CAREER-113,Curriculum Developer,Train teachers on new curriculum,authored,synthetic,true
+CAREER-113,Curriculum Developer,Revise content from feedback,authored,synthetic,true
+CAREER-114,Instructional Designer,Analyse what learners need,authored,synthetic,true
+CAREER-114,Instructional Designer,Write learning objectives,authored,synthetic,true
+CAREER-114,Instructional Designer,Design course structure and storyboards,authored,synthetic,true
+CAREER-114,Instructional Designer,Build activities and assessments,authored,synthetic,true
+CAREER-114,Instructional Designer,Work with subject experts,authored,synthetic,true
+CAREER-114,Instructional Designer,Test courses with learners,authored,synthetic,true
+CAREER-114,Instructional Designer,Improve courses from data,authored,synthetic,true
+CAREER-115,School Counsellor,Counsel learners one to one,authored,synthetic,true
+CAREER-115,School Counsellor,Run group guidance sessions,authored,synthetic,true
+CAREER-115,School Counsellor,Guide subject and career choices,authored,synthetic,true
+CAREER-115,School Counsellor,Support learners in crisis,authored,synthetic,true
+CAREER-115,School Counsellor,Train peer counsellors,authored,synthetic,true
+CAREER-115,School Counsellor,Refer serious cases,authored,synthetic,true
+CAREER-115,School Counsellor,Keep confidential records,authored,synthetic,true
+CAREER-116,Educational Technologist,Set up and manage learning platforms,authored,synthetic,true
+CAREER-116,Educational Technologist,Train teachers to use digital tools,authored,synthetic,true
+CAREER-116,Educational Technologist,Support online classes,authored,synthetic,true
+CAREER-116,Educational Technologist,Choose and test learning apps,authored,synthetic,true
+CAREER-116,Educational Technologist,Fix user problems,authored,synthetic,true
+CAREER-116,Educational Technologist,Report on platform use,authored,synthetic,true
+CAREER-116,Educational Technologist,Advise on digital learning strategy,authored,synthetic,true
+CAREER-117,TVET Trainer,Plan practical and theory sessions,authored,synthetic,true
+CAREER-117,TVET Trainer,Demonstrate skills in the workshop,authored,synthetic,true
+CAREER-117,TVET Trainer,Supervise trainees' practical work,authored,synthetic,true
+CAREER-117,TVET Trainer,Assess competence against standards,authored,synthetic,true
+CAREER-117,TVET Trainer,Maintain tools and equipment,authored,synthetic,true
+CAREER-117,TVET Trainer,Arrange industrial attachments,authored,synthetic,true
+CAREER-117,TVET Trainer,Keep training records,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Catalogue and classify materials,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Help users find information,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Manage lending and returns,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Maintain digital resources and databases,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Teach research and referencing skills,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Order new materials,authored,synthetic,true
+CAREER-118,Librarian and Information Officer,Keep the library organised,authored,synthetic,true
+CAREER-119,School Head and Administrator,Lead teachers and staff,authored,synthetic,true
+CAREER-119,School Head and Administrator,Supervise teaching and results,authored,synthetic,true
+CAREER-119,School Head and Administrator,Manage the school budget and fees,authored,synthetic,true
+CAREER-119,School Head and Administrator,Handle discipline and welfare,authored,synthetic,true
+CAREER-119,School Head and Administrator,Report to the board and ministry,authored,synthetic,true
+CAREER-119,School Head and Administrator,Meet parents,authored,synthetic,true
+CAREER-119,School Head and Administrator,Plan school improvement,authored,synthetic,true
+CAREER-120,Language Teacher,"Plan lessons for speaking, listening, reading and writing",authored,synthetic,true
+CAREER-120,Language Teacher,Teach grammar and vocabulary,authored,synthetic,true
+CAREER-120,Language Teacher,Run conversation practice,authored,synthetic,true
+CAREER-120,Language Teacher,Mark compositions and give feedback,authored,synthetic,true
+CAREER-120,Language Teacher,Prepare learners for language exams,authored,synthetic,true
+CAREER-120,Language Teacher,"Use songs, texts and media",authored,synthetic,true
+CAREER-120,Language Teacher,Track each learner's level,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Recruit and enrol adult learners,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,"Teach reading, writing and numbers",authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Link lessons to daily life and work,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Run flexible evening or weekend classes,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Assess progress,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Encourage learners to continue,authored,synthetic,true
+CAREER-121,Adult Education Facilitator,Report on attendance,authored,synthetic,true
+CAREER-122,Corporate Trainer,Find out what staff need to learn,authored,synthetic,true
+CAREER-122,Corporate Trainer,Design training sessions,authored,synthetic,true
+CAREER-122,Corporate Trainer,Deliver workshops in person and online,authored,synthetic,true
+CAREER-122,Corporate Trainer,Create slides and handouts,authored,synthetic,true
+CAREER-122,Corporate Trainer,Assess learning and gather feedback,authored,synthetic,true
+CAREER-122,Corporate Trainer,Keep training records,authored,synthetic,true
+CAREER-122,Corporate Trainer,Report on training impact,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Find each learner's gaps,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Plan sessions around their goals,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Explain difficult topics step by step,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Set and review practice work,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Teach study and revision methods,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Update parents on progress,authored,synthetic,true
+CAREER-123,Learning Coach and Tutor,Motivate learners,authored,synthetic,true
+CAREER-124,Agronomist,Visit farms and inspect crops,authored,synthetic,true
+CAREER-124,Agronomist,"Diagnose pests, diseases and deficiencies",authored,synthetic,true
+CAREER-124,Agronomist,Recommend fertiliser and spray programmes,authored,synthetic,true
+CAREER-124,Agronomist,Run field trials,authored,synthetic,true
+CAREER-124,Agronomist,Train farmers and staff,authored,synthetic,true
+CAREER-124,Agronomist,Plan planting and harvest,authored,synthetic,true
+CAREER-124,Agronomist,Write crop reports,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Visit farmers and farmer groups,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Train on good farming practices,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Set up demonstration plots,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Link farmers to inputs and markets,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Collect farm data,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Report pest and disease outbreaks,authored,synthetic,true
+CAREER-125,Agricultural Extension Officer,Organise field days,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Plan production and sales,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Manage farm or business budgets,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Buy inputs and sell produce,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Contract and coordinate farmers,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Manage staff and logistics,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Find buyers and negotiate prices,authored,synthetic,true
+CAREER-126,Agribusiness Manager,Track costs and margins,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Examine and diagnose animals,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Treat illness and perform surgery,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Vaccinate and control disease,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Advise farmers on herd health,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Inspect meat and animal products,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Report notifiable diseases,authored,synthetic,true
+CAREER-127,Veterinary Doctor,Prescribe and dispense veterinary drugs,authored,synthetic,true
+CAREER-128,Animal Health Technician,Treat common livestock conditions under a vet's guidance,authored,synthetic,true
+CAREER-128,Animal Health Technician,Vaccinate and deworm animals,authored,synthetic,true
+CAREER-128,Animal Health Technician,Carry out artificial insemination,authored,synthetic,true
+CAREER-128,Animal Health Technician,Advise farmers on feeding and housing,authored,synthetic,true
+CAREER-128,Animal Health Technician,Collect samples,authored,synthetic,true
+CAREER-128,Animal Health Technician,Inspect meat,authored,synthetic,true
+CAREER-128,Animal Health Technician,Keep treatment records,authored,synthetic,true
+CAREER-129,Horticulturist,Plan planting and crop schedules,authored,synthetic,true
+CAREER-129,Horticulturist,Manage irrigation and feeding,authored,synthetic,true
+CAREER-129,Horticulturist,Scout for pests and diseases,authored,synthetic,true
+CAREER-129,Horticulturist,Supervise harvest and grading,authored,synthetic,true
+CAREER-129,Horticulturist,Meet export quality standards,authored,synthetic,true
+CAREER-129,Horticulturist,Manage workers,authored,synthetic,true
+CAREER-129,Horticulturist,Keep production records,authored,synthetic,true
+CAREER-130,Soil Scientist,Collect soil samples in the field,authored,synthetic,true
+CAREER-130,Soil Scientist,Analyse samples in the laboratory,authored,synthetic,true
+CAREER-130,Soil Scientist,Map soil types,authored,synthetic,true
+CAREER-130,Soil Scientist,Interpret results and advise on fertiliser and lime,authored,synthetic,true
+CAREER-130,Soil Scientist,Design conservation measures,authored,synthetic,true
+CAREER-130,Soil Scientist,Write soil reports,authored,synthetic,true
+CAREER-130,Soil Scientist,Support research trials,authored,synthetic,true
+CAREER-131,Food Scientist,Develop and test new recipes and products,authored,synthetic,true
+CAREER-131,Food Scientist,Run processing lines,authored,synthetic,true
+CAREER-131,Food Scientist,Test samples for quality and safety,authored,synthetic,true
+CAREER-131,Food Scientist,Set product specifications,authored,synthetic,true
+CAREER-131,Food Scientist,Solve production problems,authored,synthetic,true
+CAREER-131,Food Scientist,Check labelling and standards,authored,synthetic,true
+CAREER-131,Food Scientist,Keep quality records,authored,synthetic,true
+CAREER-132,Food Safety Officer,"Inspect factories, kitchens and markets",authored,synthetic,true
+CAREER-132,Food Safety Officer,Audit food safety systems,authored,synthetic,true
+CAREER-132,Food Safety Officer,Take samples for testing,authored,synthetic,true
+CAREER-132,Food Safety Officer,Train food handlers,authored,synthetic,true
+CAREER-132,Food Safety Officer,Investigate complaints and outbreaks,authored,synthetic,true
+CAREER-132,Food Safety Officer,Check labelling and traceability,authored,synthetic,true
+CAREER-132,Food Safety Officer,Write inspection reports,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,"Advise fish farmers on ponds, feed and stocking",authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Monitor water quality,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Manage hatcheries and fingerlings,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Collect catch and landing data,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Enforce fishing rules,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Inspect fish quality,authored,synthetic,true
+CAREER-133,Fisheries and Aquaculture Officer,Train beach and farmer groups,authored,synthetic,true
+CAREER-134,Forestry Officer,Plan planting and harvesting,authored,synthetic,true
+CAREER-134,Forestry Officer,Manage tree nurseries,authored,synthetic,true
+CAREER-134,Forestry Officer,Patrol and protect forests,authored,synthetic,true
+CAREER-134,Forestry Officer,Measure trees and estimate timber,authored,synthetic,true
+CAREER-134,Forestry Officer,Work with community forest associations,authored,synthetic,true
+CAREER-134,Forestry Officer,Prevent and fight forest fires,authored,synthetic,true
+CAREER-134,Forestry Officer,Issue permits and write reports,authored,synthetic,true
+CAREER-135,Environmental Consultant,Visit sites and collect baseline data,authored,synthetic,true
+CAREER-135,Environmental Consultant,Assess a project's environmental effects,authored,synthetic,true
+CAREER-135,Environmental Consultant,Consult affected communities,authored,synthetic,true
+CAREER-135,Environmental Consultant,Write impact assessment and audit reports,authored,synthetic,true
+CAREER-135,Environmental Consultant,Recommend mitigation,authored,synthetic,true
+CAREER-135,Environmental Consultant,Help clients obtain licences,authored,synthetic,true
+CAREER-135,Environmental Consultant,Monitor compliance,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Analyse climate data and projections,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Assess climate risks to communities and sectors,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Calculate emissions,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Write policy briefs and proposals,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Support adaptation plans,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Track climate finance,authored,synthetic,true
+CAREER-136,Climate Change Analyst,Report against national commitments,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Patrol and protect wildlife areas,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Monitor and count animals,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Respond to human-wildlife conflict,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Work with communities on conservation,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Collect ecological data,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Guide and educate visitors,authored,synthetic,true
+CAREER-137,Wildlife Conservation Officer,Write patrol and monitoring reports,authored,synthetic,true
+CAREER-138,Water Resources Officer,Measure river flows and groundwater levels,authored,synthetic,true
+CAREER-138,Water Resources Officer,Test water quality,authored,synthetic,true
+CAREER-138,Water Resources Officer,Assess water permit applications,authored,synthetic,true
+CAREER-138,Water Resources Officer,Plan catchment protection,authored,synthetic,true
+CAREER-138,Water Resources Officer,Work with water user associations,authored,synthetic,true
+CAREER-138,Water Resources Officer,Analyse hydrological data,authored,synthetic,true
+CAREER-138,Water Resources Officer,Report on water availability,authored,synthetic,true
+CAREER-139,Agricultural Economist,Collect farm and market data,authored,synthetic,true
+CAREER-139,Agricultural Economist,"Analyse prices, costs and profitability",authored,synthetic,true
+CAREER-139,Agricultural Economist,Evaluate agricultural programmes,authored,synthetic,true
+CAREER-139,Agricultural Economist,Write policy briefs and reports,authored,synthetic,true
+CAREER-139,Agricultural Economist,Forecast production and trade,authored,synthetic,true
+CAREER-139,Agricultural Economist,Advise government and organisations,authored,synthetic,true
+CAREER-139,Agricultural Economist,Present findings,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Fly drones to map and scout fields,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Install and maintain sensors,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Process images into crop health maps,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Set up GPS guidance on machinery,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Analyse farm data,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Train farmers on the technology,authored,synthetic,true
+CAREER-140,Precision Agriculture Technician,Troubleshoot devices,authored,synthetic,true
+CAREER-141,Waste Management Officer,Plan collection routes and schedules,authored,synthetic,true
+CAREER-141,Waste Management Officer,Supervise collection crews and contractors,authored,synthetic,true
+CAREER-141,Waste Management Officer,Run sorting and recycling programmes,authored,synthetic,true
+CAREER-141,Waste Management Officer,Inspect disposal sites,authored,synthetic,true
+CAREER-141,Waste Management Officer,Enforce waste regulations,authored,synthetic,true
+CAREER-141,Waste Management Officer,Educate the public,authored,synthetic,true
+CAREER-141,Waste Management Officer,Report on tonnages and costs,authored,synthetic,true
 CAREER-142,Journalist,Develop ideas and briefs for news reporting,category_default,synthetic,true
 CAREER-142,Journalist,Produce work to a deadline,category_default,synthetic,true
 CAREER-142,Journalist,Revise work after feedback,category_default,synthetic,true
@@ -2244,144 +2279,167 @@ CAREER-345,Legal Technologist,Train lawyers on new tools,authored,synthetic,true
 CAREER-345,Legal Technologist,Manage legal data and knowledge bases,authored,synthetic,true
 CAREER-345,Legal Technologist,Test AI tools on legal tasks,authored,synthetic,true
 CAREER-345,Legal Technologist,Measure time and cost savings,authored,synthetic,true
-CAREER-346,Examinations Officer,Plan and deliver lessons or sessions in assessment administration,category_default,synthetic,true
-CAREER-346,Examinations Officer,Assess learners and give feedback,category_default,synthetic,true
-CAREER-346,Examinations Officer,Keep records of progress,category_default,synthetic,true
-CAREER-346,Examinations Officer,Support learners with different needs,category_default,synthetic,true
-CAREER-346,Examinations Officer,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-346,Examinations Officer,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-347,Education Researcher,Plan and deliver lessons or sessions in education research,category_default,synthetic,true
-CAREER-347,Education Researcher,Assess learners and give feedback,category_default,synthetic,true
-CAREER-347,Education Researcher,Keep records of progress,category_default,synthetic,true
-CAREER-347,Education Researcher,Support learners with different needs,category_default,synthetic,true
-CAREER-347,Education Researcher,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-347,Education Researcher,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-348,Sports Coach and PE Teacher,Plan and deliver lessons or sessions in physical education,category_default,synthetic,true
-CAREER-348,Sports Coach and PE Teacher,Assess learners and give feedback,category_default,synthetic,true
-CAREER-348,Sports Coach and PE Teacher,Keep records of progress,category_default,synthetic,true
-CAREER-348,Sports Coach and PE Teacher,Support learners with different needs,category_default,synthetic,true
-CAREER-348,Sports Coach and PE Teacher,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-348,Sports Coach and PE Teacher,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-349,Music Teacher,Plan and deliver lessons or sessions in music education,category_default,synthetic,true
-CAREER-349,Music Teacher,Assess learners and give feedback,category_default,synthetic,true
-CAREER-349,Music Teacher,Keep records of progress,category_default,synthetic,true
-CAREER-349,Music Teacher,Support learners with different needs,category_default,synthetic,true
-CAREER-349,Music Teacher,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-349,Music Teacher,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-350,STEM Educator,Plan and deliver lessons or sessions in science and technology learning,category_default,synthetic,true
-CAREER-350,STEM Educator,Assess learners and give feedback,category_default,synthetic,true
-CAREER-350,STEM Educator,Keep records of progress,category_default,synthetic,true
-CAREER-350,STEM Educator,Support learners with different needs,category_default,synthetic,true
-CAREER-350,STEM Educator,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-350,STEM Educator,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-351,Sign Language Interpreter,Plan and deliver lessons or sessions in deaf education and access,category_default,synthetic,true
-CAREER-351,Sign Language Interpreter,Assess learners and give feedback,category_default,synthetic,true
-CAREER-351,Sign Language Interpreter,Keep records of progress,category_default,synthetic,true
-CAREER-351,Sign Language Interpreter,Support learners with different needs,category_default,synthetic,true
-CAREER-351,Sign Language Interpreter,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-351,Sign Language Interpreter,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,Plan and deliver lessons or sessions in school standards,category_default,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,Assess learners and give feedback,category_default,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,Keep records of progress,category_default,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,Support learners with different needs,category_default,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-353,Dean of Students,Plan and deliver lessons or sessions in student affairs,category_default,synthetic,true
-CAREER-353,Dean of Students,Assess learners and give feedback,category_default,synthetic,true
-CAREER-353,Dean of Students,Keep records of progress,category_default,synthetic,true
-CAREER-353,Dean of Students,Support learners with different needs,category_default,synthetic,true
-CAREER-353,Dean of Students,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-353,Dean of Students,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-354,E-learning Content Developer,Plan and deliver lessons or sessions in digital learning content,category_default,synthetic,true
-CAREER-354,E-learning Content Developer,Assess learners and give feedback,category_default,synthetic,true
-CAREER-354,E-learning Content Developer,Keep records of progress,category_default,synthetic,true
-CAREER-354,E-learning Content Developer,Support learners with different needs,category_default,synthetic,true
-CAREER-354,E-learning Content Developer,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-354,E-learning Content Developer,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-355,Career Guidance Officer,Plan and deliver lessons or sessions in career services,category_default,synthetic,true
-CAREER-355,Career Guidance Officer,Assess learners and give feedback,category_default,synthetic,true
-CAREER-355,Career Guidance Officer,Keep records of progress,category_default,synthetic,true
-CAREER-355,Career Guidance Officer,Support learners with different needs,category_default,synthetic,true
-CAREER-355,Career Guidance Officer,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-355,Career Guidance Officer,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-356,Admissions Officer,Plan and deliver lessons or sessions in student recruitment,category_default,synthetic,true
-CAREER-356,Admissions Officer,Assess learners and give feedback,category_default,synthetic,true
-CAREER-356,Admissions Officer,Keep records of progress,category_default,synthetic,true
-CAREER-356,Admissions Officer,Support learners with different needs,category_default,synthetic,true
-CAREER-356,Admissions Officer,"Work with parents, colleagues and the community",category_default,synthetic,true
-CAREER-356,Admissions Officer,Take part in co-curricular activities,category_default,synthetic,true
-CAREER-357,Dairy Technologist,Visit farms or field sites for milk processing,category_default,synthetic,true
-CAREER-357,Dairy Technologist,Collect samples and record data,category_default,synthetic,true
-CAREER-357,Dairy Technologist,Advise farmers or communities,category_default,synthetic,true
-CAREER-357,Dairy Technologist,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-357,Dairy Technologist,Write reports,category_default,synthetic,true
-CAREER-357,Dairy Technologist,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-358,Poultry Farm Manager,Visit farms or field sites for poultry production,category_default,synthetic,true
-CAREER-358,Poultry Farm Manager,Collect samples and record data,category_default,synthetic,true
-CAREER-358,Poultry Farm Manager,Advise farmers or communities,category_default,synthetic,true
-CAREER-358,Poultry Farm Manager,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-358,Poultry Farm Manager,Write reports,category_default,synthetic,true
-CAREER-358,Poultry Farm Manager,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-359,Apiculturist,Visit farms or field sites for beekeeping,category_default,synthetic,true
-CAREER-359,Apiculturist,Collect samples and record data,category_default,synthetic,true
-CAREER-359,Apiculturist,Advise farmers or communities,category_default,synthetic,true
-CAREER-359,Apiculturist,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-359,Apiculturist,Write reports,category_default,synthetic,true
-CAREER-359,Apiculturist,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-360,Irrigation Technician,Visit farms or field sites for irrigation systems,category_default,synthetic,true
-CAREER-360,Irrigation Technician,Collect samples and record data,category_default,synthetic,true
-CAREER-360,Irrigation Technician,Advise farmers or communities,category_default,synthetic,true
-CAREER-360,Irrigation Technician,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-360,Irrigation Technician,Write reports,category_default,synthetic,true
-CAREER-360,Irrigation Technician,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-361,Seed Technologist,Visit farms or field sites for seed production,category_default,synthetic,true
-CAREER-361,Seed Technologist,Collect samples and record data,category_default,synthetic,true
-CAREER-361,Seed Technologist,Advise farmers or communities,category_default,synthetic,true
-CAREER-361,Seed Technologist,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-361,Seed Technologist,Write reports,category_default,synthetic,true
-CAREER-361,Seed Technologist,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-362,Range Management Officer,Visit farms or field sites for rangelands and pastoral systems,category_default,synthetic,true
-CAREER-362,Range Management Officer,Collect samples and record data,category_default,synthetic,true
-CAREER-362,Range Management Officer,Advise farmers or communities,category_default,synthetic,true
-CAREER-362,Range Management Officer,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-362,Range Management Officer,Write reports,category_default,synthetic,true
-CAREER-362,Range Management Officer,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-363,Coffee and Tea Quality Controller,Visit farms or field sites for beverage crop quality,category_default,synthetic,true
-CAREER-363,Coffee and Tea Quality Controller,Collect samples and record data,category_default,synthetic,true
-CAREER-363,Coffee and Tea Quality Controller,Advise farmers or communities,category_default,synthetic,true
-CAREER-363,Coffee and Tea Quality Controller,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-363,Coffee and Tea Quality Controller,Write reports,category_default,synthetic,true
-CAREER-363,Coffee and Tea Quality Controller,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-364,Environmental Educator,Visit farms or field sites for environmental awareness,category_default,synthetic,true
-CAREER-364,Environmental Educator,Collect samples and record data,category_default,synthetic,true
-CAREER-364,Environmental Educator,Advise farmers or communities,category_default,synthetic,true
-CAREER-364,Environmental Educator,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-364,Environmental Educator,Write reports,category_default,synthetic,true
-CAREER-364,Environmental Educator,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-365,Carbon Project Officer,Visit farms or field sites for carbon markets,category_default,synthetic,true
-CAREER-365,Carbon Project Officer,Collect samples and record data,category_default,synthetic,true
-CAREER-365,Carbon Project Officer,Advise farmers or communities,category_default,synthetic,true
-CAREER-365,Carbon Project Officer,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-365,Carbon Project Officer,Write reports,category_default,synthetic,true
-CAREER-365,Carbon Project Officer,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-366,Plant Pathologist,Visit farms or field sites for crop diseases,category_default,synthetic,true
-CAREER-366,Plant Pathologist,Collect samples and record data,category_default,synthetic,true
-CAREER-366,Plant Pathologist,Advise farmers or communities,category_default,synthetic,true
-CAREER-366,Plant Pathologist,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-366,Plant Pathologist,Write reports,category_default,synthetic,true
-CAREER-366,Plant Pathologist,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-367,Livestock Production Officer,Visit farms or field sites for livestock systems,category_default,synthetic,true
-CAREER-367,Livestock Production Officer,Collect samples and record data,category_default,synthetic,true
-CAREER-367,Livestock Production Officer,Advise farmers or communities,category_default,synthetic,true
-CAREER-367,Livestock Production Officer,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-367,Livestock Production Officer,Write reports,category_default,synthetic,true
-CAREER-367,Livestock Production Officer,Follow safety and environmental rules,category_default,synthetic,true
-CAREER-368,Greenhouse Manager,Visit farms or field sites for protected cultivation,category_default,synthetic,true
-CAREER-368,Greenhouse Manager,Collect samples and record data,category_default,synthetic,true
-CAREER-368,Greenhouse Manager,Advise farmers or communities,category_default,synthetic,true
-CAREER-368,Greenhouse Manager,Plan and monitor activities through the season,category_default,synthetic,true
-CAREER-368,Greenhouse Manager,Write reports,category_default,synthetic,true
-CAREER-368,Greenhouse Manager,Follow safety and environmental rules,category_default,synthetic,true
+CAREER-346,Examinations Officer,Register candidates for exams,authored,synthetic,true
+CAREER-346,Examinations Officer,Prepare timetables and rooms,authored,synthetic,true
+CAREER-346,Examinations Officer,Receive and secure exam papers,authored,synthetic,true
+CAREER-346,Examinations Officer,Coordinate invigilators,authored,synthetic,true
+CAREER-346,Examinations Officer,Process marks and results,authored,synthetic,true
+CAREER-346,Examinations Officer,Handle irregularities and appeals,authored,synthetic,true
+CAREER-346,Examinations Officer,Issue transcripts and certificates,authored,synthetic,true
+CAREER-347,Education Researcher,Design studies and research tools,authored,synthetic,true
+CAREER-347,Education Researcher,Collect data in schools,authored,synthetic,true
+CAREER-347,Education Researcher,Analyse test scores and survey data,authored,synthetic,true
+CAREER-347,Education Researcher,Write reports and policy briefs,authored,synthetic,true
+CAREER-347,Education Researcher,Present findings,authored,synthetic,true
+CAREER-347,Education Researcher,Review the research literature,authored,synthetic,true
+CAREER-347,Education Researcher,Advise programmes on evidence,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Plan PE lessons and training sessions,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Teach skills and rules,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Coach school teams,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Organise fixtures and competitions,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Keep learners safe and treat minor injuries,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Spot and develop talent,authored,synthetic,true
+CAREER-348,Sports Coach and PE Teacher,Maintain equipment,authored,synthetic,true
+CAREER-349,Music Teacher,Teach music theory and practice,authored,synthetic,true
+CAREER-349,Music Teacher,Give instrument or voice lessons,authored,synthetic,true
+CAREER-349,Music Teacher,Train choirs and bands,authored,synthetic,true
+CAREER-349,Music Teacher,Prepare learners for festivals and graded exams,authored,synthetic,true
+CAREER-349,Music Teacher,Organise performances,authored,synthetic,true
+CAREER-349,Music Teacher,Care for instruments,authored,synthetic,true
+CAREER-349,Music Teacher,Assess progress,authored,synthetic,true
+CAREER-350,STEM Educator,Plan hands-on science and coding lessons,authored,synthetic,true
+CAREER-350,STEM Educator,Run experiments and build projects,authored,synthetic,true
+CAREER-350,STEM Educator,Teach block and text programming,authored,synthetic,true
+CAREER-350,STEM Educator,Coach teams for competitions,authored,synthetic,true
+CAREER-350,STEM Educator,Manage kits and lab safety,authored,synthetic,true
+CAREER-350,STEM Educator,Link lessons to real problems,authored,synthetic,true
+CAREER-350,STEM Educator,Track learners' skills,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Interpret between spoken language and sign language,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Prepare by reading lesson or meeting content,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,"Interpret in classes, meetings and events",authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Keep interpreting accurate and neutral,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Work in a team for long sessions,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Teach basic sign language,authored,synthetic,true
+CAREER-351,Sign Language Interpreter,Advise on access for deaf people,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Inspect schools and institutions,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Observe lessons,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,"Check records, safety and facilities",authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Assess against standards,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Write inspection reports,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Advise heads on improvement,authored,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Follow up on recommendations,authored,synthetic,true
+CAREER-353,Dean of Students,Handle student welfare cases,authored,synthetic,true
+CAREER-353,Dean of Students,Oversee clubs and student government,authored,synthetic,true
+CAREER-353,Dean of Students,Manage discipline processes,authored,synthetic,true
+CAREER-353,Dean of Students,Coordinate orientation and events,authored,synthetic,true
+CAREER-353,Dean of Students,Work with counsellors and security,authored,synthetic,true
+CAREER-353,Dean of Students,Respond to student emergencies,authored,synthetic,true
+CAREER-353,Dean of Students,Report to university management,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Turn storyboards into interactive lessons,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Record and edit video and audio,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Build quizzes and activities,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Publish courses to the learning platform,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Test on phones and computers,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Fix content errors,authored,synthetic,true
+CAREER-354,E-learning Content Developer,Update courses,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Advise students on career choices,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Review CVs and run mock interviews,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Organise career fairs and employer talks,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Find internship and job openings,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Run employability workshops,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Track where graduates go,authored,synthetic,true
+CAREER-355,Career Guidance Officer,Build employer partnerships,authored,synthetic,true
+CAREER-356,Admissions Officer,Answer enquiries from applicants,authored,synthetic,true
+CAREER-356,Admissions Officer,Process and verify applications,authored,synthetic,true
+CAREER-356,Admissions Officer,Visit schools and fairs to recruit,authored,synthetic,true
+CAREER-356,Admissions Officer,Issue admission letters,authored,synthetic,true
+CAREER-356,Admissions Officer,Guide students through registration,authored,synthetic,true
+CAREER-356,Admissions Officer,Track enrolment numbers,authored,synthetic,true
+CAREER-356,Admissions Officer,Advise on entry requirements and fees,authored,synthetic,true
+CAREER-357,Dairy Technologist,Test raw milk on arrival,authored,synthetic,true
+CAREER-357,Dairy Technologist,Run pasteurisers and processing lines,authored,synthetic,true
+CAREER-357,Dairy Technologist,"Make yoghurt, cheese and other products",authored,synthetic,true
+CAREER-357,Dairy Technologist,Clean and sanitise equipment,authored,synthetic,true
+CAREER-357,Dairy Technologist,Test finished products,authored,synthetic,true
+CAREER-357,Dairy Technologist,Record batches,authored,synthetic,true
+CAREER-357,Dairy Technologist,Fix quality problems,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Plan flocks and placement,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,"Manage feeding, water and lighting",authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Follow vaccination schedules,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Enforce biosecurity,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,"Record mortality, feed use and egg numbers",authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Sell birds and eggs,authored,synthetic,true
+CAREER-358,Poultry Farm Manager,Supervise workers,authored,synthetic,true
+CAREER-359,Apiculturist,Site and set up hives,authored,synthetic,true
+CAREER-359,Apiculturist,Inspect colonies,authored,synthetic,true
+CAREER-359,Apiculturist,Harvest honey,authored,synthetic,true
+CAREER-359,Apiculturist,"Process, grade and package honey",authored,synthetic,true
+CAREER-359,Apiculturist,Control pests and diseases,authored,synthetic,true
+CAREER-359,Apiculturist,Train farmers in beekeeping,authored,synthetic,true
+CAREER-359,Apiculturist,Sell honey and hive products,authored,synthetic,true
+CAREER-360,Irrigation Technician,Survey fields and water sources,authored,synthetic,true
+CAREER-360,Irrigation Technician,Design simple irrigation layouts,authored,synthetic,true
+CAREER-360,Irrigation Technician,"Install pipes, pumps and emitters",authored,synthetic,true
+CAREER-360,Irrigation Technician,Test and adjust systems,authored,synthetic,true
+CAREER-360,Irrigation Technician,Repair leaks and blockages,authored,synthetic,true
+CAREER-360,Irrigation Technician,Schedule irrigation,authored,synthetic,true
+CAREER-360,Irrigation Technician,Train farmers to operate and maintain systems,authored,synthetic,true
+CAREER-361,Seed Technologist,Plan seed crops with growers,authored,synthetic,true
+CAREER-361,Seed Technologist,Inspect seed fields,authored,synthetic,true
+CAREER-361,Seed Technologist,Sample and test seed for germination and purity,authored,synthetic,true
+CAREER-361,Seed Technologist,"Process, treat and pack seed",authored,synthetic,true
+CAREER-361,Seed Technologist,Keep seed lots traceable,authored,synthetic,true
+CAREER-361,Seed Technologist,Meet certification rules,authored,synthetic,true
+CAREER-361,Seed Technologist,Manage seed stores,authored,synthetic,true
+CAREER-362,Range Management Officer,Assess pasture condition,authored,synthetic,true
+CAREER-362,Range Management Officer,Plan grazing with pastoral communities,authored,synthetic,true
+CAREER-362,Range Management Officer,Reseed and rehabilitate degraded land,authored,synthetic,true
+CAREER-362,Range Management Officer,Monitor drought indicators,authored,synthetic,true
+CAREER-362,Range Management Officer,Map water points and grazing areas,authored,synthetic,true
+CAREER-362,Range Management Officer,Support livestock marketing,authored,synthetic,true
+CAREER-362,Range Management Officer,Write monitoring reports,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Sample and grade coffee or tea,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Cup or taste and score lots,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Monitor factory processing steps,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Check moisture and defects,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Advise farmers and factories on quality,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Prepare samples for buyers and auctions,authored,synthetic,true
+CAREER-363,Coffee and Tea Quality Controller,Keep quality records,authored,synthetic,true
+CAREER-364,Environmental Educator,Plan and deliver environmental lessons and talks,authored,synthetic,true
+CAREER-364,Environmental Educator,Run school eco-clubs and tree planting,authored,synthetic,true
+CAREER-364,Environmental Educator,Develop posters and learning materials,authored,synthetic,true
+CAREER-364,Environmental Educator,Lead nature walks,authored,synthetic,true
+CAREER-364,Environmental Educator,Organise clean-ups and campaigns,authored,synthetic,true
+CAREER-364,Environmental Educator,Train teachers,authored,synthetic,true
+CAREER-364,Environmental Educator,Evaluate programmes,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Collect field data for carbon projects,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Calculate emission reductions,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Prepare project documents for certification,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Work with communities on agreements and benefits,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Support verification audits,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Track credit issuance,authored,synthetic,true
+CAREER-365,Carbon Project Officer,Report to buyers and funders,authored,synthetic,true
+CAREER-366,Plant Pathologist,Diagnose crop diseases from samples,authored,synthetic,true
+CAREER-366,Plant Pathologist,Culture and identify pathogens,authored,synthetic,true
+CAREER-366,Plant Pathologist,Survey fields for outbreaks,authored,synthetic,true
+CAREER-366,Plant Pathologist,Recommend control measures,authored,synthetic,true
+CAREER-366,Plant Pathologist,Test fungicides and resistant varieties,authored,synthetic,true
+CAREER-366,Plant Pathologist,Inspect plant imports and exports,authored,synthetic,true
+CAREER-366,Plant Pathologist,Advise farmers and extension staff,authored,synthetic,true
+CAREER-367,Livestock Production Officer,"Advise farmers on feeding, breeding and housing",authored,synthetic,true
+CAREER-367,Livestock Production Officer,Formulate rations,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Promote fodder production,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Support breeding and record keeping,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Train farmer groups,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Collect livestock data,authored,synthetic,true
+CAREER-367,Livestock Production Officer,Link farmers to markets,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Plan crops and planting cycles,authored,synthetic,true
+CAREER-368,Greenhouse Manager,"Control temperature, humidity and ventilation",authored,synthetic,true
+CAREER-368,Greenhouse Manager,Manage fertigation,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Scout and control pests and diseases,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Supervise workers and harvest,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Maintain structures,authored,synthetic,true
+CAREER-368,Greenhouse Manager,Track yields and costs,authored,synthetic,true
 CAREER-369,Documentary Filmmaker,Develop ideas and briefs for non-fiction film,category_default,synthetic,true
 CAREER-369,Documentary Filmmaker,Produce work to a deadline,category_default,synthetic,true
 CAREER-369,Documentary Filmmaker,Revise work after feedback,category_default,synthetic,true

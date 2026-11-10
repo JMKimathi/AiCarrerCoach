@@ -1,30 +1,32 @@
 {
   "careers": 452,
-  "title_rows": 14234,
+  "title_rows": 14927,
   "titles_per_career_min": 26,
   "titles_per_career_max": 39,
   "titles_by_type": {
-    "alternative": 1050,
-    "specialism": 1050,
-    "entry": 3126,
+    "alternative": 1398,
+    "specialism": 1398,
+    "entry": 3124,
     "progression": 1806,
-    "leadership": 2702,
+    "leadership": 2701,
     "beyond": 2709,
     "lateral": 1791
   },
-  "task_rows": 2887,
-  "tool_rows": 2442,
-  "related_rows": 4518,
+  "task_rows": 2945,
+  "tool_rows": 2500,
+  "related_rows": 4519,
   "careers_with_no_related_roles": 0,
   "work_setting_rows": 4972,
-  "roles_with_authored_detail": 175,
-  "roles_using_category_defaults": 277,
+  "roles_with_authored_detail": 233,
+  "roles_using_category_defaults": 219,
   "authored_roles_by_category": {
     "Technology and Data": 30,
     "Engineering and Built Environment": 29,
     "Health and Medicine": 30,
     "Banking and Finance": 29,
     "Business and Entrepreneurship": 30,
-    "Law and Governance": 27
+    "Law and Governance": 27,
+    "Education and Teaching": 28,
+    "Agriculture and Environment": 30
   }
 }
