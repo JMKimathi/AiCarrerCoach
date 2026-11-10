@@ -110,6 +110,27 @@ class CareerAssessmentRecord(Base):
     user = relationship("User", backref="career_assessments")
 
 
+class MockInterview(Base):
+    """One practice interview: the planned questions, the transcript so far and the feedback."""
+    __tablename__ = "mock_interviews"
+
+    interview_id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    user_id = Column(String(36), ForeignKey("users.user_id", ondelete="CASCADE"), nullable=False, index=True)
+    career_id = Column(String(20), nullable=False)
+    role_title = Column(String(150), nullable=False)
+    opportunity_type = Column(String(40), nullable=True)
+    status = Column(String(20), nullable=False, default="in_progress")  # 'in_progress' or 'completed'
+    plan_json = Column(Text, nullable=False)
+    transcript_json = Column(Text, nullable=False)
+    current_index = Column(Integer, nullable=False, default=0)
+    follow_ups_used = Column(Integer, nullable=False, default=0)
+    feedback_text = Column(Text, nullable=True)
+    feedback_generated_by = Column(String(20), nullable=True)  # 'gemini' or 'built-in'
+    created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+    completed_at = Column(DateTime, nullable=True)
+    user = relationship("User", backref="mock_interviews")
+
+
 def get_db() -> Generator[Session, None, None]:
     db = SessionLocal()
     try:
