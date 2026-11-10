@@ -20,6 +20,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -39,6 +40,7 @@ import com.aicareercoach.mobile.data.UserSession
 import com.aicareercoach.mobile.data.network.ApiClient
 import com.aicareercoach.mobile.ui.screens.admin.AdminAnalyticsScreen
 import com.aicareercoach.mobile.ui.screens.admin.AdminDashboardScreen
+import com.aicareercoach.mobile.ui.screens.admin.AdminEditResourceScreen
 import com.aicareercoach.mobile.ui.screens.admin.AdminResourcesScreen
 import com.aicareercoach.mobile.ui.screens.admin.AdminUploadScreen
 import com.aicareercoach.mobile.ui.screens.admin.AdminUsersScreen
@@ -59,6 +61,7 @@ import com.aicareercoach.mobile.ui.screens.student.FeedbackScreen
 import com.aicareercoach.mobile.ui.screens.student.ResourceDetailScreen
 import com.aicareercoach.mobile.ui.screens.student.StudentDashboardScreen
 import com.aicareercoach.mobile.ui.screens.student.StudentProfileScreen
+import kotlinx.coroutines.launch
 
 object Routes {
     const val Landing = "landing"
@@ -86,8 +89,10 @@ object Routes {
     const val AdminUsers = "adminUsers"
     const val AdminAnalytics = "adminAnalytics"
     const val AdminUpload = "adminUpload"
+    const val AdminEditResource = "adminEditResource/{id}"
 
     fun resourceDetail(id: String) = "resourceDetail/$id"
+    fun adminEditResource(id: String) = "adminEditResource/$id"
     fun careerDetail(id: String) = "careerDetail/$id"
     fun cvBuilder(id: String) = "cvBuilder/$id"
     fun mockInterview(id: String) = "mockInterview/$id"
@@ -213,6 +218,11 @@ fun AppNavigation(
                 token = current.token,
                 resources = resources,
                 onResourceAdded = { resources.add(0, it) },
+                onResourceUpdated = { updated ->
+                    val index = resources.indexOfFirst { it.id == updated.id }
+                    if (index >= 0) resources[index] = updated
+                },
+                onResourceRemoved = { removed -> resources.removeAll { it.id == removed.id } },
                 onLogOut = { logOut(Routes.Admin) }
             ) else LandingScreen(
                 onGetStarted = { navController.navigate("${Routes.Auth}?register=true") },
@@ -404,8 +414,11 @@ private fun AdminHome(
     token: String,
     resources: List<CareerResource>,
     onResourceAdded: (CareerResource) -> Unit,
+    onResourceUpdated: (CareerResource) -> Unit,
+    onResourceRemoved: (CareerResource) -> Unit,
     onLogOut: () -> Unit
 ) {
+    val scope = rememberCoroutineScope()
     var overview by remember { mutableStateOf<AdminOverview?>(null) }
     val students = remember { mutableStateListOf<StudentAccount>() }
     LaunchedEffect(token) {
@@ -453,11 +466,50 @@ private fun AdminHome(
             composable(Routes.AdminResources) {
                 AdminResourcesScreen(
                     resources = resources,
-                    onUpload = { tabNav.navigate(Routes.AdminUpload) }
+                    onUpload = { tabNav.navigate(Routes.AdminUpload) },
+                    onEdit = { resource -> tabNav.navigate(Routes.adminEditResource(resource.id)) },
+                    onDelete = { resource ->
+                        scope.launch {
+                            if (ApiClient.deleteResource(token, resource.id)) onResourceRemoved(resource)
+                        }
+                    }
                 )
             }
             composable(Routes.AdminUsers) {
-                AdminUsersScreen(students = students)
+                AdminUsersScreen(
+                    students = students,
+                    onToggleActive = { student ->
+                        scope.launch {
+                            val makeActive = student.status != "Active"
+                            if (ApiClient.setStudentActive(token, student.userId, makeActive)) {
+                                val index = students.indexOfFirst { it.userId == student.userId }
+                                if (index >= 0) {
+                                    students[index] = student.copy(status = if (makeActive) "Active" else "Inactive")
+                                }
+                            }
+                        }
+                    }
+                )
+            }
+            composable(
+                route = Routes.AdminEditResource,
+                arguments = listOf(navArgument("id") { type = NavType.StringType })
+            ) { entry ->
+                val id = entry.arguments?.getString("id")
+                val resource = resources.find { it.id == id }
+                if (resource != null) AdminEditResourceScreen(
+                    token = token,
+                    resource = resource,
+                    onBack = { tabNav.popBackStack() },
+                    onSaved = { updated ->
+                        onResourceUpdated(updated)
+                        tabNav.popBackStack()
+                    }
+                ) else SimpleInfoScreen(
+                    title = "Resource unavailable",
+                    body = "This resource could not be loaded. Go back and try again.",
+                    onBack = { tabNav.popBackStack() }
+                )
             }
             composable(Routes.AdminAnalytics) {
                 AdminAnalyticsScreen(overview = overview)
