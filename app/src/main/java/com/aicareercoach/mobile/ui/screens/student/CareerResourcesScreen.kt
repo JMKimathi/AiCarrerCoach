@@ -45,7 +45,7 @@ fun CareerResourcesScreen(
     Column(modifier = Modifier.fillMaxSize().background(SurfaceAlt)) {
         AppTopBar(
             title = "Career Resources",
-            subtitle = "Curated content backing your AI coach",
+            subtitle = "Guides on CVs, interviews and career paths",
             showProfile = false
         )
 

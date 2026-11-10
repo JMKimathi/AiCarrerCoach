@@ -113,8 +113,8 @@ fun AICareerChatScreen(
             }
             Spacer(Modifier.width(10.dp))
             Column {
-                Text("AI Career Coach", style = MaterialTheme.typography.titleMedium)
-                Text("Answers cite your knowledge base", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                Text("Career Coach", style = MaterialTheme.typography.titleMedium)
+                Text("Ask about careers, CVs and interviews", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
             }
         }
         HorizontalDivider()
