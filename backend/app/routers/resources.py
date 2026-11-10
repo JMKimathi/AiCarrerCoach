@@ -72,3 +72,34 @@ def create_resource(payload: ResourceCreate, db: Session = Depends(get_db), _adm
     db.commit()
     db.refresh(new_res)
     return ResourceDetail.from_orm(new_res)
+
+
+@router.put("/{resource_id}", response_model=ResourceDetail)
+def update_resource(resource_id: str, payload: ResourceCreate, db: Session = Depends(get_db),
+                    _admin=Depends(require_admin)):
+    """Replace a resource's title, category and content. Its resource_id never changes."""
+    res = db.query(CareerResource).filter(CareerResource.resource_id == resource_id).first()
+    if not res:
+        raise HTTPException(status_code=404, detail="Career resource not found.")
+    title = payload.title.strip()
+    category = payload.category.strip()
+    content = payload.content.strip()
+    if len(title) < 3 or len(category) < 2 or len(content) < 10:
+        raise HTTPException(status_code=422, detail="Title, category, and content are required")
+    res.title = title
+    res.category = category
+    res.content = content
+    db.commit()
+    db.refresh(res)
+    return ResourceDetail.from_orm(res)
+
+
+@router.delete("/{resource_id}", status_code=204)
+def delete_resource(resource_id: str, db: Session = Depends(get_db), _admin=Depends(require_admin)):
+    """Remove a resource from the database. Passages already built into the search index stay until
+    the pipeline is rebuilt."""
+    res = db.query(CareerResource).filter(CareerResource.resource_id == resource_id).first()
+    if not res:
+        raise HTTPException(status_code=404, detail="Career resource not found.")
+    db.delete(res)
+    db.commit()
