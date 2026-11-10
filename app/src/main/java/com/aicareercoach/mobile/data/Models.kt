@@ -48,13 +48,84 @@ data class CareerPathMatch(
     val matchingEvidence: List<String>,
     val skillsToExplore: List<String>,
     val nextSteps: List<String>,
-    val relatedResources: List<String>
+    val relatedResources: List<String>,
+    val roleSummary: String = "",
+    val entryLevelRoles: List<String> = emptyList(),
+    val applicationChannelTypes: List<String> = emptyList(),
+    val sampleInterviewQuestions: List<String> = emptyList(),
+    val cvTailoringGuidance: String = "",
+    val progressionOptions: List<String> = emptyList(),
+    val requirementsAndQualificationNotes: String = ""
 )
 
 data class CareerAssessmentResult(
     val profileCompleteness: String,
     val summary: String,
     val recommendations: List<CareerPathMatch>,
+    val informationNote: String
+)
+
+data class CareerCategory(val name: String, val careerCount: Int)
+
+data class CareerSummary(
+    val careerId: String,
+    val roleTitle: String,
+    val category: String,
+    val specialisation: String,
+    val coreSkills: List<String>,
+    val commonlyRegulated: Boolean
+)
+
+data class CareerPage(val total: Int, val items: List<CareerSummary>)
+
+data class PathwayStage(
+    val stageNumber: Int,
+    val stageName: String,
+    val exampleTitle: String,
+    val opportunityType: String,
+    val typicalTiming: String,
+    val whatToBuild: String
+)
+
+data class OpportunityTemplate(
+    val opportunityType: String,
+    val market: String,
+    val exampleTitle: String,
+    val employerType: String,
+    val eligibility: String,
+    val typicalDuration: String,
+    val typicalTiming: String,
+    val applicantsUsuallyShow: String,
+    val documentsUsuallyRequested: String,
+    val whereAdvertised: String,
+    val notes: String
+)
+
+data class OfficialSource(
+    val name: String,
+    val url: String,
+    val whatToCheck: String,
+    val roleSpecific: Boolean
+)
+
+data class CareerDetail(
+    val careerId: String,
+    val roleTitle: String,
+    val category: String,
+    val specialisation: String,
+    val description: String,
+    val commonlyRegulated: Boolean,
+    val coreSkills: List<String>,
+    val preferredSkills: List<String>,
+    val transferableSkills: List<String>,
+    val studyAreas: String,
+    val qualificationLevels: String,
+    val certifications: String,
+    val verifyWith: String,
+    val verificationNote: String,
+    val pathway: List<PathwayStage>,
+    val opportunities: List<OpportunityTemplate>,
+    val officialSources: List<OfficialSource>,
     val informationNote: String
 )
 
