@@ -368,6 +368,94 @@ def build_kesco_occupations(input_dir: Path, output_dir: Path) -> dict:
     }
 
 
+def build_career_catalogue(output_dir: Path) -> dict:
+    """Normalize available occupation sources into one traceable search catalogue.
+
+    O*NET and KeSCO are kept as separately attributed records: their codes are
+    not directly interchangeable, and a title similarity is not proof of a
+    formal occupation mapping. Fields absent from these datasets are recorded
+    as unavailable rather than filled with generated requirements.
+    """
+    output_path = output_dir / "career_catalogue.jsonl"
+    records = []
+    onet_path = output_dir / "onet_occupation_skills.jsonl"
+    if onet_path.is_file():
+        for line in onet_path.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            profile = json.loads(line)
+            code = str(profile.get("onet_soc_code", "")).strip()
+            title = str(profile.get("occupation_title", "")).strip()
+            if not code or not title:
+                continue
+            records.append({
+                "career_id": f"onet:{code}",
+                "occupation_title": title,
+                "alternate_titles": profile.get("job_titles", []),
+                "description": profile.get("description", ""),
+                "essential_skills": profile.get("essential_skills", []),
+                "software_skills": profile.get("software_skills", []),
+                "interests": profile.get("career_interests", []),
+                "specific_interests": profile.get("specific_interests", []),
+                "work_activities": profile.get("work_activities", []),
+                "preparation_reference": profile.get("job_zone", ""),
+                "source": {
+                    "dataset": "O*NET 31.0",
+                    "source_file": "O*NET occupation data and related skill/interest/activity files",
+                    "source_code": code,
+                    "geographic_scope": "United States occupational reference",
+                },
+            })
+
+    kesco_path = output_dir / "kesco_occupations.jsonl"
+    if kesco_path.is_file():
+        for line in kesco_path.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            occupation = json.loads(line)
+            code = str(occupation.get("kesco_code", "")).strip()
+            title = str(occupation.get("occupation_title", "")).strip()
+            if not code or not title:
+                continue
+            records.append({
+                "career_id": f"kesco:{code}:{re.sub(r'[^a-z0-9]+', '-', title.casefold()).strip('-')}",
+                "occupation_title": title,
+                "alternate_titles": [],
+                "description": "",
+                "essential_skills": [],
+                "software_skills": [],
+                "interests": [],
+                "specific_interests": [],
+                "work_activities": [],
+                "preparation_reference": "",
+                "classification_group": occupation.get("parent_title", ""),
+                "source": {
+                    "dataset": "Kenya Standard Classification of Occupations (KeSCO)",
+                    "source_file": occupation.get("source", "KeSCO Full Taxonomy"),
+                    "source_code": code,
+                    "geographic_scope": "Kenya occupation taxonomy",
+                },
+            })
+
+    records.sort(key=lambda item: (item["career_id"], item["occupation_title"].casefold()))
+    with output_path.open("w", encoding="utf-8", newline="\n") as handle:
+        for item in records:
+            handle.write(json.dumps(item, ensure_ascii=False) + "\n")
+    return {
+        "output": output_path.name,
+        "records": len(records),
+        "onet_records": sum(item["career_id"].startswith("onet:") for item in records),
+        "kesco_records": sum(item["career_id"].startswith("kesco:") for item in records),
+        "unavailable_from_current_sources": [
+            "Kenyan licensing and professional registration requirements",
+            "verified application destinations and current vacancies",
+            "sector-specific interview questions and CV examples",
+            "student career-success labels",
+        ],
+        "mapping_policy": "O*NET and KeSCO records remain separately attributed unless a verified crosswalk is supplied.",
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input-dir", type=Path, default=DEFAULT_INPUT_DIR)
@@ -395,8 +483,12 @@ def main() -> None:
     optional_onet_files = find_optional_onet_files(args.input_dir)
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
+    kesco_manifest = build_kesco_occupations(args.input_dir, args.output_dir)
+    onet_manifest = build_onet_profiles(args.input_dir, args.output_dir, optional_onet_files)
+    linkedin_manifest = build_linkedin_skill_demand(args.input_dir, args.output_dir)
+    catalogue_manifest = build_career_catalogue(args.output_dir)
     manifest = {
-        "pipeline_version": "career-data-build-v1",
+        "pipeline_version": "career-data-build-v2",
         "input_directory": str(args.input_dir),
         "output_directory": str(args.output_dir),
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -412,16 +504,17 @@ def main() -> None:
             category: {"filename": path.name, "size_bytes": path.stat().st_size}
             for category, path in optional_onet_files.items()
         },
-        "kesco": build_kesco_occupations(args.input_dir, args.output_dir),
-        "onet": build_onet_profiles(args.input_dir, args.output_dir, optional_onet_files),
-        "linkedin": build_linkedin_skill_demand(args.input_dir, args.output_dir),
+        "kesco": kesco_manifest,
+        "onet": onet_manifest,
+        "linkedin": linkedin_manifest,
+        "career_catalogue": catalogue_manifest,
         "not_included": [
             "job_descriptions.csv (separate global dataset; not merged)",
             "company and employee tables",
             "benefit and salary tables",
             "student profiles or assessment answers",
         ],
-        "interpretation": "KeSCO supplies Kenyan occupation titles and classification hierarchy, not current vacancy demand or student-fit labels. LinkedIn counts describe skills mentioned in postings. O*NET profiles describe U.S. occupational skill requirements, interests, activities, and preparation zones. None is a labeled student career-success dataset.",
+        "interpretation": "career_catalogue.jsonl is a normalized search catalogue, not a synthetic student training set. KeSCO supplies Kenyan occupation titles and classification hierarchy, not current vacancy demand or student-fit labels. LinkedIn counts describe skills mentioned in postings. O*NET profiles describe U.S. occupational skill requirements, interests, activities, and preparation zones. None is a labeled student career-success dataset.",
     }
     manifest_path = args.output_dir / "career_data_manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

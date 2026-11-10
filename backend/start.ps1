@@ -19,11 +19,11 @@ if (-not (Test-Path $venvPython)) {
 }
 
 $envContent = if (Test-Path $envFile) { Get-Content $envFile -Raw } else { "" }
-$secretLine = [regex]::Match($envContent, '(?m)^SECRET_KEY=([^\r\n]+)$')
+$secretLine = [regex]::Match($envContent, '(?m)^SECRET_KEY=([^\r\n]+)\r?$')
 if (-not $secretLine.Success -or $secretLine.Groups[1].Value.Length -lt 32 -or $secretLine.Groups[1].Value.StartsWith("replace-")) {
     $signingKey = & $venvPython -c "import secrets; print(secrets.token_urlsafe(48))"
     if ($secretLine.Success) {
-        $envContent = [regex]::Replace($envContent, '(?m)^SECRET_KEY=[^\r\n]*$', "SECRET_KEY=$signingKey")
+        $envContent = [regex]::Replace($envContent, '(?m)^SECRET_KEY=[^\r\n]*(?=\r?$)', "SECRET_KEY=$signingKey")
     } else {
         $envContent = $envContent.TrimEnd() + [Environment]::NewLine + "SECRET_KEY=$signingKey" + [Environment]::NewLine
     }

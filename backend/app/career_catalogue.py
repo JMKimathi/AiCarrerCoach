@@ -37,6 +37,14 @@ def _read_csv(name: str) -> list[dict]:
         return list(csv.DictReader(handle))
 
 
+def _read_optional_csv(name: str) -> list[dict]:
+    """Detail tables are optional so an older data folder still loads."""
+    return _read_csv(name) if (CAREERS_DIR / name).is_file() else []
+
+
+TITLE_TYPES = ("alternative", "specialism", "entry", "progression", "leadership", "beyond", "lateral")
+
+
 def _group(rows: list[dict]) -> dict[str, list[dict]]:
     grouped: dict[str, list[dict]] = defaultdict(list)
     for row in rows:
@@ -63,6 +71,11 @@ def load_catalogue() -> dict:
         "resources": _group(_read_csv("career_resources.csv")),
         "opportunities": _group(_read_csv("opportunity_templates.csv")),
         "questions": _group(_read_csv("interview_questions.csv")),
+        "titles": _group(_read_optional_csv("career_titles.csv")),
+        "tasks": _group(_read_optional_csv("career_tasks.csv")),
+        "tools": _group(_read_optional_csv("career_tools.csv")),
+        "related": _group(_read_optional_csv("career_related.csv")),
+        "settings": _group(_read_optional_csv("career_work_settings.csv")),
         "cv_templates": templates,
     }
 
@@ -104,6 +117,11 @@ def get_career(career_id: str) -> dict | None:
     for item in catalogue["skills"].get(career_id, []):
         skills[item["skill_type"]].append(item["skill"])
     education = catalogue["education"].get(career_id, {})
+    job_titles: dict[str, list[str]] = {title_type: [] for title_type in TITLE_TYPES}
+    for item in catalogue["titles"].get(career_id, []):
+        job_titles.setdefault(item["title_type"], []).append(item["title"])
+    task_rows = catalogue["tasks"].get(career_id, [])
+    work_settings = catalogue["settings"].get(career_id, [])
     return {
         "career_id": career_id,
         "role_title": row["role_title"],
@@ -135,6 +153,18 @@ def get_career(career_id: str) -> dict | None:
                 "where_advertised", "search_phrases", "notes")}
             for item in catalogue["opportunities"].get(career_id, [])
         ],
+        "job_titles": job_titles,
+        "day_to_day_tasks": [item["task"] for item in task_rows],
+        "tools": [item["tool"] for item in catalogue["tools"].get(career_id, [])],
+        "detail_is_role_specific": any(item["detail_source"] == "authored" for item in task_rows),
+        "related_careers": [
+            {"career_id": item["related_career_id"], "role_title": item["related_role_title"],
+             "category": item["related_category"], "relation": item["relation"],
+             "common_ground": item["common_ground"]}
+            for item in catalogue["related"].get(career_id, [])
+        ],
+        "employers": [item["setting"] for item in work_settings if item["setting_type"] == "employer"],
+        "working_patterns": [item["setting"] for item in work_settings if item["setting_type"] == "working pattern"],
         "official_sources": [
             {"source_name": item["source_name"], "url": item["url"], "source_type": item["source_type"],
              "market": item["market"], "what_to_check": item["what_to_check"],

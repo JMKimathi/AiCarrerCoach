@@ -31,7 +31,8 @@ data class StudentAccount(
     val name: String,
     val email: String,
     val course: String,
-    val status: String
+    val status: String,
+    val userId: String = ""
 )
 
 data class AdminOverview(
@@ -126,7 +127,20 @@ data class CareerDetail(
     val pathway: List<PathwayStage>,
     val opportunities: List<OpportunityTemplate>,
     val officialSources: List<OfficialSource>,
-    val informationNote: String
+    val informationNote: String,
+    val jobTitles: Map<String, List<String>> = emptyMap(),
+    val tasks: List<String> = emptyList(),
+    val tools: List<String> = emptyList(),
+    val relatedCareers: List<RelatedCareer> = emptyList(),
+    val employers: List<String> = emptyList(),
+    val workingPatterns: List<String> = emptyList()
+)
+
+data class RelatedCareer(
+    val careerId: String,
+    val roleTitle: String,
+    val category: String,
+    val commonGround: String
 )
 
 data class CvProject(val title: String, val description: String)
@@ -148,7 +162,11 @@ data class CvRequest(
     val projects: List<CvProject> = emptyList(),
     val experience: List<CvExperience> = emptyList(),
     val certifications: List<String> = emptyList(),
-    val activities: List<String> = emptyList()
+    val activities: List<String> = emptyList(),
+    val summary: String = "",
+    val grade: String = "",
+    val links: List<String> = emptyList(),
+    val referees: List<String> = emptyList()
 )
 
 data class CvResult(
@@ -157,7 +175,8 @@ data class CvResult(
     val matchedSkills: List<String>,
     val skillsToBuild: List<String>,
     val tips: List<String>,
-    val note: String
+    val note: String,
+    val checklist: List<String> = emptyList()
 )
 
 data class InterviewTurn(val speaker: String, val kind: String, val text: String)

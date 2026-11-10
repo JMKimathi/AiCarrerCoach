@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Chat
+import androidx.compose.material.icons.filled.Explore
 import androidx.compose.material.icons.filled.Group
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Insights
@@ -20,6 +21,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -39,6 +41,7 @@ import com.aicareercoach.mobile.data.UserSession
 import com.aicareercoach.mobile.data.network.ApiClient
 import com.aicareercoach.mobile.ui.screens.admin.AdminAnalyticsScreen
 import com.aicareercoach.mobile.ui.screens.admin.AdminDashboardScreen
+import com.aicareercoach.mobile.ui.screens.admin.AdminEditResourceScreen
 import com.aicareercoach.mobile.ui.screens.admin.AdminResourcesScreen
 import com.aicareercoach.mobile.ui.screens.admin.AdminUploadScreen
 import com.aicareercoach.mobile.ui.screens.admin.AdminUsersScreen
@@ -59,6 +62,7 @@ import com.aicareercoach.mobile.ui.screens.student.FeedbackScreen
 import com.aicareercoach.mobile.ui.screens.student.ResourceDetailScreen
 import com.aicareercoach.mobile.ui.screens.student.StudentDashboardScreen
 import com.aicareercoach.mobile.ui.screens.student.StudentProfileScreen
+import kotlinx.coroutines.launch
 
 object Routes {
     const val Landing = "landing"
@@ -72,6 +76,7 @@ object Routes {
     const val CareerAssessment = "careerAssessment"
     const val CareerExplorer = "careerExplorer"
     const val CareerDetail = "careerDetail/{careerId}"
+    const val CareerPicker = "careerPicker/{next}"
     const val CvBuilder = "cvBuilder/{careerId}"
     const val MockInterview = "mockInterview/{careerId}"
     const val ResourceDetail = "resourceDetail/{id}"
@@ -86,9 +91,12 @@ object Routes {
     const val AdminUsers = "adminUsers"
     const val AdminAnalytics = "adminAnalytics"
     const val AdminUpload = "adminUpload"
+    const val AdminEditResource = "adminEditResource/{id}"
 
     fun resourceDetail(id: String) = "resourceDetail/$id"
+    fun adminEditResource(id: String) = "adminEditResource/$id"
     fun careerDetail(id: String) = "careerDetail/$id"
+    fun careerPicker(next: String) = "careerPicker/$next"
     fun cvBuilder(id: String) = "cvBuilder/$id"
     fun mockInterview(id: String) = "mockInterview/$id"
 }
@@ -97,6 +105,7 @@ private data class TabItem(val route: String, val label: String, val icon: Image
 
 private val studentTabs = listOf(
     TabItem(Routes.Dashboard, "Home", Icons.Default.Home),
+    TabItem(Routes.CareerExplorer, "Careers", Icons.Default.Explore),
     TabItem(Routes.Chat, "Coach", Icons.Default.Chat),
     TabItem(Routes.Resources, "Resources", Icons.Default.MenuBook),
     TabItem(Routes.Profile, "Profile", Icons.Default.Person),
@@ -213,6 +222,11 @@ fun AppNavigation(
                 token = current.token,
                 resources = resources,
                 onResourceAdded = { resources.add(0, it) },
+                onResourceUpdated = { updated ->
+                    val index = resources.indexOfFirst { it.id == updated.id }
+                    if (index >= 0) resources[index] = updated
+                },
+                onResourceRemoved = { removed -> resources.removeAll { it.id == removed.id } },
                 onLogOut = { logOut(Routes.Admin) }
             ) else LandingScreen(
                 onGetStarted = { navController.navigate("${Routes.Auth}?register=true") },
@@ -265,15 +279,10 @@ private fun StudentHome(
                     onOpenChat = { tabNav.navigateToTab(Routes.Chat) },
                     onOpenResources = { tabNav.navigateToTab(Routes.Resources) },
                     onOpenProfile = { tabNav.navigateToTab(Routes.Profile) },
-                    onReviewCv = {
-                        chatSeed = "How can I improve my CV for internship applications?"
-                        tabNav.navigateToTab(Routes.Chat)
-                    },
-                    onInterviewPrep = {
-                        chatSeed = "Help me with interview prep"
-                        tabNav.navigateToTab(Routes.Chat)
-                    },
-                    onExploreCareers = { tabNav.navigate(Routes.CareerExplorer) }
+                    onExploreCareers = { tabNav.navigateToTab(Routes.CareerExplorer) },
+                    onBuildCv = { tabNav.navigate(Routes.careerPicker("cv")) },
+                    onMockInterview = { tabNav.navigate(Routes.careerPicker("interview")) },
+                    onOpenAssessment = { tabNav.navigate(Routes.CareerAssessment) }
                 )
             }
             composable(Routes.Chat) {
@@ -289,9 +298,26 @@ private fun StudentHome(
             composable(Routes.CareerExplorer) {
                 CareerExplorerScreen(
                     session = session,
-                    onBack = { tabNav.popBackStack() },
                     onOpenCareer = { careerId -> tabNav.navigate(Routes.careerDetail(careerId)) },
                     onOpenAssessment = { tabNav.navigate(Routes.CareerAssessment) }
+                )
+            }
+            composable(
+                route = Routes.CareerPicker,
+                arguments = listOf(navArgument("next") { type = NavType.StringType })
+            ) { entry ->
+                val forInterview = entry.arguments?.getString("next") == "interview"
+                CareerExplorerScreen(
+                    session = session,
+                    title = if (forInterview) "Practise an interview" else "Build my CV",
+                    subtitle = "Choose the career you are aiming for",
+                    showAssessmentCard = false,
+                    onBack = { tabNav.popBackStack() },
+                    onOpenCareer = { careerId ->
+                        tabNav.navigate(
+                            if (forInterview) Routes.mockInterview(careerId) else Routes.cvBuilder(careerId)
+                        )
+                    }
                 )
             }
             composable(
@@ -307,6 +333,7 @@ private fun StudentHome(
                         tabNav.navigateToTab(Routes.Chat)
                     },
                     onBuildCv = { id -> tabNav.navigate(Routes.cvBuilder(id)) },
+                    onOpenCareer = { id -> tabNav.navigate(Routes.careerDetail(id)) },
                     onPractiseInterview = { id -> tabNav.navigate(Routes.mockInterview(id)) }
                 )
             }
@@ -404,8 +431,11 @@ private fun AdminHome(
     token: String,
     resources: List<CareerResource>,
     onResourceAdded: (CareerResource) -> Unit,
+    onResourceUpdated: (CareerResource) -> Unit,
+    onResourceRemoved: (CareerResource) -> Unit,
     onLogOut: () -> Unit
 ) {
+    val scope = rememberCoroutineScope()
     var overview by remember { mutableStateOf<AdminOverview?>(null) }
     val students = remember { mutableStateListOf<StudentAccount>() }
     LaunchedEffect(token) {
@@ -453,11 +483,50 @@ private fun AdminHome(
             composable(Routes.AdminResources) {
                 AdminResourcesScreen(
                     resources = resources,
-                    onUpload = { tabNav.navigate(Routes.AdminUpload) }
+                    onUpload = { tabNav.navigate(Routes.AdminUpload) },
+                    onEdit = { resource -> tabNav.navigate(Routes.adminEditResource(resource.id)) },
+                    onDelete = { resource ->
+                        scope.launch {
+                            if (ApiClient.deleteResource(token, resource.id)) onResourceRemoved(resource)
+                        }
+                    }
                 )
             }
             composable(Routes.AdminUsers) {
-                AdminUsersScreen(students = students)
+                AdminUsersScreen(
+                    students = students,
+                    onToggleActive = { student ->
+                        scope.launch {
+                            val makeActive = student.status != "Active"
+                            if (ApiClient.setStudentActive(token, student.userId, makeActive)) {
+                                val index = students.indexOfFirst { it.userId == student.userId }
+                                if (index >= 0) {
+                                    students[index] = student.copy(status = if (makeActive) "Active" else "Inactive")
+                                }
+                            }
+                        }
+                    }
+                )
+            }
+            composable(
+                route = Routes.AdminEditResource,
+                arguments = listOf(navArgument("id") { type = NavType.StringType })
+            ) { entry ->
+                val id = entry.arguments?.getString("id")
+                val resource = resources.find { it.id == id }
+                if (resource != null) AdminEditResourceScreen(
+                    token = token,
+                    resource = resource,
+                    onBack = { tabNav.popBackStack() },
+                    onSaved = { updated ->
+                        onResourceUpdated(updated)
+                        tabNav.popBackStack()
+                    }
+                ) else SimpleInfoScreen(
+                    title = "Resource unavailable",
+                    body = "This resource could not be loaded. Go back and try again.",
+                    onBack = { tabNav.popBackStack() }
+                )
             }
             composable(Routes.AdminAnalytics) {
                 AdminAnalyticsScreen(overview = overview)

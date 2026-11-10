@@ -11,6 +11,7 @@ ROOT_DIR = Path(__file__).resolve().parents[2]
 
 CATALOGUE_STEPS = [
     ("Build the career catalogue and skills", "build_career_catalogue.py"),
+    ("Build titles, destinations, tasks, tools and related careers", "build_career_details.py"),
     ("Build education requirements and pathway stages", "build_career_pathways.py"),
     ("Build CV templates", "build_cv_templates.py"),
     ("Build the interview question bank", "build_interview_questions.py"),

@@ -324,6 +324,140 @@ def render_cv(template: dict, profile: dict) -> dict:
     }
 
 
+ATS_HEADINGS = {
+    "summary": "Professional Summary", "skills": "Skills", "projects": "Projects", "education": "Education",
+    "experience": "Work Experience", "certifications": "Certifications",
+    "extras": "Leadership and Activities", "referees": "Referees",
+}
+
+
+def render_final_cv(template: dict, profile: dict) -> dict:
+    """Build a CV that is ready to send, laid out for applicant tracking systems (ATS).
+
+    ATS-friendly here means: one column, standard section headings, plain text and
+    simple bullets, no tables, images or text boxes, and skills written as words a
+    recruiter would search for. The section order still follows the career's template.
+
+    Unlike render_cv, nothing is invented and no prompts are left in the document:
+    a section with no details is left out, and `checklist` tells the student what is
+    still worth adding before they send it. Extra profile keys: summary, grade.
+    """
+    profile = {key: ("" if value is None else value) for key, value in profile.items()}
+    name = str(profile.get("full_name", "")).strip()
+    if not name:
+        raise ValueError("full_name is required to build a CV")
+    role, focus = template["role_title"], template["specialisation"]
+    student_skills = _clean_list(profile.get("skills"))
+    wanted_keys = {skill.casefold() for skill in template["skills_to_highlight"] + template["transferable_skills"]}
+    student_keys = {skill.casefold() for skill in student_skills}
+    matched = [skill for skill in student_skills if skill.casefold() in wanted_keys]
+    other = [skill for skill in student_skills if skill.casefold() not in wanted_keys]
+    to_build = [skill for skill in template["skills_to_highlight"] if skill.casefold() not in student_keys]
+
+    def text(key: str) -> str:
+        return " ".join(str(profile.get(key, "")).split())
+
+    course, institution, year, grade = text("course"), text("institution"), text("graduation_year"), text("grade")
+    own_summary = text("summary")
+    opportunity = OPPORTUNITY_LABELS.get(text("target_opportunity").lower(), "")
+    contact = [text("email"), text("phone"), text("location"), *_clean_list(profile.get("links"))]
+    experience_items = [item for item in (profile.get("experience") or []) if str(item.get("title", "")).strip()]
+    project_items = [item for item in (profile.get("projects") or []) if str(item.get("title", "")).strip()]
+
+    def summary() -> list[str]:
+        if own_summary:
+            return [own_summary]
+        if not (course or institution):
+            return []
+        sentence = f"{course} student" if course else "Student"
+        if institution:
+            sentence += f" at {institution}"
+        if year:
+            sentence += f", graduating in {year}"
+        sentence += f", seeking {opportunity} in {focus}." if opportunity else f", with an interest in {focus}."
+        shown = (matched or student_skills)[:5]
+        if shown:
+            sentence += f" Skills include {', '.join(shown)}."
+        return [sentence]
+
+    def skills() -> list[str]:
+        return [", ".join(matched + other)] if student_skills else []
+
+    def education() -> list[str]:
+        if not (course or institution):
+            return []
+        entry = f"**{course or 'Studies'}**" + (f", {institution}" if institution else "")
+        details = " | ".join(part for part in (f"Expected {year}" if year else "", grade) if part)
+        return [entry + (f" | {details}" if details else "")]
+
+    def experience() -> list[str]:
+        out: list[str] = []
+        for item in experience_items:
+            heading = f"**{' '.join(str(item['title']).split())}**"
+            organisation = " ".join(str(item.get("organisation", "")).split())
+            period = " ".join(str(item.get("period", "")).split())
+            heading += (f", {organisation}" if organisation else "") + (f" | {period}" if period else "")
+            out.append(heading)
+            out += [f"- {point}" for point in _clean_list(item.get("highlights"))]
+            out.append("")
+        return out[:-1]
+
+    def projects() -> list[str]:
+        out: list[str] = []
+        for item in project_items:
+            out.append(f"**{' '.join(str(item['title']).split())}**")
+            description = " ".join(str(item.get("description", "")).split())
+            if description:
+                out.append(f"- {description}")
+            out.append("")
+        return out[:-1]
+
+    def bullets(key: str) -> list[str]:
+        return [f"- {item}" for item in _clean_list(profile.get(key))]
+
+    builders = {
+        "summary": summary, "skills": skills, "projects": projects, "education": education,
+        "experience": experience, "certifications": lambda: bullets("certifications"),
+        "extras": lambda: bullets("activities"),
+        "referees": lambda: bullets("referees") or ["Available on request."],
+    }
+    lines = [f"# {name}", ""]
+    if any(contact):
+        lines += [" | ".join(item for item in contact if item), ""]
+    # Follow the career's section order, then add any section it leaves out so that
+    # nothing the student entered is dropped. Referees always come last.
+    order = [section["id"] for section in template["sections"]]
+    order += [section_id for section_id in ATS_HEADINGS if section_id not in order]
+    order = [section_id for section_id in order if section_id != "referees"] + ["referees"]
+    for section_id in order:
+        content = builders[section_id]()
+        if content:
+            lines += [f"## {ATS_HEADINGS[section_id]}", "", *content, ""]
+
+    checklist = []
+    if not (text("email") or text("phone")):
+        checklist.append("Add a phone number or email address so employers can reach you.")
+    if not own_summary:
+        checklist.append("Write a two or three sentence professional summary in your own words.")
+    if not (course or institution):
+        checklist.append("Add your course and institution.")
+    if not student_skills:
+        checklist.append("Add your skills. For this role, employers often look for: "
+                         + ", ".join(template["skills_to_highlight"][:5]) + ".")
+    if not experience_items and not project_items:
+        checklist.append("Add at least one project, attachment or work experience entry.")
+    elif any(not _clean_list(item.get("highlights")) for item in experience_items):
+        checklist.append("For each role, add what you did and achieved, with numbers where you can.")
+    if template["regulated_note"]:
+        checklist.append(template["regulated_note"])
+    return {
+        "career_id": template["career_id"], "role_title": role,
+        "markdown": "\n".join(lines).rstrip() + "\n",
+        "matched_skills": matched, "skills_to_build": to_build,
+        "cv_tips": template["cv_tips"], "checklist": checklist,
+    }
+
+
 DEMO_PROFILE = {
     "full_name": "Demo Student",
     "email": "demo.student@example.com",

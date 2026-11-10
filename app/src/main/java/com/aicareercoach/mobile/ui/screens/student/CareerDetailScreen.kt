@@ -4,10 +4,14 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.unit.dp
 import com.aicareercoach.mobile.data.CareerDetail
@@ -20,6 +24,19 @@ import com.aicareercoach.mobile.ui.components.SectionCard
 import com.aicareercoach.mobile.ui.components.Tag
 import com.aicareercoach.mobile.ui.theme.*
 
+// Order and headings for the groups of job titles connected to a career.
+private val titleGroups = listOf(
+    "alternative" to "Also known as",
+    "specialism" to "Specialisms",
+    "entry" to "Where people start",
+    "progression" to "Moving up",
+    "leadership" to "Leadership roles",
+    "beyond" to "Where it can also lead",
+    "lateral" to "Sideways moves"
+)
+
+private fun bulleted(items: List<String>): String = items.joinToString("\n") { "•  $it" }
+
 /** Everything the catalogue holds about one career: skills, study routes, pathway, opportunities and sources. */
 @Composable
 fun CareerDetailScreen(
@@ -28,7 +45,8 @@ fun CareerDetailScreen(
     onBack: () -> Unit = {},
     onAskCoach: (String) -> Unit = {},
     onBuildCv: (String) -> Unit = {},
-    onPractiseInterview: (String) -> Unit = {}
+    onPractiseInterview: (String) -> Unit = {},
+    onOpenCareer: (String) -> Unit = {}
 ) {
     var detail by remember { mutableStateOf<CareerDetail?>(null) }
     var loading by remember { mutableStateOf(true) }
@@ -43,8 +61,7 @@ fun CareerDetailScreen(
     Column(modifier = Modifier.fillMaxSize().background(SurfaceAlt)) {
         val current = detail
         AppTopBar(
-            title = current?.roleTitle ?: "Career",
-            subtitle = current?.category,
+            title = "Career profile",
             onBack = onBack,
             showProfile = false
         )
@@ -65,13 +82,75 @@ fun CareerDetailScreen(
                     .padding(horizontal = 20.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
-                SectionCard {
-                    Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                        Tag(current.specialisation, BluePrimary)
-                        if (current.commonlyRegulated) Tag("Regulated profession", WarningAmber)
-                    }
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(20.dp))
+                        .background(Brush.linearGradient(listOf(BluePrimary, BluePrimaryDark)))
+                        .padding(20.dp)
+                ) {
+                    Text(
+                        current.category,
+                        style = MaterialTheme.typography.labelMedium,
+                        color = Color.White.copy(alpha = 0.8f)
+                    )
+                    Spacer(Modifier.height(4.dp))
+                    Text(current.roleTitle, style = MaterialTheme.typography.headlineMedium, color = Color.White)
                     Spacer(Modifier.height(10.dp))
-                    Text(current.description, style = MaterialTheme.typography.bodyMedium)
+                    Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                        HeroPill(current.specialisation)
+                        if (current.commonlyRegulated) HeroPill("Regulated profession")
+                    }
+                    Spacer(Modifier.height(12.dp))
+                    Text(
+                        current.description,
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = Color.White.copy(alpha = 0.92f)
+                    )
+                }
+
+                Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                    Button(
+                        onClick = { onBuildCv(current.careerId) },
+                        modifier = Modifier.weight(1f).height(48.dp),
+                        shape = RoundedCornerShape(12.dp)
+                    ) {
+                        Text("Build my CV")
+                    }
+                    OutlinedButton(
+                        onClick = { onPractiseInterview(current.careerId) },
+                        modifier = Modifier.weight(1f).height(48.dp),
+                        shape = RoundedCornerShape(12.dp)
+                    ) {
+                        Text("Mock interview")
+                    }
+                }
+
+                if (current.tasks.isNotEmpty() || current.tools.isNotEmpty()) {
+                    DetailSection("What the work involves") {
+                        LabeledText("Day to day", bulleted(current.tasks))
+                        LabeledText("Tools and technologies", current.tools.joinToString(", "))
+                    }
+                }
+
+                if (current.jobTitles.values.any { it.isNotEmpty() }) {
+                    DetailSection("Job titles and destinations") {
+                        titleGroups.forEach { (key, heading) ->
+                            LabeledText(heading, bulleted(current.jobTitles[key].orEmpty()))
+                        }
+                        Text(
+                            "Titles differ between employers. These are possibilities to explore, not a fixed route.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = TextSecondary
+                        )
+                    }
+                }
+
+                if (current.employers.isNotEmpty() || current.workingPatterns.isNotEmpty()) {
+                    DetailSection("Where you could work") {
+                        LabeledText("Kinds of employer", bulleted(current.employers))
+                        LabeledText("Working patterns", bulleted(current.workingPatterns))
+                    }
                 }
 
                 DetailSection("Skills") {
@@ -133,6 +212,31 @@ fun CareerDetailScreen(
                     }
                 }
 
+                if (current.relatedCareers.isNotEmpty()) {
+                    DetailSection("Related careers") {
+                        current.relatedCareers.forEach { related ->
+                            Column(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .clickable { onOpenCareer(related.careerId) }
+                                    .padding(vertical = 6.dp)
+                            ) {
+                                Text(
+                                    related.roleTitle,
+                                    style = MaterialTheme.typography.titleSmall,
+                                    color = BluePrimary
+                                )
+                                Text(
+                                    if (related.commonGround.isBlank()) related.category
+                                    else "${related.category} · in common: ${related.commonGround.replace("; ", ", ")}",
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = TextSecondary
+                                )
+                            }
+                        }
+                    }
+                }
+
                 DetailSection("Official sources to check") {
                     current.officialSources.forEach { source ->
                         Column(
@@ -152,14 +256,6 @@ fun CareerDetailScreen(
                 }
 
                 PrimaryButton(
-                    text = "Build my CV for this career",
-                    onClick = { onBuildCv(current.careerId) }
-                )
-                SecondaryButton(
-                    text = "Practise a mock interview",
-                    onClick = { onPractiseInterview(current.careerId) }
-                )
-                SecondaryButton(
                     text = "Ask the coach about this career",
                     onClick = { onAskCoach("Tell me about a career as ${current.roleTitle}") }
                 )
@@ -170,6 +266,18 @@ fun CareerDetailScreen(
                 Spacer(Modifier.height(20.dp))
             }
         }
+    }
+}
+
+@Composable
+private fun HeroPill(text: String) {
+    Box(
+        modifier = Modifier
+            .clip(RoundedCornerShape(8.dp))
+            .background(Color.White.copy(alpha = 0.18f))
+            .padding(horizontal = 10.dp, vertical = 4.dp)
+    ) {
+        Text(text, style = MaterialTheme.typography.labelMedium, color = Color.White)
     }
 }
 

@@ -1,0 +1,39 @@
+{
+  "careers": 452,
+  "title_rows": 18385,
+  "titles_per_career_min": 38,
+  "titles_per_career_max": 41,
+  "titles_by_type": {
+    "alternative": 3164,
+    "specialism": 3164,
+    "entry": 3115,
+    "progression": 1762,
+    "leadership": 2692,
+    "beyond": 2709,
+    "lateral": 1779
+  },
+  "task_rows": 3616,
+  "tool_rows": 3171,
+  "related_rows": 4520,
+  "careers_with_no_related_roles": 0,
+  "work_setting_rows": 4972,
+  "roles_with_authored_detail": 452,
+  "roles_using_category_defaults": 0,
+  "authored_roles_by_category": {
+    "Technology and Data": 30,
+    "Engineering and Built Environment": 29,
+    "Health and Medicine": 30,
+    "Banking and Finance": 29,
+    "Business and Entrepreneurship": 30,
+    "Law and Governance": 27,
+    "Education and Teaching": 28,
+    "Agriculture and Environment": 30,
+    "Media and Creative Industries": 31,
+    "Tourism and Hospitality": 30,
+    "Science and Research": 31,
+    "Logistics and Operations": 30,
+    "Social and Community Services": 29,
+    "Public Service and Development": 31,
+    "Energy, Manufacturing and Skilled Trades": 37
+  }
+}

@@ -8,6 +8,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -26,7 +27,8 @@ import com.aicareercoach.mobile.ui.theme.WarningAmber
 
 @Composable
 fun AdminUsersScreen(
-    students: List<StudentAccount> = emptyList()
+    students: List<StudentAccount> = emptyList(),
+    onToggleActive: (StudentAccount) -> Unit = {}
 ) {
     Column(modifier = Modifier.fillMaxSize().background(SurfaceAlt)) {
         AppTopBar(title = "Students", subtitle = "${students.size} accounts on the platform", showProfile = false)
@@ -51,6 +53,11 @@ fun AdminUsersScreen(
                             Text(student.name, style = MaterialTheme.typography.titleMedium)
                             Text(student.email, style = MaterialTheme.typography.bodySmall, color = TextSecondary)
                             Text(student.course, style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                            if (student.userId.isNotBlank()) {
+                                TextButton(onClick = { onToggleActive(student) }) {
+                                    Text(if (student.status == "Active") "Deactivate account" else "Activate account")
+                                }
+                            }
                         }
                         Tag(
                             student.status,

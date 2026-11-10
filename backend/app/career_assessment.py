@@ -48,7 +48,7 @@ def assess_career_paths(profile: dict, top_k: int = 4) -> dict:
                   ("preferred_activities", 0.15, "preferred_activities"))
     provided = {}
     for key, _, _ in dimensions:
-        raw = profile.get(key, [])
+        raw = profile.get(key) or []  # a missing or null field counts as empty
         raw = [raw] if isinstance(raw, str) else raw
         provided[key] = [str(item).strip() for item in raw if str(item).strip()]
     active = [(key, weight, field) for key, weight, field in dimensions if provided[key]]

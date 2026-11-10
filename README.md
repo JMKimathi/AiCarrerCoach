@@ -46,6 +46,50 @@ The ML tools are separate from API startup. In PyCharm, use `ml/.venv` for ML sc
 
 The training and retrieval workflows do not run automatically when the app starts. Keep downloaded datasets, model artifacts, and API keys out of Git unless a specific project need and license permit sharing them.
 
+## Career catalogue
+
+`ml/data/careers/` holds a synthetic career catalogue covering 452 roles in 15 categories, for Kenya and international markets. Every table shares a `career_id` key.
+
+| File | Contents |
+| --- | --- |
+| `career_catalog.csv` | One row per role, with category, focus area and a draft description |
+| `career_skills.csv` | Core, preferred and transferable skills |
+| `career_education.csv` | Study areas, qualification levels, certifications and the body to verify with |
+| `career_pathways.csv` | Five stages per role, from attachment to senior practice |
+| `career_resources.csv`, `trusted_sources.csv` | Official sources linked to each role |
+| `interview_questions.csv` | Practice questions in eight styles, with follow-up probes |
+| `opportunity_templates.csv` | What attachments, internships, graduate programmes and jobs usually look like |
+| `cv_templates.jsonl` | A CV layout, skills and bullet starters per role |
+| `career_training_data.csv` | Synthetic student profiles labelled with a target career |
+
+Rebuild everything and refresh the search index with the `ml` environment:
+
+```powershell
+.\ml\.venv\Scripts\python.exe ml/src/run_career_pipeline.py
+```
+
+What the catalogue is and is not:
+
+- All rows are synthetic and illustrative. They are not verified Kenyan requirements, live vacancies or guaranteed routes.
+- Opportunity templates never name an employer and are never marked as live vacancies.
+- Official source links were confirmed by web search on the date in `trusted_sources.csv`; the pages were not reviewed in full.
+- Real student profiles belong in `ml/data/careers/real/student_profiles.csv`, which Git ignores. Only rows with `consent_given = yes` are used, and the file must not contain names, emails or phone numbers.
+- `ml/src/train_catalogue_model.py` trains a classifier on the training table. Its scores on synthetic rows show how well it recovered the generator's rules, not real-world accuracy. The backend does not load this model.
+
+## Career features in the API and app
+
+| Endpoint | Purpose |
+| --- | --- |
+| `GET /api/careers/categories`, `GET /api/careers`, `GET /api/careers/{career_id}` | Browse, search and read the catalogue |
+| `POST /api/careers/{career_id}/cv` | Build a Markdown CV from the student's own details |
+| `POST /api/interviews`, `POST /api/interviews/{id}/answer`, `POST /api/interviews/{id}/finish` | Run a practice interview and get feedback |
+| `PUT /api/resources/{resource_id}`, `DELETE /api/resources/{resource_id}` | Administrator edits and deletes knowledge-base resources |
+| `PUT /api/admin/students/{user_id}/status` | Administrator activates or deactivates a student account |
+
+In the app, students reach these from **Explore Careers** on the dashboard: search the catalogue, open a career, then build a CV or start a mock interview. Administrators edit and delete resources from **Knowledge** and manage accounts from **Students**.
+
+The mock interview uses Gemini to react to each answer. Without a `GEMINI_API_KEY` it still runs from the question bank. Its feedback is practice coaching, not a hiring prediction.
+
 ## Android source layout
 
 ```text
