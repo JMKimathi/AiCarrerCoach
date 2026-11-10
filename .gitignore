@@ -34,3 +34,7 @@ ml/data/evaluation/student_queries_eval.csv
 _chapter5_render/
 .chapter5_render/
 chapter5_render/
+
+# Real student profiles stay on this computer; only the empty template is shared
+ml/data/careers/real/*.csv
+!ml/data/careers/real/*.template.csv

@@ -10,6 +10,17 @@ import com.aicareercoach.mobile.data.AuthResult
 import com.aicareercoach.mobile.data.AdminOverview
 import com.aicareercoach.mobile.data.CareerResource
 import com.aicareercoach.mobile.data.CareerAssessmentResult
+import com.aicareercoach.mobile.data.CareerCategory
+import com.aicareercoach.mobile.data.CareerDetail
+import com.aicareercoach.mobile.data.CareerPage
+import com.aicareercoach.mobile.data.CareerSummary
+import com.aicareercoach.mobile.data.CvRequest
+import com.aicareercoach.mobile.data.CvResult
+import com.aicareercoach.mobile.data.InterviewState
+import com.aicareercoach.mobile.data.InterviewTurn
+import com.aicareercoach.mobile.data.OfficialSource
+import com.aicareercoach.mobile.data.OpportunityTemplate
+import com.aicareercoach.mobile.data.PathwayStage
 import com.aicareercoach.mobile.data.CareerPathMatch
 import com.aicareercoach.mobile.data.StudentAccount
 import com.aicareercoach.mobile.data.UserSession
@@ -20,6 +31,7 @@ import java.io.InputStreamReader
 import java.io.OutputStreamWriter
 import java.net.HttpURLConnection
 import java.net.URL
+import java.net.URLEncoder
 
 data class NetworkChatResponse(
     val sessionId: String,
@@ -81,6 +93,11 @@ object ApiClient {
         if (endpoint.isBlank()) return null
         if (!endpoint.startsWith("http://") && !endpoint.startsWith("https://")) endpoint = "http://$endpoint"
         if (!endpoint.contains(":8000")) endpoint = "$endpoint:8000"
+        // Accept a health-check URL pasted from a browser, including the accidental
+        // /api/health/api suffix produced when /api is appended to it.
+        endpoint = endpoint.replace(Regex("/api/health/api$"), "/api")
+        if (endpoint.endsWith("/health")) endpoint = endpoint.removeSuffix("/health")
+        while (endpoint.endsWith("/api/api")) endpoint = endpoint.removeSuffix("/api")
         if (!endpoint.endsWith("/api")) endpoint = "$endpoint/api"
         return endpoint
     }
@@ -250,7 +267,8 @@ object ApiClient {
     }
 
     suspend fun assessCareer(
-        token: String, skills: List<String>, interests: List<String>, activities: List<String>
+        token: String, skills: List<String>, interests: List<String>, activities: List<String>,
+        course: String = "", careerGoal: String = ""
     ): CareerAssessmentResult? = withContext(Dispatchers.IO) {
         try {
             val conn = (endpointUrl("/career/assess").openConnection() as HttpURLConnection).apply {
@@ -262,6 +280,8 @@ object ApiClient {
                 setRequestProperty("Authorization", "Bearer $token")
             }
             val body = JSONObject()
+                .put("course", course)
+                .put("career_goal", careerGoal)
                 .put("skills", JSONArray(skills))
                 .put("interests", JSONArray(interests))
                 .put("preferred_activities", JSONArray(activities))
@@ -279,7 +299,11 @@ object ApiClient {
                     add(CareerPathMatch(
                         match.getString("role"), match.getInt("fit_score"),
                         strings("matching_evidence"), strings("skills_to_explore"),
-                        strings("next_steps"), strings("related_resources")
+                        strings("next_steps"), strings("related_resources"),
+                        match.optString("role_summary"), strings("entry_level_roles"),
+                        strings("application_channel_types"), strings("sample_interview_questions"),
+                        match.optString("cv_tailoring_guidance"), strings("progression_options"),
+                        match.optString("requirements_and_qualification_notes")
                     ))
                 }
             }
@@ -307,6 +331,248 @@ object ApiClient {
             CareerResource(json.getString("resource_id"), json.getString("title"), json.getString("category"), json.getString("content"))
         } catch (_: Exception) { null }
     }
+
+    // ---- Career catalogue ----
+
+    private suspend fun getJsonText(path: String, token: String, readTimeoutMs: Int = 10000): String? = withContext(Dispatchers.IO) {
+        try {
+            val conn = (endpointUrl(path).openConnection() as HttpURLConnection).apply {
+                requestMethod = "GET"
+                connectTimeout = 5000
+                readTimeout = readTimeoutMs
+                setRequestProperty("Accept", "application/json")
+                setRequestProperty("Authorization", "Bearer $token")
+            }
+            try {
+                if (conn.responseCode !in 200..299) null
+                else BufferedReader(InputStreamReader(conn.inputStream)).use { it.readText() }
+            } finally {
+                conn.disconnect()
+            }
+        } catch (_: Exception) {
+            null
+        }
+    }
+
+    private fun jsonStrings(json: JSONObject, key: String): List<String> {
+        val values = json.optJSONArray(key) ?: JSONArray()
+        return (0 until values.length()).map { values.optString(it) }
+    }
+
+    suspend fun getCareerCategories(token: String): List<CareerCategory>? {
+        val text = getJsonText("/careers/categories", token) ?: return null
+        return runCatching {
+            val array = JSONObject(text).getJSONArray("categories")
+            (0 until array.length()).map { index ->
+                val item = array.getJSONObject(index)
+                CareerCategory(item.getString("category"), item.optInt("career_count"))
+            }
+        }.getOrNull()
+    }
+
+    suspend fun searchCareers(
+        token: String, category: String?, query: String, offset: Int = 0, limit: Int = 50
+    ): CareerPage? {
+        val params = buildList {
+            if (!category.isNullOrBlank()) add("category=" + URLEncoder.encode(category, "UTF-8"))
+            if (query.isNotBlank()) add("q=" + URLEncoder.encode(query.trim().take(80), "UTF-8"))
+            add("limit=$limit")
+            add("offset=$offset")
+        }.joinToString("&")
+        val text = getJsonText("/careers?$params", token) ?: return null
+        return runCatching {
+            val json = JSONObject(text)
+            val array = json.getJSONArray("items")
+            CareerPage(
+                total = json.optInt("total"),
+                items = (0 until array.length()).map { index ->
+                    val item = array.getJSONObject(index)
+                    CareerSummary(
+                        careerId = item.getString("career_id"),
+                        roleTitle = item.getString("role_title"),
+                        category = item.optString("category"),
+                        specialisation = item.optString("specialisation"),
+                        coreSkills = jsonStrings(item, "core_skills"),
+                        commonlyRegulated = item.optBoolean("commonly_regulated")
+                    )
+                }
+            )
+        }.getOrNull()
+    }
+
+    suspend fun getCareerDetail(token: String, careerId: String): CareerDetail? {
+        val text = getJsonText("/careers/" + URLEncoder.encode(careerId, "UTF-8"), token) ?: return null
+        return runCatching {
+            val json = JSONObject(text)
+            val education = json.optJSONObject("education") ?: JSONObject()
+            val pathway = json.optJSONArray("pathway") ?: JSONArray()
+            val opportunities = json.optJSONArray("opportunities") ?: JSONArray()
+            val sources = json.optJSONArray("official_sources") ?: JSONArray()
+            CareerDetail(
+                careerId = json.getString("career_id"),
+                roleTitle = json.getString("role_title"),
+                category = json.optString("category"),
+                specialisation = json.optString("specialisation"),
+                description = json.optString("description"),
+                commonlyRegulated = json.optBoolean("commonly_regulated"),
+                coreSkills = jsonStrings(json, "core_skills"),
+                preferredSkills = jsonStrings(json, "preferred_skills"),
+                transferableSkills = jsonStrings(json, "transferable_skills"),
+                studyAreas = education.optString("typical_study_areas"),
+                qualificationLevels = education.optString("typical_qualification_levels"),
+                certifications = education.optString("example_certifications"),
+                verifyWith = education.optString("verify_with"),
+                verificationNote = education.optString("verification_note"),
+                pathway = (0 until pathway.length()).map { index ->
+                    val item = pathway.getJSONObject(index)
+                    PathwayStage(
+                        stageNumber = item.optInt("stage_number"),
+                        stageName = item.optString("stage_name"),
+                        exampleTitle = item.optString("example_title"),
+                        opportunityType = item.optString("opportunity_type"),
+                        typicalTiming = item.optString("typical_timing"),
+                        whatToBuild = item.optString("what_to_build")
+                    )
+                },
+                opportunities = (0 until opportunities.length()).map { index ->
+                    val item = opportunities.getJSONObject(index)
+                    OpportunityTemplate(
+                        opportunityType = item.optString("opportunity_type"),
+                        market = item.optString("market"),
+                        exampleTitle = item.optString("example_title"),
+                        employerType = item.optString("employer_type"),
+                        eligibility = item.optString("eligibility"),
+                        typicalDuration = item.optString("typical_duration"),
+                        typicalTiming = item.optString("typical_timing"),
+                        applicantsUsuallyShow = item.optString("applicants_usually_show"),
+                        documentsUsuallyRequested = item.optString("documents_usually_requested"),
+                        whereAdvertised = item.optString("where_advertised"),
+                        notes = item.optString("notes")
+                    )
+                },
+                officialSources = (0 until sources.length()).map { index ->
+                    val item = sources.getJSONObject(index)
+                    OfficialSource(
+                        name = item.optString("source_name"),
+                        url = item.optString("url"),
+                        whatToCheck = item.optString("what_to_check"),
+                        roleSpecific = item.optBoolean("role_specific")
+                    )
+                },
+                informationNote = json.optString("information_note")
+            )
+        }.getOrNull()
+    }
+
+    // ---- CV builder and mock interviews ----
+
+    private suspend fun postJsonText(
+        path: String, token: String, body: JSONObject, readTimeoutMs: Int = 15000
+    ): String? = withContext(Dispatchers.IO) {
+        try {
+            val conn = (endpointUrl(path).openConnection() as HttpURLConnection).apply {
+                requestMethod = "POST"
+                connectTimeout = 8000
+                readTimeout = readTimeoutMs
+                doOutput = true
+                setRequestProperty("Content-Type", "application/json")
+                setRequestProperty("Accept", "application/json")
+                setRequestProperty("Authorization", "Bearer $token")
+            }
+            try {
+                OutputStreamWriter(conn.outputStream).use { it.write(body.toString()) }
+                if (conn.responseCode !in 200..299) null
+                else BufferedReader(InputStreamReader(conn.inputStream)).use { it.readText() }
+            } finally {
+                conn.disconnect()
+            }
+        } catch (_: Exception) {
+            null
+        }
+    }
+
+    /** Returns the text for a key, or an empty string when it is missing or JSON null. */
+    private fun jsonText(json: JSONObject, key: String): String =
+        if (json.isNull(key)) "" else json.optString(key)
+
+    suspend fun buildCv(token: String, careerId: String, request: CvRequest): CvResult? {
+        val projects = JSONArray()
+        request.projects.take(8).forEach { project ->
+            projects.put(
+                JSONObject()
+                    .put("title", project.title.take(120))
+                    .put("description", project.description.take(600))
+            )
+        }
+        val experience = JSONArray()
+        request.experience.take(8).forEach { entry ->
+            experience.put(
+                JSONObject()
+                    .put("title", entry.title.take(120))
+                    .put("organisation", entry.organisation.take(120))
+                    .put("period", entry.period.take(60))
+                    .put("highlights", JSONArray(entry.highlights.take(6)))
+            )
+        }
+        val body = JSONObject()
+            .put("phone", request.phone.trim().take(40))
+            .put("location", request.location.trim().take(120))
+            .put("institution", request.institution.trim().take(150))
+            .put("graduation_year", request.graduationYear.trim().take(10))
+            .put("skills", JSONArray(request.skills.take(30)))
+            .put("projects", projects)
+            .put("experience", experience)
+            .put("certifications", JSONArray(request.certifications.take(12)))
+            .put("activities", JSONArray(request.activities.take(12)))
+        if (request.targetOpportunity.isNotBlank()) body.put("target_opportunity", request.targetOpportunity)
+        val text = postJsonText("/careers/" + URLEncoder.encode(careerId, "UTF-8") + "/cv", token, body) ?: return null
+        return runCatching {
+            val json = JSONObject(text)
+            CvResult(
+                roleTitle = json.optString("role_title"),
+                markdown = json.getString("markdown"),
+                matchedSkills = jsonStrings(json, "matched_skills"),
+                skillsToBuild = jsonStrings(json, "skills_to_build"),
+                tips = jsonStrings(json, "cv_tips"),
+                note = jsonText(json, "note")
+            )
+        }.getOrNull()
+    }
+
+    private fun parseInterview(text: String): InterviewState? = runCatching {
+        val json = JSONObject(text)
+        val turns = json.optJSONArray("transcript") ?: JSONArray()
+        InterviewState(
+            interviewId = json.getString("interview_id"),
+            roleTitle = json.optString("role_title"),
+            status = json.optString("status"),
+            questionNumber = json.optInt("question_number"),
+            totalQuestions = json.optInt("total_questions"),
+            interviewerMessage = jsonText(json, "interviewer_message"),
+            transcript = (0 until turns.length()).map { index ->
+                val turn = turns.getJSONObject(index)
+                InterviewTurn(turn.optString("speaker"), turn.optString("kind"), turn.optString("text"))
+            },
+            feedback = jsonText(json, "feedback")
+        )
+    }.getOrNull()
+
+    suspend fun startInterview(
+        token: String, careerId: String, opportunityType: String, questionCount: Int
+    ): InterviewState? {
+        val body = JSONObject().put("career_id", careerId).put("question_count", questionCount)
+        if (opportunityType.isNotBlank()) body.put("opportunity_type", opportunityType)
+        return postJsonText("/interviews", token, body, readTimeoutMs = 20000)?.let(::parseInterview)
+    }
+
+    suspend fun answerInterview(token: String, interviewId: String, answer: String): InterviewState? {
+        val body = JSONObject().put("answer", answer.trim().take(4000))
+        // The interviewer's reply may wait on Gemini and its fallback model.
+        return postJsonText("/interviews/$interviewId/answer", token, body, readTimeoutMs = 90000)?.let(::parseInterview)
+    }
+
+    suspend fun finishInterview(token: String, interviewId: String): InterviewState? =
+        postJsonText("/interviews/$interviewId/finish", token, JSONObject(), readTimeoutMs = 90000)?.let(::parseInterview)
 
     suspend fun checkHealth(): Boolean = withContext(Dispatchers.IO) {
         candidateBaseUrls.any { checkHealthAt(it) }

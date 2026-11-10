@@ -48,7 +48,14 @@ data class CareerPathMatch(
     val matchingEvidence: List<String>,
     val skillsToExplore: List<String>,
     val nextSteps: List<String>,
-    val relatedResources: List<String>
+    val relatedResources: List<String>,
+    val roleSummary: String = "",
+    val entryLevelRoles: List<String> = emptyList(),
+    val applicationChannelTypes: List<String> = emptyList(),
+    val sampleInterviewQuestions: List<String> = emptyList(),
+    val cvTailoringGuidance: String = "",
+    val progressionOptions: List<String> = emptyList(),
+    val requirementsAndQualificationNotes: String = ""
 )
 
 data class CareerAssessmentResult(
@@ -56,6 +63,114 @@ data class CareerAssessmentResult(
     val summary: String,
     val recommendations: List<CareerPathMatch>,
     val informationNote: String
+)
+
+data class CareerCategory(val name: String, val careerCount: Int)
+
+data class CareerSummary(
+    val careerId: String,
+    val roleTitle: String,
+    val category: String,
+    val specialisation: String,
+    val coreSkills: List<String>,
+    val commonlyRegulated: Boolean
+)
+
+data class CareerPage(val total: Int, val items: List<CareerSummary>)
+
+data class PathwayStage(
+    val stageNumber: Int,
+    val stageName: String,
+    val exampleTitle: String,
+    val opportunityType: String,
+    val typicalTiming: String,
+    val whatToBuild: String
+)
+
+data class OpportunityTemplate(
+    val opportunityType: String,
+    val market: String,
+    val exampleTitle: String,
+    val employerType: String,
+    val eligibility: String,
+    val typicalDuration: String,
+    val typicalTiming: String,
+    val applicantsUsuallyShow: String,
+    val documentsUsuallyRequested: String,
+    val whereAdvertised: String,
+    val notes: String
+)
+
+data class OfficialSource(
+    val name: String,
+    val url: String,
+    val whatToCheck: String,
+    val roleSpecific: Boolean
+)
+
+data class CareerDetail(
+    val careerId: String,
+    val roleTitle: String,
+    val category: String,
+    val specialisation: String,
+    val description: String,
+    val commonlyRegulated: Boolean,
+    val coreSkills: List<String>,
+    val preferredSkills: List<String>,
+    val transferableSkills: List<String>,
+    val studyAreas: String,
+    val qualificationLevels: String,
+    val certifications: String,
+    val verifyWith: String,
+    val verificationNote: String,
+    val pathway: List<PathwayStage>,
+    val opportunities: List<OpportunityTemplate>,
+    val officialSources: List<OfficialSource>,
+    val informationNote: String
+)
+
+data class CvProject(val title: String, val description: String)
+
+data class CvExperience(
+    val title: String,
+    val organisation: String,
+    val period: String,
+    val highlights: List<String>
+)
+
+data class CvRequest(
+    val phone: String = "",
+    val location: String = "",
+    val institution: String = "",
+    val graduationYear: String = "",
+    val targetOpportunity: String = "",
+    val skills: List<String> = emptyList(),
+    val projects: List<CvProject> = emptyList(),
+    val experience: List<CvExperience> = emptyList(),
+    val certifications: List<String> = emptyList(),
+    val activities: List<String> = emptyList()
+)
+
+data class CvResult(
+    val roleTitle: String,
+    val markdown: String,
+    val matchedSkills: List<String>,
+    val skillsToBuild: List<String>,
+    val tips: List<String>,
+    val note: String
+)
+
+data class InterviewTurn(val speaker: String, val kind: String, val text: String)
+
+data class InterviewState(
+    val interviewId: String,
+    val roleTitle: String,
+    val status: String,
+    val questionNumber: Int,
+    val totalQuestions: Int,
+    val interviewerMessage: String,
+    val transcript: List<InterviewTurn>,
+    val feedback: String
 )
 
 object SampleData {

@@ -91,7 +91,8 @@ fun BackendConnectionScreen(onBack: () -> Unit) {
             )
             Text(
                 "Use the laptop's IPv4 address from ipconfig while it is connected to that network. " +
-                    "Keep the API running and connect the phone and laptop to the same network.",
+                    "Enter the base address ending in /api (not /api/health). Keep the API running and " +
+                    "connect the phone and laptop to the same network.",
                 style = MaterialTheme.typography.bodySmall
             )
             Card(modifier = Modifier.fillMaxWidth()) {

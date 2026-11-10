@@ -26,10 +26,22 @@ class Settings:
     DATABASE_URL: str = os.getenv("DATABASE_URL", f"sqlite:///{BACKEND_DIR / 'career_coach.db'}")
 
     # AI Models
-    MODEL_DIR: Path = ML_DIR / "models" / "career-retriever"
+    BASE_RETRIEVER_DIR: Path = ML_DIR / "models" / "career-retriever"
+    CANDIDATE_RETRIEVER_DIR: Path = ML_DIR / "models" / "career-retriever-candidate"
+    USE_CANDIDATE_RETRIEVER: bool = os.getenv("USE_CANDIDATE_RETRIEVER", "true").casefold() in {"1", "true", "yes"}
+    MODEL_DIR: Path = (
+        CANDIDATE_RETRIEVER_DIR
+        if USE_CANDIDATE_RETRIEVER and CANDIDATE_RETRIEVER_DIR.is_dir()
+        else BASE_RETRIEVER_DIR
+    )
     CHUNKS_PATH: Path = ML_DIR / "data" / "processed" / "chunks.json"
-    CHUNK_EMBEDDINGS_PATH: Path = ML_DIR / "data" / "processed" / "chunk_embeddings.npy"
-    CHUNK_EMBEDDINGS_MANIFEST_PATH: Path = ML_DIR / "data" / "processed" / "chunk_embeddings_manifest.json"
+    CHUNK_EMBEDDINGS_PATH: Path = ML_DIR / "data" / "processed" / (
+        "candidate_chunk_embeddings.npy" if MODEL_DIR == CANDIDATE_RETRIEVER_DIR else "chunk_embeddings.npy"
+    )
+    CHUNK_EMBEDDINGS_MANIFEST_PATH: Path = ML_DIR / "data" / "processed" / (
+        "candidate_chunk_embeddings_manifest.json" if MODEL_DIR == CANDIDATE_RETRIEVER_DIR
+        else "chunk_embeddings_manifest.json"
+    )
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
 
     # Security
