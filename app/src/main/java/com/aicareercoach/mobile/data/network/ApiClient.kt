@@ -259,7 +259,8 @@ object ApiClient {
                     add(StudentAccount(
                         user.optString("full_name"), user.optString("email"),
                         user.optString("course").takeUnless { it == "null" }.orEmpty(),
-                        if (user.optBoolean("is_active")) "Active" else "Inactive"
+                        if (user.optBoolean("is_active")) "Active" else "Inactive",
+                        userId = user.optString("user_id")
                     ))
                 }
             }
@@ -573,6 +574,68 @@ object ApiClient {
 
     suspend fun finishInterview(token: String, interviewId: String): InterviewState? =
         postJsonText("/interviews/$interviewId/finish", token, JSONObject(), readTimeoutMs = 90000)?.let(::parseInterview)
+
+    // ---- Administrator actions ----
+
+    private suspend fun sendJsonText(
+        method: String, path: String, token: String, body: JSONObject?
+    ): String? = withContext(Dispatchers.IO) {
+        try {
+            val conn = (endpointUrl(path).openConnection() as HttpURLConnection).apply {
+                requestMethod = method
+                connectTimeout = 5000
+                readTimeout = 10000
+                setRequestProperty("Accept", "application/json")
+                setRequestProperty("Authorization", "Bearer $token")
+                if (body != null) {
+                    doOutput = true
+                    setRequestProperty("Content-Type", "application/json")
+                }
+            }
+            try {
+                if (body != null) OutputStreamWriter(conn.outputStream).use { it.write(body.toString()) }
+                val code = conn.responseCode
+                when {
+                    code !in 200..299 -> null
+                    code == 204 -> ""
+                    else -> BufferedReader(InputStreamReader(conn.inputStream)).use { it.readText() }
+                }
+            } finally {
+                conn.disconnect()
+            }
+        } catch (_: Exception) {
+            null
+        }
+    }
+
+    suspend fun getResourceContent(token: String, resourceId: String): String? {
+        val text = getJsonText("/resources/" + URLEncoder.encode(resourceId, "UTF-8"), token) ?: return null
+        return runCatching { JSONObject(text).getString("content") }.getOrNull()
+    }
+
+    suspend fun updateResource(
+        token: String, resourceId: String, title: String, category: String, content: String
+    ): CareerResource? {
+        val body = JSONObject().put("title", title).put("category", category).put("content", content)
+        val text = sendJsonText("PUT", "/resources/" + URLEncoder.encode(resourceId, "UTF-8"), token, body)
+            ?: return null
+        return runCatching {
+            val json = JSONObject(text)
+            val saved = json.getString("content")
+            val summary = saved.lines().map { it.trim() }
+                .firstOrNull { it.isNotEmpty() && !it.startsWith("#") }.orEmpty().take(160)
+            CareerResource(json.getString("resource_id"), json.getString("title"), json.getString("category"), summary)
+        }.getOrNull()
+    }
+
+    suspend fun deleteResource(token: String, resourceId: String): Boolean =
+        sendJsonText("DELETE", "/resources/" + URLEncoder.encode(resourceId, "UTF-8"), token, null) != null
+
+    suspend fun setStudentActive(token: String, userId: String, active: Boolean): Boolean =
+        sendJsonText(
+            "PUT", "/admin/students/" + URLEncoder.encode(userId, "UTF-8") + "/status", token,
+            JSONObject().put("is_active", active)
+        ) != null
 
     suspend fun checkHealth(): Boolean = withContext(Dispatchers.IO) {
         candidateBaseUrls.any { checkHealthAt(it) }

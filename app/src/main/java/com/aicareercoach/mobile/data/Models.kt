@@ -31,7 +31,8 @@ data class StudentAccount(
     val name: String,
     val email: String,
     val course: String,
-    val status: String
+    val status: String,
+    val userId: String = ""
 )
 
 data class AdminOverview(
