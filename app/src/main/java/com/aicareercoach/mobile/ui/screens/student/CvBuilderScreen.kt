@@ -13,12 +13,14 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalClipboardManager
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.AnnotatedString
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.aicareercoach.mobile.data.CvExperience
 import com.aicareercoach.mobile.data.CvPdfWriter
@@ -34,6 +36,8 @@ import com.aicareercoach.mobile.ui.components.SectionCard
 import com.aicareercoach.mobile.ui.theme.*
 import kotlinx.coroutines.launch
 
+private const val DOCX_MIME = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+
 private val cvOpportunityChoices = listOf(
     "" to "Any",
     "industrial attachment" to "Attachment",
@@ -42,27 +46,26 @@ private val cvOpportunityChoices = listOf(
     "full-time job" to "Full-time job"
 )
 
+// What the student is typing for one role or one project, before it is sent.
+private data class ExperienceDraft(
+    val title: String = "",
+    val organisation: String = "",
+    val period: String = "",
+    val achievements: String = ""
+)
+
+private data class ProjectDraft(val title: String = "", val description: String = "")
+
 private fun splitList(text: String): List<String> =
     text.split(",", "\n").map { it.trim() }.filter { it.isNotEmpty() }
 
-private fun parseProjects(text: String): List<CvProject> =
-    text.lines().map { it.trim() }.filter { it.isNotEmpty() }.map { line ->
-        val parts = line.split(" - ", limit = 2)
-        CvProject(parts[0].trim(), parts.getOrElse(1) { "" }.trim())
-    }
+private fun splitLines(text: String): List<String> =
+    text.lines().map { it.trim().removePrefix("-").trim() }.filter { it.isNotEmpty() }
 
-private fun parseExperience(text: String): List<CvExperience> =
-    text.lines().map { it.trim() }.filter { it.isNotEmpty() }.map { line ->
-        val parts = line.split(" - ", limit = 4).map { it.trim() }
-        CvExperience(
-            title = parts[0],
-            organisation = parts.getOrElse(1) { "" },
-            period = parts.getOrElse(2) { "" },
-            highlights = listOfNotNull(parts.getOrNull(3)?.takeIf { it.isNotEmpty() })
-        )
-    }
-
-/** Collects a student's details and shows a CV laid out for the chosen career. */
+/**
+ * Collects a student's details section by section and returns a CV that is ready to send:
+ * one column, standard headings and plain text, which applicant tracking systems read reliably.
+ */
 @Composable
 fun CvBuilderScreen(
     session: UserSession,
@@ -70,23 +73,74 @@ fun CvBuilderScreen(
     onBack: () -> Unit = {}
 ) {
     var roleTitle by remember { mutableStateOf("") }
+    var summary by rememberSaveable { mutableStateOf("") }
     var phone by rememberSaveable { mutableStateOf("") }
     var location by rememberSaveable { mutableStateOf("") }
+    var link by rememberSaveable { mutableStateOf("") }
     var institution by rememberSaveable { mutableStateOf("") }
     var graduationYear by rememberSaveable { mutableStateOf("") }
+    var grade by rememberSaveable { mutableStateOf("") }
     var opportunity by rememberSaveable { mutableStateOf("") }
     var skillsText by rememberSaveable { mutableStateOf("") }
-    var projectsText by rememberSaveable { mutableStateOf("") }
-    var experienceText by rememberSaveable { mutableStateOf("") }
     var certificationsText by rememberSaveable { mutableStateOf("") }
+    var activitiesText by rememberSaveable { mutableStateOf("") }
+    var refereesText by rememberSaveable { mutableStateOf("") }
+    val experiences = remember { mutableStateListOf(ExperienceDraft()) }
+    val projects = remember { mutableStateListOf(ProjectDraft()) }
+
     var building by remember { mutableStateOf(false) }
     var error by remember { mutableStateOf<String?>(null) }
     var result by remember { mutableStateOf<CvResult?>(null) }
+    var lastRequest by remember { mutableStateOf<CvRequest?>(null) }
+    var saveMessage by remember { mutableStateOf<String?>(null) }
+    var savingWord by remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
     val clipboard = LocalClipboardManager.current
     val context = LocalContext.current
-    var saveMessage by remember { mutableStateOf<String?>(null) }
-    // Opens the phone's own "save file" screen, so no storage permission is needed.
+
+    LaunchedEffect(session.token, careerId) {
+        ApiClient.getCareerDetail(session.token, careerId)?.let { roleTitle = it.roleTitle }
+    }
+
+    fun currentRequest(): CvRequest = CvRequest(
+        phone = phone,
+        location = location,
+        institution = institution,
+        graduationYear = graduationYear,
+        targetOpportunity = opportunity,
+        skills = splitList(skillsText),
+        projects = projects.filter { it.title.isNotBlank() }
+            .map { CvProject(it.title.trim(), it.description.trim()) },
+        experience = experiences.filter { it.title.isNotBlank() }.map {
+            CvExperience(it.title.trim(), it.organisation.trim(), it.period.trim(), splitLines(it.achievements))
+        },
+        certifications = splitList(certificationsText),
+        activities = splitLines(activitiesText),
+        summary = summary,
+        grade = grade,
+        links = splitList(link),
+        referees = splitLines(refereesText)
+    )
+
+    fun build() {
+        if (building) return
+        building = true
+        error = null
+        saveMessage = null
+        val request = currentRequest()
+        scope.launch {
+            val built = ApiClient.buildCv(session.token, careerId, request)
+            if (built == null) {
+                error = "The CV could not be built. Check that the backend is running and try again."
+            } else {
+                lastRequest = request
+                result = built
+            }
+            building = false
+        }
+    }
+
+    // Both downloads open the phone's own "save file" screen, so no storage permission is needed.
     val savePdf = rememberLauncherForActivityResult(
         ActivityResultContracts.CreateDocument("application/pdf")
     ) { uri ->
@@ -102,36 +156,28 @@ fun CvBuilderScreen(
             )
         }
     }
-
-    LaunchedEffect(session.token, careerId) {
-        ApiClient.getCareerDetail(session.token, careerId)?.let { roleTitle = it.roleTitle }
-    }
-
-    fun build() {
-        if (building) return
-        building = true
-        error = null
-        scope.launch {
-            val built = ApiClient.buildCv(
-                session.token, careerId,
-                CvRequest(
-                    phone = phone,
-                    location = location,
-                    institution = institution,
-                    graduationYear = graduationYear,
-                    targetOpportunity = opportunity,
-                    skills = splitList(skillsText),
-                    projects = parseProjects(projectsText),
-                    experience = parseExperience(experienceText),
-                    certifications = splitList(certificationsText)
-                )
-            )
-            if (built == null) {
-                error = "The CV could not be built. Check that the backend is running and try again."
-            } else {
-                result = built
+    val saveWord = rememberLauncherForActivityResult(
+        ActivityResultContracts.CreateDocument(DOCX_MIME)
+    ) { uri ->
+        val request = lastRequest
+        if (uri != null && request != null) {
+            savingWord = true
+            scope.launch {
+                val bytes = ApiClient.downloadCvDocx(session.token, careerId, request)
+                saveMessage = if (bytes == null) {
+                    "The Word file could not be fetched. Check that the backend is running and try again."
+                } else {
+                    runCatching {
+                        val stream = context.contentResolver.openOutputStream(uri)
+                            ?: throw IllegalStateException("The chosen location could not be opened.")
+                        stream.use { it.write(bytes) }
+                    }.fold(
+                        onSuccess = { "Your CV was saved as a Word document." },
+                        onFailure = { "The Word file could not be saved. Try again or choose another folder." }
+                    )
+                }
+                savingWord = false
             }
-            building = false
         }
     }
 
@@ -158,15 +204,13 @@ fun CvBuilderScreen(
             val current = result
             if (current == null) {
                 Text(
-                    "Your name, email and course come from your profile. Add what you can below; anything you " +
-                        "leave out becomes a prompt on the CV telling you what to add.",
+                    "Fill in each section. Your name, email and course come from your profile. " +
+                        "Sections you leave empty are left out of the CV.",
                     style = MaterialTheme.typography.bodyMedium,
                     color = TextSecondary
                 )
 
-                SectionCard {
-                    Text("Applying for", style = MaterialTheme.typography.titleMedium)
-                    Spacer(Modifier.height(8.dp))
+                FormSection("Applying for") {
                     Row(
                         modifier = Modifier.horizontalScroll(rememberScrollState()),
                         horizontalArrangement = Arrangement.spacedBy(8.dp)
@@ -177,30 +221,79 @@ fun CvBuilderScreen(
                     }
                 }
 
-                SectionCard {
-                    Text("Contact and education", style = MaterialTheme.typography.titleMedium)
-                    Spacer(Modifier.height(8.dp))
-                    CvField("Phone", phone, { phone = it }, "e.g. 07XX XXX XXX")
-                    CvField("Location", location, { location = it }, "e.g. Nairobi, Kenya")
-                    CvField("Institution", institution, { institution = it }, "e.g. Strathmore University")
-                    CvField("Graduation year", graduationYear, { graduationYear = it }, "e.g. 2027")
+                FormSection("Professional summary") {
+                    CvField(
+                        "Summary", summary, { summary = it.take(800) },
+                        "Two or three sentences: who you are, what you are good at, what you are looking for",
+                        lines = 4
+                    )
                 }
 
-                SectionCard {
-                    Text("Skills and experience", style = MaterialTheme.typography.titleMedium)
-                    Spacer(Modifier.height(8.dp))
+                FormSection("Contact") {
+                    CvField("Phone", phone, { phone = it }, "e.g. 07XX XXX XXX")
+                    CvField("Location", location, { location = it }, "e.g. Nairobi, Kenya")
+                    CvField("LinkedIn, GitHub or portfolio link", link, { link = it }, "Optional")
+                }
+
+                FormSection("Education") {
+                    CvField("Institution", institution, { institution = it }, "e.g. Strathmore University")
+                    CvField("Graduation year", graduationYear, { graduationYear = it }, "e.g. 2027")
+                    CvField("Grade or class", grade, { grade = it }, "Optional, e.g. Second Class Upper")
+                }
+
+                FormSection("Skills") {
                     CvField("Skills", skillsText, { skillsText = it }, "Separate with commas", lines = 2)
+                }
+
+                FormSection("Work experience and attachments") {
+                    experiences.forEachIndexed { index, item ->
+                        EntryHeader("Role ${index + 1}", canRemove = experiences.size > 1) {
+                            experiences.removeAt(index)
+                        }
+                        CvField("Job title", item.title, { experiences[index] = item.copy(title = it) }, "e.g. Attachment student")
+                        CvField("Organisation", item.organisation, { experiences[index] = item.copy(organisation = it) }, "Where you worked")
+                        CvField("Period", item.period, { experiences[index] = item.copy(period = it) }, "e.g. May - Aug 2026")
+                        CvField(
+                            "What you did and achieved", item.achievements,
+                            { experiences[index] = item.copy(achievements = it) },
+                            "One achievement per line, with numbers where you can", lines = 3
+                        )
+                    }
+                    TextButton(onClick = { if (experiences.size < 8) experiences.add(ExperienceDraft()) }) {
+                        Text("+ Add another role")
+                    }
+                }
+
+                FormSection("Projects") {
+                    projects.forEachIndexed { index, item ->
+                        EntryHeader("Project ${index + 1}", canRemove = projects.size > 1) {
+                            projects.removeAt(index)
+                        }
+                        CvField("Project name", item.title, { projects[index] = item.copy(title = it) }, "e.g. Campus Events App")
+                        CvField(
+                            "What you built and the result", item.description,
+                            { projects[index] = item.copy(description = it) },
+                            "One or two sentences", lines = 2
+                        )
+                    }
+                    TextButton(onClick = { if (projects.size < 8) projects.add(ProjectDraft()) }) {
+                        Text("+ Add another project")
+                    }
+                }
+
+                FormSection("Certifications") {
+                    CvField("Certifications", certificationsText, { certificationsText = it }, "Separate with commas", lines = 2)
+                }
+
+                FormSection("Leadership and activities") {
+                    CvField("Activities", activitiesText, { activitiesText = it }, "One per line: clubs, volunteering, awards", lines = 3)
+                }
+
+                FormSection("Referees") {
                     CvField(
-                        "Projects", projectsText, { projectsText = it },
-                        "One per line: Title - what you built and the result", lines = 3
-                    )
-                    CvField(
-                        "Experience and attachments", experienceText, { experienceText = it },
-                        "One per line: Role - Organisation - Period - what you did", lines = 3
-                    )
-                    CvField(
-                        "Certifications", certificationsText, { certificationsText = it },
-                        "Separate with commas", lines = 2
+                        "Referees", refereesText, { refereesText = it },
+                        "One per line: name, title, organisation, contact. Leave empty for \"Available on request\"",
+                        lines = 2
                     )
                 }
 
@@ -214,21 +307,58 @@ fun CvBuilderScreen(
                     onClick = { build() }
                 )
             } else {
+                if (current.checklist.isNotEmpty()) {
+                    SectionCard {
+                        Text("Before you send it", style = MaterialTheme.typography.titleMedium)
+                        Spacer(Modifier.height(6.dp))
+                        current.checklist.forEach { item ->
+                            Text("•  $item", style = MaterialTheme.typography.bodyMedium)
+                        }
+                        Spacer(Modifier.height(8.dp))
+                        TextButton(onClick = { result = null }) { Text("Go back and add these") }
+                    }
+                }
+
                 SectionCard {
                     CvMarkdown(current.markdown)
                 }
-                if (current.matchedSkills.isNotEmpty()) {
-                    SectionCard {
-                        Text("Skills you already have for this role", style = MaterialTheme.typography.titleMedium)
-                        Spacer(Modifier.height(6.dp))
-                        Text(current.matchedSkills.joinToString(", "), style = MaterialTheme.typography.bodyMedium)
+
+                PrimaryButton(
+                    text = if (savingWord) "Saving…" else "Download as Word",
+                    enabled = !savingWord,
+                    onClick = {
+                        saveMessage = null
+                        saveWord.launch(current.roleTitle.replace("/", "-").ifBlank { "My" } + " CV.docx")
                     }
+                )
+                SecondaryButton(
+                    text = "Download as PDF",
+                    onClick = {
+                        saveMessage = null
+                        savePdf.launch(current.roleTitle.replace("/", "-").ifBlank { "My" } + " CV.pdf")
+                    }
+                )
+                val saved = saveMessage
+                if (saved != null) {
+                    Text(saved, style = MaterialTheme.typography.bodyMedium, color = TextSecondary)
                 }
+                Text(
+                    "Word is the safest format for online application systems. Use PDF when an employer asks for it.",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = TextMuted
+                )
+
                 if (current.skillsToBuild.isNotEmpty()) {
                     SectionCard {
-                        Text("Skills to build next", style = MaterialTheme.typography.titleMedium)
+                        Text("Skills this role often asks for that are not on your CV", style = MaterialTheme.typography.titleMedium)
                         Spacer(Modifier.height(6.dp))
                         Text(current.skillsToBuild.joinToString(", "), style = MaterialTheme.typography.bodyMedium)
+                        Spacer(Modifier.height(4.dp))
+                        Text(
+                            "Only add a skill you can show evidence for.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = TextSecondary
+                        )
                     }
                 }
                 if (current.tips.isNotEmpty()) {
@@ -243,28 +373,17 @@ fun CvBuilderScreen(
                 if (current.note.isNotBlank()) {
                     Text(current.note, style = MaterialTheme.typography.bodySmall, color = TextMuted)
                 }
-                PrimaryButton(
-                    text = "Download as PDF",
-                    onClick = {
-                        saveMessage = null
-                        val safeTitle = current.roleTitle.replace("/", "-").ifBlank { "My" }
-                        savePdf.launch("$safeTitle CV.pdf")
-                    }
-                )
-                val saved = saveMessage
-                if (saved != null) {
-                    Text(saved, style = MaterialTheme.typography.bodyMedium, color = TextSecondary)
-                }
+
                 SecondaryButton(
                     text = "Copy CV text",
-                    onClick = { clipboard.setText(AnnotatedString(current.markdown)) }
+                    onClick = { clipboard.setText(AnnotatedString(current.markdown.replace("**", "").replace("#", "").trim())) }
                 )
                 SecondaryButton(
-                    text = "Share CV",
+                    text = "Share CV text",
                     onClick = {
                         val send = Intent(Intent.ACTION_SEND).apply {
                             type = "text/plain"
-                            putExtra(Intent.EXTRA_TEXT, current.markdown)
+                            putExtra(Intent.EXTRA_TEXT, current.markdown.replace("**", "").replace("#", "").trim())
                         }
                         runCatching { context.startActivity(Intent.createChooser(send, "Share CV")) }
                     }
@@ -274,6 +393,34 @@ fun CvBuilderScreen(
             Spacer(Modifier.height(20.dp))
         }
     }
+}
+
+@Composable
+private fun FormSection(title: String, content: @Composable ColumnScope.() -> Unit) {
+    SectionCard {
+        Text(title, style = MaterialTheme.typography.titleMedium)
+        Spacer(Modifier.height(10.dp))
+        content()
+    }
+}
+
+@Composable
+private fun EntryHeader(label: String, canRemove: Boolean, onRemove: () -> Unit) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Text(
+            label,
+            style = MaterialTheme.typography.labelLarge,
+            color = BluePrimary,
+            modifier = Modifier.weight(1f)
+        )
+        if (canRemove) {
+            TextButton(onClick = onRemove) { Text("Remove", color = DangerRed) }
+        }
+    }
+    Spacer(Modifier.height(4.dp))
 }
 
 @Composable
@@ -314,7 +461,7 @@ private fun CvChoiceChip(label: String, selected: Boolean, onClick: () -> Unit) 
     }
 }
 
-/** Shows the CV's simple Markdown (headings, bullets, notes) as formatted text. */
+/** Shows the CV's simple Markdown (name, headings, bold entry lines, bullets) as formatted text. */
 @Composable
 private fun CvMarkdown(markdown: String) {
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
@@ -322,17 +469,20 @@ private fun CvMarkdown(markdown: String) {
             val line = raw.replace("**", "")
             when {
                 line.isBlank() -> Spacer(Modifier.height(4.dp))
-                line.startsWith("## ") -> Text(
-                    line.removePrefix("## "),
-                    style = MaterialTheme.typography.titleMedium,
-                    color = BluePrimary
-                )
+                line.startsWith("## ") -> {
+                    Text(
+                        line.removePrefix("## ").uppercase(),
+                        style = MaterialTheme.typography.labelLarge,
+                        fontWeight = FontWeight.Bold
+                    )
+                    HorizontalDivider()
+                }
                 line.startsWith("# ") -> Text(line.removePrefix("# "), style = MaterialTheme.typography.headlineSmall)
                 line.startsWith("- ") -> Text("•  " + line.removePrefix("- "), style = MaterialTheme.typography.bodyMedium)
-                line.startsWith("> ") -> Text(
-                    line.removePrefix("> "),
-                    style = MaterialTheme.typography.bodySmall,
-                    color = TextSecondary
+                raw.trimStart().startsWith("**") -> Text(
+                    line,
+                    style = MaterialTheme.typography.bodyMedium,
+                    fontWeight = FontWeight.SemiBold
                 )
                 else -> Text(line, style = MaterialTheme.typography.bodyMedium)
             }
