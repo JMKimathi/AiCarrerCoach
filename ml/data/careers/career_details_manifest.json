@@ -1,24 +1,24 @@
 {
   "careers": 452,
-  "title_rows": 14927,
-  "titles_per_career_min": 26,
-  "titles_per_career_max": 39,
+  "title_rows": 16612,
+  "titles_per_career_min": 27,
+  "titles_per_career_max": 41,
   "titles_by_type": {
-    "alternative": 1398,
-    "specialism": 1398,
-    "entry": 3124,
-    "progression": 1806,
-    "leadership": 2701,
+    "alternative": 2252,
+    "specialism": 2252,
+    "entry": 3116,
+    "progression": 1803,
+    "leadership": 2695,
     "beyond": 2709,
-    "lateral": 1791
+    "lateral": 1785
   },
-  "task_rows": 2945,
-  "tool_rows": 2500,
+  "task_rows": 3189,
+  "tool_rows": 2744,
   "related_rows": 4519,
   "careers_with_no_related_roles": 0,
   "work_setting_rows": 4972,
-  "roles_with_authored_detail": 233,
-  "roles_using_category_defaults": 219,
+  "roles_with_authored_detail": 355,
+  "roles_using_category_defaults": 97,
   "authored_roles_by_category": {
     "Technology and Data": 30,
     "Engineering and Built Environment": 29,
@@ -27,6 +27,10 @@
     "Business and Entrepreneurship": 30,
     "Law and Governance": 27,
     "Education and Teaching": 28,
-    "Agriculture and Environment": 30
+    "Agriculture and Environment": 30,
+    "Media and Creative Industries": 31,
+    "Tourism and Hospitality": 30,
+    "Science and Research": 31,
+    "Logistics and Operations": 30
   }
 }

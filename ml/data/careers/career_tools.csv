@@ -852,386 +852,538 @@ CAREER-141,Waste Management Officer,route planning tools,authored,synthetic,true
 CAREER-141,Waste Management Officer,waste regulations,authored,synthetic,true
 CAREER-141,Waste Management Officer,protective equipment,authored,synthetic,true
 CAREER-141,Waste Management Officer,Excel,authored,synthetic,true
-CAREER-142,Journalist,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-142,Journalist,cameras and audio equipment,category_default,synthetic,true
-CAREER-142,Journalist,editing software,category_default,synthetic,true
-CAREER-142,Journalist,content management systems,category_default,synthetic,true
-CAREER-142,Journalist,social media platforms,category_default,synthetic,true
-CAREER-143,Broadcast Presenter,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-143,Broadcast Presenter,cameras and audio equipment,category_default,synthetic,true
-CAREER-143,Broadcast Presenter,editing software,category_default,synthetic,true
-CAREER-143,Broadcast Presenter,content management systems,category_default,synthetic,true
-CAREER-143,Broadcast Presenter,social media platforms,category_default,synthetic,true
-CAREER-144,Video Producer,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-144,Video Producer,cameras and audio equipment,category_default,synthetic,true
-CAREER-144,Video Producer,editing software,category_default,synthetic,true
-CAREER-144,Video Producer,content management systems,category_default,synthetic,true
-CAREER-144,Video Producer,social media platforms,category_default,synthetic,true
-CAREER-145,Film Director,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-145,Film Director,cameras and audio equipment,category_default,synthetic,true
-CAREER-145,Film Director,editing software,category_default,synthetic,true
-CAREER-145,Film Director,content management systems,category_default,synthetic,true
-CAREER-145,Film Director,social media platforms,category_default,synthetic,true
-CAREER-146,Graphic Designer,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-146,Graphic Designer,cameras and audio equipment,category_default,synthetic,true
-CAREER-146,Graphic Designer,editing software,category_default,synthetic,true
-CAREER-146,Graphic Designer,content management systems,category_default,synthetic,true
-CAREER-146,Graphic Designer,social media platforms,category_default,synthetic,true
-CAREER-147,Animator,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-147,Animator,cameras and audio equipment,category_default,synthetic,true
-CAREER-147,Animator,editing software,category_default,synthetic,true
-CAREER-147,Animator,content management systems,category_default,synthetic,true
-CAREER-147,Animator,social media platforms,category_default,synthetic,true
-CAREER-148,Photographer,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-148,Photographer,cameras and audio equipment,category_default,synthetic,true
-CAREER-148,Photographer,editing software,category_default,synthetic,true
-CAREER-148,Photographer,content management systems,category_default,synthetic,true
-CAREER-148,Photographer,social media platforms,category_default,synthetic,true
-CAREER-149,Content Creator,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-149,Content Creator,cameras and audio equipment,category_default,synthetic,true
-CAREER-149,Content Creator,editing software,category_default,synthetic,true
-CAREER-149,Content Creator,content management systems,category_default,synthetic,true
-CAREER-149,Content Creator,social media platforms,category_default,synthetic,true
-CAREER-150,Copywriter,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-150,Copywriter,cameras and audio equipment,category_default,synthetic,true
-CAREER-150,Copywriter,editing software,category_default,synthetic,true
-CAREER-150,Copywriter,content management systems,category_default,synthetic,true
-CAREER-150,Copywriter,social media platforms,category_default,synthetic,true
-CAREER-151,Editor,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-151,Editor,cameras and audio equipment,category_default,synthetic,true
-CAREER-151,Editor,editing software,category_default,synthetic,true
-CAREER-151,Editor,content management systems,category_default,synthetic,true
-CAREER-151,Editor,social media platforms,category_default,synthetic,true
-CAREER-152,Communications Officer,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-152,Communications Officer,cameras and audio equipment,category_default,synthetic,true
-CAREER-152,Communications Officer,editing software,category_default,synthetic,true
-CAREER-152,Communications Officer,content management systems,category_default,synthetic,true
-CAREER-152,Communications Officer,social media platforms,category_default,synthetic,true
-CAREER-153,Social Media Manager,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-153,Social Media Manager,cameras and audio equipment,category_default,synthetic,true
-CAREER-153,Social Media Manager,editing software,category_default,synthetic,true
-CAREER-153,Social Media Manager,content management systems,category_default,synthetic,true
-CAREER-153,Social Media Manager,social media platforms,category_default,synthetic,true
-CAREER-154,Sound Engineer,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-154,Sound Engineer,cameras and audio equipment,category_default,synthetic,true
-CAREER-154,Sound Engineer,editing software,category_default,synthetic,true
-CAREER-154,Sound Engineer,content management systems,category_default,synthetic,true
-CAREER-154,Sound Engineer,social media platforms,category_default,synthetic,true
-CAREER-155,Music Producer,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-155,Music Producer,cameras and audio equipment,category_default,synthetic,true
-CAREER-155,Music Producer,editing software,category_default,synthetic,true
-CAREER-155,Music Producer,content management systems,category_default,synthetic,true
-CAREER-155,Music Producer,social media platforms,category_default,synthetic,true
-CAREER-156,Game Developer,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-156,Game Developer,cameras and audio equipment,category_default,synthetic,true
-CAREER-156,Game Developer,editing software,category_default,synthetic,true
-CAREER-156,Game Developer,content management systems,category_default,synthetic,true
-CAREER-156,Game Developer,social media platforms,category_default,synthetic,true
-CAREER-157,Fashion Designer,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-157,Fashion Designer,cameras and audio equipment,category_default,synthetic,true
-CAREER-157,Fashion Designer,editing software,category_default,synthetic,true
-CAREER-157,Fashion Designer,content management systems,category_default,synthetic,true
-CAREER-157,Fashion Designer,social media platforms,category_default,synthetic,true
-CAREER-158,Interior Designer,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-158,Interior Designer,cameras and audio equipment,category_default,synthetic,true
-CAREER-158,Interior Designer,editing software,category_default,synthetic,true
-CAREER-158,Interior Designer,content management systems,category_default,synthetic,true
-CAREER-158,Interior Designer,social media platforms,category_default,synthetic,true
-CAREER-159,Illustrator,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-159,Illustrator,cameras and audio equipment,category_default,synthetic,true
-CAREER-159,Illustrator,editing software,category_default,synthetic,true
-CAREER-159,Illustrator,content management systems,category_default,synthetic,true
-CAREER-159,Illustrator,social media platforms,category_default,synthetic,true
-CAREER-160,Creative Director,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-160,Creative Director,cameras and audio equipment,category_default,synthetic,true
-CAREER-160,Creative Director,editing software,category_default,synthetic,true
-CAREER-160,Creative Director,content management systems,category_default,synthetic,true
-CAREER-160,Creative Director,social media platforms,category_default,synthetic,true
-CAREER-161,Hotel Manager,property or reservation management systems,category_default,synthetic,true
-CAREER-161,Hotel Manager,point-of-sale systems,category_default,synthetic,true
-CAREER-161,Hotel Manager,booking platforms,category_default,synthetic,true
-CAREER-161,Hotel Manager,kitchen or service equipment,category_default,synthetic,true
-CAREER-161,Hotel Manager,spreadsheets,category_default,synthetic,true
-CAREER-162,Front Office Officer,property or reservation management systems,category_default,synthetic,true
-CAREER-162,Front Office Officer,point-of-sale systems,category_default,synthetic,true
-CAREER-162,Front Office Officer,booking platforms,category_default,synthetic,true
-CAREER-162,Front Office Officer,kitchen or service equipment,category_default,synthetic,true
-CAREER-162,Front Office Officer,spreadsheets,category_default,synthetic,true
-CAREER-163,Chef,property or reservation management systems,category_default,synthetic,true
-CAREER-163,Chef,point-of-sale systems,category_default,synthetic,true
-CAREER-163,Chef,booking platforms,category_default,synthetic,true
-CAREER-163,Chef,kitchen or service equipment,category_default,synthetic,true
-CAREER-163,Chef,spreadsheets,category_default,synthetic,true
-CAREER-164,Pastry Chef,property or reservation management systems,category_default,synthetic,true
-CAREER-164,Pastry Chef,point-of-sale systems,category_default,synthetic,true
-CAREER-164,Pastry Chef,booking platforms,category_default,synthetic,true
-CAREER-164,Pastry Chef,kitchen or service equipment,category_default,synthetic,true
-CAREER-164,Pastry Chef,spreadsheets,category_default,synthetic,true
-CAREER-165,Food and Beverage Manager,property or reservation management systems,category_default,synthetic,true
-CAREER-165,Food and Beverage Manager,point-of-sale systems,category_default,synthetic,true
-CAREER-165,Food and Beverage Manager,booking platforms,category_default,synthetic,true
-CAREER-165,Food and Beverage Manager,kitchen or service equipment,category_default,synthetic,true
-CAREER-165,Food and Beverage Manager,spreadsheets,category_default,synthetic,true
-CAREER-166,Tour Operator,property or reservation management systems,category_default,synthetic,true
-CAREER-166,Tour Operator,point-of-sale systems,category_default,synthetic,true
-CAREER-166,Tour Operator,booking platforms,category_default,synthetic,true
-CAREER-166,Tour Operator,kitchen or service equipment,category_default,synthetic,true
-CAREER-166,Tour Operator,spreadsheets,category_default,synthetic,true
-CAREER-167,Tour Guide,property or reservation management systems,category_default,synthetic,true
-CAREER-167,Tour Guide,point-of-sale systems,category_default,synthetic,true
-CAREER-167,Tour Guide,booking platforms,category_default,synthetic,true
-CAREER-167,Tour Guide,kitchen or service equipment,category_default,synthetic,true
-CAREER-167,Tour Guide,spreadsheets,category_default,synthetic,true
-CAREER-168,Travel Consultant,property or reservation management systems,category_default,synthetic,true
-CAREER-168,Travel Consultant,point-of-sale systems,category_default,synthetic,true
-CAREER-168,Travel Consultant,booking platforms,category_default,synthetic,true
-CAREER-168,Travel Consultant,kitchen or service equipment,category_default,synthetic,true
-CAREER-168,Travel Consultant,spreadsheets,category_default,synthetic,true
-CAREER-169,Events Planner,property or reservation management systems,category_default,synthetic,true
-CAREER-169,Events Planner,point-of-sale systems,category_default,synthetic,true
-CAREER-169,Events Planner,booking platforms,category_default,synthetic,true
-CAREER-169,Events Planner,kitchen or service equipment,category_default,synthetic,true
-CAREER-169,Events Planner,spreadsheets,category_default,synthetic,true
-CAREER-170,Conference and Meetings Coordinator,property or reservation management systems,category_default,synthetic,true
-CAREER-170,Conference and Meetings Coordinator,point-of-sale systems,category_default,synthetic,true
-CAREER-170,Conference and Meetings Coordinator,booking platforms,category_default,synthetic,true
-CAREER-170,Conference and Meetings Coordinator,kitchen or service equipment,category_default,synthetic,true
-CAREER-170,Conference and Meetings Coordinator,spreadsheets,category_default,synthetic,true
-CAREER-171,Revenue Manager,property or reservation management systems,category_default,synthetic,true
-CAREER-171,Revenue Manager,point-of-sale systems,category_default,synthetic,true
-CAREER-171,Revenue Manager,booking platforms,category_default,synthetic,true
-CAREER-171,Revenue Manager,kitchen or service equipment,category_default,synthetic,true
-CAREER-171,Revenue Manager,spreadsheets,category_default,synthetic,true
-CAREER-172,Safari Lodge Manager,property or reservation management systems,category_default,synthetic,true
-CAREER-172,Safari Lodge Manager,point-of-sale systems,category_default,synthetic,true
-CAREER-172,Safari Lodge Manager,booking platforms,category_default,synthetic,true
-CAREER-172,Safari Lodge Manager,kitchen or service equipment,category_default,synthetic,true
-CAREER-172,Safari Lodge Manager,spreadsheets,category_default,synthetic,true
-CAREER-173,Cabin Crew Member,property or reservation management systems,category_default,synthetic,true
-CAREER-173,Cabin Crew Member,point-of-sale systems,category_default,synthetic,true
-CAREER-173,Cabin Crew Member,booking platforms,category_default,synthetic,true
-CAREER-173,Cabin Crew Member,kitchen or service equipment,category_default,synthetic,true
-CAREER-173,Cabin Crew Member,spreadsheets,category_default,synthetic,true
-CAREER-174,Ground Handling Officer,property or reservation management systems,category_default,synthetic,true
-CAREER-174,Ground Handling Officer,point-of-sale systems,category_default,synthetic,true
-CAREER-174,Ground Handling Officer,booking platforms,category_default,synthetic,true
-CAREER-174,Ground Handling Officer,kitchen or service equipment,category_default,synthetic,true
-CAREER-174,Ground Handling Officer,spreadsheets,category_default,synthetic,true
-CAREER-175,Restaurant Manager,property or reservation management systems,category_default,synthetic,true
-CAREER-175,Restaurant Manager,point-of-sale systems,category_default,synthetic,true
-CAREER-175,Restaurant Manager,booking platforms,category_default,synthetic,true
-CAREER-175,Restaurant Manager,kitchen or service equipment,category_default,synthetic,true
-CAREER-175,Restaurant Manager,spreadsheets,category_default,synthetic,true
-CAREER-176,Barista and Coffee Specialist,property or reservation management systems,category_default,synthetic,true
-CAREER-176,Barista and Coffee Specialist,point-of-sale systems,category_default,synthetic,true
-CAREER-176,Barista and Coffee Specialist,booking platforms,category_default,synthetic,true
-CAREER-176,Barista and Coffee Specialist,kitchen or service equipment,category_default,synthetic,true
-CAREER-176,Barista and Coffee Specialist,spreadsheets,category_default,synthetic,true
-CAREER-177,Housekeeping Manager,property or reservation management systems,category_default,synthetic,true
-CAREER-177,Housekeeping Manager,point-of-sale systems,category_default,synthetic,true
-CAREER-177,Housekeeping Manager,booking platforms,category_default,synthetic,true
-CAREER-177,Housekeeping Manager,kitchen or service equipment,category_default,synthetic,true
-CAREER-177,Housekeeping Manager,spreadsheets,category_default,synthetic,true
-CAREER-178,Tourism Marketing Officer,property or reservation management systems,category_default,synthetic,true
-CAREER-178,Tourism Marketing Officer,point-of-sale systems,category_default,synthetic,true
-CAREER-178,Tourism Marketing Officer,booking platforms,category_default,synthetic,true
-CAREER-178,Tourism Marketing Officer,kitchen or service equipment,category_default,synthetic,true
-CAREER-178,Tourism Marketing Officer,spreadsheets,category_default,synthetic,true
-CAREER-179,Cultural Heritage Officer,property or reservation management systems,category_default,synthetic,true
-CAREER-179,Cultural Heritage Officer,point-of-sale systems,category_default,synthetic,true
-CAREER-179,Cultural Heritage Officer,booking platforms,category_default,synthetic,true
-CAREER-179,Cultural Heritage Officer,kitchen or service equipment,category_default,synthetic,true
-CAREER-179,Cultural Heritage Officer,spreadsheets,category_default,synthetic,true
-CAREER-180,Research Scientist,laboratory instruments,category_default,synthetic,true
-CAREER-180,Research Scientist,R or Python,category_default,synthetic,true
-CAREER-180,Research Scientist,statistical software,category_default,synthetic,true
-CAREER-180,Research Scientist,reference managers,category_default,synthetic,true
-CAREER-180,Research Scientist,laboratory information systems,category_default,synthetic,true
-CAREER-181,Laboratory Technician,laboratory instruments,category_default,synthetic,true
-CAREER-181,Laboratory Technician,R or Python,category_default,synthetic,true
-CAREER-181,Laboratory Technician,statistical software,category_default,synthetic,true
-CAREER-181,Laboratory Technician,reference managers,category_default,synthetic,true
-CAREER-181,Laboratory Technician,laboratory information systems,category_default,synthetic,true
-CAREER-182,Chemist,laboratory instruments,category_default,synthetic,true
-CAREER-182,Chemist,R or Python,category_default,synthetic,true
-CAREER-182,Chemist,statistical software,category_default,synthetic,true
-CAREER-182,Chemist,reference managers,category_default,synthetic,true
-CAREER-182,Chemist,laboratory information systems,category_default,synthetic,true
-CAREER-183,Biologist,laboratory instruments,category_default,synthetic,true
-CAREER-183,Biologist,R or Python,category_default,synthetic,true
-CAREER-183,Biologist,statistical software,category_default,synthetic,true
-CAREER-183,Biologist,reference managers,category_default,synthetic,true
-CAREER-183,Biologist,laboratory information systems,category_default,synthetic,true
-CAREER-184,Microbiologist,laboratory instruments,category_default,synthetic,true
-CAREER-184,Microbiologist,R or Python,category_default,synthetic,true
-CAREER-184,Microbiologist,statistical software,category_default,synthetic,true
-CAREER-184,Microbiologist,reference managers,category_default,synthetic,true
-CAREER-184,Microbiologist,laboratory information systems,category_default,synthetic,true
-CAREER-185,Biotechnologist,laboratory instruments,category_default,synthetic,true
-CAREER-185,Biotechnologist,R or Python,category_default,synthetic,true
-CAREER-185,Biotechnologist,statistical software,category_default,synthetic,true
-CAREER-185,Biotechnologist,reference managers,category_default,synthetic,true
-CAREER-185,Biotechnologist,laboratory information systems,category_default,synthetic,true
-CAREER-186,Physicist,laboratory instruments,category_default,synthetic,true
-CAREER-186,Physicist,R or Python,category_default,synthetic,true
-CAREER-186,Physicist,statistical software,category_default,synthetic,true
-CAREER-186,Physicist,reference managers,category_default,synthetic,true
-CAREER-186,Physicist,laboratory information systems,category_default,synthetic,true
-CAREER-187,Statistician,laboratory instruments,category_default,synthetic,true
-CAREER-187,Statistician,R or Python,category_default,synthetic,true
-CAREER-187,Statistician,statistical software,category_default,synthetic,true
-CAREER-187,Statistician,reference managers,category_default,synthetic,true
-CAREER-187,Statistician,laboratory information systems,category_default,synthetic,true
-CAREER-188,Mathematician,laboratory instruments,category_default,synthetic,true
-CAREER-188,Mathematician,R or Python,category_default,synthetic,true
-CAREER-188,Mathematician,statistical software,category_default,synthetic,true
-CAREER-188,Mathematician,reference managers,category_default,synthetic,true
-CAREER-188,Mathematician,laboratory information systems,category_default,synthetic,true
-CAREER-189,Geologist,laboratory instruments,category_default,synthetic,true
-CAREER-189,Geologist,R or Python,category_default,synthetic,true
-CAREER-189,Geologist,statistical software,category_default,synthetic,true
-CAREER-189,Geologist,reference managers,category_default,synthetic,true
-CAREER-189,Geologist,laboratory information systems,category_default,synthetic,true
-CAREER-190,Meteorologist,laboratory instruments,category_default,synthetic,true
-CAREER-190,Meteorologist,R or Python,category_default,synthetic,true
-CAREER-190,Meteorologist,statistical software,category_default,synthetic,true
-CAREER-190,Meteorologist,reference managers,category_default,synthetic,true
-CAREER-190,Meteorologist,laboratory information systems,category_default,synthetic,true
-CAREER-191,Bioinformatician,laboratory instruments,category_default,synthetic,true
-CAREER-191,Bioinformatician,R or Python,category_default,synthetic,true
-CAREER-191,Bioinformatician,statistical software,category_default,synthetic,true
-CAREER-191,Bioinformatician,reference managers,category_default,synthetic,true
-CAREER-191,Bioinformatician,laboratory information systems,category_default,synthetic,true
-CAREER-192,Research Assistant,laboratory instruments,category_default,synthetic,true
-CAREER-192,Research Assistant,R or Python,category_default,synthetic,true
-CAREER-192,Research Assistant,statistical software,category_default,synthetic,true
-CAREER-192,Research Assistant,reference managers,category_default,synthetic,true
-CAREER-192,Research Assistant,laboratory information systems,category_default,synthetic,true
-CAREER-193,Science Communicator,laboratory instruments,category_default,synthetic,true
-CAREER-193,Science Communicator,R or Python,category_default,synthetic,true
-CAREER-193,Science Communicator,statistical software,category_default,synthetic,true
-CAREER-193,Science Communicator,reference managers,category_default,synthetic,true
-CAREER-193,Science Communicator,laboratory information systems,category_default,synthetic,true
-CAREER-194,Materials Scientist,laboratory instruments,category_default,synthetic,true
-CAREER-194,Materials Scientist,R or Python,category_default,synthetic,true
-CAREER-194,Materials Scientist,statistical software,category_default,synthetic,true
-CAREER-194,Materials Scientist,reference managers,category_default,synthetic,true
-CAREER-194,Materials Scientist,laboratory information systems,category_default,synthetic,true
-CAREER-195,Forensic Scientist,laboratory instruments,category_default,synthetic,true
-CAREER-195,Forensic Scientist,R or Python,category_default,synthetic,true
-CAREER-195,Forensic Scientist,statistical software,category_default,synthetic,true
-CAREER-195,Forensic Scientist,reference managers,category_default,synthetic,true
-CAREER-195,Forensic Scientist,laboratory information systems,category_default,synthetic,true
-CAREER-196,Marine Scientist,laboratory instruments,category_default,synthetic,true
-CAREER-196,Marine Scientist,R or Python,category_default,synthetic,true
-CAREER-196,Marine Scientist,statistical software,category_default,synthetic,true
-CAREER-196,Marine Scientist,reference managers,category_default,synthetic,true
-CAREER-196,Marine Scientist,laboratory information systems,category_default,synthetic,true
-CAREER-197,Quality Control Analyst,laboratory instruments,category_default,synthetic,true
-CAREER-197,Quality Control Analyst,R or Python,category_default,synthetic,true
-CAREER-197,Quality Control Analyst,statistical software,category_default,synthetic,true
-CAREER-197,Quality Control Analyst,reference managers,category_default,synthetic,true
-CAREER-197,Quality Control Analyst,laboratory information systems,category_default,synthetic,true
-CAREER-198,Clinical Research Associate,laboratory instruments,category_default,synthetic,true
-CAREER-198,Clinical Research Associate,R or Python,category_default,synthetic,true
-CAREER-198,Clinical Research Associate,statistical software,category_default,synthetic,true
-CAREER-198,Clinical Research Associate,reference managers,category_default,synthetic,true
-CAREER-198,Clinical Research Associate,laboratory information systems,category_default,synthetic,true
-CAREER-199,Logistics Coordinator,ERP systems,category_default,synthetic,true
-CAREER-199,Logistics Coordinator,warehouse or transport management systems,category_default,synthetic,true
-CAREER-199,Logistics Coordinator,spreadsheets,category_default,synthetic,true
-CAREER-199,Logistics Coordinator,tracking and fleet systems,category_default,synthetic,true
-CAREER-199,Logistics Coordinator,customs and trade portals,category_default,synthetic,true
-CAREER-200,Supply Chain Analyst,ERP systems,category_default,synthetic,true
-CAREER-200,Supply Chain Analyst,warehouse or transport management systems,category_default,synthetic,true
-CAREER-200,Supply Chain Analyst,spreadsheets,category_default,synthetic,true
-CAREER-200,Supply Chain Analyst,tracking and fleet systems,category_default,synthetic,true
-CAREER-200,Supply Chain Analyst,customs and trade portals,category_default,synthetic,true
-CAREER-201,Procurement Officer,ERP systems,category_default,synthetic,true
-CAREER-201,Procurement Officer,warehouse or transport management systems,category_default,synthetic,true
-CAREER-201,Procurement Officer,spreadsheets,category_default,synthetic,true
-CAREER-201,Procurement Officer,tracking and fleet systems,category_default,synthetic,true
-CAREER-201,Procurement Officer,customs and trade portals,category_default,synthetic,true
-CAREER-202,Warehouse Manager,ERP systems,category_default,synthetic,true
-CAREER-202,Warehouse Manager,warehouse or transport management systems,category_default,synthetic,true
-CAREER-202,Warehouse Manager,spreadsheets,category_default,synthetic,true
-CAREER-202,Warehouse Manager,tracking and fleet systems,category_default,synthetic,true
-CAREER-202,Warehouse Manager,customs and trade portals,category_default,synthetic,true
-CAREER-203,Clearing and Forwarding Agent,ERP systems,category_default,synthetic,true
-CAREER-203,Clearing and Forwarding Agent,warehouse or transport management systems,category_default,synthetic,true
-CAREER-203,Clearing and Forwarding Agent,spreadsheets,category_default,synthetic,true
-CAREER-203,Clearing and Forwarding Agent,tracking and fleet systems,category_default,synthetic,true
-CAREER-203,Clearing and Forwarding Agent,customs and trade portals,category_default,synthetic,true
-CAREER-204,Customs Officer,ERP systems,category_default,synthetic,true
-CAREER-204,Customs Officer,warehouse or transport management systems,category_default,synthetic,true
-CAREER-204,Customs Officer,spreadsheets,category_default,synthetic,true
-CAREER-204,Customs Officer,tracking and fleet systems,category_default,synthetic,true
-CAREER-204,Customs Officer,customs and trade portals,category_default,synthetic,true
-CAREER-205,Operations Manager,ERP systems,category_default,synthetic,true
-CAREER-205,Operations Manager,warehouse or transport management systems,category_default,synthetic,true
-CAREER-205,Operations Manager,spreadsheets,category_default,synthetic,true
-CAREER-205,Operations Manager,tracking and fleet systems,category_default,synthetic,true
-CAREER-205,Operations Manager,customs and trade portals,category_default,synthetic,true
-CAREER-206,Fleet Manager,ERP systems,category_default,synthetic,true
-CAREER-206,Fleet Manager,warehouse or transport management systems,category_default,synthetic,true
-CAREER-206,Fleet Manager,spreadsheets,category_default,synthetic,true
-CAREER-206,Fleet Manager,tracking and fleet systems,category_default,synthetic,true
-CAREER-206,Fleet Manager,customs and trade portals,category_default,synthetic,true
-CAREER-207,Commercial Pilot,ERP systems,category_default,synthetic,true
-CAREER-207,Commercial Pilot,warehouse or transport management systems,category_default,synthetic,true
-CAREER-207,Commercial Pilot,spreadsheets,category_default,synthetic,true
-CAREER-207,Commercial Pilot,tracking and fleet systems,category_default,synthetic,true
-CAREER-207,Commercial Pilot,customs and trade portals,category_default,synthetic,true
-CAREER-208,Air Traffic Controller,ERP systems,category_default,synthetic,true
-CAREER-208,Air Traffic Controller,warehouse or transport management systems,category_default,synthetic,true
-CAREER-208,Air Traffic Controller,spreadsheets,category_default,synthetic,true
-CAREER-208,Air Traffic Controller,tracking and fleet systems,category_default,synthetic,true
-CAREER-208,Air Traffic Controller,customs and trade portals,category_default,synthetic,true
-CAREER-209,Aircraft Maintenance Engineer,ERP systems,category_default,synthetic,true
-CAREER-209,Aircraft Maintenance Engineer,warehouse or transport management systems,category_default,synthetic,true
-CAREER-209,Aircraft Maintenance Engineer,spreadsheets,category_default,synthetic,true
-CAREER-209,Aircraft Maintenance Engineer,tracking and fleet systems,category_default,synthetic,true
-CAREER-209,Aircraft Maintenance Engineer,customs and trade portals,category_default,synthetic,true
-CAREER-210,Marine Officer,ERP systems,category_default,synthetic,true
-CAREER-210,Marine Officer,warehouse or transport management systems,category_default,synthetic,true
-CAREER-210,Marine Officer,spreadsheets,category_default,synthetic,true
-CAREER-210,Marine Officer,tracking and fleet systems,category_default,synthetic,true
-CAREER-210,Marine Officer,customs and trade portals,category_default,synthetic,true
-CAREER-211,Railway Operations Officer,ERP systems,category_default,synthetic,true
-CAREER-211,Railway Operations Officer,warehouse or transport management systems,category_default,synthetic,true
-CAREER-211,Railway Operations Officer,spreadsheets,category_default,synthetic,true
-CAREER-211,Railway Operations Officer,tracking and fleet systems,category_default,synthetic,true
-CAREER-211,Railway Operations Officer,customs and trade portals,category_default,synthetic,true
-CAREER-212,Inventory Planner,ERP systems,category_default,synthetic,true
-CAREER-212,Inventory Planner,warehouse or transport management systems,category_default,synthetic,true
-CAREER-212,Inventory Planner,spreadsheets,category_default,synthetic,true
-CAREER-212,Inventory Planner,tracking and fleet systems,category_default,synthetic,true
-CAREER-212,Inventory Planner,customs and trade portals,category_default,synthetic,true
-CAREER-213,Demand Planner,ERP systems,category_default,synthetic,true
-CAREER-213,Demand Planner,warehouse or transport management systems,category_default,synthetic,true
-CAREER-213,Demand Planner,spreadsheets,category_default,synthetic,true
-CAREER-213,Demand Planner,tracking and fleet systems,category_default,synthetic,true
-CAREER-213,Demand Planner,customs and trade portals,category_default,synthetic,true
-CAREER-214,Last-Mile Delivery Manager,ERP systems,category_default,synthetic,true
-CAREER-214,Last-Mile Delivery Manager,warehouse or transport management systems,category_default,synthetic,true
-CAREER-214,Last-Mile Delivery Manager,spreadsheets,category_default,synthetic,true
-CAREER-214,Last-Mile Delivery Manager,tracking and fleet systems,category_default,synthetic,true
-CAREER-214,Last-Mile Delivery Manager,customs and trade portals,category_default,synthetic,true
-CAREER-215,Port Operations Officer,ERP systems,category_default,synthetic,true
-CAREER-215,Port Operations Officer,warehouse or transport management systems,category_default,synthetic,true
-CAREER-215,Port Operations Officer,spreadsheets,category_default,synthetic,true
-CAREER-215,Port Operations Officer,tracking and fleet systems,category_default,synthetic,true
-CAREER-215,Port Operations Officer,customs and trade portals,category_default,synthetic,true
-CAREER-216,Production Planner,ERP systems,category_default,synthetic,true
-CAREER-216,Production Planner,warehouse or transport management systems,category_default,synthetic,true
-CAREER-216,Production Planner,spreadsheets,category_default,synthetic,true
-CAREER-216,Production Planner,tracking and fleet systems,category_default,synthetic,true
-CAREER-216,Production Planner,customs and trade portals,category_default,synthetic,true
-CAREER-217,Transport Planner,ERP systems,category_default,synthetic,true
-CAREER-217,Transport Planner,warehouse or transport management systems,category_default,synthetic,true
-CAREER-217,Transport Planner,spreadsheets,category_default,synthetic,true
-CAREER-217,Transport Planner,tracking and fleet systems,category_default,synthetic,true
-CAREER-217,Transport Planner,customs and trade portals,category_default,synthetic,true
+CAREER-142,Journalist,content management systems,authored,synthetic,true
+CAREER-142,Journalist,voice recorders and smartphones,authored,synthetic,true
+CAREER-142,Journalist,fact-checking and open-source verification tools,authored,synthetic,true
+CAREER-142,Journalist,Excel or Google Sheets for data,authored,synthetic,true
+CAREER-142,Journalist,social media monitoring,authored,synthetic,true
+CAREER-142,Journalist,media law and ethics codes,authored,synthetic,true
+CAREER-142,Journalist,newsroom style guides,authored,synthetic,true
+CAREER-143,Broadcast Presenter,teleprompters,authored,synthetic,true
+CAREER-143,Broadcast Presenter,radio mixing desks,authored,synthetic,true
+CAREER-143,Broadcast Presenter,playout software,authored,synthetic,true
+CAREER-143,Broadcast Presenter,microphones and in-ear monitors,authored,synthetic,true
+CAREER-143,Broadcast Presenter,rundown and newsroom systems,authored,synthetic,true
+CAREER-143,Broadcast Presenter,social media platforms,authored,synthetic,true
+CAREER-143,Broadcast Presenter,audio editing software,authored,synthetic,true
+CAREER-144,Video Producer,Adobe Premiere Pro,authored,synthetic,true
+CAREER-144,Video Producer,DaVinci Resolve,authored,synthetic,true
+CAREER-144,Video Producer,cameras and lenses,authored,synthetic,true
+CAREER-144,Video Producer,lighting and audio kits,authored,synthetic,true
+CAREER-144,Video Producer,After Effects,authored,synthetic,true
+CAREER-144,Video Producer,shot lists and call sheets,authored,synthetic,true
+CAREER-144,Video Producer,live streaming tools such as OBS,authored,synthetic,true
+CAREER-145,Film Director,shot lists and storyboards,authored,synthetic,true
+CAREER-145,Film Director,script breakdown software,authored,synthetic,true
+CAREER-145,Film Director,monitors and video village,authored,synthetic,true
+CAREER-145,Film Director,scheduling tools such as Movie Magic,authored,synthetic,true
+CAREER-145,Film Director,editing software for review,authored,synthetic,true
+CAREER-145,Film Director,camera and lens knowledge,authored,synthetic,true
+CAREER-145,Film Director,call sheets,authored,synthetic,true
+CAREER-146,Graphic Designer,Adobe Illustrator,authored,synthetic,true
+CAREER-146,Graphic Designer,Adobe Photoshop,authored,synthetic,true
+CAREER-146,Graphic Designer,Adobe InDesign,authored,synthetic,true
+CAREER-146,Graphic Designer,Figma,authored,synthetic,true
+CAREER-146,Graphic Designer,Canva,authored,synthetic,true
+CAREER-146,Graphic Designer,colour systems such as Pantone,authored,synthetic,true
+CAREER-146,Graphic Designer,stock image libraries,authored,synthetic,true
+CAREER-147,Animator,Blender,authored,synthetic,true
+CAREER-147,Animator,Toon Boom Harmony,authored,synthetic,true
+CAREER-147,Animator,Adobe After Effects,authored,synthetic,true
+CAREER-147,Animator,Autodesk Maya,authored,synthetic,true
+CAREER-147,Animator,drawing tablets,authored,synthetic,true
+CAREER-147,Animator,Adobe Animate,authored,synthetic,true
+CAREER-147,Animator,storyboard software,authored,synthetic,true
+CAREER-148,Photographer,DSLR and mirrorless cameras,authored,synthetic,true
+CAREER-148,Photographer,lenses,authored,synthetic,true
+CAREER-148,Photographer,studio lights and flashes,authored,synthetic,true
+CAREER-148,Photographer,Adobe Lightroom,authored,synthetic,true
+CAREER-148,Photographer,Adobe Photoshop,authored,synthetic,true
+CAREER-148,Photographer,tripods and reflectors,authored,synthetic,true
+CAREER-148,Photographer,online gallery tools,authored,synthetic,true
+CAREER-149,Content Creator,smartphone or camera,authored,synthetic,true
+CAREER-149,Content Creator,CapCut or Premiere Pro,authored,synthetic,true
+CAREER-149,Content Creator,Canva,authored,synthetic,true
+CAREER-149,Content Creator,microphones and ring lights,authored,synthetic,true
+CAREER-149,Content Creator,platform analytics,authored,synthetic,true
+CAREER-149,Content Creator,scheduling tools,authored,synthetic,true
+CAREER-149,Content Creator,"YouTube, TikTok and Instagram",authored,synthetic,true
+CAREER-150,Copywriter,Word or Google Docs,authored,synthetic,true
+CAREER-150,Copywriter,brand voice guidelines,authored,synthetic,true
+CAREER-150,Copywriter,SEO keyword tools,authored,synthetic,true
+CAREER-150,Copywriter,grammar checkers,authored,synthetic,true
+CAREER-150,Copywriter,creative briefs,authored,synthetic,true
+CAREER-150,Copywriter,presentation tools,authored,synthetic,true
+CAREER-150,Copywriter,headline and A/B testing data,authored,synthetic,true
+CAREER-151,Editor,content management systems,authored,synthetic,true
+CAREER-151,Editor,style guides,authored,synthetic,true
+CAREER-151,Editor,Word track changes,authored,synthetic,true
+CAREER-151,Editor,Adobe InDesign,authored,synthetic,true
+CAREER-151,Editor,plagiarism and grammar checkers,authored,synthetic,true
+CAREER-151,Editor,editorial calendars,authored,synthetic,true
+CAREER-151,Editor,fact-checking references,authored,synthetic,true
+CAREER-152,Communications Officer,Canva or Adobe tools,authored,synthetic,true
+CAREER-152,Communications Officer,newsletter tools such as Mailchimp,authored,synthetic,true
+CAREER-152,Communications Officer,website content management systems,authored,synthetic,true
+CAREER-152,Communications Officer,social media schedulers,authored,synthetic,true
+CAREER-152,Communications Officer,media lists,authored,synthetic,true
+CAREER-152,Communications Officer,cameras,authored,synthetic,true
+CAREER-152,Communications Officer,analytics dashboards,authored,synthetic,true
+CAREER-153,Social Media Manager,Meta Business Suite,authored,synthetic,true
+CAREER-153,Social Media Manager,scheduling tools such as Hootsuite or Buffer,authored,synthetic,true
+CAREER-153,Social Media Manager,Canva,authored,synthetic,true
+CAREER-153,Social Media Manager,CapCut,authored,synthetic,true
+CAREER-153,Social Media Manager,platform analytics,authored,synthetic,true
+CAREER-153,Social Media Manager,social listening tools,authored,synthetic,true
+CAREER-153,Social Media Manager,"TikTok, X, Instagram and LinkedIn",authored,synthetic,true
+CAREER-154,Sound Engineer,Pro Tools or Logic Pro,authored,synthetic,true
+CAREER-154,Sound Engineer,mixing consoles,authored,synthetic,true
+CAREER-154,Sound Engineer,microphones,authored,synthetic,true
+CAREER-154,Sound Engineer,audio interfaces,authored,synthetic,true
+CAREER-154,Sound Engineer,studio monitors and PA systems,authored,synthetic,true
+CAREER-154,Sound Engineer,plug-ins and outboard effects,authored,synthetic,true
+CAREER-154,Sound Engineer,cables and DI boxes,authored,synthetic,true
+CAREER-155,Music Producer,FL Studio,authored,synthetic,true
+CAREER-155,Music Producer,Logic Pro or Ableton Live,authored,synthetic,true
+CAREER-155,Music Producer,MIDI keyboards,authored,synthetic,true
+CAREER-155,Music Producer,audio interfaces and microphones,authored,synthetic,true
+CAREER-155,Music Producer,sample libraries and virtual instruments,authored,synthetic,true
+CAREER-155,Music Producer,studio monitors,authored,synthetic,true
+CAREER-155,Music Producer,distribution platforms,authored,synthetic,true
+CAREER-156,Game Developer,Unity,authored,synthetic,true
+CAREER-156,Game Developer,Unreal Engine,authored,synthetic,true
+CAREER-156,Game Developer,Godot,authored,synthetic,true
+CAREER-156,Game Developer,C# or C++,authored,synthetic,true
+CAREER-156,Game Developer,Blender,authored,synthetic,true
+CAREER-156,Game Developer,Git,authored,synthetic,true
+CAREER-156,Game Developer,app store consoles,authored,synthetic,true
+CAREER-157,Fashion Designer,sewing machines and overlockers,authored,synthetic,true
+CAREER-157,Fashion Designer,pattern-making tools,authored,synthetic,true
+CAREER-157,Fashion Designer,sketchbooks and Adobe Illustrator,authored,synthetic,true
+CAREER-157,Fashion Designer,fabrics and trims,authored,synthetic,true
+CAREER-157,Fashion Designer,dress forms,authored,synthetic,true
+CAREER-157,Fashion Designer,CLO 3D or similar,authored,synthetic,true
+CAREER-157,Fashion Designer,measuring tapes,authored,synthetic,true
+CAREER-158,Interior Designer,AutoCAD,authored,synthetic,true
+CAREER-158,Interior Designer,SketchUp,authored,synthetic,true
+CAREER-158,Interior Designer,rendering tools such as V-Ray or Lumion,authored,synthetic,true
+CAREER-158,Interior Designer,mood boards,authored,synthetic,true
+CAREER-158,Interior Designer,material sample libraries,authored,synthetic,true
+CAREER-158,Interior Designer,measuring tools,authored,synthetic,true
+CAREER-158,Interior Designer,Excel budgets,authored,synthetic,true
+CAREER-159,Illustrator,Procreate,authored,synthetic,true
+CAREER-159,Illustrator,Adobe Photoshop,authored,synthetic,true
+CAREER-159,Illustrator,Adobe Illustrator,authored,synthetic,true
+CAREER-159,Illustrator,drawing tablets,authored,synthetic,true
+CAREER-159,Illustrator,"pencils, inks and paints",authored,synthetic,true
+CAREER-159,Illustrator,Clip Studio Paint,authored,synthetic,true
+CAREER-159,Illustrator,scanners,authored,synthetic,true
+CAREER-160,Creative Director,creative briefs,authored,synthetic,true
+CAREER-160,Creative Director,presentation tools such as Keynote,authored,synthetic,true
+CAREER-160,Creative Director,Adobe Creative Cloud,authored,synthetic,true
+CAREER-160,Creative Director,campaign results and awards benchmarks,authored,synthetic,true
+CAREER-160,Creative Director,Figma,authored,synthetic,true
+CAREER-160,Creative Director,mood boards,authored,synthetic,true
+CAREER-160,Creative Director,project management tools,authored,synthetic,true
+CAREER-161,Hotel Manager,property management systems such as Opera,authored,synthetic,true
+CAREER-161,Hotel Manager,channel managers,authored,synthetic,true
+CAREER-161,Hotel Manager,point-of-sale systems,authored,synthetic,true
+CAREER-161,Hotel Manager,revenue reports,authored,synthetic,true
+CAREER-161,Hotel Manager,guest review platforms,authored,synthetic,true
+CAREER-161,Hotel Manager,Excel,authored,synthetic,true
+CAREER-161,Hotel Manager,staff scheduling tools,authored,synthetic,true
+CAREER-162,Front Office Officer,property management systems such as Opera,authored,synthetic,true
+CAREER-162,Front Office Officer,key card systems,authored,synthetic,true
+CAREER-162,Front Office Officer,payment terminals and mobile money,authored,synthetic,true
+CAREER-162,Front Office Officer,switchboards,authored,synthetic,true
+CAREER-162,Front Office Officer,online booking platforms,authored,synthetic,true
+CAREER-162,Front Office Officer,email,authored,synthetic,true
+CAREER-162,Front Office Officer,guest registers,authored,synthetic,true
+CAREER-163,Chef,knives and kitchen tools,authored,synthetic,true
+CAREER-163,Chef,"ovens, grills and fryers",authored,synthetic,true
+CAREER-163,Chef,recipe and costing sheets,authored,synthetic,true
+CAREER-163,Chef,HACCP records,authored,synthetic,true
+CAREER-163,Chef,cold rooms and thermometers,authored,synthetic,true
+CAREER-163,Chef,kitchen display systems,authored,synthetic,true
+CAREER-163,Chef,stock sheets,authored,synthetic,true
+CAREER-164,Pastry Chef,deck and convection ovens,authored,synthetic,true
+CAREER-164,Pastry Chef,planetary mixers,authored,synthetic,true
+CAREER-164,Pastry Chef,piping bags and decorating tools,authored,synthetic,true
+CAREER-164,Pastry Chef,dough sheeters,authored,synthetic,true
+CAREER-164,Pastry Chef,digital scales and thermometers,authored,synthetic,true
+CAREER-164,Pastry Chef,moulds and tins,authored,synthetic,true
+CAREER-164,Pastry Chef,recipe cards,authored,synthetic,true
+CAREER-165,Food and Beverage Manager,point-of-sale systems,authored,synthetic,true
+CAREER-165,Food and Beverage Manager,inventory and costing software,authored,synthetic,true
+CAREER-165,Food and Beverage Manager,menu engineering sheets,authored,synthetic,true
+CAREER-165,Food and Beverage Manager,reservation systems,authored,synthetic,true
+CAREER-165,Food and Beverage Manager,Excel,authored,synthetic,true
+CAREER-165,Food and Beverage Manager,hygiene checklists,authored,synthetic,true
+CAREER-165,Food and Beverage Manager,staff rota tools,authored,synthetic,true
+CAREER-166,Tour Operator,tour itinerary software,authored,synthetic,true
+CAREER-166,Tour Operator,booking and costing sheets,authored,synthetic,true
+CAREER-166,Tour Operator,park fee systems such as eCitizen,authored,synthetic,true
+CAREER-166,Tour Operator,CRM systems,authored,synthetic,true
+CAREER-166,Tour Operator,supplier rate sheets,authored,synthetic,true
+CAREER-166,Tour Operator,online travel platforms,authored,synthetic,true
+CAREER-166,Tour Operator,payment gateways,authored,synthetic,true
+CAREER-167,Tour Guide,safari vehicles,authored,synthetic,true
+CAREER-167,Tour Guide,binoculars,authored,synthetic,true
+CAREER-167,Tour Guide,field guide books and apps,authored,synthetic,true
+CAREER-167,Tour Guide,first-aid kits,authored,synthetic,true
+CAREER-167,Tour Guide,radios,authored,synthetic,true
+CAREER-167,Tour Guide,maps and GPS,authored,synthetic,true
+CAREER-167,Tour Guide,park entry systems,authored,synthetic,true
+CAREER-168,Travel Consultant,global distribution systems such as Amadeus or Galileo,authored,synthetic,true
+CAREER-168,Travel Consultant,airline portals,authored,synthetic,true
+CAREER-168,Travel Consultant,hotel booking platforms,authored,synthetic,true
+CAREER-168,Travel Consultant,visa application portals,authored,synthetic,true
+CAREER-168,Travel Consultant,invoicing software,authored,synthetic,true
+CAREER-168,Travel Consultant,email and WhatsApp Business,authored,synthetic,true
+CAREER-168,Travel Consultant,travel insurance portals,authored,synthetic,true
+CAREER-169,Events Planner,event budgets in Excel,authored,synthetic,true
+CAREER-169,Events Planner,run sheets and checklists,authored,synthetic,true
+CAREER-169,Events Planner,registration and ticketing platforms,authored,synthetic,true
+CAREER-169,Events Planner,floor plan tools,authored,synthetic,true
+CAREER-169,Events Planner,supplier contracts,authored,synthetic,true
+CAREER-169,Events Planner,project management tools,authored,synthetic,true
+CAREER-169,Events Planner,radios on site,authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,event management software,authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,function sheets,authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,audio-visual and interpretation equipment,authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,registration platforms,authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,property management systems,authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,Excel,authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,video conferencing tools,authored,synthetic,true
+CAREER-171,Revenue Manager,revenue management systems,authored,synthetic,true
+CAREER-171,Revenue Manager,property management systems,authored,synthetic,true
+CAREER-171,Revenue Manager,channel managers,authored,synthetic,true
+CAREER-171,Revenue Manager,rate shopping tools,authored,synthetic,true
+CAREER-171,Revenue Manager,Excel,authored,synthetic,true
+CAREER-171,Revenue Manager,STR benchmarking reports,authored,synthetic,true
+CAREER-171,Revenue Manager,business intelligence dashboards,authored,synthetic,true
+CAREER-172,Safari Lodge Manager,lodge booking systems,authored,synthetic,true
+CAREER-172,Safari Lodge Manager,radios and satellite communication,authored,synthetic,true
+CAREER-172,Safari Lodge Manager,solar and generator systems,authored,synthetic,true
+CAREER-172,Safari Lodge Manager,stock control sheets,authored,synthetic,true
+CAREER-172,Safari Lodge Manager,first-aid and evacuation plans,authored,synthetic,true
+CAREER-172,Safari Lodge Manager,4x4 vehicles,authored,synthetic,true
+CAREER-172,Safari Lodge Manager,guest feedback platforms,authored,synthetic,true
+CAREER-173,Cabin Crew Member,aircraft safety equipment,authored,synthetic,true
+CAREER-173,Cabin Crew Member,cabin service trolleys,authored,synthetic,true
+CAREER-173,Cabin Crew Member,public address systems,authored,synthetic,true
+CAREER-173,Cabin Crew Member,first-aid and defibrillator kits,authored,synthetic,true
+CAREER-173,Cabin Crew Member,safety manuals,authored,synthetic,true
+CAREER-173,Cabin Crew Member,in-flight sales devices,authored,synthetic,true
+CAREER-173,Cabin Crew Member,crew rostering apps,authored,synthetic,true
+CAREER-174,Ground Handling Officer,departure control systems,authored,synthetic,true
+CAREER-174,Ground Handling Officer,baggage tracing systems such as WorldTracer,authored,synthetic,true
+CAREER-174,Ground Handling Officer,ramp equipment and tugs,authored,synthetic,true
+CAREER-174,Ground Handling Officer,radios,authored,synthetic,true
+CAREER-174,Ground Handling Officer,boarding pass scanners,authored,synthetic,true
+CAREER-174,Ground Handling Officer,load sheets,authored,synthetic,true
+CAREER-174,Ground Handling Officer,airport safety gear,authored,synthetic,true
+CAREER-175,Restaurant Manager,point-of-sale systems,authored,synthetic,true
+CAREER-175,Restaurant Manager,reservation systems,authored,synthetic,true
+CAREER-175,Restaurant Manager,delivery platform tablets,authored,synthetic,true
+CAREER-175,Restaurant Manager,inventory sheets,authored,synthetic,true
+CAREER-175,Restaurant Manager,staff rota tools,authored,synthetic,true
+CAREER-175,Restaurant Manager,payment terminals and mobile money,authored,synthetic,true
+CAREER-175,Restaurant Manager,hygiene checklists,authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,espresso machines,authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,grinders,authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,scales and timers,authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,pour-over and brewing equipment,authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,milk pitchers,authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,point-of-sale systems,authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,cupping sets,authored,synthetic,true
+CAREER-177,Housekeeping Manager,property management systems,authored,synthetic,true
+CAREER-177,Housekeeping Manager,housekeeping checklists,authored,synthetic,true
+CAREER-177,Housekeeping Manager,laundry machines,authored,synthetic,true
+CAREER-177,Housekeeping Manager,cleaning equipment and chemicals,authored,synthetic,true
+CAREER-177,Housekeeping Manager,linen inventory sheets,authored,synthetic,true
+CAREER-177,Housekeeping Manager,radios,authored,synthetic,true
+CAREER-177,Housekeeping Manager,staff rota tools,authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,social media and advertising platforms,authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,Canva or Adobe tools,authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,website content management systems,authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,tourism statistics,authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,CRM systems,authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,exhibition materials,authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,analytics dashboards,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,collections databases,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,site monitoring forms,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,oral history recording equipment,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,heritage laws and conventions,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,interpretation panels,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,cameras,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,GPS and mapping tools,authored,synthetic,true
+CAREER-180,Research Scientist,R or Python,authored,synthetic,true
+CAREER-180,Research Scientist,laboratory or field equipment,authored,synthetic,true
+CAREER-180,Research Scientist,reference managers such as Zotero,authored,synthetic,true
+CAREER-180,Research Scientist,research databases,authored,synthetic,true
+CAREER-180,Research Scientist,statistical methods,authored,synthetic,true
+CAREER-180,Research Scientist,electronic lab notebooks,authored,synthetic,true
+CAREER-180,Research Scientist,grant portals,authored,synthetic,true
+CAREER-181,Laboratory Technician,balances and pipettes,authored,synthetic,true
+CAREER-181,Laboratory Technician,autoclaves,authored,synthetic,true
+CAREER-181,Laboratory Technician,pH meters,authored,synthetic,true
+CAREER-181,Laboratory Technician,centrifuges,authored,synthetic,true
+CAREER-181,Laboratory Technician,microscopes,authored,synthetic,true
+CAREER-181,Laboratory Technician,laboratory information systems,authored,synthetic,true
+CAREER-181,Laboratory Technician,safety data sheets,authored,synthetic,true
+CAREER-182,Chemist,HPLC,authored,synthetic,true
+CAREER-182,Chemist,gas chromatography,authored,synthetic,true
+CAREER-182,Chemist,UV-visible and infrared spectrometers,authored,synthetic,true
+CAREER-182,Chemist,titration equipment,authored,synthetic,true
+CAREER-182,Chemist,atomic absorption spectrometers,authored,synthetic,true
+CAREER-182,Chemist,laboratory information systems,authored,synthetic,true
+CAREER-182,Chemist,standards such as ISO 17025,authored,synthetic,true
+CAREER-183,Biologist,microscopes,authored,synthetic,true
+CAREER-183,Biologist,field sampling equipment,authored,synthetic,true
+CAREER-183,Biologist,GPS,authored,synthetic,true
+CAREER-183,Biologist,R,authored,synthetic,true
+CAREER-183,Biologist,identification keys,authored,synthetic,true
+CAREER-183,Biologist,PCR equipment,authored,synthetic,true
+CAREER-183,Biologist,camera traps,authored,synthetic,true
+CAREER-184,Microbiologist,incubators and autoclaves,authored,synthetic,true
+CAREER-184,Microbiologist,biosafety cabinets,authored,synthetic,true
+CAREER-184,Microbiologist,culture media,authored,synthetic,true
+CAREER-184,Microbiologist,microscopes and stains,authored,synthetic,true
+CAREER-184,Microbiologist,PCR machines,authored,synthetic,true
+CAREER-184,Microbiologist,colony counters,authored,synthetic,true
+CAREER-184,Microbiologist,identification systems such as API or VITEK,authored,synthetic,true
+CAREER-185,Biotechnologist,PCR and qPCR machines,authored,synthetic,true
+CAREER-185,Biotechnologist,gel electrophoresis,authored,synthetic,true
+CAREER-185,Biotechnologist,laminar flow hoods,authored,synthetic,true
+CAREER-185,Biotechnologist,bioreactors,authored,synthetic,true
+CAREER-185,Biotechnologist,DNA sequencers,authored,synthetic,true
+CAREER-185,Biotechnologist,CRISPR reagents,authored,synthetic,true
+CAREER-185,Biotechnologist,bioinformatics software,authored,synthetic,true
+CAREER-186,Physicist,Python or MATLAB,authored,synthetic,true
+CAREER-186,Physicist,oscilloscopes and sensors,authored,synthetic,true
+CAREER-186,Physicist,simulation software such as COMSOL,authored,synthetic,true
+CAREER-186,Physicist,radiation detectors,authored,synthetic,true
+CAREER-186,Physicist,data acquisition systems,authored,synthetic,true
+CAREER-186,Physicist,LaTeX,authored,synthetic,true
+CAREER-186,Physicist,laboratory instruments,authored,synthetic,true
+CAREER-187,Statistician,R,authored,synthetic,true
+CAREER-187,Statistician,Stata,authored,synthetic,true
+CAREER-187,Statistician,SPSS,authored,synthetic,true
+CAREER-187,Statistician,SAS,authored,synthetic,true
+CAREER-187,Statistician,Excel,authored,synthetic,true
+CAREER-187,Statistician,survey tools such as CSPro,authored,synthetic,true
+CAREER-187,Statistician,Python,authored,synthetic,true
+CAREER-188,Mathematician,Python,authored,synthetic,true
+CAREER-188,Mathematician,MATLAB,authored,synthetic,true
+CAREER-188,Mathematician,R,authored,synthetic,true
+CAREER-188,Mathematician,LaTeX,authored,synthetic,true
+CAREER-188,Mathematician,optimisation solvers,authored,synthetic,true
+CAREER-188,Mathematician,Mathematica or Maple,authored,synthetic,true
+CAREER-188,Mathematician,statistical methods,authored,synthetic,true
+CAREER-189,Geologist,geological compasses and hammers,authored,synthetic,true
+CAREER-189,Geologist,GPS,authored,synthetic,true
+CAREER-189,Geologist,GIS software such as ArcGIS or QGIS,authored,synthetic,true
+CAREER-189,Geologist,core logging tools,authored,synthetic,true
+CAREER-189,Geologist,modelling software such as Leapfrog,authored,synthetic,true
+CAREER-189,Geologist,geophysical survey equipment,authored,synthetic,true
+CAREER-189,Geologist,hand lenses,authored,synthetic,true
+CAREER-190,Meteorologist,numerical weather prediction models,authored,synthetic,true
+CAREER-190,Meteorologist,satellite and radar imagery,authored,synthetic,true
+CAREER-190,Meteorologist,automatic weather stations,authored,synthetic,true
+CAREER-190,Meteorologist,GIS software,authored,synthetic,true
+CAREER-190,Meteorologist,Python or R,authored,synthetic,true
+CAREER-190,Meteorologist,forecasting workstations,authored,synthetic,true
+CAREER-190,Meteorologist,climate databases,authored,synthetic,true
+CAREER-191,Bioinformatician,Python and R,authored,synthetic,true
+CAREER-191,Bioinformatician,Linux and Bash,authored,synthetic,true
+CAREER-191,Bioinformatician,Bioconductor,authored,synthetic,true
+CAREER-191,Bioinformatician,workflow tools such as Nextflow or Snakemake,authored,synthetic,true
+CAREER-191,Bioinformatician,high-performance computing clusters,authored,synthetic,true
+CAREER-191,Bioinformatician,Git,authored,synthetic,true
+CAREER-191,Bioinformatician,genomic databases such as NCBI,authored,synthetic,true
+CAREER-192,Research Assistant,survey tools such as KoboToolbox or ODK,authored,synthetic,true
+CAREER-192,Research Assistant,Excel,authored,synthetic,true
+CAREER-192,Research Assistant,SPSS or Stata,authored,synthetic,true
+CAREER-192,Research Assistant,reference managers,authored,synthetic,true
+CAREER-192,Research Assistant,audio recorders,authored,synthetic,true
+CAREER-192,Research Assistant,Word,authored,synthetic,true
+CAREER-192,Research Assistant,tablets for data collection,authored,synthetic,true
+CAREER-193,Science Communicator,content management systems,authored,synthetic,true
+CAREER-193,Science Communicator,Canva or Adobe tools,authored,synthetic,true
+CAREER-193,Science Communicator,video and audio editors,authored,synthetic,true
+CAREER-193,Science Communicator,social media platforms,authored,synthetic,true
+CAREER-193,Science Communicator,newsletter tools,authored,synthetic,true
+CAREER-193,Science Communicator,presentation tools,authored,synthetic,true
+CAREER-193,Science Communicator,research papers and press releases,authored,synthetic,true
+CAREER-194,Materials Scientist,scanning electron microscopes,authored,synthetic,true
+CAREER-194,Materials Scientist,X-ray diffraction,authored,synthetic,true
+CAREER-194,Materials Scientist,universal testing machines,authored,synthetic,true
+CAREER-194,Materials Scientist,thermal analysers,authored,synthetic,true
+CAREER-194,Materials Scientist,furnaces,authored,synthetic,true
+CAREER-194,Materials Scientist,spectroscopy instruments,authored,synthetic,true
+CAREER-194,Materials Scientist,MATLAB or Python,authored,synthetic,true
+CAREER-195,Forensic Scientist,DNA profiling equipment,authored,synthetic,true
+CAREER-195,Forensic Scientist,comparison microscopes,authored,synthetic,true
+CAREER-195,Forensic Scientist,gas chromatography-mass spectrometry,authored,synthetic,true
+CAREER-195,Forensic Scientist,fingerprint powders and databases,authored,synthetic,true
+CAREER-195,Forensic Scientist,evidence collection kits,authored,synthetic,true
+CAREER-195,Forensic Scientist,laboratory information systems,authored,synthetic,true
+CAREER-195,Forensic Scientist,chain-of-custody forms,authored,synthetic,true
+CAREER-196,Marine Scientist,SCUBA and snorkelling equipment,authored,synthetic,true
+CAREER-196,Marine Scientist,research boats,authored,synthetic,true
+CAREER-196,Marine Scientist,water quality sondes,authored,synthetic,true
+CAREER-196,Marine Scientist,underwater cameras,authored,synthetic,true
+CAREER-196,Marine Scientist,GIS software,authored,synthetic,true
+CAREER-196,Marine Scientist,R,authored,synthetic,true
+CAREER-196,Marine Scientist,plankton and sediment samplers,authored,synthetic,true
+CAREER-197,Quality Control Analyst,HPLC,authored,synthetic,true
+CAREER-197,Quality Control Analyst,UV-visible spectrometers,authored,synthetic,true
+CAREER-197,Quality Control Analyst,pH and moisture meters,authored,synthetic,true
+CAREER-197,Quality Control Analyst,dissolution testers,authored,synthetic,true
+CAREER-197,Quality Control Analyst,laboratory information systems,authored,synthetic,true
+CAREER-197,Quality Control Analyst,good manufacturing practice guidelines,authored,synthetic,true
+CAREER-197,Quality Control Analyst,standard operating procedures,authored,synthetic,true
+CAREER-198,Clinical Research Associate,electronic data capture systems such as REDCap,authored,synthetic,true
+CAREER-198,Clinical Research Associate,good clinical practice guidelines,authored,synthetic,true
+CAREER-198,Clinical Research Associate,trial master files,authored,synthetic,true
+CAREER-198,Clinical Research Associate,clinical trial management systems,authored,synthetic,true
+CAREER-198,Clinical Research Associate,protocols and case report forms,authored,synthetic,true
+CAREER-198,Clinical Research Associate,Excel,authored,synthetic,true
+CAREER-198,Clinical Research Associate,safety reporting systems,authored,synthetic,true
+CAREER-199,Logistics Coordinator,transport management systems,authored,synthetic,true
+CAREER-199,Logistics Coordinator,ERP systems such as SAP,authored,synthetic,true
+CAREER-199,Logistics Coordinator,Excel,authored,synthetic,true
+CAREER-199,Logistics Coordinator,vehicle tracking platforms,authored,synthetic,true
+CAREER-199,Logistics Coordinator,shipping documents,authored,synthetic,true
+CAREER-199,Logistics Coordinator,WhatsApp and email,authored,synthetic,true
+CAREER-199,Logistics Coordinator,warehouse management systems,authored,synthetic,true
+CAREER-200,Supply Chain Analyst,Excel,authored,synthetic,true
+CAREER-200,Supply Chain Analyst,SQL,authored,synthetic,true
+CAREER-200,Supply Chain Analyst,ERP systems such as SAP,authored,synthetic,true
+CAREER-200,Supply Chain Analyst,Power BI or Tableau,authored,synthetic,true
+CAREER-200,Supply Chain Analyst,forecasting tools,authored,synthetic,true
+CAREER-200,Supply Chain Analyst,Python,authored,synthetic,true
+CAREER-200,Supply Chain Analyst,supply chain KPIs,authored,synthetic,true
+CAREER-201,Procurement Officer,ERP procurement modules,authored,synthetic,true
+CAREER-201,Procurement Officer,e-procurement portals such as IFMIS,authored,synthetic,true
+CAREER-201,Procurement Officer,Excel,authored,synthetic,true
+CAREER-201,Procurement Officer,tender documents,authored,synthetic,true
+CAREER-201,Procurement Officer,supplier registers,authored,synthetic,true
+CAREER-201,Procurement Officer,procurement laws and regulations,authored,synthetic,true
+CAREER-201,Procurement Officer,contract templates,authored,synthetic,true
+CAREER-202,Warehouse Manager,warehouse management systems,authored,synthetic,true
+CAREER-202,Warehouse Manager,barcode scanners,authored,synthetic,true
+CAREER-202,Warehouse Manager,forklifts and pallet jacks,authored,synthetic,true
+CAREER-202,Warehouse Manager,ERP systems,authored,synthetic,true
+CAREER-202,Warehouse Manager,racking systems,authored,synthetic,true
+CAREER-202,Warehouse Manager,Excel,authored,synthetic,true
+CAREER-202,Warehouse Manager,stock count sheets,authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,customs systems such as iCMS or Simba,authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,the East African Community tariff book,authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,bills of lading and airway bills,authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,port systems such as KWATOS,authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,single window systems,authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,Excel,authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,shipping line portals,authored,synthetic,true
+CAREER-204,Customs Officer,customs management systems,authored,synthetic,true
+CAREER-204,Customs Officer,cargo scanners,authored,synthetic,true
+CAREER-204,Customs Officer,the tariff book and customs law,authored,synthetic,true
+CAREER-204,Customs Officer,risk management systems,authored,synthetic,true
+CAREER-204,Customs Officer,cargo tracking systems,authored,synthetic,true
+CAREER-204,Customs Officer,inspection tools,authored,synthetic,true
+CAREER-204,Customs Officer,radios,authored,synthetic,true
+CAREER-205,Operations Manager,ERP systems,authored,synthetic,true
+CAREER-205,Operations Manager,Excel,authored,synthetic,true
+CAREER-205,Operations Manager,KPI dashboards,authored,synthetic,true
+CAREER-205,Operations Manager,process mapping tools,authored,synthetic,true
+CAREER-205,Operations Manager,lean and Six Sigma methods,authored,synthetic,true
+CAREER-205,Operations Manager,project management tools,authored,synthetic,true
+CAREER-205,Operations Manager,Power BI,authored,synthetic,true
+CAREER-206,Fleet Manager,fleet management software,authored,synthetic,true
+CAREER-206,Fleet Manager,GPS tracking and telematics,authored,synthetic,true
+CAREER-206,Fleet Manager,fuel cards,authored,synthetic,true
+CAREER-206,Fleet Manager,maintenance schedules,authored,synthetic,true
+CAREER-206,Fleet Manager,Excel,authored,synthetic,true
+CAREER-206,Fleet Manager,NTSA and licensing portals,authored,synthetic,true
+CAREER-206,Fleet Manager,driver logbooks,authored,synthetic,true
+CAREER-207,Commercial Pilot,aircraft flight decks and avionics,authored,synthetic,true
+CAREER-207,Commercial Pilot,flight management systems,authored,synthetic,true
+CAREER-207,Commercial Pilot,electronic flight bags,authored,synthetic,true
+CAREER-207,Commercial Pilot,aeronautical charts,authored,synthetic,true
+CAREER-207,Commercial Pilot,flight simulators,authored,synthetic,true
+CAREER-207,Commercial Pilot,checklists and operating manuals,authored,synthetic,true
+CAREER-207,Commercial Pilot,weather briefing systems,authored,synthetic,true
+CAREER-208,Air Traffic Controller,radar and surveillance displays,authored,synthetic,true
+CAREER-208,Air Traffic Controller,radio communication systems,authored,synthetic,true
+CAREER-208,Air Traffic Controller,flight progress strips,authored,synthetic,true
+CAREER-208,Air Traffic Controller,flight data processing systems,authored,synthetic,true
+CAREER-208,Air Traffic Controller,weather displays,authored,synthetic,true
+CAREER-208,Air Traffic Controller,navigation aids,authored,synthetic,true
+CAREER-208,Air Traffic Controller,air traffic procedures manuals,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,aircraft maintenance manuals,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,torque wrenches and specialised tools,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,borescopes,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,avionics test equipment,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,maintenance tracking software,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,technical logbooks,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,ground support equipment,authored,synthetic,true
+CAREER-210,Marine Officer,radar and ARPA,authored,synthetic,true
+CAREER-210,Marine Officer,electronic chart displays,authored,synthetic,true
+CAREER-210,Marine Officer,GPS and gyrocompasses,authored,synthetic,true
+CAREER-210,Marine Officer,marine radios and GMDSS,authored,synthetic,true
+CAREER-210,Marine Officer,cargo loading computers,authored,synthetic,true
+CAREER-210,Marine Officer,engine room control systems,authored,synthetic,true
+CAREER-210,Marine Officer,safety management manuals,authored,synthetic,true
+CAREER-211,Railway Operations Officer,train control and signalling systems,authored,synthetic,true
+CAREER-211,Railway Operations Officer,radio communication,authored,synthetic,true
+CAREER-211,Railway Operations Officer,timetables and working rules,authored,synthetic,true
+CAREER-211,Railway Operations Officer,ticketing systems,authored,synthetic,true
+CAREER-211,Railway Operations Officer,train registers,authored,synthetic,true
+CAREER-211,Railway Operations Officer,CCTV,authored,synthetic,true
+CAREER-211,Railway Operations Officer,safety rule books,authored,synthetic,true
+CAREER-212,Inventory Planner,ERP systems such as SAP,authored,synthetic,true
+CAREER-212,Inventory Planner,Excel,authored,synthetic,true
+CAREER-212,Inventory Planner,inventory planning tools,authored,synthetic,true
+CAREER-212,Inventory Planner,warehouse management systems,authored,synthetic,true
+CAREER-212,Inventory Planner,ABC analysis,authored,synthetic,true
+CAREER-212,Inventory Planner,barcode scanners,authored,synthetic,true
+CAREER-212,Inventory Planner,Power BI,authored,synthetic,true
+CAREER-213,Demand Planner,forecasting software,authored,synthetic,true
+CAREER-213,Demand Planner,Excel,authored,synthetic,true
+CAREER-213,Demand Planner,ERP systems such as SAP APO or IBP,authored,synthetic,true
+CAREER-213,Demand Planner,Power BI,authored,synthetic,true
+CAREER-213,Demand Planner,statistical methods,authored,synthetic,true
+CAREER-213,Demand Planner,sales data,authored,synthetic,true
+CAREER-213,Demand Planner,Python or R,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,delivery management platforms,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,routing software,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,rider apps,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,GPS tracking,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,mobile money reconciliation,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,Excel,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,customer messaging tools,authored,synthetic,true
+CAREER-215,Port Operations Officer,terminal operating systems such as KWATOS or Navis,authored,synthetic,true
+CAREER-215,Port Operations Officer,ship-to-shore cranes and reach stackers,authored,synthetic,true
+CAREER-215,Port Operations Officer,vessel stowage plans,authored,synthetic,true
+CAREER-215,Port Operations Officer,radios,authored,synthetic,true
+CAREER-215,Port Operations Officer,gate systems,authored,synthetic,true
+CAREER-215,Port Operations Officer,Excel,authored,synthetic,true
+CAREER-215,Port Operations Officer,port safety procedures,authored,synthetic,true
+CAREER-216,Production Planner,ERP and MRP systems,authored,synthetic,true
+CAREER-216,Production Planner,Excel,authored,synthetic,true
+CAREER-216,Production Planner,production scheduling tools,authored,synthetic,true
+CAREER-216,Production Planner,bills of materials,authored,synthetic,true
+CAREER-216,Production Planner,Gantt charts,authored,synthetic,true
+CAREER-216,Production Planner,capacity plans,authored,synthetic,true
+CAREER-216,Production Planner,shop-floor reports,authored,synthetic,true
+CAREER-217,Transport Planner,transport modelling software such as VISUM or EMME,authored,synthetic,true
+CAREER-217,Transport Planner,traffic simulation tools such as VISSIM,authored,synthetic,true
+CAREER-217,Transport Planner,GIS software,authored,synthetic,true
+CAREER-217,Transport Planner,traffic counters,authored,synthetic,true
+CAREER-217,Transport Planner,Excel,authored,synthetic,true
+CAREER-217,Transport Planner,survey tools,authored,synthetic,true
+CAREER-217,Transport Planner,AutoCAD,authored,synthetic,true
 CAREER-218,Social Worker,case management systems,category_default,synthetic,true
 CAREER-218,Social Worker,mobile data collection tools,category_default,synthetic,true
 CAREER-218,Social Worker,monitoring and evaluation frameworks,category_default,synthetic,true
@@ -2079,236 +2231,328 @@ CAREER-368,Greenhouse Manager,pH and EC meters,authored,synthetic,true
 CAREER-368,Greenhouse Manager,hydroponic systems,authored,synthetic,true
 CAREER-368,Greenhouse Manager,scouting records,authored,synthetic,true
 CAREER-368,Greenhouse Manager,production software,authored,synthetic,true
-CAREER-369,Documentary Filmmaker,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-369,Documentary Filmmaker,cameras and audio equipment,category_default,synthetic,true
-CAREER-369,Documentary Filmmaker,editing software,category_default,synthetic,true
-CAREER-369,Documentary Filmmaker,content management systems,category_default,synthetic,true
-CAREER-369,Documentary Filmmaker,social media platforms,category_default,synthetic,true
-CAREER-370,Screenwriter,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-370,Screenwriter,cameras and audio equipment,category_default,synthetic,true
-CAREER-370,Screenwriter,editing software,category_default,synthetic,true
-CAREER-370,Screenwriter,content management systems,category_default,synthetic,true
-CAREER-370,Screenwriter,social media platforms,category_default,synthetic,true
-CAREER-371,Radio Producer,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-371,Radio Producer,cameras and audio equipment,category_default,synthetic,true
-CAREER-371,Radio Producer,editing software,category_default,synthetic,true
-CAREER-371,Radio Producer,content management systems,category_default,synthetic,true
-CAREER-371,Radio Producer,social media platforms,category_default,synthetic,true
-CAREER-372,Art Director,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-372,Art Director,cameras and audio equipment,category_default,synthetic,true
-CAREER-372,Art Director,editing software,category_default,synthetic,true
-CAREER-372,Art Director,content management systems,category_default,synthetic,true
-CAREER-372,Art Director,social media platforms,category_default,synthetic,true
-CAREER-373,UX Writer,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-373,UX Writer,cameras and audio equipment,category_default,synthetic,true
-CAREER-373,UX Writer,editing software,category_default,synthetic,true
-CAREER-373,UX Writer,content management systems,category_default,synthetic,true
-CAREER-373,UX Writer,social media platforms,category_default,synthetic,true
-CAREER-374,Motion Graphics Designer,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-374,Motion Graphics Designer,cameras and audio equipment,category_default,synthetic,true
-CAREER-374,Motion Graphics Designer,editing software,category_default,synthetic,true
-CAREER-374,Motion Graphics Designer,content management systems,category_default,synthetic,true
-CAREER-374,Motion Graphics Designer,social media platforms,category_default,synthetic,true
-CAREER-375,Voice-over Artist,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-375,Voice-over Artist,cameras and audio equipment,category_default,synthetic,true
-CAREER-375,Voice-over Artist,editing software,category_default,synthetic,true
-CAREER-375,Voice-over Artist,content management systems,category_default,synthetic,true
-CAREER-375,Voice-over Artist,social media platforms,category_default,synthetic,true
-CAREER-376,Actor,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-376,Actor,cameras and audio equipment,category_default,synthetic,true
-CAREER-376,Actor,editing software,category_default,synthetic,true
-CAREER-376,Actor,content management systems,category_default,synthetic,true
-CAREER-376,Actor,social media platforms,category_default,synthetic,true
-CAREER-377,Dancer and Choreographer,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-377,Dancer and Choreographer,cameras and audio equipment,category_default,synthetic,true
-CAREER-377,Dancer and Choreographer,editing software,category_default,synthetic,true
-CAREER-377,Dancer and Choreographer,content management systems,category_default,synthetic,true
-CAREER-377,Dancer and Choreographer,social media platforms,category_default,synthetic,true
-CAREER-378,Curator,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-378,Curator,cameras and audio equipment,category_default,synthetic,true
-CAREER-378,Curator,editing software,category_default,synthetic,true
-CAREER-378,Curator,content management systems,category_default,synthetic,true
-CAREER-378,Curator,social media platforms,category_default,synthetic,true
-CAREER-379,Translator and Interpreter,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-379,Translator and Interpreter,cameras and audio equipment,category_default,synthetic,true
-CAREER-379,Translator and Interpreter,editing software,category_default,synthetic,true
-CAREER-379,Translator and Interpreter,content management systems,category_default,synthetic,true
-CAREER-379,Translator and Interpreter,social media platforms,category_default,synthetic,true
-CAREER-380,Influencer Marketing Manager,Adobe Creative Cloud,category_default,synthetic,true
-CAREER-380,Influencer Marketing Manager,cameras and audio equipment,category_default,synthetic,true
-CAREER-380,Influencer Marketing Manager,editing software,category_default,synthetic,true
-CAREER-380,Influencer Marketing Manager,content management systems,category_default,synthetic,true
-CAREER-380,Influencer Marketing Manager,social media platforms,category_default,synthetic,true
-CAREER-381,Bartender and Mixologist,property or reservation management systems,category_default,synthetic,true
-CAREER-381,Bartender and Mixologist,point-of-sale systems,category_default,synthetic,true
-CAREER-381,Bartender and Mixologist,booking platforms,category_default,synthetic,true
-CAREER-381,Bartender and Mixologist,kitchen or service equipment,category_default,synthetic,true
-CAREER-381,Bartender and Mixologist,spreadsheets,category_default,synthetic,true
-CAREER-382,Airline Reservations Agent,property or reservation management systems,category_default,synthetic,true
-CAREER-382,Airline Reservations Agent,point-of-sale systems,category_default,synthetic,true
-CAREER-382,Airline Reservations Agent,booking platforms,category_default,synthetic,true
-CAREER-382,Airline Reservations Agent,kitchen or service equipment,category_default,synthetic,true
-CAREER-382,Airline Reservations Agent,spreadsheets,category_default,synthetic,true
-CAREER-383,Spa and Wellness Manager,property or reservation management systems,category_default,synthetic,true
-CAREER-383,Spa and Wellness Manager,point-of-sale systems,category_default,synthetic,true
-CAREER-383,Spa and Wellness Manager,booking platforms,category_default,synthetic,true
-CAREER-383,Spa and Wellness Manager,kitchen or service equipment,category_default,synthetic,true
-CAREER-383,Spa and Wellness Manager,spreadsheets,category_default,synthetic,true
-CAREER-384,Ecotourism Officer,property or reservation management systems,category_default,synthetic,true
-CAREER-384,Ecotourism Officer,point-of-sale systems,category_default,synthetic,true
-CAREER-384,Ecotourism Officer,booking platforms,category_default,synthetic,true
-CAREER-384,Ecotourism Officer,kitchen or service equipment,category_default,synthetic,true
-CAREER-384,Ecotourism Officer,spreadsheets,category_default,synthetic,true
-CAREER-385,Hotel Sales Manager,property or reservation management systems,category_default,synthetic,true
-CAREER-385,Hotel Sales Manager,point-of-sale systems,category_default,synthetic,true
-CAREER-385,Hotel Sales Manager,booking platforms,category_default,synthetic,true
-CAREER-385,Hotel Sales Manager,kitchen or service equipment,category_default,synthetic,true
-CAREER-385,Hotel Sales Manager,spreadsheets,category_default,synthetic,true
-CAREER-386,Concierge,property or reservation management systems,category_default,synthetic,true
-CAREER-386,Concierge,point-of-sale systems,category_default,synthetic,true
-CAREER-386,Concierge,booking platforms,category_default,synthetic,true
-CAREER-386,Concierge,kitchen or service equipment,category_default,synthetic,true
-CAREER-386,Concierge,spreadsheets,category_default,synthetic,true
-CAREER-387,Banqueting Manager,property or reservation management systems,category_default,synthetic,true
-CAREER-387,Banqueting Manager,point-of-sale systems,category_default,synthetic,true
-CAREER-387,Banqueting Manager,booking platforms,category_default,synthetic,true
-CAREER-387,Banqueting Manager,kitchen or service equipment,category_default,synthetic,true
-CAREER-387,Banqueting Manager,spreadsheets,category_default,synthetic,true
-CAREER-388,Wedding Planner,property or reservation management systems,category_default,synthetic,true
-CAREER-388,Wedding Planner,point-of-sale systems,category_default,synthetic,true
-CAREER-388,Wedding Planner,booking platforms,category_default,synthetic,true
-CAREER-388,Wedding Planner,kitchen or service equipment,category_default,synthetic,true
-CAREER-388,Wedding Planner,spreadsheets,category_default,synthetic,true
-CAREER-389,Sports and Recreation Officer,property or reservation management systems,category_default,synthetic,true
-CAREER-389,Sports and Recreation Officer,point-of-sale systems,category_default,synthetic,true
-CAREER-389,Sports and Recreation Officer,booking platforms,category_default,synthetic,true
-CAREER-389,Sports and Recreation Officer,kitchen or service equipment,category_default,synthetic,true
-CAREER-389,Sports and Recreation Officer,spreadsheets,category_default,synthetic,true
-CAREER-390,Catering Manager,property or reservation management systems,category_default,synthetic,true
-CAREER-390,Catering Manager,point-of-sale systems,category_default,synthetic,true
-CAREER-390,Catering Manager,booking platforms,category_default,synthetic,true
-CAREER-390,Catering Manager,kitchen or service equipment,category_default,synthetic,true
-CAREER-390,Catering Manager,spreadsheets,category_default,synthetic,true
-CAREER-391,Tourism Product Developer,property or reservation management systems,category_default,synthetic,true
-CAREER-391,Tourism Product Developer,point-of-sale systems,category_default,synthetic,true
-CAREER-391,Tourism Product Developer,booking platforms,category_default,synthetic,true
-CAREER-391,Tourism Product Developer,kitchen or service equipment,category_default,synthetic,true
-CAREER-391,Tourism Product Developer,spreadsheets,category_default,synthetic,true
-CAREER-392,Astronomer,laboratory instruments,category_default,synthetic,true
-CAREER-392,Astronomer,R or Python,category_default,synthetic,true
-CAREER-392,Astronomer,statistical software,category_default,synthetic,true
-CAREER-392,Astronomer,reference managers,category_default,synthetic,true
-CAREER-392,Astronomer,laboratory information systems,category_default,synthetic,true
-CAREER-393,Environmental Scientist,laboratory instruments,category_default,synthetic,true
-CAREER-393,Environmental Scientist,R or Python,category_default,synthetic,true
-CAREER-393,Environmental Scientist,statistical software,category_default,synthetic,true
-CAREER-393,Environmental Scientist,reference managers,category_default,synthetic,true
-CAREER-393,Environmental Scientist,laboratory information systems,category_default,synthetic,true
-CAREER-394,Toxicologist,laboratory instruments,category_default,synthetic,true
-CAREER-394,Toxicologist,R or Python,category_default,synthetic,true
-CAREER-394,Toxicologist,statistical software,category_default,synthetic,true
-CAREER-394,Toxicologist,reference managers,category_default,synthetic,true
-CAREER-394,Toxicologist,laboratory information systems,category_default,synthetic,true
-CAREER-395,Geneticist,laboratory instruments,category_default,synthetic,true
-CAREER-395,Geneticist,R or Python,category_default,synthetic,true
-CAREER-395,Geneticist,statistical software,category_default,synthetic,true
-CAREER-395,Geneticist,reference managers,category_default,synthetic,true
-CAREER-395,Geneticist,laboratory information systems,category_default,synthetic,true
-CAREER-396,Entomologist,laboratory instruments,category_default,synthetic,true
-CAREER-396,Entomologist,R or Python,category_default,synthetic,true
-CAREER-396,Entomologist,statistical software,category_default,synthetic,true
-CAREER-396,Entomologist,reference managers,category_default,synthetic,true
-CAREER-396,Entomologist,laboratory information systems,category_default,synthetic,true
-CAREER-397,Hydrologist,laboratory instruments,category_default,synthetic,true
-CAREER-397,Hydrologist,R or Python,category_default,synthetic,true
-CAREER-397,Hydrologist,statistical software,category_default,synthetic,true
-CAREER-397,Hydrologist,reference managers,category_default,synthetic,true
-CAREER-397,Hydrologist,laboratory information systems,category_default,synthetic,true
-CAREER-398,Pharmacologist,laboratory instruments,category_default,synthetic,true
-CAREER-398,Pharmacologist,R or Python,category_default,synthetic,true
-CAREER-398,Pharmacologist,statistical software,category_default,synthetic,true
-CAREER-398,Pharmacologist,reference managers,category_default,synthetic,true
-CAREER-398,Pharmacologist,laboratory information systems,category_default,synthetic,true
-CAREER-399,Radiation Protection Officer,laboratory instruments,category_default,synthetic,true
-CAREER-399,Radiation Protection Officer,R or Python,category_default,synthetic,true
-CAREER-399,Radiation Protection Officer,statistical software,category_default,synthetic,true
-CAREER-399,Radiation Protection Officer,reference managers,category_default,synthetic,true
-CAREER-399,Radiation Protection Officer,laboratory information systems,category_default,synthetic,true
-CAREER-400,Laboratory Manager,laboratory instruments,category_default,synthetic,true
-CAREER-400,Laboratory Manager,R or Python,category_default,synthetic,true
-CAREER-400,Laboratory Manager,statistical software,category_default,synthetic,true
-CAREER-400,Laboratory Manager,reference managers,category_default,synthetic,true
-CAREER-400,Laboratory Manager,laboratory information systems,category_default,synthetic,true
-CAREER-401,Zoologist,laboratory instruments,category_default,synthetic,true
-CAREER-401,Zoologist,R or Python,category_default,synthetic,true
-CAREER-401,Zoologist,statistical software,category_default,synthetic,true
-CAREER-401,Zoologist,reference managers,category_default,synthetic,true
-CAREER-401,Zoologist,laboratory information systems,category_default,synthetic,true
-CAREER-402,Botanist,laboratory instruments,category_default,synthetic,true
-CAREER-402,Botanist,R or Python,category_default,synthetic,true
-CAREER-402,Botanist,statistical software,category_default,synthetic,true
-CAREER-402,Botanist,reference managers,category_default,synthetic,true
-CAREER-402,Botanist,laboratory information systems,category_default,synthetic,true
-CAREER-403,Research Data Manager,laboratory instruments,category_default,synthetic,true
-CAREER-403,Research Data Manager,R or Python,category_default,synthetic,true
-CAREER-403,Research Data Manager,statistical software,category_default,synthetic,true
-CAREER-403,Research Data Manager,reference managers,category_default,synthetic,true
-CAREER-403,Research Data Manager,laboratory information systems,category_default,synthetic,true
-CAREER-404,Flight Dispatcher,ERP systems,category_default,synthetic,true
-CAREER-404,Flight Dispatcher,warehouse or transport management systems,category_default,synthetic,true
-CAREER-404,Flight Dispatcher,spreadsheets,category_default,synthetic,true
-CAREER-404,Flight Dispatcher,tracking and fleet systems,category_default,synthetic,true
-CAREER-404,Flight Dispatcher,customs and trade portals,category_default,synthetic,true
-CAREER-405,Ship Agent,ERP systems,category_default,synthetic,true
-CAREER-405,Ship Agent,warehouse or transport management systems,category_default,synthetic,true
-CAREER-405,Ship Agent,spreadsheets,category_default,synthetic,true
-CAREER-405,Ship Agent,tracking and fleet systems,category_default,synthetic,true
-CAREER-405,Ship Agent,customs and trade portals,category_default,synthetic,true
-CAREER-406,Cold Chain Specialist,ERP systems,category_default,synthetic,true
-CAREER-406,Cold Chain Specialist,warehouse or transport management systems,category_default,synthetic,true
-CAREER-406,Cold Chain Specialist,spreadsheets,category_default,synthetic,true
-CAREER-406,Cold Chain Specialist,tracking and fleet systems,category_default,synthetic,true
-CAREER-406,Cold Chain Specialist,customs and trade portals,category_default,synthetic,true
-CAREER-407,Import and Export Officer,ERP systems,category_default,synthetic,true
-CAREER-407,Import and Export Officer,warehouse or transport management systems,category_default,synthetic,true
-CAREER-407,Import and Export Officer,spreadsheets,category_default,synthetic,true
-CAREER-407,Import and Export Officer,tracking and fleet systems,category_default,synthetic,true
-CAREER-407,Import and Export Officer,customs and trade portals,category_default,synthetic,true
-CAREER-408,Humanitarian Logistics Officer,ERP systems,category_default,synthetic,true
-CAREER-408,Humanitarian Logistics Officer,warehouse or transport management systems,category_default,synthetic,true
-CAREER-408,Humanitarian Logistics Officer,spreadsheets,category_default,synthetic,true
-CAREER-408,Humanitarian Logistics Officer,tracking and fleet systems,category_default,synthetic,true
-CAREER-408,Humanitarian Logistics Officer,customs and trade portals,category_default,synthetic,true
-CAREER-409,Stores Clerk,ERP systems,category_default,synthetic,true
-CAREER-409,Stores Clerk,warehouse or transport management systems,category_default,synthetic,true
-CAREER-409,Stores Clerk,spreadsheets,category_default,synthetic,true
-CAREER-409,Stores Clerk,tracking and fleet systems,category_default,synthetic,true
-CAREER-409,Stores Clerk,customs and trade portals,category_default,synthetic,true
-CAREER-410,Category Manager,ERP systems,category_default,synthetic,true
-CAREER-410,Category Manager,warehouse or transport management systems,category_default,synthetic,true
-CAREER-410,Category Manager,spreadsheets,category_default,synthetic,true
-CAREER-410,Category Manager,tracking and fleet systems,category_default,synthetic,true
-CAREER-410,Category Manager,customs and trade portals,category_default,synthetic,true
-CAREER-411,Supplier Quality Engineer,ERP systems,category_default,synthetic,true
-CAREER-411,Supplier Quality Engineer,warehouse or transport management systems,category_default,synthetic,true
-CAREER-411,Supplier Quality Engineer,spreadsheets,category_default,synthetic,true
-CAREER-411,Supplier Quality Engineer,tracking and fleet systems,category_default,synthetic,true
-CAREER-411,Supplier Quality Engineer,customs and trade portals,category_default,synthetic,true
-CAREER-412,Drone Operations Pilot,ERP systems,category_default,synthetic,true
-CAREER-412,Drone Operations Pilot,warehouse or transport management systems,category_default,synthetic,true
-CAREER-412,Drone Operations Pilot,spreadsheets,category_default,synthetic,true
-CAREER-412,Drone Operations Pilot,tracking and fleet systems,category_default,synthetic,true
-CAREER-412,Drone Operations Pilot,customs and trade portals,category_default,synthetic,true
-CAREER-413,Public Transport Operations Manager,ERP systems,category_default,synthetic,true
-CAREER-413,Public Transport Operations Manager,warehouse or transport management systems,category_default,synthetic,true
-CAREER-413,Public Transport Operations Manager,spreadsheets,category_default,synthetic,true
-CAREER-413,Public Transport Operations Manager,tracking and fleet systems,category_default,synthetic,true
-CAREER-413,Public Transport Operations Manager,customs and trade portals,category_default,synthetic,true
-CAREER-414,Locomotive Driver,ERP systems,category_default,synthetic,true
-CAREER-414,Locomotive Driver,warehouse or transport management systems,category_default,synthetic,true
-CAREER-414,Locomotive Driver,spreadsheets,category_default,synthetic,true
-CAREER-414,Locomotive Driver,tracking and fleet systems,category_default,synthetic,true
-CAREER-414,Locomotive Driver,customs and trade portals,category_default,synthetic,true
+CAREER-369,Documentary Filmmaker,cinema and mirrorless cameras,authored,synthetic,true
+CAREER-369,Documentary Filmmaker,audio recorders and lavalier microphones,authored,synthetic,true
+CAREER-369,Documentary Filmmaker,Premiere Pro or DaVinci Resolve,authored,synthetic,true
+CAREER-369,Documentary Filmmaker,release and consent forms,authored,synthetic,true
+CAREER-369,Documentary Filmmaker,transcription tools,authored,synthetic,true
+CAREER-369,Documentary Filmmaker,drones,authored,synthetic,true
+CAREER-369,Documentary Filmmaker,grant and festival platforms,authored,synthetic,true
+CAREER-370,Screenwriter,Final Draft,authored,synthetic,true
+CAREER-370,Screenwriter,Celtx or WriterDuet,authored,synthetic,true
+CAREER-370,Screenwriter,beat sheets and outlines,authored,synthetic,true
+CAREER-370,Screenwriter,script formatting standards,authored,synthetic,true
+CAREER-370,Screenwriter,story structure models,authored,synthetic,true
+CAREER-370,Screenwriter,pitch decks,authored,synthetic,true
+CAREER-370,Screenwriter,copyright registration,authored,synthetic,true
+CAREER-371,Radio Producer,audio editors such as Adobe Audition,authored,synthetic,true
+CAREER-371,Radio Producer,playout systems,authored,synthetic,true
+CAREER-371,Radio Producer,studio desks,authored,synthetic,true
+CAREER-371,Radio Producer,phone-in systems,authored,synthetic,true
+CAREER-371,Radio Producer,running orders,authored,synthetic,true
+CAREER-371,Radio Producer,audience research reports,authored,synthetic,true
+CAREER-371,Radio Producer,podcast hosting platforms,authored,synthetic,true
+CAREER-372,Art Director,"Adobe Photoshop, Illustrator and InDesign",authored,synthetic,true
+CAREER-372,Art Director,Figma,authored,synthetic,true
+CAREER-372,Art Director,mood boards,authored,synthetic,true
+CAREER-372,Art Director,storyboards,authored,synthetic,true
+CAREER-372,Art Director,photography direction,authored,synthetic,true
+CAREER-372,Art Director,print production specifications,authored,synthetic,true
+CAREER-372,Art Director,presentation tools,authored,synthetic,true
+CAREER-373,UX Writer,Figma,authored,synthetic,true
+CAREER-373,UX Writer,content style guides,authored,synthetic,true
+CAREER-373,UX Writer,usability testing tools,authored,synthetic,true
+CAREER-373,UX Writer,Google Docs,authored,synthetic,true
+CAREER-373,UX Writer,A/B testing data,authored,synthetic,true
+CAREER-373,UX Writer,terminology lists,authored,synthetic,true
+CAREER-373,UX Writer,Jira,authored,synthetic,true
+CAREER-374,Motion Graphics Designer,Adobe After Effects,authored,synthetic,true
+CAREER-374,Motion Graphics Designer,Cinema 4D or Blender,authored,synthetic,true
+CAREER-374,Motion Graphics Designer,Adobe Illustrator,authored,synthetic,true
+CAREER-374,Motion Graphics Designer,Adobe Premiere Pro,authored,synthetic,true
+CAREER-374,Motion Graphics Designer,plug-ins and scripts,authored,synthetic,true
+CAREER-374,Motion Graphics Designer,storyboards,authored,synthetic,true
+CAREER-374,Motion Graphics Designer,sound libraries,authored,synthetic,true
+CAREER-375,Voice-over Artist,condenser microphones,authored,synthetic,true
+CAREER-375,Voice-over Artist,audio interfaces,authored,synthetic,true
+CAREER-375,Voice-over Artist,recording software such as Audacity or Adobe Audition,authored,synthetic,true
+CAREER-375,Voice-over Artist,acoustic treatment,authored,synthetic,true
+CAREER-375,Voice-over Artist,headphones,authored,synthetic,true
+CAREER-375,Voice-over Artist,pop filters,authored,synthetic,true
+CAREER-375,Voice-over Artist,voice reels,authored,synthetic,true
+CAREER-376,Actor,scripts,authored,synthetic,true
+CAREER-376,Actor,showreels and headshots,authored,synthetic,true
+CAREER-376,Actor,self-tape setups,authored,synthetic,true
+CAREER-376,Actor,acting techniques,authored,synthetic,true
+CAREER-376,Actor,casting platforms,authored,synthetic,true
+CAREER-376,Actor,voice and movement training,authored,synthetic,true
+CAREER-376,Actor,rehearsal schedules,authored,synthetic,true
+CAREER-377,Dancer and Choreographer,dance studios with mirrors,authored,synthetic,true
+CAREER-377,Dancer and Choreographer,music editing apps,authored,synthetic,true
+CAREER-377,Dancer and Choreographer,video recording for review,authored,synthetic,true
+CAREER-377,Dancer and Choreographer,choreography notes,authored,synthetic,true
+CAREER-377,Dancer and Choreographer,warm-up and conditioning routines,authored,synthetic,true
+CAREER-377,Dancer and Choreographer,costumes,authored,synthetic,true
+CAREER-377,Dancer and Choreographer,sound systems,authored,synthetic,true
+CAREER-378,Curator,collections management databases,authored,synthetic,true
+CAREER-378,Curator,exhibition layout plans,authored,synthetic,true
+CAREER-378,Curator,condition report forms,authored,synthetic,true
+CAREER-378,Curator,cataloguing standards,authored,synthetic,true
+CAREER-378,Curator,archival storage materials,authored,synthetic,true
+CAREER-378,Curator,lighting and display systems,authored,synthetic,true
+CAREER-378,Curator,grant applications,authored,synthetic,true
+CAREER-379,Translator and Interpreter,computer-assisted translation tools such as Trados or memoQ,authored,synthetic,true
+CAREER-379,Translator and Interpreter,glossaries and termbases,authored,synthetic,true
+CAREER-379,Translator and Interpreter,dictionaries,authored,synthetic,true
+CAREER-379,Translator and Interpreter,interpreting booths and headsets,authored,synthetic,true
+CAREER-379,Translator and Interpreter,subtitling software,authored,synthetic,true
+CAREER-379,Translator and Interpreter,remote interpreting platforms,authored,synthetic,true
+CAREER-379,Translator and Interpreter,style guides,authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,influencer discovery platforms,authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,platform analytics,authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,campaign trackers in Excel,authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,contracts and briefs,authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,social listening tools,authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,affiliate link tools,authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,payment platforms,authored,synthetic,true
+CAREER-381,Bartender and Mixologist,"shakers, jiggers and strainers",authored,synthetic,true
+CAREER-381,Bartender and Mixologist,blenders and ice machines,authored,synthetic,true
+CAREER-381,Bartender and Mixologist,point-of-sale systems,authored,synthetic,true
+CAREER-381,Bartender and Mixologist,glassware,authored,synthetic,true
+CAREER-381,Bartender and Mixologist,cocktail recipe specifications,authored,synthetic,true
+CAREER-381,Bartender and Mixologist,stock sheets,authored,synthetic,true
+CAREER-381,Bartender and Mixologist,garnish tools,authored,synthetic,true
+CAREER-382,Airline Reservations Agent,airline reservation systems such as Amadeus Altéa or Sabre,authored,synthetic,true
+CAREER-382,Airline Reservations Agent,fare rules displays,authored,synthetic,true
+CAREER-382,Airline Reservations Agent,payment systems,authored,synthetic,true
+CAREER-382,Airline Reservations Agent,call centre software,authored,synthetic,true
+CAREER-382,Airline Reservations Agent,airline policy manuals,authored,synthetic,true
+CAREER-382,Airline Reservations Agent,email,authored,synthetic,true
+CAREER-382,Airline Reservations Agent,loyalty programme systems,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,spa booking software,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,treatment protocols,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,professional skincare products,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,massage and treatment equipment,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,point-of-sale systems,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,hygiene checklists,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,Excel,authored,synthetic,true
+CAREER-384,Ecotourism Officer,eco-certification criteria,authored,synthetic,true
+CAREER-384,Ecotourism Officer,visitor monitoring tools,authored,synthetic,true
+CAREER-384,Ecotourism Officer,GPS and mapping,authored,synthetic,true
+CAREER-384,Ecotourism Officer,community engagement methods,authored,synthetic,true
+CAREER-384,Ecotourism Officer,survey tools,authored,synthetic,true
+CAREER-384,Ecotourism Officer,training manuals,authored,synthetic,true
+CAREER-384,Ecotourism Officer,environmental impact checklists,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,hotel sales and catering systems such as Delphi,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,CRM systems,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,property management systems,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,Excel,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,proposal templates,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,LinkedIn,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,rate contracts,authored,synthetic,true
+CAREER-386,Concierge,property management systems,authored,synthetic,true
+CAREER-386,Concierge,local guides and maps,authored,synthetic,true
+CAREER-386,Concierge,booking platforms,authored,synthetic,true
+CAREER-386,Concierge,supplier contact lists,authored,synthetic,true
+CAREER-386,Concierge,guest preference records,authored,synthetic,true
+CAREER-386,Concierge,messaging apps,authored,synthetic,true
+CAREER-386,Concierge,ticketing sites,authored,synthetic,true
+CAREER-387,Banqueting Manager,function sheets,authored,synthetic,true
+CAREER-387,Banqueting Manager,banqueting equipment and furniture,authored,synthetic,true
+CAREER-387,Banqueting Manager,point-of-sale systems,authored,synthetic,true
+CAREER-387,Banqueting Manager,audio-visual equipment,authored,synthetic,true
+CAREER-387,Banqueting Manager,floor plans,authored,synthetic,true
+CAREER-387,Banqueting Manager,staff rota tools,authored,synthetic,true
+CAREER-387,Banqueting Manager,stock sheets,authored,synthetic,true
+CAREER-388,Wedding Planner,budget sheets,authored,synthetic,true
+CAREER-388,Wedding Planner,planning checklists and timelines,authored,synthetic,true
+CAREER-388,Wedding Planner,mood boards,authored,synthetic,true
+CAREER-388,Wedding Planner,vendor contracts,authored,synthetic,true
+CAREER-388,Wedding Planner,guest list and seating tools,authored,synthetic,true
+CAREER-388,Wedding Planner,WhatsApp Business,authored,synthetic,true
+CAREER-388,Wedding Planner,floor plan tools,authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,gym and sports equipment,authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,activity schedules,authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,first-aid and lifesaving equipment,authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,booking systems,authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,pool testing kits,authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,sound systems,authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,incident report forms,authored,synthetic,true
+CAREER-390,Catering Manager,menu costing sheets,authored,synthetic,true
+CAREER-390,Catering Manager,bulk cooking equipment,authored,synthetic,true
+CAREER-390,Catering Manager,food transport containers,authored,synthetic,true
+CAREER-390,Catering Manager,HACCP records,authored,synthetic,true
+CAREER-390,Catering Manager,inventory systems,authored,synthetic,true
+CAREER-390,Catering Manager,point-of-sale or meal card systems,authored,synthetic,true
+CAREER-390,Catering Manager,Excel,authored,synthetic,true
+CAREER-391,Tourism Product Developer,itinerary software,authored,synthetic,true
+CAREER-391,Tourism Product Developer,costing sheets,authored,synthetic,true
+CAREER-391,Tourism Product Developer,supplier contracts,authored,synthetic,true
+CAREER-391,Tourism Product Developer,market research reports,authored,synthetic,true
+CAREER-391,Tourism Product Developer,mapping tools,authored,synthetic,true
+CAREER-391,Tourism Product Developer,content management systems,authored,synthetic,true
+CAREER-391,Tourism Product Developer,customer feedback data,authored,synthetic,true
+CAREER-392,Astronomer,Python with Astropy,authored,synthetic,true
+CAREER-392,Astronomer,optical and radio telescopes,authored,synthetic,true
+CAREER-392,Astronomer,data reduction software,authored,synthetic,true
+CAREER-392,Astronomer,high-performance computing,authored,synthetic,true
+CAREER-392,Astronomer,LaTeX,authored,synthetic,true
+CAREER-392,Astronomer,astronomical catalogues and archives,authored,synthetic,true
+CAREER-392,Astronomer,planetarium software,authored,synthetic,true
+CAREER-393,Environmental Scientist,water and air quality meters,authored,synthetic,true
+CAREER-393,Environmental Scientist,sampling equipment,authored,synthetic,true
+CAREER-393,Environmental Scientist,GIS and remote sensing software,authored,synthetic,true
+CAREER-393,Environmental Scientist,laboratory analysers,authored,synthetic,true
+CAREER-393,Environmental Scientist,R or Excel,authored,synthetic,true
+CAREER-393,Environmental Scientist,GPS,authored,synthetic,true
+CAREER-393,Environmental Scientist,environmental standards,authored,synthetic,true
+CAREER-394,Toxicologist,gas and liquid chromatography-mass spectrometry,authored,synthetic,true
+CAREER-394,Toxicologist,immunoassay analysers,authored,synthetic,true
+CAREER-394,Toxicologist,toxicology databases,authored,synthetic,true
+CAREER-394,Toxicologist,risk assessment models,authored,synthetic,true
+CAREER-394,Toxicologist,laboratory information systems,authored,synthetic,true
+CAREER-394,Toxicologist,safety data sheets,authored,synthetic,true
+CAREER-394,Toxicologist,good laboratory practice guidelines,authored,synthetic,true
+CAREER-395,Geneticist,PCR and sequencing equipment,authored,synthetic,true
+CAREER-395,Geneticist,genotyping platforms,authored,synthetic,true
+CAREER-395,Geneticist,R and bioinformatics tools,authored,synthetic,true
+CAREER-395,Geneticist,breeding management software,authored,synthetic,true
+CAREER-395,Geneticist,pedigree records,authored,synthetic,true
+CAREER-395,Geneticist,gel electrophoresis,authored,synthetic,true
+CAREER-395,Geneticist,genetic databases,authored,synthetic,true
+CAREER-396,Entomologist,insect traps and nets,authored,synthetic,true
+CAREER-396,Entomologist,stereo microscopes,authored,synthetic,true
+CAREER-396,Entomologist,insectaries,authored,synthetic,true
+CAREER-396,Entomologist,identification keys,authored,synthetic,true
+CAREER-396,Entomologist,PCR for species identification,authored,synthetic,true
+CAREER-396,Entomologist,GPS,authored,synthetic,true
+CAREER-396,Entomologist,resistance test kits such as WHO bioassays,authored,synthetic,true
+CAREER-397,Hydrologist,current meters and ADCPs,authored,synthetic,true
+CAREER-397,Hydrologist,data loggers,authored,synthetic,true
+CAREER-397,Hydrologist,hydrological models such as HEC-HMS or SWAT,authored,synthetic,true
+CAREER-397,Hydrologist,GIS software,authored,synthetic,true
+CAREER-397,Hydrologist,R or Python,authored,synthetic,true
+CAREER-397,Hydrologist,rain gauges,authored,synthetic,true
+CAREER-397,Hydrologist,borehole test-pumping equipment,authored,synthetic,true
+CAREER-398,Pharmacologist,HPLC and mass spectrometry,authored,synthetic,true
+CAREER-398,Pharmacologist,cell culture equipment,authored,synthetic,true
+CAREER-398,Pharmacologist,pharmacokinetic modelling software,authored,synthetic,true
+CAREER-398,Pharmacologist,plate readers,authored,synthetic,true
+CAREER-398,Pharmacologist,R or GraphPad Prism,authored,synthetic,true
+CAREER-398,Pharmacologist,adverse event databases,authored,synthetic,true
+CAREER-398,Pharmacologist,organ bath systems,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,survey meters and Geiger counters,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,personal dosimeters,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,contamination monitors,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,radiation safety regulations and IAEA standards,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,shielding calculation tools,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,source inventory registers,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,calibration sources,authored,synthetic,true
+CAREER-400,Laboratory Manager,laboratory information systems,authored,synthetic,true
+CAREER-400,Laboratory Manager,ISO 15189 or ISO 17025 standards,authored,synthetic,true
+CAREER-400,Laboratory Manager,inventory systems,authored,synthetic,true
+CAREER-400,Laboratory Manager,equipment maintenance logs,authored,synthetic,true
+CAREER-400,Laboratory Manager,standard operating procedures,authored,synthetic,true
+CAREER-400,Laboratory Manager,Excel,authored,synthetic,true
+CAREER-400,Laboratory Manager,audit checklists,authored,synthetic,true
+CAREER-401,Zoologist,binoculars and spotting scopes,authored,synthetic,true
+CAREER-401,Zoologist,camera traps,authored,synthetic,true
+CAREER-401,Zoologist,GPS collars and telemetry,authored,synthetic,true
+CAREER-401,Zoologist,mist nets and traps,authored,synthetic,true
+CAREER-401,Zoologist,R,authored,synthetic,true
+CAREER-401,Zoologist,GIS software,authored,synthetic,true
+CAREER-401,Zoologist,field guides,authored,synthetic,true
+CAREER-402,Botanist,plant presses,authored,synthetic,true
+CAREER-402,Botanist,identification keys and floras,authored,synthetic,true
+CAREER-402,Botanist,herbarium databases,authored,synthetic,true
+CAREER-402,Botanist,microscopes,authored,synthetic,true
+CAREER-402,Botanist,GPS,authored,synthetic,true
+CAREER-402,Botanist,quadrats and transect tapes,authored,synthetic,true
+CAREER-402,Botanist,R,authored,synthetic,true
+CAREER-403,Research Data Manager,REDCap,authored,synthetic,true
+CAREER-403,Research Data Manager,ODK or KoboToolbox,authored,synthetic,true
+CAREER-403,Research Data Manager,SQL,authored,synthetic,true
+CAREER-403,Research Data Manager,R or Stata,authored,synthetic,true
+CAREER-403,Research Data Manager,data management plans,authored,synthetic,true
+CAREER-403,Research Data Manager,data dictionaries,authored,synthetic,true
+CAREER-403,Research Data Manager,version control with Git,authored,synthetic,true
+CAREER-404,Flight Dispatcher,flight planning systems such as Jeppesen,authored,synthetic,true
+CAREER-404,Flight Dispatcher,weather briefing systems,authored,synthetic,true
+CAREER-404,Flight Dispatcher,NOTAM systems,authored,synthetic,true
+CAREER-404,Flight Dispatcher,flight tracking tools,authored,synthetic,true
+CAREER-404,Flight Dispatcher,weight and balance software,authored,synthetic,true
+CAREER-404,Flight Dispatcher,aeronautical charts,authored,synthetic,true
+CAREER-404,Flight Dispatcher,operations manuals,authored,synthetic,true
+CAREER-405,Ship Agent,port community and single window systems,authored,synthetic,true
+CAREER-405,Ship Agent,manifests and bills of lading,authored,synthetic,true
+CAREER-405,Ship Agent,disbursement accounts,authored,synthetic,true
+CAREER-405,Ship Agent,shipping line systems,authored,synthetic,true
+CAREER-405,Ship Agent,email and radio,authored,synthetic,true
+CAREER-405,Ship Agent,port tariffs,authored,synthetic,true
+CAREER-405,Ship Agent,vessel tracking sites,authored,synthetic,true
+CAREER-406,Cold Chain Specialist,temperature data loggers,authored,synthetic,true
+CAREER-406,Cold Chain Specialist,cold rooms and refrigerated trucks,authored,synthetic,true
+CAREER-406,Cold Chain Specialist,reefer containers,authored,synthetic,true
+CAREER-406,Cold Chain Specialist,remote temperature monitoring systems,authored,synthetic,true
+CAREER-406,Cold Chain Specialist,vaccine carriers and cool boxes,authored,synthetic,true
+CAREER-406,Cold Chain Specialist,good distribution practice guidelines,authored,synthetic,true
+CAREER-406,Cold Chain Specialist,stock management systems,authored,synthetic,true
+CAREER-407,Import and Export Officer,customs systems such as iCMS,authored,synthetic,true
+CAREER-407,Import and Export Officer,single window systems,authored,synthetic,true
+CAREER-407,Import and Export Officer,Incoterms,authored,synthetic,true
+CAREER-407,Import and Export Officer,letters of credit,authored,synthetic,true
+CAREER-407,Import and Export Officer,ERP systems,authored,synthetic,true
+CAREER-407,Import and Export Officer,Excel,authored,synthetic,true
+CAREER-407,Import and Export Officer,pre-export verification and standards portals,authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,humanitarian logistics software,authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,stock cards and waybills,authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,radios and satellite phones,authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,4x4 vehicles,authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,Excel,authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,donor procurement guidelines,authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,logistics cluster tools,authored,synthetic,true
+CAREER-409,Stores Clerk,bin cards and stock ledgers,authored,synthetic,true
+CAREER-409,Stores Clerk,goods received and issue notes,authored,synthetic,true
+CAREER-409,Stores Clerk,inventory software,authored,synthetic,true
+CAREER-409,Stores Clerk,barcode scanners,authored,synthetic,true
+CAREER-409,Stores Clerk,Excel,authored,synthetic,true
+CAREER-409,Stores Clerk,weighing scales,authored,synthetic,true
+CAREER-409,Stores Clerk,shelving and pallets,authored,synthetic,true
+CAREER-410,Category Manager,spend analysis tools,authored,synthetic,true
+CAREER-410,Category Manager,e-sourcing platforms,authored,synthetic,true
+CAREER-410,Category Manager,ERP systems,authored,synthetic,true
+CAREER-410,Category Manager,Excel,authored,synthetic,true
+CAREER-410,Category Manager,contract management systems,authored,synthetic,true
+CAREER-410,Category Manager,supplier scorecards,authored,synthetic,true
+CAREER-410,Category Manager,market intelligence reports,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,ISO 9001,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,measuring instruments and gauges,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,root-cause tools such as 8D and 5 Whys,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,statistical process control,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,audit checklists,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,quality management systems,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,Excel,authored,synthetic,true
+CAREER-412,Drone Operations Pilot,multirotor and fixed-wing drones,authored,synthetic,true
+CAREER-412,Drone Operations Pilot,ground control software,authored,synthetic,true
+CAREER-412,Drone Operations Pilot,photogrammetry software such as Pix4D,authored,synthetic,true
+CAREER-412,Drone Operations Pilot,flight planning apps,authored,synthetic,true
+CAREER-412,Drone Operations Pilot,cameras and multispectral sensors,authored,synthetic,true
+CAREER-412,Drone Operations Pilot,civil aviation drone regulations,authored,synthetic,true
+CAREER-412,Drone Operations Pilot,battery management equipment,authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,fleet tracking systems,authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,cashless fare systems,authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,scheduling tools,authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,NTSA portals,authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,Excel,authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,maintenance records,authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,radios and messaging groups,authored,synthetic,true
+CAREER-414,Locomotive Driver,locomotive controls and braking systems,authored,synthetic,true
+CAREER-414,Locomotive Driver,cab signalling and radios,authored,synthetic,true
+CAREER-414,Locomotive Driver,route and speed charts,authored,synthetic,true
+CAREER-414,Locomotive Driver,safety rule books,authored,synthetic,true
+CAREER-414,Locomotive Driver,fault indicators,authored,synthetic,true
+CAREER-414,Locomotive Driver,trip logbooks,authored,synthetic,true
+CAREER-414,Locomotive Driver,driving simulators,authored,synthetic,true
 CAREER-415,Addiction Counsellor,case management systems,category_default,synthetic,true
 CAREER-415,Addiction Counsellor,mobile data collection tools,category_default,synthetic,true
 CAREER-415,Addiction Counsellor,monitoring and evaluation frameworks,category_default,synthetic,true

@@ -986,462 +986,614 @@ CAREER-141,Waste Management Officer,Inspect disposal sites,authored,synthetic,tr
 CAREER-141,Waste Management Officer,Enforce waste regulations,authored,synthetic,true
 CAREER-141,Waste Management Officer,Educate the public,authored,synthetic,true
 CAREER-141,Waste Management Officer,Report on tonnages and costs,authored,synthetic,true
-CAREER-142,Journalist,Develop ideas and briefs for news reporting,category_default,synthetic,true
-CAREER-142,Journalist,Produce work to a deadline,category_default,synthetic,true
-CAREER-142,Journalist,Revise work after feedback,category_default,synthetic,true
-CAREER-142,Journalist,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-142,Journalist,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-142,Journalist,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-143,Broadcast Presenter,Develop ideas and briefs for radio and television,category_default,synthetic,true
-CAREER-143,Broadcast Presenter,Produce work to a deadline,category_default,synthetic,true
-CAREER-143,Broadcast Presenter,Revise work after feedback,category_default,synthetic,true
-CAREER-143,Broadcast Presenter,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-143,Broadcast Presenter,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-143,Broadcast Presenter,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-144,Video Producer,Develop ideas and briefs for video production,category_default,synthetic,true
-CAREER-144,Video Producer,Produce work to a deadline,category_default,synthetic,true
-CAREER-144,Video Producer,Revise work after feedback,category_default,synthetic,true
-CAREER-144,Video Producer,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-144,Video Producer,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-144,Video Producer,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-145,Film Director,Develop ideas and briefs for film and drama,category_default,synthetic,true
-CAREER-145,Film Director,Produce work to a deadline,category_default,synthetic,true
-CAREER-145,Film Director,Revise work after feedback,category_default,synthetic,true
-CAREER-145,Film Director,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-145,Film Director,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-145,Film Director,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-146,Graphic Designer,Develop ideas and briefs for visual design,category_default,synthetic,true
-CAREER-146,Graphic Designer,Produce work to a deadline,category_default,synthetic,true
-CAREER-146,Graphic Designer,Revise work after feedback,category_default,synthetic,true
-CAREER-146,Graphic Designer,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-146,Graphic Designer,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-146,Graphic Designer,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-147,Animator,Develop ideas and briefs for animation,category_default,synthetic,true
-CAREER-147,Animator,Produce work to a deadline,category_default,synthetic,true
-CAREER-147,Animator,Revise work after feedback,category_default,synthetic,true
-CAREER-147,Animator,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-147,Animator,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-147,Animator,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-148,Photographer,Develop ideas and briefs for photography,category_default,synthetic,true
-CAREER-148,Photographer,Produce work to a deadline,category_default,synthetic,true
-CAREER-148,Photographer,Revise work after feedback,category_default,synthetic,true
-CAREER-148,Photographer,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-148,Photographer,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-148,Photographer,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-149,Content Creator,Develop ideas and briefs for digital content,category_default,synthetic,true
-CAREER-149,Content Creator,Produce work to a deadline,category_default,synthetic,true
-CAREER-149,Content Creator,Revise work after feedback,category_default,synthetic,true
-CAREER-149,Content Creator,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-149,Content Creator,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-149,Content Creator,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-150,Copywriter,Develop ideas and briefs for persuasive writing,category_default,synthetic,true
-CAREER-150,Copywriter,Produce work to a deadline,category_default,synthetic,true
-CAREER-150,Copywriter,Revise work after feedback,category_default,synthetic,true
-CAREER-150,Copywriter,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-150,Copywriter,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-150,Copywriter,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-151,Editor,Develop ideas and briefs for editorial,category_default,synthetic,true
-CAREER-151,Editor,Produce work to a deadline,category_default,synthetic,true
-CAREER-151,Editor,Revise work after feedback,category_default,synthetic,true
-CAREER-151,Editor,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-151,Editor,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-151,Editor,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-152,Communications Officer,Develop ideas and briefs for organisational communication,category_default,synthetic,true
-CAREER-152,Communications Officer,Produce work to a deadline,category_default,synthetic,true
-CAREER-152,Communications Officer,Revise work after feedback,category_default,synthetic,true
-CAREER-152,Communications Officer,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-152,Communications Officer,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-152,Communications Officer,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-153,Social Media Manager,Develop ideas and briefs for social media,category_default,synthetic,true
-CAREER-153,Social Media Manager,Produce work to a deadline,category_default,synthetic,true
-CAREER-153,Social Media Manager,Revise work after feedback,category_default,synthetic,true
-CAREER-153,Social Media Manager,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-153,Social Media Manager,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-153,Social Media Manager,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-154,Sound Engineer,Develop ideas and briefs for audio engineering,category_default,synthetic,true
-CAREER-154,Sound Engineer,Produce work to a deadline,category_default,synthetic,true
-CAREER-154,Sound Engineer,Revise work after feedback,category_default,synthetic,true
-CAREER-154,Sound Engineer,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-154,Sound Engineer,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-154,Sound Engineer,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-155,Music Producer,Develop ideas and briefs for music production,category_default,synthetic,true
-CAREER-155,Music Producer,Produce work to a deadline,category_default,synthetic,true
-CAREER-155,Music Producer,Revise work after feedback,category_default,synthetic,true
-CAREER-155,Music Producer,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-155,Music Producer,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-155,Music Producer,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-156,Game Developer,Develop ideas and briefs for game development,category_default,synthetic,true
-CAREER-156,Game Developer,Produce work to a deadline,category_default,synthetic,true
-CAREER-156,Game Developer,Revise work after feedback,category_default,synthetic,true
-CAREER-156,Game Developer,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-156,Game Developer,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-156,Game Developer,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-157,Fashion Designer,Develop ideas and briefs for fashion and textiles,category_default,synthetic,true
-CAREER-157,Fashion Designer,Produce work to a deadline,category_default,synthetic,true
-CAREER-157,Fashion Designer,Revise work after feedback,category_default,synthetic,true
-CAREER-157,Fashion Designer,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-157,Fashion Designer,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-157,Fashion Designer,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-158,Interior Designer,Develop ideas and briefs for interior design,category_default,synthetic,true
-CAREER-158,Interior Designer,Produce work to a deadline,category_default,synthetic,true
-CAREER-158,Interior Designer,Revise work after feedback,category_default,synthetic,true
-CAREER-158,Interior Designer,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-158,Interior Designer,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-158,Interior Designer,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-159,Illustrator,Develop ideas and briefs for illustration,category_default,synthetic,true
-CAREER-159,Illustrator,Produce work to a deadline,category_default,synthetic,true
-CAREER-159,Illustrator,Revise work after feedback,category_default,synthetic,true
-CAREER-159,Illustrator,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-159,Illustrator,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-159,Illustrator,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-160,Creative Director,Develop ideas and briefs for creative leadership,category_default,synthetic,true
-CAREER-160,Creative Director,Produce work to a deadline,category_default,synthetic,true
-CAREER-160,Creative Director,Revise work after feedback,category_default,synthetic,true
-CAREER-160,Creative Director,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-160,Creative Director,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-160,Creative Director,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-161,Hotel Manager,Serve guests or customers in hotel operations,category_default,synthetic,true
-CAREER-161,Hotel Manager,Keep service standards high,category_default,synthetic,true
-CAREER-161,Hotel Manager,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-161,Hotel Manager,Coordinate with other departments,category_default,synthetic,true
-CAREER-161,Hotel Manager,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-161,Hotel Manager,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-162,Front Office Officer,Serve guests or customers in guest reception,category_default,synthetic,true
-CAREER-162,Front Office Officer,Keep service standards high,category_default,synthetic,true
-CAREER-162,Front Office Officer,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-162,Front Office Officer,Coordinate with other departments,category_default,synthetic,true
-CAREER-162,Front Office Officer,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-162,Front Office Officer,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-163,Chef,Serve guests or customers in culinary arts,category_default,synthetic,true
-CAREER-163,Chef,Keep service standards high,category_default,synthetic,true
-CAREER-163,Chef,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-163,Chef,Coordinate with other departments,category_default,synthetic,true
-CAREER-163,Chef,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-163,Chef,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-164,Pastry Chef,Serve guests or customers in baking and pastry,category_default,synthetic,true
-CAREER-164,Pastry Chef,Keep service standards high,category_default,synthetic,true
-CAREER-164,Pastry Chef,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-164,Pastry Chef,Coordinate with other departments,category_default,synthetic,true
-CAREER-164,Pastry Chef,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-164,Pastry Chef,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-165,Food and Beverage Manager,Serve guests or customers in food and beverage service,category_default,synthetic,true
-CAREER-165,Food and Beverage Manager,Keep service standards high,category_default,synthetic,true
-CAREER-165,Food and Beverage Manager,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-165,Food and Beverage Manager,Coordinate with other departments,category_default,synthetic,true
-CAREER-165,Food and Beverage Manager,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-165,Food and Beverage Manager,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-166,Tour Operator,Serve guests or customers in tour packages,category_default,synthetic,true
-CAREER-166,Tour Operator,Keep service standards high,category_default,synthetic,true
-CAREER-166,Tour Operator,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-166,Tour Operator,Coordinate with other departments,category_default,synthetic,true
-CAREER-166,Tour Operator,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-166,Tour Operator,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-167,Tour Guide,Serve guests or customers in guided experiences,category_default,synthetic,true
-CAREER-167,Tour Guide,Keep service standards high,category_default,synthetic,true
-CAREER-167,Tour Guide,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-167,Tour Guide,Coordinate with other departments,category_default,synthetic,true
-CAREER-167,Tour Guide,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-167,Tour Guide,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-168,Travel Consultant,Serve guests or customers in travel advisory,category_default,synthetic,true
-CAREER-168,Travel Consultant,Keep service standards high,category_default,synthetic,true
-CAREER-168,Travel Consultant,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-168,Travel Consultant,Coordinate with other departments,category_default,synthetic,true
-CAREER-168,Travel Consultant,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-168,Travel Consultant,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-169,Events Planner,Serve guests or customers in events,category_default,synthetic,true
-CAREER-169,Events Planner,Keep service standards high,category_default,synthetic,true
-CAREER-169,Events Planner,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-169,Events Planner,Coordinate with other departments,category_default,synthetic,true
-CAREER-169,Events Planner,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-169,Events Planner,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-170,Conference and Meetings Coordinator,Serve guests or customers in conferences,category_default,synthetic,true
-CAREER-170,Conference and Meetings Coordinator,Keep service standards high,category_default,synthetic,true
-CAREER-170,Conference and Meetings Coordinator,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-170,Conference and Meetings Coordinator,Coordinate with other departments,category_default,synthetic,true
-CAREER-170,Conference and Meetings Coordinator,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-170,Conference and Meetings Coordinator,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-171,Revenue Manager,Serve guests or customers in hospitality revenue,category_default,synthetic,true
-CAREER-171,Revenue Manager,Keep service standards high,category_default,synthetic,true
-CAREER-171,Revenue Manager,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-171,Revenue Manager,Coordinate with other departments,category_default,synthetic,true
-CAREER-171,Revenue Manager,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-171,Revenue Manager,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-172,Safari Lodge Manager,Serve guests or customers in lodge and camp operations,category_default,synthetic,true
-CAREER-172,Safari Lodge Manager,Keep service standards high,category_default,synthetic,true
-CAREER-172,Safari Lodge Manager,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-172,Safari Lodge Manager,Coordinate with other departments,category_default,synthetic,true
-CAREER-172,Safari Lodge Manager,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-172,Safari Lodge Manager,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-173,Cabin Crew Member,Serve guests or customers in air travel service,category_default,synthetic,true
-CAREER-173,Cabin Crew Member,Keep service standards high,category_default,synthetic,true
-CAREER-173,Cabin Crew Member,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-173,Cabin Crew Member,Coordinate with other departments,category_default,synthetic,true
-CAREER-173,Cabin Crew Member,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-173,Cabin Crew Member,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-174,Ground Handling Officer,Serve guests or customers in airport operations,category_default,synthetic,true
-CAREER-174,Ground Handling Officer,Keep service standards high,category_default,synthetic,true
-CAREER-174,Ground Handling Officer,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-174,Ground Handling Officer,Coordinate with other departments,category_default,synthetic,true
-CAREER-174,Ground Handling Officer,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-174,Ground Handling Officer,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-175,Restaurant Manager,Serve guests or customers in restaurant operations,category_default,synthetic,true
-CAREER-175,Restaurant Manager,Keep service standards high,category_default,synthetic,true
-CAREER-175,Restaurant Manager,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-175,Restaurant Manager,Coordinate with other departments,category_default,synthetic,true
-CAREER-175,Restaurant Manager,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-175,Restaurant Manager,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-176,Barista and Coffee Specialist,Serve guests or customers in specialty coffee,category_default,synthetic,true
-CAREER-176,Barista and Coffee Specialist,Keep service standards high,category_default,synthetic,true
-CAREER-176,Barista and Coffee Specialist,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-176,Barista and Coffee Specialist,Coordinate with other departments,category_default,synthetic,true
-CAREER-176,Barista and Coffee Specialist,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-176,Barista and Coffee Specialist,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-177,Housekeeping Manager,Serve guests or customers in accommodation services,category_default,synthetic,true
-CAREER-177,Housekeeping Manager,Keep service standards high,category_default,synthetic,true
-CAREER-177,Housekeeping Manager,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-177,Housekeeping Manager,Coordinate with other departments,category_default,synthetic,true
-CAREER-177,Housekeeping Manager,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-177,Housekeeping Manager,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-178,Tourism Marketing Officer,Serve guests or customers in destination marketing,category_default,synthetic,true
-CAREER-178,Tourism Marketing Officer,Keep service standards high,category_default,synthetic,true
-CAREER-178,Tourism Marketing Officer,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-178,Tourism Marketing Officer,Coordinate with other departments,category_default,synthetic,true
-CAREER-178,Tourism Marketing Officer,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-178,Tourism Marketing Officer,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-179,Cultural Heritage Officer,Serve guests or customers in heritage tourism,category_default,synthetic,true
-CAREER-179,Cultural Heritage Officer,Keep service standards high,category_default,synthetic,true
-CAREER-179,Cultural Heritage Officer,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-179,Cultural Heritage Officer,Coordinate with other departments,category_default,synthetic,true
-CAREER-179,Cultural Heritage Officer,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-179,Cultural Heritage Officer,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-180,Research Scientist,Plan and run experiments or studies in scientific research,category_default,synthetic,true
-CAREER-180,Research Scientist,Record methods and results carefully,category_default,synthetic,true
-CAREER-180,Research Scientist,Analyse data,category_default,synthetic,true
-CAREER-180,Research Scientist,Write reports and papers,category_default,synthetic,true
-CAREER-180,Research Scientist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-180,Research Scientist,Present findings,category_default,synthetic,true
-CAREER-181,Laboratory Technician,Plan and run experiments or studies in laboratory operations,category_default,synthetic,true
-CAREER-181,Laboratory Technician,Record methods and results carefully,category_default,synthetic,true
-CAREER-181,Laboratory Technician,Analyse data,category_default,synthetic,true
-CAREER-181,Laboratory Technician,Write reports and papers,category_default,synthetic,true
-CAREER-181,Laboratory Technician,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-181,Laboratory Technician,Present findings,category_default,synthetic,true
-CAREER-182,Chemist,Plan and run experiments or studies in chemistry,category_default,synthetic,true
-CAREER-182,Chemist,Record methods and results carefully,category_default,synthetic,true
-CAREER-182,Chemist,Analyse data,category_default,synthetic,true
-CAREER-182,Chemist,Write reports and papers,category_default,synthetic,true
-CAREER-182,Chemist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-182,Chemist,Present findings,category_default,synthetic,true
-CAREER-183,Biologist,Plan and run experiments or studies in biological sciences,category_default,synthetic,true
-CAREER-183,Biologist,Record methods and results carefully,category_default,synthetic,true
-CAREER-183,Biologist,Analyse data,category_default,synthetic,true
-CAREER-183,Biologist,Write reports and papers,category_default,synthetic,true
-CAREER-183,Biologist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-183,Biologist,Present findings,category_default,synthetic,true
-CAREER-184,Microbiologist,Plan and run experiments or studies in microbiology,category_default,synthetic,true
-CAREER-184,Microbiologist,Record methods and results carefully,category_default,synthetic,true
-CAREER-184,Microbiologist,Analyse data,category_default,synthetic,true
-CAREER-184,Microbiologist,Write reports and papers,category_default,synthetic,true
-CAREER-184,Microbiologist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-184,Microbiologist,Present findings,category_default,synthetic,true
-CAREER-185,Biotechnologist,Plan and run experiments or studies in biotechnology,category_default,synthetic,true
-CAREER-185,Biotechnologist,Record methods and results carefully,category_default,synthetic,true
-CAREER-185,Biotechnologist,Analyse data,category_default,synthetic,true
-CAREER-185,Biotechnologist,Write reports and papers,category_default,synthetic,true
-CAREER-185,Biotechnologist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-185,Biotechnologist,Present findings,category_default,synthetic,true
-CAREER-186,Physicist,Plan and run experiments or studies in physics,category_default,synthetic,true
-CAREER-186,Physicist,Record methods and results carefully,category_default,synthetic,true
-CAREER-186,Physicist,Analyse data,category_default,synthetic,true
-CAREER-186,Physicist,Write reports and papers,category_default,synthetic,true
-CAREER-186,Physicist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-186,Physicist,Present findings,category_default,synthetic,true
-CAREER-187,Statistician,Plan and run experiments or studies in statistics,category_default,synthetic,true
-CAREER-187,Statistician,Record methods and results carefully,category_default,synthetic,true
-CAREER-187,Statistician,Analyse data,category_default,synthetic,true
-CAREER-187,Statistician,Write reports and papers,category_default,synthetic,true
-CAREER-187,Statistician,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-187,Statistician,Present findings,category_default,synthetic,true
-CAREER-188,Mathematician,Plan and run experiments or studies in mathematics,category_default,synthetic,true
-CAREER-188,Mathematician,Record methods and results carefully,category_default,synthetic,true
-CAREER-188,Mathematician,Analyse data,category_default,synthetic,true
-CAREER-188,Mathematician,Write reports and papers,category_default,synthetic,true
-CAREER-188,Mathematician,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-188,Mathematician,Present findings,category_default,synthetic,true
-CAREER-189,Geologist,Plan and run experiments or studies in earth sciences,category_default,synthetic,true
-CAREER-189,Geologist,Record methods and results carefully,category_default,synthetic,true
-CAREER-189,Geologist,Analyse data,category_default,synthetic,true
-CAREER-189,Geologist,Write reports and papers,category_default,synthetic,true
-CAREER-189,Geologist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-189,Geologist,Present findings,category_default,synthetic,true
-CAREER-190,Meteorologist,Plan and run experiments or studies in weather and climate,category_default,synthetic,true
-CAREER-190,Meteorologist,Record methods and results carefully,category_default,synthetic,true
-CAREER-190,Meteorologist,Analyse data,category_default,synthetic,true
-CAREER-190,Meteorologist,Write reports and papers,category_default,synthetic,true
-CAREER-190,Meteorologist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-190,Meteorologist,Present findings,category_default,synthetic,true
-CAREER-191,Bioinformatician,Plan and run experiments or studies in computational biology,category_default,synthetic,true
-CAREER-191,Bioinformatician,Record methods and results carefully,category_default,synthetic,true
-CAREER-191,Bioinformatician,Analyse data,category_default,synthetic,true
-CAREER-191,Bioinformatician,Write reports and papers,category_default,synthetic,true
-CAREER-191,Bioinformatician,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-191,Bioinformatician,Present findings,category_default,synthetic,true
-CAREER-192,Research Assistant,Plan and run experiments or studies in research support,category_default,synthetic,true
-CAREER-192,Research Assistant,Record methods and results carefully,category_default,synthetic,true
-CAREER-192,Research Assistant,Analyse data,category_default,synthetic,true
-CAREER-192,Research Assistant,Write reports and papers,category_default,synthetic,true
-CAREER-192,Research Assistant,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-192,Research Assistant,Present findings,category_default,synthetic,true
-CAREER-193,Science Communicator,Plan and run experiments or studies in science communication,category_default,synthetic,true
-CAREER-193,Science Communicator,Record methods and results carefully,category_default,synthetic,true
-CAREER-193,Science Communicator,Analyse data,category_default,synthetic,true
-CAREER-193,Science Communicator,Write reports and papers,category_default,synthetic,true
-CAREER-193,Science Communicator,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-193,Science Communicator,Present findings,category_default,synthetic,true
-CAREER-194,Materials Scientist,Plan and run experiments or studies in materials research,category_default,synthetic,true
-CAREER-194,Materials Scientist,Record methods and results carefully,category_default,synthetic,true
-CAREER-194,Materials Scientist,Analyse data,category_default,synthetic,true
-CAREER-194,Materials Scientist,Write reports and papers,category_default,synthetic,true
-CAREER-194,Materials Scientist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-194,Materials Scientist,Present findings,category_default,synthetic,true
-CAREER-195,Forensic Scientist,Plan and run experiments or studies in forensic analysis,category_default,synthetic,true
-CAREER-195,Forensic Scientist,Record methods and results carefully,category_default,synthetic,true
-CAREER-195,Forensic Scientist,Analyse data,category_default,synthetic,true
-CAREER-195,Forensic Scientist,Write reports and papers,category_default,synthetic,true
-CAREER-195,Forensic Scientist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-195,Forensic Scientist,Present findings,category_default,synthetic,true
-CAREER-196,Marine Scientist,Plan and run experiments or studies in marine and aquatic science,category_default,synthetic,true
-CAREER-196,Marine Scientist,Record methods and results carefully,category_default,synthetic,true
-CAREER-196,Marine Scientist,Analyse data,category_default,synthetic,true
-CAREER-196,Marine Scientist,Write reports and papers,category_default,synthetic,true
-CAREER-196,Marine Scientist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-196,Marine Scientist,Present findings,category_default,synthetic,true
-CAREER-197,Quality Control Analyst,Plan and run experiments or studies in laboratory quality control,category_default,synthetic,true
-CAREER-197,Quality Control Analyst,Record methods and results carefully,category_default,synthetic,true
-CAREER-197,Quality Control Analyst,Analyse data,category_default,synthetic,true
-CAREER-197,Quality Control Analyst,Write reports and papers,category_default,synthetic,true
-CAREER-197,Quality Control Analyst,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-197,Quality Control Analyst,Present findings,category_default,synthetic,true
-CAREER-198,Clinical Research Associate,Plan and run experiments or studies in clinical trials,category_default,synthetic,true
-CAREER-198,Clinical Research Associate,Record methods and results carefully,category_default,synthetic,true
-CAREER-198,Clinical Research Associate,Analyse data,category_default,synthetic,true
-CAREER-198,Clinical Research Associate,Write reports and papers,category_default,synthetic,true
-CAREER-198,Clinical Research Associate,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-198,Clinical Research Associate,Present findings,category_default,synthetic,true
-CAREER-199,Logistics Coordinator,Plan and track logistics coordination activities,category_default,synthetic,true
-CAREER-199,Logistics Coordinator,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-199,Logistics Coordinator,Keep documents and records accurate,category_default,synthetic,true
-CAREER-199,Logistics Coordinator,Solve delays and shortages,category_default,synthetic,true
-CAREER-199,Logistics Coordinator,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-199,Logistics Coordinator,Report on cost and performance,category_default,synthetic,true
-CAREER-200,Supply Chain Analyst,Plan and track supply chain planning activities,category_default,synthetic,true
-CAREER-200,Supply Chain Analyst,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-200,Supply Chain Analyst,Keep documents and records accurate,category_default,synthetic,true
-CAREER-200,Supply Chain Analyst,Solve delays and shortages,category_default,synthetic,true
-CAREER-200,Supply Chain Analyst,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-200,Supply Chain Analyst,Report on cost and performance,category_default,synthetic,true
-CAREER-201,Procurement Officer,Plan and track procurement activities,category_default,synthetic,true
-CAREER-201,Procurement Officer,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-201,Procurement Officer,Keep documents and records accurate,category_default,synthetic,true
-CAREER-201,Procurement Officer,Solve delays and shortages,category_default,synthetic,true
-CAREER-201,Procurement Officer,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-201,Procurement Officer,Report on cost and performance,category_default,synthetic,true
-CAREER-202,Warehouse Manager,Plan and track warehousing activities,category_default,synthetic,true
-CAREER-202,Warehouse Manager,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-202,Warehouse Manager,Keep documents and records accurate,category_default,synthetic,true
-CAREER-202,Warehouse Manager,Solve delays and shortages,category_default,synthetic,true
-CAREER-202,Warehouse Manager,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-202,Warehouse Manager,Report on cost and performance,category_default,synthetic,true
-CAREER-203,Clearing and Forwarding Agent,Plan and track freight and customs activities,category_default,synthetic,true
-CAREER-203,Clearing and Forwarding Agent,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-203,Clearing and Forwarding Agent,Keep documents and records accurate,category_default,synthetic,true
-CAREER-203,Clearing and Forwarding Agent,Solve delays and shortages,category_default,synthetic,true
-CAREER-203,Clearing and Forwarding Agent,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-203,Clearing and Forwarding Agent,Report on cost and performance,category_default,synthetic,true
-CAREER-204,Customs Officer,Plan and track customs control activities,category_default,synthetic,true
-CAREER-204,Customs Officer,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-204,Customs Officer,Keep documents and records accurate,category_default,synthetic,true
-CAREER-204,Customs Officer,Solve delays and shortages,category_default,synthetic,true
-CAREER-204,Customs Officer,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-204,Customs Officer,Report on cost and performance,category_default,synthetic,true
-CAREER-205,Operations Manager,Plan and track operations management activities,category_default,synthetic,true
-CAREER-205,Operations Manager,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-205,Operations Manager,Keep documents and records accurate,category_default,synthetic,true
-CAREER-205,Operations Manager,Solve delays and shortages,category_default,synthetic,true
-CAREER-205,Operations Manager,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-205,Operations Manager,Report on cost and performance,category_default,synthetic,true
-CAREER-206,Fleet Manager,Plan and track fleet operations activities,category_default,synthetic,true
-CAREER-206,Fleet Manager,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-206,Fleet Manager,Keep documents and records accurate,category_default,synthetic,true
-CAREER-206,Fleet Manager,Solve delays and shortages,category_default,synthetic,true
-CAREER-206,Fleet Manager,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-206,Fleet Manager,Report on cost and performance,category_default,synthetic,true
-CAREER-207,Commercial Pilot,Plan and track aviation activities,category_default,synthetic,true
-CAREER-207,Commercial Pilot,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-207,Commercial Pilot,Keep documents and records accurate,category_default,synthetic,true
-CAREER-207,Commercial Pilot,Solve delays and shortages,category_default,synthetic,true
-CAREER-207,Commercial Pilot,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-207,Commercial Pilot,Report on cost and performance,category_default,synthetic,true
-CAREER-208,Air Traffic Controller,Plan and track air traffic services activities,category_default,synthetic,true
-CAREER-208,Air Traffic Controller,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-208,Air Traffic Controller,Keep documents and records accurate,category_default,synthetic,true
-CAREER-208,Air Traffic Controller,Solve delays and shortages,category_default,synthetic,true
-CAREER-208,Air Traffic Controller,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-208,Air Traffic Controller,Report on cost and performance,category_default,synthetic,true
-CAREER-209,Aircraft Maintenance Engineer,Plan and track aircraft maintenance activities,category_default,synthetic,true
-CAREER-209,Aircraft Maintenance Engineer,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-209,Aircraft Maintenance Engineer,Keep documents and records accurate,category_default,synthetic,true
-CAREER-209,Aircraft Maintenance Engineer,Solve delays and shortages,category_default,synthetic,true
-CAREER-209,Aircraft Maintenance Engineer,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-209,Aircraft Maintenance Engineer,Report on cost and performance,category_default,synthetic,true
-CAREER-210,Marine Officer,Plan and track maritime operations activities,category_default,synthetic,true
-CAREER-210,Marine Officer,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-210,Marine Officer,Keep documents and records accurate,category_default,synthetic,true
-CAREER-210,Marine Officer,Solve delays and shortages,category_default,synthetic,true
-CAREER-210,Marine Officer,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-210,Marine Officer,Report on cost and performance,category_default,synthetic,true
-CAREER-211,Railway Operations Officer,Plan and track rail operations activities,category_default,synthetic,true
-CAREER-211,Railway Operations Officer,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-211,Railway Operations Officer,Keep documents and records accurate,category_default,synthetic,true
-CAREER-211,Railway Operations Officer,Solve delays and shortages,category_default,synthetic,true
-CAREER-211,Railway Operations Officer,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-211,Railway Operations Officer,Report on cost and performance,category_default,synthetic,true
-CAREER-212,Inventory Planner,Plan and track inventory planning activities,category_default,synthetic,true
-CAREER-212,Inventory Planner,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-212,Inventory Planner,Keep documents and records accurate,category_default,synthetic,true
-CAREER-212,Inventory Planner,Solve delays and shortages,category_default,synthetic,true
-CAREER-212,Inventory Planner,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-212,Inventory Planner,Report on cost and performance,category_default,synthetic,true
-CAREER-213,Demand Planner,Plan and track demand planning activities,category_default,synthetic,true
-CAREER-213,Demand Planner,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-213,Demand Planner,Keep documents and records accurate,category_default,synthetic,true
-CAREER-213,Demand Planner,Solve delays and shortages,category_default,synthetic,true
-CAREER-213,Demand Planner,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-213,Demand Planner,Report on cost and performance,category_default,synthetic,true
-CAREER-214,Last-Mile Delivery Manager,Plan and track delivery operations activities,category_default,synthetic,true
-CAREER-214,Last-Mile Delivery Manager,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-214,Last-Mile Delivery Manager,Keep documents and records accurate,category_default,synthetic,true
-CAREER-214,Last-Mile Delivery Manager,Solve delays and shortages,category_default,synthetic,true
-CAREER-214,Last-Mile Delivery Manager,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-214,Last-Mile Delivery Manager,Report on cost and performance,category_default,synthetic,true
-CAREER-215,Port Operations Officer,Plan and track port and terminal operations activities,category_default,synthetic,true
-CAREER-215,Port Operations Officer,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-215,Port Operations Officer,Keep documents and records accurate,category_default,synthetic,true
-CAREER-215,Port Operations Officer,Solve delays and shortages,category_default,synthetic,true
-CAREER-215,Port Operations Officer,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-215,Port Operations Officer,Report on cost and performance,category_default,synthetic,true
-CAREER-216,Production Planner,Plan and track production scheduling activities,category_default,synthetic,true
-CAREER-216,Production Planner,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-216,Production Planner,Keep documents and records accurate,category_default,synthetic,true
-CAREER-216,Production Planner,Solve delays and shortages,category_default,synthetic,true
-CAREER-216,Production Planner,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-216,Production Planner,Report on cost and performance,category_default,synthetic,true
-CAREER-217,Transport Planner,Plan and track transport systems activities,category_default,synthetic,true
-CAREER-217,Transport Planner,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-217,Transport Planner,Keep documents and records accurate,category_default,synthetic,true
-CAREER-217,Transport Planner,Solve delays and shortages,category_default,synthetic,true
-CAREER-217,Transport Planner,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-217,Transport Planner,Report on cost and performance,category_default,synthetic,true
+CAREER-142,Journalist,Find and pitch story ideas,authored,synthetic,true
+CAREER-142,Journalist,Interview sources and attend events,authored,synthetic,true
+CAREER-142,Journalist,Verify facts and documents,authored,synthetic,true
+CAREER-142,Journalist,Write and file stories to deadline,authored,synthetic,true
+CAREER-142,Journalist,Shoot photos and short video in the field,authored,synthetic,true
+CAREER-142,Journalist,Follow up on developing stories,authored,synthetic,true
+CAREER-142,Journalist,Build a network of contacts,authored,synthetic,true
+CAREER-142,Journalist,Correct errors openly,authored,synthetic,true
+CAREER-143,Broadcast Presenter,Research topics and guests,authored,synthetic,true
+CAREER-143,Broadcast Presenter,Write or edit scripts and links,authored,synthetic,true
+CAREER-143,Broadcast Presenter,Present live and recorded programmes,authored,synthetic,true
+CAREER-143,Broadcast Presenter,Interview guests on air,authored,synthetic,true
+CAREER-143,Broadcast Presenter,Operate the radio desk or read from the autocue,authored,synthetic,true
+CAREER-143,Broadcast Presenter,Engage the audience on calls and social media,authored,synthetic,true
+CAREER-143,Broadcast Presenter,Handle breaking news calmly,authored,synthetic,true
+CAREER-143,Broadcast Presenter,Attend editorial meetings,authored,synthetic,true
+CAREER-144,Video Producer,Develop concepts and scripts with clients,authored,synthetic,true
+CAREER-144,Video Producer,"Plan budgets, crew and locations",authored,synthetic,true
+CAREER-144,Video Producer,Direct or oversee shoots,authored,synthetic,true
+CAREER-144,Video Producer,Edit footage and sound,authored,synthetic,true
+CAREER-144,Video Producer,"Add graphics, colour and subtitles",authored,synthetic,true
+CAREER-144,Video Producer,Manage client feedback and revisions,authored,synthetic,true
+CAREER-144,Video Producer,Deliver files in the right formats,authored,synthetic,true
+CAREER-144,Video Producer,Archive footage,authored,synthetic,true
+CAREER-145,Film Director,Interpret the script and set the creative vision,authored,synthetic,true
+CAREER-145,Film Director,Cast and rehearse actors,authored,synthetic,true
+CAREER-145,Film Director,Plan shots with the director of photography,authored,synthetic,true
+CAREER-145,Film Director,Lead the crew on set,authored,synthetic,true
+CAREER-145,Film Director,Direct performances take by take,authored,synthetic,true
+CAREER-145,Film Director,Work with editors in post-production,authored,synthetic,true
+CAREER-145,Film Director,Keep to schedule and budget,authored,synthetic,true
+CAREER-145,Film Director,Pitch projects to funders,authored,synthetic,true
+CAREER-146,Graphic Designer,Take and clarify design briefs,authored,synthetic,true
+CAREER-146,Graphic Designer,Sketch and develop concepts,authored,synthetic,true
+CAREER-146,Graphic Designer,"Design logos, posters, layouts and digital assets",authored,synthetic,true
+CAREER-146,Graphic Designer,"Choose type, colour and images",authored,synthetic,true
+CAREER-146,Graphic Designer,Revise work from feedback,authored,synthetic,true
+CAREER-146,Graphic Designer,Prepare print-ready and web-ready files,authored,synthetic,true
+CAREER-146,Graphic Designer,Keep to brand guidelines,authored,synthetic,true
+CAREER-146,Graphic Designer,Manage several jobs at once,authored,synthetic,true
+CAREER-147,Animator,Read scripts and storyboards,authored,synthetic,true
+CAREER-147,Animator,Design characters and backgrounds,authored,synthetic,true
+CAREER-147,Animator,Create key poses and in-betweens,authored,synthetic,true
+CAREER-147,Animator,Rig and animate 3D models,authored,synthetic,true
+CAREER-147,Animator,Sync movement to voice and sound,authored,synthetic,true
+CAREER-147,Animator,Render and composite scenes,authored,synthetic,true
+CAREER-147,Animator,Revise shots from director notes,authored,synthetic,true
+CAREER-147,Animator,Meet episode deadlines,authored,synthetic,true
+CAREER-148,Photographer,Meet clients and plan shoots,authored,synthetic,true
+CAREER-148,Photographer,Scout locations and set up lighting,authored,synthetic,true
+CAREER-148,Photographer,Direct subjects and take photographs,authored,synthetic,true
+CAREER-148,Photographer,Select and edit images,authored,synthetic,true
+CAREER-148,Photographer,"Deliver galleries, prints or files",authored,synthetic,true
+CAREER-148,Photographer,Market services and manage bookings,authored,synthetic,true
+CAREER-148,Photographer,Maintain equipment,authored,synthetic,true
+CAREER-148,Photographer,Back up and archive work,authored,synthetic,true
+CAREER-149,Content Creator,Plan a content calendar,authored,synthetic,true
+CAREER-149,Content Creator,Research trends and topics,authored,synthetic,true
+CAREER-149,Content Creator,"Script, shoot and edit content",authored,synthetic,true
+CAREER-149,Content Creator,Write captions and titles,authored,synthetic,true
+CAREER-149,Content Creator,Publish across platforms,authored,synthetic,true
+CAREER-149,Content Creator,Reply to comments and build community,authored,synthetic,true
+CAREER-149,Content Creator,Negotiate brand deals,authored,synthetic,true
+CAREER-149,Content Creator,Study analytics to improve,authored,synthetic,true
+CAREER-150,Copywriter,"Study the brief, product and audience",authored,synthetic,true
+CAREER-150,Copywriter,Develop campaign ideas with an art director,authored,synthetic,true
+CAREER-150,Copywriter,"Write headlines, scripts and body copy",authored,synthetic,true
+CAREER-150,Copywriter,Adapt tone to each brand,authored,synthetic,true
+CAREER-150,Copywriter,Edit and proofread,authored,synthetic,true
+CAREER-150,Copywriter,Present ideas to clients,authored,synthetic,true
+CAREER-150,Copywriter,Revise from feedback,authored,synthetic,true
+CAREER-150,Copywriter,Check claims are accurate,authored,synthetic,true
+CAREER-151,Editor,Plan and commission content,authored,synthetic,true
+CAREER-151,Editor,"Check facts, grammar and style",authored,synthetic,true
+CAREER-151,Editor,Rewrite for clarity and length,authored,synthetic,true
+CAREER-151,Editor,Write headlines and captions,authored,synthetic,true
+CAREER-151,Editor,Work with writers on revisions,authored,synthetic,true
+CAREER-151,Editor,Decide what gets published,authored,synthetic,true
+CAREER-151,Editor,Manage deadlines and page plans,authored,synthetic,true
+CAREER-151,Editor,Enforce legal and ethical standards,authored,synthetic,true
+CAREER-152,Communications Officer,"Write stories, newsletters and reports",authored,synthetic,true
+CAREER-152,Communications Officer,Manage the website and social channels,authored,synthetic,true
+CAREER-152,Communications Officer,Take photos and coordinate video,authored,synthetic,true
+CAREER-152,Communications Officer,Handle media enquiries,authored,synthetic,true
+CAREER-152,Communications Officer,Plan communication for events and campaigns,authored,synthetic,true
+CAREER-152,Communications Officer,Maintain brand and messaging,authored,synthetic,true
+CAREER-152,Communications Officer,Brief leaders before interviews,authored,synthetic,true
+CAREER-152,Communications Officer,Measure reach and engagement,authored,synthetic,true
+CAREER-153,Social Media Manager,Plan the monthly content calendar,authored,synthetic,true
+CAREER-153,Social Media Manager,"Create or brief posts, graphics and videos",authored,synthetic,true
+CAREER-153,Social Media Manager,Schedule and publish content,authored,synthetic,true
+CAREER-153,Social Media Manager,Reply to comments and messages,authored,synthetic,true
+CAREER-153,Social Media Manager,Run paid campaigns,authored,synthetic,true
+CAREER-153,Social Media Manager,Monitor mentions and trends,authored,synthetic,true
+CAREER-153,Social Media Manager,Handle complaints and crises,authored,synthetic,true
+CAREER-153,Social Media Manager,Report on growth and engagement,authored,synthetic,true
+CAREER-154,Sound Engineer,Set up microphones and equipment,authored,synthetic,true
+CAREER-154,Sound Engineer,Run sound checks,authored,synthetic,true
+CAREER-154,Sound Engineer,Record and mix sessions,authored,synthetic,true
+CAREER-154,Sound Engineer,Operate the desk during live shows,authored,synthetic,true
+CAREER-154,Sound Engineer,Edit and clean audio,authored,synthetic,true
+CAREER-154,Sound Engineer,Master final tracks,authored,synthetic,true
+CAREER-154,Sound Engineer,Troubleshoot noise and feedback,authored,synthetic,true
+CAREER-154,Sound Engineer,Maintain cables and gear,authored,synthetic,true
+CAREER-155,Music Producer,Develop song ideas with artists,authored,synthetic,true
+CAREER-155,Music Producer,Make beats and arrangements,authored,synthetic,true
+CAREER-155,Music Producer,Record vocals and instruments,authored,synthetic,true
+CAREER-155,Music Producer,Coach performances in the studio,authored,synthetic,true
+CAREER-155,Music Producer,"Edit, mix and prepare for mastering",authored,synthetic,true
+CAREER-155,Music Producer,Manage session budgets and schedules,authored,synthetic,true
+CAREER-155,Music Producer,Register and credit works properly,authored,synthetic,true
+CAREER-155,Music Producer,Release and promote music,authored,synthetic,true
+CAREER-156,Game Developer,Design game mechanics and levels,authored,synthetic,true
+CAREER-156,Game Developer,Write gameplay code,authored,synthetic,true
+CAREER-156,Game Developer,Build and import art and sound,authored,synthetic,true
+CAREER-156,Game Developer,Test and fix bugs,authored,synthetic,true
+CAREER-156,Game Developer,Balance difficulty and economy,authored,synthetic,true
+CAREER-156,Game Developer,Optimise for phones,authored,synthetic,true
+CAREER-156,Game Developer,Publish to app stores,authored,synthetic,true
+CAREER-156,Game Developer,Update the game from player feedback,authored,synthetic,true
+CAREER-157,Fashion Designer,Research trends and customers,authored,synthetic,true
+CAREER-157,Fashion Designer,Sketch designs and choose fabrics,authored,synthetic,true
+CAREER-157,Fashion Designer,Make patterns and samples,authored,synthetic,true
+CAREER-157,Fashion Designer,Fit garments on clients or models,authored,synthetic,true
+CAREER-157,Fashion Designer,Oversee tailoring and production,authored,synthetic,true
+CAREER-157,Fashion Designer,Cost and price pieces,authored,synthetic,true
+CAREER-157,Fashion Designer,Show collections and market the brand,authored,synthetic,true
+CAREER-157,Fashion Designer,Manage orders and suppliers,authored,synthetic,true
+CAREER-158,Interior Designer,Meet clients and measure spaces,authored,synthetic,true
+CAREER-158,Interior Designer,Develop concepts and mood boards,authored,synthetic,true
+CAREER-158,Interior Designer,Draw layouts and 3D views,authored,synthetic,true
+CAREER-158,Interior Designer,"Choose finishes, furniture and lighting",authored,synthetic,true
+CAREER-158,Interior Designer,Prepare budgets and specifications,authored,synthetic,true
+CAREER-158,Interior Designer,Coordinate fundis and suppliers,authored,synthetic,true
+CAREER-158,Interior Designer,Supervise installation on site,authored,synthetic,true
+CAREER-158,Interior Designer,Style the finished space,authored,synthetic,true
+CAREER-159,Illustrator,Read the brief or manuscript,authored,synthetic,true
+CAREER-159,Illustrator,Research references,authored,synthetic,true
+CAREER-159,Illustrator,Sketch thumbnails and roughs,authored,synthetic,true
+CAREER-159,Illustrator,Produce final artwork,authored,synthetic,true
+CAREER-159,Illustrator,Revise from art director feedback,authored,synthetic,true
+CAREER-159,Illustrator,Prepare files for print or screen,authored,synthetic,true
+CAREER-159,Illustrator,Build a portfolio and find clients,authored,synthetic,true
+CAREER-159,Illustrator,Manage licences and invoices,authored,synthetic,true
+CAREER-160,Creative Director,Set the creative vision for campaigns,authored,synthetic,true
+CAREER-160,Creative Director,Lead and mentor writers and designers,authored,synthetic,true
+CAREER-160,Creative Director,Review and approve work,authored,synthetic,true
+CAREER-160,Creative Director,Present ideas to clients,authored,synthetic,true
+CAREER-160,Creative Director,Win new business through pitches,authored,synthetic,true
+CAREER-160,Creative Director,Work with strategy and account teams,authored,synthetic,true
+CAREER-160,Creative Director,Protect quality and brand consistency,authored,synthetic,true
+CAREER-160,Creative Director,Manage creative resources,authored,synthetic,true
+CAREER-161,Hotel Manager,Oversee all hotel departments daily,authored,synthetic,true
+CAREER-161,Hotel Manager,Set and track budgets and revenue,authored,synthetic,true
+CAREER-161,Hotel Manager,Recruit and lead staff,authored,synthetic,true
+CAREER-161,Hotel Manager,Handle guest complaints and VIPs,authored,synthetic,true
+CAREER-161,Hotel Manager,Inspect rooms and facilities,authored,synthetic,true
+CAREER-161,Hotel Manager,Work with sales on occupancy,authored,synthetic,true
+CAREER-161,Hotel Manager,"Ensure licences, safety and hygiene",authored,synthetic,true
+CAREER-161,Hotel Manager,Report to owners,authored,synthetic,true
+CAREER-162,Front Office Officer,Welcome and check in guests,authored,synthetic,true
+CAREER-162,Front Office Officer,Take and confirm reservations,authored,synthetic,true
+CAREER-162,Front Office Officer,Answer calls and enquiries,authored,synthetic,true
+CAREER-162,Front Office Officer,Process payments and bills,authored,synthetic,true
+CAREER-162,Front Office Officer,Handle requests and complaints,authored,synthetic,true
+CAREER-162,Front Office Officer,Coordinate with housekeeping on room status,authored,synthetic,true
+CAREER-162,Front Office Officer,Run night audit reports,authored,synthetic,true
+CAREER-162,Front Office Officer,Keep guest information secure,authored,synthetic,true
+CAREER-163,Chef,Prepare and cook dishes to standard,authored,synthetic,true
+CAREER-163,Chef,Plan menus and cost recipes,authored,synthetic,true
+CAREER-163,Chef,Order and check supplies,authored,synthetic,true
+CAREER-163,Chef,Run a section during service,authored,synthetic,true
+CAREER-163,Chef,Train and supervise junior cooks,authored,synthetic,true
+CAREER-163,Chef,Keep the kitchen clean and food safe,authored,synthetic,true
+CAREER-163,Chef,Control waste and portions,authored,synthetic,true
+CAREER-163,Chef,Create new dishes,authored,synthetic,true
+CAREER-164,Pastry Chef,Scale and mix doughs and batters,authored,synthetic,true
+CAREER-164,Pastry Chef,"Bake breads, cakes and pastries",authored,synthetic,true
+CAREER-164,Pastry Chef,Decorate cakes to order,authored,synthetic,true
+CAREER-164,Pastry Chef,Create dessert menus,authored,synthetic,true
+CAREER-164,Pastry Chef,Manage early-morning production,authored,synthetic,true
+CAREER-164,Pastry Chef,Order ingredients and control stock,authored,synthetic,true
+CAREER-164,Pastry Chef,Keep exact recipes and temperatures,authored,synthetic,true
+CAREER-164,Pastry Chef,Maintain hygiene,authored,synthetic,true
+CAREER-165,Food and Beverage Manager,"Run restaurants, bars and room service",authored,synthetic,true
+CAREER-165,Food and Beverage Manager,Plan menus and prices with the chef,authored,synthetic,true
+CAREER-165,Food and Beverage Manager,Control food and drink costs,authored,synthetic,true
+CAREER-165,Food and Beverage Manager,"Recruit, train and schedule staff",authored,synthetic,true
+CAREER-165,Food and Beverage Manager,Check service quality on the floor,authored,synthetic,true
+CAREER-165,Food and Beverage Manager,Manage stock and suppliers,authored,synthetic,true
+CAREER-165,Food and Beverage Manager,Handle guest feedback,authored,synthetic,true
+CAREER-165,Food and Beverage Manager,Report sales and profit,authored,synthetic,true
+CAREER-166,Tour Operator,Design itineraries and packages,authored,synthetic,true
+CAREER-166,Tour Operator,Cost and quote tours,authored,synthetic,true
+CAREER-166,Tour Operator,"Book lodges, vehicles and parks",authored,synthetic,true
+CAREER-166,Tour Operator,Sell to travellers and overseas agents,authored,synthetic,true
+CAREER-166,Tour Operator,Brief guides and drivers,authored,synthetic,true
+CAREER-166,Tour Operator,Handle changes and emergencies on trip,authored,synthetic,true
+CAREER-166,Tour Operator,Collect payments and pay suppliers,authored,synthetic,true
+CAREER-166,Tour Operator,Gather client feedback,authored,synthetic,true
+CAREER-167,Tour Guide,Meet and brief guests,authored,synthetic,true
+CAREER-167,Tour Guide,Lead tours and game drives,authored,synthetic,true
+CAREER-167,Tour Guide,"Explain wildlife, history and culture",authored,synthetic,true
+CAREER-167,Tour Guide,Drive and maintain the tour vehicle,authored,synthetic,true
+CAREER-167,Tour Guide,Keep guests safe,authored,synthetic,true
+CAREER-167,Tour Guide,Manage time and park rules,authored,synthetic,true
+CAREER-167,Tour Guide,Handle problems on the road,authored,synthetic,true
+CAREER-167,Tour Guide,Share tips on local customs,authored,synthetic,true
+CAREER-168,Travel Consultant,Advise clients on destinations and fares,authored,synthetic,true
+CAREER-168,Travel Consultant,"Book flights, hotels and transfers",authored,synthetic,true
+CAREER-168,Travel Consultant,Issue and change tickets,authored,synthetic,true
+CAREER-168,Travel Consultant,Assist with visas and travel documents,authored,synthetic,true
+CAREER-168,Travel Consultant,Prepare itineraries and invoices,authored,synthetic,true
+CAREER-168,Travel Consultant,Resolve disruptions and cancellations,authored,synthetic,true
+CAREER-168,Travel Consultant,Manage corporate travel accounts,authored,synthetic,true
+CAREER-168,Travel Consultant,Follow up payments,authored,synthetic,true
+CAREER-169,Events Planner,Take the client's brief and budget,authored,synthetic,true
+CAREER-169,Events Planner,Find and book venues,authored,synthetic,true
+CAREER-169,Events Planner,Hire and coordinate suppliers,authored,synthetic,true
+CAREER-169,Events Planner,Plan the programme and layout,authored,synthetic,true
+CAREER-169,Events Planner,Manage registration and guests,authored,synthetic,true
+CAREER-169,Events Planner,Run the event on the day,authored,synthetic,true
+CAREER-169,Events Planner,Solve problems as they arise,authored,synthetic,true
+CAREER-169,Events Planner,Settle accounts and review,authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,Respond to conference enquiries with quotes,authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,Plan room set-ups and schedules,authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,"Arrange equipment, catering and accommodation",authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,Manage delegate registration,authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,Brief the operations team,authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,Attend to organisers during the event,authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,Handle last-minute changes,authored,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,Prepare the final bill,authored,synthetic,true
+CAREER-171,Revenue Manager,Forecast demand by date and segment,authored,synthetic,true
+CAREER-171,Revenue Manager,Set and adjust room rates,authored,synthetic,true
+CAREER-171,Revenue Manager,Manage availability across booking channels,authored,synthetic,true
+CAREER-171,Revenue Manager,Analyse pick-up and booking pace,authored,synthetic,true
+CAREER-171,Revenue Manager,Track competitors' prices,authored,synthetic,true
+CAREER-171,Revenue Manager,Advise sales on group rates,authored,synthetic,true
+CAREER-171,Revenue Manager,Report revenue per available room,authored,synthetic,true
+CAREER-171,Revenue Manager,Lead revenue meetings,authored,synthetic,true
+CAREER-172,Safari Lodge Manager,Host guests from arrival to departure,authored,synthetic,true
+CAREER-172,Safari Lodge Manager,Plan game drives and activities with guides,authored,synthetic,true
+CAREER-172,Safari Lodge Manager,Manage staff who live on site,authored,synthetic,true
+CAREER-172,Safari Lodge Manager,Order supplies for a remote location,authored,synthetic,true
+CAREER-172,Safari Lodge Manager,"Maintain generators, solar, water and vehicles",authored,synthetic,true
+CAREER-172,Safari Lodge Manager,Control stock and budgets,authored,synthetic,true
+CAREER-172,Safari Lodge Manager,Work with the local community and conservancy,authored,synthetic,true
+CAREER-172,Safari Lodge Manager,Handle medical and wildlife emergencies,authored,synthetic,true
+CAREER-173,Cabin Crew Member,Attend pre-flight briefings,authored,synthetic,true
+CAREER-173,Cabin Crew Member,Check safety equipment,authored,synthetic,true
+CAREER-173,Cabin Crew Member,Welcome passengers and demonstrate safety,authored,synthetic,true
+CAREER-173,Cabin Crew Member,Serve meals and drinks,authored,synthetic,true
+CAREER-173,Cabin Crew Member,Handle medical and safety incidents,authored,synthetic,true
+CAREER-173,Cabin Crew Member,Assist passengers with special needs,authored,synthetic,true
+CAREER-173,Cabin Crew Member,Manage difficult situations calmly,authored,synthetic,true
+CAREER-173,Cabin Crew Member,Complete flight reports,authored,synthetic,true
+CAREER-174,Ground Handling Officer,Check in passengers and bags,authored,synthetic,true
+CAREER-174,Ground Handling Officer,Verify travel documents,authored,synthetic,true
+CAREER-174,Ground Handling Officer,Manage boarding at the gate,authored,synthetic,true
+CAREER-174,Ground Handling Officer,Load and unload baggage and cargo,authored,synthetic,true
+CAREER-174,Ground Handling Officer,Marshal and service aircraft on the ramp,authored,synthetic,true
+CAREER-174,Ground Handling Officer,Prepare load sheets,authored,synthetic,true
+CAREER-174,Ground Handling Officer,Assist delayed and special-needs passengers,authored,synthetic,true
+CAREER-174,Ground Handling Officer,Trace lost baggage,authored,synthetic,true
+CAREER-175,Restaurant Manager,Open and close the restaurant,authored,synthetic,true
+CAREER-175,Restaurant Manager,Lead and schedule the service team,authored,synthetic,true
+CAREER-175,Restaurant Manager,Greet guests and handle complaints,authored,synthetic,true
+CAREER-175,Restaurant Manager,Work with the kitchen on service flow,authored,synthetic,true
+CAREER-175,Restaurant Manager,"Control stock, cash and costs",authored,synthetic,true
+CAREER-175,Restaurant Manager,Train staff on service and hygiene,authored,synthetic,true
+CAREER-175,Restaurant Manager,Manage delivery platforms,authored,synthetic,true
+CAREER-175,Restaurant Manager,Track sales and reviews,authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,Dial in the grinder each morning,authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,Pull espresso and steam milk,authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,Brew filter coffee,authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,Serve customers and take payments,authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,Explain coffee origins and flavours,authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,Clean and maintain machines,authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,"Manage beans, milk and stock",authored,synthetic,true
+CAREER-176,Barista and Coffee Specialist,Train new baristas,authored,synthetic,true
+CAREER-177,Housekeeping Manager,Plan daily room cleaning schedules,authored,synthetic,true
+CAREER-177,Housekeeping Manager,Assign and supervise room attendants,authored,synthetic,true
+CAREER-177,Housekeeping Manager,Inspect rooms before release,authored,synthetic,true
+CAREER-177,Housekeeping Manager,"Manage linen, laundry and supplies",authored,synthetic,true
+CAREER-177,Housekeeping Manager,Report maintenance faults,authored,synthetic,true
+CAREER-177,Housekeeping Manager,Handle lost property,authored,synthetic,true
+CAREER-177,Housekeeping Manager,Train staff on standards and chemical safety,authored,synthetic,true
+CAREER-177,Housekeeping Manager,Control the housekeeping budget,authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,Plan campaigns to promote a destination,authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,"Produce brochures, video and web content",authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,Attend travel fairs and roadshows,authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,Host journalists and agents on familiarisation trips,authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,Manage social channels,authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,Work with hotels and operators,authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,Track visitor numbers and campaign results,authored,synthetic,true
+CAREER-178,Tourism Marketing Officer,Support county or national tourism plans,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,Document and care for sites and collections,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,Guide and educate visitors,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,Research local history and traditions,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,Work with communities and elders,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,Plan exhibitions and cultural events,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,Monitor site condition and threats,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,Prepare heritage listings,authored,synthetic,true
+CAREER-179,Cultural Heritage Officer,Enforce heritage protection rules,authored,synthetic,true
+CAREER-180,Research Scientist,Review the literature and define research questions,authored,synthetic,true
+CAREER-180,Research Scientist,Design experiments or studies,authored,synthetic,true
+CAREER-180,Research Scientist,Collect and analyse data,authored,synthetic,true
+CAREER-180,Research Scientist,Write papers and reports,authored,synthetic,true
+CAREER-180,Research Scientist,Apply for grants,authored,synthetic,true
+CAREER-180,Research Scientist,Present at conferences,authored,synthetic,true
+CAREER-180,Research Scientist,Supervise assistants and students,authored,synthetic,true
+CAREER-180,Research Scientist,Follow ethics and data rules,authored,synthetic,true
+CAREER-181,Laboratory Technician,"Prepare reagents, media and samples",authored,synthetic,true
+CAREER-181,Laboratory Technician,Set up and run routine tests,authored,synthetic,true
+CAREER-181,Laboratory Technician,Operate and calibrate instruments,authored,synthetic,true
+CAREER-181,Laboratory Technician,Record results accurately,authored,synthetic,true
+CAREER-181,Laboratory Technician,Clean and sterilise glassware,authored,synthetic,true
+CAREER-181,Laboratory Technician,Manage chemical stock and waste,authored,synthetic,true
+CAREER-181,Laboratory Technician,Prepare practicals for classes,authored,synthetic,true
+CAREER-181,Laboratory Technician,Follow safety procedures,authored,synthetic,true
+CAREER-182,Chemist,Analyse raw materials and products,authored,synthetic,true
+CAREER-182,Chemist,Develop and validate test methods,authored,synthetic,true
+CAREER-182,Chemist,Formulate new products,authored,synthetic,true
+CAREER-182,Chemist,Investigate out-of-specification results,authored,synthetic,true
+CAREER-182,Chemist,Write certificates of analysis,authored,synthetic,true
+CAREER-182,Chemist,Maintain instruments,authored,synthetic,true
+CAREER-182,Chemist,Follow good laboratory practice,authored,synthetic,true
+CAREER-182,Chemist,Advise production on process changes,authored,synthetic,true
+CAREER-183,Biologist,Plan field or laboratory studies,authored,synthetic,true
+CAREER-183,Biologist,Collect specimens and samples,authored,synthetic,true
+CAREER-183,Biologist,Identify and classify organisms,authored,synthetic,true
+CAREER-183,Biologist,Run experiments,authored,synthetic,true
+CAREER-183,Biologist,Analyse data and statistics,authored,synthetic,true
+CAREER-183,Biologist,Write scientific reports,authored,synthetic,true
+CAREER-183,Biologist,Advise on conservation or health questions,authored,synthetic,true
+CAREER-183,Biologist,Maintain collections and records,authored,synthetic,true
+CAREER-184,Microbiologist,Culture and identify microorganisms,authored,synthetic,true
+CAREER-184,Microbiologist,"Test food, water and products for contamination",authored,synthetic,true
+CAREER-184,Microbiologist,Run antimicrobial sensitivity tests,authored,synthetic,true
+CAREER-184,Microbiologist,Monitor clean rooms and environments,authored,synthetic,true
+CAREER-184,Microbiologist,Validate sterilisation,authored,synthetic,true
+CAREER-184,Microbiologist,Keep reference cultures,authored,synthetic,true
+CAREER-184,Microbiologist,Record and report results,authored,synthetic,true
+CAREER-184,Microbiologist,Follow biosafety rules,authored,synthetic,true
+CAREER-185,Biotechnologist,Extract and analyse DNA and RNA,authored,synthetic,true
+CAREER-185,Biotechnologist,Run PCR and cloning experiments,authored,synthetic,true
+CAREER-185,Biotechnologist,Grow plants or cells in culture,authored,synthetic,true
+CAREER-185,Biotechnologist,Operate fermenters and bioreactors,authored,synthetic,true
+CAREER-185,Biotechnologist,Develop diagnostic tests,authored,synthetic,true
+CAREER-185,Biotechnologist,Document experiments,authored,synthetic,true
+CAREER-185,Biotechnologist,Apply biosafety regulations,authored,synthetic,true
+CAREER-185,Biotechnologist,Scale up laboratory processes,authored,synthetic,true
+CAREER-186,Physicist,Design and run experiments,authored,synthetic,true
+CAREER-186,Physicist,Build and test instruments,authored,synthetic,true
+CAREER-186,Physicist,Model physical systems on computers,authored,synthetic,true
+CAREER-186,Physicist,Analyse measurement data,authored,synthetic,true
+CAREER-186,Physicist,Calibrate radiation or imaging equipment,authored,synthetic,true
+CAREER-186,Physicist,Write papers and technical reports,authored,synthetic,true
+CAREER-186,Physicist,Teach or supervise students,authored,synthetic,true
+CAREER-186,Physicist,Apply physics to industry problems,authored,synthetic,true
+CAREER-187,Statistician,Design samples and surveys,authored,synthetic,true
+CAREER-187,Statistician,Clean and weight data,authored,synthetic,true
+CAREER-187,Statistician,Run statistical analyses and models,authored,synthetic,true
+CAREER-187,Statistician,Interpret and explain results,authored,synthetic,true
+CAREER-187,Statistician,Produce tables and reports,authored,synthetic,true
+CAREER-187,Statistician,Advise researchers on study design,authored,synthetic,true
+CAREER-187,Statistician,Check data quality,authored,synthetic,true
+CAREER-187,Statistician,Publish official statistics,authored,synthetic,true
+CAREER-188,Mathematician,Formulate real problems mathematically,authored,synthetic,true
+CAREER-188,Mathematician,Build and solve models,authored,synthetic,true
+CAREER-188,Mathematician,Prove and test results,authored,synthetic,true
+CAREER-188,Mathematician,Write code for simulations,authored,synthetic,true
+CAREER-188,Mathematician,Explain findings to non-specialists,authored,synthetic,true
+CAREER-188,Mathematician,Publish and present research,authored,synthetic,true
+CAREER-188,Mathematician,Teach mathematics,authored,synthetic,true
+CAREER-188,Mathematician,Advise on optimisation and risk,authored,synthetic,true
+CAREER-189,Geologist,Map rocks and structures in the field,authored,synthetic,true
+CAREER-189,Geologist,Collect and log samples and drill core,authored,synthetic,true
+CAREER-189,Geologist,Interpret geophysical and geochemical data,authored,synthetic,true
+CAREER-189,Geologist,Build geological models,authored,synthetic,true
+CAREER-189,Geologist,Estimate resources,authored,synthetic,true
+CAREER-189,Geologist,Assess ground conditions for construction,authored,synthetic,true
+CAREER-189,Geologist,Write technical reports,authored,synthetic,true
+CAREER-189,Geologist,Advise on drilling locations,authored,synthetic,true
+CAREER-190,Meteorologist,Observe and record weather,authored,synthetic,true
+CAREER-190,Meteorologist,"Analyse satellite, radar and model data",authored,synthetic,true
+CAREER-190,Meteorologist,Prepare daily and seasonal forecasts,authored,synthetic,true
+CAREER-190,Meteorologist,Issue severe weather warnings,authored,synthetic,true
+CAREER-190,Meteorologist,"Brief pilots, farmers and the media",authored,synthetic,true
+CAREER-190,Meteorologist,Maintain weather stations,authored,synthetic,true
+CAREER-190,Meteorologist,Study climate trends,authored,synthetic,true
+CAREER-190,Meteorologist,Write advisories,authored,synthetic,true
+CAREER-191,Bioinformatician,Process raw sequencing data,authored,synthetic,true
+CAREER-191,Bioinformatician,Build and run analysis pipelines,authored,synthetic,true
+CAREER-191,Bioinformatician,Assemble and annotate genomes,authored,synthetic,true
+CAREER-191,Bioinformatician,Identify variants and outbreaks,authored,synthetic,true
+CAREER-191,Bioinformatician,Visualise and interpret results with biologists,authored,synthetic,true
+CAREER-191,Bioinformatician,Manage large datasets,authored,synthetic,true
+CAREER-191,Bioinformatician,Write reproducible code,authored,synthetic,true
+CAREER-191,Bioinformatician,Publish methods and findings,authored,synthetic,true
+CAREER-192,Research Assistant,Search and summarise the literature,authored,synthetic,true
+CAREER-192,Research Assistant,Recruit participants and get consent,authored,synthetic,true
+CAREER-192,Research Assistant,"Collect data through surveys, interviews or experiments",authored,synthetic,true
+CAREER-192,Research Assistant,Enter and clean data,authored,synthetic,true
+CAREER-192,Research Assistant,Transcribe interviews,authored,synthetic,true
+CAREER-192,Research Assistant,Run basic analyses,authored,synthetic,true
+CAREER-192,Research Assistant,Help write reports,authored,synthetic,true
+CAREER-192,Research Assistant,Organise project files and logistics,authored,synthetic,true
+CAREER-193,Science Communicator,Translate research into plain language,authored,synthetic,true
+CAREER-193,Science Communicator,"Write articles, briefs and social posts",authored,synthetic,true
+CAREER-193,Science Communicator,"Produce videos, podcasts and graphics",authored,synthetic,true
+CAREER-193,Science Communicator,"Organise talks, exhibitions and school visits",authored,synthetic,true
+CAREER-193,Science Communicator,Train scientists to speak to the public,authored,synthetic,true
+CAREER-193,Science Communicator,Handle media enquiries about research,authored,synthetic,true
+CAREER-193,Science Communicator,Counter misinformation,authored,synthetic,true
+CAREER-193,Science Communicator,Measure reach and understanding,authored,synthetic,true
+CAREER-194,Materials Scientist,Synthesise and process new materials,authored,synthetic,true
+CAREER-194,Materials Scientist,"Test strength, structure and durability",authored,synthetic,true
+CAREER-194,Materials Scientist,Examine samples under microscopes,authored,synthetic,true
+CAREER-194,Materials Scientist,Analyse why materials fail,authored,synthetic,true
+CAREER-194,Materials Scientist,Relate structure to properties,authored,synthetic,true
+CAREER-194,Materials Scientist,Write research papers and reports,authored,synthetic,true
+CAREER-194,Materials Scientist,Work with engineers on applications,authored,synthetic,true
+CAREER-194,Materials Scientist,Maintain laboratory instruments,authored,synthetic,true
+CAREER-195,Forensic Scientist,Examine crime scenes and collect evidence,authored,synthetic,true
+CAREER-195,Forensic Scientist,Maintain the chain of custody,authored,synthetic,true
+CAREER-195,Forensic Scientist,"Analyse DNA, drugs, fibres or fingerprints",authored,synthetic,true
+CAREER-195,Forensic Scientist,Compare samples and interpret results,authored,synthetic,true
+CAREER-195,Forensic Scientist,Write forensic reports,authored,synthetic,true
+CAREER-195,Forensic Scientist,Give expert evidence in court,authored,synthetic,true
+CAREER-195,Forensic Scientist,Follow quality and contamination controls,authored,synthetic,true
+CAREER-195,Forensic Scientist,Maintain laboratory equipment,authored,synthetic,true
+CAREER-196,Marine Scientist,Plan and carry out surveys at sea and on the shore,authored,synthetic,true
+CAREER-196,Marine Scientist,Dive or snorkel to monitor reefs,authored,synthetic,true
+CAREER-196,Marine Scientist,"Sample water, sediment and organisms",authored,synthetic,true
+CAREER-196,Marine Scientist,Analyse catch and ecological data,authored,synthetic,true
+CAREER-196,Marine Scientist,Advise on fisheries and conservation,authored,synthetic,true
+CAREER-196,Marine Scientist,Work with coastal communities,authored,synthetic,true
+CAREER-196,Marine Scientist,Write scientific reports,authored,synthetic,true
+CAREER-196,Marine Scientist,Maintain boats and field gear,authored,synthetic,true
+CAREER-197,Quality Control Analyst,Sample raw materials and finished products,authored,synthetic,true
+CAREER-197,Quality Control Analyst,Test against specifications,authored,synthetic,true
+CAREER-197,Quality Control Analyst,Record results and release or reject batches,authored,synthetic,true
+CAREER-197,Quality Control Analyst,Investigate failures,authored,synthetic,true
+CAREER-197,Quality Control Analyst,Calibrate instruments,authored,synthetic,true
+CAREER-197,Quality Control Analyst,Follow standard operating procedures,authored,synthetic,true
+CAREER-197,Quality Control Analyst,Keep records ready for audits,authored,synthetic,true
+CAREER-197,Quality Control Analyst,Report trends to production,authored,synthetic,true
+CAREER-198,Clinical Research Associate,Prepare ethics and regulatory submissions,authored,synthetic,true
+CAREER-198,Clinical Research Associate,Train site staff on the protocol,authored,synthetic,true
+CAREER-198,Clinical Research Associate,Monitor sites and verify data against source records,authored,synthetic,true
+CAREER-198,Clinical Research Associate,Check consent and safety reporting,authored,synthetic,true
+CAREER-198,Clinical Research Associate,Track recruitment and study supplies,authored,synthetic,true
+CAREER-198,Clinical Research Associate,Resolve data queries,authored,synthetic,true
+CAREER-198,Clinical Research Associate,Maintain the trial master file,authored,synthetic,true
+CAREER-198,Clinical Research Associate,Write monitoring reports,authored,synthetic,true
+CAREER-199,Logistics Coordinator,Plan and schedule shipments and deliveries,authored,synthetic,true
+CAREER-199,Logistics Coordinator,Book trucks and carriers,authored,synthetic,true
+CAREER-199,Logistics Coordinator,Prepare delivery notes and shipping documents,authored,synthetic,true
+CAREER-199,Logistics Coordinator,Track goods in transit,authored,synthetic,true
+CAREER-199,Logistics Coordinator,Solve delays and damages,authored,synthetic,true
+CAREER-199,Logistics Coordinator,"Coordinate with warehouses, suppliers and customers",authored,synthetic,true
+CAREER-199,Logistics Coordinator,Record costs,authored,synthetic,true
+CAREER-199,Logistics Coordinator,Report on delivery performance,authored,synthetic,true
+CAREER-200,Supply Chain Analyst,Collect and analyse supply chain data,authored,synthetic,true
+CAREER-200,Supply Chain Analyst,Forecast demand and plan supply,authored,synthetic,true
+CAREER-200,Supply Chain Analyst,Monitor stock levels and service,authored,synthetic,true
+CAREER-200,Supply Chain Analyst,Find cost and delay problems,authored,synthetic,true
+CAREER-200,Supply Chain Analyst,Build dashboards and reports,authored,synthetic,true
+CAREER-200,Supply Chain Analyst,Model the effect of changes,authored,synthetic,true
+CAREER-200,Supply Chain Analyst,"Work with procurement, production and sales",authored,synthetic,true
+CAREER-200,Supply Chain Analyst,Recommend improvements,authored,synthetic,true
+CAREER-201,Procurement Officer,Receive and review purchase requests,authored,synthetic,true
+CAREER-201,Procurement Officer,Source suppliers and request quotations,authored,synthetic,true
+CAREER-201,Procurement Officer,Prepare tender documents,authored,synthetic,true
+CAREER-201,Procurement Officer,Evaluate bids,authored,synthetic,true
+CAREER-201,Procurement Officer,Negotiate prices and terms,authored,synthetic,true
+CAREER-201,Procurement Officer,Raise purchase orders,authored,synthetic,true
+CAREER-201,Procurement Officer,Follow up delivery,authored,synthetic,true
+CAREER-201,Procurement Officer,Keep procurement records for audit,authored,synthetic,true
+CAREER-202,Warehouse Manager,"Plan receiving, storage and dispatch",authored,synthetic,true
+CAREER-202,Warehouse Manager,Supervise warehouse staff,authored,synthetic,true
+CAREER-202,Warehouse Manager,Keep stock records accurate,authored,synthetic,true
+CAREER-202,Warehouse Manager,Organise layout and space,authored,synthetic,true
+CAREER-202,Warehouse Manager,Run stock counts,authored,synthetic,true
+CAREER-202,Warehouse Manager,Enforce safety and security,authored,synthetic,true
+CAREER-202,Warehouse Manager,Manage forklifts and equipment,authored,synthetic,true
+CAREER-202,Warehouse Manager,"Report on stock, damages and performance",authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,Prepare and lodge customs entries,authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,Classify goods and calculate duties,authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,Arrange inspections and releases,authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,"Book shipping lines, airlines and trucks",authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,Track cargo at the port and borders,authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,Pay port and shipping charges for clients,authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,Advise on import rules,authored,synthetic,true
+CAREER-203,Clearing and Forwarding Agent,Keep clients updated,authored,synthetic,true
+CAREER-204,Customs Officer,Examine import and export declarations,authored,synthetic,true
+CAREER-204,Customs Officer,Inspect cargo and baggage,authored,synthetic,true
+CAREER-204,Customs Officer,"Verify value, origin and classification",authored,synthetic,true
+CAREER-204,Customs Officer,Assess and collect duties,authored,synthetic,true
+CAREER-204,Customs Officer,Detect smuggling and prohibited goods,authored,synthetic,true
+CAREER-204,Customs Officer,Scan containers,authored,synthetic,true
+CAREER-204,Customs Officer,Audit traders after clearance,authored,synthetic,true
+CAREER-204,Customs Officer,Write seizure and offence reports,authored,synthetic,true
+CAREER-205,Operations Manager,Plan and oversee daily operations,authored,synthetic,true
+CAREER-205,Operations Manager,Set targets and track performance,authored,synthetic,true
+CAREER-205,Operations Manager,Manage teams and budgets,authored,synthetic,true
+CAREER-205,Operations Manager,Fix bottlenecks and service failures,authored,synthetic,true
+CAREER-205,Operations Manager,Improve processes and cut costs,authored,synthetic,true
+CAREER-205,Operations Manager,"Ensure quality, safety and compliance",authored,synthetic,true
+CAREER-205,Operations Manager,Work with other departments,authored,synthetic,true
+CAREER-205,Operations Manager,Report to senior management,authored,synthetic,true
+CAREER-206,Fleet Manager,Schedule vehicles and drivers,authored,synthetic,true
+CAREER-206,Fleet Manager,Plan servicing and repairs,authored,synthetic,true
+CAREER-206,Fleet Manager,Monitor fuel use and costs,authored,synthetic,true
+CAREER-206,Fleet Manager,Track vehicles and driver behaviour,authored,synthetic,true
+CAREER-206,Fleet Manager,"Keep insurance, inspection and licences current",authored,synthetic,true
+CAREER-206,Fleet Manager,Investigate accidents,authored,synthetic,true
+CAREER-206,Fleet Manager,Buy and dispose of vehicles,authored,synthetic,true
+CAREER-206,Fleet Manager,Report fleet costs,authored,synthetic,true
+CAREER-207,Commercial Pilot,Plan flights and check weather,authored,synthetic,true
+CAREER-207,Commercial Pilot,Inspect the aircraft before flight,authored,synthetic,true
+CAREER-207,Commercial Pilot,"Calculate fuel, weight and balance",authored,synthetic,true
+CAREER-207,Commercial Pilot,Fly and navigate the aircraft,authored,synthetic,true
+CAREER-207,Commercial Pilot,Communicate with air traffic control,authored,synthetic,true
+CAREER-207,Commercial Pilot,Manage emergencies by procedure,authored,synthetic,true
+CAREER-207,Commercial Pilot,Complete logbooks and reports,authored,synthetic,true
+CAREER-207,Commercial Pilot,Pass regular medical and simulator checks,authored,synthetic,true
+CAREER-208,Air Traffic Controller,Give pilots clearances and instructions,authored,synthetic,true
+CAREER-208,Air Traffic Controller,Keep safe separation between aircraft,authored,synthetic,true
+CAREER-208,Air Traffic Controller,Sequence take-offs and landings,authored,synthetic,true
+CAREER-208,Air Traffic Controller,Monitor radar and weather,authored,synthetic,true
+CAREER-208,Air Traffic Controller,Coordinate with neighbouring sectors,authored,synthetic,true
+CAREER-208,Air Traffic Controller,Handle emergencies and diversions,authored,synthetic,true
+CAREER-208,Air Traffic Controller,Record movements,authored,synthetic,true
+CAREER-208,Air Traffic Controller,Hand over clearly between shifts,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,Inspect aircraft before and after flights,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,Carry out scheduled checks,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,Find and fix defects,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,Replace and test components,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,Follow maintenance manuals exactly,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,Record all work and sign off,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,Certify the aircraft as airworthy,authored,synthetic,true
+CAREER-209,Aircraft Maintenance Engineer,Follow hangar safety rules,authored,synthetic,true
+CAREER-210,Marine Officer,Keep navigation watches on the bridge,authored,synthetic,true
+CAREER-210,Marine Officer,Plan passages and plot positions,authored,synthetic,true
+CAREER-210,Marine Officer,Supervise loading and discharge,authored,synthetic,true
+CAREER-210,Marine Officer,Maintain safety and firefighting equipment,authored,synthetic,true
+CAREER-210,Marine Officer,Manage crew on deck or in the engine room,authored,synthetic,true
+CAREER-210,Marine Officer,Keep logbooks and records,authored,synthetic,true
+CAREER-210,Marine Officer,Follow international maritime rules,authored,synthetic,true
+CAREER-210,Marine Officer,Respond to emergencies at sea,authored,synthetic,true
+CAREER-211,Railway Operations Officer,Plan and control train movements,authored,synthetic,true
+CAREER-211,Railway Operations Officer,Operate signals and points,authored,synthetic,true
+CAREER-211,Railway Operations Officer,Manage stations and platforms,authored,synthetic,true
+CAREER-211,Railway Operations Officer,Coordinate crews and locomotives,authored,synthetic,true
+CAREER-211,Railway Operations Officer,Handle delays and incidents,authored,synthetic,true
+CAREER-211,Railway Operations Officer,Ensure passenger and cargo safety,authored,synthetic,true
+CAREER-211,Railway Operations Officer,Keep train registers,authored,synthetic,true
+CAREER-211,Railway Operations Officer,Report on punctuality,authored,synthetic,true
+CAREER-212,Inventory Planner,Monitor stock levels by item,authored,synthetic,true
+CAREER-212,Inventory Planner,Set reorder points and safety stock,authored,synthetic,true
+CAREER-212,Inventory Planner,Place replenishment orders,authored,synthetic,true
+CAREER-212,Inventory Planner,Investigate stock differences,authored,synthetic,true
+CAREER-212,Inventory Planner,Identify slow-moving and expiring stock,authored,synthetic,true
+CAREER-212,Inventory Planner,Plan stock for promotions and seasons,authored,synthetic,true
+CAREER-212,Inventory Planner,Reconcile system and physical stock,authored,synthetic,true
+CAREER-212,Inventory Planner,Report inventory value and turnover,authored,synthetic,true
+CAREER-213,Demand Planner,Build sales forecasts from history and trends,authored,synthetic,true
+CAREER-213,Demand Planner,Gather input from sales and marketing,authored,synthetic,true
+CAREER-213,Demand Planner,Adjust for promotions and seasons,authored,synthetic,true
+CAREER-213,Demand Planner,Run the monthly planning cycle,authored,synthetic,true
+CAREER-213,Demand Planner,Measure forecast accuracy and bias,authored,synthetic,true
+CAREER-213,Demand Planner,Flag supply risks early,authored,synthetic,true
+CAREER-213,Demand Planner,Plan for new product launches,authored,synthetic,true
+CAREER-213,Demand Planner,Present the demand plan,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,Plan daily routes and assign orders,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,Recruit and manage riders and drivers,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,Monitor deliveries in real time,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,Handle failed deliveries and returns,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,Reconcile cash on delivery,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,Resolve customer complaints,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,Control cost per delivery,authored,synthetic,true
+CAREER-214,Last-Mile Delivery Manager,Report on on-time rates,authored,synthetic,true
+CAREER-215,Port Operations Officer,Plan berths for arriving ships,authored,synthetic,true
+CAREER-215,Port Operations Officer,Plan loading and discharge sequences,authored,synthetic,true
+CAREER-215,Port Operations Officer,Allocate yard space and equipment,authored,synthetic,true
+CAREER-215,Port Operations Officer,Supervise cranes and cargo handling,authored,synthetic,true
+CAREER-215,Port Operations Officer,Track containers through the terminal,authored,synthetic,true
+CAREER-215,Port Operations Officer,Coordinate with shipping lines and customs,authored,synthetic,true
+CAREER-215,Port Operations Officer,Enforce safety rules,authored,synthetic,true
+CAREER-215,Port Operations Officer,Report on vessel turnaround,authored,synthetic,true
+CAREER-216,Production Planner,Turn sales orders and forecasts into production plans,authored,synthetic,true
+CAREER-216,Production Planner,"Schedule machines, lines and shifts",authored,synthetic,true
+CAREER-216,Production Planner,Check materials and capacity,authored,synthetic,true
+CAREER-216,Production Planner,Issue work orders,authored,synthetic,true
+CAREER-216,Production Planner,Track output against plan,authored,synthetic,true
+CAREER-216,Production Planner,Reschedule around breakdowns and shortages,authored,synthetic,true
+CAREER-216,Production Planner,Coordinate with procurement and sales,authored,synthetic,true
+CAREER-216,Production Planner,Report on schedule adherence,authored,synthetic,true
+CAREER-217,Transport Planner,Collect traffic and travel data,authored,synthetic,true
+CAREER-217,Transport Planner,Forecast future travel demand,authored,synthetic,true
+CAREER-217,Transport Planner,Model road and transit networks,authored,synthetic,true
+CAREER-217,Transport Planner,Design routes and services,authored,synthetic,true
+CAREER-217,Transport Planner,Assess traffic impact of developments,authored,synthetic,true
+CAREER-217,Transport Planner,Plan walking and cycling facilities,authored,synthetic,true
+CAREER-217,Transport Planner,Consult the public and stakeholders,authored,synthetic,true
+CAREER-217,Transport Planner,Write transport plans and reports,authored,synthetic,true
 CAREER-218,Social Worker,Work directly with people and communities on social work,category_default,synthetic,true
 CAREER-218,Social Worker,Assess needs and plan support,category_default,synthetic,true
 CAREER-218,Social Worker,Keep confidential case or project records,category_default,synthetic,true
@@ -2440,282 +2592,374 @@ CAREER-368,Greenhouse Manager,Scout and control pests and diseases,authored,synt
 CAREER-368,Greenhouse Manager,Supervise workers and harvest,authored,synthetic,true
 CAREER-368,Greenhouse Manager,Maintain structures,authored,synthetic,true
 CAREER-368,Greenhouse Manager,Track yields and costs,authored,synthetic,true
-CAREER-369,Documentary Filmmaker,Develop ideas and briefs for non-fiction film,category_default,synthetic,true
-CAREER-369,Documentary Filmmaker,Produce work to a deadline,category_default,synthetic,true
-CAREER-369,Documentary Filmmaker,Revise work after feedback,category_default,synthetic,true
-CAREER-369,Documentary Filmmaker,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-369,Documentary Filmmaker,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-369,Documentary Filmmaker,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-370,Screenwriter,Develop ideas and briefs for scripts for film and television,category_default,synthetic,true
-CAREER-370,Screenwriter,Produce work to a deadline,category_default,synthetic,true
-CAREER-370,Screenwriter,Revise work after feedback,category_default,synthetic,true
-CAREER-370,Screenwriter,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-370,Screenwriter,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-370,Screenwriter,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-371,Radio Producer,Develop ideas and briefs for radio programming,category_default,synthetic,true
-CAREER-371,Radio Producer,Produce work to a deadline,category_default,synthetic,true
-CAREER-371,Radio Producer,Revise work after feedback,category_default,synthetic,true
-CAREER-371,Radio Producer,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-371,Radio Producer,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-371,Radio Producer,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-372,Art Director,Develop ideas and briefs for visual direction,category_default,synthetic,true
-CAREER-372,Art Director,Produce work to a deadline,category_default,synthetic,true
-CAREER-372,Art Director,Revise work after feedback,category_default,synthetic,true
-CAREER-372,Art Director,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-372,Art Director,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-372,Art Director,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-373,UX Writer,Develop ideas and briefs for product language,category_default,synthetic,true
-CAREER-373,UX Writer,Produce work to a deadline,category_default,synthetic,true
-CAREER-373,UX Writer,Revise work after feedback,category_default,synthetic,true
-CAREER-373,UX Writer,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-373,UX Writer,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-373,UX Writer,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-374,Motion Graphics Designer,Develop ideas and briefs for animated graphics,category_default,synthetic,true
-CAREER-374,Motion Graphics Designer,Produce work to a deadline,category_default,synthetic,true
-CAREER-374,Motion Graphics Designer,Revise work after feedback,category_default,synthetic,true
-CAREER-374,Motion Graphics Designer,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-374,Motion Graphics Designer,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-374,Motion Graphics Designer,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-375,Voice-over Artist,Develop ideas and briefs for voice performance,category_default,synthetic,true
-CAREER-375,Voice-over Artist,Produce work to a deadline,category_default,synthetic,true
-CAREER-375,Voice-over Artist,Revise work after feedback,category_default,synthetic,true
-CAREER-375,Voice-over Artist,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-375,Voice-over Artist,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-375,Voice-over Artist,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-376,Actor,Develop ideas and briefs for performance,category_default,synthetic,true
-CAREER-376,Actor,Produce work to a deadline,category_default,synthetic,true
-CAREER-376,Actor,Revise work after feedback,category_default,synthetic,true
-CAREER-376,Actor,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-376,Actor,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-376,Actor,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-377,Dancer and Choreographer,Develop ideas and briefs for dance,category_default,synthetic,true
-CAREER-377,Dancer and Choreographer,Produce work to a deadline,category_default,synthetic,true
-CAREER-377,Dancer and Choreographer,Revise work after feedback,category_default,synthetic,true
-CAREER-377,Dancer and Choreographer,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-377,Dancer and Choreographer,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-377,Dancer and Choreographer,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-378,Curator,Develop ideas and briefs for galleries and exhibitions,category_default,synthetic,true
-CAREER-378,Curator,Produce work to a deadline,category_default,synthetic,true
-CAREER-378,Curator,Revise work after feedback,category_default,synthetic,true
-CAREER-378,Curator,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-378,Curator,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-378,Curator,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-379,Translator and Interpreter,Develop ideas and briefs for language services,category_default,synthetic,true
-CAREER-379,Translator and Interpreter,Produce work to a deadline,category_default,synthetic,true
-CAREER-379,Translator and Interpreter,Revise work after feedback,category_default,synthetic,true
-CAREER-379,Translator and Interpreter,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-379,Translator and Interpreter,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-379,Translator and Interpreter,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-380,Influencer Marketing Manager,Develop ideas and briefs for creator partnerships,category_default,synthetic,true
-CAREER-380,Influencer Marketing Manager,Produce work to a deadline,category_default,synthetic,true
-CAREER-380,Influencer Marketing Manager,Revise work after feedback,category_default,synthetic,true
-CAREER-380,Influencer Marketing Manager,"Work with clients, editors or collaborators",category_default,synthetic,true
-CAREER-380,Influencer Marketing Manager,"Manage files, equipment and rights",category_default,synthetic,true
-CAREER-380,Influencer Marketing Manager,Keep a portfolio up to date,category_default,synthetic,true
-CAREER-381,Bartender and Mixologist,Serve guests or customers in beverage service,category_default,synthetic,true
-CAREER-381,Bartender and Mixologist,Keep service standards high,category_default,synthetic,true
-CAREER-381,Bartender and Mixologist,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-381,Bartender and Mixologist,Coordinate with other departments,category_default,synthetic,true
-CAREER-381,Bartender and Mixologist,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-381,Bartender and Mixologist,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-382,Airline Reservations Agent,Serve guests or customers in airline ticketing,category_default,synthetic,true
-CAREER-382,Airline Reservations Agent,Keep service standards high,category_default,synthetic,true
-CAREER-382,Airline Reservations Agent,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-382,Airline Reservations Agent,Coordinate with other departments,category_default,synthetic,true
-CAREER-382,Airline Reservations Agent,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-382,Airline Reservations Agent,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-383,Spa and Wellness Manager,Serve guests or customers in wellness services,category_default,synthetic,true
-CAREER-383,Spa and Wellness Manager,Keep service standards high,category_default,synthetic,true
-CAREER-383,Spa and Wellness Manager,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-383,Spa and Wellness Manager,Coordinate with other departments,category_default,synthetic,true
-CAREER-383,Spa and Wellness Manager,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-383,Spa and Wellness Manager,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-384,Ecotourism Officer,Serve guests or customers in sustainable tourism,category_default,synthetic,true
-CAREER-384,Ecotourism Officer,Keep service standards high,category_default,synthetic,true
-CAREER-384,Ecotourism Officer,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-384,Ecotourism Officer,Coordinate with other departments,category_default,synthetic,true
-CAREER-384,Ecotourism Officer,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-384,Ecotourism Officer,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-385,Hotel Sales Manager,Serve guests or customers in hospitality sales,category_default,synthetic,true
-CAREER-385,Hotel Sales Manager,Keep service standards high,category_default,synthetic,true
-CAREER-385,Hotel Sales Manager,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-385,Hotel Sales Manager,Coordinate with other departments,category_default,synthetic,true
-CAREER-385,Hotel Sales Manager,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-385,Hotel Sales Manager,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-386,Concierge,Serve guests or customers in guest services,category_default,synthetic,true
-CAREER-386,Concierge,Keep service standards high,category_default,synthetic,true
-CAREER-386,Concierge,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-386,Concierge,Coordinate with other departments,category_default,synthetic,true
-CAREER-386,Concierge,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-386,Concierge,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-387,Banqueting Manager,Serve guests or customers in banquets and functions,category_default,synthetic,true
-CAREER-387,Banqueting Manager,Keep service standards high,category_default,synthetic,true
-CAREER-387,Banqueting Manager,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-387,Banqueting Manager,Coordinate with other departments,category_default,synthetic,true
-CAREER-387,Banqueting Manager,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-387,Banqueting Manager,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-388,Wedding Planner,Serve guests or customers in weddings,category_default,synthetic,true
-CAREER-388,Wedding Planner,Keep service standards high,category_default,synthetic,true
-CAREER-388,Wedding Planner,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-388,Wedding Planner,Coordinate with other departments,category_default,synthetic,true
-CAREER-388,Wedding Planner,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-388,Wedding Planner,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-389,Sports and Recreation Officer,Serve guests or customers in leisure and recreation,category_default,synthetic,true
-CAREER-389,Sports and Recreation Officer,Keep service standards high,category_default,synthetic,true
-CAREER-389,Sports and Recreation Officer,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-389,Sports and Recreation Officer,Coordinate with other departments,category_default,synthetic,true
-CAREER-389,Sports and Recreation Officer,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-389,Sports and Recreation Officer,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-390,Catering Manager,Serve guests or customers in catering operations,category_default,synthetic,true
-CAREER-390,Catering Manager,Keep service standards high,category_default,synthetic,true
-CAREER-390,Catering Manager,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-390,Catering Manager,Coordinate with other departments,category_default,synthetic,true
-CAREER-390,Catering Manager,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-390,Catering Manager,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-391,Tourism Product Developer,Serve guests or customers in tourism experiences,category_default,synthetic,true
-CAREER-391,Tourism Product Developer,Keep service standards high,category_default,synthetic,true
-CAREER-391,Tourism Product Developer,Handle requests and complaints calmly,category_default,synthetic,true
-CAREER-391,Tourism Product Developer,Coordinate with other departments,category_default,synthetic,true
-CAREER-391,Tourism Product Developer,Follow hygiene and safety rules,category_default,synthetic,true
-CAREER-391,Tourism Product Developer,"Track bookings, stock or costs",category_default,synthetic,true
-CAREER-392,Astronomer,Plan and run experiments or studies in astronomy and space science,category_default,synthetic,true
-CAREER-392,Astronomer,Record methods and results carefully,category_default,synthetic,true
-CAREER-392,Astronomer,Analyse data,category_default,synthetic,true
-CAREER-392,Astronomer,Write reports and papers,category_default,synthetic,true
-CAREER-392,Astronomer,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-392,Astronomer,Present findings,category_default,synthetic,true
-CAREER-393,Environmental Scientist,Plan and run experiments or studies in environmental science,category_default,synthetic,true
-CAREER-393,Environmental Scientist,Record methods and results carefully,category_default,synthetic,true
-CAREER-393,Environmental Scientist,Analyse data,category_default,synthetic,true
-CAREER-393,Environmental Scientist,Write reports and papers,category_default,synthetic,true
-CAREER-393,Environmental Scientist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-393,Environmental Scientist,Present findings,category_default,synthetic,true
-CAREER-394,Toxicologist,Plan and run experiments or studies in toxicology,category_default,synthetic,true
-CAREER-394,Toxicologist,Record methods and results carefully,category_default,synthetic,true
-CAREER-394,Toxicologist,Analyse data,category_default,synthetic,true
-CAREER-394,Toxicologist,Write reports and papers,category_default,synthetic,true
-CAREER-394,Toxicologist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-394,Toxicologist,Present findings,category_default,synthetic,true
-CAREER-395,Geneticist,Plan and run experiments or studies in genetics,category_default,synthetic,true
-CAREER-395,Geneticist,Record methods and results carefully,category_default,synthetic,true
-CAREER-395,Geneticist,Analyse data,category_default,synthetic,true
-CAREER-395,Geneticist,Write reports and papers,category_default,synthetic,true
-CAREER-395,Geneticist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-395,Geneticist,Present findings,category_default,synthetic,true
-CAREER-396,Entomologist,Plan and run experiments or studies in insect science,category_default,synthetic,true
-CAREER-396,Entomologist,Record methods and results carefully,category_default,synthetic,true
-CAREER-396,Entomologist,Analyse data,category_default,synthetic,true
-CAREER-396,Entomologist,Write reports and papers,category_default,synthetic,true
-CAREER-396,Entomologist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-396,Entomologist,Present findings,category_default,synthetic,true
-CAREER-397,Hydrologist,Plan and run experiments or studies in water science,category_default,synthetic,true
-CAREER-397,Hydrologist,Record methods and results carefully,category_default,synthetic,true
-CAREER-397,Hydrologist,Analyse data,category_default,synthetic,true
-CAREER-397,Hydrologist,Write reports and papers,category_default,synthetic,true
-CAREER-397,Hydrologist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-397,Hydrologist,Present findings,category_default,synthetic,true
-CAREER-398,Pharmacologist,Plan and run experiments or studies in drug science,category_default,synthetic,true
-CAREER-398,Pharmacologist,Record methods and results carefully,category_default,synthetic,true
-CAREER-398,Pharmacologist,Analyse data,category_default,synthetic,true
-CAREER-398,Pharmacologist,Write reports and papers,category_default,synthetic,true
-CAREER-398,Pharmacologist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-398,Pharmacologist,Present findings,category_default,synthetic,true
-CAREER-399,Radiation Protection Officer,Plan and run experiments or studies in radiation safety,category_default,synthetic,true
-CAREER-399,Radiation Protection Officer,Record methods and results carefully,category_default,synthetic,true
-CAREER-399,Radiation Protection Officer,Analyse data,category_default,synthetic,true
-CAREER-399,Radiation Protection Officer,Write reports and papers,category_default,synthetic,true
-CAREER-399,Radiation Protection Officer,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-399,Radiation Protection Officer,Present findings,category_default,synthetic,true
-CAREER-400,Laboratory Manager,Plan and run experiments or studies in laboratory management,category_default,synthetic,true
-CAREER-400,Laboratory Manager,Record methods and results carefully,category_default,synthetic,true
-CAREER-400,Laboratory Manager,Analyse data,category_default,synthetic,true
-CAREER-400,Laboratory Manager,Write reports and papers,category_default,synthetic,true
-CAREER-400,Laboratory Manager,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-400,Laboratory Manager,Present findings,category_default,synthetic,true
-CAREER-401,Zoologist,Plan and run experiments or studies in animal science,category_default,synthetic,true
-CAREER-401,Zoologist,Record methods and results carefully,category_default,synthetic,true
-CAREER-401,Zoologist,Analyse data,category_default,synthetic,true
-CAREER-401,Zoologist,Write reports and papers,category_default,synthetic,true
-CAREER-401,Zoologist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-401,Zoologist,Present findings,category_default,synthetic,true
-CAREER-402,Botanist,Plan and run experiments or studies in plant science,category_default,synthetic,true
-CAREER-402,Botanist,Record methods and results carefully,category_default,synthetic,true
-CAREER-402,Botanist,Analyse data,category_default,synthetic,true
-CAREER-402,Botanist,Write reports and papers,category_default,synthetic,true
-CAREER-402,Botanist,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-402,Botanist,Present findings,category_default,synthetic,true
-CAREER-403,Research Data Manager,Plan and run experiments or studies in research data,category_default,synthetic,true
-CAREER-403,Research Data Manager,Record methods and results carefully,category_default,synthetic,true
-CAREER-403,Research Data Manager,Analyse data,category_default,synthetic,true
-CAREER-403,Research Data Manager,Write reports and papers,category_default,synthetic,true
-CAREER-403,Research Data Manager,Maintain equipment and follow safety rules,category_default,synthetic,true
-CAREER-403,Research Data Manager,Present findings,category_default,synthetic,true
-CAREER-404,Flight Dispatcher,Plan and track flight operations planning activities,category_default,synthetic,true
-CAREER-404,Flight Dispatcher,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-404,Flight Dispatcher,Keep documents and records accurate,category_default,synthetic,true
-CAREER-404,Flight Dispatcher,Solve delays and shortages,category_default,synthetic,true
-CAREER-404,Flight Dispatcher,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-404,Flight Dispatcher,Report on cost and performance,category_default,synthetic,true
-CAREER-405,Ship Agent,Plan and track vessel agency activities,category_default,synthetic,true
-CAREER-405,Ship Agent,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-405,Ship Agent,Keep documents and records accurate,category_default,synthetic,true
-CAREER-405,Ship Agent,Solve delays and shortages,category_default,synthetic,true
-CAREER-405,Ship Agent,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-405,Ship Agent,Report on cost and performance,category_default,synthetic,true
-CAREER-406,Cold Chain Specialist,Plan and track temperature-controlled logistics activities,category_default,synthetic,true
-CAREER-406,Cold Chain Specialist,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-406,Cold Chain Specialist,Keep documents and records accurate,category_default,synthetic,true
-CAREER-406,Cold Chain Specialist,Solve delays and shortages,category_default,synthetic,true
-CAREER-406,Cold Chain Specialist,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-406,Cold Chain Specialist,Report on cost and performance,category_default,synthetic,true
-CAREER-407,Import and Export Officer,Plan and track cross-border trade activities,category_default,synthetic,true
-CAREER-407,Import and Export Officer,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-407,Import and Export Officer,Keep documents and records accurate,category_default,synthetic,true
-CAREER-407,Import and Export Officer,Solve delays and shortages,category_default,synthetic,true
-CAREER-407,Import and Export Officer,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-407,Import and Export Officer,Report on cost and performance,category_default,synthetic,true
-CAREER-408,Humanitarian Logistics Officer,Plan and track relief supply chains activities,category_default,synthetic,true
-CAREER-408,Humanitarian Logistics Officer,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-408,Humanitarian Logistics Officer,Keep documents and records accurate,category_default,synthetic,true
-CAREER-408,Humanitarian Logistics Officer,Solve delays and shortages,category_default,synthetic,true
-CAREER-408,Humanitarian Logistics Officer,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-408,Humanitarian Logistics Officer,Report on cost and performance,category_default,synthetic,true
-CAREER-409,Stores Clerk,Plan and track stores and stock activities,category_default,synthetic,true
-CAREER-409,Stores Clerk,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-409,Stores Clerk,Keep documents and records accurate,category_default,synthetic,true
-CAREER-409,Stores Clerk,Solve delays and shortages,category_default,synthetic,true
-CAREER-409,Stores Clerk,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-409,Stores Clerk,Report on cost and performance,category_default,synthetic,true
-CAREER-410,Category Manager,Plan and track category procurement activities,category_default,synthetic,true
-CAREER-410,Category Manager,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-410,Category Manager,Keep documents and records accurate,category_default,synthetic,true
-CAREER-410,Category Manager,Solve delays and shortages,category_default,synthetic,true
-CAREER-410,Category Manager,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-410,Category Manager,Report on cost and performance,category_default,synthetic,true
-CAREER-411,Supplier Quality Engineer,Plan and track supplier quality activities,category_default,synthetic,true
-CAREER-411,Supplier Quality Engineer,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-411,Supplier Quality Engineer,Keep documents and records accurate,category_default,synthetic,true
-CAREER-411,Supplier Quality Engineer,Solve delays and shortages,category_default,synthetic,true
-CAREER-411,Supplier Quality Engineer,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-411,Supplier Quality Engineer,Report on cost and performance,category_default,synthetic,true
-CAREER-412,Drone Operations Pilot,Plan and track unmanned aircraft operations activities,category_default,synthetic,true
-CAREER-412,Drone Operations Pilot,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-412,Drone Operations Pilot,Keep documents and records accurate,category_default,synthetic,true
-CAREER-412,Drone Operations Pilot,Solve delays and shortages,category_default,synthetic,true
-CAREER-412,Drone Operations Pilot,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-412,Drone Operations Pilot,Report on cost and performance,category_default,synthetic,true
-CAREER-413,Public Transport Operations Manager,Plan and track passenger transport activities,category_default,synthetic,true
-CAREER-413,Public Transport Operations Manager,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-413,Public Transport Operations Manager,Keep documents and records accurate,category_default,synthetic,true
-CAREER-413,Public Transport Operations Manager,Solve delays and shortages,category_default,synthetic,true
-CAREER-413,Public Transport Operations Manager,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-413,Public Transport Operations Manager,Report on cost and performance,category_default,synthetic,true
-CAREER-414,Locomotive Driver,Plan and track train operation activities,category_default,synthetic,true
-CAREER-414,Locomotive Driver,"Coordinate drivers, suppliers or crews",category_default,synthetic,true
-CAREER-414,Locomotive Driver,Keep documents and records accurate,category_default,synthetic,true
-CAREER-414,Locomotive Driver,Solve delays and shortages,category_default,synthetic,true
-CAREER-414,Locomotive Driver,Follow safety and regulatory rules,category_default,synthetic,true
-CAREER-414,Locomotive Driver,Report on cost and performance,category_default,synthetic,true
+CAREER-369,Documentary Filmmaker,Research stories and find characters,authored,synthetic,true
+CAREER-369,Documentary Filmmaker,Write treatments and funding proposals,authored,synthetic,true
+CAREER-369,Documentary Filmmaker,Gain access and consent,authored,synthetic,true
+CAREER-369,Documentary Filmmaker,Shoot interviews and observational footage,authored,synthetic,true
+CAREER-369,Documentary Filmmaker,Log and structure material,authored,synthetic,true
+CAREER-369,Documentary Filmmaker,Edit the story,authored,synthetic,true
+CAREER-369,Documentary Filmmaker,Clear archive and music rights,authored,synthetic,true
+CAREER-369,Documentary Filmmaker,Submit to festivals and broadcasters,authored,synthetic,true
+CAREER-370,Screenwriter,"Develop ideas, characters and plots",authored,synthetic,true
+CAREER-370,Screenwriter,Write outlines and treatments,authored,synthetic,true
+CAREER-370,Screenwriter,Write and rewrite scripts,authored,synthetic,true
+CAREER-370,Screenwriter,Work in writers' rooms,authored,synthetic,true
+CAREER-370,Screenwriter,Take notes from producers and directors,authored,synthetic,true
+CAREER-370,Screenwriter,Pitch projects,authored,synthetic,true
+CAREER-370,Screenwriter,Research settings and subjects,authored,synthetic,true
+CAREER-370,Screenwriter,Register and protect scripts,authored,synthetic,true
+CAREER-371,Radio Producer,Plan each show's running order,authored,synthetic,true
+CAREER-371,Radio Producer,Research topics and book guests,authored,synthetic,true
+CAREER-371,Radio Producer,"Write scripts, links and promos",authored,synthetic,true
+CAREER-371,Radio Producer,Direct the presenter during the show,authored,synthetic,true
+CAREER-371,Radio Producer,Edit audio packages,authored,synthetic,true
+CAREER-371,Radio Producer,"Manage calls, texts and social media",authored,synthetic,true
+CAREER-371,Radio Producer,Check content against broadcasting rules,authored,synthetic,true
+CAREER-371,Radio Producer,Review audience figures,authored,synthetic,true
+CAREER-372,Art Director,Develop visual concepts with copywriters,authored,synthetic,true
+CAREER-372,Art Director,Design layouts and key visuals,authored,synthetic,true
+CAREER-372,Art Director,"Direct photographers, illustrators and designers",authored,synthetic,true
+CAREER-372,Art Director,"Choose type, colour and imagery",authored,synthetic,true
+CAREER-372,Art Director,Supervise shoots,authored,synthetic,true
+CAREER-372,Art Director,Present work to clients,authored,synthetic,true
+CAREER-372,Art Director,Check final artwork before release,authored,synthetic,true
+CAREER-372,Art Director,Keep visuals consistent across media,authored,synthetic,true
+CAREER-373,UX Writer,"Write button labels, messages and instructions",authored,synthetic,true
+CAREER-373,UX Writer,Work with designers on user flows,authored,synthetic,true
+CAREER-373,UX Writer,Test wording with users,authored,synthetic,true
+CAREER-373,UX Writer,Keep terminology consistent,authored,synthetic,true
+CAREER-373,UX Writer,Write and maintain the style guide,authored,synthetic,true
+CAREER-373,UX Writer,Simplify complex or legal text,authored,synthetic,true
+CAREER-373,UX Writer,Adapt copy for local languages,authored,synthetic,true
+CAREER-373,UX Writer,Review designs before release,authored,synthetic,true
+CAREER-374,Motion Graphics Designer,Read the script and plan a storyboard,authored,synthetic,true
+CAREER-374,Motion Graphics Designer,Design style frames,authored,synthetic,true
+CAREER-374,Motion Graphics Designer,"Animate text, shapes and illustrations",authored,synthetic,true
+CAREER-374,Motion Graphics Designer,Sync motion to voice and music,authored,synthetic,true
+CAREER-374,Motion Graphics Designer,Add effects and transitions,authored,synthetic,true
+CAREER-374,Motion Graphics Designer,Render in required formats,authored,synthetic,true
+CAREER-374,Motion Graphics Designer,Revise from feedback,authored,synthetic,true
+CAREER-374,Motion Graphics Designer,Build reusable templates,authored,synthetic,true
+CAREER-375,Voice-over Artist,Read and mark up scripts,authored,synthetic,true
+CAREER-375,Voice-over Artist,Warm up and care for the voice,authored,synthetic,true
+CAREER-375,Voice-over Artist,Record takes in different styles,authored,synthetic,true
+CAREER-375,Voice-over Artist,Take direction from clients,authored,synthetic,true
+CAREER-375,Voice-over Artist,Edit and clean recordings,authored,synthetic,true
+CAREER-375,Voice-over Artist,Deliver files to specification,authored,synthetic,true
+CAREER-375,Voice-over Artist,Audition for jobs,authored,synthetic,true
+CAREER-375,Voice-over Artist,Market a voice reel,authored,synthetic,true
+CAREER-376,Actor,Audition for roles,authored,synthetic,true
+CAREER-376,Actor,Study scripts and learn lines,authored,synthetic,true
+CAREER-376,Actor,Research and build characters,authored,synthetic,true
+CAREER-376,Actor,Rehearse with directors and cast,authored,synthetic,true
+CAREER-376,Actor,Perform on set or on stage,authored,synthetic,true
+CAREER-376,Actor,Take direction and repeat takes,authored,synthetic,true
+CAREER-376,Actor,Maintain voice and physical fitness,authored,synthetic,true
+CAREER-376,Actor,Promote productions,authored,synthetic,true
+CAREER-377,Dancer and Choreographer,Train daily to stay in condition,authored,synthetic,true
+CAREER-377,Dancer and Choreographer,Create and set choreography,authored,synthetic,true
+CAREER-377,Dancer and Choreographer,Rehearse dancers,authored,synthetic,true
+CAREER-377,Dancer and Choreographer,"Perform at shows, shoots and events",authored,synthetic,true
+CAREER-377,Dancer and Choreographer,Teach classes,authored,synthetic,true
+CAREER-377,Dancer and Choreographer,Audition for work,authored,synthetic,true
+CAREER-377,Dancer and Choreographer,Adapt routines to music and space,authored,synthetic,true
+CAREER-377,Dancer and Choreographer,Prevent and manage injuries,authored,synthetic,true
+CAREER-378,Curator,"Research artists, objects and themes",authored,synthetic,true
+CAREER-378,Curator,Select and arrange works for exhibitions,authored,synthetic,true
+CAREER-378,Curator,Write labels and catalogue texts,authored,synthetic,true
+CAREER-378,Curator,"Manage loans, transport and insurance",authored,synthetic,true
+CAREER-378,Curator,Care for and document collections,authored,synthetic,true
+CAREER-378,Curator,Plan talks and tours,authored,synthetic,true
+CAREER-378,Curator,Raise funds and work with sponsors,authored,synthetic,true
+CAREER-378,Curator,Engage visitors and schools,authored,synthetic,true
+CAREER-379,Translator and Interpreter,Translate documents accurately,authored,synthetic,true
+CAREER-379,Translator and Interpreter,Interpret speech live in meetings and courts,authored,synthetic,true
+CAREER-379,Translator and Interpreter,Research terminology,authored,synthetic,true
+CAREER-379,Translator and Interpreter,Proofread and edit translations,authored,synthetic,true
+CAREER-379,Translator and Interpreter,"Keep meaning, tone and confidentiality",authored,synthetic,true
+CAREER-379,Translator and Interpreter,Prepare glossaries before assignments,authored,synthetic,true
+CAREER-379,Translator and Interpreter,Subtitle video,authored,synthetic,true
+CAREER-379,Translator and Interpreter,Manage clients and deadlines,authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,Find creators who fit the brand,authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,Check audiences for authenticity,authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,Negotiate fees and contracts,authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,Brief creators and approve content,authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,Manage campaign timelines,authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,Make sure sponsored posts are disclosed,authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,"Track reach, engagement and sales",authored,synthetic,true
+CAREER-380,Influencer Marketing Manager,Pay creators and report results,authored,synthetic,true
+CAREER-381,Bartender and Mixologist,Set up the bar before service,authored,synthetic,true
+CAREER-381,Bartender and Mixologist,Mix and serve drinks to recipe,authored,synthetic,true
+CAREER-381,Bartender and Mixologist,Advise guests on drinks,authored,synthetic,true
+CAREER-381,Bartender and Mixologist,Take payments and balance the till,authored,synthetic,true
+CAREER-381,Bartender and Mixologist,Control stock and reduce wastage,authored,synthetic,true
+CAREER-381,Bartender and Mixologist,Create new cocktails and menus,authored,synthetic,true
+CAREER-381,Bartender and Mixologist,Keep the bar clean,authored,synthetic,true
+CAREER-381,Bartender and Mixologist,Serve alcohol responsibly,authored,synthetic,true
+CAREER-382,Airline Reservations Agent,Answer booking enquiries,authored,synthetic,true
+CAREER-382,Airline Reservations Agent,Quote fares and rules,authored,synthetic,true
+CAREER-382,Airline Reservations Agent,Create and change reservations,authored,synthetic,true
+CAREER-382,Airline Reservations Agent,"Issue, reissue and refund tickets",authored,synthetic,true
+CAREER-382,Airline Reservations Agent,Arrange special meals and assistance,authored,synthetic,true
+CAREER-382,Airline Reservations Agent,Handle schedule changes,authored,synthetic,true
+CAREER-382,Airline Reservations Agent,Sell extras such as baggage and seats,authored,synthetic,true
+CAREER-382,Airline Reservations Agent,Record all transactions accurately,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,Manage therapists and reception staff,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,Design the treatment menu and prices,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,Handle bookings and guest care,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,Keep hygiene and treatment standards,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,Order products and control stock,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,Promote packages and memberships,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,Train staff,authored,synthetic,true
+CAREER-383,Spa and Wellness Manager,Track revenue and reviews,authored,synthetic,true
+CAREER-384,Ecotourism Officer,Develop low-impact tourism activities,authored,synthetic,true
+CAREER-384,Ecotourism Officer,Help communities set up and run tourism enterprises,authored,synthetic,true
+CAREER-384,Ecotourism Officer,Assess lodges against eco-standards,authored,synthetic,true
+CAREER-384,Ecotourism Officer,Monitor visitor impact on wildlife and habitats,authored,synthetic,true
+CAREER-384,Ecotourism Officer,Train guides and hosts,authored,synthetic,true
+CAREER-384,Ecotourism Officer,Link tourism income to conservation,authored,synthetic,true
+CAREER-384,Ecotourism Officer,Market eco-experiences,authored,synthetic,true
+CAREER-384,Ecotourism Officer,Report to partners and funders,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,Find and visit corporate and agency clients,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,Negotiate rates and contracts,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,Respond to group and conference requests,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,Host site inspections,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,Work with revenue on pricing,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,Attend trade shows,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,Keep the sales pipeline updated,authored,synthetic,true
+CAREER-385,Hotel Sales Manager,Meet room and conference revenue targets,authored,synthetic,true
+CAREER-386,Concierge,Welcome guests and answer questions,authored,synthetic,true
+CAREER-386,Concierge,"Recommend and book restaurants, tours and transport",authored,synthetic,true
+CAREER-386,Concierge,Arrange special requests and surprises,authored,synthetic,true
+CAREER-386,Concierge,Handle luggage and deliveries,authored,synthetic,true
+CAREER-386,Concierge,Keep up-to-date local knowledge,authored,synthetic,true
+CAREER-386,Concierge,Build a network of trusted suppliers,authored,synthetic,true
+CAREER-386,Concierge,Solve guest problems quickly,authored,synthetic,true
+CAREER-386,Concierge,Record requests and preferences,authored,synthetic,true
+CAREER-387,Banqueting Manager,Read function sheets and plan each event,authored,synthetic,true
+CAREER-387,Banqueting Manager,"Set up rooms, tables and equipment",authored,synthetic,true
+CAREER-387,Banqueting Manager,Brief and lead banquet staff and casuals,authored,synthetic,true
+CAREER-387,Banqueting Manager,Coordinate timing with the kitchen,authored,synthetic,true
+CAREER-387,Banqueting Manager,Look after the organiser during the event,authored,synthetic,true
+CAREER-387,Banqueting Manager,Control drinks and stock,authored,synthetic,true
+CAREER-387,Banqueting Manager,Clear and reset rooms,authored,synthetic,true
+CAREER-387,Banqueting Manager,Report on each function,authored,synthetic,true
+CAREER-388,Wedding Planner,Meet couples and understand their vision,authored,synthetic,true
+CAREER-388,Wedding Planner,Build the budget and timeline,authored,synthetic,true
+CAREER-388,Wedding Planner,Recommend and book venues and vendors,authored,synthetic,true
+CAREER-388,Wedding Planner,Design the décor and layout,authored,synthetic,true
+CAREER-388,Wedding Planner,Manage guest lists and seating,authored,synthetic,true
+CAREER-388,Wedding Planner,Run rehearsals and the wedding day,authored,synthetic,true
+CAREER-388,Wedding Planner,Handle family expectations and last-minute problems,authored,synthetic,true
+CAREER-388,Wedding Planner,Settle vendor payments,authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,Plan daily activities and sports programmes,authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,Lead fitness classes and games,authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,"Manage pools, gyms and equipment",authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,Keep participants safe,authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,Organise tournaments and events,authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,Supervise lifeguards and instructors,authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,Promote programmes,authored,synthetic,true
+CAREER-389,Sports and Recreation Officer,Record attendance and incidents,authored,synthetic,true
+CAREER-390,Catering Manager,Plan menus to budget and nutrition needs,authored,synthetic,true
+CAREER-390,Catering Manager,Cost and quote catering jobs,authored,synthetic,true
+CAREER-390,Catering Manager,Order and receive supplies,authored,synthetic,true
+CAREER-390,Catering Manager,Supervise cooks and service staff,authored,synthetic,true
+CAREER-390,Catering Manager,Organise transport and set-up for outside events,authored,synthetic,true
+CAREER-390,Catering Manager,Enforce food safety,authored,synthetic,true
+CAREER-390,Catering Manager,Control portions and waste,authored,synthetic,true
+CAREER-390,Catering Manager,Manage client contracts and feedback,authored,synthetic,true
+CAREER-391,Tourism Product Developer,Research traveller trends and gaps,authored,synthetic,true
+CAREER-391,Tourism Product Developer,Visit and assess sites and suppliers,authored,synthetic,true
+CAREER-391,Tourism Product Developer,Design new tours and experiences,authored,synthetic,true
+CAREER-391,Tourism Product Developer,Negotiate rates and contracts,authored,synthetic,true
+CAREER-391,Tourism Product Developer,Test trips before launch,authored,synthetic,true
+CAREER-391,Tourism Product Developer,Write product descriptions,authored,synthetic,true
+CAREER-391,Tourism Product Developer,Train sales teams on new products,authored,synthetic,true
+CAREER-391,Tourism Product Developer,Review sales and feedback to refine products,authored,synthetic,true
+CAREER-392,Astronomer,Plan and carry out telescope observations,authored,synthetic,true
+CAREER-392,Astronomer,Process and analyse astronomical data,authored,synthetic,true
+CAREER-392,Astronomer,"Build models of stars, galaxies or planets",authored,synthetic,true
+CAREER-392,Astronomer,Write proposals for telescope time,authored,synthetic,true
+CAREER-392,Astronomer,Publish and present research,authored,synthetic,true
+CAREER-392,Astronomer,Develop instruments and software,authored,synthetic,true
+CAREER-392,Astronomer,Teach and run public outreach,authored,synthetic,true
+CAREER-392,Astronomer,Collaborate with international teams,authored,synthetic,true
+CAREER-393,Environmental Scientist,"Collect water, soil and air samples",authored,synthetic,true
+CAREER-393,Environmental Scientist,Measure pollution levels,authored,synthetic,true
+CAREER-393,Environmental Scientist,Analyse samples and data,authored,synthetic,true
+CAREER-393,Environmental Scientist,Assess ecosystem health,authored,synthetic,true
+CAREER-393,Environmental Scientist,Map environmental change,authored,synthetic,true
+CAREER-393,Environmental Scientist,Write monitoring and impact reports,authored,synthetic,true
+CAREER-393,Environmental Scientist,Advise on clean-up and compliance,authored,synthetic,true
+CAREER-393,Environmental Scientist,Present findings to regulators and communities,authored,synthetic,true
+CAREER-394,Toxicologist,"Test samples for drugs, poisons and chemicals",authored,synthetic,true
+CAREER-394,Toxicologist,Design and run toxicity studies,authored,synthetic,true
+CAREER-394,Toxicologist,Assess the risk of chemicals and products,authored,synthetic,true
+CAREER-394,Toxicologist,"Interpret results for doctors, courts or regulators",authored,synthetic,true
+CAREER-394,Toxicologist,Write safety assessments,authored,synthetic,true
+CAREER-394,Toxicologist,Advise on poisoning cases,authored,synthetic,true
+CAREER-394,Toxicologist,Review scientific evidence,authored,synthetic,true
+CAREER-394,Toxicologist,Follow laboratory quality standards,authored,synthetic,true
+CAREER-395,Geneticist,Collect and prepare DNA samples,authored,synthetic,true
+CAREER-395,Geneticist,Genotype and sequence samples,authored,synthetic,true
+CAREER-395,Geneticist,Analyse inheritance and genetic variation,authored,synthetic,true
+CAREER-395,Geneticist,Select breeding lines or identify disease variants,authored,synthetic,true
+CAREER-395,Geneticist,Run field or laboratory trials,authored,synthetic,true
+CAREER-395,Geneticist,"Interpret results for farmers, doctors or families",authored,synthetic,true
+CAREER-395,Geneticist,Publish findings,authored,synthetic,true
+CAREER-395,Geneticist,Follow ethics on genetic data,authored,synthetic,true
+CAREER-396,Entomologist,"Trap, collect and identify insects",authored,synthetic,true
+CAREER-396,Entomologist,Rear insect colonies,authored,synthetic,true
+CAREER-396,Entomologist,Monitor pest and mosquito populations,authored,synthetic,true
+CAREER-396,Entomologist,Test insecticides and resistance,authored,synthetic,true
+CAREER-396,Entomologist,Develop biological control methods,authored,synthetic,true
+CAREER-396,Entomologist,Advise farmers and health programmes,authored,synthetic,true
+CAREER-396,Entomologist,Curate insect collections,authored,synthetic,true
+CAREER-396,Entomologist,Write reports and papers,authored,synthetic,true
+CAREER-397,Hydrologist,Measure river levels and flows,authored,synthetic,true
+CAREER-397,Hydrologist,Maintain gauging stations,authored,synthetic,true
+CAREER-397,Hydrologist,Analyse rainfall and runoff data,authored,synthetic,true
+CAREER-397,Hydrologist,Model catchments and floods,authored,synthetic,true
+CAREER-397,Hydrologist,Assess groundwater and borehole yields,authored,synthetic,true
+CAREER-397,Hydrologist,Forecast water availability,authored,synthetic,true
+CAREER-397,Hydrologist,Write hydrological reports,authored,synthetic,true
+CAREER-397,Hydrologist,"Advise on dams, abstraction and flood risk",authored,synthetic,true
+CAREER-398,Pharmacologist,Design studies on how drugs act and are processed,authored,synthetic,true
+CAREER-398,Pharmacologist,Test compounds in the laboratory,authored,synthetic,true
+CAREER-398,Pharmacologist,Analyse drug levels in samples,authored,synthetic,true
+CAREER-398,Pharmacologist,Assess side effects and interactions,authored,synthetic,true
+CAREER-398,Pharmacologist,Review adverse event reports,authored,synthetic,true
+CAREER-398,Pharmacologist,Write study reports and papers,authored,synthetic,true
+CAREER-398,Pharmacologist,Advise on dosing,authored,synthetic,true
+CAREER-398,Pharmacologist,Follow ethics and laboratory standards,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,Measure radiation levels in workplaces,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,Manage staff dose monitoring,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,Inspect X-ray and radioactive source facilities,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,Check shielding and safety procedures,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,License and track radioactive sources,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,Train workers on radiation safety,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,Investigate incidents,authored,synthetic,true
+CAREER-399,Radiation Protection Officer,Keep regulatory records,authored,synthetic,true
+CAREER-400,Laboratory Manager,Plan daily laboratory work and staff rotas,authored,synthetic,true
+CAREER-400,Laboratory Manager,Maintain quality systems and accreditation,authored,synthetic,true
+CAREER-400,Laboratory Manager,Order reagents and manage stock,authored,synthetic,true
+CAREER-400,Laboratory Manager,Arrange equipment service and calibration,authored,synthetic,true
+CAREER-400,Laboratory Manager,Enforce safety and waste rules,authored,synthetic,true
+CAREER-400,Laboratory Manager,Review and approve results,authored,synthetic,true
+CAREER-400,Laboratory Manager,Train and appraise staff,authored,synthetic,true
+CAREER-400,Laboratory Manager,Manage the budget and audits,authored,synthetic,true
+CAREER-401,Zoologist,Survey and count animals in the field,authored,synthetic,true
+CAREER-401,Zoologist,Observe and record behaviour,authored,synthetic,true
+CAREER-401,Zoologist,"Capture, tag and track animals",authored,synthetic,true
+CAREER-401,Zoologist,Collect samples for study,authored,synthetic,true
+CAREER-401,Zoologist,Analyse population and movement data,authored,synthetic,true
+CAREER-401,Zoologist,Advise on species conservation,authored,synthetic,true
+CAREER-401,Zoologist,Curate museum specimens,authored,synthetic,true
+CAREER-401,Zoologist,Write papers and reports,authored,synthetic,true
+CAREER-402,Botanist,Collect and press plant specimens,authored,synthetic,true
+CAREER-402,Botanist,Identify and classify plants,authored,synthetic,true
+CAREER-402,Botanist,Survey vegetation in the field,authored,synthetic,true
+CAREER-402,Botanist,Document traditional plant uses,authored,synthetic,true
+CAREER-402,Botanist,Study plant growth and physiology,authored,synthetic,true
+CAREER-402,Botanist,Maintain herbarium and seed collections,authored,synthetic,true
+CAREER-402,Botanist,Assess threatened species,authored,synthetic,true
+CAREER-402,Botanist,Write reports and papers,authored,synthetic,true
+CAREER-403,Research Data Manager,Design databases and data collection forms,authored,synthetic,true
+CAREER-403,Research Data Manager,Write data management plans,authored,synthetic,true
+CAREER-403,Research Data Manager,Check and clean incoming data,authored,synthetic,true
+CAREER-403,Research Data Manager,Resolve data queries with field teams,authored,synthetic,true
+CAREER-403,Research Data Manager,Control access and protect personal data,authored,synthetic,true
+CAREER-403,Research Data Manager,Document datasets and codebooks,authored,synthetic,true
+CAREER-403,Research Data Manager,Prepare datasets for analysis,authored,synthetic,true
+CAREER-403,Research Data Manager,Archive and share data,authored,synthetic,true
+CAREER-404,Flight Dispatcher,Prepare flight plans and routes,authored,synthetic,true
+CAREER-404,Flight Dispatcher,Analyse weather and notices to airmen,authored,synthetic,true
+CAREER-404,Flight Dispatcher,Calculate fuel and payload,authored,synthetic,true
+CAREER-404,Flight Dispatcher,Brief pilots before departure,authored,synthetic,true
+CAREER-404,Flight Dispatcher,File plans with air traffic services,authored,synthetic,true
+CAREER-404,Flight Dispatcher,Monitor flights in progress,authored,synthetic,true
+CAREER-404,Flight Dispatcher,Manage delays and diversions,authored,synthetic,true
+CAREER-404,Flight Dispatcher,Keep operational records,authored,synthetic,true
+CAREER-405,Ship Agent,"Arrange berths, pilots and tugs for arriving ships",authored,synthetic,true
+CAREER-405,Ship Agent,"Clear vessels with port, customs and immigration",authored,synthetic,true
+CAREER-405,Ship Agent,Board ships and assist the master,authored,synthetic,true
+CAREER-405,Ship Agent,"Organise supplies, bunkers and repairs",authored,synthetic,true
+CAREER-405,Ship Agent,Handle crew changes,authored,synthetic,true
+CAREER-405,Ship Agent,Prepare cargo documents and manifests,authored,synthetic,true
+CAREER-405,Ship Agent,Pay and account for port costs,authored,synthetic,true
+CAREER-405,Ship Agent,Keep ship owners informed,authored,synthetic,true
+CAREER-406,Cold Chain Specialist,Plan temperature-controlled storage and transport,authored,synthetic,true
+CAREER-406,Cold Chain Specialist,Monitor and record temperatures,authored,synthetic,true
+CAREER-406,Cold Chain Specialist,Respond to temperature excursions,authored,synthetic,true
+CAREER-406,Cold Chain Specialist,"Maintain cold rooms, fridges and reefer units",authored,synthetic,true
+CAREER-406,Cold Chain Specialist,Pack shipments with correct coolants,authored,synthetic,true
+CAREER-406,Cold Chain Specialist,Train handlers,authored,synthetic,true
+CAREER-406,Cold Chain Specialist,Manage stock by expiry,authored,synthetic,true
+CAREER-406,Cold Chain Specialist,Document compliance for audits,authored,synthetic,true
+CAREER-407,Import and Export Officer,"Prepare invoices, packing lists and certificates",authored,synthetic,true
+CAREER-407,Import and Export Officer,Apply for import and export permits,authored,synthetic,true
+CAREER-407,Import and Export Officer,Work with clearing agents and carriers,authored,synthetic,true
+CAREER-407,Import and Export Officer,Track shipments to arrival,authored,synthetic,true
+CAREER-407,Import and Export Officer,Check duties and landed costs,authored,synthetic,true
+CAREER-407,Import and Export Officer,Meet standards and inspection rules,authored,synthetic,true
+CAREER-407,Import and Export Officer,Manage trade finance documents,authored,synthetic,true
+CAREER-407,Import and Export Officer,Keep records for audits,authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,Assess logistics needs in an emergency,authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,Procure relief items to donor rules,authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,Run warehouses and stock records,authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,Organise transport to hard-to-reach areas,authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,Plan and support distributions,authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,"Manage vehicles, fuel and generators",authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,Maintain assets and communications,authored,synthetic,true
+CAREER-408,Humanitarian Logistics Officer,Report to donors and coordination clusters,authored,synthetic,true
+CAREER-409,Stores Clerk,Receive goods and check them against orders,authored,synthetic,true
+CAREER-409,Stores Clerk,Record receipts and issues,authored,synthetic,true
+CAREER-409,Stores Clerk,Store and label items properly,authored,synthetic,true
+CAREER-409,Stores Clerk,Issue items against approved requests,authored,synthetic,true
+CAREER-409,Stores Clerk,Update bin cards and the system,authored,synthetic,true
+CAREER-409,Stores Clerk,Count stock regularly,authored,synthetic,true
+CAREER-409,Stores Clerk,Report shortages and damages,authored,synthetic,true
+CAREER-409,Stores Clerk,Keep the store clean and secure,authored,synthetic,true
+CAREER-410,Category Manager,Analyse spending in a category,authored,synthetic,true
+CAREER-410,Category Manager,Study the supplier market,authored,synthetic,true
+CAREER-410,Category Manager,Write a category strategy,authored,synthetic,true
+CAREER-410,Category Manager,Run tenders and negotiations,authored,synthetic,true
+CAREER-410,Category Manager,Manage key supplier relationships and performance,authored,synthetic,true
+CAREER-410,Category Manager,Track savings and contract compliance,authored,synthetic,true
+CAREER-410,Category Manager,Work with internal users on needs,authored,synthetic,true
+CAREER-410,Category Manager,Manage supply risks,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,Audit suppliers' factories and systems,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,Approve new suppliers and parts,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,Inspect incoming materials,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,Investigate defects and their root causes,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,Agree corrective actions with suppliers,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,Track supplier quality scores,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,Help suppliers improve processes,authored,synthetic,true
+CAREER-411,Supplier Quality Engineer,Report quality costs,authored,synthetic,true
+CAREER-412,Drone Operations Pilot,Plan missions and check airspace permissions,authored,synthetic,true
+CAREER-412,Drone Operations Pilot,Inspect and prepare the drone,authored,synthetic,true
+CAREER-412,Drone Operations Pilot,Fly manual and automated missions,authored,synthetic,true
+CAREER-412,Drone Operations Pilot,"Capture images, video or sensor data",authored,synthetic,true
+CAREER-412,Drone Operations Pilot,Process data into maps and reports,authored,synthetic,true
+CAREER-412,Drone Operations Pilot,Maintain batteries and equipment,authored,synthetic,true
+CAREER-412,Drone Operations Pilot,Log flights,authored,synthetic,true
+CAREER-412,Drone Operations Pilot,Follow civil aviation rules,authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,"Plan routes, timetables and dispatch",authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,"Manage drivers, conductors and stage staff",authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,Monitor vehicles and service on the road,authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,Control fare collection and daily income,authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,Schedule maintenance,authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,"Handle accidents, complaints and police matters",authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,Keep licences and inspections current,authored,synthetic,true
+CAREER-413,Public Transport Operations Manager,Report on trips and revenue,authored,synthetic,true
+CAREER-414,Locomotive Driver,Inspect the locomotive before departure,authored,synthetic,true
+CAREER-414,Locomotive Driver,Drive the train to timetable and speed limits,authored,synthetic,true
+CAREER-414,Locomotive Driver,Obey signals and track rules,authored,synthetic,true
+CAREER-414,Locomotive Driver,Communicate with train control,authored,synthetic,true
+CAREER-414,Locomotive Driver,"Monitor engine, brakes and gauges",authored,synthetic,true
+CAREER-414,Locomotive Driver,Handle faults and emergencies by procedure,authored,synthetic,true
+CAREER-414,Locomotive Driver,Couple and shunt wagons,authored,synthetic,true
+CAREER-414,Locomotive Driver,Complete trip reports,authored,synthetic,true
 CAREER-415,Addiction Counsellor,Work directly with people and communities on substance use recovery,category_default,synthetic,true
 CAREER-415,Addiction Counsellor,Assess needs and plan support,category_default,synthetic,true
 CAREER-415,Addiction Counsellor,Keep confidential case or project records,category_default,synthetic,true
