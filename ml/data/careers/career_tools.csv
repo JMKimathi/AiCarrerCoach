@@ -438,176 +438,210 @@ CAREER-072,Mobile Money and Payments Specialist,reconciliation tools,authored,sy
 CAREER-072,Mobile Money and Payments Specialist,Excel,authored,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,SQL,authored,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,card scheme rules,authored,synthetic,true
-CAREER-073,Marketing Executive,spreadsheets and presentations,category_default,synthetic,true
-CAREER-073,Marketing Executive,customer relationship management systems,category_default,synthetic,true
-CAREER-073,Marketing Executive,analytics dashboards,category_default,synthetic,true
-CAREER-073,Marketing Executive,collaboration tools,category_default,synthetic,true
-CAREER-073,Marketing Executive,social media and email platforms,category_default,synthetic,true
-CAREER-074,Digital Marketing Specialist,spreadsheets and presentations,category_default,synthetic,true
-CAREER-074,Digital Marketing Specialist,customer relationship management systems,category_default,synthetic,true
-CAREER-074,Digital Marketing Specialist,analytics dashboards,category_default,synthetic,true
-CAREER-074,Digital Marketing Specialist,collaboration tools,category_default,synthetic,true
-CAREER-074,Digital Marketing Specialist,social media and email platforms,category_default,synthetic,true
-CAREER-075,Brand Manager,spreadsheets and presentations,category_default,synthetic,true
-CAREER-075,Brand Manager,customer relationship management systems,category_default,synthetic,true
-CAREER-075,Brand Manager,analytics dashboards,category_default,synthetic,true
-CAREER-075,Brand Manager,collaboration tools,category_default,synthetic,true
-CAREER-075,Brand Manager,social media and email platforms,category_default,synthetic,true
-CAREER-076,Sales Executive,spreadsheets and presentations,category_default,synthetic,true
-CAREER-076,Sales Executive,customer relationship management systems,category_default,synthetic,true
-CAREER-076,Sales Executive,analytics dashboards,category_default,synthetic,true
-CAREER-076,Sales Executive,collaboration tools,category_default,synthetic,true
-CAREER-076,Sales Executive,social media and email platforms,category_default,synthetic,true
-CAREER-077,Business Development Officer,spreadsheets and presentations,category_default,synthetic,true
-CAREER-077,Business Development Officer,customer relationship management systems,category_default,synthetic,true
-CAREER-077,Business Development Officer,analytics dashboards,category_default,synthetic,true
-CAREER-077,Business Development Officer,collaboration tools,category_default,synthetic,true
-CAREER-077,Business Development Officer,social media and email platforms,category_default,synthetic,true
-CAREER-078,Entrepreneur and Startup Founder,spreadsheets and presentations,category_default,synthetic,true
-CAREER-078,Entrepreneur and Startup Founder,customer relationship management systems,category_default,synthetic,true
-CAREER-078,Entrepreneur and Startup Founder,analytics dashboards,category_default,synthetic,true
-CAREER-078,Entrepreneur and Startup Founder,collaboration tools,category_default,synthetic,true
-CAREER-078,Entrepreneur and Startup Founder,social media and email platforms,category_default,synthetic,true
-CAREER-079,Business Analyst,spreadsheets and presentations,category_default,synthetic,true
-CAREER-079,Business Analyst,customer relationship management systems,category_default,synthetic,true
-CAREER-079,Business Analyst,analytics dashboards,category_default,synthetic,true
-CAREER-079,Business Analyst,collaboration tools,category_default,synthetic,true
-CAREER-079,Business Analyst,social media and email platforms,category_default,synthetic,true
-CAREER-080,Human Resource Officer,spreadsheets and presentations,category_default,synthetic,true
-CAREER-080,Human Resource Officer,customer relationship management systems,category_default,synthetic,true
-CAREER-080,Human Resource Officer,analytics dashboards,category_default,synthetic,true
-CAREER-080,Human Resource Officer,collaboration tools,category_default,synthetic,true
-CAREER-080,Human Resource Officer,social media and email platforms,category_default,synthetic,true
-CAREER-081,Talent Acquisition Specialist,spreadsheets and presentations,category_default,synthetic,true
-CAREER-081,Talent Acquisition Specialist,customer relationship management systems,category_default,synthetic,true
-CAREER-081,Talent Acquisition Specialist,analytics dashboards,category_default,synthetic,true
-CAREER-081,Talent Acquisition Specialist,collaboration tools,category_default,synthetic,true
-CAREER-081,Talent Acquisition Specialist,social media and email platforms,category_default,synthetic,true
-CAREER-082,Customer Experience Manager,spreadsheets and presentations,category_default,synthetic,true
-CAREER-082,Customer Experience Manager,customer relationship management systems,category_default,synthetic,true
-CAREER-082,Customer Experience Manager,analytics dashboards,category_default,synthetic,true
-CAREER-082,Customer Experience Manager,collaboration tools,category_default,synthetic,true
-CAREER-082,Customer Experience Manager,social media and email platforms,category_default,synthetic,true
-CAREER-083,Management Consultant,spreadsheets and presentations,category_default,synthetic,true
-CAREER-083,Management Consultant,customer relationship management systems,category_default,synthetic,true
-CAREER-083,Management Consultant,analytics dashboards,category_default,synthetic,true
-CAREER-083,Management Consultant,collaboration tools,category_default,synthetic,true
-CAREER-083,Management Consultant,social media and email platforms,category_default,synthetic,true
-CAREER-084,Market Research Analyst,spreadsheets and presentations,category_default,synthetic,true
-CAREER-084,Market Research Analyst,customer relationship management systems,category_default,synthetic,true
-CAREER-084,Market Research Analyst,analytics dashboards,category_default,synthetic,true
-CAREER-084,Market Research Analyst,collaboration tools,category_default,synthetic,true
-CAREER-084,Market Research Analyst,social media and email platforms,category_default,synthetic,true
-CAREER-085,Project Manager,spreadsheets and presentations,category_default,synthetic,true
-CAREER-085,Project Manager,customer relationship management systems,category_default,synthetic,true
-CAREER-085,Project Manager,analytics dashboards,category_default,synthetic,true
-CAREER-085,Project Manager,collaboration tools,category_default,synthetic,true
-CAREER-085,Project Manager,social media and email platforms,category_default,synthetic,true
-CAREER-086,E-commerce Manager,spreadsheets and presentations,category_default,synthetic,true
-CAREER-086,E-commerce Manager,customer relationship management systems,category_default,synthetic,true
-CAREER-086,E-commerce Manager,analytics dashboards,category_default,synthetic,true
-CAREER-086,E-commerce Manager,collaboration tools,category_default,synthetic,true
-CAREER-086,E-commerce Manager,social media and email platforms,category_default,synthetic,true
-CAREER-087,Public Relations Officer,spreadsheets and presentations,category_default,synthetic,true
-CAREER-087,Public Relations Officer,customer relationship management systems,category_default,synthetic,true
-CAREER-087,Public Relations Officer,analytics dashboards,category_default,synthetic,true
-CAREER-087,Public Relations Officer,collaboration tools,category_default,synthetic,true
-CAREER-087,Public Relations Officer,social media and email platforms,category_default,synthetic,true
-CAREER-088,Retail Manager,spreadsheets and presentations,category_default,synthetic,true
-CAREER-088,Retail Manager,customer relationship management systems,category_default,synthetic,true
-CAREER-088,Retail Manager,analytics dashboards,category_default,synthetic,true
-CAREER-088,Retail Manager,collaboration tools,category_default,synthetic,true
-CAREER-088,Retail Manager,social media and email platforms,category_default,synthetic,true
-CAREER-089,Corporate Strategy Analyst,spreadsheets and presentations,category_default,synthetic,true
-CAREER-089,Corporate Strategy Analyst,customer relationship management systems,category_default,synthetic,true
-CAREER-089,Corporate Strategy Analyst,analytics dashboards,category_default,synthetic,true
-CAREER-089,Corporate Strategy Analyst,collaboration tools,category_default,synthetic,true
-CAREER-089,Corporate Strategy Analyst,social media and email platforms,category_default,synthetic,true
-CAREER-090,Social Enterprise Manager,spreadsheets and presentations,category_default,synthetic,true
-CAREER-090,Social Enterprise Manager,customer relationship management systems,category_default,synthetic,true
-CAREER-090,Social Enterprise Manager,analytics dashboards,category_default,synthetic,true
-CAREER-090,Social Enterprise Manager,collaboration tools,category_default,synthetic,true
-CAREER-090,Social Enterprise Manager,social media and email platforms,category_default,synthetic,true
-CAREER-091,Advocate,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-091,Advocate,document drafting templates,category_default,synthetic,true
-CAREER-091,Advocate,case management systems,category_default,synthetic,true
-CAREER-091,Advocate,court e-filing systems,category_default,synthetic,true
-CAREER-091,Advocate,statutes and regulations,category_default,synthetic,true
-CAREER-092,Corporate Lawyer,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-092,Corporate Lawyer,document drafting templates,category_default,synthetic,true
-CAREER-092,Corporate Lawyer,case management systems,category_default,synthetic,true
-CAREER-092,Corporate Lawyer,court e-filing systems,category_default,synthetic,true
-CAREER-092,Corporate Lawyer,statutes and regulations,category_default,synthetic,true
-CAREER-093,Legal Officer,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-093,Legal Officer,document drafting templates,category_default,synthetic,true
-CAREER-093,Legal Officer,case management systems,category_default,synthetic,true
-CAREER-093,Legal Officer,court e-filing systems,category_default,synthetic,true
-CAREER-093,Legal Officer,statutes and regulations,category_default,synthetic,true
-CAREER-094,Paralegal,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-094,Paralegal,document drafting templates,category_default,synthetic,true
-CAREER-094,Paralegal,case management systems,category_default,synthetic,true
-CAREER-094,Paralegal,court e-filing systems,category_default,synthetic,true
-CAREER-094,Paralegal,statutes and regulations,category_default,synthetic,true
-CAREER-095,Judicial Officer,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-095,Judicial Officer,document drafting templates,category_default,synthetic,true
-CAREER-095,Judicial Officer,case management systems,category_default,synthetic,true
-CAREER-095,Judicial Officer,court e-filing systems,category_default,synthetic,true
-CAREER-095,Judicial Officer,statutes and regulations,category_default,synthetic,true
-CAREER-096,State Counsel,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-096,State Counsel,document drafting templates,category_default,synthetic,true
-CAREER-096,State Counsel,case management systems,category_default,synthetic,true
-CAREER-096,State Counsel,court e-filing systems,category_default,synthetic,true
-CAREER-096,State Counsel,statutes and regulations,category_default,synthetic,true
-CAREER-097,Compliance and Regulatory Officer,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-097,Compliance and Regulatory Officer,document drafting templates,category_default,synthetic,true
-CAREER-097,Compliance and Regulatory Officer,case management systems,category_default,synthetic,true
-CAREER-097,Compliance and Regulatory Officer,court e-filing systems,category_default,synthetic,true
-CAREER-097,Compliance and Regulatory Officer,statutes and regulations,category_default,synthetic,true
-CAREER-098,Human Rights Officer,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-098,Human Rights Officer,document drafting templates,category_default,synthetic,true
-CAREER-098,Human Rights Officer,case management systems,category_default,synthetic,true
-CAREER-098,Human Rights Officer,court e-filing systems,category_default,synthetic,true
-CAREER-098,Human Rights Officer,statutes and regulations,category_default,synthetic,true
-CAREER-099,Legal Researcher,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-099,Legal Researcher,document drafting templates,category_default,synthetic,true
-CAREER-099,Legal Researcher,case management systems,category_default,synthetic,true
-CAREER-099,Legal Researcher,court e-filing systems,category_default,synthetic,true
-CAREER-099,Legal Researcher,statutes and regulations,category_default,synthetic,true
-CAREER-100,Contracts Manager,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-100,Contracts Manager,document drafting templates,category_default,synthetic,true
-CAREER-100,Contracts Manager,case management systems,category_default,synthetic,true
-CAREER-100,Contracts Manager,court e-filing systems,category_default,synthetic,true
-CAREER-100,Contracts Manager,statutes and regulations,category_default,synthetic,true
-CAREER-101,Mediator and Arbitrator,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-101,Mediator and Arbitrator,document drafting templates,category_default,synthetic,true
-CAREER-101,Mediator and Arbitrator,case management systems,category_default,synthetic,true
-CAREER-101,Mediator and Arbitrator,court e-filing systems,category_default,synthetic,true
-CAREER-101,Mediator and Arbitrator,statutes and regulations,category_default,synthetic,true
-CAREER-102,Intellectual Property Specialist,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-102,Intellectual Property Specialist,document drafting templates,category_default,synthetic,true
-CAREER-102,Intellectual Property Specialist,case management systems,category_default,synthetic,true
-CAREER-102,Intellectual Property Specialist,court e-filing systems,category_default,synthetic,true
-CAREER-102,Intellectual Property Specialist,statutes and regulations,category_default,synthetic,true
-CAREER-103,Conveyancing Officer,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-103,Conveyancing Officer,document drafting templates,category_default,synthetic,true
-CAREER-103,Conveyancing Officer,case management systems,category_default,synthetic,true
-CAREER-103,Conveyancing Officer,court e-filing systems,category_default,synthetic,true
-CAREER-103,Conveyancing Officer,statutes and regulations,category_default,synthetic,true
-CAREER-104,Company Secretary,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-104,Company Secretary,document drafting templates,category_default,synthetic,true
-CAREER-104,Company Secretary,case management systems,category_default,synthetic,true
-CAREER-104,Company Secretary,court e-filing systems,category_default,synthetic,true
-CAREER-104,Company Secretary,statutes and regulations,category_default,synthetic,true
-CAREER-105,Legislative Drafter,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-105,Legislative Drafter,document drafting templates,category_default,synthetic,true
-CAREER-105,Legislative Drafter,case management systems,category_default,synthetic,true
-CAREER-105,Legislative Drafter,court e-filing systems,category_default,synthetic,true
-CAREER-105,Legislative Drafter,statutes and regulations,category_default,synthetic,true
-CAREER-106,Elections and Governance Officer,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-106,Elections and Governance Officer,document drafting templates,category_default,synthetic,true
-CAREER-106,Elections and Governance Officer,case management systems,category_default,synthetic,true
-CAREER-106,Elections and Governance Officer,court e-filing systems,category_default,synthetic,true
-CAREER-106,Elections and Governance Officer,statutes and regulations,category_default,synthetic,true
+CAREER-073,Marketing Executive,Excel,authored,synthetic,true
+CAREER-073,Marketing Executive,Canva or Adobe tools,authored,synthetic,true
+CAREER-073,Marketing Executive,social media platforms,authored,synthetic,true
+CAREER-073,Marketing Executive,email marketing tools such as Mailchimp,authored,synthetic,true
+CAREER-073,Marketing Executive,Google Analytics,authored,synthetic,true
+CAREER-073,Marketing Executive,CRM systems,authored,synthetic,true
+CAREER-074,Digital Marketing Specialist,Google Ads,authored,synthetic,true
+CAREER-074,Digital Marketing Specialist,Meta Ads Manager,authored,synthetic,true
+CAREER-074,Digital Marketing Specialist,Google Analytics,authored,synthetic,true
+CAREER-074,Digital Marketing Specialist,SEO tools such as Semrush,authored,synthetic,true
+CAREER-074,Digital Marketing Specialist,email platforms such as Mailchimp,authored,synthetic,true
+CAREER-074,Digital Marketing Specialist,Canva,authored,synthetic,true
+CAREER-075,Brand Manager,retail audit data such as Nielsen,authored,synthetic,true
+CAREER-075,Brand Manager,Excel,authored,synthetic,true
+CAREER-075,Brand Manager,PowerPoint,authored,synthetic,true
+CAREER-075,Brand Manager,brand guidelines,authored,synthetic,true
+CAREER-075,Brand Manager,consumer research reports,authored,synthetic,true
+CAREER-075,Brand Manager,media planning reports,authored,synthetic,true
+CAREER-076,Sales Executive,CRM systems such as Salesforce or HubSpot,authored,synthetic,true
+CAREER-076,Sales Executive,Excel,authored,synthetic,true
+CAREER-076,Sales Executive,quotation templates,authored,synthetic,true
+CAREER-076,Sales Executive,route planning apps,authored,synthetic,true
+CAREER-076,Sales Executive,WhatsApp Business,authored,synthetic,true
+CAREER-076,Sales Executive,presentation tools,authored,synthetic,true
+CAREER-077,Business Development Officer,CRM systems,authored,synthetic,true
+CAREER-077,Business Development Officer,Excel,authored,synthetic,true
+CAREER-077,Business Development Officer,PowerPoint,authored,synthetic,true
+CAREER-077,Business Development Officer,LinkedIn,authored,synthetic,true
+CAREER-077,Business Development Officer,tender portals,authored,synthetic,true
+CAREER-077,Business Development Officer,proposal templates,authored,synthetic,true
+CAREER-078,Entrepreneur and Startup Founder,business model canvas,authored,synthetic,true
+CAREER-078,Entrepreneur and Startup Founder,Excel cash-flow models,authored,synthetic,true
+CAREER-078,Entrepreneur and Startup Founder,pitch decks,authored,synthetic,true
+CAREER-078,Entrepreneur and Startup Founder,mobile money and payment tools,authored,synthetic,true
+CAREER-078,Entrepreneur and Startup Founder,accounting software,authored,synthetic,true
+CAREER-078,Entrepreneur and Startup Founder,business registration portals such as eCitizen,authored,synthetic,true
+CAREER-079,Business Analyst,Excel,authored,synthetic,true
+CAREER-079,Business Analyst,SQL,authored,synthetic,true
+CAREER-079,Business Analyst,process mapping tools such as Visio,authored,synthetic,true
+CAREER-079,Business Analyst,Jira and Confluence,authored,synthetic,true
+CAREER-079,Business Analyst,Power BI,authored,synthetic,true
+CAREER-079,Business Analyst,PowerPoint,authored,synthetic,true
+CAREER-080,Human Resource Officer,HR information systems,authored,synthetic,true
+CAREER-080,Human Resource Officer,payroll software,authored,synthetic,true
+CAREER-080,Human Resource Officer,Excel,authored,synthetic,true
+CAREER-080,Human Resource Officer,applicant tracking systems,authored,synthetic,true
+CAREER-080,Human Resource Officer,employment law references,authored,synthetic,true
+CAREER-080,Human Resource Officer,performance appraisal tools,authored,synthetic,true
+CAREER-081,Talent Acquisition Specialist,applicant tracking systems,authored,synthetic,true
+CAREER-081,Talent Acquisition Specialist,LinkedIn Recruiter,authored,synthetic,true
+CAREER-081,Talent Acquisition Specialist,job boards,authored,synthetic,true
+CAREER-081,Talent Acquisition Specialist,interview scorecards,authored,synthetic,true
+CAREER-081,Talent Acquisition Specialist,Excel,authored,synthetic,true
+CAREER-081,Talent Acquisition Specialist,assessment platforms,authored,synthetic,true
+CAREER-082,Customer Experience Manager,CRM and ticketing systems such as Zendesk,authored,synthetic,true
+CAREER-082,Customer Experience Manager,survey tools,authored,synthetic,true
+CAREER-082,Customer Experience Manager,NPS and CSAT dashboards,authored,synthetic,true
+CAREER-082,Customer Experience Manager,Excel,authored,synthetic,true
+CAREER-082,Customer Experience Manager,call centre software,authored,synthetic,true
+CAREER-082,Customer Experience Manager,journey mapping templates,authored,synthetic,true
+CAREER-083,Management Consultant,PowerPoint,authored,synthetic,true
+CAREER-083,Management Consultant,Excel,authored,synthetic,true
+CAREER-083,Management Consultant,analysis frameworks,authored,synthetic,true
+CAREER-083,Management Consultant,survey and interview guides,authored,synthetic,true
+CAREER-083,Management Consultant,Power BI,authored,synthetic,true
+CAREER-083,Management Consultant,project plans,authored,synthetic,true
+CAREER-084,Market Research Analyst,SPSS,authored,synthetic,true
+CAREER-084,Market Research Analyst,Excel,authored,synthetic,true
+CAREER-084,Market Research Analyst,survey platforms such as SurveyCTO or Qualtrics,authored,synthetic,true
+CAREER-084,Market Research Analyst,PowerPoint,authored,synthetic,true
+CAREER-084,Market Research Analyst,Power BI,authored,synthetic,true
+CAREER-084,Market Research Analyst,sampling methods,authored,synthetic,true
+CAREER-085,Project Manager,MS Project,authored,synthetic,true
+CAREER-085,Project Manager,Jira or Trello,authored,synthetic,true
+CAREER-085,Project Manager,Excel,authored,synthetic,true
+CAREER-085,Project Manager,Gantt charts,authored,synthetic,true
+CAREER-085,Project Manager,risk registers,authored,synthetic,true
+CAREER-085,Project Manager,project reports,authored,synthetic,true
+CAREER-086,E-commerce Manager,Shopify or WooCommerce,authored,synthetic,true
+CAREER-086,E-commerce Manager,marketplace seller portals such as Jumia,authored,synthetic,true
+CAREER-086,E-commerce Manager,Google Analytics,authored,synthetic,true
+CAREER-086,E-commerce Manager,payment gateways,authored,synthetic,true
+CAREER-086,E-commerce Manager,Excel,authored,synthetic,true
+CAREER-086,E-commerce Manager,inventory systems,authored,synthetic,true
+CAREER-087,Public Relations Officer,media monitoring tools,authored,synthetic,true
+CAREER-087,Public Relations Officer,press lists,authored,synthetic,true
+CAREER-087,Public Relations Officer,social media platforms,authored,synthetic,true
+CAREER-087,Public Relations Officer,Canva,authored,synthetic,true
+CAREER-087,Public Relations Officer,newsletter tools,authored,synthetic,true
+CAREER-087,Public Relations Officer,Word and PowerPoint,authored,synthetic,true
+CAREER-088,Retail Manager,point-of-sale systems,authored,synthetic,true
+CAREER-088,Retail Manager,inventory management systems,authored,synthetic,true
+CAREER-088,Retail Manager,Excel,authored,synthetic,true
+CAREER-088,Retail Manager,planograms,authored,synthetic,true
+CAREER-088,Retail Manager,staff rota tools,authored,synthetic,true
+CAREER-088,Retail Manager,mobile money and card terminals,authored,synthetic,true
+CAREER-089,Corporate Strategy Analyst,Excel,authored,synthetic,true
+CAREER-089,Corporate Strategy Analyst,PowerPoint,authored,synthetic,true
+CAREER-089,Corporate Strategy Analyst,Power BI,authored,synthetic,true
+CAREER-089,Corporate Strategy Analyst,strategy frameworks,authored,synthetic,true
+CAREER-089,Corporate Strategy Analyst,market databases,authored,synthetic,true
+CAREER-089,Corporate Strategy Analyst,balanced scorecards,authored,synthetic,true
+CAREER-090,Social Enterprise Manager,Excel,authored,synthetic,true
+CAREER-090,Social Enterprise Manager,impact measurement frameworks,authored,synthetic,true
+CAREER-090,Social Enterprise Manager,CRM and donor tools,authored,synthetic,true
+CAREER-090,Social Enterprise Manager,accounting software,authored,synthetic,true
+CAREER-090,Social Enterprise Manager,survey tools such as KoboToolbox,authored,synthetic,true
+CAREER-090,Social Enterprise Manager,mobile money platforms,authored,synthetic,true
+CAREER-091,Advocate,Kenya Law Reports and other law databases,authored,synthetic,true
+CAREER-091,Advocate,court e-filing systems,authored,synthetic,true
+CAREER-091,Advocate,Word,authored,synthetic,true
+CAREER-091,Advocate,case management software,authored,synthetic,true
+CAREER-091,Advocate,legal precedents,authored,synthetic,true
+CAREER-091,Advocate,billing software,authored,synthetic,true
+CAREER-092,Corporate Lawyer,Word with tracked changes,authored,synthetic,true
+CAREER-092,Corporate Lawyer,virtual data rooms,authored,synthetic,true
+CAREER-092,Corporate Lawyer,law databases,authored,synthetic,true
+CAREER-092,Corporate Lawyer,company registry portals,authored,synthetic,true
+CAREER-092,Corporate Lawyer,contract templates,authored,synthetic,true
+CAREER-092,Corporate Lawyer,document management systems,authored,synthetic,true
+CAREER-093,Legal Officer,Word,authored,synthetic,true
+CAREER-093,Legal Officer,contract management systems,authored,synthetic,true
+CAREER-093,Legal Officer,law databases,authored,synthetic,true
+CAREER-093,Legal Officer,Excel registers,authored,synthetic,true
+CAREER-093,Legal Officer,e-signature tools,authored,synthetic,true
+CAREER-093,Legal Officer,document management systems,authored,synthetic,true
+CAREER-094,Paralegal,court e-filing systems,authored,synthetic,true
+CAREER-094,Paralegal,Word,authored,synthetic,true
+CAREER-094,Paralegal,case management software,authored,synthetic,true
+CAREER-094,Paralegal,law databases,authored,synthetic,true
+CAREER-094,Paralegal,registry portals such as eCitizen,authored,synthetic,true
+CAREER-094,Paralegal,scanners and filing systems,authored,synthetic,true
+CAREER-095,Judicial Officer,case tracking systems,authored,synthetic,true
+CAREER-095,Judicial Officer,law reports and statutes,authored,synthetic,true
+CAREER-095,Judicial Officer,court recording systems,authored,synthetic,true
+CAREER-095,Judicial Officer,virtual court platforms,authored,synthetic,true
+CAREER-095,Judicial Officer,sentencing guidelines,authored,synthetic,true
+CAREER-095,Judicial Officer,bench books,authored,synthetic,true
+CAREER-096,State Counsel,law databases,authored,synthetic,true
+CAREER-096,State Counsel,court e-filing systems,authored,synthetic,true
+CAREER-096,State Counsel,Word,authored,synthetic,true
+CAREER-096,State Counsel,government legal opinions and circulars,authored,synthetic,true
+CAREER-096,State Counsel,statutes and the Constitution,authored,synthetic,true
+CAREER-096,State Counsel,case registers,authored,synthetic,true
+CAREER-097,Compliance and Regulatory Officer,regulatory guidelines,authored,synthetic,true
+CAREER-097,Compliance and Regulatory Officer,compliance registers,authored,synthetic,true
+CAREER-097,Compliance and Regulatory Officer,regulator reporting portals,authored,synthetic,true
+CAREER-097,Compliance and Regulatory Officer,Excel,authored,synthetic,true
+CAREER-097,Compliance and Regulatory Officer,inspection checklists,authored,synthetic,true
+CAREER-097,Compliance and Regulatory Officer,policy management systems,authored,synthetic,true
+CAREER-098,Human Rights Officer,documentation and case databases,authored,synthetic,true
+CAREER-098,Human Rights Officer,interview guides,authored,synthetic,true
+CAREER-098,Human Rights Officer,human rights treaties and the Constitution,authored,synthetic,true
+CAREER-098,Human Rights Officer,report templates,authored,synthetic,true
+CAREER-098,Human Rights Officer,secure communication tools,authored,synthetic,true
+CAREER-098,Human Rights Officer,survey tools,authored,synthetic,true
+CAREER-099,Legal Researcher,Kenya Law Reports,authored,synthetic,true
+CAREER-099,Legal Researcher,LexisNexis or Westlaw,authored,synthetic,true
+CAREER-099,Legal Researcher,Word,authored,synthetic,true
+CAREER-099,Legal Researcher,citation guides,authored,synthetic,true
+CAREER-099,Legal Researcher,parliamentary records,authored,synthetic,true
+CAREER-099,Legal Researcher,reference managers,authored,synthetic,true
+CAREER-100,Contracts Manager,contract management systems,authored,synthetic,true
+CAREER-100,Contracts Manager,Word,authored,synthetic,true
+CAREER-100,Contracts Manager,Excel registers,authored,synthetic,true
+CAREER-100,Contracts Manager,standard forms such as FIDIC,authored,synthetic,true
+CAREER-100,Contracts Manager,e-signature tools,authored,synthetic,true
+CAREER-100,Contracts Manager,procurement systems,authored,synthetic,true
+CAREER-101,Mediator and Arbitrator,arbitration rules and statutes,authored,synthetic,true
+CAREER-101,Mediator and Arbitrator,virtual hearing platforms,authored,synthetic,true
+CAREER-101,Mediator and Arbitrator,Word,authored,synthetic,true
+CAREER-101,Mediator and Arbitrator,case bundles,authored,synthetic,true
+CAREER-101,Mediator and Arbitrator,mediation frameworks,authored,synthetic,true
+CAREER-101,Mediator and Arbitrator,institutional rules such as those of arbitration centres,authored,synthetic,true
+CAREER-102,Intellectual Property Specialist,IP registry portals such as KIPI and ARIPO,authored,synthetic,true
+CAREER-102,Intellectual Property Specialist,WIPO databases,authored,synthetic,true
+CAREER-102,Intellectual Property Specialist,trademark search tools,authored,synthetic,true
+CAREER-102,Intellectual Property Specialist,Word,authored,synthetic,true
+CAREER-102,Intellectual Property Specialist,docketing systems,authored,synthetic,true
+CAREER-102,Intellectual Property Specialist,IP statutes,authored,synthetic,true
+CAREER-103,Conveyancing Officer,land registry portals such as Ardhisasa,authored,synthetic,true
+CAREER-103,Conveyancing Officer,stamp duty via iTax,authored,synthetic,true
+CAREER-103,Conveyancing Officer,Word,authored,synthetic,true
+CAREER-103,Conveyancing Officer,conveyancing precedents,authored,synthetic,true
+CAREER-103,Conveyancing Officer,land statutes,authored,synthetic,true
+CAREER-103,Conveyancing Officer,file tracking registers,authored,synthetic,true
+CAREER-104,Company Secretary,company registry portals such as eCitizen BRS,authored,synthetic,true
+CAREER-104,Company Secretary,board portal software,authored,synthetic,true
+CAREER-104,Company Secretary,Word,authored,synthetic,true
+CAREER-104,Company Secretary,statutory registers,authored,synthetic,true
+CAREER-104,Company Secretary,governance codes,authored,synthetic,true
+CAREER-104,Company Secretary,Excel,authored,synthetic,true
+CAREER-105,Legislative Drafter,legislative drafting manuals,authored,synthetic,true
+CAREER-105,Legislative Drafter,law databases,authored,synthetic,true
+CAREER-105,Legislative Drafter,Word,authored,synthetic,true
+CAREER-105,Legislative Drafter,statutes and the Constitution,authored,synthetic,true
+CAREER-105,Legislative Drafter,parliamentary records,authored,synthetic,true
+CAREER-105,Legislative Drafter,drafting templates,authored,synthetic,true
+CAREER-106,Elections and Governance Officer,voter registration systems,authored,synthetic,true
+CAREER-106,Elections and Governance Officer,results transmission systems,authored,synthetic,true
+CAREER-106,Elections and Governance Officer,Excel,authored,synthetic,true
+CAREER-106,Elections and Governance Officer,GIS mapping,authored,synthetic,true
+CAREER-106,Elections and Governance Officer,survey tools,authored,synthetic,true
+CAREER-106,Elections and Governance Officer,training manuals,authored,synthetic,true
 CAREER-107,Primary School Teacher,schemes of work and lesson plans,category_default,synthetic,true
 CAREER-107,Primary School Teacher,curriculum designs,category_default,synthetic,true
 CAREER-107,Primary School Teacher,learning management systems,category_default,synthetic,true
@@ -1734,121 +1768,144 @@ CAREER-322,Venture Capital Analyst,CRM tools such as Affinity,authored,synthetic
 CAREER-322,Venture Capital Analyst,cap table tools,authored,synthetic,true
 CAREER-322,Venture Capital Analyst,market databases such as Crunchbase,authored,synthetic,true
 CAREER-322,Venture Capital Analyst,PowerPoint,authored,synthetic,true
-CAREER-323,Real Estate Agent,spreadsheets and presentations,category_default,synthetic,true
-CAREER-323,Real Estate Agent,customer relationship management systems,category_default,synthetic,true
-CAREER-323,Real Estate Agent,analytics dashboards,category_default,synthetic,true
-CAREER-323,Real Estate Agent,collaboration tools,category_default,synthetic,true
-CAREER-323,Real Estate Agent,social media and email platforms,category_default,synthetic,true
-CAREER-324,Property Manager,spreadsheets and presentations,category_default,synthetic,true
-CAREER-324,Property Manager,customer relationship management systems,category_default,synthetic,true
-CAREER-324,Property Manager,analytics dashboards,category_default,synthetic,true
-CAREER-324,Property Manager,collaboration tools,category_default,synthetic,true
-CAREER-324,Property Manager,social media and email platforms,category_default,synthetic,true
-CAREER-325,Administrative Assistant,spreadsheets and presentations,category_default,synthetic,true
-CAREER-325,Administrative Assistant,customer relationship management systems,category_default,synthetic,true
-CAREER-325,Administrative Assistant,analytics dashboards,category_default,synthetic,true
-CAREER-325,Administrative Assistant,collaboration tools,category_default,synthetic,true
-CAREER-325,Administrative Assistant,social media and email platforms,category_default,synthetic,true
-CAREER-326,Executive Assistant,spreadsheets and presentations,category_default,synthetic,true
-CAREER-326,Executive Assistant,customer relationship management systems,category_default,synthetic,true
-CAREER-326,Executive Assistant,analytics dashboards,category_default,synthetic,true
-CAREER-326,Executive Assistant,collaboration tools,category_default,synthetic,true
-CAREER-326,Executive Assistant,social media and email platforms,category_default,synthetic,true
-CAREER-327,Customer Service Representative,spreadsheets and presentations,category_default,synthetic,true
-CAREER-327,Customer Service Representative,customer relationship management systems,category_default,synthetic,true
-CAREER-327,Customer Service Representative,analytics dashboards,category_default,synthetic,true
-CAREER-327,Customer Service Representative,collaboration tools,category_default,synthetic,true
-CAREER-327,Customer Service Representative,social media and email platforms,category_default,synthetic,true
-CAREER-328,Call Centre Team Leader,spreadsheets and presentations,category_default,synthetic,true
-CAREER-328,Call Centre Team Leader,customer relationship management systems,category_default,synthetic,true
-CAREER-328,Call Centre Team Leader,analytics dashboards,category_default,synthetic,true
-CAREER-328,Call Centre Team Leader,collaboration tools,category_default,synthetic,true
-CAREER-328,Call Centre Team Leader,social media and email platforms,category_default,synthetic,true
-CAREER-329,Innovation Manager,spreadsheets and presentations,category_default,synthetic,true
-CAREER-329,Innovation Manager,customer relationship management systems,category_default,synthetic,true
-CAREER-329,Innovation Manager,analytics dashboards,category_default,synthetic,true
-CAREER-329,Innovation Manager,collaboration tools,category_default,synthetic,true
-CAREER-329,Innovation Manager,social media and email platforms,category_default,synthetic,true
-CAREER-330,Product Owner,spreadsheets and presentations,category_default,synthetic,true
-CAREER-330,Product Owner,customer relationship management systems,category_default,synthetic,true
-CAREER-330,Product Owner,analytics dashboards,category_default,synthetic,true
-CAREER-330,Product Owner,collaboration tools,category_default,synthetic,true
-CAREER-330,Product Owner,social media and email platforms,category_default,synthetic,true
-CAREER-331,Growth Marketer,spreadsheets and presentations,category_default,synthetic,true
-CAREER-331,Growth Marketer,customer relationship management systems,category_default,synthetic,true
-CAREER-331,Growth Marketer,analytics dashboards,category_default,synthetic,true
-CAREER-331,Growth Marketer,collaboration tools,category_default,synthetic,true
-CAREER-331,Growth Marketer,social media and email platforms,category_default,synthetic,true
-CAREER-332,Export Trade Officer,spreadsheets and presentations,category_default,synthetic,true
-CAREER-332,Export Trade Officer,customer relationship management systems,category_default,synthetic,true
-CAREER-332,Export Trade Officer,analytics dashboards,category_default,synthetic,true
-CAREER-332,Export Trade Officer,collaboration tools,category_default,synthetic,true
-CAREER-332,Export Trade Officer,social media and email platforms,category_default,synthetic,true
-CAREER-333,Office Manager,spreadsheets and presentations,category_default,synthetic,true
-CAREER-333,Office Manager,customer relationship management systems,category_default,synthetic,true
-CAREER-333,Office Manager,analytics dashboards,category_default,synthetic,true
-CAREER-333,Office Manager,collaboration tools,category_default,synthetic,true
-CAREER-333,Office Manager,social media and email platforms,category_default,synthetic,true
-CAREER-334,Franchise and Distribution Manager,spreadsheets and presentations,category_default,synthetic,true
-CAREER-334,Franchise and Distribution Manager,customer relationship management systems,category_default,synthetic,true
-CAREER-334,Franchise and Distribution Manager,analytics dashboards,category_default,synthetic,true
-CAREER-334,Franchise and Distribution Manager,collaboration tools,category_default,synthetic,true
-CAREER-334,Franchise and Distribution Manager,social media and email platforms,category_default,synthetic,true
-CAREER-335,Prosecutor,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-335,Prosecutor,document drafting templates,category_default,synthetic,true
-CAREER-335,Prosecutor,case management systems,category_default,synthetic,true
-CAREER-335,Prosecutor,court e-filing systems,category_default,synthetic,true
-CAREER-335,Prosecutor,statutes and regulations,category_default,synthetic,true
-CAREER-336,Environmental Lawyer,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-336,Environmental Lawyer,document drafting templates,category_default,synthetic,true
-CAREER-336,Environmental Lawyer,case management systems,category_default,synthetic,true
-CAREER-336,Environmental Lawyer,court e-filing systems,category_default,synthetic,true
-CAREER-336,Environmental Lawyer,statutes and regulations,category_default,synthetic,true
-CAREER-337,Family Lawyer,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-337,Family Lawyer,document drafting templates,category_default,synthetic,true
-CAREER-337,Family Lawyer,case management systems,category_default,synthetic,true
-CAREER-337,Family Lawyer,court e-filing systems,category_default,synthetic,true
-CAREER-337,Family Lawyer,statutes and regulations,category_default,synthetic,true
-CAREER-338,Tax Lawyer,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-338,Tax Lawyer,document drafting templates,category_default,synthetic,true
-CAREER-338,Tax Lawyer,case management systems,category_default,synthetic,true
-CAREER-338,Tax Lawyer,court e-filing systems,category_default,synthetic,true
-CAREER-338,Tax Lawyer,statutes and regulations,category_default,synthetic,true
-CAREER-339,Court Clerk,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-339,Court Clerk,document drafting templates,category_default,synthetic,true
-CAREER-339,Court Clerk,case management systems,category_default,synthetic,true
-CAREER-339,Court Clerk,court e-filing systems,category_default,synthetic,true
-CAREER-339,Court Clerk,statutes and regulations,category_default,synthetic,true
-CAREER-340,Legal Aid Officer,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-340,Legal Aid Officer,document drafting templates,category_default,synthetic,true
-CAREER-340,Legal Aid Officer,case management systems,category_default,synthetic,true
-CAREER-340,Legal Aid Officer,court e-filing systems,category_default,synthetic,true
-CAREER-340,Legal Aid Officer,statutes and regulations,category_default,synthetic,true
-CAREER-341,Data Privacy Counsel,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-341,Data Privacy Counsel,document drafting templates,category_default,synthetic,true
-CAREER-341,Data Privacy Counsel,case management systems,category_default,synthetic,true
-CAREER-341,Data Privacy Counsel,court e-filing systems,category_default,synthetic,true
-CAREER-341,Data Privacy Counsel,statutes and regulations,category_default,synthetic,true
-CAREER-342,Ombudsman Officer,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-342,Ombudsman Officer,document drafting templates,category_default,synthetic,true
-CAREER-342,Ombudsman Officer,case management systems,category_default,synthetic,true
-CAREER-342,Ombudsman Officer,court e-filing systems,category_default,synthetic,true
-CAREER-342,Ombudsman Officer,statutes and regulations,category_default,synthetic,true
-CAREER-343,Anti-Corruption Investigator,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-343,Anti-Corruption Investigator,document drafting templates,category_default,synthetic,true
-CAREER-343,Anti-Corruption Investigator,case management systems,category_default,synthetic,true
-CAREER-343,Anti-Corruption Investigator,court e-filing systems,category_default,synthetic,true
-CAREER-343,Anti-Corruption Investigator,statutes and regulations,category_default,synthetic,true
-CAREER-344,Land Registrar,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-344,Land Registrar,document drafting templates,category_default,synthetic,true
-CAREER-344,Land Registrar,case management systems,category_default,synthetic,true
-CAREER-344,Land Registrar,court e-filing systems,category_default,synthetic,true
-CAREER-344,Land Registrar,statutes and regulations,category_default,synthetic,true
-CAREER-345,Legal Technologist,legal research databases such as Kenya Law,category_default,synthetic,true
-CAREER-345,Legal Technologist,document drafting templates,category_default,synthetic,true
-CAREER-345,Legal Technologist,case management systems,category_default,synthetic,true
-CAREER-345,Legal Technologist,court e-filing systems,category_default,synthetic,true
-CAREER-345,Legal Technologist,statutes and regulations,category_default,synthetic,true
+CAREER-323,Real Estate Agent,property listing portals,authored,synthetic,true
+CAREER-323,Real Estate Agent,CRM systems,authored,synthetic,true
+CAREER-323,Real Estate Agent,social media,authored,synthetic,true
+CAREER-323,Real Estate Agent,smartphone photography,authored,synthetic,true
+CAREER-323,Real Estate Agent,tenancy and sale agreement templates,authored,synthetic,true
+CAREER-323,Real Estate Agent,Excel,authored,synthetic,true
+CAREER-324,Property Manager,property management software,authored,synthetic,true
+CAREER-324,Property Manager,Excel,authored,synthetic,true
+CAREER-324,Property Manager,mobile money and bank portals,authored,synthetic,true
+CAREER-324,Property Manager,lease templates,authored,synthetic,true
+CAREER-324,Property Manager,maintenance logs,authored,synthetic,true
+CAREER-324,Property Manager,accounting software,authored,synthetic,true
+CAREER-325,Administrative Assistant,Microsoft Word and Excel,authored,synthetic,true
+CAREER-325,Administrative Assistant,email and calendar tools,authored,synthetic,true
+CAREER-325,Administrative Assistant,filing systems,authored,synthetic,true
+CAREER-325,Administrative Assistant,printers and scanners,authored,synthetic,true
+CAREER-325,Administrative Assistant,video meeting tools,authored,synthetic,true
+CAREER-325,Administrative Assistant,petty cash records,authored,synthetic,true
+CAREER-326,Executive Assistant,Outlook or Google Workspace,authored,synthetic,true
+CAREER-326,Executive Assistant,PowerPoint,authored,synthetic,true
+CAREER-326,Executive Assistant,Excel,authored,synthetic,true
+CAREER-326,Executive Assistant,travel booking tools,authored,synthetic,true
+CAREER-326,Executive Assistant,video meeting tools,authored,synthetic,true
+CAREER-326,Executive Assistant,board portal software,authored,synthetic,true
+CAREER-327,Customer Service Representative,CRM and ticketing systems,authored,synthetic,true
+CAREER-327,Customer Service Representative,call centre software,authored,synthetic,true
+CAREER-327,Customer Service Representative,knowledge bases,authored,synthetic,true
+CAREER-327,Customer Service Representative,live chat tools,authored,synthetic,true
+CAREER-327,Customer Service Representative,WhatsApp Business,authored,synthetic,true
+CAREER-327,Customer Service Representative,Excel,authored,synthetic,true
+CAREER-328,Call Centre Team Leader,call centre software,authored,synthetic,true
+CAREER-328,Call Centre Team Leader,quality monitoring scorecards,authored,synthetic,true
+CAREER-328,Call Centre Team Leader,workforce management tools,authored,synthetic,true
+CAREER-328,Call Centre Team Leader,CRM systems,authored,synthetic,true
+CAREER-328,Call Centre Team Leader,Excel,authored,synthetic,true
+CAREER-328,Call Centre Team Leader,real-time dashboards,authored,synthetic,true
+CAREER-329,Innovation Manager,design thinking toolkits,authored,synthetic,true
+CAREER-329,Innovation Manager,Miro or similar whiteboards,authored,synthetic,true
+CAREER-329,Innovation Manager,business model canvas,authored,synthetic,true
+CAREER-329,Innovation Manager,Excel,authored,synthetic,true
+CAREER-329,Innovation Manager,prototyping tools such as Figma,authored,synthetic,true
+CAREER-329,Innovation Manager,PowerPoint,authored,synthetic,true
+CAREER-330,Product Owner,Jira,authored,synthetic,true
+CAREER-330,Product Owner,Confluence,authored,synthetic,true
+CAREER-330,Product Owner,Figma,authored,synthetic,true
+CAREER-330,Product Owner,product analytics tools,authored,synthetic,true
+CAREER-330,Product Owner,roadmap tools,authored,synthetic,true
+CAREER-330,Product Owner,Miro,authored,synthetic,true
+CAREER-331,Growth Marketer,Google Analytics,authored,synthetic,true
+CAREER-331,Growth Marketer,A/B testing tools,authored,synthetic,true
+CAREER-331,Growth Marketer,Meta and Google Ads,authored,synthetic,true
+CAREER-331,Growth Marketer,SQL,authored,synthetic,true
+CAREER-331,Growth Marketer,product analytics tools such as Mixpanel,authored,synthetic,true
+CAREER-331,Growth Marketer,email automation tools,authored,synthetic,true
+CAREER-332,Export Trade Officer,customs systems such as iCMS,authored,synthetic,true
+CAREER-332,Export Trade Officer,Incoterms,authored,synthetic,true
+CAREER-332,Export Trade Officer,letters of credit,authored,synthetic,true
+CAREER-332,Export Trade Officer,Excel,authored,synthetic,true
+CAREER-332,Export Trade Officer,trade portals,authored,synthetic,true
+CAREER-332,Export Trade Officer,shipping documents,authored,synthetic,true
+CAREER-333,Office Manager,Excel,authored,synthetic,true
+CAREER-333,Office Manager,email and calendar tools,authored,synthetic,true
+CAREER-333,Office Manager,accounting or petty cash tools,authored,synthetic,true
+CAREER-333,Office Manager,asset registers,authored,synthetic,true
+CAREER-333,Office Manager,procurement forms,authored,synthetic,true
+CAREER-333,Office Manager,video meeting tools,authored,synthetic,true
+CAREER-334,Franchise and Distribution Manager,distributor management systems,authored,synthetic,true
+CAREER-334,Franchise and Distribution Manager,CRM systems,authored,synthetic,true
+CAREER-334,Franchise and Distribution Manager,Excel,authored,synthetic,true
+CAREER-334,Franchise and Distribution Manager,sales dashboards,authored,synthetic,true
+CAREER-334,Franchise and Distribution Manager,franchise agreements,authored,synthetic,true
+CAREER-334,Franchise and Distribution Manager,route planning tools,authored,synthetic,true
+CAREER-335,Prosecutor,case management systems,authored,synthetic,true
+CAREER-335,Prosecutor,law reports and statutes,authored,synthetic,true
+CAREER-335,Prosecutor,charging guidelines,authored,synthetic,true
+CAREER-335,Prosecutor,court e-filing systems,authored,synthetic,true
+CAREER-335,Prosecutor,Word,authored,synthetic,true
+CAREER-335,Prosecutor,evidence registers,authored,synthetic,true
+CAREER-336,Environmental Lawyer,environmental statutes and regulations,authored,synthetic,true
+CAREER-336,Environmental Lawyer,law databases,authored,synthetic,true
+CAREER-336,Environmental Lawyer,impact assessment reports,authored,synthetic,true
+CAREER-336,Environmental Lawyer,land registry portals,authored,synthetic,true
+CAREER-336,Environmental Lawyer,Word,authored,synthetic,true
+CAREER-336,Environmental Lawyer,court e-filing systems,authored,synthetic,true
+CAREER-337,Family Lawyer,law databases,authored,synthetic,true
+CAREER-337,Family Lawyer,court e-filing systems,authored,synthetic,true
+CAREER-337,Family Lawyer,Word,authored,synthetic,true
+CAREER-337,Family Lawyer,succession forms and precedents,authored,synthetic,true
+CAREER-337,Family Lawyer,case management software,authored,synthetic,true
+CAREER-337,Family Lawyer,mediation frameworks,authored,synthetic,true
+CAREER-338,Tax Lawyer,tax statutes and finance acts,authored,synthetic,true
+CAREER-338,Tax Lawyer,tax tribunal decisions,authored,synthetic,true
+CAREER-338,Tax Lawyer,law databases,authored,synthetic,true
+CAREER-338,Tax Lawyer,iTax,authored,synthetic,true
+CAREER-338,Tax Lawyer,Word,authored,synthetic,true
+CAREER-338,Tax Lawyer,Excel,authored,synthetic,true
+CAREER-339,Court Clerk,case tracking systems,authored,synthetic,true
+CAREER-339,Court Clerk,court e-filing systems,authored,synthetic,true
+CAREER-339,Court Clerk,court recording equipment,authored,synthetic,true
+CAREER-339,Court Clerk,Word,authored,synthetic,true
+CAREER-339,Court Clerk,registry registers,authored,synthetic,true
+CAREER-339,Court Clerk,payment systems,authored,synthetic,true
+CAREER-340,Legal Aid Officer,case management databases,authored,synthetic,true
+CAREER-340,Legal Aid Officer,intake forms,authored,synthetic,true
+CAREER-340,Legal Aid Officer,self-help legal guides,authored,synthetic,true
+CAREER-340,Legal Aid Officer,law databases,authored,synthetic,true
+CAREER-340,Legal Aid Officer,Word,authored,synthetic,true
+CAREER-340,Legal Aid Officer,referral directories,authored,synthetic,true
+CAREER-341,Data Privacy Counsel,data protection statutes and regulations,authored,synthetic,true
+CAREER-341,Data Privacy Counsel,privacy management tools,authored,synthetic,true
+CAREER-341,Data Privacy Counsel,data inventories and records of processing,authored,synthetic,true
+CAREER-341,Data Privacy Counsel,Word,authored,synthetic,true
+CAREER-341,Data Privacy Counsel,impact assessment templates,authored,synthetic,true
+CAREER-341,Data Privacy Counsel,regulator portals,authored,synthetic,true
+CAREER-342,Ombudsman Officer,complaints management systems,authored,synthetic,true
+CAREER-342,Ombudsman Officer,investigation templates,authored,synthetic,true
+CAREER-342,Ombudsman Officer,statutes on administrative justice,authored,synthetic,true
+CAREER-342,Ombudsman Officer,Word,authored,synthetic,true
+CAREER-342,Ombudsman Officer,Excel,authored,synthetic,true
+CAREER-342,Ombudsman Officer,mediation frameworks,authored,synthetic,true
+CAREER-343,Anti-Corruption Investigator,case management systems,authored,synthetic,true
+CAREER-343,Anti-Corruption Investigator,financial analysis tools,authored,synthetic,true
+CAREER-343,Anti-Corruption Investigator,digital forensics tools,authored,synthetic,true
+CAREER-343,Anti-Corruption Investigator,Excel,authored,synthetic,true
+CAREER-343,Anti-Corruption Investigator,anti-corruption statutes,authored,synthetic,true
+CAREER-343,Anti-Corruption Investigator,evidence registers,authored,synthetic,true
+CAREER-344,Land Registrar,land information systems such as Ardhisasa,authored,synthetic,true
+CAREER-344,Land Registrar,land registers and maps,authored,synthetic,true
+CAREER-344,Land Registrar,land statutes,authored,synthetic,true
+CAREER-344,Land Registrar,Word,authored,synthetic,true
+CAREER-344,Land Registrar,scanners and records systems,authored,synthetic,true
+CAREER-344,Land Registrar,registry index maps,authored,synthetic,true
+CAREER-345,Legal Technologist,document automation tools,authored,synthetic,true
+CAREER-345,Legal Technologist,contract management systems,authored,synthetic,true
+CAREER-345,Legal Technologist,e-discovery platforms,authored,synthetic,true
+CAREER-345,Legal Technologist,Excel and SQL,authored,synthetic,true
+CAREER-345,Legal Technologist,no-code workflow tools,authored,synthetic,true
+CAREER-345,Legal Technologist,Python,authored,synthetic,true
 CAREER-346,Examinations Officer,schemes of work and lesson plans,category_default,synthetic,true
 CAREER-346,Examinations Officer,curriculum designs,category_default,synthetic,true
 CAREER-346,Examinations Officer,learning management systems,category_default,synthetic,true

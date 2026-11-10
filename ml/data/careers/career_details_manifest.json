@@ -1,28 +1,30 @@
 {
   "careers": 452,
-  "title_rows": 13564,
+  "title_rows": 14234,
   "titles_per_career_min": 26,
   "titles_per_career_max": 39,
   "titles_by_type": {
-    "alternative": 708,
-    "specialism": 708,
-    "entry": 3132,
-    "progression": 1807,
-    "leadership": 2703,
-    "beyond": 2710,
-    "lateral": 1796
+    "alternative": 1050,
+    "specialism": 1050,
+    "entry": 3126,
+    "progression": 1806,
+    "leadership": 2702,
+    "beyond": 2709,
+    "lateral": 1791
   },
-  "task_rows": 2830,
-  "tool_rows": 2385,
+  "task_rows": 2887,
+  "tool_rows": 2442,
   "related_rows": 4518,
   "careers_with_no_related_roles": 0,
   "work_setting_rows": 4972,
-  "roles_with_authored_detail": 118,
-  "roles_using_category_defaults": 334,
+  "roles_with_authored_detail": 175,
+  "roles_using_category_defaults": 277,
   "authored_roles_by_category": {
     "Technology and Data": 30,
     "Engineering and Built Environment": 29,
     "Health and Medicine": 30,
-    "Banking and Finance": 29
+    "Banking and Finance": 29,
+    "Business and Entrepreneurship": 30,
+    "Law and Governance": 27
   }
 }
