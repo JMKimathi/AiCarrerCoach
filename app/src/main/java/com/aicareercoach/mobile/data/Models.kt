@@ -129,6 +129,50 @@ data class CareerDetail(
     val informationNote: String
 )
 
+data class CvProject(val title: String, val description: String)
+
+data class CvExperience(
+    val title: String,
+    val organisation: String,
+    val period: String,
+    val highlights: List<String>
+)
+
+data class CvRequest(
+    val phone: String = "",
+    val location: String = "",
+    val institution: String = "",
+    val graduationYear: String = "",
+    val targetOpportunity: String = "",
+    val skills: List<String> = emptyList(),
+    val projects: List<CvProject> = emptyList(),
+    val experience: List<CvExperience> = emptyList(),
+    val certifications: List<String> = emptyList(),
+    val activities: List<String> = emptyList()
+)
+
+data class CvResult(
+    val roleTitle: String,
+    val markdown: String,
+    val matchedSkills: List<String>,
+    val skillsToBuild: List<String>,
+    val tips: List<String>,
+    val note: String
+)
+
+data class InterviewTurn(val speaker: String, val kind: String, val text: String)
+
+data class InterviewState(
+    val interviewId: String,
+    val roleTitle: String,
+    val status: String,
+    val questionNumber: Int,
+    val totalQuestions: Int,
+    val interviewerMessage: String,
+    val transcript: List<InterviewTurn>,
+    val feedback: String
+)
+
 object SampleData {
     val resources = listOf(
         CareerResource(

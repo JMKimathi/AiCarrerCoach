@@ -14,6 +14,10 @@ import com.aicareercoach.mobile.data.CareerCategory
 import com.aicareercoach.mobile.data.CareerDetail
 import com.aicareercoach.mobile.data.CareerPage
 import com.aicareercoach.mobile.data.CareerSummary
+import com.aicareercoach.mobile.data.CvRequest
+import com.aicareercoach.mobile.data.CvResult
+import com.aicareercoach.mobile.data.InterviewState
+import com.aicareercoach.mobile.data.InterviewTurn
 import com.aicareercoach.mobile.data.OfficialSource
 import com.aicareercoach.mobile.data.OpportunityTemplate
 import com.aicareercoach.mobile.data.PathwayStage
@@ -459,6 +463,116 @@ object ApiClient {
             )
         }.getOrNull()
     }
+
+    // ---- CV builder and mock interviews ----
+
+    private suspend fun postJsonText(
+        path: String, token: String, body: JSONObject, readTimeoutMs: Int = 15000
+    ): String? = withContext(Dispatchers.IO) {
+        try {
+            val conn = (endpointUrl(path).openConnection() as HttpURLConnection).apply {
+                requestMethod = "POST"
+                connectTimeout = 8000
+                readTimeout = readTimeoutMs
+                doOutput = true
+                setRequestProperty("Content-Type", "application/json")
+                setRequestProperty("Accept", "application/json")
+                setRequestProperty("Authorization", "Bearer $token")
+            }
+            try {
+                OutputStreamWriter(conn.outputStream).use { it.write(body.toString()) }
+                if (conn.responseCode !in 200..299) null
+                else BufferedReader(InputStreamReader(conn.inputStream)).use { it.readText() }
+            } finally {
+                conn.disconnect()
+            }
+        } catch (_: Exception) {
+            null
+        }
+    }
+
+    /** Returns the text for a key, or an empty string when it is missing or JSON null. */
+    private fun jsonText(json: JSONObject, key: String): String =
+        if (json.isNull(key)) "" else json.optString(key)
+
+    suspend fun buildCv(token: String, careerId: String, request: CvRequest): CvResult? {
+        val projects = JSONArray()
+        request.projects.take(8).forEach { project ->
+            projects.put(
+                JSONObject()
+                    .put("title", project.title.take(120))
+                    .put("description", project.description.take(600))
+            )
+        }
+        val experience = JSONArray()
+        request.experience.take(8).forEach { entry ->
+            experience.put(
+                JSONObject()
+                    .put("title", entry.title.take(120))
+                    .put("organisation", entry.organisation.take(120))
+                    .put("period", entry.period.take(60))
+                    .put("highlights", JSONArray(entry.highlights.take(6)))
+            )
+        }
+        val body = JSONObject()
+            .put("phone", request.phone.trim().take(40))
+            .put("location", request.location.trim().take(120))
+            .put("institution", request.institution.trim().take(150))
+            .put("graduation_year", request.graduationYear.trim().take(10))
+            .put("skills", JSONArray(request.skills.take(30)))
+            .put("projects", projects)
+            .put("experience", experience)
+            .put("certifications", JSONArray(request.certifications.take(12)))
+            .put("activities", JSONArray(request.activities.take(12)))
+        if (request.targetOpportunity.isNotBlank()) body.put("target_opportunity", request.targetOpportunity)
+        val text = postJsonText("/careers/" + URLEncoder.encode(careerId, "UTF-8") + "/cv", token, body) ?: return null
+        return runCatching {
+            val json = JSONObject(text)
+            CvResult(
+                roleTitle = json.optString("role_title"),
+                markdown = json.getString("markdown"),
+                matchedSkills = jsonStrings(json, "matched_skills"),
+                skillsToBuild = jsonStrings(json, "skills_to_build"),
+                tips = jsonStrings(json, "cv_tips"),
+                note = jsonText(json, "note")
+            )
+        }.getOrNull()
+    }
+
+    private fun parseInterview(text: String): InterviewState? = runCatching {
+        val json = JSONObject(text)
+        val turns = json.optJSONArray("transcript") ?: JSONArray()
+        InterviewState(
+            interviewId = json.getString("interview_id"),
+            roleTitle = json.optString("role_title"),
+            status = json.optString("status"),
+            questionNumber = json.optInt("question_number"),
+            totalQuestions = json.optInt("total_questions"),
+            interviewerMessage = jsonText(json, "interviewer_message"),
+            transcript = (0 until turns.length()).map { index ->
+                val turn = turns.getJSONObject(index)
+                InterviewTurn(turn.optString("speaker"), turn.optString("kind"), turn.optString("text"))
+            },
+            feedback = jsonText(json, "feedback")
+        )
+    }.getOrNull()
+
+    suspend fun startInterview(
+        token: String, careerId: String, opportunityType: String, questionCount: Int
+    ): InterviewState? {
+        val body = JSONObject().put("career_id", careerId).put("question_count", questionCount)
+        if (opportunityType.isNotBlank()) body.put("opportunity_type", opportunityType)
+        return postJsonText("/interviews", token, body, readTimeoutMs = 20000)?.let(::parseInterview)
+    }
+
+    suspend fun answerInterview(token: String, interviewId: String, answer: String): InterviewState? {
+        val body = JSONObject().put("answer", answer.trim().take(4000))
+        // The interviewer's reply may wait on Gemini and its fallback model.
+        return postJsonText("/interviews/$interviewId/answer", token, body, readTimeoutMs = 90000)?.let(::parseInterview)
+    }
+
+    suspend fun finishInterview(token: String, interviewId: String): InterviewState? =
+        postJsonText("/interviews/$interviewId/finish", token, JSONObject(), readTimeoutMs = 90000)?.let(::parseInterview)
 
     suspend fun checkHealth(): Boolean = withContext(Dispatchers.IO) {
         candidateBaseUrls.any { checkHealthAt(it) }
