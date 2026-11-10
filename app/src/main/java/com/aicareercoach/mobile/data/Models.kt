@@ -162,7 +162,11 @@ data class CvRequest(
     val projects: List<CvProject> = emptyList(),
     val experience: List<CvExperience> = emptyList(),
     val certifications: List<String> = emptyList(),
-    val activities: List<String> = emptyList()
+    val activities: List<String> = emptyList(),
+    val summary: String = "",
+    val grade: String = "",
+    val links: List<String> = emptyList(),
+    val referees: List<String> = emptyList()
 )
 
 data class CvResult(
@@ -171,7 +175,8 @@ data class CvResult(
     val matchedSkills: List<String>,
     val skillsToBuild: List<String>,
     val tips: List<String>,
-    val note: String
+    val note: String,
+    val checklist: List<String> = emptyList()
 )
 
 data class InterviewTurn(val speaker: String, val kind: String, val text: String)

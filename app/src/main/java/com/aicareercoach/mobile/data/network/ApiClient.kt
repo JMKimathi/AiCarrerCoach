@@ -515,7 +515,7 @@ object ApiClient {
     private fun jsonText(json: JSONObject, key: String): String =
         if (json.isNull(key)) "" else json.optString(key)
 
-    suspend fun buildCv(token: String, careerId: String, request: CvRequest): CvResult? {
+    private fun cvBody(request: CvRequest): JSONObject {
         val projects = JSONArray()
         request.projects.take(8).forEach { project ->
             projects.put(
@@ -535,8 +535,12 @@ object ApiClient {
             )
         }
         val body = JSONObject()
+            .put("final", true)
+            .put("summary", request.summary.trim().take(800))
+            .put("grade", request.grade.trim().take(60))
             .put("phone", request.phone.trim().take(40))
             .put("location", request.location.trim().take(120))
+            .put("links", JSONArray(request.links.take(4)))
             .put("institution", request.institution.trim().take(150))
             .put("graduation_year", request.graduationYear.trim().take(10))
             .put("skills", JSONArray(request.skills.take(30)))
@@ -544,8 +548,16 @@ object ApiClient {
             .put("experience", experience)
             .put("certifications", JSONArray(request.certifications.take(12)))
             .put("activities", JSONArray(request.activities.take(12)))
+            .put("referees", JSONArray(request.referees.take(3)))
         if (request.targetOpportunity.isNotBlank()) body.put("target_opportunity", request.targetOpportunity)
-        val text = postJsonText("/careers/" + URLEncoder.encode(careerId, "UTF-8") + "/cv", token, body) ?: return null
+        return body
+    }
+
+    /** Builds the send-ready, ATS-friendly CV from the student's details. */
+    suspend fun buildCv(token: String, careerId: String, request: CvRequest): CvResult? {
+        val text = postJsonText(
+            "/careers/" + URLEncoder.encode(careerId, "UTF-8") + "/cv", token, cvBody(request)
+        ) ?: return null
         return runCatching {
             val json = JSONObject(text)
             CvResult(
@@ -554,10 +566,35 @@ object ApiClient {
                 matchedSkills = jsonStrings(json, "matched_skills"),
                 skillsToBuild = jsonStrings(json, "skills_to_build"),
                 tips = jsonStrings(json, "cv_tips"),
-                note = jsonText(json, "note")
+                note = jsonText(json, "note"),
+                checklist = jsonStrings(json, "checklist")
             )
         }.getOrNull()
     }
+
+    /** Fetches the same CV as a Word document. Returns null if the backend could not be reached. */
+    suspend fun downloadCvDocx(token: String, careerId: String, request: CvRequest): ByteArray? =
+        withContext(Dispatchers.IO) {
+            try {
+                val conn = (endpointUrl("/careers/" + URLEncoder.encode(careerId, "UTF-8") + "/cv/docx")
+                    .openConnection() as HttpURLConnection).apply {
+                    requestMethod = "POST"
+                    connectTimeout = 8000
+                    readTimeout = 20000
+                    doOutput = true
+                    setRequestProperty("Content-Type", "application/json")
+                    setRequestProperty("Authorization", "Bearer $token")
+                }
+                try {
+                    OutputStreamWriter(conn.outputStream).use { it.write(cvBody(request).toString()) }
+                    if (conn.responseCode !in 200..299) null else conn.inputStream.use { it.readBytes() }
+                } finally {
+                    conn.disconnect()
+                }
+            } catch (_: Exception) {
+                null
+            }
+        }
 
     private fun parseInterview(text: String): InterviewState? = runCatching {
         val json = JSONObject(text)
