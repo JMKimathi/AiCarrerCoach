@@ -1,9 +1,9 @@
 package com.aicareercoach.mobile.ui.screens.student
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -14,20 +14,25 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.aicareercoach.mobile.data.UserSession
 import com.aicareercoach.mobile.ui.components.AppTopBar
 import com.aicareercoach.mobile.ui.components.SectionCard
 import com.aicareercoach.mobile.ui.theme.AICareerCoachTheme
-import com.aicareercoach.mobile.ui.theme.BlueLight
+import com.aicareercoach.mobile.ui.theme.BluePrimary
+import com.aicareercoach.mobile.ui.theme.BluePrimaryDark
+import com.aicareercoach.mobile.ui.theme.BorderLight
+import com.aicareercoach.mobile.ui.theme.SuccessGreen
 import com.aicareercoach.mobile.ui.theme.SurfaceAlt
+import com.aicareercoach.mobile.ui.theme.TextMuted
 import com.aicareercoach.mobile.ui.theme.TextSecondary
+import com.aicareercoach.mobile.ui.theme.WarningAmber
 
-private data class QuickAction(val label: String, val icon: ImageVector, val onClick: () -> Unit)
+private val DashboardViolet = Color(0xFF7C3AED)
 
 @Composable
 fun StudentDashboardScreen(
@@ -35,16 +40,15 @@ fun StudentDashboardScreen(
     onOpenChat: () -> Unit = {},
     onOpenResources: () -> Unit = {},
     onOpenProfile: () -> Unit = {},
-    onReviewCv: () -> Unit = {},
-    onInterviewPrep: () -> Unit = {},
-    onExploreCareers: () -> Unit = onOpenResources
+    onExploreCareers: () -> Unit = {},
+    onBuildCv: () -> Unit = {},
+    onMockInterview: () -> Unit = {},
+    onOpenAssessment: () -> Unit = {}
 ) {
-    val quickActions = listOf(
-        QuickAction("Ask Career\nQuestion", Icons.Default.Chat, onOpenChat),
-        QuickAction("Review My\nCV", Icons.Default.Description, onReviewCv),
-        QuickAction("Interview\nPrep", Icons.Default.RecordVoiceOver, onInterviewPrep),
-        QuickAction("Explore\nCareers", Icons.Default.Explore, onExploreCareers),
-    )
+    val profileLine = listOf(session.course, session.careerGoal)
+        .filter { it.isNotBlank() }
+        .joinToString(" · ")
+        .ifBlank { "Add your course and career goal so advice fits you." }
 
     Column(
         modifier = Modifier
@@ -52,8 +56,8 @@ fun StudentDashboardScreen(
             .background(SurfaceAlt)
     ) {
         AppTopBar(
-            title = "Hi, ${session.firstName} 👋",
-            subtitle = session.course,
+            title = "Hi, ${session.firstName}",
+            subtitle = "Let's get you ready for what's next",
             onProfileClick = onOpenProfile
         )
 
@@ -62,96 +66,122 @@ fun StudentDashboardScreen(
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
                 .padding(horizontal = 20.dp),
+            verticalArrangement = Arrangement.spacedBy(14.dp)
         ) {
-            LazyRow(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                items(quickActions.size) { index ->
-                    QuickActionChip(quickActions[index])
-                }
-            }
-
-            Spacer(Modifier.height(20.dp))
-
-            Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                MiniStat("Course", session.course.ifBlank { "Not provided" }, Modifier.weight(1f))
-                MiniStat("Career goal", session.careerGoal.ifBlank { "Not provided" }, Modifier.weight(1f))
-            }
-
-            Spacer(Modifier.height(16.dp))
-
-            SectionCard(onClick = onOpenChat) {
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Icon(Icons.Default.AutoAwesome, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
-                    Spacer(Modifier.width(8.dp))
-                    Text("Ask the career coach", style = MaterialTheme.typography.titleMedium)
-                }
-                Spacer(Modifier.height(8.dp))
+            // The one main action: talk to the coach.
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clip(RoundedCornerShape(20.dp))
+                    .background(Brush.linearGradient(listOf(BluePrimary, BluePrimaryDark)))
+                    .clickable(onClick = onOpenChat)
+                    .padding(20.dp)
+            ) {
                 Text(
-                    "Get guidance based on your profile: ${session.course.ifBlank { "your course" }} and ${session.careerGoal.ifBlank { "your interests" }}.",
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = TextSecondary
+                    "What would you like to work on?",
+                    style = MaterialTheme.typography.titleLarge,
+                    color = Color.White
                 )
-                Spacer(Modifier.height(12.dp))
-                Text("Start a conversation →", color = MaterialTheme.colorScheme.primary, style = MaterialTheme.typography.labelLarge)
+                Spacer(Modifier.height(6.dp))
+                Text(
+                    "Ask about a career, your CV or an interview coming up.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = Color.White.copy(alpha = 0.85f)
+                )
+                Spacer(Modifier.height(16.dp))
+                Row(
+                    modifier = Modifier
+                        .clip(RoundedCornerShape(12.dp))
+                        .background(Color.White)
+                        .padding(horizontal = 16.dp, vertical = 10.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Icon(
+                        Icons.Default.Chat,
+                        contentDescription = null,
+                        tint = BluePrimary,
+                        modifier = Modifier.size(18.dp)
+                    )
+                    Spacer(Modifier.width(8.dp))
+                    Text("Ask the coach", style = MaterialTheme.typography.labelLarge, color = BluePrimary)
+                }
             }
 
-            Spacer(Modifier.height(16.dp))
+            Text("Get ready", style = MaterialTheme.typography.titleLarge)
 
-            Text("Recommended for you", style = MaterialTheme.typography.titleLarge)
-            Spacer(Modifier.height(10.dp))
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(IntrinsicSize.Min),
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                ActionTile(
+                    Icons.Default.Explore, BluePrimary, "Explore careers", "Roles, skills and routes in",
+                    onExploreCareers, Modifier.weight(1f).fillMaxHeight()
+                )
+                ActionTile(
+                    Icons.Default.Description, SuccessGreen, "Build my CV", "Shaped for the role you want",
+                    onBuildCv, Modifier.weight(1f).fillMaxHeight()
+                )
+            }
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(IntrinsicSize.Min),
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                ActionTile(
+                    Icons.Default.RecordVoiceOver, WarningAmber, "Practise interview", "Questions with feedback",
+                    onMockInterview, Modifier.weight(1f).fillMaxHeight()
+                )
+                ActionTile(
+                    Icons.Default.Insights, DashboardViolet, "Find my fit", "A short career assessment",
+                    onOpenAssessment, Modifier.weight(1f).fillMaxHeight()
+                )
+            }
 
+            SectionCard(onClick = onOpenProfile) {
+                DashboardRow(Icons.Default.Person, "Your profile", profileLine)
+            }
             SectionCard(onClick = onOpenResources) {
-                DashboardRow(Icons.Default.Description, "CV Templates", "Match your CV to internship language")
-            }
-            Spacer(Modifier.height(10.dp))
-            SectionCard(onClick = onExploreCareers) {
-                DashboardRow(Icons.Default.Explore, "Explore career paths", "Compare roles and the skills they require")
-            }
-            Spacer(Modifier.height(10.dp))
-            SectionCard(onClick = onInterviewPrep) {
-                DashboardRow(Icons.Default.School, "Interview preparation", "Use the interview resources to practise")
+                DashboardRow(Icons.Default.MenuBook, "Guides and templates", "CV, cover letter and interview guides")
             }
 
-            Spacer(Modifier.height(16.dp))
-            TextButton(onClick = onOpenResources, modifier = Modifier.fillMaxWidth()) {
-                Text("Browse all career resources")
-            }
-            Spacer(Modifier.height(20.dp))
+            Spacer(Modifier.height(8.dp))
         }
     }
 }
 
 @Composable
-private fun MiniStat(label: String, value: String, modifier: Modifier = Modifier) {
+private fun ActionTile(
+    icon: ImageVector,
+    accent: Color,
+    title: String,
+    caption: String,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
     Column(
         modifier = modifier
             .clip(RoundedCornerShape(16.dp))
-            .background(BlueLight)
-            .padding(14.dp)
-    ) {
-        Text(label, style = MaterialTheme.typography.bodySmall, color = TextSecondary)
-        Spacer(Modifier.height(4.dp))
-        Text(value, style = MaterialTheme.typography.titleMedium)
-    }
-}
-
-@Composable
-private fun QuickActionChip(action: QuickAction) {
-    Column(
-        modifier = Modifier
-            .width(88.dp)
-            .clip(RoundedCornerShape(16.dp))
             .background(Color.White)
-            .clickable(onClick = action.onClick)
-            .padding(vertical = 14.dp, horizontal = 8.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
+            .border(1.dp, BorderLight, RoundedCornerShape(16.dp))
+            .clickable(onClick = onClick)
+            .padding(16.dp)
     ) {
-        Icon(action.icon, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
-        Spacer(Modifier.height(8.dp))
-        Text(
-            action.label,
-            style = MaterialTheme.typography.labelMedium,
-            textAlign = TextAlign.Center
-        )
+        Box(
+            modifier = Modifier
+                .size(40.dp)
+                .clip(RoundedCornerShape(12.dp))
+                .background(accent.copy(alpha = 0.12f)),
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(icon, contentDescription = null, tint = accent)
+        }
+        Spacer(Modifier.height(12.dp))
+        Text(title, style = MaterialTheme.typography.titleMedium)
+        Spacer(Modifier.height(2.dp))
+        Text(caption, style = MaterialTheme.typography.bodySmall, color = TextSecondary)
     }
 }
 
@@ -160,10 +190,11 @@ private fun DashboardRow(icon: ImageVector, title: String, subtitle: String) {
     Row(verticalAlignment = Alignment.CenterVertically) {
         Icon(icon, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
         Spacer(Modifier.width(12.dp))
-        Column {
+        Column(modifier = Modifier.weight(1f)) {
             Text(title, style = MaterialTheme.typography.titleMedium)
             Text(subtitle, style = MaterialTheme.typography.bodySmall, color = TextSecondary)
         }
+        Icon(Icons.Default.ChevronRight, contentDescription = null, tint = TextMuted)
     }
 }
 
