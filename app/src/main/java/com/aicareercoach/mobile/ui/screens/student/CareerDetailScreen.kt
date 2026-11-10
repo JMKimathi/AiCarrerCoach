@@ -20,6 +20,19 @@ import com.aicareercoach.mobile.ui.components.SectionCard
 import com.aicareercoach.mobile.ui.components.Tag
 import com.aicareercoach.mobile.ui.theme.*
 
+// Order and headings for the groups of job titles connected to a career.
+private val titleGroups = listOf(
+    "alternative" to "Also known as",
+    "specialism" to "Specialisms",
+    "entry" to "Where people start",
+    "progression" to "Moving up",
+    "leadership" to "Leadership roles",
+    "beyond" to "Where it can also lead",
+    "lateral" to "Sideways moves"
+)
+
+private fun bulleted(items: List<String>): String = items.joinToString("\n") { "•  $it" }
+
 /** Everything the catalogue holds about one career: skills, study routes, pathway, opportunities and sources. */
 @Composable
 fun CareerDetailScreen(
@@ -28,7 +41,8 @@ fun CareerDetailScreen(
     onBack: () -> Unit = {},
     onAskCoach: (String) -> Unit = {},
     onBuildCv: (String) -> Unit = {},
-    onPractiseInterview: (String) -> Unit = {}
+    onPractiseInterview: (String) -> Unit = {},
+    onOpenCareer: (String) -> Unit = {}
 ) {
     var detail by remember { mutableStateOf<CareerDetail?>(null) }
     var loading by remember { mutableStateOf(true) }
@@ -72,6 +86,33 @@ fun CareerDetailScreen(
                     }
                     Spacer(Modifier.height(10.dp))
                     Text(current.description, style = MaterialTheme.typography.bodyMedium)
+                }
+
+                if (current.tasks.isNotEmpty() || current.tools.isNotEmpty()) {
+                    DetailSection("What the work involves") {
+                        LabeledText("Day to day", bulleted(current.tasks))
+                        LabeledText("Tools and technologies", current.tools.joinToString(", "))
+                    }
+                }
+
+                if (current.jobTitles.values.any { it.isNotEmpty() }) {
+                    DetailSection("Job titles and destinations") {
+                        titleGroups.forEach { (key, heading) ->
+                            LabeledText(heading, bulleted(current.jobTitles[key].orEmpty()))
+                        }
+                        Text(
+                            "Titles differ between employers. These are possibilities to explore, not a fixed route.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = TextSecondary
+                        )
+                    }
+                }
+
+                if (current.employers.isNotEmpty() || current.workingPatterns.isNotEmpty()) {
+                    DetailSection("Where you could work") {
+                        LabeledText("Kinds of employer", bulleted(current.employers))
+                        LabeledText("Working patterns", bulleted(current.workingPatterns))
+                    }
                 }
 
                 DetailSection("Skills") {
@@ -130,6 +171,31 @@ fun CareerDetailScreen(
                         LabeledText("Where advertised", opportunity.whereAdvertised)
                         LabeledText("Note", opportunity.notes)
                         Spacer(Modifier.height(12.dp))
+                    }
+                }
+
+                if (current.relatedCareers.isNotEmpty()) {
+                    DetailSection("Related careers") {
+                        current.relatedCareers.forEach { related ->
+                            Column(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .clickable { onOpenCareer(related.careerId) }
+                                    .padding(vertical = 6.dp)
+                            ) {
+                                Text(
+                                    related.roleTitle,
+                                    style = MaterialTheme.typography.titleSmall,
+                                    color = BluePrimary
+                                )
+                                Text(
+                                    if (related.commonGround.isBlank()) related.category
+                                    else "${related.category} · in common: ${related.commonGround.replace("; ", ", ")}",
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = TextSecondary
+                                )
+                            }
+                        }
                     }
                 }
 

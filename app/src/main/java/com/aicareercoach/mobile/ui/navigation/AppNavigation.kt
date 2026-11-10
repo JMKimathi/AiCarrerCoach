@@ -333,6 +333,7 @@ private fun StudentHome(
                         tabNav.navigateToTab(Routes.Chat)
                     },
                     onBuildCv = { id -> tabNav.navigate(Routes.cvBuilder(id)) },
+                    onOpenCareer = { id -> tabNav.navigate(Routes.careerDetail(id)) },
                     onPractiseInterview = { id -> tabNav.navigate(Routes.mockInterview(id)) }
                 )
             }

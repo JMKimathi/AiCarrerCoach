@@ -127,7 +127,20 @@ data class CareerDetail(
     val pathway: List<PathwayStage>,
     val opportunities: List<OpportunityTemplate>,
     val officialSources: List<OfficialSource>,
-    val informationNote: String
+    val informationNote: String,
+    val jobTitles: Map<String, List<String>> = emptyMap(),
+    val tasks: List<String> = emptyList(),
+    val tools: List<String> = emptyList(),
+    val relatedCareers: List<RelatedCareer> = emptyList(),
+    val employers: List<String> = emptyList(),
+    val workingPatterns: List<String> = emptyList()
+)
+
+data class RelatedCareer(
+    val careerId: String,
+    val roleTitle: String,
+    val category: String,
+    val commonGround: String
 )
 
 data class CvProject(val title: String, val description: String)

@@ -21,6 +21,7 @@ import com.aicareercoach.mobile.data.InterviewTurn
 import com.aicareercoach.mobile.data.OfficialSource
 import com.aicareercoach.mobile.data.OpportunityTemplate
 import com.aicareercoach.mobile.data.PathwayStage
+import com.aicareercoach.mobile.data.RelatedCareer
 import com.aicareercoach.mobile.data.CareerPathMatch
 import com.aicareercoach.mobile.data.StudentAccount
 import com.aicareercoach.mobile.data.UserSession
@@ -460,7 +461,25 @@ object ApiClient {
                         roleSpecific = item.optBoolean("role_specific")
                     )
                 },
-                informationNote = json.optString("information_note")
+                informationNote = json.optString("information_note"),
+                jobTitles = (json.optJSONObject("job_titles") ?: JSONObject()).let { titles ->
+                    titles.keys().asSequence().associateWith { key -> jsonStrings(titles, key) }
+                },
+                tasks = jsonStrings(json, "day_to_day_tasks"),
+                tools = jsonStrings(json, "tools"),
+                relatedCareers = (json.optJSONArray("related_careers") ?: JSONArray()).let { items ->
+                    (0 until items.length()).map { index ->
+                        val item = items.getJSONObject(index)
+                        RelatedCareer(
+                            careerId = item.optString("career_id"),
+                            roleTitle = item.optString("role_title"),
+                            category = item.optString("category"),
+                            commonGround = item.optString("common_ground")
+                        )
+                    }
+                },
+                employers = jsonStrings(json, "employers"),
+                workingPatterns = jsonStrings(json, "working_patterns")
             )
         }.getOrNull()
     }
