@@ -1,3 +1,4 @@
+
 """Password hashing and signed bearer tokens using Python's standard library."""
 
 import base64

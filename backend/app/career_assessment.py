@@ -1,42 +1,29 @@
-"""Explainable career-family matching based on a student's stated evidence.
+"""Explainable matching against the single synthetic pathway library."""
 
-Scores are relative alignment scores, not probabilities or predictions of success.
-Keep this catalogue versioned whenever prompts or scoring rules change.
-"""
-
-from dataclasses import dataclass
+import json
 import re
+from pathlib import Path
 from typing import Iterable
 
 
-ASSESSMENT_VERSION = "career-paths-v1"
+ROOT_DIR = Path(__file__).resolve().parents[2]
+DATASET_PATH = ROOT_DIR / "ml" / "data" / "synthetic" / "career_feedback_dataset.jsonl"
+ASSESSMENT_VERSION = "synthetic-pathways-v1"
 
 
-@dataclass(frozen=True)
-class CareerPath:
-    role: str
-    skills: tuple[str, ...]
-    interests: tuple[str, ...]
-    activities: tuple[str, ...]
-    next_steps: tuple[str, ...]
+def load_pathways() -> list[dict]:
+    if not DATASET_PATH.is_file():
+        raise RuntimeError(f"Synthetic career dataset is missing: {DATASET_PATH}")
+    return [json.loads(line) for line in DATASET_PATH.read_text(encoding="utf-8").splitlines() if line.strip()]
 
 
-CAREER_PATHS = (
-    CareerPath("Software Developer", ("programming", "python", "java", "kotlin", "javascript", "software", "web development", "mobile apps", "algorithms", "git"), ("building software", "problem solving", "apps", "websites", "technology"), ("coding", "building applications", "debugging", "solving technical problems"), ("Build a small application for a real user.", "Practise programming fundamentals and version control.")),
-    CareerPath("Data Analyst / BI Specialist", ("sql", "spreadsheets", "excel", "statistics", "data visualization", "power bi", "tableau", "python", "reporting"), ("data", "business", "patterns", "decision making", "research"), ("analysing data", "creating dashboards", "explaining findings", "answering business questions"), ("Analyse a public dataset and explain three findings.", "Practise SQL queries and build a clear dashboard.")),
-    CareerPath("Data Scientist / ML Engineer", ("python", "statistics", "machine learning", "pytorch", "tensorflow", "pandas", "experimentation", "data visualization"), ("artificial intelligence", "machine learning", "research", "mathematics", "data"), ("training models", "running experiments", "analysing data", "testing hypotheses"), ("Build a small, well-evaluated machine-learning project.", "Strengthen statistics, Python, and model evaluation.")),
-    CareerPath("Data Engineer", ("sql", "python", "databases", "data pipelines", "etl", "cloud", "spark", "data modeling"), ("data", "systems", "reliability", "automation", "infrastructure"), ("organising data", "building pipelines", "automating workflows", "maintaining databases"), ("Create a pipeline that collects, cleans, and stores data.", "Practise SQL, data modelling, and pipeline monitoring.")),
-    CareerPath("Cybersecurity Analyst", ("networking", "linux", "security", "incident response", "python", "risk analysis", "cloud", "ethical hacking"), ("security", "investigation", "privacy", "risk", "technology"), ("investigating incidents", "finding vulnerabilities", "monitoring systems", "protecting information"), ("Set up a safe cybersecurity practice lab.", "Study networking, Linux, and security fundamentals.")),
-    CareerPath("DevOps / Cloud Engineer", ("linux", "cloud", "docker", "kubernetes", "automation", "networking", "ci/cd", "terraform", "scripting"), ("systems", "automation", "cloud", "reliability", "infrastructure"), ("automating deployments", "maintaining systems", "troubleshooting", "improving reliability"), ("Containerise and deploy a small application.", "Practise Linux, cloud basics, and deployment automation.")),
-    CareerPath("UI/UX Designer", ("user research", "wireframing", "prototyping", "figma", "visual design", "accessibility", "usability testing"), ("design", "creativity", "people", "accessibility", "user experience"), ("interviewing users", "designing interfaces", "prototyping", "testing usability"), ("Improve one interface after talking to users.", "Create a case study showing research, design, and testing.")),
-    CareerPath("QA / Test Engineer", ("testing", "python", "automation", "selenium", "playwright", "quality assurance", "api testing", "attention to detail"), ("quality", "problem solving", "reliability", "technology", "investigation"), ("testing applications", "reproducing bugs", "automating checks", "reviewing requirements"), ("Write test cases for an application you use.", "Practise API testing and one browser automation tool.")),
-    CareerPath("Product / Business Analyst", ("communication", "requirements", "sql", "data analysis", "documentation", "facilitation", "process improvement"), ("business", "people", "planning", "technology", "decision making"), ("understanding user needs", "explaining ideas", "planning work", "improving processes"), ("Document a user problem and propose measurable improvements.", "Practise requirements writing and presenting evidence.")),
-)
-
+CAREER_PATHS = load_pathways()
 ASSESSMENT_OPTIONS = {
-    "skills": sorted({term for path in CAREER_PATHS for term in path.skills}),
-    "interests": sorted({term for path in CAREER_PATHS for term in path.interests}),
-    "preferred_activities": sorted({term for path in CAREER_PATHS for term in path.activities}),
+    "courses": sorted({term for path in CAREER_PATHS for term in path["related_courses"]}),
+    "career_goals": sorted({term for path in CAREER_PATHS for term in [path["occupation_title"], *path["alternate_titles"]]}),
+    "skills": sorted({term for path in CAREER_PATHS for term in path["skills"]}),
+    "interests": sorted({term for path in CAREER_PATHS for term in path["interest_signals"]}),
+    "preferred_activities": sorted({term for path in CAREER_PATHS for term in path["preferred_activities"]}),
 }
 
 
@@ -44,7 +31,7 @@ def _normalise(value: str) -> str:
     return re.sub(r"[^a-z0-9+#/ ]+", " ", value.lower()).strip()
 
 
-def _matches(values: Iterable[str], terms: tuple[str, ...]) -> list[str]:
+def _matches(values: Iterable[str], terms: Iterable[str]) -> list[str]:
     matched = []
     normalised_terms = [_normalise(term) for term in terms]
     for value in values:
@@ -56,48 +43,59 @@ def _matches(values: Iterable[str], terms: tuple[str, ...]) -> list[str]:
 
 
 def assess_career_paths(profile: dict, top_k: int = 4) -> dict:
-    dimensions = (
-        ("skills", 0.45),
-        ("interests", 0.35),
-        ("preferred_activities", 0.20),
-    )
-    provided = {key: [str(item).strip() for item in profile.get(key, []) if str(item).strip()] for key, _ in dimensions}
-    active_dimensions = [(key, weight) for key, weight in dimensions if provided[key]]
-    if not active_dimensions:
+    dimensions = (("course", 0.15, "related_courses"), ("career_goal", 0.10, "goal_terms"),
+                  ("skills", 0.35, "skills"), ("interests", 0.25, "interest_signals"),
+                  ("preferred_activities", 0.15, "preferred_activities"))
+    provided = {}
+    for key, _, _ in dimensions:
+        raw = profile.get(key, [])
+        raw = [raw] if isinstance(raw, str) else raw
+        provided[key] = [str(item).strip() for item in raw if str(item).strip()]
+    active = [(key, weight, field) for key, weight, field in dimensions if provided[key]]
+    if not active:
         raise ValueError("Provide at least one skill, interest, or preferred activity.")
 
     recommendations = []
     for path in CAREER_PATHS:
-        terms = {"skills": path.skills, "interests": path.interests, "preferred_activities": path.activities}
-        evidence = []
-        weighted_score = 0.0
-        for key, weight in active_dimensions:
-            matched = _matches(provided[key], terms[key])
-            evidence.extend(matched)
-            weighted_score += weight * len(matched) / len(provided[key])
-
-        missing_skills = [term for term in path.skills if not _matches(provided["skills"], (term,))][:4]
+        fields = dict(path)
+        fields["goal_terms"] = [
+            path["occupation_title"], path["sector"], *path["alternate_titles"],
+            *path["related_courses"], *path["interest_signals"],
+        ]
+        evidence, score = [], 0.0
+        for key, weight, field in active:
+            found = _matches(provided[key], fields[field])
+            evidence.extend(found)
+            score += weight * len(found) / len(provided[key])
+        skills_to_explore = [skill for skill in path["skills"]
+                             if not _matches(provided["skills"], (skill,))][:4]
         recommendations.append({
-            "role": path.role,
-            "fit_score": round(weighted_score / sum(weight for _, weight in active_dimensions) * 100),
+            "role": path["occupation_title"],
+            "fit_score": round(score / sum(weight for _, weight, _ in active) * 100),
             "matching_evidence": list(dict.fromkeys(evidence))[:8],
-            "skills_to_explore": missing_skills[:3],
-            "next_steps": list(path.next_steps),
+            "skills_to_explore": skills_to_explore[:3],
+            "next_steps": path["preparation_pathway"][:3] + path["portfolio_or_practice_ideas"][:2],
+            "role_summary": path["role_summary"],
+            "entry_level_roles": path["entry_level_roles"],
+            "application_channel_types": path["application_channel_types"],
+            "sample_interview_questions": path["sample_interview_questions"],
+            "cv_tailoring_guidance": path["cv_tailoring_guidance"],
+            "progression_options": path["progression_options"],
+            "requirements_and_qualification_notes": path["requirements_and_qualification_notes"],
             "related_resources": [],
         })
-
     recommendations.sort(key=lambda item: (item["fit_score"], item["role"]), reverse=True)
-    if recommendations[0]["fit_score"] == 0:
-        recommendations = []
-        summary = "We could not match those answers to the current career guide. Try a suggested option or describe a specific skill, interest, or activity."
+    recommendations = [item for item in recommendations if item["fit_score"] > 0]
+    if not recommendations:
+        summary = "I could not match those answers to a pathway yet. Try a suggested option or add a skill, interest, or activity in your own words."
         completeness = "needs more detail"
     else:
-        summary = "These career families align most with the skills, interests, and activities you shared. Explore more than one option."
-        completeness = "more useful" if len(active_dimensions) >= 2 and sum(map(len, provided.values())) >= 5 else "early exploration"
+        summary = "These illustrative pathways have signals in common with what you shared. Treat them as options to explore, not a decision about your future."
+        completeness = "more useful" if len(active) >= 2 and sum(map(len, provided.values())) >= 5 else "early exploration"
     return {
         "assessment_version": ASSESSMENT_VERSION,
         "profile_completeness": completeness,
         "summary": summary,
         "recommendations": recommendations[:top_k],
-        "information_note": "Fit scores compare your answers with this versioned career guide. They are not probabilities, qualifications, or predictions of job success.",
+        "information_note": "Pathways come from a synthetic illustrative dataset. Fit scores show overlap with your answers only; they are not probabilities, qualifications, admission criteria, or predictions of job success. Verify local course, licensing, and employer requirements.",
     }

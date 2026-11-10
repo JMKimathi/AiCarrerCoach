@@ -75,14 +75,19 @@ class RAGEngine:
     ) -> Dict[str, Any]:
         normalized_query = " ".join(query.lower().strip().split())
         normalized_query = re.sub(r"[.!?,…]+$", "", normalized_query)
-        greetings = {
+        english_greetings = {
             "hi", "hi there", "hello", "hello there", "hey", "hey there", "hey coach",
             "hello coach", "good morning", "good afternoon", "good evening", "good day",
             "how are you", "how are you doing", "how is it going", "how's it going",
-            "what's up", "whats up", "howdy", "yo", "sup", "habari", "jambo", "niaje",
-            "mambo", "sasa",
+            "what's up", "whats up", "howdy", "yo", "sup",
         }
-        if normalized_query in greetings:
+        swahili_greetings = {
+            "habari", "habari yako", "habari za asubuhi", "habari za mchana",
+            "habari za jioni", "hujambo", "jambo", "niaje", "mambo", "sasa",
+            "uko aje", "uko vipi", "shikamoo", "salama", "za asubuhi", "za mchana",
+            "asubuhi njema", "mchana mwema", "jioni njema",
+        }
+        if normalized_query in english_greetings:
             return {
                 "response": random.choice([
                     "Hi! What would you like help with today: exploring careers, building skills, improving your CV, or preparing for an interview?",
@@ -95,12 +100,34 @@ class RAGEngine:
                 "sources": [],
                 "source_details": [],
             }
-        if normalized_query in {"thanks", "thank you", "asante", "thanks coach"}:
+        if normalized_query in swahili_greetings:
+            if normalized_query == "shikamoo":
+                greeting_reply = "Marahaba! Karibu. Ungependa kuchunguza taaluma, kujua ujuzi unaohitajika, kuboresha CV, au kufanya mazoezi ya usaili?"
+            elif normalized_query == "hujambo":
+                greeting_reply = "Sijambo, asante! Na wewe je? Naweza kukusaidia kuchunguza taaluma, kuboresha CV, au kujiandaa kwa usaili."
+            elif normalized_query in {"mambo", "niaje", "sasa"}:
+                greeting_reply = "Poa! Karibu. Ungependa tuzungumzie taaluma, ujuzi, CV, au maandalizi ya usaili?"
+            elif normalized_query == "jambo":
+                greeting_reply = "Jambo! Karibu. Naweza kukusaidia kuchunguza taaluma au kupanga hatua inayofuata. Ungependa tuanze na nini?"
+            else:
+                greeting_reply = "Nzuri, asante! Na wewe je? Naweza kukusaidia kuchunguza taaluma, kupanga ujuzi wa kujifunza, kuboresha CV, au kujiandaa kwa usaili. Ungependa tuanze na nini?"
+            return {"response": greeting_reply, "sources": [], "source_details": []}
+        if normalized_query in {"thanks", "thank you", "thank you coach", "thanks coach"}:
             return {
                 "response": random.choice([
                     "You’re welcome! Would you like to explore another career option or work through a next step?",
                     "You’re welcome. I’m here if you want to keep going with your career plan.",
                     "Happy to help! What else would you like to figure out?",
+                ]),
+                "sources": [],
+                "source_details": [],
+            }
+        if normalized_query in {"asante", "asante sana", "ahsante", "shukrani"}:
+            return {
+                "response": random.choice([
+                    "Karibu! Ungependa kuchunguza chaguo jingine la taaluma au tuangalie hatua inayofuata?",
+                    "Karibu sana. Niko hapa kukusaidia kuendelea na mpango wako wa taaluma.",
+                    "Nafurahi kusaidia! Kuna jambo lingine ungependa kufahamu?",
                 ]),
                 "sources": [],
                 "source_details": [],
@@ -142,19 +169,25 @@ class RAGEngine:
                 client = genai.Client(api_key=api_key)
                 system_instruction = (
                     "You are a warm, practical university career coach who speaks naturally to a student. "
+                    "Reply in the language of the student's latest message, including English or Kiswahili. "
+                    "If the student mixes both, follow the main language they used and keep technical terms clear. "
                     "Answer the student's latest question directly, in a few clear sentences or short paragraphs. "
                     "Use a list only when it makes steps easier to follow. Do not repeat the student's profile or "
                     "introduce yourself in every reply. Treat the recent conversation as context and respond to "
                     "follow-up questions without restarting the discussion. Personalize guidance using the profile "
-                    "when relevant. Ground factual career guidance in the verified knowledge base passages; if they "
-                    "do not cover something, say so briefly and ask a focused follow-up instead of inventing facts. "
+                    "when relevant. Treat retrieved written guides and synthetic pathway examples as exploration material, not automatically verified facts. "
+                    "The structured pathway dataset is synthetic and illustrative: never present its qualification, licensing, application-channel, "
+                    "entry-role, interview, or progression examples as official Kenyan rules, live vacancies, or guaranteed routes. "
+                    "For local requirements, current vacancies, salaries, admissions, or licensing, say that current verification is needed; do not invent details. "
                     "When suggesting several options, use distinct occupation titles supported by the retrieved passages. "
                     "For broad career-exploration questions, offer up to three distinct options when the context supports them, "
                     "briefly explain each, and ask which one the student wants to explore; do not claim a personal fit without evidence. "
-                    "KeSCO is a Kenyan occupation taxonomy and supports job titles and classification groups only; it does "
-                    "not establish current vacancies, salaries, or detailed requirements. O*NET is a U.S. occupational "
-                    "reference, so label its guidance as a transferable reference rather than a Kenyan rule. Do not claim "
-                    "that similarly named KeSCO and O*NET occupations have been formally mapped unless the context says so. "
+                    "When pathway examples come from the synthetic dataset, call them illustrative and encourage the student to verify local specifics. "
+                    "When a student asks for a career pathway, organize available guidance around role overview, relevant "
+                    "skills, education or licensing, application routes, interview preparation, and role-specific CV advice. "
+                    "Only state a section when the retrieved sources support it; clearly say when local requirements or current "
+                    "application details are not in the knowledge base. If the course and goal are both missing and the student "
+                    "asks for personal recommendations, ask one focused question about their course or the field they want to explore. "
                     "Be encouraging, specific, and professional, with a focus on students and Kenya."
                 )
 
@@ -169,7 +202,7 @@ class RAGEngine:
                     f"- Course: {course}\n"
                     f"- Career Goal: {career_goal}\n\n"
                     f"Recent conversation:\n{history_text}\n\n"
-                    f"Verified Knowledge Base Context:\n"
+                    f"Career guidance context (written guides and synthetic illustrative pathways; verify local facts):\n"
                     f"{full_context}\n\n"
                     f"Student's latest message: {query}\n\n"
                     f"Reply naturally to that latest message. Keep it useful and conversational, and do not dump or quote the source passages."

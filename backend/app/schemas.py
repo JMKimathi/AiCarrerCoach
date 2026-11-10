@@ -163,23 +163,25 @@ class CareerPredictionRequest(BaseModel):
 
 class RoleConfidence(BaseModel):
     role: str
-    confidence_score: float = Field(description="Uncalibrated model output; not a probability of success")
-    confidence_percentage: str = Field(description="Formatted uncalibrated model output")
+    confidence_score: float = Field(description="Legacy field containing relative overlap with supplied wording, not confidence")
+    confidence_percentage: str = Field(description="Legacy field containing formatted relative answer overlap, not a probability")
 
 
 class CareerPredictionResponse(BaseModel):
     primary_role: str
-    confidence: float = Field(description="Uncalibrated model output; not a probability of success")
+    confidence: float = Field(description="Legacy field containing relative answer overlap, not a probability")
     confidence_percentage: str
     top_3_recommendations: List[RoleConfidence]
     advice: str
     retrieved_interview_prep: Optional[List[str]] = []
-    interpretation_note: str = "Model scores are uncalibrated and describe label ranking only; they are not probabilities of success or employability."
+    interpretation_note: str = "Scores reflect overlap with a synthetic illustrative guide; they are not probabilities, evidence of aptitude, or predictions of employment outcomes."
 
 
 class CareerAssessmentRequest(BaseModel):
     """Structured, self-reported evidence for explainable career exploration."""
 
+    course: Optional[str] = Field(default=None, max_length=160)
+    career_goal: Optional[str] = Field(default=None, max_length=160)
     skills: List[str] = Field(default_factory=list, max_length=40)
     interests: List[str] = Field(default_factory=list, max_length=20)
     preferred_activities: List[str] = Field(default_factory=list, max_length=20)
@@ -192,6 +194,13 @@ class CareerPathMatch(BaseModel):
     skills_to_explore: List[str]
     next_steps: List[str]
     related_resources: List[str] = Field(default_factory=list)
+    role_summary: str = ""
+    entry_level_roles: List[str] = Field(default_factory=list)
+    application_channel_types: List[str] = Field(default_factory=list)
+    sample_interview_questions: List[str] = Field(default_factory=list)
+    cv_tailoring_guidance: str = ""
+    progression_options: List[str] = Field(default_factory=list)
+    requirements_and_qualification_notes: str = ""
 
 
 class CareerAssessmentResponse(BaseModel):
