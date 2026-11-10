@@ -39,6 +39,7 @@ fun LoginRegisterScreen(
     var careerGoal by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
+    var confirmPassword by remember { mutableStateOf("") }
     var error by remember { mutableStateOf<String?>(null) }
     var submitting by remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
@@ -50,6 +51,10 @@ fun LoginRegisterScreen(
         }
         if (!isLoginMode && password.length < 8) {
             error = "Use a password with at least 8 characters."
+            return
+        }
+        if (!isLoginMode && password != confirmPassword) {
+            error = "The two passwords do not match. Tap the eye to check them."
             return
         }
         submitting = true
@@ -122,6 +127,13 @@ fun LoginRegisterScreen(
         AppTextField(label = "Email Address", value = email, onValueChange = { email = it })
         Spacer(Modifier.height(14.dp))
         AppTextField(label = "Password", value = password, onValueChange = { password = it }, isPassword = true)
+        if (!isLoginMode) {
+            Spacer(Modifier.height(14.dp))
+            AppTextField(
+                label = "Confirm password", value = confirmPassword,
+                onValueChange = { confirmPassword = it }, isPassword = true
+            )
+        }
 
         if (isLoginMode) {
             Spacer(Modifier.height(10.dp))
