@@ -50,6 +50,8 @@ import com.aicareercoach.mobile.ui.screens.shared.SimpleInfoScreen
 import com.aicareercoach.mobile.ui.screens.student.AICareerChatScreen
 import com.aicareercoach.mobile.ui.screens.student.CareerResourcesScreen
 import com.aicareercoach.mobile.ui.screens.student.CareerAssessmentScreen
+import com.aicareercoach.mobile.ui.screens.student.CareerDetailScreen
+import com.aicareercoach.mobile.ui.screens.student.CareerExplorerScreen
 import com.aicareercoach.mobile.ui.screens.student.EditProfileScreen
 import com.aicareercoach.mobile.ui.screens.student.FeedbackScreen
 import com.aicareercoach.mobile.ui.screens.student.ResourceDetailScreen
@@ -66,6 +68,8 @@ object Routes {
     const val Chat = "chat"
     const val Resources = "resources"
     const val CareerAssessment = "careerAssessment"
+    const val CareerExplorer = "careerExplorer"
+    const val CareerDetail = "careerDetail/{careerId}"
     const val ResourceDetail = "resourceDetail/{id}"
     const val Profile = "profile"
     const val EditProfile = "editProfile"
@@ -80,6 +84,7 @@ object Routes {
     const val AdminUpload = "adminUpload"
 
     fun resourceDetail(id: String) = "resourceDetail/$id"
+    fun careerDetail(id: String) = "careerDetail/$id"
 }
 
 private data class TabItem(val route: String, val label: String, val icon: ImageVector)
@@ -262,7 +267,7 @@ private fun StudentHome(
                         chatSeed = "Help me with interview prep"
                         tabNav.navigateToTab(Routes.Chat)
                     },
-                    onExploreCareers = { tabNav.navigate(Routes.CareerAssessment) }
+                    onExploreCareers = { tabNav.navigate(Routes.CareerExplorer) }
                 )
             }
             composable(Routes.Chat) {
@@ -274,6 +279,28 @@ private fun StudentHome(
             }
             composable(Routes.CareerAssessment) {
                 CareerAssessmentScreen(session = session, onBack = { tabNav.popBackStack() })
+            }
+            composable(Routes.CareerExplorer) {
+                CareerExplorerScreen(
+                    session = session,
+                    onBack = { tabNav.popBackStack() },
+                    onOpenCareer = { careerId -> tabNav.navigate(Routes.careerDetail(careerId)) },
+                    onOpenAssessment = { tabNav.navigate(Routes.CareerAssessment) }
+                )
+            }
+            composable(
+                route = Routes.CareerDetail,
+                arguments = listOf(navArgument("careerId") { type = NavType.StringType })
+            ) { entry ->
+                CareerDetailScreen(
+                    session = session,
+                    careerId = entry.arguments?.getString("careerId").orEmpty(),
+                    onBack = { tabNav.popBackStack() },
+                    onAskCoach = { question ->
+                        chatSeed = question
+                        tabNav.navigateToTab(Routes.Chat)
+                    }
+                )
             }
             composable(Routes.Resources) {
                 CareerResourcesScreen(
