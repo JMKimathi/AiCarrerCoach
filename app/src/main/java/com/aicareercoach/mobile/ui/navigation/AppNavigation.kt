@@ -52,6 +52,8 @@ import com.aicareercoach.mobile.ui.screens.student.CareerResourcesScreen
 import com.aicareercoach.mobile.ui.screens.student.CareerAssessmentScreen
 import com.aicareercoach.mobile.ui.screens.student.CareerDetailScreen
 import com.aicareercoach.mobile.ui.screens.student.CareerExplorerScreen
+import com.aicareercoach.mobile.ui.screens.student.CvBuilderScreen
+import com.aicareercoach.mobile.ui.screens.student.MockInterviewScreen
 import com.aicareercoach.mobile.ui.screens.student.EditProfileScreen
 import com.aicareercoach.mobile.ui.screens.student.FeedbackScreen
 import com.aicareercoach.mobile.ui.screens.student.ResourceDetailScreen
@@ -70,6 +72,8 @@ object Routes {
     const val CareerAssessment = "careerAssessment"
     const val CareerExplorer = "careerExplorer"
     const val CareerDetail = "careerDetail/{careerId}"
+    const val CvBuilder = "cvBuilder/{careerId}"
+    const val MockInterview = "mockInterview/{careerId}"
     const val ResourceDetail = "resourceDetail/{id}"
     const val Profile = "profile"
     const val EditProfile = "editProfile"
@@ -85,6 +89,8 @@ object Routes {
 
     fun resourceDetail(id: String) = "resourceDetail/$id"
     fun careerDetail(id: String) = "careerDetail/$id"
+    fun cvBuilder(id: String) = "cvBuilder/$id"
+    fun mockInterview(id: String) = "mockInterview/$id"
 }
 
 private data class TabItem(val route: String, val label: String, val icon: ImageVector)
@@ -299,7 +305,29 @@ private fun StudentHome(
                     onAskCoach = { question ->
                         chatSeed = question
                         tabNav.navigateToTab(Routes.Chat)
-                    }
+                    },
+                    onBuildCv = { id -> tabNav.navigate(Routes.cvBuilder(id)) },
+                    onPractiseInterview = { id -> tabNav.navigate(Routes.mockInterview(id)) }
+                )
+            }
+            composable(
+                route = Routes.CvBuilder,
+                arguments = listOf(navArgument("careerId") { type = NavType.StringType })
+            ) { entry ->
+                CvBuilderScreen(
+                    session = session,
+                    careerId = entry.arguments?.getString("careerId").orEmpty(),
+                    onBack = { tabNav.popBackStack() }
+                )
+            }
+            composable(
+                route = Routes.MockInterview,
+                arguments = listOf(navArgument("careerId") { type = NavType.StringType })
+            ) { entry ->
+                MockInterviewScreen(
+                    session = session,
+                    careerId = entry.arguments?.getString("careerId").orEmpty(),
+                    onBack = { tabNav.popBackStack() }
                 )
             }
             composable(Routes.Resources) {

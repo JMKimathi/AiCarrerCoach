@@ -15,6 +15,7 @@ import com.aicareercoach.mobile.data.UserSession
 import com.aicareercoach.mobile.data.network.ApiClient
 import com.aicareercoach.mobile.ui.components.AppTopBar
 import com.aicareercoach.mobile.ui.components.PrimaryButton
+import com.aicareercoach.mobile.ui.components.SecondaryButton
 import com.aicareercoach.mobile.ui.components.SectionCard
 import com.aicareercoach.mobile.ui.components.Tag
 import com.aicareercoach.mobile.ui.theme.*
@@ -25,7 +26,9 @@ fun CareerDetailScreen(
     session: UserSession,
     careerId: String,
     onBack: () -> Unit = {},
-    onAskCoach: (String) -> Unit = {}
+    onAskCoach: (String) -> Unit = {},
+    onBuildCv: (String) -> Unit = {},
+    onPractiseInterview: (String) -> Unit = {}
 ) {
     var detail by remember { mutableStateOf<CareerDetail?>(null) }
     var loading by remember { mutableStateOf(true) }
@@ -149,6 +152,14 @@ fun CareerDetailScreen(
                 }
 
                 PrimaryButton(
+                    text = "Build my CV for this career",
+                    onClick = { onBuildCv(current.careerId) }
+                )
+                SecondaryButton(
+                    text = "Practise a mock interview",
+                    onClick = { onPractiseInterview(current.careerId) }
+                )
+                SecondaryButton(
                     text = "Ask the coach about this career",
                     onClick = { onAskCoach("Tell me about a career as ${current.roleTitle}") }
                 )
