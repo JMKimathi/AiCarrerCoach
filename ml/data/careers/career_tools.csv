@@ -1384,301 +1384,419 @@ CAREER-217,Transport Planner,traffic counters,authored,synthetic,true
 CAREER-217,Transport Planner,Excel,authored,synthetic,true
 CAREER-217,Transport Planner,survey tools,authored,synthetic,true
 CAREER-217,Transport Planner,AutoCAD,authored,synthetic,true
-CAREER-218,Social Worker,case management systems,category_default,synthetic,true
-CAREER-218,Social Worker,mobile data collection tools,category_default,synthetic,true
-CAREER-218,Social Worker,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-218,Social Worker,spreadsheets,category_default,synthetic,true
-CAREER-218,Social Worker,reporting templates,category_default,synthetic,true
-CAREER-219,Community Development Officer,case management systems,category_default,synthetic,true
-CAREER-219,Community Development Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-219,Community Development Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-219,Community Development Officer,spreadsheets,category_default,synthetic,true
-CAREER-219,Community Development Officer,reporting templates,category_default,synthetic,true
-CAREER-220,Youth Worker,case management systems,category_default,synthetic,true
-CAREER-220,Youth Worker,mobile data collection tools,category_default,synthetic,true
-CAREER-220,Youth Worker,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-220,Youth Worker,spreadsheets,category_default,synthetic,true
-CAREER-220,Youth Worker,reporting templates,category_default,synthetic,true
-CAREER-221,Counsellor,case management systems,category_default,synthetic,true
-CAREER-221,Counsellor,mobile data collection tools,category_default,synthetic,true
-CAREER-221,Counsellor,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-221,Counsellor,spreadsheets,category_default,synthetic,true
-CAREER-221,Counsellor,reporting templates,category_default,synthetic,true
-CAREER-222,Child Protection Officer,case management systems,category_default,synthetic,true
-CAREER-222,Child Protection Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-222,Child Protection Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-222,Child Protection Officer,spreadsheets,category_default,synthetic,true
-CAREER-222,Child Protection Officer,reporting templates,category_default,synthetic,true
-CAREER-223,NGO Programme Officer,case management systems,category_default,synthetic,true
-CAREER-223,NGO Programme Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-223,NGO Programme Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-223,NGO Programme Officer,spreadsheets,category_default,synthetic,true
-CAREER-223,NGO Programme Officer,reporting templates,category_default,synthetic,true
-CAREER-224,Monitoring and Evaluation Officer,case management systems,category_default,synthetic,true
-CAREER-224,Monitoring and Evaluation Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-224,Monitoring and Evaluation Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-224,Monitoring and Evaluation Officer,spreadsheets,category_default,synthetic,true
-CAREER-224,Monitoring and Evaluation Officer,reporting templates,category_default,synthetic,true
-CAREER-225,Humanitarian Aid Worker,case management systems,category_default,synthetic,true
-CAREER-225,Humanitarian Aid Worker,mobile data collection tools,category_default,synthetic,true
-CAREER-225,Humanitarian Aid Worker,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-225,Humanitarian Aid Worker,spreadsheets,category_default,synthetic,true
-CAREER-225,Humanitarian Aid Worker,reporting templates,category_default,synthetic,true
-CAREER-226,Gender and Inclusion Officer,case management systems,category_default,synthetic,true
-CAREER-226,Gender and Inclusion Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-226,Gender and Inclusion Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-226,Gender and Inclusion Officer,spreadsheets,category_default,synthetic,true
-CAREER-226,Gender and Inclusion Officer,reporting templates,category_default,synthetic,true
-CAREER-227,Disability Inclusion Officer,case management systems,category_default,synthetic,true
-CAREER-227,Disability Inclusion Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-227,Disability Inclusion Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-227,Disability Inclusion Officer,spreadsheets,category_default,synthetic,true
-CAREER-227,Disability Inclusion Officer,reporting templates,category_default,synthetic,true
-CAREER-228,Peacebuilding Officer,case management systems,category_default,synthetic,true
-CAREER-228,Peacebuilding Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-228,Peacebuilding Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-228,Peacebuilding Officer,spreadsheets,category_default,synthetic,true
-CAREER-228,Peacebuilding Officer,reporting templates,category_default,synthetic,true
-CAREER-229,Psychosocial Support Officer,case management systems,category_default,synthetic,true
-CAREER-229,Psychosocial Support Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-229,Psychosocial Support Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-229,Psychosocial Support Officer,spreadsheets,category_default,synthetic,true
-CAREER-229,Psychosocial Support Officer,reporting templates,category_default,synthetic,true
-CAREER-230,Volunteer Coordinator,case management systems,category_default,synthetic,true
-CAREER-230,Volunteer Coordinator,mobile data collection tools,category_default,synthetic,true
-CAREER-230,Volunteer Coordinator,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-230,Volunteer Coordinator,spreadsheets,category_default,synthetic,true
-CAREER-230,Volunteer Coordinator,reporting templates,category_default,synthetic,true
-CAREER-231,Fundraising Officer,case management systems,category_default,synthetic,true
-CAREER-231,Fundraising Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-231,Fundraising Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-231,Fundraising Officer,spreadsheets,category_default,synthetic,true
-CAREER-231,Fundraising Officer,reporting templates,category_default,synthetic,true
-CAREER-232,Community Mobiliser,case management systems,category_default,synthetic,true
-CAREER-232,Community Mobiliser,mobile data collection tools,category_default,synthetic,true
-CAREER-232,Community Mobiliser,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-232,Community Mobiliser,spreadsheets,category_default,synthetic,true
-CAREER-232,Community Mobiliser,reporting templates,category_default,synthetic,true
-CAREER-233,Refugee Protection Officer,case management systems,category_default,synthetic,true
-CAREER-233,Refugee Protection Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-233,Refugee Protection Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-233,Refugee Protection Officer,spreadsheets,category_default,synthetic,true
-CAREER-233,Refugee Protection Officer,reporting templates,category_default,synthetic,true
-CAREER-234,Probation Officer,case management systems,category_default,synthetic,true
-CAREER-234,Probation Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-234,Probation Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-234,Probation Officer,spreadsheets,category_default,synthetic,true
-CAREER-234,Probation Officer,reporting templates,category_default,synthetic,true
-CAREER-235,Sociologist,case management systems,category_default,synthetic,true
-CAREER-235,Sociologist,mobile data collection tools,category_default,synthetic,true
-CAREER-235,Sociologist,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-235,Sociologist,spreadsheets,category_default,synthetic,true
-CAREER-235,Sociologist,reporting templates,category_default,synthetic,true
-CAREER-236,Public Administrator,government information systems,category_default,synthetic,true
-CAREER-236,Public Administrator,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-236,Public Administrator,policy and legal documents,category_default,synthetic,true
-CAREER-236,Public Administrator,reporting templates,category_default,synthetic,true
-CAREER-236,Public Administrator,records management systems,category_default,synthetic,true
-CAREER-237,Public Policy Analyst,government information systems,category_default,synthetic,true
-CAREER-237,Public Policy Analyst,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-237,Public Policy Analyst,policy and legal documents,category_default,synthetic,true
-CAREER-237,Public Policy Analyst,reporting templates,category_default,synthetic,true
-CAREER-237,Public Policy Analyst,records management systems,category_default,synthetic,true
-CAREER-238,Economist,government information systems,category_default,synthetic,true
-CAREER-238,Economist,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-238,Economist,policy and legal documents,category_default,synthetic,true
-CAREER-238,Economist,reporting templates,category_default,synthetic,true
-CAREER-238,Economist,records management systems,category_default,synthetic,true
-CAREER-239,Development Economist,government information systems,category_default,synthetic,true
-CAREER-239,Development Economist,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-239,Development Economist,policy and legal documents,category_default,synthetic,true
-CAREER-239,Development Economist,reporting templates,category_default,synthetic,true
-CAREER-239,Development Economist,records management systems,category_default,synthetic,true
-CAREER-240,County Government Officer,government information systems,category_default,synthetic,true
-CAREER-240,County Government Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-240,County Government Officer,policy and legal documents,category_default,synthetic,true
-CAREER-240,County Government Officer,reporting templates,category_default,synthetic,true
-CAREER-240,County Government Officer,records management systems,category_default,synthetic,true
-CAREER-241,Diplomat and Foreign Service Officer,government information systems,category_default,synthetic,true
-CAREER-241,Diplomat and Foreign Service Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-241,Diplomat and Foreign Service Officer,policy and legal documents,category_default,synthetic,true
-CAREER-241,Diplomat and Foreign Service Officer,reporting templates,category_default,synthetic,true
-CAREER-241,Diplomat and Foreign Service Officer,records management systems,category_default,synthetic,true
-CAREER-242,Development Planning Officer,government information systems,category_default,synthetic,true
-CAREER-242,Development Planning Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-242,Development Planning Officer,policy and legal documents,category_default,synthetic,true
-CAREER-242,Development Planning Officer,reporting templates,category_default,synthetic,true
-CAREER-242,Development Planning Officer,records management systems,category_default,synthetic,true
-CAREER-243,Revenue Officer,government information systems,category_default,synthetic,true
-CAREER-243,Revenue Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-243,Revenue Officer,policy and legal documents,category_default,synthetic,true
-CAREER-243,Revenue Officer,reporting templates,category_default,synthetic,true
-CAREER-243,Revenue Officer,records management systems,category_default,synthetic,true
-CAREER-244,Immigration Officer,government information systems,category_default,synthetic,true
-CAREER-244,Immigration Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-244,Immigration Officer,policy and legal documents,category_default,synthetic,true
-CAREER-244,Immigration Officer,reporting templates,category_default,synthetic,true
-CAREER-244,Immigration Officer,records management systems,category_default,synthetic,true
-CAREER-245,Development Project Coordinator,government information systems,category_default,synthetic,true
-CAREER-245,Development Project Coordinator,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-245,Development Project Coordinator,policy and legal documents,category_default,synthetic,true
-CAREER-245,Development Project Coordinator,reporting templates,category_default,synthetic,true
-CAREER-245,Development Project Coordinator,records management systems,category_default,synthetic,true
-CAREER-246,International Relations Analyst,government information systems,category_default,synthetic,true
-CAREER-246,International Relations Analyst,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-246,International Relations Analyst,policy and legal documents,category_default,synthetic,true
-CAREER-246,International Relations Analyst,reporting templates,category_default,synthetic,true
-CAREER-246,International Relations Analyst,records management systems,category_default,synthetic,true
-CAREER-247,Trade Policy Analyst,government information systems,category_default,synthetic,true
-CAREER-247,Trade Policy Analyst,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-247,Trade Policy Analyst,policy and legal documents,category_default,synthetic,true
-CAREER-247,Trade Policy Analyst,reporting templates,category_default,synthetic,true
-CAREER-247,Trade Policy Analyst,records management systems,category_default,synthetic,true
-CAREER-248,Public Finance Officer,government information systems,category_default,synthetic,true
-CAREER-248,Public Finance Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-248,Public Finance Officer,policy and legal documents,category_default,synthetic,true
-CAREER-248,Public Finance Officer,reporting templates,category_default,synthetic,true
-CAREER-248,Public Finance Officer,records management systems,category_default,synthetic,true
-CAREER-249,Parliamentary Researcher,government information systems,category_default,synthetic,true
-CAREER-249,Parliamentary Researcher,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-249,Parliamentary Researcher,policy and legal documents,category_default,synthetic,true
-CAREER-249,Parliamentary Researcher,reporting templates,category_default,synthetic,true
-CAREER-249,Parliamentary Researcher,records management systems,category_default,synthetic,true
-CAREER-250,Government Statistician,government information systems,category_default,synthetic,true
-CAREER-250,Government Statistician,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-250,Government Statistician,policy and legal documents,category_default,synthetic,true
-CAREER-250,Government Statistician,reporting templates,category_default,synthetic,true
-CAREER-250,Government Statistician,records management systems,category_default,synthetic,true
-CAREER-251,Grants Manager,government information systems,category_default,synthetic,true
-CAREER-251,Grants Manager,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-251,Grants Manager,policy and legal documents,category_default,synthetic,true
-CAREER-251,Grants Manager,reporting templates,category_default,synthetic,true
-CAREER-251,Grants Manager,records management systems,category_default,synthetic,true
-CAREER-252,Urban Development Officer,government information systems,category_default,synthetic,true
-CAREER-252,Urban Development Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-252,Urban Development Officer,policy and legal documents,category_default,synthetic,true
-CAREER-252,Urban Development Officer,reporting templates,category_default,synthetic,true
-CAREER-252,Urban Development Officer,records management systems,category_default,synthetic,true
-CAREER-253,Disaster Risk Management Officer,government information systems,category_default,synthetic,true
-CAREER-253,Disaster Risk Management Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-253,Disaster Risk Management Officer,policy and legal documents,category_default,synthetic,true
-CAREER-253,Disaster Risk Management Officer,reporting templates,category_default,synthetic,true
-CAREER-253,Disaster Risk Management Officer,records management systems,category_default,synthetic,true
-CAREER-254,ICT Policy Officer,government information systems,category_default,synthetic,true
-CAREER-254,ICT Policy Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-254,ICT Policy Officer,policy and legal documents,category_default,synthetic,true
-CAREER-254,ICT Policy Officer,reporting templates,category_default,synthetic,true
-CAREER-254,ICT Policy Officer,records management systems,category_default,synthetic,true
-CAREER-255,Solar PV Technician,hand and power tools,category_default,synthetic,true
-CAREER-255,Solar PV Technician,measuring instruments,category_default,synthetic,true
-CAREER-255,Solar PV Technician,personal protective equipment,category_default,synthetic,true
-CAREER-255,Solar PV Technician,technical drawings,category_default,synthetic,true
-CAREER-255,Solar PV Technician,testing equipment,category_default,synthetic,true
-CAREER-256,Renewable Energy Engineer,hand and power tools,category_default,synthetic,true
-CAREER-256,Renewable Energy Engineer,measuring instruments,category_default,synthetic,true
-CAREER-256,Renewable Energy Engineer,personal protective equipment,category_default,synthetic,true
-CAREER-256,Renewable Energy Engineer,technical drawings,category_default,synthetic,true
-CAREER-256,Renewable Energy Engineer,testing equipment,category_default,synthetic,true
-CAREER-257,Power Systems Engineer,hand and power tools,category_default,synthetic,true
-CAREER-257,Power Systems Engineer,measuring instruments,category_default,synthetic,true
-CAREER-257,Power Systems Engineer,personal protective equipment,category_default,synthetic,true
-CAREER-257,Power Systems Engineer,technical drawings,category_default,synthetic,true
-CAREER-257,Power Systems Engineer,testing equipment,category_default,synthetic,true
-CAREER-258,Petroleum Engineer,hand and power tools,category_default,synthetic,true
-CAREER-258,Petroleum Engineer,measuring instruments,category_default,synthetic,true
-CAREER-258,Petroleum Engineer,personal protective equipment,category_default,synthetic,true
-CAREER-258,Petroleum Engineer,technical drawings,category_default,synthetic,true
-CAREER-258,Petroleum Engineer,testing equipment,category_default,synthetic,true
-CAREER-259,Geothermal Technician,hand and power tools,category_default,synthetic,true
-CAREER-259,Geothermal Technician,measuring instruments,category_default,synthetic,true
-CAREER-259,Geothermal Technician,personal protective equipment,category_default,synthetic,true
-CAREER-259,Geothermal Technician,technical drawings,category_default,synthetic,true
-CAREER-259,Geothermal Technician,testing equipment,category_default,synthetic,true
-CAREER-260,Electrician,hand and power tools,category_default,synthetic,true
-CAREER-260,Electrician,measuring instruments,category_default,synthetic,true
-CAREER-260,Electrician,personal protective equipment,category_default,synthetic,true
-CAREER-260,Electrician,technical drawings,category_default,synthetic,true
-CAREER-260,Electrician,testing equipment,category_default,synthetic,true
-CAREER-261,Plumber,hand and power tools,category_default,synthetic,true
-CAREER-261,Plumber,measuring instruments,category_default,synthetic,true
-CAREER-261,Plumber,personal protective equipment,category_default,synthetic,true
-CAREER-261,Plumber,technical drawings,category_default,synthetic,true
-CAREER-261,Plumber,testing equipment,category_default,synthetic,true
-CAREER-262,Welder and Fabricator,hand and power tools,category_default,synthetic,true
-CAREER-262,Welder and Fabricator,measuring instruments,category_default,synthetic,true
-CAREER-262,Welder and Fabricator,personal protective equipment,category_default,synthetic,true
-CAREER-262,Welder and Fabricator,technical drawings,category_default,synthetic,true
-CAREER-262,Welder and Fabricator,testing equipment,category_default,synthetic,true
-CAREER-263,Automotive Technician,hand and power tools,category_default,synthetic,true
-CAREER-263,Automotive Technician,measuring instruments,category_default,synthetic,true
-CAREER-263,Automotive Technician,personal protective equipment,category_default,synthetic,true
-CAREER-263,Automotive Technician,technical drawings,category_default,synthetic,true
-CAREER-263,Automotive Technician,testing equipment,category_default,synthetic,true
-CAREER-264,Diesel and Heavy Equipment Mechanic,hand and power tools,category_default,synthetic,true
-CAREER-264,Diesel and Heavy Equipment Mechanic,measuring instruments,category_default,synthetic,true
-CAREER-264,Diesel and Heavy Equipment Mechanic,personal protective equipment,category_default,synthetic,true
-CAREER-264,Diesel and Heavy Equipment Mechanic,technical drawings,category_default,synthetic,true
-CAREER-264,Diesel and Heavy Equipment Mechanic,testing equipment,category_default,synthetic,true
-CAREER-265,Manufacturing Engineer,hand and power tools,category_default,synthetic,true
-CAREER-265,Manufacturing Engineer,measuring instruments,category_default,synthetic,true
-CAREER-265,Manufacturing Engineer,personal protective equipment,category_default,synthetic,true
-CAREER-265,Manufacturing Engineer,technical drawings,category_default,synthetic,true
-CAREER-265,Manufacturing Engineer,testing equipment,category_default,synthetic,true
-CAREER-266,Production Supervisor,hand and power tools,category_default,synthetic,true
-CAREER-266,Production Supervisor,measuring instruments,category_default,synthetic,true
-CAREER-266,Production Supervisor,personal protective equipment,category_default,synthetic,true
-CAREER-266,Production Supervisor,technical drawings,category_default,synthetic,true
-CAREER-266,Production Supervisor,testing equipment,category_default,synthetic,true
-CAREER-267,Quality Control Inspector,hand and power tools,category_default,synthetic,true
-CAREER-267,Quality Control Inspector,measuring instruments,category_default,synthetic,true
-CAREER-267,Quality Control Inspector,personal protective equipment,category_default,synthetic,true
-CAREER-267,Quality Control Inspector,technical drawings,category_default,synthetic,true
-CAREER-267,Quality Control Inspector,testing equipment,category_default,synthetic,true
-CAREER-268,Industrial Maintenance Technician,hand and power tools,category_default,synthetic,true
-CAREER-268,Industrial Maintenance Technician,measuring instruments,category_default,synthetic,true
-CAREER-268,Industrial Maintenance Technician,personal protective equipment,category_default,synthetic,true
-CAREER-268,Industrial Maintenance Technician,technical drawings,category_default,synthetic,true
-CAREER-268,Industrial Maintenance Technician,testing equipment,category_default,synthetic,true
-CAREER-269,Mining Engineer,hand and power tools,category_default,synthetic,true
-CAREER-269,Mining Engineer,measuring instruments,category_default,synthetic,true
-CAREER-269,Mining Engineer,personal protective equipment,category_default,synthetic,true
-CAREER-269,Mining Engineer,technical drawings,category_default,synthetic,true
-CAREER-269,Mining Engineer,testing equipment,category_default,synthetic,true
-CAREER-270,Carpenter and Joiner,hand and power tools,category_default,synthetic,true
-CAREER-270,Carpenter and Joiner,measuring instruments,category_default,synthetic,true
-CAREER-270,Carpenter and Joiner,personal protective equipment,category_default,synthetic,true
-CAREER-270,Carpenter and Joiner,technical drawings,category_default,synthetic,true
-CAREER-270,Carpenter and Joiner,testing equipment,category_default,synthetic,true
-CAREER-271,Refrigeration and Air-Conditioning Technician,hand and power tools,category_default,synthetic,true
-CAREER-271,Refrigeration and Air-Conditioning Technician,measuring instruments,category_default,synthetic,true
-CAREER-271,Refrigeration and Air-Conditioning Technician,personal protective equipment,category_default,synthetic,true
-CAREER-271,Refrigeration and Air-Conditioning Technician,technical drawings,category_default,synthetic,true
-CAREER-271,Refrigeration and Air-Conditioning Technician,testing equipment,category_default,synthetic,true
-CAREER-272,Textile and Garment Technologist,hand and power tools,category_default,synthetic,true
-CAREER-272,Textile and Garment Technologist,measuring instruments,category_default,synthetic,true
-CAREER-272,Textile and Garment Technologist,personal protective equipment,category_default,synthetic,true
-CAREER-272,Textile and Garment Technologist,technical drawings,category_default,synthetic,true
-CAREER-272,Textile and Garment Technologist,testing equipment,category_default,synthetic,true
-CAREER-273,Instrumentation Technician,hand and power tools,category_default,synthetic,true
-CAREER-273,Instrumentation Technician,measuring instruments,category_default,synthetic,true
-CAREER-273,Instrumentation Technician,personal protective equipment,category_default,synthetic,true
-CAREER-273,Instrumentation Technician,technical drawings,category_default,synthetic,true
-CAREER-273,Instrumentation Technician,testing equipment,category_default,synthetic,true
-CAREER-274,Occupational Health and Safety Officer,hand and power tools,category_default,synthetic,true
-CAREER-274,Occupational Health and Safety Officer,measuring instruments,category_default,synthetic,true
-CAREER-274,Occupational Health and Safety Officer,personal protective equipment,category_default,synthetic,true
-CAREER-274,Occupational Health and Safety Officer,technical drawings,category_default,synthetic,true
-CAREER-274,Occupational Health and Safety Officer,testing equipment,category_default,synthetic,true
-CAREER-275,Energy Auditor,hand and power tools,category_default,synthetic,true
-CAREER-275,Energy Auditor,measuring instruments,category_default,synthetic,true
-CAREER-275,Energy Auditor,personal protective equipment,category_default,synthetic,true
-CAREER-275,Energy Auditor,technical drawings,category_default,synthetic,true
-CAREER-275,Energy Auditor,testing equipment,category_default,synthetic,true
-CAREER-276,CNC Machinist,hand and power tools,category_default,synthetic,true
-CAREER-276,CNC Machinist,measuring instruments,category_default,synthetic,true
-CAREER-276,CNC Machinist,personal protective equipment,category_default,synthetic,true
-CAREER-276,CNC Machinist,technical drawings,category_default,synthetic,true
-CAREER-276,CNC Machinist,testing equipment,category_default,synthetic,true
+CAREER-218,Social Worker,case management forms and databases,authored,synthetic,true
+CAREER-218,Social Worker,assessment tools,authored,synthetic,true
+CAREER-218,Social Worker,referral directories,authored,synthetic,true
+CAREER-218,Social Worker,counselling frameworks,authored,synthetic,true
+CAREER-218,Social Worker,child protection information systems,authored,synthetic,true
+CAREER-218,Social Worker,Word and Excel,authored,synthetic,true
+CAREER-218,Social Worker,safeguarding policies,authored,synthetic,true
+CAREER-219,Community Development Officer,participatory rural appraisal tools,authored,synthetic,true
+CAREER-219,Community Development Officer,training manuals and flipcharts,authored,synthetic,true
+CAREER-219,Community Development Officer,survey tools such as KoboToolbox,authored,synthetic,true
+CAREER-219,Community Development Officer,group registers,authored,synthetic,true
+CAREER-219,Community Development Officer,Excel,authored,synthetic,true
+CAREER-219,Community Development Officer,project plans,authored,synthetic,true
+CAREER-219,Community Development Officer,motorbike and field kit,authored,synthetic,true
+CAREER-220,Youth Worker,life skills curricula,authored,synthetic,true
+CAREER-220,Youth Worker,mentorship guides,authored,synthetic,true
+CAREER-220,Youth Worker,social media and WhatsApp groups,authored,synthetic,true
+CAREER-220,Youth Worker,sports and arts equipment,authored,synthetic,true
+CAREER-220,Youth Worker,attendance and outcome trackers,authored,synthetic,true
+CAREER-220,Youth Worker,survey tools,authored,synthetic,true
+CAREER-220,Youth Worker,presentation tools,authored,synthetic,true
+CAREER-221,Counsellor,counselling models such as person-centred and CBT,authored,synthetic,true
+CAREER-221,Counsellor,screening questionnaires,authored,synthetic,true
+CAREER-221,Counsellor,case notes,authored,synthetic,true
+CAREER-221,Counsellor,referral directories,authored,synthetic,true
+CAREER-221,Counsellor,teletherapy platforms,authored,synthetic,true
+CAREER-221,Counsellor,ethical codes,authored,synthetic,true
+CAREER-221,Counsellor,consent forms,authored,synthetic,true
+CAREER-222,Child Protection Officer,child protection information management systems,authored,synthetic,true
+CAREER-222,Child Protection Officer,case management forms,authored,synthetic,true
+CAREER-222,Child Protection Officer,the Children Act and guidelines,authored,synthetic,true
+CAREER-222,Child Protection Officer,referral pathways,authored,synthetic,true
+CAREER-222,Child Protection Officer,child helpline systems,authored,synthetic,true
+CAREER-222,Child Protection Officer,assessment tools,authored,synthetic,true
+CAREER-222,Child Protection Officer,safeguarding policies,authored,synthetic,true
+CAREER-223,NGO Programme Officer,logical frameworks and work plans,authored,synthetic,true
+CAREER-223,NGO Programme Officer,budgets in Excel,authored,synthetic,true
+CAREER-223,NGO Programme Officer,donor reporting templates,authored,synthetic,true
+CAREER-223,NGO Programme Officer,project management tools,authored,synthetic,true
+CAREER-223,NGO Programme Officer,survey tools,authored,synthetic,true
+CAREER-223,NGO Programme Officer,Word and PowerPoint,authored,synthetic,true
+CAREER-223,NGO Programme Officer,partner agreements,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,KoboToolbox or ODK,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,Excel,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,Power BI,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,SPSS or Stata,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,logical frameworks,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,DHIS2,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,indicator tracking tables,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,Sphere standards,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,assessment and registration tools,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,KoboToolbox,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,cluster coordination systems,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,radios and satellite phones,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,distribution lists,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,security protocols,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,gender analysis frameworks,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,GBV referral pathways,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,training curricula,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,survey tools,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,gender policies and laws,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,reporting templates,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,safe-space guidelines,authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,accessibility audit checklists,authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,the Washington Group questions,authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,disability laws and the UN convention,authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,assistive technology,authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,training materials,authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,referral directories,authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,survey tools,authored,synthetic,true
+CAREER-228,Peacebuilding Officer,conflict analysis tools,authored,synthetic,true
+CAREER-228,Peacebuilding Officer,early warning systems,authored,synthetic,true
+CAREER-228,Peacebuilding Officer,dialogue and mediation guides,authored,synthetic,true
+CAREER-228,Peacebuilding Officer,mapping tools,authored,synthetic,true
+CAREER-228,Peacebuilding Officer,survey tools,authored,synthetic,true
+CAREER-228,Peacebuilding Officer,incident trackers,authored,synthetic,true
+CAREER-228,Peacebuilding Officer,training manuals,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,psychological first aid guides,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,screening tools,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,activity kits for children,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,referral pathways,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,case notes,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,IASC mental health guidelines,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,training manuals,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,volunteer management databases,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,application forms,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,rota and scheduling tools,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,training materials,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,WhatsApp and email,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,safeguarding checks,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,Excel,authored,synthetic,true
+CAREER-231,Fundraising Officer,donor databases and CRM systems,authored,synthetic,true
+CAREER-231,Fundraising Officer,proposal and budget templates,authored,synthetic,true
+CAREER-231,Fundraising Officer,funding portals,authored,synthetic,true
+CAREER-231,Fundraising Officer,Excel,authored,synthetic,true
+CAREER-231,Fundraising Officer,online giving and crowdfunding platforms,authored,synthetic,true
+CAREER-231,Fundraising Officer,newsletter tools,authored,synthetic,true
+CAREER-231,Fundraising Officer,logical frameworks,authored,synthetic,true
+CAREER-232,Community Mobiliser,megaphones and public address systems,authored,synthetic,true
+CAREER-232,Community Mobiliser,posters and flipcharts,authored,synthetic,true
+CAREER-232,Community Mobiliser,registration forms,authored,synthetic,true
+CAREER-232,Community Mobiliser,mobile data collection apps,authored,synthetic,true
+CAREER-232,Community Mobiliser,WhatsApp groups,authored,synthetic,true
+CAREER-232,Community Mobiliser,local radio,authored,synthetic,true
+CAREER-232,Community Mobiliser,attendance lists,authored,synthetic,true
+CAREER-233,Refugee Protection Officer,refugee registration systems such as proGres,authored,synthetic,true
+CAREER-233,Refugee Protection Officer,interview guides,authored,synthetic,true
+CAREER-233,Refugee Protection Officer,refugee law and conventions,authored,synthetic,true
+CAREER-233,Refugee Protection Officer,case management forms,authored,synthetic,true
+CAREER-233,Refugee Protection Officer,referral pathways,authored,synthetic,true
+CAREER-233,Refugee Protection Officer,interpreters,authored,synthetic,true
+CAREER-233,Refugee Protection Officer,protection monitoring tools,authored,synthetic,true
+CAREER-234,Probation Officer,social inquiry report templates,authored,synthetic,true
+CAREER-234,Probation Officer,case management records,authored,synthetic,true
+CAREER-234,Probation Officer,court systems,authored,synthetic,true
+CAREER-234,Probation Officer,risk assessment tools,authored,synthetic,true
+CAREER-234,Probation Officer,counselling frameworks,authored,synthetic,true
+CAREER-234,Probation Officer,community service registers,authored,synthetic,true
+CAREER-234,Probation Officer,probation laws,authored,synthetic,true
+CAREER-235,Sociologist,NVivo or ATLAS.ti,authored,synthetic,true
+CAREER-235,Sociologist,SPSS or Stata,authored,synthetic,true
+CAREER-235,Sociologist,survey tools,authored,synthetic,true
+CAREER-235,Sociologist,interview and focus group guides,authored,synthetic,true
+CAREER-235,Sociologist,Excel,authored,synthetic,true
+CAREER-235,Sociologist,reference managers,authored,synthetic,true
+CAREER-235,Sociologist,audio recorders,authored,synthetic,true
+CAREER-236,Public Administrator,government circulars and regulations,authored,synthetic,true
+CAREER-236,Public Administrator,IFMIS,authored,synthetic,true
+CAREER-236,Public Administrator,Word and Excel,authored,synthetic,true
+CAREER-236,Public Administrator,records management systems,authored,synthetic,true
+CAREER-236,Public Administrator,performance contracts,authored,synthetic,true
+CAREER-236,Public Administrator,Huduma and e-government platforms,authored,synthetic,true
+CAREER-236,Public Administrator,official correspondence templates,authored,synthetic,true
+CAREER-237,Public Policy Analyst,Stata or R,authored,synthetic,true
+CAREER-237,Public Policy Analyst,Excel,authored,synthetic,true
+CAREER-237,Public Policy Analyst,policy brief templates,authored,synthetic,true
+CAREER-237,Public Policy Analyst,cost-benefit analysis,authored,synthetic,true
+CAREER-237,Public Policy Analyst,stakeholder mapping,authored,synthetic,true
+CAREER-237,Public Policy Analyst,government data portals,authored,synthetic,true
+CAREER-237,Public Policy Analyst,literature databases,authored,synthetic,true
+CAREER-238,Economist,"Stata, EViews or R",authored,synthetic,true
+CAREER-238,Economist,Excel,authored,synthetic,true
+CAREER-238,Economist,"economic databases such as KNBS, World Bank and IMF data",authored,synthetic,true
+CAREER-238,Economist,econometric models,authored,synthetic,true
+CAREER-238,Economist,Python,authored,synthetic,true
+CAREER-238,Economist,Bloomberg,authored,synthetic,true
+CAREER-238,Economist,presentation tools,authored,synthetic,true
+CAREER-239,Development Economist,Stata or R,authored,synthetic,true
+CAREER-239,Development Economist,household survey data such as KIHBS and DHS,authored,synthetic,true
+CAREER-239,Development Economist,randomised evaluation methods,authored,synthetic,true
+CAREER-239,Development Economist,survey tools such as SurveyCTO,authored,synthetic,true
+CAREER-239,Development Economist,Excel,authored,synthetic,true
+CAREER-239,Development Economist,GIS software,authored,synthetic,true
+CAREER-239,Development Economist,econometric methods,authored,synthetic,true
+CAREER-240,County Government Officer,county integrated development plans,authored,synthetic,true
+CAREER-240,County Government Officer,IFMIS,authored,synthetic,true
+CAREER-240,County Government Officer,county revenue systems,authored,synthetic,true
+CAREER-240,County Government Officer,Word and Excel,authored,synthetic,true
+CAREER-240,County Government Officer,public participation guidelines,authored,synthetic,true
+CAREER-240,County Government Officer,project monitoring templates,authored,synthetic,true
+CAREER-240,County Government Officer,county laws and regulations,authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,diplomatic notes and cables,authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,treaties and conventions,authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,protocol manuals,authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,foreign languages,authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,briefing papers,authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,secure communication systems,authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,international organisation procedures,authored,synthetic,true
+CAREER-242,Development Planning Officer,county integrated development plans and medium-term plans,authored,synthetic,true
+CAREER-242,Development Planning Officer,Excel,authored,synthetic,true
+CAREER-242,Development Planning Officer,project appraisal templates,authored,synthetic,true
+CAREER-242,Development Planning Officer,e-CIMES or similar monitoring systems,authored,synthetic,true
+CAREER-242,Development Planning Officer,statistics from KNBS,authored,synthetic,true
+CAREER-242,Development Planning Officer,GIS software,authored,synthetic,true
+CAREER-242,Development Planning Officer,logical frameworks,authored,synthetic,true
+CAREER-243,Revenue Officer,tax administration systems such as iTax,authored,synthetic,true
+CAREER-243,Revenue Officer,electronic tax registers and eTIMS,authored,synthetic,true
+CAREER-243,Revenue Officer,county revenue systems,authored,synthetic,true
+CAREER-243,Revenue Officer,Excel,authored,synthetic,true
+CAREER-243,Revenue Officer,tax laws,authored,synthetic,true
+CAREER-243,Revenue Officer,audit tools,authored,synthetic,true
+CAREER-243,Revenue Officer,taxpayer databases,authored,synthetic,true
+CAREER-244,Immigration Officer,border management systems,authored,synthetic,true
+CAREER-244,Immigration Officer,e-passport and e-visa systems,authored,synthetic,true
+CAREER-244,Immigration Officer,document examination equipment,authored,synthetic,true
+CAREER-244,Immigration Officer,biometric scanners,authored,synthetic,true
+CAREER-244,Immigration Officer,immigration laws,authored,synthetic,true
+CAREER-244,Immigration Officer,watch lists,authored,synthetic,true
+CAREER-244,Immigration Officer,eCitizen,authored,synthetic,true
+CAREER-245,Development Project Coordinator,work plans and Gantt charts,authored,synthetic,true
+CAREER-245,Development Project Coordinator,MS Project,authored,synthetic,true
+CAREER-245,Development Project Coordinator,Excel,authored,synthetic,true
+CAREER-245,Development Project Coordinator,donor procurement and financial guidelines,authored,synthetic,true
+CAREER-245,Development Project Coordinator,results frameworks,authored,synthetic,true
+CAREER-245,Development Project Coordinator,reporting templates,authored,synthetic,true
+CAREER-245,Development Project Coordinator,project management information systems,authored,synthetic,true
+CAREER-246,International Relations Analyst,news and research databases,authored,synthetic,true
+CAREER-246,International Relations Analyst,policy briefs,authored,synthetic,true
+CAREER-246,International Relations Analyst,open-source intelligence tools,authored,synthetic,true
+CAREER-246,International Relations Analyst,foreign languages,authored,synthetic,true
+CAREER-246,International Relations Analyst,treaties and resolutions,authored,synthetic,true
+CAREER-246,International Relations Analyst,mapping tools,authored,synthetic,true
+CAREER-246,International Relations Analyst,presentation tools,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,trade databases such as ITC Trade Map and WITS,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,Stata or Excel,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,tariff schedules,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,trade agreements and WTO rules,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,trade models,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,reporting templates,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,customs data,authored,synthetic,true
+CAREER-248,Public Finance Officer,IFMIS,authored,synthetic,true
+CAREER-248,Public Finance Officer,public finance management laws and regulations,authored,synthetic,true
+CAREER-248,Public Finance Officer,Excel,authored,synthetic,true
+CAREER-248,Public Finance Officer,government accounting standards such as IPSAS,authored,synthetic,true
+CAREER-248,Public Finance Officer,budget templates,authored,synthetic,true
+CAREER-248,Public Finance Officer,internet banking for government,authored,synthetic,true
+CAREER-248,Public Finance Officer,reporting templates,authored,synthetic,true
+CAREER-249,Parliamentary Researcher,the Hansard and parliamentary records,authored,synthetic,true
+CAREER-249,Parliamentary Researcher,statutes and the Constitution,authored,synthetic,true
+CAREER-249,Parliamentary Researcher,budget documents,authored,synthetic,true
+CAREER-249,Parliamentary Researcher,research databases,authored,synthetic,true
+CAREER-249,Parliamentary Researcher,Word and Excel,authored,synthetic,true
+CAREER-249,Parliamentary Researcher,committee report templates,authored,synthetic,true
+CAREER-249,Parliamentary Researcher,data from KNBS and the Auditor-General,authored,synthetic,true
+CAREER-250,Government Statistician,CSPro,authored,synthetic,true
+CAREER-250,Government Statistician,"Stata, SPSS or R",authored,synthetic,true
+CAREER-250,Government Statistician,survey tools on tablets,authored,synthetic,true
+CAREER-250,Government Statistician,sampling frames,authored,synthetic,true
+CAREER-250,Government Statistician,statistical classifications and standards,authored,synthetic,true
+CAREER-250,Government Statistician,Excel,authored,synthetic,true
+CAREER-250,Government Statistician,data portals,authored,synthetic,true
+CAREER-251,Grants Manager,grant management systems,authored,synthetic,true
+CAREER-251,Grants Manager,donor regulations such as USAID and EU rules,authored,synthetic,true
+CAREER-251,Grants Manager,Excel,authored,synthetic,true
+CAREER-251,Grants Manager,budget and reporting templates,authored,synthetic,true
+CAREER-251,Grants Manager,sub-award agreements,authored,synthetic,true
+CAREER-251,Grants Manager,accounting software,authored,synthetic,true
+CAREER-251,Grants Manager,compliance checklists,authored,synthetic,true
+CAREER-252,Urban Development Officer,GIS software,authored,synthetic,true
+CAREER-252,Urban Development Officer,AutoCAD,authored,synthetic,true
+CAREER-252,Urban Development Officer,physical planning laws,authored,synthetic,true
+CAREER-252,Urban Development Officer,development control systems,authored,synthetic,true
+CAREER-252,Urban Development Officer,satellite imagery,authored,synthetic,true
+CAREER-252,Urban Development Officer,survey tools,authored,synthetic,true
+CAREER-252,Urban Development Officer,municipal plans,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,early warning bulletins,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,GIS and hazard maps,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,emergency operations centre systems,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,contingency plans,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,radios,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,assessment tools such as KoboToolbox,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,the Sendai Framework,authored,synthetic,true
+CAREER-254,ICT Policy Officer,ICT policies and laws,authored,synthetic,true
+CAREER-254,ICT Policy Officer,policy brief templates,authored,synthetic,true
+CAREER-254,ICT Policy Officer,stakeholder consultation tools,authored,synthetic,true
+CAREER-254,ICT Policy Officer,e-government standards,authored,synthetic,true
+CAREER-254,ICT Policy Officer,data from the communications regulator,authored,synthetic,true
+CAREER-254,ICT Policy Officer,international benchmarks,authored,synthetic,true
+CAREER-254,ICT Policy Officer,Word and Excel,authored,synthetic,true
+CAREER-255,Solar PV Technician,multimeters and clamp meters,authored,synthetic,true
+CAREER-255,Solar PV Technician,solar irradiance meters,authored,synthetic,true
+CAREER-255,Solar PV Technician,hand and power tools,authored,synthetic,true
+CAREER-255,Solar PV Technician,crimping tools and MC4 connectors,authored,synthetic,true
+CAREER-255,Solar PV Technician,system design software such as PVsyst,authored,synthetic,true
+CAREER-255,Solar PV Technician,safety harnesses,authored,synthetic,true
+CAREER-255,Solar PV Technician,inverter configuration apps,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,PVsyst,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,HOMER,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,AutoCAD,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,Excel financial models,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,power quality analysers,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,GIS software,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,monitoring platforms,authored,synthetic,true
+CAREER-257,Power Systems Engineer,"power system software such as ETAP, PSS/E or DIgSILENT",authored,synthetic,true
+CAREER-257,Power Systems Engineer,AutoCAD,authored,synthetic,true
+CAREER-257,Power Systems Engineer,relay test sets,authored,synthetic,true
+CAREER-257,Power Systems Engineer,SCADA systems,authored,synthetic,true
+CAREER-257,Power Systems Engineer,power quality analysers,authored,synthetic,true
+CAREER-257,Power Systems Engineer,single-line diagrams,authored,synthetic,true
+CAREER-257,Power Systems Engineer,grid codes,authored,synthetic,true
+CAREER-258,Petroleum Engineer,reservoir simulators such as Eclipse or Petrel,authored,synthetic,true
+CAREER-258,Petroleum Engineer,drilling software,authored,synthetic,true
+CAREER-258,Petroleum Engineer,well logging data,authored,synthetic,true
+CAREER-258,Petroleum Engineer,production monitoring systems,authored,synthetic,true
+CAREER-258,Petroleum Engineer,pressure and flow instruments,authored,synthetic,true
+CAREER-258,Petroleum Engineer,Excel,authored,synthetic,true
+CAREER-258,Petroleum Engineer,safety management systems,authored,synthetic,true
+CAREER-259,Geothermal Technician,pressure and temperature gauges,authored,synthetic,true
+CAREER-259,Geothermal Technician,SCADA and control systems,authored,synthetic,true
+CAREER-259,Geothermal Technician,steam separators and valves,authored,synthetic,true
+CAREER-259,Geothermal Technician,gas detectors,authored,synthetic,true
+CAREER-259,Geothermal Technician,hand and power tools,authored,synthetic,true
+CAREER-259,Geothermal Technician,well logging tools,authored,synthetic,true
+CAREER-259,Geothermal Technician,protective equipment,authored,synthetic,true
+CAREER-260,Electrician,multimeters and insulation testers,authored,synthetic,true
+CAREER-260,Electrician,"pliers, strippers and screwdrivers",authored,synthetic,true
+CAREER-260,Electrician,conduit benders,authored,synthetic,true
+CAREER-260,Electrician,clamp meters,authored,synthetic,true
+CAREER-260,Electrician,drills,authored,synthetic,true
+CAREER-260,Electrician,wiring regulations,authored,synthetic,true
+CAREER-260,Electrician,earth testers,authored,synthetic,true
+CAREER-261,Plumber,pipe wrenches and cutters,authored,synthetic,true
+CAREER-261,Plumber,PPR welding machines,authored,synthetic,true
+CAREER-261,Plumber,threading tools,authored,synthetic,true
+CAREER-261,Plumber,pressure test pumps,authored,synthetic,true
+CAREER-261,Plumber,drain rods and snakes,authored,synthetic,true
+CAREER-261,Plumber,spirit levels,authored,synthetic,true
+CAREER-261,Plumber,plumbing fittings,authored,synthetic,true
+CAREER-262,Welder and Fabricator,"arc, MIG and TIG welding machines",authored,synthetic,true
+CAREER-262,Welder and Fabricator,angle grinders,authored,synthetic,true
+CAREER-262,Welder and Fabricator,cutting torches,authored,synthetic,true
+CAREER-262,Welder and Fabricator,welding helmets and protective gear,authored,synthetic,true
+CAREER-262,Welder and Fabricator,clamps and jigs,authored,synthetic,true
+CAREER-262,Welder and Fabricator,measuring tapes and squares,authored,synthetic,true
+CAREER-262,Welder and Fabricator,drills,authored,synthetic,true
+CAREER-263,Automotive Technician,diagnostic scanners,authored,synthetic,true
+CAREER-263,Automotive Technician,spanner and socket sets,authored,synthetic,true
+CAREER-263,Automotive Technician,jacks and hoists,authored,synthetic,true
+CAREER-263,Automotive Technician,multimeters,authored,synthetic,true
+CAREER-263,Automotive Technician,torque wrenches,authored,synthetic,true
+CAREER-263,Automotive Technician,service manuals,authored,synthetic,true
+CAREER-263,Automotive Technician,compressors and air tools,authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,diagnostic software for heavy equipment,authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,hydraulic pressure gauges,authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,heavy-duty jacks and lifting gear,authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,spanner and socket sets,authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,torque multipliers,authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,service manuals,authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,welding equipment,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,AutoCAD or SolidWorks,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,lean and Six Sigma tools,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,ERP systems,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,Excel,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,PLC basics,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,statistical process control,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,time-study tools,authored,synthetic,true
+CAREER-266,Production Supervisor,production plans and schedules,authored,synthetic,true
+CAREER-266,Production Supervisor,ERP or shop-floor systems,authored,synthetic,true
+CAREER-266,Production Supervisor,quality check sheets,authored,synthetic,true
+CAREER-266,Production Supervisor,overall equipment effectiveness reports,authored,synthetic,true
+CAREER-266,Production Supervisor,standard operating procedures,authored,synthetic,true
+CAREER-266,Production Supervisor,safety checklists,authored,synthetic,true
+CAREER-266,Production Supervisor,Excel,authored,synthetic,true
+CAREER-267,Quality Control Inspector,vernier calipers and micrometers,authored,synthetic,true
+CAREER-267,Quality Control Inspector,gauges,authored,synthetic,true
+CAREER-267,Quality Control Inspector,weighing scales,authored,synthetic,true
+CAREER-267,Quality Control Inspector,inspection check sheets,authored,synthetic,true
+CAREER-267,Quality Control Inspector,sampling plans,authored,synthetic,true
+CAREER-267,Quality Control Inspector,standards such as KEBS and ISO 9001,authored,synthetic,true
+CAREER-267,Quality Control Inspector,test equipment,authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,computerised maintenance management systems,authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,multimeters,authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,spanner sets and bearing pullers,authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,alignment tools,authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,grease guns,authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,welding and machining tools,authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,vibration and thermal testers,authored,synthetic,true
+CAREER-269,Mining Engineer,mine planning software such as Surpac or Datamine,authored,synthetic,true
+CAREER-269,Mining Engineer,AutoCAD,authored,synthetic,true
+CAREER-269,Mining Engineer,survey instruments,authored,synthetic,true
+CAREER-269,Mining Engineer,blast design software,authored,synthetic,true
+CAREER-269,Mining Engineer,ventilation models,authored,synthetic,true
+CAREER-269,Mining Engineer,Excel,authored,synthetic,true
+CAREER-269,Mining Engineer,mining and safety regulations,authored,synthetic,true
+CAREER-270,Carpenter and Joiner,"saws, planes and chisels",authored,synthetic,true
+CAREER-270,Carpenter and Joiner,circular saws and routers,authored,synthetic,true
+CAREER-270,Carpenter and Joiner,drills and nail guns,authored,synthetic,true
+CAREER-270,Carpenter and Joiner,measuring tapes and squares,authored,synthetic,true
+CAREER-270,Carpenter and Joiner,sanders,authored,synthetic,true
+CAREER-270,Carpenter and Joiner,wood glue and clamps,authored,synthetic,true
+CAREER-270,Carpenter and Joiner,workshop machines such as planers and table saws,authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,manifold gauges,authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,vacuum pumps,authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,refrigerant recovery machines,authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,leak detectors,authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,brazing torches,authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,multimeters and clamp meters,authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,pipe benders and flaring tools,authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,industrial sewing and cutting machines,authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,fabric testing equipment,authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,pattern CAD software such as Gerber or Lectra,authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,specification sheets,authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,quality inspection standards such as AQL,authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,measuring tapes,authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,production tracking sheets,authored,synthetic,true
+CAREER-273,Instrumentation Technician,calibrators and HART communicators,authored,synthetic,true
+CAREER-273,Instrumentation Technician,multimeters,authored,synthetic,true
+CAREER-273,Instrumentation Technician,PLC programming software,authored,synthetic,true
+CAREER-273,Instrumentation Technician,loop diagrams and P&IDs,authored,synthetic,true
+CAREER-273,Instrumentation Technician,pressure and temperature test equipment,authored,synthetic,true
+CAREER-273,Instrumentation Technician,SCADA systems,authored,synthetic,true
+CAREER-273,Instrumentation Technician,hand tools,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,risk assessment templates,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,the Occupational Safety and Health Act,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,permit-to-work systems,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,inspection checklists,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,incident report forms,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,protective equipment,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,ISO 45001,authored,synthetic,true
+CAREER-275,Energy Auditor,power analysers and data loggers,authored,synthetic,true
+CAREER-275,Energy Auditor,thermal imaging cameras,authored,synthetic,true
+CAREER-275,Energy Auditor,flue gas analysers,authored,synthetic,true
+CAREER-275,Energy Auditor,lux meters,authored,synthetic,true
+CAREER-275,Energy Auditor,ultrasonic leak detectors,authored,synthetic,true
+CAREER-275,Energy Auditor,Excel,authored,synthetic,true
+CAREER-275,Energy Auditor,energy management regulations and ISO 50001,authored,synthetic,true
+CAREER-276,CNC Machinist,CNC lathes and milling machines,authored,synthetic,true
+CAREER-276,CNC Machinist,CAM software such as Mastercam or Fusion 360,authored,synthetic,true
+CAREER-276,CNC Machinist,G-code,authored,synthetic,true
+CAREER-276,CNC Machinist,micrometers and calipers,authored,synthetic,true
+CAREER-276,CNC Machinist,cutting tools and inserts,authored,synthetic,true
+CAREER-276,CNC Machinist,dial indicators,authored,synthetic,true
+CAREER-276,CNC Machinist,conventional lathes and mills,authored,synthetic,true
 CAREER-277,Site Reliability Engineer,Linux,authored,synthetic,true
 CAREER-277,Site Reliability Engineer,Kubernetes,authored,synthetic,true
 CAREER-277,Site Reliability Engineer,Prometheus and Grafana,authored,synthetic,true
@@ -2553,193 +2671,269 @@ CAREER-414,Locomotive Driver,safety rule books,authored,synthetic,true
 CAREER-414,Locomotive Driver,fault indicators,authored,synthetic,true
 CAREER-414,Locomotive Driver,trip logbooks,authored,synthetic,true
 CAREER-414,Locomotive Driver,driving simulators,authored,synthetic,true
-CAREER-415,Addiction Counsellor,case management systems,category_default,synthetic,true
-CAREER-415,Addiction Counsellor,mobile data collection tools,category_default,synthetic,true
-CAREER-415,Addiction Counsellor,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-415,Addiction Counsellor,spreadsheets,category_default,synthetic,true
-CAREER-415,Addiction Counsellor,reporting templates,category_default,synthetic,true
-CAREER-416,Marriage and Family Therapist,case management systems,category_default,synthetic,true
-CAREER-416,Marriage and Family Therapist,mobile data collection tools,category_default,synthetic,true
-CAREER-416,Marriage and Family Therapist,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-416,Marriage and Family Therapist,spreadsheets,category_default,synthetic,true
-CAREER-416,Marriage and Family Therapist,reporting templates,category_default,synthetic,true
-CAREER-417,Geriatric Care Worker,case management systems,category_default,synthetic,true
-CAREER-417,Geriatric Care Worker,mobile data collection tools,category_default,synthetic,true
-CAREER-417,Geriatric Care Worker,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-417,Geriatric Care Worker,spreadsheets,category_default,synthetic,true
-CAREER-417,Geriatric Care Worker,reporting templates,category_default,synthetic,true
-CAREER-418,Rehabilitation Officer,case management systems,category_default,synthetic,true
-CAREER-418,Rehabilitation Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-418,Rehabilitation Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-418,Rehabilitation Officer,spreadsheets,category_default,synthetic,true
-CAREER-418,Rehabilitation Officer,reporting templates,category_default,synthetic,true
-CAREER-419,Safeguarding Adviser,case management systems,category_default,synthetic,true
-CAREER-419,Safeguarding Adviser,mobile data collection tools,category_default,synthetic,true
-CAREER-419,Safeguarding Adviser,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-419,Safeguarding Adviser,spreadsheets,category_default,synthetic,true
-CAREER-419,Safeguarding Adviser,reporting templates,category_default,synthetic,true
-CAREER-420,Chaplain,case management systems,category_default,synthetic,true
-CAREER-420,Chaplain,mobile data collection tools,category_default,synthetic,true
-CAREER-420,Chaplain,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-420,Chaplain,spreadsheets,category_default,synthetic,true
-CAREER-420,Chaplain,reporting templates,category_default,synthetic,true
-CAREER-421,Advocacy Officer,case management systems,category_default,synthetic,true
-CAREER-421,Advocacy Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-421,Advocacy Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-421,Advocacy Officer,spreadsheets,category_default,synthetic,true
-CAREER-421,Advocacy Officer,reporting templates,category_default,synthetic,true
-CAREER-422,Livelihoods Officer,case management systems,category_default,synthetic,true
-CAREER-422,Livelihoods Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-422,Livelihoods Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-422,Livelihoods Officer,spreadsheets,category_default,synthetic,true
-CAREER-422,Livelihoods Officer,reporting templates,category_default,synthetic,true
-CAREER-423,Cash Transfer Programme Officer,case management systems,category_default,synthetic,true
-CAREER-423,Cash Transfer Programme Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-423,Cash Transfer Programme Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-423,Cash Transfer Programme Officer,spreadsheets,category_default,synthetic,true
-CAREER-423,Cash Transfer Programme Officer,reporting templates,category_default,synthetic,true
-CAREER-424,Research and Learning Officer,case management systems,category_default,synthetic,true
-CAREER-424,Research and Learning Officer,mobile data collection tools,category_default,synthetic,true
-CAREER-424,Research and Learning Officer,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-424,Research and Learning Officer,spreadsheets,category_default,synthetic,true
-CAREER-424,Research and Learning Officer,reporting templates,category_default,synthetic,true
-CAREER-425,Children's Home Manager,case management systems,category_default,synthetic,true
-CAREER-425,Children's Home Manager,mobile data collection tools,category_default,synthetic,true
-CAREER-425,Children's Home Manager,monitoring and evaluation frameworks,category_default,synthetic,true
-CAREER-425,Children's Home Manager,spreadsheets,category_default,synthetic,true
-CAREER-425,Children's Home Manager,reporting templates,category_default,synthetic,true
-CAREER-426,Police Officer,government information systems,category_default,synthetic,true
-CAREER-426,Police Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-426,Police Officer,policy and legal documents,category_default,synthetic,true
-CAREER-426,Police Officer,reporting templates,category_default,synthetic,true
-CAREER-426,Police Officer,records management systems,category_default,synthetic,true
-CAREER-427,Military Officer,government information systems,category_default,synthetic,true
-CAREER-427,Military Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-427,Military Officer,policy and legal documents,category_default,synthetic,true
-CAREER-427,Military Officer,reporting templates,category_default,synthetic,true
-CAREER-427,Military Officer,records management systems,category_default,synthetic,true
-CAREER-428,Intelligence Analyst,government information systems,category_default,synthetic,true
-CAREER-428,Intelligence Analyst,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-428,Intelligence Analyst,policy and legal documents,category_default,synthetic,true
-CAREER-428,Intelligence Analyst,reporting templates,category_default,synthetic,true
-CAREER-428,Intelligence Analyst,records management systems,category_default,synthetic,true
-CAREER-429,Prisons Officer,government information systems,category_default,synthetic,true
-CAREER-429,Prisons Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-429,Prisons Officer,policy and legal documents,category_default,synthetic,true
-CAREER-429,Prisons Officer,reporting templates,category_default,synthetic,true
-CAREER-429,Prisons Officer,records management systems,category_default,synthetic,true
-CAREER-430,Fire and Rescue Officer,government information systems,category_default,synthetic,true
-CAREER-430,Fire and Rescue Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-430,Fire and Rescue Officer,policy and legal documents,category_default,synthetic,true
-CAREER-430,Fire and Rescue Officer,reporting templates,category_default,synthetic,true
-CAREER-430,Fire and Rescue Officer,records management systems,category_default,synthetic,true
-CAREER-431,National Government Administration Officer,government information systems,category_default,synthetic,true
-CAREER-431,National Government Administration Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-431,National Government Administration Officer,policy and legal documents,category_default,synthetic,true
-CAREER-431,National Government Administration Officer,reporting templates,category_default,synthetic,true
-CAREER-431,National Government Administration Officer,records management systems,category_default,synthetic,true
-CAREER-432,Public Auditor,government information systems,category_default,synthetic,true
-CAREER-432,Public Auditor,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-432,Public Auditor,policy and legal documents,category_default,synthetic,true
-CAREER-432,Public Auditor,reporting templates,category_default,synthetic,true
-CAREER-432,Public Auditor,records management systems,category_default,synthetic,true
-CAREER-433,Public Procurement Officer,government information systems,category_default,synthetic,true
-CAREER-433,Public Procurement Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-433,Public Procurement Officer,policy and legal documents,category_default,synthetic,true
-CAREER-433,Public Procurement Officer,reporting templates,category_default,synthetic,true
-CAREER-433,Public Procurement Officer,records management systems,category_default,synthetic,true
-CAREER-434,Lands Officer,government information systems,category_default,synthetic,true
-CAREER-434,Lands Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-434,Lands Officer,policy and legal documents,category_default,synthetic,true
-CAREER-434,Lands Officer,reporting templates,category_default,synthetic,true
-CAREER-434,Lands Officer,records management systems,category_default,synthetic,true
-CAREER-435,Labour Officer,government information systems,category_default,synthetic,true
-CAREER-435,Labour Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-435,Labour Officer,policy and legal documents,category_default,synthetic,true
-CAREER-435,Labour Officer,reporting templates,category_default,synthetic,true
-CAREER-435,Labour Officer,records management systems,category_default,synthetic,true
-CAREER-436,Consular Officer,government information systems,category_default,synthetic,true
-CAREER-436,Consular Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-436,Consular Officer,policy and legal documents,category_default,synthetic,true
-CAREER-436,Consular Officer,reporting templates,category_default,synthetic,true
-CAREER-436,Consular Officer,records management systems,category_default,synthetic,true
-CAREER-437,Records and Archives Officer,government information systems,category_default,synthetic,true
-CAREER-437,Records and Archives Officer,spreadsheets and statistical tools,category_default,synthetic,true
-CAREER-437,Records and Archives Officer,policy and legal documents,category_default,synthetic,true
-CAREER-437,Records and Archives Officer,reporting templates,category_default,synthetic,true
-CAREER-437,Records and Archives Officer,records management systems,category_default,synthetic,true
-CAREER-438,Mason,hand and power tools,category_default,synthetic,true
-CAREER-438,Mason,measuring instruments,category_default,synthetic,true
-CAREER-438,Mason,personal protective equipment,category_default,synthetic,true
-CAREER-438,Mason,technical drawings,category_default,synthetic,true
-CAREER-438,Mason,testing equipment,category_default,synthetic,true
-CAREER-439,Painter and Decorator,hand and power tools,category_default,synthetic,true
-CAREER-439,Painter and Decorator,measuring instruments,category_default,synthetic,true
-CAREER-439,Painter and Decorator,personal protective equipment,category_default,synthetic,true
-CAREER-439,Painter and Decorator,technical drawings,category_default,synthetic,true
-CAREER-439,Painter and Decorator,testing equipment,category_default,synthetic,true
-CAREER-440,Tailor and Dressmaker,hand and power tools,category_default,synthetic,true
-CAREER-440,Tailor and Dressmaker,measuring instruments,category_default,synthetic,true
-CAREER-440,Tailor and Dressmaker,personal protective equipment,category_default,synthetic,true
-CAREER-440,Tailor and Dressmaker,technical drawings,category_default,synthetic,true
-CAREER-440,Tailor and Dressmaker,testing equipment,category_default,synthetic,true
-CAREER-441,Hairdresser and Beauty Therapist,hand and power tools,category_default,synthetic,true
-CAREER-441,Hairdresser and Beauty Therapist,measuring instruments,category_default,synthetic,true
-CAREER-441,Hairdresser and Beauty Therapist,personal protective equipment,category_default,synthetic,true
-CAREER-441,Hairdresser and Beauty Therapist,technical drawings,category_default,synthetic,true
-CAREER-441,Hairdresser and Beauty Therapist,testing equipment,category_default,synthetic,true
-CAREER-442,Electrical Lines Technician,hand and power tools,category_default,synthetic,true
-CAREER-442,Electrical Lines Technician,measuring instruments,category_default,synthetic,true
-CAREER-442,Electrical Lines Technician,personal protective equipment,category_default,synthetic,true
-CAREER-442,Electrical Lines Technician,technical drawings,category_default,synthetic,true
-CAREER-442,Electrical Lines Technician,testing equipment,category_default,synthetic,true
-CAREER-443,Wind Turbine Technician,hand and power tools,category_default,synthetic,true
-CAREER-443,Wind Turbine Technician,measuring instruments,category_default,synthetic,true
-CAREER-443,Wind Turbine Technician,personal protective equipment,category_default,synthetic,true
-CAREER-443,Wind Turbine Technician,technical drawings,category_default,synthetic,true
-CAREER-443,Wind Turbine Technician,testing equipment,category_default,synthetic,true
-CAREER-444,Biogas Technician,hand and power tools,category_default,synthetic,true
-CAREER-444,Biogas Technician,measuring instruments,category_default,synthetic,true
-CAREER-444,Biogas Technician,personal protective equipment,category_default,synthetic,true
-CAREER-444,Biogas Technician,technical drawings,category_default,synthetic,true
-CAREER-444,Biogas Technician,testing equipment,category_default,synthetic,true
-CAREER-445,Boiler Operator,hand and power tools,category_default,synthetic,true
-CAREER-445,Boiler Operator,measuring instruments,category_default,synthetic,true
-CAREER-445,Boiler Operator,personal protective equipment,category_default,synthetic,true
-CAREER-445,Boiler Operator,technical drawings,category_default,synthetic,true
-CAREER-445,Boiler Operator,testing equipment,category_default,synthetic,true
-CAREER-446,Process Plant Operator,hand and power tools,category_default,synthetic,true
-CAREER-446,Process Plant Operator,measuring instruments,category_default,synthetic,true
-CAREER-446,Process Plant Operator,personal protective equipment,category_default,synthetic,true
-CAREER-446,Process Plant Operator,technical drawings,category_default,synthetic,true
-CAREER-446,Process Plant Operator,testing equipment,category_default,synthetic,true
-CAREER-447,Leather Technologist,hand and power tools,category_default,synthetic,true
-CAREER-447,Leather Technologist,measuring instruments,category_default,synthetic,true
-CAREER-447,Leather Technologist,personal protective equipment,category_default,synthetic,true
-CAREER-447,Leather Technologist,technical drawings,category_default,synthetic,true
-CAREER-447,Leather Technologist,testing equipment,category_default,synthetic,true
-CAREER-448,Motorcycle Mechanic,hand and power tools,category_default,synthetic,true
-CAREER-448,Motorcycle Mechanic,measuring instruments,category_default,synthetic,true
-CAREER-448,Motorcycle Mechanic,personal protective equipment,category_default,synthetic,true
-CAREER-448,Motorcycle Mechanic,technical drawings,category_default,synthetic,true
-CAREER-448,Motorcycle Mechanic,testing equipment,category_default,synthetic,true
-CAREER-449,Mobile Phone Repair Technician,hand and power tools,category_default,synthetic,true
-CAREER-449,Mobile Phone Repair Technician,measuring instruments,category_default,synthetic,true
-CAREER-449,Mobile Phone Repair Technician,personal protective equipment,category_default,synthetic,true
-CAREER-449,Mobile Phone Repair Technician,technical drawings,category_default,synthetic,true
-CAREER-449,Mobile Phone Repair Technician,testing equipment,category_default,synthetic,true
-CAREER-450,Lift Technician,hand and power tools,category_default,synthetic,true
-CAREER-450,Lift Technician,measuring instruments,category_default,synthetic,true
-CAREER-450,Lift Technician,personal protective equipment,category_default,synthetic,true
-CAREER-450,Lift Technician,technical drawings,category_default,synthetic,true
-CAREER-450,Lift Technician,testing equipment,category_default,synthetic,true
-CAREER-451,Crane and Plant Operator,hand and power tools,category_default,synthetic,true
-CAREER-451,Crane and Plant Operator,measuring instruments,category_default,synthetic,true
-CAREER-451,Crane and Plant Operator,personal protective equipment,category_default,synthetic,true
-CAREER-451,Crane and Plant Operator,technical drawings,category_default,synthetic,true
-CAREER-451,Crane and Plant Operator,testing equipment,category_default,synthetic,true
-CAREER-452,Electric Vehicle and Battery Technician,hand and power tools,category_default,synthetic,true
-CAREER-452,Electric Vehicle and Battery Technician,measuring instruments,category_default,synthetic,true
-CAREER-452,Electric Vehicle and Battery Technician,personal protective equipment,category_default,synthetic,true
-CAREER-452,Electric Vehicle and Battery Technician,technical drawings,category_default,synthetic,true
-CAREER-452,Electric Vehicle and Battery Technician,testing equipment,category_default,synthetic,true
+CAREER-415,Addiction Counsellor,screening tools such as AUDIT and ASSIST,authored,synthetic,true
+CAREER-415,Addiction Counsellor,motivational interviewing,authored,synthetic,true
+CAREER-415,Addiction Counsellor,twelve-step and CBT models,authored,synthetic,true
+CAREER-415,Addiction Counsellor,treatment plans,authored,synthetic,true
+CAREER-415,Addiction Counsellor,case notes,authored,synthetic,true
+CAREER-415,Addiction Counsellor,referral networks,authored,synthetic,true
+CAREER-415,Addiction Counsellor,group therapy manuals,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,systemic and family therapy models,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,genograms,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,relationship assessment questionnaires,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,session notes,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,teletherapy platforms,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,ethical codes,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,referral directories,authored,synthetic,true
+CAREER-417,Geriatric Care Worker,mobility aids and hoists,authored,synthetic,true
+CAREER-417,Geriatric Care Worker,care plans,authored,synthetic,true
+CAREER-417,Geriatric Care Worker,blood pressure and glucose monitors,authored,synthetic,true
+CAREER-417,Geriatric Care Worker,medication organisers,authored,synthetic,true
+CAREER-417,Geriatric Care Worker,first-aid kits,authored,synthetic,true
+CAREER-417,Geriatric Care Worker,care notes,authored,synthetic,true
+CAREER-417,Geriatric Care Worker,protective equipment,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,rehabilitation plans,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,assistive devices,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,functional assessment tools,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,vocational training equipment,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,case records,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,referral directories,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,community-based rehabilitation guidelines,authored,synthetic,true
+CAREER-419,Safeguarding Adviser,safeguarding policies and codes of conduct,authored,synthetic,true
+CAREER-419,Safeguarding Adviser,case management systems,authored,synthetic,true
+CAREER-419,Safeguarding Adviser,risk assessment templates,authored,synthetic,true
+CAREER-419,Safeguarding Adviser,reporting hotlines,authored,synthetic,true
+CAREER-419,Safeguarding Adviser,investigation guidelines,authored,synthetic,true
+CAREER-419,Safeguarding Adviser,training materials,authored,synthetic,true
+CAREER-419,Safeguarding Adviser,donor safeguarding standards,authored,synthetic,true
+CAREER-420,Chaplain,pastoral counselling skills,authored,synthetic,true
+CAREER-420,Chaplain,sacred texts and worship resources,authored,synthetic,true
+CAREER-420,Chaplain,visit records,authored,synthetic,true
+CAREER-420,Chaplain,referral directories,authored,synthetic,true
+CAREER-420,Chaplain,ethics guidelines,authored,synthetic,true
+CAREER-420,Chaplain,grief support materials,authored,synthetic,true
+CAREER-420,Chaplain,chapel or prayer spaces,authored,synthetic,true
+CAREER-421,Advocacy Officer,policy briefs,authored,synthetic,true
+CAREER-421,Advocacy Officer,stakeholder maps,authored,synthetic,true
+CAREER-421,Advocacy Officer,advocacy strategies,authored,synthetic,true
+CAREER-421,Advocacy Officer,social media platforms,authored,synthetic,true
+CAREER-421,Advocacy Officer,parliamentary and county assembly records,authored,synthetic,true
+CAREER-421,Advocacy Officer,petition tools,authored,synthetic,true
+CAREER-421,Advocacy Officer,media lists,authored,synthetic,true
+CAREER-422,Livelihoods Officer,savings group toolkits,authored,synthetic,true
+CAREER-422,Livelihoods Officer,business training curricula,authored,synthetic,true
+CAREER-422,Livelihoods Officer,market assessment tools,authored,synthetic,true
+CAREER-422,Livelihoods Officer,KoboToolbox,authored,synthetic,true
+CAREER-422,Livelihoods Officer,mobile money platforms,authored,synthetic,true
+CAREER-422,Livelihoods Officer,Excel,authored,synthetic,true
+CAREER-422,Livelihoods Officer,household survey forms,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,social protection management information systems,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,mobile money and bank platforms,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,registration tools,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,Excel,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,grievance and case management systems,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,post-distribution monitoring surveys,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,biometric verification devices,authored,synthetic,true
+CAREER-424,Research and Learning Officer,qualitative analysis tools such as NVivo,authored,synthetic,true
+CAREER-424,Research and Learning Officer,survey tools,authored,synthetic,true
+CAREER-424,Research and Learning Officer,Excel,authored,synthetic,true
+CAREER-424,Research and Learning Officer,knowledge-sharing platforms,authored,synthetic,true
+CAREER-424,Research and Learning Officer,reference managers,authored,synthetic,true
+CAREER-424,Research and Learning Officer,presentation tools,authored,synthetic,true
+CAREER-424,Research and Learning Officer,learning agendas,authored,synthetic,true
+CAREER-425,Children's Home Manager,child case files and care plans,authored,synthetic,true
+CAREER-425,Children's Home Manager,children's institution regulations,authored,synthetic,true
+CAREER-425,Children's Home Manager,safeguarding policies,authored,synthetic,true
+CAREER-425,Children's Home Manager,budgets in Excel,authored,synthetic,true
+CAREER-425,Children's Home Manager,donor and sponsorship records,authored,synthetic,true
+CAREER-425,Children's Home Manager,child protection information systems,authored,synthetic,true
+CAREER-425,Children's Home Manager,health and school records,authored,synthetic,true
+CAREER-426,Police Officer,occurrence book and case files,authored,synthetic,true
+CAREER-426,Police Officer,radios,authored,synthetic,true
+CAREER-426,Police Officer,police service standing orders and criminal law,authored,synthetic,true
+CAREER-426,Police Officer,forensic kits,authored,synthetic,true
+CAREER-426,Police Officer,patrol vehicles,authored,synthetic,true
+CAREER-426,Police Officer,digital occurrence book systems,authored,synthetic,true
+CAREER-426,Police Officer,firearms and protective equipment,authored,synthetic,true
+CAREER-427,Military Officer,military communication systems,authored,synthetic,true
+CAREER-427,Military Officer,maps and navigation tools,authored,synthetic,true
+CAREER-427,Military Officer,weapons and protective equipment,authored,synthetic,true
+CAREER-427,Military Officer,operational planning procedures,authored,synthetic,true
+CAREER-427,Military Officer,military vehicles,authored,synthetic,true
+CAREER-427,Military Officer,standing orders,authored,synthetic,true
+CAREER-427,Military Officer,field equipment,authored,synthetic,true
+CAREER-428,Intelligence Analyst,link analysis tools such as i2 Analyst's Notebook,authored,synthetic,true
+CAREER-428,Intelligence Analyst,open-source intelligence tools,authored,synthetic,true
+CAREER-428,Intelligence Analyst,GIS and mapping,authored,synthetic,true
+CAREER-428,Intelligence Analyst,secure databases,authored,synthetic,true
+CAREER-428,Intelligence Analyst,structured analytic techniques,authored,synthetic,true
+CAREER-428,Intelligence Analyst,report templates,authored,synthetic,true
+CAREER-428,Intelligence Analyst,media monitoring tools,authored,synthetic,true
+CAREER-429,Prisons Officer,prison registers and records,authored,synthetic,true
+CAREER-429,Prisons Officer,radios and security equipment,authored,synthetic,true
+CAREER-429,Prisons Officer,prison rules and standing orders,authored,synthetic,true
+CAREER-429,Prisons Officer,restraint and protective equipment,authored,synthetic,true
+CAREER-429,Prisons Officer,CCTV,authored,synthetic,true
+CAREER-429,Prisons Officer,rehabilitation programme materials,authored,synthetic,true
+CAREER-429,Prisons Officer,escort vehicles,authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,fire engines and pumps,authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,"hoses, nozzles and hydrants",authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,breathing apparatus,authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,hydraulic rescue tools,authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,protective clothing,authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,ladders,authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,first-aid equipment,authored,synthetic,true
+CAREER-431,National Government Administration Officer,government circulars and directives,authored,synthetic,true
+CAREER-431,National Government Administration Officer,occurrence and incident reports,authored,synthetic,true
+CAREER-431,National Government Administration Officer,baraza records,authored,synthetic,true
+CAREER-431,National Government Administration Officer,national administration laws,authored,synthetic,true
+CAREER-431,National Government Administration Officer,radios and phones,authored,synthetic,true
+CAREER-431,National Government Administration Officer,official letters,authored,synthetic,true
+CAREER-431,National Government Administration Officer,registration and vetting forms,authored,synthetic,true
+CAREER-432,Public Auditor,audit software such as TeamMate,authored,synthetic,true
+CAREER-432,Public Auditor,IFMIS,authored,synthetic,true
+CAREER-432,Public Auditor,international standards for supreme audit institutions,authored,synthetic,true
+CAREER-432,Public Auditor,Excel and data analytics,authored,synthetic,true
+CAREER-432,Public Auditor,public finance and procurement laws,authored,synthetic,true
+CAREER-432,Public Auditor,audit working papers,authored,synthetic,true
+CAREER-432,Public Auditor,sampling methods,authored,synthetic,true
+CAREER-433,Public Procurement Officer,the Public Procurement and Asset Disposal Act and regulations,authored,synthetic,true
+CAREER-433,Public Procurement Officer,IFMIS e-procurement,authored,synthetic,true
+CAREER-433,Public Procurement Officer,standard tender documents,authored,synthetic,true
+CAREER-433,Public Procurement Officer,the public procurement information portal,authored,synthetic,true
+CAREER-433,Public Procurement Officer,Excel,authored,synthetic,true
+CAREER-433,Public Procurement Officer,supplier registers,authored,synthetic,true
+CAREER-433,Public Procurement Officer,contract registers,authored,synthetic,true
+CAREER-434,Lands Officer,land information systems such as Ardhisasa,authored,synthetic,true
+CAREER-434,Lands Officer,land laws,authored,synthetic,true
+CAREER-434,Lands Officer,registry index maps and survey plans,authored,synthetic,true
+CAREER-434,Lands Officer,valuation methods,authored,synthetic,true
+CAREER-434,Lands Officer,GPS,authored,synthetic,true
+CAREER-434,Lands Officer,land registers,authored,synthetic,true
+CAREER-434,Lands Officer,Word and Excel,authored,synthetic,true
+CAREER-435,Labour Officer,employment and labour relations laws,authored,synthetic,true
+CAREER-435,Labour Officer,inspection checklists,authored,synthetic,true
+CAREER-435,Labour Officer,conciliation procedures,authored,synthetic,true
+CAREER-435,Labour Officer,wage orders,authored,synthetic,true
+CAREER-435,Labour Officer,case registers,authored,synthetic,true
+CAREER-435,Labour Officer,work injury benefit forms,authored,synthetic,true
+CAREER-435,Labour Officer,Word and Excel,authored,synthetic,true
+CAREER-436,Consular Officer,consular management systems,authored,synthetic,true
+CAREER-436,Consular Officer,e-visa and passport systems,authored,synthetic,true
+CAREER-436,Consular Officer,the Vienna Convention on Consular Relations,authored,synthetic,true
+CAREER-436,Consular Officer,document authentication tools,authored,synthetic,true
+CAREER-436,Consular Officer,registers of nationals,authored,synthetic,true
+CAREER-436,Consular Officer,secure communication,authored,synthetic,true
+CAREER-436,Consular Officer,consular fee schedules,authored,synthetic,true
+CAREER-437,Records and Archives Officer,electronic document and records management systems,authored,synthetic,true
+CAREER-437,Records and Archives Officer,file classification schemes,authored,synthetic,true
+CAREER-437,Records and Archives Officer,retention schedules,authored,synthetic,true
+CAREER-437,Records and Archives Officer,scanners and digitisation software,authored,synthetic,true
+CAREER-437,Records and Archives Officer,archival storage boxes,authored,synthetic,true
+CAREER-437,Records and Archives Officer,file movement registers,authored,synthetic,true
+CAREER-437,Records and Archives Officer,records laws,authored,synthetic,true
+CAREER-438,Mason,trowels and floats,authored,synthetic,true
+CAREER-438,Mason,spirit levels and plumb bobs,authored,synthetic,true
+CAREER-438,Mason,building lines and squares,authored,synthetic,true
+CAREER-438,Mason,concrete mixers,authored,synthetic,true
+CAREER-438,Mason,wheelbarrows and spades,authored,synthetic,true
+CAREER-438,Mason,tile cutters,authored,synthetic,true
+CAREER-438,Mason,measuring tapes,authored,synthetic,true
+CAREER-439,Painter and Decorator,brushes and rollers,authored,synthetic,true
+CAREER-439,Painter and Decorator,spray guns and compressors,authored,synthetic,true
+CAREER-439,Painter and Decorator,scrapers and sandpaper,authored,synthetic,true
+CAREER-439,Painter and Decorator,ladders and scaffolding,authored,synthetic,true
+CAREER-439,Painter and Decorator,fillers and primers,authored,synthetic,true
+CAREER-439,Painter and Decorator,colour charts,authored,synthetic,true
+CAREER-439,Painter and Decorator,masking tape and drop sheets,authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,sewing machines and overlockers,authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,tape measures,authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,scissors and rotary cutters,authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,pattern paper and chalk,authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,irons and pressing boards,authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,dress forms,authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,needles and threads,authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,"dryers, blow-dryers and flat irons",authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,clippers and scissors,authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,combs and brushes,authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,hair and skin products,authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,nail kits and UV lamps,authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,sterilisers,authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,booking and payment apps,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,climbing gear and safety harnesses,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,hot sticks and insulated tools,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,cable jointing kits,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,earthing equipment,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,voltage detectors,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,bucket trucks,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,tension and sag tools,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,fall-arrest and rescue equipment,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,torque and tensioning tools,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,multimeters,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,SCADA systems,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,turbine service manuals,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,hydraulic tools,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,lock-out tag-out kits,authored,synthetic,true
+CAREER-444,Biogas Technician,masonry tools,authored,synthetic,true
+CAREER-444,Biogas Technician,gas piping and fittings,authored,synthetic,true
+CAREER-444,Biogas Technician,pressure gauges and manometers,authored,synthetic,true
+CAREER-444,Biogas Technician,gas leak detectors,authored,synthetic,true
+CAREER-444,Biogas Technician,biogas stoves and burners,authored,synthetic,true
+CAREER-444,Biogas Technician,digester design guides,authored,synthetic,true
+CAREER-444,Biogas Technician,pH meters,authored,synthetic,true
+CAREER-445,Boiler Operator,boiler controls and gauges,authored,synthetic,true
+CAREER-445,Boiler Operator,water test kits,authored,synthetic,true
+CAREER-445,Boiler Operator,burners and stokers,authored,synthetic,true
+CAREER-445,Boiler Operator,safety valves,authored,synthetic,true
+CAREER-445,Boiler Operator,feed pumps,authored,synthetic,true
+CAREER-445,Boiler Operator,boiler logbooks,authored,synthetic,true
+CAREER-445,Boiler Operator,flue gas analysers,authored,synthetic,true
+CAREER-446,Process Plant Operator,distributed control systems and SCADA,authored,synthetic,true
+CAREER-446,Process Plant Operator,process flow diagrams and P&IDs,authored,synthetic,true
+CAREER-446,Process Plant Operator,field gauges and sampling points,authored,synthetic,true
+CAREER-446,Process Plant Operator,"pumps, valves and conveyors",authored,synthetic,true
+CAREER-446,Process Plant Operator,standard operating procedures,authored,synthetic,true
+CAREER-446,Process Plant Operator,gas detectors,authored,synthetic,true
+CAREER-446,Process Plant Operator,shift logs,authored,synthetic,true
+CAREER-447,Leather Technologist,tanning drums,authored,synthetic,true
+CAREER-447,Leather Technologist,splitting and shaving machines,authored,synthetic,true
+CAREER-447,Leather Technologist,leather testing equipment,authored,synthetic,true
+CAREER-447,Leather Technologist,finishing sprays and presses,authored,synthetic,true
+CAREER-447,Leather Technologist,cutting knives and stitching machines,authored,synthetic,true
+CAREER-447,Leather Technologist,chemical recipes,authored,synthetic,true
+CAREER-447,Leather Technologist,effluent treatment systems,authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,spanner and socket sets,authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,tyre levers and pumps,authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,multimeters,authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,carburettor tools,authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,chain breakers,authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,engine stands,authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,service manuals,authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,precision screwdriver sets,authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,soldering stations and hot-air rework stations,authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,multimeters,authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,opening tools and suction cups,authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,microscopes,authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,software flashing tools,authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,DC power supplies,authored,synthetic,true
+CAREER-450,Lift Technician,lift controllers and diagnostic tools,authored,synthetic,true
+CAREER-450,Lift Technician,multimeters,authored,synthetic,true
+CAREER-450,Lift Technician,hoists and rigging gear,authored,synthetic,true
+CAREER-450,Lift Technician,wiring diagrams,authored,synthetic,true
+CAREER-450,Lift Technician,safety test weights,authored,synthetic,true
+CAREER-450,Lift Technician,hand and power tools,authored,synthetic,true
+CAREER-450,Lift Technician,lock-out tag-out kits,authored,synthetic,true
+CAREER-451,Crane and Plant Operator,"cranes, excavators and loaders",authored,synthetic,true
+CAREER-451,Crane and Plant Operator,load charts and indicators,authored,synthetic,true
+CAREER-451,Crane and Plant Operator,two-way radios,authored,synthetic,true
+CAREER-451,Crane and Plant Operator,rigging gear and slings,authored,synthetic,true
+CAREER-451,Crane and Plant Operator,daily inspection checklists,authored,synthetic,true
+CAREER-451,Crane and Plant Operator,hand signals,authored,synthetic,true
+CAREER-451,Crane and Plant Operator,protective equipment,authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,battery testers and analysers,authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,insulated high-voltage tools,authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,diagnostic software,authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,multimeters and oscilloscopes,authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,spot welders for battery packs,authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,battery management system tools,authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,charging equipment,authored,synthetic,true

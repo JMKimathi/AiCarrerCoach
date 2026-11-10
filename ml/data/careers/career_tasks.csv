@@ -1594,360 +1594,478 @@ CAREER-217,Transport Planner,Assess traffic impact of developments,authored,synt
 CAREER-217,Transport Planner,Plan walking and cycling facilities,authored,synthetic,true
 CAREER-217,Transport Planner,Consult the public and stakeholders,authored,synthetic,true
 CAREER-217,Transport Planner,Write transport plans and reports,authored,synthetic,true
-CAREER-218,Social Worker,Work directly with people and communities on social work,category_default,synthetic,true
-CAREER-218,Social Worker,Assess needs and plan support,category_default,synthetic,true
-CAREER-218,Social Worker,Keep confidential case or project records,category_default,synthetic,true
-CAREER-218,Social Worker,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-218,Social Worker,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-218,Social Worker,Report on activities and results,category_default,synthetic,true
-CAREER-219,Community Development Officer,Work directly with people and communities on community development,category_default,synthetic,true
-CAREER-219,Community Development Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-219,Community Development Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-219,Community Development Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-219,Community Development Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-219,Community Development Officer,Report on activities and results,category_default,synthetic,true
-CAREER-220,Youth Worker,Work directly with people and communities on youth development,category_default,synthetic,true
-CAREER-220,Youth Worker,Assess needs and plan support,category_default,synthetic,true
-CAREER-220,Youth Worker,Keep confidential case or project records,category_default,synthetic,true
-CAREER-220,Youth Worker,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-220,Youth Worker,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-220,Youth Worker,Report on activities and results,category_default,synthetic,true
-CAREER-221,Counsellor,Work directly with people and communities on counselling,category_default,synthetic,true
-CAREER-221,Counsellor,Assess needs and plan support,category_default,synthetic,true
-CAREER-221,Counsellor,Keep confidential case or project records,category_default,synthetic,true
-CAREER-221,Counsellor,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-221,Counsellor,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-221,Counsellor,Report on activities and results,category_default,synthetic,true
-CAREER-222,Child Protection Officer,Work directly with people and communities on child protection,category_default,synthetic,true
-CAREER-222,Child Protection Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-222,Child Protection Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-222,Child Protection Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-222,Child Protection Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-222,Child Protection Officer,Report on activities and results,category_default,synthetic,true
-CAREER-223,NGO Programme Officer,Work directly with people and communities on programme management,category_default,synthetic,true
-CAREER-223,NGO Programme Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-223,NGO Programme Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-223,NGO Programme Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-223,NGO Programme Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-223,NGO Programme Officer,Report on activities and results,category_default,synthetic,true
-CAREER-224,Monitoring and Evaluation Officer,Work directly with people and communities on monitoring and evaluation,category_default,synthetic,true
-CAREER-224,Monitoring and Evaluation Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-224,Monitoring and Evaluation Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-224,Monitoring and Evaluation Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-224,Monitoring and Evaluation Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-224,Monitoring and Evaluation Officer,Report on activities and results,category_default,synthetic,true
-CAREER-225,Humanitarian Aid Worker,Work directly with people and communities on humanitarian response,category_default,synthetic,true
-CAREER-225,Humanitarian Aid Worker,Assess needs and plan support,category_default,synthetic,true
-CAREER-225,Humanitarian Aid Worker,Keep confidential case or project records,category_default,synthetic,true
-CAREER-225,Humanitarian Aid Worker,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-225,Humanitarian Aid Worker,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-225,Humanitarian Aid Worker,Report on activities and results,category_default,synthetic,true
-CAREER-226,Gender and Inclusion Officer,Work directly with people and communities on gender and social inclusion,category_default,synthetic,true
-CAREER-226,Gender and Inclusion Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-226,Gender and Inclusion Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-226,Gender and Inclusion Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-226,Gender and Inclusion Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-226,Gender and Inclusion Officer,Report on activities and results,category_default,synthetic,true
-CAREER-227,Disability Inclusion Officer,Work directly with people and communities on disability inclusion,category_default,synthetic,true
-CAREER-227,Disability Inclusion Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-227,Disability Inclusion Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-227,Disability Inclusion Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-227,Disability Inclusion Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-227,Disability Inclusion Officer,Report on activities and results,category_default,synthetic,true
-CAREER-228,Peacebuilding Officer,Work directly with people and communities on peace and conflict,category_default,synthetic,true
-CAREER-228,Peacebuilding Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-228,Peacebuilding Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-228,Peacebuilding Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-228,Peacebuilding Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-228,Peacebuilding Officer,Report on activities and results,category_default,synthetic,true
-CAREER-229,Psychosocial Support Officer,Work directly with people and communities on psychosocial support,category_default,synthetic,true
-CAREER-229,Psychosocial Support Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-229,Psychosocial Support Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-229,Psychosocial Support Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-229,Psychosocial Support Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-229,Psychosocial Support Officer,Report on activities and results,category_default,synthetic,true
-CAREER-230,Volunteer Coordinator,Work directly with people and communities on volunteer management,category_default,synthetic,true
-CAREER-230,Volunteer Coordinator,Assess needs and plan support,category_default,synthetic,true
-CAREER-230,Volunteer Coordinator,Keep confidential case or project records,category_default,synthetic,true
-CAREER-230,Volunteer Coordinator,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-230,Volunteer Coordinator,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-230,Volunteer Coordinator,Report on activities and results,category_default,synthetic,true
-CAREER-231,Fundraising Officer,Work directly with people and communities on resource mobilisation,category_default,synthetic,true
-CAREER-231,Fundraising Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-231,Fundraising Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-231,Fundraising Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-231,Fundraising Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-231,Fundraising Officer,Report on activities and results,category_default,synthetic,true
-CAREER-232,Community Mobiliser,Work directly with people and communities on community outreach,category_default,synthetic,true
-CAREER-232,Community Mobiliser,Assess needs and plan support,category_default,synthetic,true
-CAREER-232,Community Mobiliser,Keep confidential case or project records,category_default,synthetic,true
-CAREER-232,Community Mobiliser,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-232,Community Mobiliser,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-232,Community Mobiliser,Report on activities and results,category_default,synthetic,true
-CAREER-233,Refugee Protection Officer,Work directly with people and communities on forced displacement,category_default,synthetic,true
-CAREER-233,Refugee Protection Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-233,Refugee Protection Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-233,Refugee Protection Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-233,Refugee Protection Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-233,Refugee Protection Officer,Report on activities and results,category_default,synthetic,true
-CAREER-234,Probation Officer,Work directly with people and communities on rehabilitation and reintegration,category_default,synthetic,true
-CAREER-234,Probation Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-234,Probation Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-234,Probation Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-234,Probation Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-234,Probation Officer,Report on activities and results,category_default,synthetic,true
-CAREER-235,Sociologist,Work directly with people and communities on social research,category_default,synthetic,true
-CAREER-235,Sociologist,Assess needs and plan support,category_default,synthetic,true
-CAREER-235,Sociologist,Keep confidential case or project records,category_default,synthetic,true
-CAREER-235,Sociologist,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-235,Sociologist,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-235,Sociologist,Report on activities and results,category_default,synthetic,true
-CAREER-236,Public Administrator,Implement policies and programmes in public administration,category_default,synthetic,true
-CAREER-236,Public Administrator,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-236,Public Administrator,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-236,Public Administrator,Analyse information for decisions,category_default,synthetic,true
-CAREER-236,Public Administrator,Follow public service procedures,category_default,synthetic,true
-CAREER-236,Public Administrator,Work with other agencies and partners,category_default,synthetic,true
-CAREER-237,Public Policy Analyst,Implement policies and programmes in policy analysis,category_default,synthetic,true
-CAREER-237,Public Policy Analyst,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-237,Public Policy Analyst,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-237,Public Policy Analyst,Analyse information for decisions,category_default,synthetic,true
-CAREER-237,Public Policy Analyst,Follow public service procedures,category_default,synthetic,true
-CAREER-237,Public Policy Analyst,Work with other agencies and partners,category_default,synthetic,true
-CAREER-238,Economist,Implement policies and programmes in economic analysis,category_default,synthetic,true
-CAREER-238,Economist,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-238,Economist,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-238,Economist,Analyse information for decisions,category_default,synthetic,true
-CAREER-238,Economist,Follow public service procedures,category_default,synthetic,true
-CAREER-238,Economist,Work with other agencies and partners,category_default,synthetic,true
-CAREER-239,Development Economist,Implement policies and programmes in development economics,category_default,synthetic,true
-CAREER-239,Development Economist,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-239,Development Economist,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-239,Development Economist,Analyse information for decisions,category_default,synthetic,true
-CAREER-239,Development Economist,Follow public service procedures,category_default,synthetic,true
-CAREER-239,Development Economist,Work with other agencies and partners,category_default,synthetic,true
-CAREER-240,County Government Officer,Implement policies and programmes in devolved government,category_default,synthetic,true
-CAREER-240,County Government Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-240,County Government Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-240,County Government Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-240,County Government Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-240,County Government Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-241,Diplomat and Foreign Service Officer,Implement policies and programmes in foreign affairs,category_default,synthetic,true
-CAREER-241,Diplomat and Foreign Service Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-241,Diplomat and Foreign Service Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-241,Diplomat and Foreign Service Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-241,Diplomat and Foreign Service Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-241,Diplomat and Foreign Service Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-242,Development Planning Officer,Implement policies and programmes in development planning,category_default,synthetic,true
-CAREER-242,Development Planning Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-242,Development Planning Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-242,Development Planning Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-242,Development Planning Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-242,Development Planning Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-243,Revenue Officer,Implement policies and programmes in tax administration,category_default,synthetic,true
-CAREER-243,Revenue Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-243,Revenue Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-243,Revenue Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-243,Revenue Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-243,Revenue Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-244,Immigration Officer,Implement policies and programmes in border and immigration services,category_default,synthetic,true
-CAREER-244,Immigration Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-244,Immigration Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-244,Immigration Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-244,Immigration Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-244,Immigration Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-245,Development Project Coordinator,Implement policies and programmes in development projects,category_default,synthetic,true
-CAREER-245,Development Project Coordinator,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-245,Development Project Coordinator,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-245,Development Project Coordinator,Analyse information for decisions,category_default,synthetic,true
-CAREER-245,Development Project Coordinator,Follow public service procedures,category_default,synthetic,true
-CAREER-245,Development Project Coordinator,Work with other agencies and partners,category_default,synthetic,true
-CAREER-246,International Relations Analyst,Implement policies and programmes in international affairs,category_default,synthetic,true
-CAREER-246,International Relations Analyst,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-246,International Relations Analyst,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-246,International Relations Analyst,Analyse information for decisions,category_default,synthetic,true
-CAREER-246,International Relations Analyst,Follow public service procedures,category_default,synthetic,true
-CAREER-246,International Relations Analyst,Work with other agencies and partners,category_default,synthetic,true
-CAREER-247,Trade Policy Analyst,Implement policies and programmes in trade and regional integration,category_default,synthetic,true
-CAREER-247,Trade Policy Analyst,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-247,Trade Policy Analyst,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-247,Trade Policy Analyst,Analyse information for decisions,category_default,synthetic,true
-CAREER-247,Trade Policy Analyst,Follow public service procedures,category_default,synthetic,true
-CAREER-247,Trade Policy Analyst,Work with other agencies and partners,category_default,synthetic,true
-CAREER-248,Public Finance Officer,Implement policies and programmes in public financial management,category_default,synthetic,true
-CAREER-248,Public Finance Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-248,Public Finance Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-248,Public Finance Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-248,Public Finance Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-248,Public Finance Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-249,Parliamentary Researcher,Implement policies and programmes in legislative research,category_default,synthetic,true
-CAREER-249,Parliamentary Researcher,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-249,Parliamentary Researcher,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-249,Parliamentary Researcher,Analyse information for decisions,category_default,synthetic,true
-CAREER-249,Parliamentary Researcher,Follow public service procedures,category_default,synthetic,true
-CAREER-249,Parliamentary Researcher,Work with other agencies and partners,category_default,synthetic,true
-CAREER-250,Government Statistician,Implement policies and programmes in official statistics,category_default,synthetic,true
-CAREER-250,Government Statistician,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-250,Government Statistician,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-250,Government Statistician,Analyse information for decisions,category_default,synthetic,true
-CAREER-250,Government Statistician,Follow public service procedures,category_default,synthetic,true
-CAREER-250,Government Statistician,Work with other agencies and partners,category_default,synthetic,true
-CAREER-251,Grants Manager,Implement policies and programmes in grants and funding,category_default,synthetic,true
-CAREER-251,Grants Manager,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-251,Grants Manager,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-251,Grants Manager,Analyse information for decisions,category_default,synthetic,true
-CAREER-251,Grants Manager,Follow public service procedures,category_default,synthetic,true
-CAREER-251,Grants Manager,Work with other agencies and partners,category_default,synthetic,true
-CAREER-252,Urban Development Officer,Implement policies and programmes in urban development,category_default,synthetic,true
-CAREER-252,Urban Development Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-252,Urban Development Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-252,Urban Development Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-252,Urban Development Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-252,Urban Development Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-253,Disaster Risk Management Officer,Implement policies and programmes in disaster preparedness,category_default,synthetic,true
-CAREER-253,Disaster Risk Management Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-253,Disaster Risk Management Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-253,Disaster Risk Management Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-253,Disaster Risk Management Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-253,Disaster Risk Management Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-254,ICT Policy Officer,Implement policies and programmes in digital government,category_default,synthetic,true
-CAREER-254,ICT Policy Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-254,ICT Policy Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-254,ICT Policy Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-254,ICT Policy Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-254,ICT Policy Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-255,Solar PV Technician,Carry out solar energy work to a specification,category_default,synthetic,true
-CAREER-255,Solar PV Technician,Read drawings or job cards,category_default,synthetic,true
-CAREER-255,Solar PV Technician,Inspect and test finished work,category_default,synthetic,true
-CAREER-255,Solar PV Technician,Maintain tools and equipment,category_default,synthetic,true
-CAREER-255,Solar PV Technician,Follow safety procedures,category_default,synthetic,true
-CAREER-255,Solar PV Technician,Estimate materials and time,category_default,synthetic,true
-CAREER-256,Renewable Energy Engineer,Carry out renewable energy systems work to a specification,category_default,synthetic,true
-CAREER-256,Renewable Energy Engineer,Read drawings or job cards,category_default,synthetic,true
-CAREER-256,Renewable Energy Engineer,Inspect and test finished work,category_default,synthetic,true
-CAREER-256,Renewable Energy Engineer,Maintain tools and equipment,category_default,synthetic,true
-CAREER-256,Renewable Energy Engineer,Follow safety procedures,category_default,synthetic,true
-CAREER-256,Renewable Energy Engineer,Estimate materials and time,category_default,synthetic,true
-CAREER-257,Power Systems Engineer,Carry out power transmission and distribution work to a specification,category_default,synthetic,true
-CAREER-257,Power Systems Engineer,Read drawings or job cards,category_default,synthetic,true
-CAREER-257,Power Systems Engineer,Inspect and test finished work,category_default,synthetic,true
-CAREER-257,Power Systems Engineer,Maintain tools and equipment,category_default,synthetic,true
-CAREER-257,Power Systems Engineer,Follow safety procedures,category_default,synthetic,true
-CAREER-257,Power Systems Engineer,Estimate materials and time,category_default,synthetic,true
-CAREER-258,Petroleum Engineer,Carry out oil and gas work to a specification,category_default,synthetic,true
-CAREER-258,Petroleum Engineer,Read drawings or job cards,category_default,synthetic,true
-CAREER-258,Petroleum Engineer,Inspect and test finished work,category_default,synthetic,true
-CAREER-258,Petroleum Engineer,Maintain tools and equipment,category_default,synthetic,true
-CAREER-258,Petroleum Engineer,Follow safety procedures,category_default,synthetic,true
-CAREER-258,Petroleum Engineer,Estimate materials and time,category_default,synthetic,true
-CAREER-259,Geothermal Technician,Carry out geothermal energy work to a specification,category_default,synthetic,true
-CAREER-259,Geothermal Technician,Read drawings or job cards,category_default,synthetic,true
-CAREER-259,Geothermal Technician,Inspect and test finished work,category_default,synthetic,true
-CAREER-259,Geothermal Technician,Maintain tools and equipment,category_default,synthetic,true
-CAREER-259,Geothermal Technician,Follow safety procedures,category_default,synthetic,true
-CAREER-259,Geothermal Technician,Estimate materials and time,category_default,synthetic,true
-CAREER-260,Electrician,Carry out electrical installation work to a specification,category_default,synthetic,true
-CAREER-260,Electrician,Read drawings or job cards,category_default,synthetic,true
-CAREER-260,Electrician,Inspect and test finished work,category_default,synthetic,true
-CAREER-260,Electrician,Maintain tools and equipment,category_default,synthetic,true
-CAREER-260,Electrician,Follow safety procedures,category_default,synthetic,true
-CAREER-260,Electrician,Estimate materials and time,category_default,synthetic,true
-CAREER-261,Plumber,Carry out plumbing and pipework work to a specification,category_default,synthetic,true
-CAREER-261,Plumber,Read drawings or job cards,category_default,synthetic,true
-CAREER-261,Plumber,Inspect and test finished work,category_default,synthetic,true
-CAREER-261,Plumber,Maintain tools and equipment,category_default,synthetic,true
-CAREER-261,Plumber,Follow safety procedures,category_default,synthetic,true
-CAREER-261,Plumber,Estimate materials and time,category_default,synthetic,true
-CAREER-262,Welder and Fabricator,Carry out metal fabrication work to a specification,category_default,synthetic,true
-CAREER-262,Welder and Fabricator,Read drawings or job cards,category_default,synthetic,true
-CAREER-262,Welder and Fabricator,Inspect and test finished work,category_default,synthetic,true
-CAREER-262,Welder and Fabricator,Maintain tools and equipment,category_default,synthetic,true
-CAREER-262,Welder and Fabricator,Follow safety procedures,category_default,synthetic,true
-CAREER-262,Welder and Fabricator,Estimate materials and time,category_default,synthetic,true
-CAREER-263,Automotive Technician,Carry out vehicle maintenance work to a specification,category_default,synthetic,true
-CAREER-263,Automotive Technician,Read drawings or job cards,category_default,synthetic,true
-CAREER-263,Automotive Technician,Inspect and test finished work,category_default,synthetic,true
-CAREER-263,Automotive Technician,Maintain tools and equipment,category_default,synthetic,true
-CAREER-263,Automotive Technician,Follow safety procedures,category_default,synthetic,true
-CAREER-263,Automotive Technician,Estimate materials and time,category_default,synthetic,true
-CAREER-264,Diesel and Heavy Equipment Mechanic,Carry out heavy equipment work to a specification,category_default,synthetic,true
-CAREER-264,Diesel and Heavy Equipment Mechanic,Read drawings or job cards,category_default,synthetic,true
-CAREER-264,Diesel and Heavy Equipment Mechanic,Inspect and test finished work,category_default,synthetic,true
-CAREER-264,Diesel and Heavy Equipment Mechanic,Maintain tools and equipment,category_default,synthetic,true
-CAREER-264,Diesel and Heavy Equipment Mechanic,Follow safety procedures,category_default,synthetic,true
-CAREER-264,Diesel and Heavy Equipment Mechanic,Estimate materials and time,category_default,synthetic,true
-CAREER-265,Manufacturing Engineer,Carry out manufacturing processes work to a specification,category_default,synthetic,true
-CAREER-265,Manufacturing Engineer,Read drawings or job cards,category_default,synthetic,true
-CAREER-265,Manufacturing Engineer,Inspect and test finished work,category_default,synthetic,true
-CAREER-265,Manufacturing Engineer,Maintain tools and equipment,category_default,synthetic,true
-CAREER-265,Manufacturing Engineer,Follow safety procedures,category_default,synthetic,true
-CAREER-265,Manufacturing Engineer,Estimate materials and time,category_default,synthetic,true
-CAREER-266,Production Supervisor,Carry out factory operations work to a specification,category_default,synthetic,true
-CAREER-266,Production Supervisor,Read drawings or job cards,category_default,synthetic,true
-CAREER-266,Production Supervisor,Inspect and test finished work,category_default,synthetic,true
-CAREER-266,Production Supervisor,Maintain tools and equipment,category_default,synthetic,true
-CAREER-266,Production Supervisor,Follow safety procedures,category_default,synthetic,true
-CAREER-266,Production Supervisor,Estimate materials and time,category_default,synthetic,true
-CAREER-267,Quality Control Inspector,Carry out manufacturing quality work to a specification,category_default,synthetic,true
-CAREER-267,Quality Control Inspector,Read drawings or job cards,category_default,synthetic,true
-CAREER-267,Quality Control Inspector,Inspect and test finished work,category_default,synthetic,true
-CAREER-267,Quality Control Inspector,Maintain tools and equipment,category_default,synthetic,true
-CAREER-267,Quality Control Inspector,Follow safety procedures,category_default,synthetic,true
-CAREER-267,Quality Control Inspector,Estimate materials and time,category_default,synthetic,true
-CAREER-268,Industrial Maintenance Technician,Carry out plant maintenance work to a specification,category_default,synthetic,true
-CAREER-268,Industrial Maintenance Technician,Read drawings or job cards,category_default,synthetic,true
-CAREER-268,Industrial Maintenance Technician,Inspect and test finished work,category_default,synthetic,true
-CAREER-268,Industrial Maintenance Technician,Maintain tools and equipment,category_default,synthetic,true
-CAREER-268,Industrial Maintenance Technician,Follow safety procedures,category_default,synthetic,true
-CAREER-268,Industrial Maintenance Technician,Estimate materials and time,category_default,synthetic,true
-CAREER-269,Mining Engineer,Carry out mining operations work to a specification,category_default,synthetic,true
-CAREER-269,Mining Engineer,Read drawings or job cards,category_default,synthetic,true
-CAREER-269,Mining Engineer,Inspect and test finished work,category_default,synthetic,true
-CAREER-269,Mining Engineer,Maintain tools and equipment,category_default,synthetic,true
-CAREER-269,Mining Engineer,Follow safety procedures,category_default,synthetic,true
-CAREER-269,Mining Engineer,Estimate materials and time,category_default,synthetic,true
-CAREER-270,Carpenter and Joiner,Carry out woodwork work to a specification,category_default,synthetic,true
-CAREER-270,Carpenter and Joiner,Read drawings or job cards,category_default,synthetic,true
-CAREER-270,Carpenter and Joiner,Inspect and test finished work,category_default,synthetic,true
-CAREER-270,Carpenter and Joiner,Maintain tools and equipment,category_default,synthetic,true
-CAREER-270,Carpenter and Joiner,Follow safety procedures,category_default,synthetic,true
-CAREER-270,Carpenter and Joiner,Estimate materials and time,category_default,synthetic,true
-CAREER-271,Refrigeration and Air-Conditioning Technician,Carry out cooling systems work to a specification,category_default,synthetic,true
-CAREER-271,Refrigeration and Air-Conditioning Technician,Read drawings or job cards,category_default,synthetic,true
-CAREER-271,Refrigeration and Air-Conditioning Technician,Inspect and test finished work,category_default,synthetic,true
-CAREER-271,Refrigeration and Air-Conditioning Technician,Maintain tools and equipment,category_default,synthetic,true
-CAREER-271,Refrigeration and Air-Conditioning Technician,Follow safety procedures,category_default,synthetic,true
-CAREER-271,Refrigeration and Air-Conditioning Technician,Estimate materials and time,category_default,synthetic,true
-CAREER-272,Textile and Garment Technologist,Carry out textiles and apparel work to a specification,category_default,synthetic,true
-CAREER-272,Textile and Garment Technologist,Read drawings or job cards,category_default,synthetic,true
-CAREER-272,Textile and Garment Technologist,Inspect and test finished work,category_default,synthetic,true
-CAREER-272,Textile and Garment Technologist,Maintain tools and equipment,category_default,synthetic,true
-CAREER-272,Textile and Garment Technologist,Follow safety procedures,category_default,synthetic,true
-CAREER-272,Textile and Garment Technologist,Estimate materials and time,category_default,synthetic,true
-CAREER-273,Instrumentation Technician,Carry out industrial instrumentation work to a specification,category_default,synthetic,true
-CAREER-273,Instrumentation Technician,Read drawings or job cards,category_default,synthetic,true
-CAREER-273,Instrumentation Technician,Inspect and test finished work,category_default,synthetic,true
-CAREER-273,Instrumentation Technician,Maintain tools and equipment,category_default,synthetic,true
-CAREER-273,Instrumentation Technician,Follow safety procedures,category_default,synthetic,true
-CAREER-273,Instrumentation Technician,Estimate materials and time,category_default,synthetic,true
-CAREER-274,Occupational Health and Safety Officer,Carry out workplace safety work to a specification,category_default,synthetic,true
-CAREER-274,Occupational Health and Safety Officer,Read drawings or job cards,category_default,synthetic,true
-CAREER-274,Occupational Health and Safety Officer,Inspect and test finished work,category_default,synthetic,true
-CAREER-274,Occupational Health and Safety Officer,Maintain tools and equipment,category_default,synthetic,true
-CAREER-274,Occupational Health and Safety Officer,Follow safety procedures,category_default,synthetic,true
-CAREER-274,Occupational Health and Safety Officer,Estimate materials and time,category_default,synthetic,true
-CAREER-275,Energy Auditor,Carry out energy efficiency work to a specification,category_default,synthetic,true
-CAREER-275,Energy Auditor,Read drawings or job cards,category_default,synthetic,true
-CAREER-275,Energy Auditor,Inspect and test finished work,category_default,synthetic,true
-CAREER-275,Energy Auditor,Maintain tools and equipment,category_default,synthetic,true
-CAREER-275,Energy Auditor,Follow safety procedures,category_default,synthetic,true
-CAREER-275,Energy Auditor,Estimate materials and time,category_default,synthetic,true
-CAREER-276,CNC Machinist,Carry out precision machining work to a specification,category_default,synthetic,true
-CAREER-276,CNC Machinist,Read drawings or job cards,category_default,synthetic,true
-CAREER-276,CNC Machinist,Inspect and test finished work,category_default,synthetic,true
-CAREER-276,CNC Machinist,Maintain tools and equipment,category_default,synthetic,true
-CAREER-276,CNC Machinist,Follow safety procedures,category_default,synthetic,true
-CAREER-276,CNC Machinist,Estimate materials and time,category_default,synthetic,true
+CAREER-218,Social Worker,Assess individuals' and families' needs,authored,synthetic,true
+CAREER-218,Social Worker,Build care and support plans,authored,synthetic,true
+CAREER-218,Social Worker,Visit homes and follow up cases,authored,synthetic,true
+CAREER-218,Social Worker,"Link clients to health, legal and financial help",authored,synthetic,true
+CAREER-218,Social Worker,Counsel people in crisis,authored,synthetic,true
+CAREER-218,Social Worker,Write case notes and court reports,authored,synthetic,true
+CAREER-218,Social Worker,"Work with chiefs, police and schools",authored,synthetic,true
+CAREER-218,Social Worker,Advocate for vulnerable clients,authored,synthetic,true
+CAREER-219,Community Development Officer,Meet communities and identify their priorities,authored,synthetic,true
+CAREER-219,Community Development Officer,Form and train groups,authored,synthetic,true
+CAREER-219,Community Development Officer,Help write project proposals and plans,authored,synthetic,true
+CAREER-219,Community Development Officer,Coordinate community projects,authored,synthetic,true
+CAREER-219,Community Development Officer,Link groups to government funds and partners,authored,synthetic,true
+CAREER-219,Community Development Officer,Resolve community conflicts,authored,synthetic,true
+CAREER-219,Community Development Officer,Monitor projects and collect data,authored,synthetic,true
+CAREER-219,Community Development Officer,Report to county or NGO managers,authored,synthetic,true
+CAREER-220,Youth Worker,Plan and run youth activities and trainings,authored,synthetic,true
+CAREER-220,Youth Worker,Mentor young people one to one,authored,synthetic,true
+CAREER-220,Youth Worker,"Link youth to jobs, training and funds",authored,synthetic,true
+CAREER-220,Youth Worker,"Organise sports, arts and talent events",authored,synthetic,true
+CAREER-220,Youth Worker,Support youth groups and enterprises,authored,synthetic,true
+CAREER-220,Youth Worker,Refer young people needing extra help,authored,synthetic,true
+CAREER-220,Youth Worker,Engage parents and leaders,authored,synthetic,true
+CAREER-220,Youth Worker,Track participation and outcomes,authored,synthetic,true
+CAREER-221,Counsellor,Build trust and listen to clients,authored,synthetic,true
+CAREER-221,Counsellor,Assess needs and risks,authored,synthetic,true
+CAREER-221,Counsellor,Agree goals and a counselling plan,authored,synthetic,true
+CAREER-221,Counsellor,Run individual and group sessions,authored,synthetic,true
+CAREER-221,Counsellor,Refer clients needing psychiatric or other care,authored,synthetic,true
+CAREER-221,Counsellor,Keep confidential notes,authored,synthetic,true
+CAREER-221,Counsellor,Attend supervision,authored,synthetic,true
+CAREER-221,Counsellor,Run awareness sessions,authored,synthetic,true
+CAREER-222,Child Protection Officer,Receive and assess reports of abuse or neglect,authored,synthetic,true
+CAREER-222,Child Protection Officer,Rescue children at risk with police and chiefs,authored,synthetic,true
+CAREER-222,Child Protection Officer,Plan each child's care and follow up,authored,synthetic,true
+CAREER-222,Child Protection Officer,Trace and reunify families,authored,synthetic,true
+CAREER-222,Child Protection Officer,Write court reports and attend hearings,authored,synthetic,true
+CAREER-222,Child Protection Officer,Train communities on child rights,authored,synthetic,true
+CAREER-222,Child Protection Officer,"Work with schools, hospitals and children's homes",authored,synthetic,true
+CAREER-222,Child Protection Officer,Record cases,authored,synthetic,true
+CAREER-223,NGO Programme Officer,Plan activities against the project plan and budget,authored,synthetic,true
+CAREER-223,NGO Programme Officer,Coordinate field teams and partners,authored,synthetic,true
+CAREER-223,NGO Programme Officer,Organise trainings and events,authored,synthetic,true
+CAREER-223,NGO Programme Officer,Track spending and results,authored,synthetic,true
+CAREER-223,NGO Programme Officer,Write donor reports and proposals,authored,synthetic,true
+CAREER-223,NGO Programme Officer,Visit project sites,authored,synthetic,true
+CAREER-223,NGO Programme Officer,Solve implementation problems,authored,synthetic,true
+CAREER-223,NGO Programme Officer,Represent the organisation in meetings,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,Design indicators and data tools,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,Train staff and enumerators,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,Collect and check data,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,Run baseline and endline surveys,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,Analyse data and build dashboards,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,Write monitoring and donor reports,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,Run feedback and complaints mechanisms,authored,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,Help teams use findings to improve,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,Assess needs after a crisis,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,Register affected households,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,Plan and run distributions,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,Coordinate with government and other agencies,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,Work in remote and insecure areas,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,Follow humanitarian principles and standards,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,Handle complaints from affected people,authored,synthetic,true
+CAREER-225,Humanitarian Aid Worker,Report on response activities,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,Carry out gender analyses,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,Review programmes and policies for inclusion,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,Train staff and communities,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,Support survivors of violence through referral pathways,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,Run campaigns on harmful practices,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,Collect sex- and age-disaggregated data,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,Advise managers,authored,synthetic,true
+CAREER-226,Gender and Inclusion Officer,Report on gender results,authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,Assess barriers people with disabilities face,authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,"Audit buildings, services and documents for accessibility",authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,Advise on reasonable adjustments,authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,"Link people to assistive devices, registration and benefits",authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,Train staff and employers,authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,Work with organisations of persons with disabilities,authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,Advocate for rights,authored,synthetic,true
+CAREER-227,Disability Inclusion Officer,Track inclusion data,authored,synthetic,true
+CAREER-228,Peacebuilding Officer,Analyse the causes and actors of conflict,authored,synthetic,true
+CAREER-228,Peacebuilding Officer,Convene dialogues between communities,authored,synthetic,true
+CAREER-228,Peacebuilding Officer,Train peace committees and mediators,authored,synthetic,true
+CAREER-228,Peacebuilding Officer,Monitor early warning signs,authored,synthetic,true
+CAREER-228,Peacebuilding Officer,"Support elders, women and youth peace groups",authored,synthetic,true
+CAREER-228,Peacebuilding Officer,Work with security and county officials,authored,synthetic,true
+CAREER-228,Peacebuilding Officer,Document peace agreements,authored,synthetic,true
+CAREER-228,Peacebuilding Officer,Report incidents and progress,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,Give psychological first aid after crises,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,Run support groups and child-friendly activities,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,Screen and refer people needing specialist care,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,Counsel survivors and caregivers,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,Train community volunteers,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,Raise mental health awareness,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,Keep confidential records,authored,synthetic,true
+CAREER-229,Psychosocial Support Officer,Look after staff wellbeing,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,Advertise and recruit volunteers,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,Screen and interview applicants,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,Match volunteers to roles,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,Run orientation and training,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,Schedule and supervise volunteers,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,Keep records of hours and work,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,Thank and recognise volunteers,authored,synthetic,true
+CAREER-230,Volunteer Coordinator,Handle problems and safeguarding checks,authored,synthetic,true
+CAREER-231,Fundraising Officer,Research donors and funding calls,authored,synthetic,true
+CAREER-231,Fundraising Officer,Write concept notes and proposals,authored,synthetic,true
+CAREER-231,Fundraising Officer,Build budgets with programme teams,authored,synthetic,true
+CAREER-231,Fundraising Officer,Manage relationships with donors,authored,synthetic,true
+CAREER-231,Fundraising Officer,Plan fundraising events and campaigns,authored,synthetic,true
+CAREER-231,Fundraising Officer,Thank and report to donors,authored,synthetic,true
+CAREER-231,Fundraising Officer,Track the funding pipeline,authored,synthetic,true
+CAREER-231,Fundraising Officer,Keep donor records,authored,synthetic,true
+CAREER-232,Community Mobiliser,Announce and mobilise people for meetings and campaigns,authored,synthetic,true
+CAREER-232,Community Mobiliser,Visit households door to door,authored,synthetic,true
+CAREER-232,Community Mobiliser,Explain programmes in local languages,authored,synthetic,true
+CAREER-232,Community Mobiliser,"Work with chiefs, elders and religious leaders",authored,synthetic,true
+CAREER-232,Community Mobiliser,Register participants,authored,synthetic,true
+CAREER-232,Community Mobiliser,Pass community feedback to the programme,authored,synthetic,true
+CAREER-232,Community Mobiliser,Follow up on people who drop out,authored,synthetic,true
+CAREER-232,Community Mobiliser,Report numbers reached,authored,synthetic,true
+CAREER-233,Refugee Protection Officer,Register and interview asylum seekers,authored,synthetic,true
+CAREER-233,Refugee Protection Officer,Identify people with special protection needs,authored,synthetic,true
+CAREER-233,Refugee Protection Officer,Give information on rights and procedures,authored,synthetic,true
+CAREER-233,Refugee Protection Officer,"Refer cases for legal, health and safety support",authored,synthetic,true
+CAREER-233,Refugee Protection Officer,Monitor protection risks in camps and towns,authored,synthetic,true
+CAREER-233,Refugee Protection Officer,Work with government refugee authorities,authored,synthetic,true
+CAREER-233,Refugee Protection Officer,Prepare resettlement files,authored,synthetic,true
+CAREER-233,Refugee Protection Officer,Document cases confidentially,authored,synthetic,true
+CAREER-234,Probation Officer,"Interview offenders, families and victims",authored,synthetic,true
+CAREER-234,Probation Officer,Write social inquiry reports for courts,authored,synthetic,true
+CAREER-234,Probation Officer,Supervise people on probation and community service,authored,synthetic,true
+CAREER-234,Probation Officer,Counsel offenders and plan rehabilitation,authored,synthetic,true
+CAREER-234,Probation Officer,Link them to training and work,authored,synthetic,true
+CAREER-234,Probation Officer,Report breaches to court,authored,synthetic,true
+CAREER-234,Probation Officer,Support reintegration after prison,authored,synthetic,true
+CAREER-234,Probation Officer,Keep case records,authored,synthetic,true
+CAREER-235,Sociologist,Design social studies,authored,synthetic,true
+CAREER-235,Sociologist,"Run interviews, focus groups and surveys",authored,synthetic,true
+CAREER-235,Sociologist,Analyse qualitative and quantitative data,authored,synthetic,true
+CAREER-235,Sociologist,Assess the social impact of projects,authored,synthetic,true
+CAREER-235,Sociologist,Write research reports and policy briefs,authored,synthetic,true
+CAREER-235,Sociologist,Present findings,authored,synthetic,true
+CAREER-235,Sociologist,Advise on resettlement and community issues,authored,synthetic,true
+CAREER-235,Sociologist,Teach or publish,authored,synthetic,true
+CAREER-236,Public Administrator,Coordinate a department's daily work,authored,synthetic,true
+CAREER-236,Public Administrator,"Draft memos, briefs and Cabinet papers",authored,synthetic,true
+CAREER-236,Public Administrator,Implement government policies and circulars,authored,synthetic,true
+CAREER-236,Public Administrator,"Manage budgets, staff and records",authored,synthetic,true
+CAREER-236,Public Administrator,Organise meetings and follow up decisions,authored,synthetic,true
+CAREER-236,Public Administrator,Handle public enquiries and complaints,authored,synthetic,true
+CAREER-236,Public Administrator,Report on performance targets,authored,synthetic,true
+CAREER-236,Public Administrator,Liaise with other ministries,authored,synthetic,true
+CAREER-237,Public Policy Analyst,Define the policy problem,authored,synthetic,true
+CAREER-237,Public Policy Analyst,Gather evidence and data,authored,synthetic,true
+CAREER-237,Public Policy Analyst,Compare options and their costs,authored,synthetic,true
+CAREER-237,Public Policy Analyst,Consult stakeholders,authored,synthetic,true
+CAREER-237,Public Policy Analyst,Write policy briefs and Cabinet memos,authored,synthetic,true
+CAREER-237,Public Policy Analyst,Assess the impact of regulations,authored,synthetic,true
+CAREER-237,Public Policy Analyst,Present recommendations to decision makers,authored,synthetic,true
+CAREER-237,Public Policy Analyst,Evaluate existing policies,authored,synthetic,true
+CAREER-238,Economist,Collect and analyse economic data,authored,synthetic,true
+CAREER-238,Economist,Build forecasts and models,authored,synthetic,true
+CAREER-238,Economist,"Monitor inflation, growth and trade",authored,synthetic,true
+CAREER-238,Economist,Write economic reports and briefs,authored,synthetic,true
+CAREER-238,Economist,Advise on policy and business decisions,authored,synthetic,true
+CAREER-238,Economist,Present outlooks to management or the public,authored,synthetic,true
+CAREER-238,Economist,Review economic research,authored,synthetic,true
+CAREER-238,Economist,Respond to data releases,authored,synthetic,true
+CAREER-239,Development Economist,Design studies of development programmes,authored,synthetic,true
+CAREER-239,Development Economist,Run household surveys and experiments,authored,synthetic,true
+CAREER-239,Development Economist,Analyse poverty and welfare data,authored,synthetic,true
+CAREER-239,Development Economist,Estimate programme impact,authored,synthetic,true
+CAREER-239,Development Economist,Write research papers and policy briefs,authored,synthetic,true
+CAREER-239,Development Economist,Advise governments and donors,authored,synthetic,true
+CAREER-239,Development Economist,Present findings,authored,synthetic,true
+CAREER-239,Development Economist,Cost and model policy options,authored,synthetic,true
+CAREER-240,County Government Officer,Coordinate county services in an area,authored,synthetic,true
+CAREER-240,County Government Officer,Organise public participation forums,authored,synthetic,true
+CAREER-240,County Government Officer,Supervise county staff and projects,authored,synthetic,true
+CAREER-240,County Government Officer,Collect and report service data,authored,synthetic,true
+CAREER-240,County Government Officer,Handle residents' complaints,authored,synthetic,true
+CAREER-240,County Government Officer,Support budget and plan preparation,authored,synthetic,true
+CAREER-240,County Government Officer,Work with national government officers,authored,synthetic,true
+CAREER-240,County Government Officer,Report to the county executive,authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,Represent the country abroad,authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,Report on political and economic developments,authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,Negotiate agreements and positions,authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,"Promote trade, investment and tourism",authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,Assist citizens abroad,authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,Organise official visits and protocol,authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,Draft diplomatic notes and briefs,authored,synthetic,true
+CAREER-241,Diplomat and Foreign Service Officer,Attend international meetings,authored,synthetic,true
+CAREER-242,Development Planning Officer,Prepare development and strategic plans,authored,synthetic,true
+CAREER-242,Development Planning Officer,Collect and analyse planning data,authored,synthetic,true
+CAREER-242,Development Planning Officer,Appraise proposed projects,authored,synthetic,true
+CAREER-242,Development Planning Officer,Link plans to budgets,authored,synthetic,true
+CAREER-242,Development Planning Officer,Coordinate departments and stakeholders,authored,synthetic,true
+CAREER-242,Development Planning Officer,Track implementation of plans,authored,synthetic,true
+CAREER-242,Development Planning Officer,Prepare progress reports,authored,synthetic,true
+CAREER-242,Development Planning Officer,Organise public consultations,authored,synthetic,true
+CAREER-243,Revenue Officer,Register and educate taxpayers,authored,synthetic,true
+CAREER-243,Revenue Officer,Review returns and assess taxes,authored,synthetic,true
+CAREER-243,Revenue Officer,Audit businesses' records,authored,synthetic,true
+CAREER-243,Revenue Officer,Follow up unpaid taxes,authored,synthetic,true
+CAREER-243,Revenue Officer,Inspect premises for compliance,authored,synthetic,true
+CAREER-243,Revenue Officer,Handle taxpayer queries and objections,authored,synthetic,true
+CAREER-243,Revenue Officer,Collect county fees and licences,authored,synthetic,true
+CAREER-243,Revenue Officer,Report on revenue collected,authored,synthetic,true
+CAREER-244,Immigration Officer,Check travellers' documents at borders and airports,authored,synthetic,true
+CAREER-244,Immigration Officer,Process passport and visa applications,authored,synthetic,true
+CAREER-244,Immigration Officer,Decide who may enter or stay,authored,synthetic,true
+CAREER-244,Immigration Officer,Issue work and residence permits,authored,synthetic,true
+CAREER-244,Immigration Officer,Detect forged documents,authored,synthetic,true
+CAREER-244,Immigration Officer,Investigate immigration offences,authored,synthetic,true
+CAREER-244,Immigration Officer,Remove people who break the rules,authored,synthetic,true
+CAREER-244,Immigration Officer,Keep records of movements,authored,synthetic,true
+CAREER-245,Development Project Coordinator,Plan project activities and budgets,authored,synthetic,true
+CAREER-245,Development Project Coordinator,Coordinate implementing agencies and contractors,authored,synthetic,true
+CAREER-245,Development Project Coordinator,"Track progress, spending and risks",authored,synthetic,true
+CAREER-245,Development Project Coordinator,Organise meetings and supervision missions,authored,synthetic,true
+CAREER-245,Development Project Coordinator,Ensure donor rules are followed,authored,synthetic,true
+CAREER-245,Development Project Coordinator,Resolve delays,authored,synthetic,true
+CAREER-245,Development Project Coordinator,Prepare progress and completion reports,authored,synthetic,true
+CAREER-245,Development Project Coordinator,Engage communities and officials,authored,synthetic,true
+CAREER-246,International Relations Analyst,Follow international news and events,authored,synthetic,true
+CAREER-246,International Relations Analyst,"Research countries, regions and issues",authored,synthetic,true
+CAREER-246,International Relations Analyst,Analyse what developments mean for the country or client,authored,synthetic,true
+CAREER-246,International Relations Analyst,"Write briefs, reports and commentary",authored,synthetic,true
+CAREER-246,International Relations Analyst,Brief officials or executives,authored,synthetic,true
+CAREER-246,International Relations Analyst,Attend conferences and meetings,authored,synthetic,true
+CAREER-246,International Relations Analyst,Build expert contacts,authored,synthetic,true
+CAREER-246,International Relations Analyst,Forecast political risks,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,Analyse trade flows and tariffs,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,Assess the impact of trade agreements,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,Prepare negotiating positions,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,Consult businesses and sector groups,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,Monitor non-tariff barriers,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,Write trade briefs and reports,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,Attend regional and WTO meetings,authored,synthetic,true
+CAREER-247,Trade Policy Analyst,Advise exporters and government,authored,synthetic,true
+CAREER-248,Public Finance Officer,Prepare budget estimates,authored,synthetic,true
+CAREER-248,Public Finance Officer,Process and control government spending,authored,synthetic,true
+CAREER-248,Public Finance Officer,Record transactions in the government system,authored,synthetic,true
+CAREER-248,Public Finance Officer,Manage cash and exchequer requests,authored,synthetic,true
+CAREER-248,Public Finance Officer,Prepare financial statements and reports,authored,synthetic,true
+CAREER-248,Public Finance Officer,Respond to audit queries,authored,synthetic,true
+CAREER-248,Public Finance Officer,Advise departments on finance rules,authored,synthetic,true
+CAREER-248,Public Finance Officer,Monitor revenue and debt,authored,synthetic,true
+CAREER-249,Parliamentary Researcher,Research issues for members and committees,authored,synthetic,true
+CAREER-249,Parliamentary Researcher,Analyse bills and their effects,authored,synthetic,true
+CAREER-249,Parliamentary Researcher,"Prepare briefs, questions and reports",authored,synthetic,true
+CAREER-249,Parliamentary Researcher,Analyse budgets and audit reports,authored,synthetic,true
+CAREER-249,Parliamentary Researcher,Summarise public submissions,authored,synthetic,true
+CAREER-249,Parliamentary Researcher,Brief committees before hearings,authored,synthetic,true
+CAREER-249,Parliamentary Researcher,Fact-check claims,authored,synthetic,true
+CAREER-249,Parliamentary Researcher,Track how resolutions are implemented,authored,synthetic,true
+CAREER-250,Government Statistician,Design censuses and surveys,authored,synthetic,true
+CAREER-250,Government Statistician,Train and supervise enumerators,authored,synthetic,true
+CAREER-250,Government Statistician,Collect and process data,authored,synthetic,true
+CAREER-250,Government Statistician,Compute indicators such as inflation and GDP,authored,synthetic,true
+CAREER-250,Government Statistician,Check data quality,authored,synthetic,true
+CAREER-250,Government Statistician,Publish statistical reports,authored,synthetic,true
+CAREER-250,Government Statistician,Answer data requests,authored,synthetic,true
+CAREER-250,Government Statistician,Advise ministries and counties on statistics,authored,synthetic,true
+CAREER-251,Grants Manager,Review grant agreements and donor rules,authored,synthetic,true
+CAREER-251,Grants Manager,Set up and track awards,authored,synthetic,true
+CAREER-251,Grants Manager,Build and monitor budgets,authored,synthetic,true
+CAREER-251,Grants Manager,Vet and manage sub-grantees,authored,synthetic,true
+CAREER-251,Grants Manager,Check spending for compliance,authored,synthetic,true
+CAREER-251,Grants Manager,Prepare financial and narrative reports,authored,synthetic,true
+CAREER-251,Grants Manager,Train staff and partners on rules,authored,synthetic,true
+CAREER-251,Grants Manager,Close out grants and prepare for audits,authored,synthetic,true
+CAREER-252,Urban Development Officer,Prepare urban and land-use plans,authored,synthetic,true
+CAREER-252,Urban Development Officer,Review building and development applications,authored,synthetic,true
+CAREER-252,Urban Development Officer,Plan upgrading of informal settlements,authored,synthetic,true
+CAREER-252,Urban Development Officer,"Coordinate roads, water and waste services",authored,synthetic,true
+CAREER-252,Urban Development Officer,Consult residents and stakeholders,authored,synthetic,true
+CAREER-252,Urban Development Officer,Enforce planning rules,authored,synthetic,true
+CAREER-252,Urban Development Officer,Collect and map urban data,authored,synthetic,true
+CAREER-252,Urban Development Officer,Report on projects,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,Assess hazards and vulnerable areas,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,Prepare contingency and response plans,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,Run early warning systems,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,Train communities and responders,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,Run drills and simulations,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,Coordinate agencies during emergencies,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,Assess damage and needs,authored,synthetic,true
+CAREER-253,Disaster Risk Management Officer,Report and plan recovery,authored,synthetic,true
+CAREER-254,ICT Policy Officer,Research technology trends and regulation,authored,synthetic,true
+CAREER-254,ICT Policy Officer,"Draft ICT policies, strategies and standards",authored,synthetic,true
+CAREER-254,ICT Policy Officer,Consult industry and the public,authored,synthetic,true
+CAREER-254,ICT Policy Officer,Review government digital projects,authored,synthetic,true
+CAREER-254,ICT Policy Officer,Advise on data protection and cybersecurity,authored,synthetic,true
+CAREER-254,ICT Policy Officer,Track implementation of digital plans,authored,synthetic,true
+CAREER-254,ICT Policy Officer,Represent the country in technical forums,authored,synthetic,true
+CAREER-254,ICT Policy Officer,Write briefs and reports,authored,synthetic,true
+CAREER-255,Solar PV Technician,Survey sites and assess shading and loads,authored,synthetic,true
+CAREER-255,Solar PV Technician,Size systems for the customer,authored,synthetic,true
+CAREER-255,Solar PV Technician,Mount panels and run cables,authored,synthetic,true
+CAREER-255,Solar PV Technician,"Install inverters, batteries and charge controllers",authored,synthetic,true
+CAREER-255,Solar PV Technician,Test and commission systems,authored,synthetic,true
+CAREER-255,Solar PV Technician,Train customers on use,authored,synthetic,true
+CAREER-255,Solar PV Technician,Diagnose and repair faults,authored,synthetic,true
+CAREER-255,Solar PV Technician,Record installations,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,Assess energy resources and sites,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,Design and size systems,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,Model energy yield and finances,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,Prepare drawings and specifications,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,Manage procurement and installation,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,Commission and test plants,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,Monitor performance,authored,synthetic,true
+CAREER-256,Renewable Energy Engineer,Prepare technical reports and permits,authored,synthetic,true
+CAREER-257,Power Systems Engineer,Plan and design lines and substations,authored,synthetic,true
+CAREER-257,Power Systems Engineer,Run load flow and fault studies,authored,synthetic,true
+CAREER-257,Power Systems Engineer,Set and test protection relays,authored,synthetic,true
+CAREER-257,Power Systems Engineer,Supervise construction and commissioning,authored,synthetic,true
+CAREER-257,Power Systems Engineer,Analyse outages and losses,authored,synthetic,true
+CAREER-257,Power Systems Engineer,Plan maintenance,authored,synthetic,true
+CAREER-257,Power Systems Engineer,Operate the grid safely,authored,synthetic,true
+CAREER-257,Power Systems Engineer,Prepare technical specifications,authored,synthetic,true
+CAREER-258,Petroleum Engineer,Plan and supervise drilling of wells,authored,synthetic,true
+CAREER-258,Petroleum Engineer,Estimate reserves,authored,synthetic,true
+CAREER-258,Petroleum Engineer,Model how reservoirs behave,authored,synthetic,true
+CAREER-258,Petroleum Engineer,Design well completions,authored,synthetic,true
+CAREER-258,Petroleum Engineer,Optimise production,authored,synthetic,true
+CAREER-258,Petroleum Engineer,Monitor well and pipeline integrity,authored,synthetic,true
+CAREER-258,Petroleum Engineer,Ensure safety and environmental compliance,authored,synthetic,true
+CAREER-258,Petroleum Engineer,Prepare technical and cost reports,authored,synthetic,true
+CAREER-259,Geothermal Technician,Operate and monitor wells and steam lines,authored,synthetic,true
+CAREER-259,Geothermal Technician,"Take pressure, temperature and flow readings",authored,synthetic,true
+CAREER-259,Geothermal Technician,Assist with drilling and well testing,authored,synthetic,true
+CAREER-259,Geothermal Technician,"Maintain valves, separators and turbines",authored,synthetic,true
+CAREER-259,Geothermal Technician,Control scaling and corrosion,authored,synthetic,true
+CAREER-259,Geothermal Technician,Record plant data,authored,synthetic,true
+CAREER-259,Geothermal Technician,Follow hydrogen sulphide and steam safety rules,authored,synthetic,true
+CAREER-259,Geothermal Technician,Report faults,authored,synthetic,true
+CAREER-260,Electrician,Read wiring diagrams,authored,synthetic,true
+CAREER-260,Electrician,"Install conduits, cables, sockets and lights",authored,synthetic,true
+CAREER-260,Electrician,Connect distribution boards and meters,authored,synthetic,true
+CAREER-260,Electrician,Install and wire motors and controls,authored,synthetic,true
+CAREER-260,Electrician,Test installations for safety,authored,synthetic,true
+CAREER-260,Electrician,Find and repair faults,authored,synthetic,true
+CAREER-260,Electrician,Follow wiring regulations,authored,synthetic,true
+CAREER-260,Electrician,Quote and advise customers,authored,synthetic,true
+CAREER-261,Plumber,Read plumbing drawings,authored,synthetic,true
+CAREER-261,Plumber,"Cut, join and install pipes",authored,synthetic,true
+CAREER-261,Plumber,"Fit sinks, toilets, showers and taps",authored,synthetic,true
+CAREER-261,Plumber,"Install tanks, pumps and water heaters",authored,synthetic,true
+CAREER-261,Plumber,Lay drains and connect to sewers or septic tanks,authored,synthetic,true
+CAREER-261,Plumber,Test for leaks and pressure,authored,synthetic,true
+CAREER-261,Plumber,Unblock and repair systems,authored,synthetic,true
+CAREER-261,Plumber,Quote for jobs,authored,synthetic,true
+CAREER-262,Welder and Fabricator,Read drawings and measure,authored,synthetic,true
+CAREER-262,Welder and Fabricator,"Cut, bend and shape metal",authored,synthetic,true
+CAREER-262,Welder and Fabricator,Weld parts together,authored,synthetic,true
+CAREER-262,Welder and Fabricator,Grind and finish joints,authored,synthetic,true
+CAREER-262,Welder and Fabricator,"Assemble and install gates, frames and structures",authored,synthetic,true
+CAREER-262,Welder and Fabricator,Inspect welds for defects,authored,synthetic,true
+CAREER-262,Welder and Fabricator,Maintain welding machines,authored,synthetic,true
+CAREER-262,Welder and Fabricator,Follow fire and eye safety,authored,synthetic,true
+CAREER-263,Automotive Technician,Listen to the customer and test-drive the vehicle,authored,synthetic,true
+CAREER-263,Automotive Technician,Diagnose faults with tools and scanners,authored,synthetic,true
+CAREER-263,Automotive Technician,Service engines and change fluids,authored,synthetic,true
+CAREER-263,Automotive Technician,"Repair brakes, suspension and steering",authored,synthetic,true
+CAREER-263,Automotive Technician,Fix electrical and sensor problems,authored,synthetic,true
+CAREER-263,Automotive Technician,Replace worn parts,authored,synthetic,true
+CAREER-263,Automotive Technician,Road-test and quality-check,authored,synthetic,true
+CAREER-263,Automotive Technician,Explain the work and cost,authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,Inspect and service machines on schedule,authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,"Diagnose engine, hydraulic and electrical faults",authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,Overhaul engines and transmissions,authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,"Repair hydraulic pumps, cylinders and hoses",authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,Work on site in quarries and construction sites,authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,Order and fit parts,authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,Keep service records,authored,synthetic,true
+CAREER-264,Diesel and Heavy Equipment Mechanic,Advise operators on care,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,Design and improve production processes,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,Lay out lines and workstations,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,Set standard times and methods,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,Solve quality and downtime problems,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,Introduce new products and equipment,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,Lead lean and waste-reduction projects,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,Train operators,authored,synthetic,true
+CAREER-265,Manufacturing Engineer,Track efficiency and cost,authored,synthetic,true
+CAREER-266,Production Supervisor,Plan the shift's work and staffing,authored,synthetic,true
+CAREER-266,Production Supervisor,Start up and monitor lines,authored,synthetic,true
+CAREER-266,Production Supervisor,"Keep output, quality and waste on target",authored,synthetic,true
+CAREER-266,Production Supervisor,Solve stoppages with maintenance,authored,synthetic,true
+CAREER-266,Production Supervisor,Enforce safety and hygiene rules,authored,synthetic,true
+CAREER-266,Production Supervisor,Train and coach operators,authored,synthetic,true
+CAREER-266,Production Supervisor,Record production data,authored,synthetic,true
+CAREER-266,Production Supervisor,Hand over to the next shift,authored,synthetic,true
+CAREER-267,Quality Control Inspector,"Inspect materials, parts and finished goods",authored,synthetic,true
+CAREER-267,Quality Control Inspector,Measure and test against specifications,authored,synthetic,true
+CAREER-267,Quality Control Inspector,Pull samples from the line,authored,synthetic,true
+CAREER-267,Quality Control Inspector,Record results and defects,authored,synthetic,true
+CAREER-267,Quality Control Inspector,Reject or hold failing batches,authored,synthetic,true
+CAREER-267,Quality Control Inspector,Report problems to supervisors,authored,synthetic,true
+CAREER-267,Quality Control Inspector,"Check labels, weights and packaging",authored,synthetic,true
+CAREER-267,Quality Control Inspector,Help find causes of defects,authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,Carry out planned maintenance,authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,Respond to breakdowns quickly,authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,Diagnose mechanical and electrical faults,authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,"Replace bearings, belts, motors and seals",authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,Align and lubricate machines,authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,Keep maintenance records,authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,Manage spare parts,authored,synthetic,true
+CAREER-268,Industrial Maintenance Technician,Improve machine reliability,authored,synthetic,true
+CAREER-269,Mining Engineer,Design mine and quarry layouts,authored,synthetic,true
+CAREER-269,Mining Engineer,Plan production and schedules,authored,synthetic,true
+CAREER-269,Mining Engineer,Design drilling and blasting patterns,authored,synthetic,true
+CAREER-269,Mining Engineer,Supervise extraction and hauling,authored,synthetic,true
+CAREER-269,Mining Engineer,Monitor ground stability and safety,authored,synthetic,true
+CAREER-269,Mining Engineer,Estimate costs and reserves,authored,synthetic,true
+CAREER-269,Mining Engineer,Ensure environmental and legal compliance,authored,synthetic,true
+CAREER-269,Mining Engineer,Manage crews and equipment,authored,synthetic,true
+CAREER-270,Carpenter and Joiner,Read drawings and take measurements,authored,synthetic,true
+CAREER-270,Carpenter and Joiner,Select and cut timber and boards,authored,synthetic,true
+CAREER-270,Carpenter and Joiner,"Build roofs, formwork and frames",authored,synthetic,true
+CAREER-270,Carpenter and Joiner,"Make and fit doors, cabinets and furniture",authored,synthetic,true
+CAREER-270,Carpenter and Joiner,Sand and finish surfaces,authored,synthetic,true
+CAREER-270,Carpenter and Joiner,Install fittings on site,authored,synthetic,true
+CAREER-270,Carpenter and Joiner,Maintain tools and machines,authored,synthetic,true
+CAREER-270,Carpenter and Joiner,Quote for jobs,authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,Install air conditioners and cold rooms,authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,"Run pipes, drains and electrical connections",authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,Evacuate and charge systems with refrigerant,authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,Test and commission,authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,Service and clean units,authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,Find leaks and faults,authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,Replace compressors and controls,authored,synthetic,true
+CAREER-271,Refrigeration and Air-Conditioning Technician,Handle refrigerants safely and legally,authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,Turn designs into production specifications,authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,"Test fabrics for strength, colour and shrinkage",authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,"Check patterns, fit and samples",authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,Plan cutting and sewing lines,authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,Inspect garments for defects,authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,Solve production problems,authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,Meet buyers' quality and compliance standards,authored,synthetic,true
+CAREER-272,Textile and Garment Technologist,Track output and efficiency,authored,synthetic,true
+CAREER-273,Instrumentation Technician,"Install sensors, transmitters and control valves",authored,synthetic,true
+CAREER-273,Instrumentation Technician,Calibrate instruments,authored,synthetic,true
+CAREER-273,Instrumentation Technician,Find faults in control loops,authored,synthetic,true
+CAREER-273,Instrumentation Technician,Maintain PLC and SCADA systems,authored,synthetic,true
+CAREER-273,Instrumentation Technician,Read loop and instrument diagrams,authored,synthetic,true
+CAREER-273,Instrumentation Technician,Test safety shutdown systems,authored,synthetic,true
+CAREER-273,Instrumentation Technician,Keep calibration records,authored,synthetic,true
+CAREER-273,Instrumentation Technician,Support plant start-ups,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,Inspect workplaces for hazards,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,Carry out risk assessments,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,Give safety inductions and toolbox talks,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,Check protective equipment and permits to work,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,Investigate accidents and near misses,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,Keep safety records and statistics,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,Run fire and emergency drills,authored,synthetic,true
+CAREER-274,Occupational Health and Safety Officer,Ensure compliance with safety law,authored,synthetic,true
+CAREER-275,Energy Auditor,Collect energy bills and equipment data,authored,synthetic,true
+CAREER-275,Energy Auditor,"Measure electricity, fuel and steam use on site",authored,synthetic,true
+CAREER-275,Energy Auditor,Find where energy is wasted,authored,synthetic,true
+CAREER-275,Energy Auditor,Calculate savings and payback,authored,synthetic,true
+CAREER-275,Energy Auditor,Recommend efficiency measures,authored,synthetic,true
+CAREER-275,Energy Auditor,Write audit reports,authored,synthetic,true
+CAREER-275,Energy Auditor,Present findings to management,authored,synthetic,true
+CAREER-275,Energy Auditor,Verify savings after changes,authored,synthetic,true
+CAREER-276,CNC Machinist,Read engineering drawings,authored,synthetic,true
+CAREER-276,CNC Machinist,Write or load CNC programs,authored,synthetic,true
+CAREER-276,CNC Machinist,"Set up tools, fixtures and materials",authored,synthetic,true
+CAREER-276,CNC Machinist,Run and monitor machines,authored,synthetic,true
+CAREER-276,CNC Machinist,Measure parts and adjust offsets,authored,synthetic,true
+CAREER-276,CNC Machinist,Deburr and finish parts,authored,synthetic,true
+CAREER-276,CNC Machinist,Maintain machines and tools,authored,synthetic,true
+CAREER-276,CNC Machinist,Keep production and quality records,authored,synthetic,true
 CAREER-277,Site Reliability Engineer,Monitor production systems,authored,synthetic,true
 CAREER-277,Site Reliability Engineer,Respond to and lead incidents,authored,synthetic,true
 CAREER-277,Site Reliability Engineer,Automate manual operations,authored,synthetic,true
@@ -2960,231 +3078,307 @@ CAREER-414,Locomotive Driver,"Monitor engine, brakes and gauges",authored,synthe
 CAREER-414,Locomotive Driver,Handle faults and emergencies by procedure,authored,synthetic,true
 CAREER-414,Locomotive Driver,Couple and shunt wagons,authored,synthetic,true
 CAREER-414,Locomotive Driver,Complete trip reports,authored,synthetic,true
-CAREER-415,Addiction Counsellor,Work directly with people and communities on substance use recovery,category_default,synthetic,true
-CAREER-415,Addiction Counsellor,Assess needs and plan support,category_default,synthetic,true
-CAREER-415,Addiction Counsellor,Keep confidential case or project records,category_default,synthetic,true
-CAREER-415,Addiction Counsellor,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-415,Addiction Counsellor,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-415,Addiction Counsellor,Report on activities and results,category_default,synthetic,true
-CAREER-416,Marriage and Family Therapist,Work directly with people and communities on family therapy,category_default,synthetic,true
-CAREER-416,Marriage and Family Therapist,Assess needs and plan support,category_default,synthetic,true
-CAREER-416,Marriage and Family Therapist,Keep confidential case or project records,category_default,synthetic,true
-CAREER-416,Marriage and Family Therapist,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-416,Marriage and Family Therapist,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-416,Marriage and Family Therapist,Report on activities and results,category_default,synthetic,true
-CAREER-417,Geriatric Care Worker,Work directly with people and communities on care for older people,category_default,synthetic,true
-CAREER-417,Geriatric Care Worker,Assess needs and plan support,category_default,synthetic,true
-CAREER-417,Geriatric Care Worker,Keep confidential case or project records,category_default,synthetic,true
-CAREER-417,Geriatric Care Worker,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-417,Geriatric Care Worker,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-417,Geriatric Care Worker,Report on activities and results,category_default,synthetic,true
-CAREER-418,Rehabilitation Officer,Work directly with people and communities on rehabilitation services,category_default,synthetic,true
-CAREER-418,Rehabilitation Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-418,Rehabilitation Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-418,Rehabilitation Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-418,Rehabilitation Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-418,Rehabilitation Officer,Report on activities and results,category_default,synthetic,true
-CAREER-419,Safeguarding Adviser,Work directly with people and communities on safeguarding,category_default,synthetic,true
-CAREER-419,Safeguarding Adviser,Assess needs and plan support,category_default,synthetic,true
-CAREER-419,Safeguarding Adviser,Keep confidential case or project records,category_default,synthetic,true
-CAREER-419,Safeguarding Adviser,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-419,Safeguarding Adviser,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-419,Safeguarding Adviser,Report on activities and results,category_default,synthetic,true
-CAREER-420,Chaplain,Work directly with people and communities on pastoral care,category_default,synthetic,true
-CAREER-420,Chaplain,Assess needs and plan support,category_default,synthetic,true
-CAREER-420,Chaplain,Keep confidential case or project records,category_default,synthetic,true
-CAREER-420,Chaplain,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-420,Chaplain,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-420,Chaplain,Report on activities and results,category_default,synthetic,true
-CAREER-421,Advocacy Officer,Work directly with people and communities on policy advocacy,category_default,synthetic,true
-CAREER-421,Advocacy Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-421,Advocacy Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-421,Advocacy Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-421,Advocacy Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-421,Advocacy Officer,Report on activities and results,category_default,synthetic,true
-CAREER-422,Livelihoods Officer,Work directly with people and communities on economic empowerment,category_default,synthetic,true
-CAREER-422,Livelihoods Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-422,Livelihoods Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-422,Livelihoods Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-422,Livelihoods Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-422,Livelihoods Officer,Report on activities and results,category_default,synthetic,true
-CAREER-423,Cash Transfer Programme Officer,Work directly with people and communities on social protection,category_default,synthetic,true
-CAREER-423,Cash Transfer Programme Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-423,Cash Transfer Programme Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-423,Cash Transfer Programme Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-423,Cash Transfer Programme Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-423,Cash Transfer Programme Officer,Report on activities and results,category_default,synthetic,true
-CAREER-424,Research and Learning Officer,Work directly with people and communities on programme learning,category_default,synthetic,true
-CAREER-424,Research and Learning Officer,Assess needs and plan support,category_default,synthetic,true
-CAREER-424,Research and Learning Officer,Keep confidential case or project records,category_default,synthetic,true
-CAREER-424,Research and Learning Officer,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-424,Research and Learning Officer,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-424,Research and Learning Officer,Report on activities and results,category_default,synthetic,true
-CAREER-425,Children's Home Manager,Work directly with people and communities on residential child care,category_default,synthetic,true
-CAREER-425,Children's Home Manager,Assess needs and plan support,category_default,synthetic,true
-CAREER-425,Children's Home Manager,Keep confidential case or project records,category_default,synthetic,true
-CAREER-425,Children's Home Manager,"Run meetings, groups or training",category_default,synthetic,true
-CAREER-425,Children's Home Manager,Coordinate with partners and authorities,category_default,synthetic,true
-CAREER-425,Children's Home Manager,Report on activities and results,category_default,synthetic,true
-CAREER-426,Police Officer,Implement policies and programmes in law enforcement,category_default,synthetic,true
-CAREER-426,Police Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-426,Police Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-426,Police Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-426,Police Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-426,Police Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-427,Military Officer,Implement policies and programmes in defence service,category_default,synthetic,true
-CAREER-427,Military Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-427,Military Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-427,Military Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-427,Military Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-427,Military Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-428,Intelligence Analyst,Implement policies and programmes in security analysis,category_default,synthetic,true
-CAREER-428,Intelligence Analyst,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-428,Intelligence Analyst,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-428,Intelligence Analyst,Analyse information for decisions,category_default,synthetic,true
-CAREER-428,Intelligence Analyst,Follow public service procedures,category_default,synthetic,true
-CAREER-428,Intelligence Analyst,Work with other agencies and partners,category_default,synthetic,true
-CAREER-429,Prisons Officer,Implement policies and programmes in correctional services,category_default,synthetic,true
-CAREER-429,Prisons Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-429,Prisons Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-429,Prisons Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-429,Prisons Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-429,Prisons Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-430,Fire and Rescue Officer,Implement policies and programmes in emergency response,category_default,synthetic,true
-CAREER-430,Fire and Rescue Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-430,Fire and Rescue Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-430,Fire and Rescue Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-430,Fire and Rescue Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-430,Fire and Rescue Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-431,National Government Administration Officer,Implement policies and programmes in local administration,category_default,synthetic,true
-CAREER-431,National Government Administration Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-431,National Government Administration Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-431,National Government Administration Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-431,National Government Administration Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-431,National Government Administration Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-432,Public Auditor,Implement policies and programmes in public sector audit,category_default,synthetic,true
-CAREER-432,Public Auditor,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-432,Public Auditor,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-432,Public Auditor,Analyse information for decisions,category_default,synthetic,true
-CAREER-432,Public Auditor,Follow public service procedures,category_default,synthetic,true
-CAREER-432,Public Auditor,Work with other agencies and partners,category_default,synthetic,true
-CAREER-433,Public Procurement Officer,Implement policies and programmes in government procurement,category_default,synthetic,true
-CAREER-433,Public Procurement Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-433,Public Procurement Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-433,Public Procurement Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-433,Public Procurement Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-433,Public Procurement Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-434,Lands Officer,Implement policies and programmes in land administration,category_default,synthetic,true
-CAREER-434,Lands Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-434,Lands Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-434,Lands Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-434,Lands Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-434,Lands Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-435,Labour Officer,Implement policies and programmes in labour administration,category_default,synthetic,true
-CAREER-435,Labour Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-435,Labour Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-435,Labour Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-435,Labour Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-435,Labour Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-436,Consular Officer,Implement policies and programmes in consular services,category_default,synthetic,true
-CAREER-436,Consular Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-436,Consular Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-436,Consular Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-436,Consular Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-436,Consular Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-437,Records and Archives Officer,Implement policies and programmes in public records,category_default,synthetic,true
-CAREER-437,Records and Archives Officer,Serve citizens and respond to enquiries,category_default,synthetic,true
-CAREER-437,Records and Archives Officer,"Write briefs, minutes and reports",category_default,synthetic,true
-CAREER-437,Records and Archives Officer,Analyse information for decisions,category_default,synthetic,true
-CAREER-437,Records and Archives Officer,Follow public service procedures,category_default,synthetic,true
-CAREER-437,Records and Archives Officer,Work with other agencies and partners,category_default,synthetic,true
-CAREER-438,Mason,Carry out masonry and concrete work work to a specification,category_default,synthetic,true
-CAREER-438,Mason,Read drawings or job cards,category_default,synthetic,true
-CAREER-438,Mason,Inspect and test finished work,category_default,synthetic,true
-CAREER-438,Mason,Maintain tools and equipment,category_default,synthetic,true
-CAREER-438,Mason,Follow safety procedures,category_default,synthetic,true
-CAREER-438,Mason,Estimate materials and time,category_default,synthetic,true
-CAREER-439,Painter and Decorator,Carry out painting and finishing work to a specification,category_default,synthetic,true
-CAREER-439,Painter and Decorator,Read drawings or job cards,category_default,synthetic,true
-CAREER-439,Painter and Decorator,Inspect and test finished work,category_default,synthetic,true
-CAREER-439,Painter and Decorator,Maintain tools and equipment,category_default,synthetic,true
-CAREER-439,Painter and Decorator,Follow safety procedures,category_default,synthetic,true
-CAREER-439,Painter and Decorator,Estimate materials and time,category_default,synthetic,true
-CAREER-440,Tailor and Dressmaker,Carry out garment making work to a specification,category_default,synthetic,true
-CAREER-440,Tailor and Dressmaker,Read drawings or job cards,category_default,synthetic,true
-CAREER-440,Tailor and Dressmaker,Inspect and test finished work,category_default,synthetic,true
-CAREER-440,Tailor and Dressmaker,Maintain tools and equipment,category_default,synthetic,true
-CAREER-440,Tailor and Dressmaker,Follow safety procedures,category_default,synthetic,true
-CAREER-440,Tailor and Dressmaker,Estimate materials and time,category_default,synthetic,true
-CAREER-441,Hairdresser and Beauty Therapist,Carry out hair and beauty services work to a specification,category_default,synthetic,true
-CAREER-441,Hairdresser and Beauty Therapist,Read drawings or job cards,category_default,synthetic,true
-CAREER-441,Hairdresser and Beauty Therapist,Inspect and test finished work,category_default,synthetic,true
-CAREER-441,Hairdresser and Beauty Therapist,Maintain tools and equipment,category_default,synthetic,true
-CAREER-441,Hairdresser and Beauty Therapist,Follow safety procedures,category_default,synthetic,true
-CAREER-441,Hairdresser and Beauty Therapist,Estimate materials and time,category_default,synthetic,true
-CAREER-442,Electrical Lines Technician,Carry out power line construction work to a specification,category_default,synthetic,true
-CAREER-442,Electrical Lines Technician,Read drawings or job cards,category_default,synthetic,true
-CAREER-442,Electrical Lines Technician,Inspect and test finished work,category_default,synthetic,true
-CAREER-442,Electrical Lines Technician,Maintain tools and equipment,category_default,synthetic,true
-CAREER-442,Electrical Lines Technician,Follow safety procedures,category_default,synthetic,true
-CAREER-442,Electrical Lines Technician,Estimate materials and time,category_default,synthetic,true
-CAREER-443,Wind Turbine Technician,Carry out wind energy work to a specification,category_default,synthetic,true
-CAREER-443,Wind Turbine Technician,Read drawings or job cards,category_default,synthetic,true
-CAREER-443,Wind Turbine Technician,Inspect and test finished work,category_default,synthetic,true
-CAREER-443,Wind Turbine Technician,Maintain tools and equipment,category_default,synthetic,true
-CAREER-443,Wind Turbine Technician,Follow safety procedures,category_default,synthetic,true
-CAREER-443,Wind Turbine Technician,Estimate materials and time,category_default,synthetic,true
-CAREER-444,Biogas Technician,Carry out biogas systems work to a specification,category_default,synthetic,true
-CAREER-444,Biogas Technician,Read drawings or job cards,category_default,synthetic,true
-CAREER-444,Biogas Technician,Inspect and test finished work,category_default,synthetic,true
-CAREER-444,Biogas Technician,Maintain tools and equipment,category_default,synthetic,true
-CAREER-444,Biogas Technician,Follow safety procedures,category_default,synthetic,true
-CAREER-444,Biogas Technician,Estimate materials and time,category_default,synthetic,true
-CAREER-445,Boiler Operator,Carry out steam systems work to a specification,category_default,synthetic,true
-CAREER-445,Boiler Operator,Read drawings or job cards,category_default,synthetic,true
-CAREER-445,Boiler Operator,Inspect and test finished work,category_default,synthetic,true
-CAREER-445,Boiler Operator,Maintain tools and equipment,category_default,synthetic,true
-CAREER-445,Boiler Operator,Follow safety procedures,category_default,synthetic,true
-CAREER-445,Boiler Operator,Estimate materials and time,category_default,synthetic,true
-CAREER-446,Process Plant Operator,Carry out process plants work to a specification,category_default,synthetic,true
-CAREER-446,Process Plant Operator,Read drawings or job cards,category_default,synthetic,true
-CAREER-446,Process Plant Operator,Inspect and test finished work,category_default,synthetic,true
-CAREER-446,Process Plant Operator,Maintain tools and equipment,category_default,synthetic,true
-CAREER-446,Process Plant Operator,Follow safety procedures,category_default,synthetic,true
-CAREER-446,Process Plant Operator,Estimate materials and time,category_default,synthetic,true
-CAREER-447,Leather Technologist,Carry out leather and footwear work to a specification,category_default,synthetic,true
-CAREER-447,Leather Technologist,Read drawings or job cards,category_default,synthetic,true
-CAREER-447,Leather Technologist,Inspect and test finished work,category_default,synthetic,true
-CAREER-447,Leather Technologist,Maintain tools and equipment,category_default,synthetic,true
-CAREER-447,Leather Technologist,Follow safety procedures,category_default,synthetic,true
-CAREER-447,Leather Technologist,Estimate materials and time,category_default,synthetic,true
-CAREER-448,Motorcycle Mechanic,Carry out motorcycle repair work to a specification,category_default,synthetic,true
-CAREER-448,Motorcycle Mechanic,Read drawings or job cards,category_default,synthetic,true
-CAREER-448,Motorcycle Mechanic,Inspect and test finished work,category_default,synthetic,true
-CAREER-448,Motorcycle Mechanic,Maintain tools and equipment,category_default,synthetic,true
-CAREER-448,Motorcycle Mechanic,Follow safety procedures,category_default,synthetic,true
-CAREER-448,Motorcycle Mechanic,Estimate materials and time,category_default,synthetic,true
-CAREER-449,Mobile Phone Repair Technician,Carry out device repair work to a specification,category_default,synthetic,true
-CAREER-449,Mobile Phone Repair Technician,Read drawings or job cards,category_default,synthetic,true
-CAREER-449,Mobile Phone Repair Technician,Inspect and test finished work,category_default,synthetic,true
-CAREER-449,Mobile Phone Repair Technician,Maintain tools and equipment,category_default,synthetic,true
-CAREER-449,Mobile Phone Repair Technician,Follow safety procedures,category_default,synthetic,true
-CAREER-449,Mobile Phone Repair Technician,Estimate materials and time,category_default,synthetic,true
-CAREER-450,Lift Technician,Carry out lifts and escalators work to a specification,category_default,synthetic,true
-CAREER-450,Lift Technician,Read drawings or job cards,category_default,synthetic,true
-CAREER-450,Lift Technician,Inspect and test finished work,category_default,synthetic,true
-CAREER-450,Lift Technician,Maintain tools and equipment,category_default,synthetic,true
-CAREER-450,Lift Technician,Follow safety procedures,category_default,synthetic,true
-CAREER-450,Lift Technician,Estimate materials and time,category_default,synthetic,true
-CAREER-451,Crane and Plant Operator,Carry out heavy plant operation work to a specification,category_default,synthetic,true
-CAREER-451,Crane and Plant Operator,Read drawings or job cards,category_default,synthetic,true
-CAREER-451,Crane and Plant Operator,Inspect and test finished work,category_default,synthetic,true
-CAREER-451,Crane and Plant Operator,Maintain tools and equipment,category_default,synthetic,true
-CAREER-451,Crane and Plant Operator,Follow safety procedures,category_default,synthetic,true
-CAREER-451,Crane and Plant Operator,Estimate materials and time,category_default,synthetic,true
-CAREER-452,Electric Vehicle and Battery Technician,Carry out electric mobility work to a specification,category_default,synthetic,true
-CAREER-452,Electric Vehicle and Battery Technician,Read drawings or job cards,category_default,synthetic,true
-CAREER-452,Electric Vehicle and Battery Technician,Inspect and test finished work,category_default,synthetic,true
-CAREER-452,Electric Vehicle and Battery Technician,Maintain tools and equipment,category_default,synthetic,true
-CAREER-452,Electric Vehicle and Battery Technician,Follow safety procedures,category_default,synthetic,true
-CAREER-452,Electric Vehicle and Battery Technician,Estimate materials and time,category_default,synthetic,true
+CAREER-415,Addiction Counsellor,Assess substance use and readiness to change,authored,synthetic,true
+CAREER-415,Addiction Counsellor,Build treatment and recovery plans,authored,synthetic,true
+CAREER-415,Addiction Counsellor,Run individual and group therapy,authored,synthetic,true
+CAREER-415,Addiction Counsellor,Teach relapse prevention skills,authored,synthetic,true
+CAREER-415,Addiction Counsellor,Involve and support families,authored,synthetic,true
+CAREER-415,Addiction Counsellor,Refer for medical detox and psychiatric care,authored,synthetic,true
+CAREER-415,Addiction Counsellor,Follow up after discharge,authored,synthetic,true
+CAREER-415,Addiction Counsellor,Run prevention talks,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,Meet couples and families together,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,Assess relationship patterns,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,Help members communicate and resolve conflict,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,Coach parenting skills,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,Support families through separation or loss,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,Refer for other services where needed,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,Keep confidential notes,authored,synthetic,true
+CAREER-416,Marriage and Family Therapist,Attend clinical supervision,authored,synthetic,true
+CAREER-417,Geriatric Care Worker,"Help older people wash, dress and eat",authored,synthetic,true
+CAREER-417,Geriatric Care Worker,Give reminders for medicines,authored,synthetic,true
+CAREER-417,Geriatric Care Worker,Assist with walking and transfers,authored,synthetic,true
+CAREER-417,Geriatric Care Worker,Prepare meals and keep the home clean,authored,synthetic,true
+CAREER-417,Geriatric Care Worker,Provide company and activities,authored,synthetic,true
+CAREER-417,Geriatric Care Worker,Watch for changes in health and report them,authored,synthetic,true
+CAREER-417,Geriatric Care Worker,Keep care notes,authored,synthetic,true
+CAREER-417,Geriatric Care Worker,Support the family,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,Assess clients' abilities and goals,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,Plan rehabilitation activities,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,Teach daily living and work skills,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,Arrange assistive devices and therapy,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,Visit clients at home,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,Train families and caregivers,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,Link clients to work and training,authored,synthetic,true
+CAREER-418,Rehabilitation Officer,Record progress,authored,synthetic,true
+CAREER-419,Safeguarding Adviser,Write and update safeguarding policies,authored,synthetic,true
+CAREER-419,Safeguarding Adviser,"Train staff, partners and communities",authored,synthetic,true
+CAREER-419,Safeguarding Adviser,Set up safe reporting channels,authored,synthetic,true
+CAREER-419,Safeguarding Adviser,Receive and manage reports of harm,authored,synthetic,true
+CAREER-419,Safeguarding Adviser,Coordinate or conduct investigations,authored,synthetic,true
+CAREER-419,Safeguarding Adviser,Support survivors,authored,synthetic,true
+CAREER-419,Safeguarding Adviser,Assess safeguarding risks in programmes,authored,synthetic,true
+CAREER-419,Safeguarding Adviser,Report to leadership and donors,authored,synthetic,true
+CAREER-420,Chaplain,"Visit and listen to patients, students or inmates",authored,synthetic,true
+CAREER-420,Chaplain,Offer prayer and spiritual support on request,authored,synthetic,true
+CAREER-420,Chaplain,"Counsel people facing illness, loss and hard decisions",authored,synthetic,true
+CAREER-420,Chaplain,Lead services and ceremonies,authored,synthetic,true
+CAREER-420,Chaplain,Support families and staff,authored,synthetic,true
+CAREER-420,Chaplain,Respect all faiths and none,authored,synthetic,true
+CAREER-420,Chaplain,Work with counsellors and social workers,authored,synthetic,true
+CAREER-420,Chaplain,Keep confidences,authored,synthetic,true
+CAREER-421,Advocacy Officer,"Analyse policies, bills and budgets",authored,synthetic,true
+CAREER-421,Advocacy Officer,Write position papers and briefs,authored,synthetic,true
+CAREER-421,Advocacy Officer,Meet legislators and officials,authored,synthetic,true
+CAREER-421,Advocacy Officer,Build and coordinate coalitions,authored,synthetic,true
+CAREER-421,Advocacy Officer,Plan campaigns and petitions,authored,synthetic,true
+CAREER-421,Advocacy Officer,Engage the media and social media,authored,synthetic,true
+CAREER-421,Advocacy Officer,Mobilise citizens to take part,authored,synthetic,true
+CAREER-421,Advocacy Officer,Track and report policy changes,authored,synthetic,true
+CAREER-422,Livelihoods Officer,Assess household incomes and markets,authored,synthetic,true
+CAREER-422,Livelihoods Officer,Form and train savings groups,authored,synthetic,true
+CAREER-422,Livelihoods Officer,Teach business and financial skills,authored,synthetic,true
+CAREER-422,Livelihoods Officer,Provide start-up kits or grants,authored,synthetic,true
+CAREER-422,Livelihoods Officer,Link producers to buyers and finance,authored,synthetic,true
+CAREER-422,Livelihoods Officer,Mentor participants,authored,synthetic,true
+CAREER-422,Livelihoods Officer,Monitor income changes,authored,synthetic,true
+CAREER-422,Livelihoods Officer,Report on results,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,Identify and register eligible households,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,Verify beneficiary details,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,Prepare payment lists,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,Coordinate payments with banks and mobile money providers,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,Explain entitlements to beneficiaries,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,Handle complaints and changes,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,Reconcile payments,authored,synthetic,true
+CAREER-423,Cash Transfer Programme Officer,Monitor how cash is used,authored,synthetic,true
+CAREER-424,Research and Learning Officer,Design small studies and learning questions,authored,synthetic,true
+CAREER-424,Research and Learning Officer,Collect and analyse programme evidence,authored,synthetic,true
+CAREER-424,Research and Learning Officer,Write case studies and learning briefs,authored,synthetic,true
+CAREER-424,Research and Learning Officer,Run reflection and learning sessions,authored,synthetic,true
+CAREER-424,Research and Learning Officer,Manage the knowledge library,authored,synthetic,true
+CAREER-424,Research and Learning Officer,"Share findings with staff, partners and donors",authored,synthetic,true
+CAREER-424,Research and Learning Officer,Help teams adapt programmes,authored,synthetic,true
+CAREER-424,Research and Learning Officer,Present at conferences,authored,synthetic,true
+CAREER-425,Children's Home Manager,"Oversee children's daily care, health and schooling",authored,synthetic,true
+CAREER-425,Children's Home Manager,Recruit and supervise caregivers,authored,synthetic,true
+CAREER-425,Children's Home Manager,Keep each child's file and care plan,authored,synthetic,true
+CAREER-425,Children's Home Manager,Work with children's officers and courts,authored,synthetic,true
+CAREER-425,Children's Home Manager,Trace families and plan reintegration,authored,synthetic,true
+CAREER-425,Children's Home Manager,"Manage budgets, donations and supplies",authored,synthetic,true
+CAREER-425,Children's Home Manager,Enforce child safeguarding,authored,synthetic,true
+CAREER-425,Children's Home Manager,Report to the board and government,authored,synthetic,true
+CAREER-426,Police Officer,Patrol and respond to incidents,authored,synthetic,true
+CAREER-426,Police Officer,Receive and record reports,authored,synthetic,true
+CAREER-426,Police Officer,Investigate crimes and collect evidence,authored,synthetic,true
+CAREER-426,Police Officer,Arrest suspects lawfully,authored,synthetic,true
+CAREER-426,Police Officer,Write statements and case files,authored,synthetic,true
+CAREER-426,Police Officer,Give evidence in court,authored,synthetic,true
+CAREER-426,Police Officer,Control traffic and crowds,authored,synthetic,true
+CAREER-426,Police Officer,Work with the community to prevent crime,authored,synthetic,true
+CAREER-427,Military Officer,Lead and train soldiers,authored,synthetic,true
+CAREER-427,Military Officer,Plan and carry out operations and exercises,authored,synthetic,true
+CAREER-427,Military Officer,Maintain discipline and welfare,authored,synthetic,true
+CAREER-427,Military Officer,Manage equipment and resources,authored,synthetic,true
+CAREER-427,Military Officer,Write orders and reports,authored,synthetic,true
+CAREER-427,Military Officer,Work with other units and agencies,authored,synthetic,true
+CAREER-427,Military Officer,Take part in peace support and disaster response,authored,synthetic,true
+CAREER-427,Military Officer,Keep physically and tactically fit,authored,synthetic,true
+CAREER-428,Intelligence Analyst,Collect information from many sources,authored,synthetic,true
+CAREER-428,Intelligence Analyst,Check reliability and connect the pieces,authored,synthetic,true
+CAREER-428,Intelligence Analyst,"Identify threats, patterns and networks",authored,synthetic,true
+CAREER-428,Intelligence Analyst,Write intelligence reports and briefs,authored,synthetic,true
+CAREER-428,Intelligence Analyst,Brief decision makers,authored,synthetic,true
+CAREER-428,Intelligence Analyst,Monitor developing situations,authored,synthetic,true
+CAREER-428,Intelligence Analyst,Maintain databases,authored,synthetic,true
+CAREER-428,Intelligence Analyst,Protect sensitive information,authored,synthetic,true
+CAREER-429,Prisons Officer,"Supervise inmates in cells, workshops and farms",authored,synthetic,true
+CAREER-429,Prisons Officer,Keep security and conduct searches,authored,synthetic,true
+CAREER-429,Prisons Officer,Escort inmates to court and hospital,authored,synthetic,true
+CAREER-429,Prisons Officer,Run counts and keep records,authored,synthetic,true
+CAREER-429,Prisons Officer,"Support education, training and counselling programmes",authored,synthetic,true
+CAREER-429,Prisons Officer,Handle incidents and conflicts,authored,synthetic,true
+CAREER-429,Prisons Officer,Look after inmates' welfare,authored,synthetic,true
+CAREER-429,Prisons Officer,Prepare inmates for release,authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,Respond to fire and rescue calls,authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,Fight fires and rescue trapped people,authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,Give first aid at the scene,authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,Inspect buildings for fire safety,authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,Maintain fire engines and equipment,authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,Train and run drills,authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,Teach the public fire prevention,authored,synthetic,true
+CAREER-430,Fire and Rescue Officer,Write incident reports,authored,synthetic,true
+CAREER-431,National Government Administration Officer,Coordinate national government services in an area,authored,synthetic,true
+CAREER-431,National Government Administration Officer,Chair security and peace meetings,authored,synthetic,true
+CAREER-431,National Government Administration Officer,Hold public barazas,authored,synthetic,true
+CAREER-431,National Government Administration Officer,Resolve land and family disputes,authored,synthetic,true
+CAREER-431,National Government Administration Officer,Mobilise the public for government programmes,authored,synthetic,true
+CAREER-431,National Government Administration Officer,"Support registration, relief and vetting",authored,synthetic,true
+CAREER-431,National Government Administration Officer,Report on security and development,authored,synthetic,true
+CAREER-431,National Government Administration Officer,Supervise chiefs and assistant chiefs,authored,synthetic,true
+CAREER-432,Public Auditor,"Plan audits of ministries, counties and agencies",authored,synthetic,true
+CAREER-432,Public Auditor,"Examine payments, procurement and records",authored,synthetic,true
+CAREER-432,Public Auditor,Check compliance with finance laws,authored,synthetic,true
+CAREER-432,Public Auditor,Test controls and verify assets and projects,authored,synthetic,true
+CAREER-432,Public Auditor,Discuss findings with accounting officers,authored,synthetic,true
+CAREER-432,Public Auditor,Write audit reports for Parliament and assemblies,authored,synthetic,true
+CAREER-432,Public Auditor,Follow up on recommendations,authored,synthetic,true
+CAREER-432,Public Auditor,Support oversight committees,authored,synthetic,true
+CAREER-433,Public Procurement Officer,Prepare the annual procurement plan,authored,synthetic,true
+CAREER-433,Public Procurement Officer,Draft tender documents and adverts,authored,synthetic,true
+CAREER-433,Public Procurement Officer,Receive and open bids,authored,synthetic,true
+CAREER-433,Public Procurement Officer,Support evaluation committees,authored,synthetic,true
+CAREER-433,Public Procurement Officer,"Issue awards, orders and contracts",authored,synthetic,true
+CAREER-433,Public Procurement Officer,Manage stores and inspections,authored,synthetic,true
+CAREER-433,Public Procurement Officer,Keep complete procurement records,authored,synthetic,true
+CAREER-433,Public Procurement Officer,Report to the regulator,authored,synthetic,true
+CAREER-434,Lands Officer,"Process land allocations, leases and transfers",authored,synthetic,true
+CAREER-434,Lands Officer,Adjudicate and record land rights,authored,synthetic,true
+CAREER-434,Lands Officer,Inspect and report on land,authored,synthetic,true
+CAREER-434,Lands Officer,"Value land for rates, rent and compensation",authored,synthetic,true
+CAREER-434,Lands Officer,Help resolve boundary and ownership disputes,authored,synthetic,true
+CAREER-434,Lands Officer,Maintain land records,authored,synthetic,true
+CAREER-434,Lands Officer,Advise the public on procedures,authored,synthetic,true
+CAREER-434,Lands Officer,Support compulsory acquisition,authored,synthetic,true
+CAREER-435,Labour Officer,Inspect workplaces for compliance with labour laws,authored,synthetic,true
+CAREER-435,Labour Officer,Receive and investigate workers' complaints,authored,synthetic,true
+CAREER-435,Labour Officer,Conciliate disputes between employers and employees,authored,synthetic,true
+CAREER-435,Labour Officer,Calculate unpaid dues and compensation,authored,synthetic,true
+CAREER-435,Labour Officer,Advise employers and workers on their rights,authored,synthetic,true
+CAREER-435,Labour Officer,Enforce wage orders,authored,synthetic,true
+CAREER-435,Labour Officer,Prosecute offences,authored,synthetic,true
+CAREER-435,Labour Officer,Write inspection and dispute reports,authored,synthetic,true
+CAREER-436,Consular Officer,Issue passports and emergency travel documents,authored,synthetic,true
+CAREER-436,Consular Officer,Process visa applications,authored,synthetic,true
+CAREER-436,Consular Officer,"Help citizens who are arrested, ill or stranded",authored,synthetic,true
+CAREER-436,Consular Officer,"Register births, deaths and marriages abroad",authored,synthetic,true
+CAREER-436,Consular Officer,Legalise documents,authored,synthetic,true
+CAREER-436,Consular Officer,Visit detained citizens,authored,synthetic,true
+CAREER-436,Consular Officer,Coordinate evacuations in a crisis,authored,synthetic,true
+CAREER-436,Consular Officer,Keep registers of nationals,authored,synthetic,true
+CAREER-437,Records and Archives Officer,"Classify, file and index records",authored,synthetic,true
+CAREER-437,Records and Archives Officer,"Open, track and close files",authored,synthetic,true
+CAREER-437,Records and Archives Officer,Retrieve records for users,authored,synthetic,true
+CAREER-437,Records and Archives Officer,Apply retention and disposal schedules,authored,synthetic,true
+CAREER-437,Records and Archives Officer,Digitise paper records,authored,synthetic,true
+CAREER-437,Records and Archives Officer,Preserve and repair old documents,authored,synthetic,true
+CAREER-437,Records and Archives Officer,Handle access to information requests,authored,synthetic,true
+CAREER-437,Records and Archives Officer,Train staff in records procedures,authored,synthetic,true
+CAREER-438,Mason,Read drawings and set out walls,authored,synthetic,true
+CAREER-438,Mason,Mix mortar and concrete,authored,synthetic,true
+CAREER-438,Mason,"Lay blocks, bricks and stone",authored,synthetic,true
+CAREER-438,Mason,"Check level, line and plumb",authored,synthetic,true
+CAREER-438,Mason,Plaster and screed surfaces,authored,synthetic,true
+CAREER-438,Mason,"Cast slabs, columns and beams",authored,synthetic,true
+CAREER-438,Mason,Cure concrete,authored,synthetic,true
+CAREER-438,Mason,Estimate materials for a job,authored,synthetic,true
+CAREER-439,Painter and Decorator,Inspect and prepare surfaces,authored,synthetic,true
+CAREER-439,Painter and Decorator,Fill cracks and sand,authored,synthetic,true
+CAREER-439,Painter and Decorator,Mix and match colours,authored,synthetic,true
+CAREER-439,Painter and Decorator,"Apply primers, undercoats and finishes",authored,synthetic,true
+CAREER-439,Painter and Decorator,"Spray, roll or brush as needed",authored,synthetic,true
+CAREER-439,Painter and Decorator,"Apply textures, wallpaper or waterproofing",authored,synthetic,true
+CAREER-439,Painter and Decorator,Protect floors and furniture,authored,synthetic,true
+CAREER-439,Painter and Decorator,Estimate paint and cost,authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,Take measurements and discuss the style,authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,Draft or adapt patterns,authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,Cut fabric,authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,Sew and assemble garments,authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,Fit and adjust on the customer,authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,"Finish with pressing, buttons and hems",authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,Repair and alter clothes,authored,synthetic,true
+CAREER-440,Tailor and Dressmaker,Manage orders and deadlines,authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,Consult clients on the look they want,authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,"Wash, treat and style hair",authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,"Braid, weave and install extensions",authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,Cut and shave,authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,Apply colour and relaxers safely,authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,"Do manicures, pedicures and facials",authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,Sterilise tools and keep the salon clean,authored,synthetic,true
+CAREER-441,Hairdresser and Beauty Therapist,Advise on home care and sell products,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,Erect poles and string conductors,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,Install transformers and switchgear,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,Connect new customers,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,Patrol and inspect lines,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,Find and repair faults after outages,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,Joint and terminate cables,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,Work safely at height and near live lines,authored,synthetic,true
+CAREER-442,Electrical Lines Technician,Clear vegetation near lines,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,Climb turbines for inspection and service,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,Lubricate and torque mechanical parts,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,Test electrical and control systems,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,Diagnose faults from alarms and data,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,Replace components such as sensors and motors,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,Inspect and repair blades,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,Follow height and rescue safety procedures,authored,synthetic,true
+CAREER-443,Wind Turbine Technician,Record all maintenance,authored,synthetic,true
+CAREER-444,Biogas Technician,Assess the site and available feedstock,authored,synthetic,true
+CAREER-444,Biogas Technician,Size and design the digester,authored,synthetic,true
+CAREER-444,Biogas Technician,Build or install the digester and piping,authored,synthetic,true
+CAREER-444,Biogas Technician,"Connect stoves, lamps or generators",authored,synthetic,true
+CAREER-444,Biogas Technician,Test for leaks and commission,authored,synthetic,true
+CAREER-444,Biogas Technician,Train users on feeding and care,authored,synthetic,true
+CAREER-444,Biogas Technician,Service and repair systems,authored,synthetic,true
+CAREER-444,Biogas Technician,Advise on using slurry as fertiliser,authored,synthetic,true
+CAREER-445,Boiler Operator,Start up and shut down boilers safely,authored,synthetic,true
+CAREER-445,Boiler Operator,"Monitor pressure, temperature and water level",authored,synthetic,true
+CAREER-445,Boiler Operator,Control fuel and air for efficient firing,authored,synthetic,true
+CAREER-445,Boiler Operator,Test and treat boiler water,authored,synthetic,true
+CAREER-445,Boiler Operator,Blow down and clean boilers,authored,synthetic,true
+CAREER-445,Boiler Operator,Test safety valves and alarms,authored,synthetic,true
+CAREER-445,Boiler Operator,Keep the boiler log,authored,synthetic,true
+CAREER-445,Boiler Operator,Report defects and prepare for inspections,authored,synthetic,true
+CAREER-446,Process Plant Operator,"Start up, run and shut down plant units",authored,synthetic,true
+CAREER-446,Process Plant Operator,Watch control screens and field gauges,authored,synthetic,true
+CAREER-446,Process Plant Operator,"Adjust flows, temperatures and pressures",authored,synthetic,true
+CAREER-446,Process Plant Operator,Take samples for testing,authored,synthetic,true
+CAREER-446,Process Plant Operator,Respond to alarms and upsets,authored,synthetic,true
+CAREER-446,Process Plant Operator,Do routine checks and minor maintenance,authored,synthetic,true
+CAREER-446,Process Plant Operator,Follow permits and safety rules,authored,synthetic,true
+CAREER-446,Process Plant Operator,Record readings and hand over shifts,authored,synthetic,true
+CAREER-447,Leather Technologist,Grade and prepare hides and skins,authored,synthetic,true
+CAREER-447,Leather Technologist,"Run tanning, dyeing and finishing processes",authored,synthetic,true
+CAREER-447,Leather Technologist,Control chemicals and recipes,authored,synthetic,true
+CAREER-447,Leather Technologist,Test leather for strength and colour,authored,synthetic,true
+CAREER-447,Leather Technologist,Cut and stitch footwear and leather goods,authored,synthetic,true
+CAREER-447,Leather Technologist,Manage tannery waste and effluent,authored,synthetic,true
+CAREER-447,Leather Technologist,Solve quality problems,authored,synthetic,true
+CAREER-447,Leather Technologist,Meet buyers' standards,authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,Listen to the rider and inspect the bike,authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,Service engines and change oil,authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,Repair carburettors and fuel systems,authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,"Fix brakes, chains and tyres",authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,Trace electrical faults,authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,Overhaul engines and gearboxes,authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,Source and fit spare parts,authored,synthetic,true
+CAREER-448,Motorcycle Mechanic,Advise riders on care,authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,Diagnose hardware and software faults,authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,"Replace screens, batteries and charging ports",authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,Flash and update software,authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,Solder components on circuit boards,authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,Recover data where possible,authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,Test the device before returning it,authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,Quote clearly and source parts,authored,synthetic,true
+CAREER-449,Mobile Phone Repair Technician,Keep customer data private,authored,synthetic,true
+CAREER-450,Lift Technician,"Install rails, cars, doors and machines",authored,synthetic,true
+CAREER-450,Lift Technician,Wire controllers and safety circuits,authored,synthetic,true
+CAREER-450,Lift Technician,Service lifts on a schedule,authored,synthetic,true
+CAREER-450,Lift Technician,Respond to breakdowns and trapped passengers,authored,synthetic,true
+CAREER-450,Lift Technician,"Test brakes, safety gear and alarms",authored,synthetic,true
+CAREER-450,Lift Technician,Adjust doors and levelling,authored,synthetic,true
+CAREER-450,Lift Technician,Replace ropes and worn parts,authored,synthetic,true
+CAREER-450,Lift Technician,Keep service logs and certificates,authored,synthetic,true
+CAREER-451,Crane and Plant Operator,Inspect the machine before each shift,authored,synthetic,true
+CAREER-451,Crane and Plant Operator,"Operate it to lift, dig, load or grade",authored,synthetic,true
+CAREER-451,Crane and Plant Operator,Read load charts and work within limits,authored,synthetic,true
+CAREER-451,Crane and Plant Operator,Follow signals from banksmen and riggers,authored,synthetic,true
+CAREER-451,Crane and Plant Operator,Keep people clear of the work area,authored,synthetic,true
+CAREER-451,Crane and Plant Operator,Refuel and do basic servicing,authored,synthetic,true
+CAREER-451,Crane and Plant Operator,Report defects,authored,synthetic,true
+CAREER-451,Crane and Plant Operator,Keep operating logs,authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,"Diagnose faults in motors, controllers and batteries",authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,Service and repair electric motorcycles and vehicles,authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,Test battery health and balance cells,authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,Assemble and repair battery packs,authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,Install and maintain chargers and swap stations,authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,Update vehicle software,authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,Follow high-voltage safety procedures,authored,synthetic,true
+CAREER-452,Electric Vehicle and Battery Technician,Record service history,authored,synthetic,true
