@@ -4,9 +4,11 @@ import sys
 from typing import List, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi.responses import Response
 from pydantic import BaseModel, Field
 
 from backend.app import career_catalogue
+from backend.app.cv_docx import DOCX_MIME, markdown_to_docx
 from backend.app.config import ML_DIR
 from backend.app.database import User
 from backend.app.security import get_current_user
@@ -14,7 +16,7 @@ from backend.app.security import get_current_user
 # The CV renderer lives with the pipeline code so the templates and the renderer stay in step.
 if str(ML_DIR / "src") not in sys.path:
     sys.path.append(str(ML_DIR / "src"))
-from build_cv_templates import render_cv  # noqa: E402
+from build_cv_templates import render_cv, render_final_cv  # noqa: E402
 
 router = APIRouter(prefix="/careers", tags=["Career Catalogue"])
 
@@ -50,6 +52,9 @@ class CVRequest(BaseModel):
     certifications: List[str] = Field(default_factory=list, max_length=12)
     activities: List[str] = Field(default_factory=list, max_length=12)
     referees: List[str] = Field(default_factory=list, max_length=3)
+    summary: Optional[str] = Field(default=None, max_length=800)
+    grade: Optional[str] = Field(default=None, max_length=60)
+    final: bool = Field(default=False, description="True for a send-ready, ATS-friendly CV with no prompts left in it")
 
 
 class CVResponse(BaseModel):
@@ -59,6 +64,7 @@ class CVResponse(BaseModel):
     matched_skills: List[str]
     skills_to_build: List[str]
     cv_tips: List[str]
+    checklist: List[str] = Field(default_factory=list)
     note: str = (
         "This CV is built only from the details you supplied. Replace every bracketed prompt with your own "
         "information and check it before sending."
@@ -96,8 +102,7 @@ def get_career_detail(career_id: str, _user: User = Depends(get_current_user)):
     return career
 
 
-@router.post("/{career_id}/cv", response_model=CVResponse)
-def build_cv(career_id: str, payload: CVRequest, user: User = Depends(get_current_user)):
+def _render(career_id: str, payload: CVRequest, user: User, final: bool) -> dict:
     template = _catalogue_call(career_catalogue.get_cv_template, career_id.strip().upper())
     if template is None:
         raise HTTPException(status_code=404, detail="Career not found.")
@@ -113,7 +118,27 @@ def build_cv(career_id: str, payload: CVRequest, user: User = Depends(get_curren
     profile["course"] = (payload.course or user.course or "").strip()
     profile["target_opportunity"] = opportunity
     try:
-        result = render_cv(template, profile)
+        return (render_final_cv if final else render_cv)(template, profile)
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@router.post("/{career_id}/cv", response_model=CVResponse)
+def build_cv(career_id: str, payload: CVRequest, user: User = Depends(get_current_user)):
+    """Draft CV with prompts by default; set `final` for a send-ready, ATS-friendly CV."""
+    result = _render(career_id, payload, user, payload.final)
+    if payload.final:
+        result["note"] = ("This CV contains only what you entered. Read it through and check every detail "
+                          "before you send it.")
     return CVResponse(**result)
+
+
+@router.post("/{career_id}/cv/docx")
+def download_cv_docx(career_id: str, payload: CVRequest, user: User = Depends(get_current_user)):
+    """The send-ready CV as a Word document, which applicant tracking systems read reliably."""
+    result = _render(career_id, payload, user, final=True)
+    return Response(
+        content=markdown_to_docx(result["markdown"]),
+        media_type=DOCX_MIME,
+        headers={"Content-Disposition": 'attachment; filename="cv.docx"'},
+    )
