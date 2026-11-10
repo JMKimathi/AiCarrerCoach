@@ -25,7 +25,10 @@ fun CareerAssessmentScreen(session: UserSession, onBack: () -> Unit = {}) {
     var skills by remember { mutableStateOf("") }
     var interests by remember { mutableStateOf("") }
     var activities by remember { mutableStateOf("") }
+    var course by remember { mutableStateOf(session.course) }
+    var careerGoal by remember { mutableStateOf(session.careerGoal) }
     var result by remember { mutableStateOf<CareerAssessmentResult?>(null) }
+    val expandedPathRoles = remember { mutableStateListOf<String>() }
     var error by remember { mutableStateOf<String?>(null) }
     var loading by remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
@@ -36,7 +39,9 @@ fun CareerAssessmentScreen(session: UserSession, onBack: () -> Unit = {}) {
             Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(horizontal = 20.dp),
             verticalArrangement = Arrangement.spacedBy(14.dp)
         ) {
-            Text("Add skills, interests, and activities separated by commas. Share only what you are comfortable sharing.", color = TextSecondary)
+            Text("Start with your course or a career you are considering. Add skills, interests, and activities for more useful matches.", color = TextSecondary)
+            OutlinedTextField(course, { course = it }, label = { Text("What course are you studying or have you completed?") }, placeholder = { Text("e.g. Law, Nursing, Business, Computer Science") }, modifier = Modifier.fillMaxWidth(), minLines = 1)
+            OutlinedTextField(careerGoal, { careerGoal = it }, label = { Text("Career you want to explore (optional)") }, placeholder = { Text("e.g. Banking, teaching, medicine, software") }, modifier = Modifier.fillMaxWidth(), minLines = 1)
             OutlinedTextField(skills, { skills = it }, label = { Text("Skills") }, placeholder = { Text("Python, writing, teamwork") }, modifier = Modifier.fillMaxWidth(), minLines = 2)
             OutlinedTextField(interests, { interests = it }, label = { Text("Interests") }, placeholder = { Text("Data, design, helping people") }, modifier = Modifier.fillMaxWidth(), minLines = 2)
             OutlinedTextField(activities, { activities = it }, label = { Text("Activities you enjoy") }, placeholder = { Text("Solving problems, presenting ideas") }, modifier = Modifier.fillMaxWidth(), minLines = 2)
@@ -45,13 +50,13 @@ fun CareerAssessmentScreen(session: UserSession, onBack: () -> Unit = {}) {
                 val skillList = splitAnswers(skills)
                 val interestList = splitAnswers(interests)
                 val activityList = splitAnswers(activities)
-                if (skillList.isEmpty() && interestList.isEmpty() && activityList.isEmpty()) {
-                    error = "Add at least one skill, interest, or activity."
+                if (course.isBlank() && careerGoal.isBlank() && skillList.isEmpty() && interestList.isEmpty() && activityList.isEmpty()) {
+                    error = "Add your course, a career goal, a skill, an interest, or an activity."
                 } else {
                     loading = true
                     error = null
                     scope.launch {
-                        result = ApiClient.assessCareer(session.token, skillList, interestList, activityList)
+                        result = ApiClient.assessCareer(session.token, skillList, interestList, activityList, course.trim(), careerGoal.trim())
                         loading = false
                         if (result == null) error = "The assessment could not be saved. Check that the backend is running and try again."
                     }
@@ -63,21 +68,44 @@ fun CareerAssessmentScreen(session: UserSession, onBack: () -> Unit = {}) {
                 assessment.recommendations.forEach { match ->
                     SectionCard {
                         Text(match.role, style = MaterialTheme.typography.titleLarge)
-                        Text("Relative fit: ${match.fitScore}/100", style = MaterialTheme.typography.labelLarge)
+                        Text("Answer overlap: ${match.fitScore}/100", style = MaterialTheme.typography.labelLarge)
+                        match.roleSummary.takeIf { it.isNotBlank() }?.let {
+                            Text(it, style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                        }
                         if (match.matchingEvidence.isNotEmpty()) {
-                            Spacer(Modifier.height(8.dp))
-                            Text("Evidence", style = MaterialTheme.typography.titleSmall)
-                            match.matchingEvidence.forEach { Text("• $it", style = MaterialTheme.typography.bodySmall) }
+                            GuidanceListSection("Your matching answers", match.matchingEvidence)
                         }
                         if (match.skillsToExplore.isNotEmpty()) {
-                            Spacer(Modifier.height(8.dp))
-                            Text("Skills to explore", style = MaterialTheme.typography.titleSmall)
-                            Text(match.skillsToExplore.joinToString(", "), style = MaterialTheme.typography.bodySmall)
+                            GuidanceListSection("Skills to explore", match.skillsToExplore)
                         }
                         if (match.nextSteps.isNotEmpty()) {
-                            Spacer(Modifier.height(8.dp))
-                            Text("Next steps", style = MaterialTheme.typography.titleSmall)
-                            match.nextSteps.forEach { Text("• $it", style = MaterialTheme.typography.bodySmall) }
+                            GuidanceListSection("Preparation and project ideas", match.nextSteps)
+                        }
+                        TextButton(onClick = {
+                            if (match.role in expandedPathRoles) expandedPathRoles.remove(match.role)
+                            else expandedPathRoles.add(match.role)
+                        }) {
+                            Text(if (match.role in expandedPathRoles) "Hide pathway details" else "Explore pathway details")
+                        }
+                        if (match.role in expandedPathRoles) {
+                            if (match.entryLevelRoles.isNotEmpty()) {
+                                GuidanceListSection("Example entry-level roles", match.entryLevelRoles)
+                            }
+                            match.requirementsAndQualificationNotes.takeIf { it.isNotBlank() }?.let {
+                                GuidanceTextSection("Study and requirements to verify", it)
+                            }
+                            if (match.applicationChannelTypes.isNotEmpty()) {
+                                GuidanceListSection("Application channel ideas (not live listings)", match.applicationChannelTypes)
+                            }
+                            if (match.sampleInterviewQuestions.isNotEmpty()) {
+                                GuidanceListSection("Interview practice", match.sampleInterviewQuestions)
+                            }
+                            match.cvTailoringGuidance.takeIf { it.isNotBlank() }?.let {
+                                GuidanceTextSection("CV tailoring", it)
+                            }
+                            if (match.progressionOptions.isNotEmpty()) {
+                                GuidanceListSection("Possible progression", match.progressionOptions)
+                            }
                         }
                         if (match.relatedResources.isNotEmpty()) {
                             Spacer(Modifier.height(8.dp))
@@ -90,6 +118,20 @@ fun CareerAssessmentScreen(session: UserSession, onBack: () -> Unit = {}) {
             Spacer(Modifier.height(18.dp))
         }
     }
+}
+
+@Composable
+private fun GuidanceListSection(title: String, items: List<String>) {
+    Spacer(Modifier.height(8.dp))
+    Text(title, style = MaterialTheme.typography.titleSmall)
+    items.forEach { Text("• $it", style = MaterialTheme.typography.bodySmall) }
+}
+
+@Composable
+private fun GuidanceTextSection(title: String, content: String) {
+    Spacer(Modifier.height(8.dp))
+    Text(title, style = MaterialTheme.typography.titleSmall)
+    Text(content, style = MaterialTheme.typography.bodySmall)
 }
 
 private fun splitAnswers(value: String): List<String> = value.split(",")
