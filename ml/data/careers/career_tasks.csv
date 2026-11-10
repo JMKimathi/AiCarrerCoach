@@ -251,222 +251,258 @@ CAREER-036,Environmental Engineer,Check compliance with regulations,authored,syn
 CAREER-036,Environmental Engineer,Prepare assessment and audit reports,authored,synthetic,true
 CAREER-036,Environmental Engineer,Advise on mitigation,authored,synthetic,true
 CAREER-036,Environmental Engineer,Engage communities,authored,synthetic,true
-CAREER-037,Medical Doctor,Assess patients or clients in clinical medicine,category_default,synthetic,true
-CAREER-037,Medical Doctor,Plan and deliver care or services,category_default,synthetic,true
-CAREER-037,Medical Doctor,Keep accurate clinical records,category_default,synthetic,true
-CAREER-037,Medical Doctor,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-037,Medical Doctor,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-037,Medical Doctor,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-038,Clinical Officer,Assess patients or clients in primary clinical care,category_default,synthetic,true
-CAREER-038,Clinical Officer,Plan and deliver care or services,category_default,synthetic,true
-CAREER-038,Clinical Officer,Keep accurate clinical records,category_default,synthetic,true
-CAREER-038,Clinical Officer,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-038,Clinical Officer,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-038,Clinical Officer,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-039,Registered Nurse,Assess patients or clients in nursing care,category_default,synthetic,true
-CAREER-039,Registered Nurse,Plan and deliver care or services,category_default,synthetic,true
-CAREER-039,Registered Nurse,Keep accurate clinical records,category_default,synthetic,true
-CAREER-039,Registered Nurse,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-039,Registered Nurse,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-039,Registered Nurse,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-040,Pharmacist,Assess patients or clients in pharmaceutical care,category_default,synthetic,true
-CAREER-040,Pharmacist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-040,Pharmacist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-040,Pharmacist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-040,Pharmacist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-040,Pharmacist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-041,Dentist,Assess patients or clients in oral health,category_default,synthetic,true
-CAREER-041,Dentist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-041,Dentist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-041,Dentist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-041,Dentist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-041,Dentist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-042,Medical Laboratory Technologist,Assess patients or clients in diagnostic laboratory,category_default,synthetic,true
-CAREER-042,Medical Laboratory Technologist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-042,Medical Laboratory Technologist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-042,Medical Laboratory Technologist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-042,Medical Laboratory Technologist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-042,Medical Laboratory Technologist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-043,Radiographer,Assess patients or clients in medical imaging,category_default,synthetic,true
-CAREER-043,Radiographer,Plan and deliver care or services,category_default,synthetic,true
-CAREER-043,Radiographer,Keep accurate clinical records,category_default,synthetic,true
-CAREER-043,Radiographer,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-043,Radiographer,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-043,Radiographer,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-044,Physiotherapist,Assess patients or clients in rehabilitation,category_default,synthetic,true
-CAREER-044,Physiotherapist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-044,Physiotherapist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-044,Physiotherapist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-044,Physiotherapist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-044,Physiotherapist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-045,Nutritionist and Dietitian,Assess patients or clients in clinical and community nutrition,category_default,synthetic,true
-CAREER-045,Nutritionist and Dietitian,Plan and deliver care or services,category_default,synthetic,true
-CAREER-045,Nutritionist and Dietitian,Keep accurate clinical records,category_default,synthetic,true
-CAREER-045,Nutritionist and Dietitian,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-045,Nutritionist and Dietitian,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-045,Nutritionist and Dietitian,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-046,Occupational Therapist,Assess patients or clients in functional rehabilitation,category_default,synthetic,true
-CAREER-046,Occupational Therapist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-046,Occupational Therapist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-046,Occupational Therapist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-046,Occupational Therapist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-046,Occupational Therapist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-047,Psychologist,Assess patients or clients in mental health,category_default,synthetic,true
-CAREER-047,Psychologist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-047,Psychologist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-047,Psychologist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-047,Psychologist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-047,Psychologist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-048,Public Health Officer,Assess patients or clients in disease prevention,category_default,synthetic,true
-CAREER-048,Public Health Officer,Plan and deliver care or services,category_default,synthetic,true
-CAREER-048,Public Health Officer,Keep accurate clinical records,category_default,synthetic,true
-CAREER-048,Public Health Officer,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-048,Public Health Officer,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-048,Public Health Officer,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-049,Epidemiologist,Assess patients or clients in disease surveillance,category_default,synthetic,true
-CAREER-049,Epidemiologist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-049,Epidemiologist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-049,Epidemiologist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-049,Epidemiologist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-049,Epidemiologist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-050,Health Records and Information Officer,Assess patients or clients in health information,category_default,synthetic,true
-CAREER-050,Health Records and Information Officer,Plan and deliver care or services,category_default,synthetic,true
-CAREER-050,Health Records and Information Officer,Keep accurate clinical records,category_default,synthetic,true
-CAREER-050,Health Records and Information Officer,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-050,Health Records and Information Officer,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-050,Health Records and Information Officer,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-051,Health Informatics Specialist,Assess patients or clients in digital health,category_default,synthetic,true
-CAREER-051,Health Informatics Specialist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-051,Health Informatics Specialist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-051,Health Informatics Specialist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-051,Health Informatics Specialist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-051,Health Informatics Specialist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-052,Biomedical Scientist,Assess patients or clients in biomedical research,category_default,synthetic,true
-CAREER-052,Biomedical Scientist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-052,Biomedical Scientist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-052,Biomedical Scientist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-052,Biomedical Scientist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-052,Biomedical Scientist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-053,Health Services Manager,Assess patients or clients in health administration,category_default,synthetic,true
-CAREER-053,Health Services Manager,Plan and deliver care or services,category_default,synthetic,true
-CAREER-053,Health Services Manager,Keep accurate clinical records,category_default,synthetic,true
-CAREER-053,Health Services Manager,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-053,Health Services Manager,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-053,Health Services Manager,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-054,Community Health Promoter,Assess patients or clients in community health,category_default,synthetic,true
-CAREER-054,Community Health Promoter,Plan and deliver care or services,category_default,synthetic,true
-CAREER-054,Community Health Promoter,Keep accurate clinical records,category_default,synthetic,true
-CAREER-054,Community Health Promoter,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-054,Community Health Promoter,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-054,Community Health Promoter,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-055,Accountant,Prepare and check figures for financial accounting,category_default,synthetic,true
-CAREER-055,Accountant,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-055,Accountant,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-055,Accountant,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-055,Accountant,Prepare reports on time,category_default,synthetic,true
-CAREER-055,Accountant,Keep accurate records,category_default,synthetic,true
-CAREER-056,Auditor,Prepare and check figures for assurance and audit,category_default,synthetic,true
-CAREER-056,Auditor,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-056,Auditor,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-056,Auditor,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-056,Auditor,Prepare reports on time,category_default,synthetic,true
-CAREER-056,Auditor,Keep accurate records,category_default,synthetic,true
-CAREER-057,Financial Analyst,Prepare and check figures for financial analysis,category_default,synthetic,true
-CAREER-057,Financial Analyst,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-057,Financial Analyst,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-057,Financial Analyst,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-057,Financial Analyst,Prepare reports on time,category_default,synthetic,true
-CAREER-057,Financial Analyst,Keep accurate records,category_default,synthetic,true
-CAREER-058,Investment Analyst,Prepare and check figures for investment research,category_default,synthetic,true
-CAREER-058,Investment Analyst,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-058,Investment Analyst,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-058,Investment Analyst,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-058,Investment Analyst,Prepare reports on time,category_default,synthetic,true
-CAREER-058,Investment Analyst,Keep accurate records,category_default,synthetic,true
-CAREER-059,Banking Relationship Officer,Prepare and check figures for retail and corporate banking,category_default,synthetic,true
-CAREER-059,Banking Relationship Officer,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-059,Banking Relationship Officer,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-059,Banking Relationship Officer,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-059,Banking Relationship Officer,Prepare reports on time,category_default,synthetic,true
-CAREER-059,Banking Relationship Officer,Keep accurate records,category_default,synthetic,true
-CAREER-060,Credit Analyst,Prepare and check figures for credit assessment,category_default,synthetic,true
-CAREER-060,Credit Analyst,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-060,Credit Analyst,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-060,Credit Analyst,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-060,Credit Analyst,Prepare reports on time,category_default,synthetic,true
-CAREER-060,Credit Analyst,Keep accurate records,category_default,synthetic,true
-CAREER-061,Risk Analyst,Prepare and check figures for enterprise risk,category_default,synthetic,true
-CAREER-061,Risk Analyst,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-061,Risk Analyst,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-061,Risk Analyst,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-061,Risk Analyst,Prepare reports on time,category_default,synthetic,true
-CAREER-061,Risk Analyst,Keep accurate records,category_default,synthetic,true
-CAREER-062,Actuarial Analyst,Prepare and check figures for insurance and pensions modelling,category_default,synthetic,true
-CAREER-062,Actuarial Analyst,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-062,Actuarial Analyst,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-062,Actuarial Analyst,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-062,Actuarial Analyst,Prepare reports on time,category_default,synthetic,true
-CAREER-062,Actuarial Analyst,Keep accurate records,category_default,synthetic,true
-CAREER-063,Insurance Underwriter,Prepare and check figures for insurance underwriting,category_default,synthetic,true
-CAREER-063,Insurance Underwriter,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-063,Insurance Underwriter,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-063,Insurance Underwriter,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-063,Insurance Underwriter,Prepare reports on time,category_default,synthetic,true
-CAREER-063,Insurance Underwriter,Keep accurate records,category_default,synthetic,true
-CAREER-064,Tax Consultant,Prepare and check figures for taxation,category_default,synthetic,true
-CAREER-064,Tax Consultant,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-064,Tax Consultant,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-064,Tax Consultant,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-064,Tax Consultant,Prepare reports on time,category_default,synthetic,true
-CAREER-064,Tax Consultant,Keep accurate records,category_default,synthetic,true
-CAREER-065,Treasury Officer,Prepare and check figures for treasury operations,category_default,synthetic,true
-CAREER-065,Treasury Officer,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-065,Treasury Officer,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-065,Treasury Officer,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-065,Treasury Officer,Prepare reports on time,category_default,synthetic,true
-CAREER-065,Treasury Officer,Keep accurate records,category_default,synthetic,true
-CAREER-066,Fintech Product Analyst,Prepare and check figures for digital financial services,category_default,synthetic,true
-CAREER-066,Fintech Product Analyst,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-066,Fintech Product Analyst,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-066,Fintech Product Analyst,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-066,Fintech Product Analyst,Prepare reports on time,category_default,synthetic,true
-CAREER-066,Fintech Product Analyst,Keep accurate records,category_default,synthetic,true
-CAREER-067,Compliance Officer,Prepare and check figures for financial compliance,category_default,synthetic,true
-CAREER-067,Compliance Officer,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-067,Compliance Officer,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-067,Compliance Officer,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-067,Compliance Officer,Prepare reports on time,category_default,synthetic,true
-CAREER-067,Compliance Officer,Keep accurate records,category_default,synthetic,true
-CAREER-068,Microfinance Officer,Prepare and check figures for inclusive finance,category_default,synthetic,true
-CAREER-068,Microfinance Officer,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-068,Microfinance Officer,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-068,Microfinance Officer,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-068,Microfinance Officer,Prepare reports on time,category_default,synthetic,true
-CAREER-068,Microfinance Officer,Keep accurate records,category_default,synthetic,true
-CAREER-069,Securities Dealer,Prepare and check figures for capital markets,category_default,synthetic,true
-CAREER-069,Securities Dealer,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-069,Securities Dealer,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-069,Securities Dealer,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-069,Securities Dealer,Prepare reports on time,category_default,synthetic,true
-CAREER-069,Securities Dealer,Keep accurate records,category_default,synthetic,true
-CAREER-070,Financial Planner,Prepare and check figures for personal finance,category_default,synthetic,true
-CAREER-070,Financial Planner,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-070,Financial Planner,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-070,Financial Planner,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-070,Financial Planner,Prepare reports on time,category_default,synthetic,true
-CAREER-070,Financial Planner,Keep accurate records,category_default,synthetic,true
-CAREER-071,Forensic Accountant,Prepare and check figures for financial investigation,category_default,synthetic,true
-CAREER-071,Forensic Accountant,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-071,Forensic Accountant,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-071,Forensic Accountant,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-071,Forensic Accountant,Prepare reports on time,category_default,synthetic,true
-CAREER-071,Forensic Accountant,Keep accurate records,category_default,synthetic,true
-CAREER-072,Mobile Money and Payments Specialist,Prepare and check figures for payment systems,category_default,synthetic,true
-CAREER-072,Mobile Money and Payments Specialist,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-072,Mobile Money and Payments Specialist,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-072,Mobile Money and Payments Specialist,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-072,Mobile Money and Payments Specialist,Prepare reports on time,category_default,synthetic,true
-CAREER-072,Mobile Money and Payments Specialist,Keep accurate records,category_default,synthetic,true
+CAREER-037,Medical Doctor,Take patient histories and examine patients,authored,synthetic,true
+CAREER-037,Medical Doctor,Order and interpret tests,authored,synthetic,true
+CAREER-037,Medical Doctor,Diagnose and prescribe treatment,authored,synthetic,true
+CAREER-037,Medical Doctor,Perform minor procedures,authored,synthetic,true
+CAREER-037,Medical Doctor,Do ward rounds and review inpatients,authored,synthetic,true
+CAREER-037,Medical Doctor,Refer patients to specialists,authored,synthetic,true
+CAREER-037,Medical Doctor,Keep accurate clinical notes,authored,synthetic,true
+CAREER-038,Clinical Officer,Assess and treat common illnesses,authored,synthetic,true
+CAREER-038,Clinical Officer,Run outpatient clinics,authored,synthetic,true
+CAREER-038,Clinical Officer,Perform minor surgical procedures,authored,synthetic,true
+CAREER-038,Clinical Officer,Manage chronic disease follow-up,authored,synthetic,true
+CAREER-038,Clinical Officer,Refer complicated cases,authored,synthetic,true
+CAREER-038,Clinical Officer,Give health education,authored,synthetic,true
+CAREER-038,Clinical Officer,Record consultations,authored,synthetic,true
+CAREER-039,Registered Nurse,Monitor patients and record vital signs,authored,synthetic,true
+CAREER-039,Registered Nurse,Give medication and treatments,authored,synthetic,true
+CAREER-039,Registered Nurse,Carry out care plans,authored,synthetic,true
+CAREER-039,Registered Nurse,Dress wounds,authored,synthetic,true
+CAREER-039,Registered Nurse,Hand over patients between shifts,authored,synthetic,true
+CAREER-039,Registered Nurse,Educate patients and families,authored,synthetic,true
+CAREER-039,Registered Nurse,Respond to deteriorating patients,authored,synthetic,true
+CAREER-040,Pharmacist,Check and dispense prescriptions,authored,synthetic,true
+CAREER-040,Pharmacist,Counsel patients on medicines,authored,synthetic,true
+CAREER-040,Pharmacist,Review drug interactions and doses,authored,synthetic,true
+CAREER-040,Pharmacist,Manage medicine stock and ordering,authored,synthetic,true
+CAREER-040,Pharmacist,Advise prescribers,authored,synthetic,true
+CAREER-040,Pharmacist,Report adverse drug reactions,authored,synthetic,true
+CAREER-040,Pharmacist,Supervise pharmacy staff,authored,synthetic,true
+CAREER-041,Dentist,Examine teeth and gums,authored,synthetic,true
+CAREER-041,Dentist,Take and read dental X-rays,authored,synthetic,true
+CAREER-041,Dentist,"Fill, extract and restore teeth",authored,synthetic,true
+CAREER-041,Dentist,Perform root canal treatment,authored,synthetic,true
+CAREER-041,Dentist,Fit crowns and dentures,authored,synthetic,true
+CAREER-041,Dentist,Advise on oral hygiene,authored,synthetic,true
+CAREER-041,Dentist,Keep treatment records,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Collect and label specimens,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,"Run tests on blood, urine and tissue",authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Operate and calibrate analysers,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Run quality-control checks,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Record and release results,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Maintain reagents and stock,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Follow biosafety procedures,authored,synthetic,true
+CAREER-043,Radiographer,Position patients for imaging,authored,synthetic,true
+CAREER-043,Radiographer,"Operate X-ray, CT or MRI equipment",authored,synthetic,true
+CAREER-043,Radiographer,Apply radiation safety rules,authored,synthetic,true
+CAREER-043,Radiographer,Check image quality,authored,synthetic,true
+CAREER-043,Radiographer,Prepare images for the radiologist,authored,synthetic,true
+CAREER-043,Radiographer,Explain procedures to patients,authored,synthetic,true
+CAREER-043,Radiographer,Maintain equipment logs,authored,synthetic,true
+CAREER-044,Physiotherapist,Assess movement and pain,authored,synthetic,true
+CAREER-044,Physiotherapist,Design exercise programmes,authored,synthetic,true
+CAREER-044,Physiotherapist,Give manual therapy,authored,synthetic,true
+CAREER-044,Physiotherapist,Teach patients home exercises,authored,synthetic,true
+CAREER-044,Physiotherapist,Track recovery against goals,authored,synthetic,true
+CAREER-044,Physiotherapist,Fit walking aids,authored,synthetic,true
+CAREER-044,Physiotherapist,Write progress notes,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Assess nutritional status,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Plan therapeutic diets,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Counsel patients on eating,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Run growth monitoring and screening,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Design feeding programmes,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Train health workers,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Record and report nutrition data,authored,synthetic,true
+CAREER-046,Occupational Therapist,Assess how patients manage daily activities,authored,synthetic,true
+CAREER-046,Occupational Therapist,Plan therapy to rebuild skills,authored,synthetic,true
+CAREER-046,Occupational Therapist,Make and fit splints,authored,synthetic,true
+CAREER-046,Occupational Therapist,Recommend home and workplace adaptations,authored,synthetic,true
+CAREER-046,Occupational Therapist,Train carers,authored,synthetic,true
+CAREER-046,Occupational Therapist,Run group therapy,authored,synthetic,true
+CAREER-046,Occupational Therapist,Record progress,authored,synthetic,true
+CAREER-047,Psychologist,Assess clients through interviews and tests,authored,synthetic,true
+CAREER-047,Psychologist,Plan and deliver therapy sessions,authored,synthetic,true
+CAREER-047,Psychologist,Write assessment reports,authored,synthetic,true
+CAREER-047,Psychologist,Manage risk and refer when needed,authored,synthetic,true
+CAREER-047,Psychologist,Keep confidential case notes,authored,synthetic,true
+CAREER-047,Psychologist,Run group sessions,authored,synthetic,true
+CAREER-047,Psychologist,Attend clinical supervision,authored,synthetic,true
+CAREER-048,Public Health Officer,Inspect food premises and buildings,authored,synthetic,true
+CAREER-048,Public Health Officer,Investigate disease outbreaks,authored,synthetic,true
+CAREER-048,Public Health Officer,Enforce public health laws,authored,synthetic,true
+CAREER-048,Public Health Officer,Run health education campaigns,authored,synthetic,true
+CAREER-048,Public Health Officer,Monitor water quality,authored,synthetic,true
+CAREER-048,Public Health Officer,Supervise immunisation outreach,authored,synthetic,true
+CAREER-048,Public Health Officer,Write inspection reports,authored,synthetic,true
+CAREER-049,Epidemiologist,Design studies and surveillance systems,authored,synthetic,true
+CAREER-049,Epidemiologist,Collect and clean health data,authored,synthetic,true
+CAREER-049,Epidemiologist,Analyse disease patterns,authored,synthetic,true
+CAREER-049,Epidemiologist,Investigate outbreaks in the field,authored,synthetic,true
+CAREER-049,Epidemiologist,Write reports and bulletins,authored,synthetic,true
+CAREER-049,Epidemiologist,Advise on control measures,authored,synthetic,true
+CAREER-049,Epidemiologist,Present findings to decision makers,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Register patients and open files,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,File and retrieve records,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Code diagnoses and procedures,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Compile monthly facility reports,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Check data for errors,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Protect patient confidentiality,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Enter data into national systems,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Gather requirements from clinicians,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Configure and roll out health systems,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Train users,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Build dashboards from health data,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Fix data and system issues,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Map data between systems,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Document workflows,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Design and run experiments,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Process and analyse samples,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Record results in lab notebooks,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Analyse data and statistics,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Write papers and reports,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Maintain equipment,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Follow ethics and biosafety rules,authored,synthetic,true
+CAREER-053,Health Services Manager,Plan and monitor budgets,authored,synthetic,true
+CAREER-053,Health Services Manager,Manage staff and rotas,authored,synthetic,true
+CAREER-053,Health Services Manager,Oversee supplies and equipment,authored,synthetic,true
+CAREER-053,Health Services Manager,Track service quality indicators,authored,synthetic,true
+CAREER-053,Health Services Manager,Handle patient complaints,authored,synthetic,true
+CAREER-053,Health Services Manager,Prepare reports for boards and funders,authored,synthetic,true
+CAREER-053,Health Services Manager,Ensure licensing and compliance,authored,synthetic,true
+CAREER-054,Community Health Promoter,Visit households and register members,authored,synthetic,true
+CAREER-054,Community Health Promoter,Teach families about hygiene and nutrition,authored,synthetic,true
+CAREER-054,Community Health Promoter,Screen children for malnutrition,authored,synthetic,true
+CAREER-054,Community Health Promoter,Refer sick people to facilities,authored,synthetic,true
+CAREER-054,Community Health Promoter,Follow up patients on treatment,authored,synthetic,true
+CAREER-054,Community Health Promoter,Mobilise for outreaches,authored,synthetic,true
+CAREER-054,Community Health Promoter,Submit monthly reports,authored,synthetic,true
+CAREER-055,Accountant,Record and post transactions,authored,synthetic,true
+CAREER-055,Accountant,Reconcile bank and ledger accounts,authored,synthetic,true
+CAREER-055,Accountant,Prepare monthly accounts,authored,synthetic,true
+CAREER-055,Accountant,Process supplier payments and invoices,authored,synthetic,true
+CAREER-055,Accountant,File tax returns,authored,synthetic,true
+CAREER-055,Accountant,Support the annual audit,authored,synthetic,true
+CAREER-055,Accountant,Explain variances to managers,authored,synthetic,true
+CAREER-056,Auditor,Plan audits and assess risk,authored,synthetic,true
+CAREER-056,Auditor,Test controls and transactions,authored,synthetic,true
+CAREER-056,Auditor,Examine supporting documents,authored,synthetic,true
+CAREER-056,Auditor,Document work in audit files,authored,synthetic,true
+CAREER-056,Auditor,Discuss findings with management,authored,synthetic,true
+CAREER-056,Auditor,Draft audit reports,authored,synthetic,true
+CAREER-056,Auditor,Follow up on recommendations,authored,synthetic,true
+CAREER-057,Financial Analyst,Build and update financial models,authored,synthetic,true
+CAREER-057,Financial Analyst,Prepare budgets and forecasts,authored,synthetic,true
+CAREER-057,Financial Analyst,Analyse actual results against plan,authored,synthetic,true
+CAREER-057,Financial Analyst,Write management reports,authored,synthetic,true
+CAREER-057,Financial Analyst,Evaluate projects and investments,authored,synthetic,true
+CAREER-057,Financial Analyst,Present insights to managers,authored,synthetic,true
+CAREER-057,Financial Analyst,Improve reporting processes,authored,synthetic,true
+CAREER-058,Investment Analyst,Research companies and sectors,authored,synthetic,true
+CAREER-058,Investment Analyst,Build valuation models,authored,synthetic,true
+CAREER-058,Investment Analyst,Read financial statements and results,authored,synthetic,true
+CAREER-058,Investment Analyst,Write research notes and recommendations,authored,synthetic,true
+CAREER-058,Investment Analyst,Monitor portfolio performance,authored,synthetic,true
+CAREER-058,Investment Analyst,Track markets and news,authored,synthetic,true
+CAREER-058,Investment Analyst,Present ideas to the investment committee,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Open and manage customer accounts,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,"Sell loans, deposits and other products",authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Visit and grow a client portfolio,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Prepare loan applications,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Resolve customer problems,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Meet sales targets,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Apply know-your-customer checks,authored,synthetic,true
+CAREER-060,Credit Analyst,Analyse financial statements and cash flows,authored,synthetic,true
+CAREER-060,Credit Analyst,Assess borrowers' ability to repay,authored,synthetic,true
+CAREER-060,Credit Analyst,Visit businesses and verify information,authored,synthetic,true
+CAREER-060,Credit Analyst,Write credit proposals,authored,synthetic,true
+CAREER-060,Credit Analyst,Recommend approval or decline,authored,synthetic,true
+CAREER-060,Credit Analyst,Monitor loans for early warning signs,authored,synthetic,true
+CAREER-060,Credit Analyst,Check collateral and documentation,authored,synthetic,true
+CAREER-061,Risk Analyst,Identify and assess risks,authored,synthetic,true
+CAREER-061,Risk Analyst,Maintain risk registers,authored,synthetic,true
+CAREER-061,Risk Analyst,Monitor risk limits and indicators,authored,synthetic,true
+CAREER-061,Risk Analyst,Run stress tests and scenarios,authored,synthetic,true
+CAREER-061,Risk Analyst,Investigate incidents and losses,authored,synthetic,true
+CAREER-061,Risk Analyst,Prepare risk reports for committees,authored,synthetic,true
+CAREER-061,Risk Analyst,Review new products for risk,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Clean and analyse policy and claims data,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Build pricing and reserving models,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Value pension schemes,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Run projections and sensitivity tests,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Prepare regulatory reports,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Document assumptions and methods,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Study for actuarial exams,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Review insurance applications,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Assess the risk of each proposal,authored,synthetic,true
+CAREER-063,Insurance Underwriter,"Decide terms, cover and premium",authored,synthetic,true
+CAREER-063,Insurance Underwriter,Issue quotes and policies,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Handle renewals and endorsements,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Liaise with brokers and agents,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Arrange reinsurance where needed,authored,synthetic,true
+CAREER-064,Tax Consultant,Prepare and file tax returns,authored,synthetic,true
+CAREER-064,Tax Consultant,Compute tax liabilities,authored,synthetic,true
+CAREER-064,Tax Consultant,Advise clients on tax law changes,authored,synthetic,true
+CAREER-064,Tax Consultant,Respond to revenue authority queries and audits,authored,synthetic,true
+CAREER-064,Tax Consultant,Plan transactions tax-efficiently,authored,synthetic,true
+CAREER-064,Tax Consultant,Research tax legislation,authored,synthetic,true
+CAREER-064,Tax Consultant,Write tax opinions,authored,synthetic,true
+CAREER-065,Treasury Officer,Forecast daily cash positions,authored,synthetic,true
+CAREER-065,Treasury Officer,Move funds between accounts,authored,synthetic,true
+CAREER-065,Treasury Officer,Execute foreign exchange and money-market deals,authored,synthetic,true
+CAREER-065,Treasury Officer,Settle and confirm trades,authored,synthetic,true
+CAREER-065,Treasury Officer,Monitor liquidity and currency exposure,authored,synthetic,true
+CAREER-065,Treasury Officer,Manage bank relationships,authored,synthetic,true
+CAREER-065,Treasury Officer,Prepare treasury reports,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Analyse how customers use products,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Gather and write requirements,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Run experiments on features and pricing,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Track product metrics,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Work with developers and designers,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Research competitors and regulation,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Report on product performance,authored,synthetic,true
+CAREER-067,Compliance Officer,Track new laws and regulations,authored,synthetic,true
+CAREER-067,Compliance Officer,Write and update policies,authored,synthetic,true
+CAREER-067,Compliance Officer,Review processes for compliance gaps,authored,synthetic,true
+CAREER-067,Compliance Officer,Run compliance checks and tests,authored,synthetic,true
+CAREER-067,Compliance Officer,Train staff,authored,synthetic,true
+CAREER-067,Compliance Officer,Report to regulators and the board,authored,synthetic,true
+CAREER-067,Compliance Officer,Investigate breaches,authored,synthetic,true
+CAREER-068,Microfinance Officer,Recruit and train borrower groups,authored,synthetic,true
+CAREER-068,Microfinance Officer,Appraise small businesses on site,authored,synthetic,true
+CAREER-068,Microfinance Officer,Process loan applications,authored,synthetic,true
+CAREER-068,Microfinance Officer,Attend group meetings and collect repayments,authored,synthetic,true
+CAREER-068,Microfinance Officer,Follow up arrears,authored,synthetic,true
+CAREER-068,Microfinance Officer,Teach financial literacy,authored,synthetic,true
+CAREER-068,Microfinance Officer,Report on portfolio quality,authored,synthetic,true
+CAREER-069,Securities Dealer,Take and execute client orders,authored,synthetic,true
+CAREER-069,Securities Dealer,Quote prices and advise on trades,authored,synthetic,true
+CAREER-069,Securities Dealer,Monitor the market during trading hours,authored,synthetic,true
+CAREER-069,Securities Dealer,Confirm and settle trades,authored,synthetic,true
+CAREER-069,Securities Dealer,Manage client accounts,authored,synthetic,true
+CAREER-069,Securities Dealer,Follow market conduct rules,authored,synthetic,true
+CAREER-069,Securities Dealer,Report daily positions,authored,synthetic,true
+CAREER-070,Financial Planner,Meet clients and understand their goals,authored,synthetic,true
+CAREER-070,Financial Planner,"Analyse income, spending and assets",authored,synthetic,true
+CAREER-070,Financial Planner,Build financial plans,authored,synthetic,true
+CAREER-070,Financial Planner,"Recommend savings, investment and insurance products",authored,synthetic,true
+CAREER-070,Financial Planner,Review plans as life changes,authored,synthetic,true
+CAREER-070,Financial Planner,Explain risk and fees clearly,authored,synthetic,true
+CAREER-070,Financial Planner,Keep advice records,authored,synthetic,true
+CAREER-071,Forensic Accountant,Plan investigations,authored,synthetic,true
+CAREER-071,Forensic Accountant,Analyse transactions for red flags,authored,synthetic,true
+CAREER-071,Forensic Accountant,Trace money and assets,authored,synthetic,true
+CAREER-071,Forensic Accountant,Interview staff and witnesses,authored,synthetic,true
+CAREER-071,Forensic Accountant,Preserve evidence properly,authored,synthetic,true
+CAREER-071,Forensic Accountant,Write investigation reports,authored,synthetic,true
+CAREER-071,Forensic Accountant,Give evidence in court or hearings,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Monitor payment transactions and settlement,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Reconcile accounts between partners,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Resolve failed and disputed payments,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Onboard merchants and partners,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Test payment integrations,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Watch for fraud,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Report on volumes and uptime,authored,synthetic,true
 CAREER-073,Marketing Executive,Plan and run marketing activities,category_default,synthetic,true
 CAREER-073,Marketing Executive,Understand what customers or colleagues need,category_default,synthetic,true
 CAREER-073,Marketing Executive,Track results against targets,category_default,synthetic,true
@@ -1852,144 +1888,167 @@ CAREER-299,Facilities Manager,Inspect buildings,authored,synthetic,true
 CAREER-299,Facilities Manager,Handle occupant requests,authored,synthetic,true
 CAREER-299,Facilities Manager,Ensure safety compliance,authored,synthetic,true
 CAREER-299,Facilities Manager,Plan moves and space use,authored,synthetic,true
-CAREER-300,Surgeon,Assess patients or clients in surgical care,category_default,synthetic,true
-CAREER-300,Surgeon,Plan and deliver care or services,category_default,synthetic,true
-CAREER-300,Surgeon,Keep accurate clinical records,category_default,synthetic,true
-CAREER-300,Surgeon,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-300,Surgeon,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-300,Surgeon,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-301,Paediatrician,Assess patients or clients in child health,category_default,synthetic,true
-CAREER-301,Paediatrician,Plan and deliver care or services,category_default,synthetic,true
-CAREER-301,Paediatrician,Keep accurate clinical records,category_default,synthetic,true
-CAREER-301,Paediatrician,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-301,Paediatrician,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-301,Paediatrician,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-302,Midwife,Assess patients or clients in maternal and newborn care,category_default,synthetic,true
-CAREER-302,Midwife,Plan and deliver care or services,category_default,synthetic,true
-CAREER-302,Midwife,Keep accurate clinical records,category_default,synthetic,true
-CAREER-302,Midwife,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-302,Midwife,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-302,Midwife,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-303,Optometrist,Assess patients or clients in eye care,category_default,synthetic,true
-CAREER-303,Optometrist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-303,Optometrist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-303,Optometrist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-303,Optometrist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-303,Optometrist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-304,Pharmaceutical Technologist,Assess patients or clients in pharmacy practice support,category_default,synthetic,true
-CAREER-304,Pharmaceutical Technologist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-304,Pharmaceutical Technologist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-304,Pharmaceutical Technologist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-304,Pharmaceutical Technologist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-304,Pharmaceutical Technologist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-305,Dental Technologist,Assess patients or clients in dental laboratory,category_default,synthetic,true
-CAREER-305,Dental Technologist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-305,Dental Technologist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-305,Dental Technologist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-305,Dental Technologist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-305,Dental Technologist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-306,Orthopaedic Technologist,Assess patients or clients in orthopaedic devices,category_default,synthetic,true
-CAREER-306,Orthopaedic Technologist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-306,Orthopaedic Technologist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-306,Orthopaedic Technologist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-306,Orthopaedic Technologist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-306,Orthopaedic Technologist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-307,Speech and Language Therapist,Assess patients or clients in communication disorders,category_default,synthetic,true
-CAREER-307,Speech and Language Therapist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-307,Speech and Language Therapist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-307,Speech and Language Therapist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-307,Speech and Language Therapist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-307,Speech and Language Therapist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-308,Emergency Medical Technician,Assess patients or clients in pre-hospital care,category_default,synthetic,true
-CAREER-308,Emergency Medical Technician,Plan and deliver care or services,category_default,synthetic,true
-CAREER-308,Emergency Medical Technician,Keep accurate clinical records,category_default,synthetic,true
-CAREER-308,Emergency Medical Technician,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-308,Emergency Medical Technician,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-308,Emergency Medical Technician,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-309,Health Economist,Assess patients or clients in health financing,category_default,synthetic,true
-CAREER-309,Health Economist,Plan and deliver care or services,category_default,synthetic,true
-CAREER-309,Health Economist,Keep accurate clinical records,category_default,synthetic,true
-CAREER-309,Health Economist,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-309,Health Economist,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-309,Health Economist,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-310,Medical Social Worker,Assess patients or clients in hospital social services,category_default,synthetic,true
-CAREER-310,Medical Social Worker,Plan and deliver care or services,category_default,synthetic,true
-CAREER-310,Medical Social Worker,Keep accurate clinical records,category_default,synthetic,true
-CAREER-310,Medical Social Worker,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-310,Medical Social Worker,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-310,Medical Social Worker,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-311,Medical Sales Representative,Assess patients or clients in healthcare products,category_default,synthetic,true
-CAREER-311,Medical Sales Representative,Plan and deliver care or services,category_default,synthetic,true
-CAREER-311,Medical Sales Representative,Keep accurate clinical records,category_default,synthetic,true
-CAREER-311,Medical Sales Representative,Explain findings and next steps clearly,category_default,synthetic,true
-CAREER-311,Medical Sales Representative,Follow infection prevention and safety procedures,category_default,synthetic,true
-CAREER-311,Medical Sales Representative,Refer to colleagues when needed,category_default,synthetic,true
-CAREER-312,Bank Operations Officer,Prepare and check figures for branch and back-office operations,category_default,synthetic,true
-CAREER-312,Bank Operations Officer,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-312,Bank Operations Officer,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-312,Bank Operations Officer,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-312,Bank Operations Officer,Prepare reports on time,category_default,synthetic,true
-CAREER-312,Bank Operations Officer,Keep accurate records,category_default,synthetic,true
-CAREER-313,Financial Controller,Prepare and check figures for finance leadership,category_default,synthetic,true
-CAREER-313,Financial Controller,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-313,Financial Controller,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-313,Financial Controller,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-313,Financial Controller,Prepare reports on time,category_default,synthetic,true
-CAREER-313,Financial Controller,Keep accurate records,category_default,synthetic,true
-CAREER-314,Pension Fund Administrator,Prepare and check figures for retirement benefits,category_default,synthetic,true
-CAREER-314,Pension Fund Administrator,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-314,Pension Fund Administrator,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-314,Pension Fund Administrator,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-314,Pension Fund Administrator,Prepare reports on time,category_default,synthetic,true
-CAREER-314,Pension Fund Administrator,Keep accurate records,category_default,synthetic,true
-CAREER-315,Insurance Claims Analyst,Prepare and check figures for claims,category_default,synthetic,true
-CAREER-315,Insurance Claims Analyst,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-315,Insurance Claims Analyst,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-315,Insurance Claims Analyst,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-315,Insurance Claims Analyst,Prepare reports on time,category_default,synthetic,true
-CAREER-315,Insurance Claims Analyst,Keep accurate records,category_default,synthetic,true
-CAREER-316,Islamic Finance Specialist,Prepare and check figures for Sharia-compliant finance,category_default,synthetic,true
-CAREER-316,Islamic Finance Specialist,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-316,Islamic Finance Specialist,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-316,Islamic Finance Specialist,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-316,Islamic Finance Specialist,Prepare reports on time,category_default,synthetic,true
-CAREER-316,Islamic Finance Specialist,Keep accurate records,category_default,synthetic,true
-CAREER-317,SACCO Manager,Prepare and check figures for co-operative finance,category_default,synthetic,true
-CAREER-317,SACCO Manager,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-317,SACCO Manager,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-317,SACCO Manager,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-317,SACCO Manager,Prepare reports on time,category_default,synthetic,true
-CAREER-317,SACCO Manager,Keep accurate records,category_default,synthetic,true
-CAREER-318,Equity Trader,Prepare and check figures for securities trading,category_default,synthetic,true
-CAREER-318,Equity Trader,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-318,Equity Trader,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-318,Equity Trader,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-318,Equity Trader,Prepare reports on time,category_default,synthetic,true
-CAREER-318,Equity Trader,Keep accurate records,category_default,synthetic,true
-CAREER-319,Budget Analyst,Prepare and check figures for budgeting,category_default,synthetic,true
-CAREER-319,Budget Analyst,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-319,Budget Analyst,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-319,Budget Analyst,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-319,Budget Analyst,Prepare reports on time,category_default,synthetic,true
-CAREER-319,Budget Analyst,Keep accurate records,category_default,synthetic,true
-CAREER-320,Anti-Money Laundering Analyst,Prepare and check figures for financial crime,category_default,synthetic,true
-CAREER-320,Anti-Money Laundering Analyst,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-320,Anti-Money Laundering Analyst,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-320,Anti-Money Laundering Analyst,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-320,Anti-Money Laundering Analyst,Prepare reports on time,category_default,synthetic,true
-CAREER-320,Anti-Money Laundering Analyst,Keep accurate records,category_default,synthetic,true
-CAREER-321,Cost Accountant,Prepare and check figures for cost and management accounting,category_default,synthetic,true
-CAREER-321,Cost Accountant,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-321,Cost Accountant,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-321,Cost Accountant,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-321,Cost Accountant,Prepare reports on time,category_default,synthetic,true
-CAREER-321,Cost Accountant,Keep accurate records,category_default,synthetic,true
-CAREER-322,Venture Capital Analyst,Prepare and check figures for startup investment,category_default,synthetic,true
-CAREER-322,Venture Capital Analyst,Analyse financial information and explain what it means,category_default,synthetic,true
-CAREER-322,Venture Capital Analyst,Follow regulations and internal controls,category_default,synthetic,true
-CAREER-322,Venture Capital Analyst,Serve and advise clients or colleagues,category_default,synthetic,true
-CAREER-322,Venture Capital Analyst,Prepare reports on time,category_default,synthetic,true
-CAREER-322,Venture Capital Analyst,Keep accurate records,category_default,synthetic,true
+CAREER-300,Surgeon,Assess patients for surgery,authored,synthetic,true
+CAREER-300,Surgeon,Explain risks and get consent,authored,synthetic,true
+CAREER-300,Surgeon,Perform operations,authored,synthetic,true
+CAREER-300,Surgeon,Lead the theatre team,authored,synthetic,true
+CAREER-300,Surgeon,Review patients after surgery,authored,synthetic,true
+CAREER-300,Surgeon,Manage complications,authored,synthetic,true
+CAREER-300,Surgeon,Teach junior doctors,authored,synthetic,true
+CAREER-301,Paediatrician,Examine and diagnose children,authored,synthetic,true
+CAREER-301,Paediatrician,Manage newborns in the nursery,authored,synthetic,true
+CAREER-301,Paediatrician,Prescribe weight-based treatment,authored,synthetic,true
+CAREER-301,Paediatrician,Monitor growth and development,authored,synthetic,true
+CAREER-301,Paediatrician,Counsel parents,authored,synthetic,true
+CAREER-301,Paediatrician,Run immunisation and well-child clinics,authored,synthetic,true
+CAREER-301,Paediatrician,Supervise ward rounds,authored,synthetic,true
+CAREER-302,Midwife,Run antenatal clinics,authored,synthetic,true
+CAREER-302,Midwife,Monitor mothers and babies in labour,authored,synthetic,true
+CAREER-302,Midwife,Conduct normal deliveries,authored,synthetic,true
+CAREER-302,Midwife,Recognise and refer complications,authored,synthetic,true
+CAREER-302,Midwife,Support breastfeeding,authored,synthetic,true
+CAREER-302,Midwife,Give family planning counselling,authored,synthetic,true
+CAREER-302,Midwife,Record births and care,authored,synthetic,true
+CAREER-303,Optometrist,Test vision and eye health,authored,synthetic,true
+CAREER-303,Optometrist,Prescribe glasses and contact lenses,authored,synthetic,true
+CAREER-303,Optometrist,Detect eye disease and refer,authored,synthetic,true
+CAREER-303,Optometrist,Fit and adjust lenses,authored,synthetic,true
+CAREER-303,Optometrist,Advise on eye care,authored,synthetic,true
+CAREER-303,Optometrist,Run screening outreaches,authored,synthetic,true
+CAREER-303,Optometrist,Keep patient records,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Dispense medicines under supervision,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Label and package prescriptions,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Explain how to take medicines,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Receive and store stock,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Check expiry dates,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Keep controlled-drug registers,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Serve customers at the counter,authored,synthetic,true
+CAREER-305,Dental Technologist,Read the dentist's prescription,authored,synthetic,true
+CAREER-305,Dental Technologist,Cast models from impressions,authored,synthetic,true
+CAREER-305,Dental Technologist,"Build dentures, crowns and bridges",authored,synthetic,true
+CAREER-305,Dental Technologist,Make orthodontic appliances,authored,synthetic,true
+CAREER-305,Dental Technologist,Polish and finish work,authored,synthetic,true
+CAREER-305,Dental Technologist,Repair broken appliances,authored,synthetic,true
+CAREER-305,Dental Technologist,Check fit and shade,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Assess and measure patients,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Take casts of limbs,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Make and fit prostheses and braces,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Apply and remove plaster casts,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Adjust devices for comfort,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Teach patients to use them,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Repair devices,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,"Assess speech, language and swallowing",authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Plan therapy goals,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Run individual and group sessions,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Coach parents and teachers,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Recommend communication aids,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Write reports,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Work with schools and doctors,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Respond to emergency calls,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Assess and stabilise patients at the scene,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Give first aid and life support,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Move patients safely,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Hand over to hospital staff,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Check and restock the ambulance,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Write patient report forms,authored,synthetic,true
+CAREER-309,Health Economist,Collect cost and outcome data,authored,synthetic,true
+CAREER-309,Health Economist,Build economic models,authored,synthetic,true
+CAREER-309,Health Economist,Analyse health budgets and spending,authored,synthetic,true
+CAREER-309,Health Economist,Write policy briefs,authored,synthetic,true
+CAREER-309,Health Economist,Advise on insurance and benefit packages,authored,synthetic,true
+CAREER-309,Health Economist,Present findings to ministries and funders,authored,synthetic,true
+CAREER-309,Health Economist,Review research evidence,authored,synthetic,true
+CAREER-310,Medical Social Worker,Assess patients' social and financial situations,authored,synthetic,true
+CAREER-310,Medical Social Worker,Counsel patients and families,authored,synthetic,true
+CAREER-310,Medical Social Worker,Arrange support and referrals,authored,synthetic,true
+CAREER-310,Medical Social Worker,Plan safe discharge,authored,synthetic,true
+CAREER-310,Medical Social Worker,Assess requests for fee waivers,authored,synthetic,true
+CAREER-310,Medical Social Worker,Trace relatives,authored,synthetic,true
+CAREER-310,Medical Social Worker,Keep case records,authored,synthetic,true
+CAREER-311,Medical Sales Representative,"Visit doctors, pharmacists and hospitals",authored,synthetic,true
+CAREER-311,Medical Sales Representative,Explain product evidence and use,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Meet territory sales targets,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Organise product talks,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Follow up orders and stock,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Report market and competitor activity,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Follow ethical promotion codes,authored,synthetic,true
+CAREER-312,Bank Operations Officer,"Process deposits, withdrawals and transfers",authored,synthetic,true
+CAREER-312,Bank Operations Officer,Open accounts and verify documents,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Balance cash at the end of day,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Process cheques and payments,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Reconcile suspense accounts,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Handle customer queries,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Follow dual-control procedures,authored,synthetic,true
+CAREER-313,Financial Controller,Lead month-end and year-end close,authored,synthetic,true
+CAREER-313,Financial Controller,Review and sign off accounts,authored,synthetic,true
+CAREER-313,Financial Controller,Design and enforce internal controls,authored,synthetic,true
+CAREER-313,Financial Controller,Manage the audit,authored,synthetic,true
+CAREER-313,Financial Controller,Lead the finance team,authored,synthetic,true
+CAREER-313,Financial Controller,Oversee budgets and cash flow,authored,synthetic,true
+CAREER-313,Financial Controller,Report to the chief executive and board,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Maintain member records,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Reconcile monthly contributions,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Calculate and pay benefits,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Prepare member statements,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Answer member queries,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Prepare trustee and regulator reports,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Support scheme audits,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Register new claims,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Check policy cover and documents,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Assess losses and appoint assessors,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Negotiate and approve settlements,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Detect suspicious claims,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Update customers on progress,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Record claims data,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Structure products under Sharia principles,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Review contracts for compliance,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Advise customers on Islamic products,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Work with the Sharia board,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Process murabaha and ijara financing,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Train staff,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Report on compliance,authored,synthetic,true
+CAREER-317,SACCO Manager,Oversee daily operations and staff,authored,synthetic,true
+CAREER-317,SACCO Manager,Manage loans and liquidity,authored,synthetic,true
+CAREER-317,SACCO Manager,Grow membership and deposits,authored,synthetic,true
+CAREER-317,SACCO Manager,Prepare budgets and financial reports,authored,synthetic,true
+CAREER-317,SACCO Manager,Report to the board and members,authored,synthetic,true
+CAREER-317,SACCO Manager,Ensure regulator compliance,authored,synthetic,true
+CAREER-317,SACCO Manager,Resolve member complaints,authored,synthetic,true
+CAREER-318,Equity Trader,Watch markets and news,authored,synthetic,true
+CAREER-318,Equity Trader,Execute buy and sell orders,authored,synthetic,true
+CAREER-318,Equity Trader,Manage positions and risk limits,authored,synthetic,true
+CAREER-318,Equity Trader,Analyse price and volume patterns,authored,synthetic,true
+CAREER-318,Equity Trader,Work with analysts on ideas,authored,synthetic,true
+CAREER-318,Equity Trader,Review trades and performance,authored,synthetic,true
+CAREER-318,Equity Trader,Follow market rules,authored,synthetic,true
+CAREER-319,Budget Analyst,Prepare annual budgets with departments,authored,synthetic,true
+CAREER-319,Budget Analyst,Review spending requests,authored,synthetic,true
+CAREER-319,Budget Analyst,Track spending against budget,authored,synthetic,true
+CAREER-319,Budget Analyst,Explain variances,authored,synthetic,true
+CAREER-319,Budget Analyst,Forecast revenue and costs,authored,synthetic,true
+CAREER-319,Budget Analyst,Prepare budget reports,authored,synthetic,true
+CAREER-319,Budget Analyst,Advise managers on reallocations,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Review alerts on unusual transactions,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Investigate customers and source of funds,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Screen names against sanctions lists,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Write and file suspicious transaction reports,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Carry out enhanced due diligence,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Keep case records,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Update risk ratings,authored,synthetic,true
+CAREER-321,Cost Accountant,Calculate product and service costs,authored,synthetic,true
+CAREER-321,Cost Accountant,Set and update standard costs,authored,synthetic,true
+CAREER-321,Cost Accountant,Analyse variances,authored,synthetic,true
+CAREER-321,Cost Accountant,Value inventory and attend stock counts,authored,synthetic,true
+CAREER-321,Cost Accountant,Prepare management accounts,authored,synthetic,true
+CAREER-321,Cost Accountant,Advise on pricing and savings,authored,synthetic,true
+CAREER-321,Cost Accountant,Build budgets with departments,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Find and screen startups,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Meet founders and review pitches,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Research markets and competitors,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Build financial and valuation models,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Run due diligence,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Write investment memos,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Track portfolio companies,authored,synthetic,true
 CAREER-323,Real Estate Agent,Plan and run property sales and letting activities,category_default,synthetic,true
 CAREER-323,Real Estate Agent,Understand what customers or colleagues need,category_default,synthetic,true
 CAREER-323,Real Estate Agent,Track results against targets,category_default,synthetic,true

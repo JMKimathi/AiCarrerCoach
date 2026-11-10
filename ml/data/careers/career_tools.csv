@@ -222,186 +222,222 @@ CAREER-036,Environmental Engineer,AutoCAD,authored,synthetic,true
 CAREER-036,Environmental Engineer,modelling tools,authored,synthetic,true
 CAREER-036,Environmental Engineer,environmental regulations,authored,synthetic,true
 CAREER-036,Environmental Engineer,spreadsheets,authored,synthetic,true
-CAREER-037,Medical Doctor,clinical records systems,category_default,synthetic,true
-CAREER-037,Medical Doctor,diagnostic equipment,category_default,synthetic,true
-CAREER-037,Medical Doctor,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-037,Medical Doctor,personal protective equipment,category_default,synthetic,true
-CAREER-037,Medical Doctor,health information reporting tools,category_default,synthetic,true
-CAREER-038,Clinical Officer,clinical records systems,category_default,synthetic,true
-CAREER-038,Clinical Officer,diagnostic equipment,category_default,synthetic,true
-CAREER-038,Clinical Officer,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-038,Clinical Officer,personal protective equipment,category_default,synthetic,true
-CAREER-038,Clinical Officer,health information reporting tools,category_default,synthetic,true
-CAREER-039,Registered Nurse,clinical records systems,category_default,synthetic,true
-CAREER-039,Registered Nurse,diagnostic equipment,category_default,synthetic,true
-CAREER-039,Registered Nurse,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-039,Registered Nurse,personal protective equipment,category_default,synthetic,true
-CAREER-039,Registered Nurse,health information reporting tools,category_default,synthetic,true
-CAREER-040,Pharmacist,clinical records systems,category_default,synthetic,true
-CAREER-040,Pharmacist,diagnostic equipment,category_default,synthetic,true
-CAREER-040,Pharmacist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-040,Pharmacist,personal protective equipment,category_default,synthetic,true
-CAREER-040,Pharmacist,health information reporting tools,category_default,synthetic,true
-CAREER-041,Dentist,clinical records systems,category_default,synthetic,true
-CAREER-041,Dentist,diagnostic equipment,category_default,synthetic,true
-CAREER-041,Dentist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-041,Dentist,personal protective equipment,category_default,synthetic,true
-CAREER-041,Dentist,health information reporting tools,category_default,synthetic,true
-CAREER-042,Medical Laboratory Technologist,clinical records systems,category_default,synthetic,true
-CAREER-042,Medical Laboratory Technologist,diagnostic equipment,category_default,synthetic,true
-CAREER-042,Medical Laboratory Technologist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-042,Medical Laboratory Technologist,personal protective equipment,category_default,synthetic,true
-CAREER-042,Medical Laboratory Technologist,health information reporting tools,category_default,synthetic,true
-CAREER-043,Radiographer,clinical records systems,category_default,synthetic,true
-CAREER-043,Radiographer,diagnostic equipment,category_default,synthetic,true
-CAREER-043,Radiographer,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-043,Radiographer,personal protective equipment,category_default,synthetic,true
-CAREER-043,Radiographer,health information reporting tools,category_default,synthetic,true
-CAREER-044,Physiotherapist,clinical records systems,category_default,synthetic,true
-CAREER-044,Physiotherapist,diagnostic equipment,category_default,synthetic,true
-CAREER-044,Physiotherapist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-044,Physiotherapist,personal protective equipment,category_default,synthetic,true
-CAREER-044,Physiotherapist,health information reporting tools,category_default,synthetic,true
-CAREER-045,Nutritionist and Dietitian,clinical records systems,category_default,synthetic,true
-CAREER-045,Nutritionist and Dietitian,diagnostic equipment,category_default,synthetic,true
-CAREER-045,Nutritionist and Dietitian,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-045,Nutritionist and Dietitian,personal protective equipment,category_default,synthetic,true
-CAREER-045,Nutritionist and Dietitian,health information reporting tools,category_default,synthetic,true
-CAREER-046,Occupational Therapist,clinical records systems,category_default,synthetic,true
-CAREER-046,Occupational Therapist,diagnostic equipment,category_default,synthetic,true
-CAREER-046,Occupational Therapist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-046,Occupational Therapist,personal protective equipment,category_default,synthetic,true
-CAREER-046,Occupational Therapist,health information reporting tools,category_default,synthetic,true
-CAREER-047,Psychologist,clinical records systems,category_default,synthetic,true
-CAREER-047,Psychologist,diagnostic equipment,category_default,synthetic,true
-CAREER-047,Psychologist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-047,Psychologist,personal protective equipment,category_default,synthetic,true
-CAREER-047,Psychologist,health information reporting tools,category_default,synthetic,true
-CAREER-048,Public Health Officer,clinical records systems,category_default,synthetic,true
-CAREER-048,Public Health Officer,diagnostic equipment,category_default,synthetic,true
-CAREER-048,Public Health Officer,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-048,Public Health Officer,personal protective equipment,category_default,synthetic,true
-CAREER-048,Public Health Officer,health information reporting tools,category_default,synthetic,true
-CAREER-049,Epidemiologist,clinical records systems,category_default,synthetic,true
-CAREER-049,Epidemiologist,diagnostic equipment,category_default,synthetic,true
-CAREER-049,Epidemiologist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-049,Epidemiologist,personal protective equipment,category_default,synthetic,true
-CAREER-049,Epidemiologist,health information reporting tools,category_default,synthetic,true
-CAREER-050,Health Records and Information Officer,clinical records systems,category_default,synthetic,true
-CAREER-050,Health Records and Information Officer,diagnostic equipment,category_default,synthetic,true
-CAREER-050,Health Records and Information Officer,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-050,Health Records and Information Officer,personal protective equipment,category_default,synthetic,true
-CAREER-050,Health Records and Information Officer,health information reporting tools,category_default,synthetic,true
-CAREER-051,Health Informatics Specialist,clinical records systems,category_default,synthetic,true
-CAREER-051,Health Informatics Specialist,diagnostic equipment,category_default,synthetic,true
-CAREER-051,Health Informatics Specialist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-051,Health Informatics Specialist,personal protective equipment,category_default,synthetic,true
-CAREER-051,Health Informatics Specialist,health information reporting tools,category_default,synthetic,true
-CAREER-052,Biomedical Scientist,clinical records systems,category_default,synthetic,true
-CAREER-052,Biomedical Scientist,diagnostic equipment,category_default,synthetic,true
-CAREER-052,Biomedical Scientist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-052,Biomedical Scientist,personal protective equipment,category_default,synthetic,true
-CAREER-052,Biomedical Scientist,health information reporting tools,category_default,synthetic,true
-CAREER-053,Health Services Manager,clinical records systems,category_default,synthetic,true
-CAREER-053,Health Services Manager,diagnostic equipment,category_default,synthetic,true
-CAREER-053,Health Services Manager,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-053,Health Services Manager,personal protective equipment,category_default,synthetic,true
-CAREER-053,Health Services Manager,health information reporting tools,category_default,synthetic,true
-CAREER-054,Community Health Promoter,clinical records systems,category_default,synthetic,true
-CAREER-054,Community Health Promoter,diagnostic equipment,category_default,synthetic,true
-CAREER-054,Community Health Promoter,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-054,Community Health Promoter,personal protective equipment,category_default,synthetic,true
-CAREER-054,Community Health Promoter,health information reporting tools,category_default,synthetic,true
-CAREER-055,Accountant,Excel,category_default,synthetic,true
-CAREER-055,Accountant,accounting or core banking systems,category_default,synthetic,true
-CAREER-055,Accountant,financial reporting standards,category_default,synthetic,true
-CAREER-055,Accountant,data analysis tools,category_default,synthetic,true
-CAREER-055,Accountant,regulatory guidelines,category_default,synthetic,true
-CAREER-056,Auditor,Excel,category_default,synthetic,true
-CAREER-056,Auditor,accounting or core banking systems,category_default,synthetic,true
-CAREER-056,Auditor,financial reporting standards,category_default,synthetic,true
-CAREER-056,Auditor,data analysis tools,category_default,synthetic,true
-CAREER-056,Auditor,regulatory guidelines,category_default,synthetic,true
-CAREER-057,Financial Analyst,Excel,category_default,synthetic,true
-CAREER-057,Financial Analyst,accounting or core banking systems,category_default,synthetic,true
-CAREER-057,Financial Analyst,financial reporting standards,category_default,synthetic,true
-CAREER-057,Financial Analyst,data analysis tools,category_default,synthetic,true
-CAREER-057,Financial Analyst,regulatory guidelines,category_default,synthetic,true
-CAREER-058,Investment Analyst,Excel,category_default,synthetic,true
-CAREER-058,Investment Analyst,accounting or core banking systems,category_default,synthetic,true
-CAREER-058,Investment Analyst,financial reporting standards,category_default,synthetic,true
-CAREER-058,Investment Analyst,data analysis tools,category_default,synthetic,true
-CAREER-058,Investment Analyst,regulatory guidelines,category_default,synthetic,true
-CAREER-059,Banking Relationship Officer,Excel,category_default,synthetic,true
-CAREER-059,Banking Relationship Officer,accounting or core banking systems,category_default,synthetic,true
-CAREER-059,Banking Relationship Officer,financial reporting standards,category_default,synthetic,true
-CAREER-059,Banking Relationship Officer,data analysis tools,category_default,synthetic,true
-CAREER-059,Banking Relationship Officer,regulatory guidelines,category_default,synthetic,true
-CAREER-060,Credit Analyst,Excel,category_default,synthetic,true
-CAREER-060,Credit Analyst,accounting or core banking systems,category_default,synthetic,true
-CAREER-060,Credit Analyst,financial reporting standards,category_default,synthetic,true
-CAREER-060,Credit Analyst,data analysis tools,category_default,synthetic,true
-CAREER-060,Credit Analyst,regulatory guidelines,category_default,synthetic,true
-CAREER-061,Risk Analyst,Excel,category_default,synthetic,true
-CAREER-061,Risk Analyst,accounting or core banking systems,category_default,synthetic,true
-CAREER-061,Risk Analyst,financial reporting standards,category_default,synthetic,true
-CAREER-061,Risk Analyst,data analysis tools,category_default,synthetic,true
-CAREER-061,Risk Analyst,regulatory guidelines,category_default,synthetic,true
-CAREER-062,Actuarial Analyst,Excel,category_default,synthetic,true
-CAREER-062,Actuarial Analyst,accounting or core banking systems,category_default,synthetic,true
-CAREER-062,Actuarial Analyst,financial reporting standards,category_default,synthetic,true
-CAREER-062,Actuarial Analyst,data analysis tools,category_default,synthetic,true
-CAREER-062,Actuarial Analyst,regulatory guidelines,category_default,synthetic,true
-CAREER-063,Insurance Underwriter,Excel,category_default,synthetic,true
-CAREER-063,Insurance Underwriter,accounting or core banking systems,category_default,synthetic,true
-CAREER-063,Insurance Underwriter,financial reporting standards,category_default,synthetic,true
-CAREER-063,Insurance Underwriter,data analysis tools,category_default,synthetic,true
-CAREER-063,Insurance Underwriter,regulatory guidelines,category_default,synthetic,true
-CAREER-064,Tax Consultant,Excel,category_default,synthetic,true
-CAREER-064,Tax Consultant,accounting or core banking systems,category_default,synthetic,true
-CAREER-064,Tax Consultant,financial reporting standards,category_default,synthetic,true
-CAREER-064,Tax Consultant,data analysis tools,category_default,synthetic,true
-CAREER-064,Tax Consultant,regulatory guidelines,category_default,synthetic,true
-CAREER-065,Treasury Officer,Excel,category_default,synthetic,true
-CAREER-065,Treasury Officer,accounting or core banking systems,category_default,synthetic,true
-CAREER-065,Treasury Officer,financial reporting standards,category_default,synthetic,true
-CAREER-065,Treasury Officer,data analysis tools,category_default,synthetic,true
-CAREER-065,Treasury Officer,regulatory guidelines,category_default,synthetic,true
-CAREER-066,Fintech Product Analyst,Excel,category_default,synthetic,true
-CAREER-066,Fintech Product Analyst,accounting or core banking systems,category_default,synthetic,true
-CAREER-066,Fintech Product Analyst,financial reporting standards,category_default,synthetic,true
-CAREER-066,Fintech Product Analyst,data analysis tools,category_default,synthetic,true
-CAREER-066,Fintech Product Analyst,regulatory guidelines,category_default,synthetic,true
-CAREER-067,Compliance Officer,Excel,category_default,synthetic,true
-CAREER-067,Compliance Officer,accounting or core banking systems,category_default,synthetic,true
-CAREER-067,Compliance Officer,financial reporting standards,category_default,synthetic,true
-CAREER-067,Compliance Officer,data analysis tools,category_default,synthetic,true
-CAREER-067,Compliance Officer,regulatory guidelines,category_default,synthetic,true
-CAREER-068,Microfinance Officer,Excel,category_default,synthetic,true
-CAREER-068,Microfinance Officer,accounting or core banking systems,category_default,synthetic,true
-CAREER-068,Microfinance Officer,financial reporting standards,category_default,synthetic,true
-CAREER-068,Microfinance Officer,data analysis tools,category_default,synthetic,true
-CAREER-068,Microfinance Officer,regulatory guidelines,category_default,synthetic,true
-CAREER-069,Securities Dealer,Excel,category_default,synthetic,true
-CAREER-069,Securities Dealer,accounting or core banking systems,category_default,synthetic,true
-CAREER-069,Securities Dealer,financial reporting standards,category_default,synthetic,true
-CAREER-069,Securities Dealer,data analysis tools,category_default,synthetic,true
-CAREER-069,Securities Dealer,regulatory guidelines,category_default,synthetic,true
-CAREER-070,Financial Planner,Excel,category_default,synthetic,true
-CAREER-070,Financial Planner,accounting or core banking systems,category_default,synthetic,true
-CAREER-070,Financial Planner,financial reporting standards,category_default,synthetic,true
-CAREER-070,Financial Planner,data analysis tools,category_default,synthetic,true
-CAREER-070,Financial Planner,regulatory guidelines,category_default,synthetic,true
-CAREER-071,Forensic Accountant,Excel,category_default,synthetic,true
-CAREER-071,Forensic Accountant,accounting or core banking systems,category_default,synthetic,true
-CAREER-071,Forensic Accountant,financial reporting standards,category_default,synthetic,true
-CAREER-071,Forensic Accountant,data analysis tools,category_default,synthetic,true
-CAREER-071,Forensic Accountant,regulatory guidelines,category_default,synthetic,true
-CAREER-072,Mobile Money and Payments Specialist,Excel,category_default,synthetic,true
-CAREER-072,Mobile Money and Payments Specialist,accounting or core banking systems,category_default,synthetic,true
-CAREER-072,Mobile Money and Payments Specialist,financial reporting standards,category_default,synthetic,true
-CAREER-072,Mobile Money and Payments Specialist,data analysis tools,category_default,synthetic,true
-CAREER-072,Mobile Money and Payments Specialist,regulatory guidelines,category_default,synthetic,true
+CAREER-037,Medical Doctor,stethoscope and diagnostic sets,authored,synthetic,true
+CAREER-037,Medical Doctor,electronic medical records,authored,synthetic,true
+CAREER-037,Medical Doctor,clinical guidelines and formularies,authored,synthetic,true
+CAREER-037,Medical Doctor,ECG machines,authored,synthetic,true
+CAREER-037,Medical Doctor,point-of-care test kits,authored,synthetic,true
+CAREER-037,Medical Doctor,drug reference apps,authored,synthetic,true
+CAREER-038,Clinical Officer,diagnostic sets,authored,synthetic,true
+CAREER-038,Clinical Officer,electronic medical records,authored,synthetic,true
+CAREER-038,Clinical Officer,national treatment guidelines,authored,synthetic,true
+CAREER-038,Clinical Officer,rapid test kits,authored,synthetic,true
+CAREER-038,Clinical Officer,minor theatre instruments,authored,synthetic,true
+CAREER-038,Clinical Officer,patient registers,authored,synthetic,true
+CAREER-039,Registered Nurse,vital signs monitors,authored,synthetic,true
+CAREER-039,Registered Nurse,infusion pumps,authored,synthetic,true
+CAREER-039,Registered Nurse,medication charts,authored,synthetic,true
+CAREER-039,Registered Nurse,nursing care plans,authored,synthetic,true
+CAREER-039,Registered Nurse,electronic medical records,authored,synthetic,true
+CAREER-039,Registered Nurse,glucometers,authored,synthetic,true
+CAREER-040,Pharmacist,pharmacy dispensing software,authored,synthetic,true
+CAREER-040,Pharmacist,drug formularies,authored,synthetic,true
+CAREER-040,Pharmacist,interaction checkers,authored,synthetic,true
+CAREER-040,Pharmacist,stock management systems,authored,synthetic,true
+CAREER-040,Pharmacist,cold-chain equipment,authored,synthetic,true
+CAREER-040,Pharmacist,compounding equipment,authored,synthetic,true
+CAREER-041,Dentist,dental chair and handpieces,authored,synthetic,true
+CAREER-041,Dentist,dental X-ray units,authored,synthetic,true
+CAREER-041,Dentist,sterilisation autoclaves,authored,synthetic,true
+CAREER-041,Dentist,restorative materials,authored,synthetic,true
+CAREER-041,Dentist,dental practice software,authored,synthetic,true
+CAREER-041,Dentist,hand instruments,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,microscopes,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,haematology and chemistry analysers,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,centrifuges,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,laboratory information systems,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,biosafety cabinets,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,rapid diagnostic kits,authored,synthetic,true
+CAREER-043,Radiographer,X-ray machines,authored,synthetic,true
+CAREER-043,Radiographer,CT and MRI scanners,authored,synthetic,true
+CAREER-043,Radiographer,ultrasound machines,authored,synthetic,true
+CAREER-043,Radiographer,PACS imaging systems,authored,synthetic,true
+CAREER-043,Radiographer,radiation dosimeters,authored,synthetic,true
+CAREER-043,Radiographer,lead protective equipment,authored,synthetic,true
+CAREER-044,Physiotherapist,exercise equipment,authored,synthetic,true
+CAREER-044,Physiotherapist,electrotherapy machines,authored,synthetic,true
+CAREER-044,Physiotherapist,goniometers,authored,synthetic,true
+CAREER-044,Physiotherapist,treatment plinths,authored,synthetic,true
+CAREER-044,Physiotherapist,walking aids,authored,synthetic,true
+CAREER-044,Physiotherapist,outcome measurement scales,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,anthropometric equipment,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,growth charts,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,food composition tables,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,diet analysis software,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,MUAC tapes,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,nutrition counselling guides,authored,synthetic,true
+CAREER-046,Occupational Therapist,splinting materials,authored,synthetic,true
+CAREER-046,Occupational Therapist,assistive devices,authored,synthetic,true
+CAREER-046,Occupational Therapist,standardised assessments,authored,synthetic,true
+CAREER-046,Occupational Therapist,therapy play equipment,authored,synthetic,true
+CAREER-046,Occupational Therapist,adaptive tools,authored,synthetic,true
+CAREER-046,Occupational Therapist,activity analysis forms,authored,synthetic,true
+CAREER-047,Psychologist,psychometric tests,authored,synthetic,true
+CAREER-047,Psychologist,therapy manuals such as CBT workbooks,authored,synthetic,true
+CAREER-047,Psychologist,case-note systems,authored,synthetic,true
+CAREER-047,Psychologist,screening questionnaires,authored,synthetic,true
+CAREER-047,Psychologist,teletherapy platforms,authored,synthetic,true
+CAREER-047,Psychologist,outcome rating scales,authored,synthetic,true
+CAREER-048,Public Health Officer,inspection checklists,authored,synthetic,true
+CAREER-048,Public Health Officer,water testing kits,authored,synthetic,true
+CAREER-048,Public Health Officer,public health law and regulations,authored,synthetic,true
+CAREER-048,Public Health Officer,DHIS2 reporting,authored,synthetic,true
+CAREER-048,Public Health Officer,GPS and mapping tools,authored,synthetic,true
+CAREER-048,Public Health Officer,sampling equipment,authored,synthetic,true
+CAREER-049,Epidemiologist,R or Stata,authored,synthetic,true
+CAREER-049,Epidemiologist,Epi Info,authored,synthetic,true
+CAREER-049,Epidemiologist,DHIS2,authored,synthetic,true
+CAREER-049,Epidemiologist,GIS mapping software,authored,synthetic,true
+CAREER-049,Epidemiologist,survey tools such as KoboToolbox,authored,synthetic,true
+CAREER-049,Epidemiologist,Excel,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,electronic medical records,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,DHIS2,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,ICD coding manuals,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Excel,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,filing and tracking systems,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,patient registers,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,OpenMRS or similar EMRs,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,DHIS2,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,SQL,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,HL7 and FHIR standards,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Power BI or Tableau,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Excel,authored,synthetic,true
+CAREER-052,Biomedical Scientist,PCR machines,authored,synthetic,true
+CAREER-052,Biomedical Scientist,ELISA readers,authored,synthetic,true
+CAREER-052,Biomedical Scientist,microscopes,authored,synthetic,true
+CAREER-052,Biomedical Scientist,flow cytometers,authored,synthetic,true
+CAREER-052,Biomedical Scientist,R or GraphPad,authored,synthetic,true
+CAREER-052,Biomedical Scientist,laboratory notebooks,authored,synthetic,true
+CAREER-053,Health Services Manager,hospital management systems,authored,synthetic,true
+CAREER-053,Health Services Manager,Excel,authored,synthetic,true
+CAREER-053,Health Services Manager,DHIS2,authored,synthetic,true
+CAREER-053,Health Services Manager,budgeting tools,authored,synthetic,true
+CAREER-053,Health Services Manager,quality improvement frameworks,authored,synthetic,true
+CAREER-053,Health Services Manager,HR and payroll systems,authored,synthetic,true
+CAREER-054,Community Health Promoter,household registers,authored,synthetic,true
+CAREER-054,Community Health Promoter,MUAC tapes,authored,synthetic,true
+CAREER-054,Community Health Promoter,mobile reporting apps such as eCHIS,authored,synthetic,true
+CAREER-054,Community Health Promoter,referral forms,authored,synthetic,true
+CAREER-054,Community Health Promoter,health education flipcharts,authored,synthetic,true
+CAREER-054,Community Health Promoter,basic first-aid kits,authored,synthetic,true
+CAREER-055,Accountant,accounting software such as QuickBooks or Sage,authored,synthetic,true
+CAREER-055,Accountant,ERP systems such as SAP,authored,synthetic,true
+CAREER-055,Accountant,Excel,authored,synthetic,true
+CAREER-055,Accountant,bank portals,authored,synthetic,true
+CAREER-055,Accountant,tax filing portals such as iTax,authored,synthetic,true
+CAREER-055,Accountant,IFRS standards,authored,synthetic,true
+CAREER-056,Auditor,audit software such as CaseWare or TeamMate,authored,synthetic,true
+CAREER-056,Auditor,Excel,authored,synthetic,true
+CAREER-056,Auditor,data analytics tools such as IDEA or ACL,authored,synthetic,true
+CAREER-056,Auditor,auditing standards,authored,synthetic,true
+CAREER-056,Auditor,sampling methods,authored,synthetic,true
+CAREER-056,Auditor,client accounting systems,authored,synthetic,true
+CAREER-057,Financial Analyst,Excel,authored,synthetic,true
+CAREER-057,Financial Analyst,Power BI or Tableau,authored,synthetic,true
+CAREER-057,Financial Analyst,ERP systems,authored,synthetic,true
+CAREER-057,Financial Analyst,SQL,authored,synthetic,true
+CAREER-057,Financial Analyst,PowerPoint,authored,synthetic,true
+CAREER-057,Financial Analyst,financial modelling methods,authored,synthetic,true
+CAREER-058,Investment Analyst,Excel,authored,synthetic,true
+CAREER-058,Investment Analyst,Bloomberg or Refinitiv terminals,authored,synthetic,true
+CAREER-058,Investment Analyst,valuation models,authored,synthetic,true
+CAREER-058,Investment Analyst,company filings,authored,synthetic,true
+CAREER-058,Investment Analyst,NSE and market data,authored,synthetic,true
+CAREER-058,Investment Analyst,PowerPoint,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,core banking systems,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,CRM systems,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,loan origination systems,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Excel,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,credit reference bureau reports,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,digital banking platforms,authored,synthetic,true
+CAREER-060,Credit Analyst,Excel,authored,synthetic,true
+CAREER-060,Credit Analyst,credit scoring models,authored,synthetic,true
+CAREER-060,Credit Analyst,credit reference bureau reports,authored,synthetic,true
+CAREER-060,Credit Analyst,core banking systems,authored,synthetic,true
+CAREER-060,Credit Analyst,financial spreading tools,authored,synthetic,true
+CAREER-060,Credit Analyst,loan origination systems,authored,synthetic,true
+CAREER-061,Risk Analyst,Excel,authored,synthetic,true
+CAREER-061,Risk Analyst,SQL,authored,synthetic,true
+CAREER-061,Risk Analyst,risk management systems,authored,synthetic,true
+CAREER-061,Risk Analyst,Python or R,authored,synthetic,true
+CAREER-061,Risk Analyst,Basel and regulator guidelines,authored,synthetic,true
+CAREER-061,Risk Analyst,Power BI,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Excel and VBA,authored,synthetic,true
+CAREER-062,Actuarial Analyst,R or Python,authored,synthetic,true
+CAREER-062,Actuarial Analyst,actuarial software such as Prophet,authored,synthetic,true
+CAREER-062,Actuarial Analyst,SQL,authored,synthetic,true
+CAREER-062,Actuarial Analyst,mortality tables,authored,synthetic,true
+CAREER-062,Actuarial Analyst,statistical methods,authored,synthetic,true
+CAREER-063,Insurance Underwriter,underwriting systems,authored,synthetic,true
+CAREER-063,Insurance Underwriter,rating tables and guidelines,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Excel,authored,synthetic,true
+CAREER-063,Insurance Underwriter,policy administration systems,authored,synthetic,true
+CAREER-063,Insurance Underwriter,risk survey reports,authored,synthetic,true
+CAREER-063,Insurance Underwriter,broker portals,authored,synthetic,true
+CAREER-064,Tax Consultant,tax filing portals such as iTax,authored,synthetic,true
+CAREER-064,Tax Consultant,Excel,authored,synthetic,true
+CAREER-064,Tax Consultant,accounting software,authored,synthetic,true
+CAREER-064,Tax Consultant,tax legislation and case law,authored,synthetic,true
+CAREER-064,Tax Consultant,tax computation templates,authored,synthetic,true
+CAREER-064,Tax Consultant,document management systems,authored,synthetic,true
+CAREER-065,Treasury Officer,treasury management systems,authored,synthetic,true
+CAREER-065,Treasury Officer,Bloomberg or Refinitiv,authored,synthetic,true
+CAREER-065,Treasury Officer,SWIFT,authored,synthetic,true
+CAREER-065,Treasury Officer,Excel,authored,synthetic,true
+CAREER-065,Treasury Officer,bank portals,authored,synthetic,true
+CAREER-065,Treasury Officer,core banking systems,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,SQL,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Excel,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,product analytics tools such as Mixpanel,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Jira,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Power BI or Tableau,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Figma for reviewing designs,authored,synthetic,true
+CAREER-067,Compliance Officer,regulatory guidelines,authored,synthetic,true
+CAREER-067,Compliance Officer,compliance monitoring tools,authored,synthetic,true
+CAREER-067,Compliance Officer,KYC screening systems,authored,synthetic,true
+CAREER-067,Compliance Officer,Excel,authored,synthetic,true
+CAREER-067,Compliance Officer,policy management systems,authored,synthetic,true
+CAREER-067,Compliance Officer,case management tools,authored,synthetic,true
+CAREER-068,Microfinance Officer,loan management systems,authored,synthetic,true
+CAREER-068,Microfinance Officer,mobile money platforms,authored,synthetic,true
+CAREER-068,Microfinance Officer,field tablets and apps,authored,synthetic,true
+CAREER-068,Microfinance Officer,credit reference bureau reports,authored,synthetic,true
+CAREER-068,Microfinance Officer,Excel,authored,synthetic,true
+CAREER-068,Microfinance Officer,loan appraisal forms,authored,synthetic,true
+CAREER-069,Securities Dealer,exchange trading systems such as the NSE trading platform,authored,synthetic,true
+CAREER-069,Securities Dealer,Bloomberg or Refinitiv,authored,synthetic,true
+CAREER-069,Securities Dealer,order management systems,authored,synthetic,true
+CAREER-069,Securities Dealer,central depository systems,authored,synthetic,true
+CAREER-069,Securities Dealer,Excel,authored,synthetic,true
+CAREER-069,Securities Dealer,market data feeds,authored,synthetic,true
+CAREER-070,Financial Planner,financial planning software,authored,synthetic,true
+CAREER-070,Financial Planner,Excel,authored,synthetic,true
+CAREER-070,Financial Planner,risk profiling questionnaires,authored,synthetic,true
+CAREER-070,Financial Planner,unit trust and pension fact sheets,authored,synthetic,true
+CAREER-070,Financial Planner,CRM systems,authored,synthetic,true
+CAREER-070,Financial Planner,retirement calculators,authored,synthetic,true
+CAREER-071,Forensic Accountant,data analytics tools such as IDEA or ACL,authored,synthetic,true
+CAREER-071,Forensic Accountant,Excel,authored,synthetic,true
+CAREER-071,Forensic Accountant,accounting systems,authored,synthetic,true
+CAREER-071,Forensic Accountant,e-discovery tools,authored,synthetic,true
+CAREER-071,Forensic Accountant,case management systems,authored,synthetic,true
+CAREER-071,Forensic Accountant,bank statement analysis tools,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,mobile money platforms such as M-Pesa,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,payment gateways and APIs,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,reconciliation tools,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Excel,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,SQL,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,card scheme rules,authored,synthetic,true
 CAREER-073,Marketing Executive,spreadsheets and presentations,category_default,synthetic,true
 CAREER-073,Marketing Executive,customer relationship management systems,category_default,synthetic,true
 CAREER-073,Marketing Executive,analytics dashboards,category_default,synthetic,true
@@ -1560,121 +1596,144 @@ CAREER-299,Facilities Manager,spreadsheets,authored,synthetic,true
 CAREER-299,Facilities Manager,contract management tools,authored,synthetic,true
 CAREER-299,Facilities Manager,inspection checklists,authored,synthetic,true
 CAREER-299,Facilities Manager,budgeting tools,authored,synthetic,true
-CAREER-300,Surgeon,clinical records systems,category_default,synthetic,true
-CAREER-300,Surgeon,diagnostic equipment,category_default,synthetic,true
-CAREER-300,Surgeon,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-300,Surgeon,personal protective equipment,category_default,synthetic,true
-CAREER-300,Surgeon,health information reporting tools,category_default,synthetic,true
-CAREER-301,Paediatrician,clinical records systems,category_default,synthetic,true
-CAREER-301,Paediatrician,diagnostic equipment,category_default,synthetic,true
-CAREER-301,Paediatrician,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-301,Paediatrician,personal protective equipment,category_default,synthetic,true
-CAREER-301,Paediatrician,health information reporting tools,category_default,synthetic,true
-CAREER-302,Midwife,clinical records systems,category_default,synthetic,true
-CAREER-302,Midwife,diagnostic equipment,category_default,synthetic,true
-CAREER-302,Midwife,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-302,Midwife,personal protective equipment,category_default,synthetic,true
-CAREER-302,Midwife,health information reporting tools,category_default,synthetic,true
-CAREER-303,Optometrist,clinical records systems,category_default,synthetic,true
-CAREER-303,Optometrist,diagnostic equipment,category_default,synthetic,true
-CAREER-303,Optometrist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-303,Optometrist,personal protective equipment,category_default,synthetic,true
-CAREER-303,Optometrist,health information reporting tools,category_default,synthetic,true
-CAREER-304,Pharmaceutical Technologist,clinical records systems,category_default,synthetic,true
-CAREER-304,Pharmaceutical Technologist,diagnostic equipment,category_default,synthetic,true
-CAREER-304,Pharmaceutical Technologist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-304,Pharmaceutical Technologist,personal protective equipment,category_default,synthetic,true
-CAREER-304,Pharmaceutical Technologist,health information reporting tools,category_default,synthetic,true
-CAREER-305,Dental Technologist,clinical records systems,category_default,synthetic,true
-CAREER-305,Dental Technologist,diagnostic equipment,category_default,synthetic,true
-CAREER-305,Dental Technologist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-305,Dental Technologist,personal protective equipment,category_default,synthetic,true
-CAREER-305,Dental Technologist,health information reporting tools,category_default,synthetic,true
-CAREER-306,Orthopaedic Technologist,clinical records systems,category_default,synthetic,true
-CAREER-306,Orthopaedic Technologist,diagnostic equipment,category_default,synthetic,true
-CAREER-306,Orthopaedic Technologist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-306,Orthopaedic Technologist,personal protective equipment,category_default,synthetic,true
-CAREER-306,Orthopaedic Technologist,health information reporting tools,category_default,synthetic,true
-CAREER-307,Speech and Language Therapist,clinical records systems,category_default,synthetic,true
-CAREER-307,Speech and Language Therapist,diagnostic equipment,category_default,synthetic,true
-CAREER-307,Speech and Language Therapist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-307,Speech and Language Therapist,personal protective equipment,category_default,synthetic,true
-CAREER-307,Speech and Language Therapist,health information reporting tools,category_default,synthetic,true
-CAREER-308,Emergency Medical Technician,clinical records systems,category_default,synthetic,true
-CAREER-308,Emergency Medical Technician,diagnostic equipment,category_default,synthetic,true
-CAREER-308,Emergency Medical Technician,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-308,Emergency Medical Technician,personal protective equipment,category_default,synthetic,true
-CAREER-308,Emergency Medical Technician,health information reporting tools,category_default,synthetic,true
-CAREER-309,Health Economist,clinical records systems,category_default,synthetic,true
-CAREER-309,Health Economist,diagnostic equipment,category_default,synthetic,true
-CAREER-309,Health Economist,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-309,Health Economist,personal protective equipment,category_default,synthetic,true
-CAREER-309,Health Economist,health information reporting tools,category_default,synthetic,true
-CAREER-310,Medical Social Worker,clinical records systems,category_default,synthetic,true
-CAREER-310,Medical Social Worker,diagnostic equipment,category_default,synthetic,true
-CAREER-310,Medical Social Worker,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-310,Medical Social Worker,personal protective equipment,category_default,synthetic,true
-CAREER-310,Medical Social Worker,health information reporting tools,category_default,synthetic,true
-CAREER-311,Medical Sales Representative,clinical records systems,category_default,synthetic,true
-CAREER-311,Medical Sales Representative,diagnostic equipment,category_default,synthetic,true
-CAREER-311,Medical Sales Representative,treatment guidelines and protocols,category_default,synthetic,true
-CAREER-311,Medical Sales Representative,personal protective equipment,category_default,synthetic,true
-CAREER-311,Medical Sales Representative,health information reporting tools,category_default,synthetic,true
-CAREER-312,Bank Operations Officer,Excel,category_default,synthetic,true
-CAREER-312,Bank Operations Officer,accounting or core banking systems,category_default,synthetic,true
-CAREER-312,Bank Operations Officer,financial reporting standards,category_default,synthetic,true
-CAREER-312,Bank Operations Officer,data analysis tools,category_default,synthetic,true
-CAREER-312,Bank Operations Officer,regulatory guidelines,category_default,synthetic,true
-CAREER-313,Financial Controller,Excel,category_default,synthetic,true
-CAREER-313,Financial Controller,accounting or core banking systems,category_default,synthetic,true
-CAREER-313,Financial Controller,financial reporting standards,category_default,synthetic,true
-CAREER-313,Financial Controller,data analysis tools,category_default,synthetic,true
-CAREER-313,Financial Controller,regulatory guidelines,category_default,synthetic,true
-CAREER-314,Pension Fund Administrator,Excel,category_default,synthetic,true
-CAREER-314,Pension Fund Administrator,accounting or core banking systems,category_default,synthetic,true
-CAREER-314,Pension Fund Administrator,financial reporting standards,category_default,synthetic,true
-CAREER-314,Pension Fund Administrator,data analysis tools,category_default,synthetic,true
-CAREER-314,Pension Fund Administrator,regulatory guidelines,category_default,synthetic,true
-CAREER-315,Insurance Claims Analyst,Excel,category_default,synthetic,true
-CAREER-315,Insurance Claims Analyst,accounting or core banking systems,category_default,synthetic,true
-CAREER-315,Insurance Claims Analyst,financial reporting standards,category_default,synthetic,true
-CAREER-315,Insurance Claims Analyst,data analysis tools,category_default,synthetic,true
-CAREER-315,Insurance Claims Analyst,regulatory guidelines,category_default,synthetic,true
-CAREER-316,Islamic Finance Specialist,Excel,category_default,synthetic,true
-CAREER-316,Islamic Finance Specialist,accounting or core banking systems,category_default,synthetic,true
-CAREER-316,Islamic Finance Specialist,financial reporting standards,category_default,synthetic,true
-CAREER-316,Islamic Finance Specialist,data analysis tools,category_default,synthetic,true
-CAREER-316,Islamic Finance Specialist,regulatory guidelines,category_default,synthetic,true
-CAREER-317,SACCO Manager,Excel,category_default,synthetic,true
-CAREER-317,SACCO Manager,accounting or core banking systems,category_default,synthetic,true
-CAREER-317,SACCO Manager,financial reporting standards,category_default,synthetic,true
-CAREER-317,SACCO Manager,data analysis tools,category_default,synthetic,true
-CAREER-317,SACCO Manager,regulatory guidelines,category_default,synthetic,true
-CAREER-318,Equity Trader,Excel,category_default,synthetic,true
-CAREER-318,Equity Trader,accounting or core banking systems,category_default,synthetic,true
-CAREER-318,Equity Trader,financial reporting standards,category_default,synthetic,true
-CAREER-318,Equity Trader,data analysis tools,category_default,synthetic,true
-CAREER-318,Equity Trader,regulatory guidelines,category_default,synthetic,true
-CAREER-319,Budget Analyst,Excel,category_default,synthetic,true
-CAREER-319,Budget Analyst,accounting or core banking systems,category_default,synthetic,true
-CAREER-319,Budget Analyst,financial reporting standards,category_default,synthetic,true
-CAREER-319,Budget Analyst,data analysis tools,category_default,synthetic,true
-CAREER-319,Budget Analyst,regulatory guidelines,category_default,synthetic,true
-CAREER-320,Anti-Money Laundering Analyst,Excel,category_default,synthetic,true
-CAREER-320,Anti-Money Laundering Analyst,accounting or core banking systems,category_default,synthetic,true
-CAREER-320,Anti-Money Laundering Analyst,financial reporting standards,category_default,synthetic,true
-CAREER-320,Anti-Money Laundering Analyst,data analysis tools,category_default,synthetic,true
-CAREER-320,Anti-Money Laundering Analyst,regulatory guidelines,category_default,synthetic,true
-CAREER-321,Cost Accountant,Excel,category_default,synthetic,true
-CAREER-321,Cost Accountant,accounting or core banking systems,category_default,synthetic,true
-CAREER-321,Cost Accountant,financial reporting standards,category_default,synthetic,true
-CAREER-321,Cost Accountant,data analysis tools,category_default,synthetic,true
-CAREER-321,Cost Accountant,regulatory guidelines,category_default,synthetic,true
-CAREER-322,Venture Capital Analyst,Excel,category_default,synthetic,true
-CAREER-322,Venture Capital Analyst,accounting or core banking systems,category_default,synthetic,true
-CAREER-322,Venture Capital Analyst,financial reporting standards,category_default,synthetic,true
-CAREER-322,Venture Capital Analyst,data analysis tools,category_default,synthetic,true
-CAREER-322,Venture Capital Analyst,regulatory guidelines,category_default,synthetic,true
+CAREER-300,Surgeon,surgical instruments,authored,synthetic,true
+CAREER-300,Surgeon,operating theatre equipment,authored,synthetic,true
+CAREER-300,Surgeon,laparoscopic towers,authored,synthetic,true
+CAREER-300,Surgeon,imaging such as CT and X-ray,authored,synthetic,true
+CAREER-300,Surgeon,electronic medical records,authored,synthetic,true
+CAREER-300,Surgeon,surgical safety checklists,authored,synthetic,true
+CAREER-301,Paediatrician,growth charts,authored,synthetic,true
+CAREER-301,Paediatrician,paediatric dosing references,authored,synthetic,true
+CAREER-301,Paediatrician,incubators and warmers,authored,synthetic,true
+CAREER-301,Paediatrician,pulse oximeters,authored,synthetic,true
+CAREER-301,Paediatrician,electronic medical records,authored,synthetic,true
+CAREER-301,Paediatrician,paediatric emergency protocols,authored,synthetic,true
+CAREER-302,Midwife,partographs,authored,synthetic,true
+CAREER-302,Midwife,foetal dopplers,authored,synthetic,true
+CAREER-302,Midwife,delivery sets,authored,synthetic,true
+CAREER-302,Midwife,newborn resuscitation equipment,authored,synthetic,true
+CAREER-302,Midwife,mother and child health booklets,authored,synthetic,true
+CAREER-302,Midwife,blood pressure monitors,authored,synthetic,true
+CAREER-303,Optometrist,phoropters and trial lens sets,authored,synthetic,true
+CAREER-303,Optometrist,slit lamps,authored,synthetic,true
+CAREER-303,Optometrist,autorefractors,authored,synthetic,true
+CAREER-303,Optometrist,ophthalmoscopes,authored,synthetic,true
+CAREER-303,Optometrist,tonometers,authored,synthetic,true
+CAREER-303,Optometrist,optical practice software,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,pharmacy dispensing software,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,stock cards and bin cards,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,counting trays,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,drug reference guides,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,cold-chain fridges,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,point-of-sale systems,authored,synthetic,true
+CAREER-305,Dental Technologist,dental laboratory handpieces,authored,synthetic,true
+CAREER-305,Dental Technologist,casting machines,authored,synthetic,true
+CAREER-305,Dental Technologist,porcelain furnaces,authored,synthetic,true
+CAREER-305,Dental Technologist,articulators,authored,synthetic,true
+CAREER-305,Dental Technologist,CAD/CAM milling systems,authored,synthetic,true
+CAREER-305,Dental Technologist,waxes and acrylics,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,plaster and casting materials,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,ovens and vacuum formers,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,hand and bench tools,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,alignment jigs,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,thermoplastics,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,measuring instruments,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,standardised language assessments,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,picture and communication boards,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,AAC devices and apps,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,therapy games and materials,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,audio recorders,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,swallowing assessment kits,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,ambulance equipment,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,defibrillators,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,oxygen and airway kits,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,spinal boards and stretchers,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,trauma kits,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,radio and dispatch systems,authored,synthetic,true
+CAREER-309,Health Economist,Stata or R,authored,synthetic,true
+CAREER-309,Health Economist,Excel models,authored,synthetic,true
+CAREER-309,Health Economist,TreeAge or similar modelling tools,authored,synthetic,true
+CAREER-309,Health Economist,national health accounts data,authored,synthetic,true
+CAREER-309,Health Economist,survey datasets,authored,synthetic,true
+CAREER-309,Health Economist,literature databases,authored,synthetic,true
+CAREER-310,Medical Social Worker,case management forms,authored,synthetic,true
+CAREER-310,Medical Social Worker,assessment tools,authored,synthetic,true
+CAREER-310,Medical Social Worker,referral directories,authored,synthetic,true
+CAREER-310,Medical Social Worker,counselling frameworks,authored,synthetic,true
+CAREER-310,Medical Social Worker,hospital information systems,authored,synthetic,true
+CAREER-310,Medical Social Worker,case registers,authored,synthetic,true
+CAREER-311,Medical Sales Representative,CRM systems,authored,synthetic,true
+CAREER-311,Medical Sales Representative,product detail aids,authored,synthetic,true
+CAREER-311,Medical Sales Representative,sales reports in Excel,authored,synthetic,true
+CAREER-311,Medical Sales Representative,clinical study summaries,authored,synthetic,true
+CAREER-311,Medical Sales Representative,presentation tools,authored,synthetic,true
+CAREER-311,Medical Sales Representative,route planning apps,authored,synthetic,true
+CAREER-312,Bank Operations Officer,core banking systems,authored,synthetic,true
+CAREER-312,Bank Operations Officer,SWIFT,authored,synthetic,true
+CAREER-312,Bank Operations Officer,cheque clearing systems,authored,synthetic,true
+CAREER-312,Bank Operations Officer,cash counting machines,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Excel,authored,synthetic,true
+CAREER-312,Bank Operations Officer,queue management systems,authored,synthetic,true
+CAREER-313,Financial Controller,ERP systems such as SAP or Oracle,authored,synthetic,true
+CAREER-313,Financial Controller,Excel,authored,synthetic,true
+CAREER-313,Financial Controller,consolidation tools,authored,synthetic,true
+CAREER-313,Financial Controller,IFRS standards,authored,synthetic,true
+CAREER-313,Financial Controller,Power BI,authored,synthetic,true
+CAREER-313,Financial Controller,budgeting systems,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,pension administration systems,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Excel,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,retirement benefits regulations,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,scheme rules,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,document management systems,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,member portals,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,claims management systems,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,policy administration systems,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Excel,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,assessor and garage reports,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,medical tariff guides,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,fraud checklists,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Islamic contract structures such as murabaha and ijara,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,AAOIFI standards,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,core banking systems,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Excel,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Sharia board rulings,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,product documentation,authored,synthetic,true
+CAREER-317,SACCO Manager,SACCO management systems,authored,synthetic,true
+CAREER-317,SACCO Manager,mobile banking platforms,authored,synthetic,true
+CAREER-317,SACCO Manager,Excel,authored,synthetic,true
+CAREER-317,SACCO Manager,regulator reporting templates,authored,synthetic,true
+CAREER-317,SACCO Manager,accounting software,authored,synthetic,true
+CAREER-317,SACCO Manager,loan management modules,authored,synthetic,true
+CAREER-318,Equity Trader,trading platforms,authored,synthetic,true
+CAREER-318,Equity Trader,Bloomberg or Refinitiv,authored,synthetic,true
+CAREER-318,Equity Trader,order management systems,authored,synthetic,true
+CAREER-318,Equity Trader,Excel,authored,synthetic,true
+CAREER-318,Equity Trader,charting tools,authored,synthetic,true
+CAREER-318,Equity Trader,market data feeds,authored,synthetic,true
+CAREER-319,Budget Analyst,Excel,authored,synthetic,true
+CAREER-319,Budget Analyst,budgeting systems such as IFMIS,authored,synthetic,true
+CAREER-319,Budget Analyst,ERP systems,authored,synthetic,true
+CAREER-319,Budget Analyst,Power BI,authored,synthetic,true
+CAREER-319,Budget Analyst,budget guidelines and circulars,authored,synthetic,true
+CAREER-319,Budget Analyst,forecasting templates,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,transaction monitoring systems,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,sanctions screening tools such as World-Check,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,core banking systems,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Excel,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,case management systems,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,regulator reporting portals,authored,synthetic,true
+CAREER-321,Cost Accountant,ERP systems such as SAP,authored,synthetic,true
+CAREER-321,Cost Accountant,Excel,authored,synthetic,true
+CAREER-321,Cost Accountant,costing models,authored,synthetic,true
+CAREER-321,Cost Accountant,inventory systems,authored,synthetic,true
+CAREER-321,Cost Accountant,Power BI,authored,synthetic,true
+CAREER-321,Cost Accountant,accounting software,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Excel,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,pitch decks and data rooms,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,CRM tools such as Affinity,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,cap table tools,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,market databases such as Crunchbase,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,PowerPoint,authored,synthetic,true
 CAREER-323,Real Estate Agent,spreadsheets and presentations,category_default,synthetic,true
 CAREER-323,Real Estate Agent,customer relationship management systems,category_default,synthetic,true
 CAREER-323,Real Estate Agent,analytics dashboards,category_default,synthetic,true

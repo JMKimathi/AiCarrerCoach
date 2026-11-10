@@ -153,8 +153,8 @@ CAREER-004,Data Analyst,Developer advocate,beyond,category_default,synthetic,tru
 CAREER-004,Data Analyst,Product Manager,beyond,category_default,synthetic,true
 CAREER-004,Data Analyst,Business Intelligence Developer,lateral,derived,synthetic,true
 CAREER-004,Data Analyst,Actuarial Analyst,lateral,derived,synthetic,true
+CAREER-004,Data Analyst,Financial Analyst,lateral,derived,synthetic,true
 CAREER-004,Data Analyst,Data Engineer,lateral,derived,synthetic,true
-CAREER-004,Data Analyst,Data Scientist,lateral,derived,synthetic,true
 CAREER-005,Data Scientist,Machine Learning Scientist,alternative,authored,synthetic,true
 CAREER-005,Data Scientist,Applied Scientist,alternative,authored,synthetic,true
 CAREER-005,Data Scientist,Quantitative Analyst,alternative,authored,synthetic,true
@@ -696,8 +696,8 @@ CAREER-018,Technology Product Manager,Freelance or contract specialist,beyond,ca
 CAREER-018,Technology Product Manager,Start-up founder,beyond,category_default,synthetic,true
 CAREER-018,Technology Product Manager,Technical trainer or lecturer,beyond,category_default,synthetic,true
 CAREER-018,Technology Product Manager,Developer advocate,beyond,category_default,synthetic,true
-CAREER-018,Technology Product Manager,Health Informatics Specialist,lateral,derived,synthetic,true
 CAREER-018,Technology Product Manager,Digital Marketing Specialist,lateral,derived,synthetic,true
+CAREER-018,Technology Product Manager,Health Informatics Specialist,lateral,derived,synthetic,true
 CAREER-018,Technology Product Manager,Project Manager,lateral,derived,synthetic,true
 CAREER-018,Technology Product Manager,Social Media Manager,lateral,derived,synthetic,true
 CAREER-019,Civil Engineer,Site Engineer,alternative,authored,synthetic,true
@@ -1163,8 +1163,8 @@ CAREER-030,Construction Project Manager,Regulator or standards officer,beyond,ca
 CAREER-030,Construction Project Manager,Expert witness or arbitrator,beyond,category_default,synthetic,true
 CAREER-030,Construction Project Manager,Facilities Manager,lateral,derived,synthetic,true
 CAREER-030,Construction Project Manager,Court Clerk,lateral,derived,synthetic,true
-CAREER-030,Construction Project Manager,Health Services Manager,lateral,derived,synthetic,true
 CAREER-030,Construction Project Manager,NGO Programme Officer,lateral,derived,synthetic,true
+CAREER-030,Construction Project Manager,Cost Accountant,lateral,derived,synthetic,true
 CAREER-031,Geospatial and GIS Specialist,GIS Analyst,alternative,authored,synthetic,true
 CAREER-031,Geospatial and GIS Specialist,GIS Officer,alternative,authored,synthetic,true
 CAREER-031,Geospatial and GIS Specialist,Remote Sensing Analyst,alternative,authored,synthetic,true
@@ -1279,8 +1279,8 @@ CAREER-033,Biomedical Engineer,Lecturer or researcher,beyond,category_default,sy
 CAREER-033,Biomedical Engineer,Regulator or standards officer,beyond,category_default,synthetic,true
 CAREER-033,Biomedical Engineer,Expert witness or arbitrator,beyond,category_default,synthetic,true
 CAREER-033,Biomedical Engineer,Mechatronics Engineer,lateral,derived,synthetic,true
-CAREER-033,Biomedical Engineer,Fintech Product Analyst,lateral,derived,synthetic,true
 CAREER-033,Biomedical Engineer,Precision Agriculture Technician,lateral,derived,synthetic,true
+CAREER-033,Biomedical Engineer,Fintech Product Analyst,lateral,derived,synthetic,true
 CAREER-033,Biomedical Engineer,Electronics and Telecommunications Engineer,lateral,derived,synthetic,true
 CAREER-034,Industrial Engineer,Process Improvement Engineer,alternative,authored,synthetic,true
 CAREER-034,Industrial Engineer,Operations Engineer,alternative,authored,synthetic,true
@@ -1398,6 +1398,18 @@ CAREER-036,Environmental Engineer,Expert witness or arbitrator,beyond,category_d
 CAREER-036,Environmental Engineer,Water and Sanitation Engineer,lateral,derived,synthetic,true
 CAREER-036,Environmental Engineer,Structural Engineer,lateral,derived,synthetic,true
 CAREER-036,Environmental Engineer,Geotechnical Engineer,lateral,derived,synthetic,true
+CAREER-037,Medical Doctor,Medical Officer,alternative,authored,synthetic,true
+CAREER-037,Medical Doctor,General Practitioner,alternative,authored,synthetic,true
+CAREER-037,Medical Doctor,Physician,alternative,authored,synthetic,true
+CAREER-037,Medical Doctor,Resident Doctor,alternative,authored,synthetic,true
+CAREER-037,Medical Doctor,Medical Intern,alternative,authored,synthetic,true
+CAREER-037,Medical Doctor,Casualty Doctor,alternative,authored,synthetic,true
+CAREER-037,Medical Doctor,Medical Doctor (general practice),specialism,authored,synthetic,true
+CAREER-037,Medical Doctor,Medical Doctor (internal medicine),specialism,authored,synthetic,true
+CAREER-037,Medical Doctor,Medical Doctor (emergency medicine),specialism,authored,synthetic,true
+CAREER-037,Medical Doctor,Medical Doctor (obstetrics and gynaecology),specialism,authored,synthetic,true
+CAREER-037,Medical Doctor,Medical Doctor (family medicine),specialism,authored,synthetic,true
+CAREER-037,Medical Doctor,Medical Doctor (occupational health),specialism,authored,synthetic,true
 CAREER-037,Medical Doctor,Student on clinical placement (clinical medicine),entry,derived,synthetic,true
 CAREER-037,Medical Doctor,Intern Medical Doctor,entry,derived,synthetic,true
 CAREER-037,Medical Doctor,Newly registered Medical Doctor,entry,derived,synthetic,true
@@ -1421,9 +1433,21 @@ CAREER-037,Medical Doctor,Lecturer or clinical instructor,beyond,category_defaul
 CAREER-037,Medical Doctor,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-037,Medical Doctor,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-037,Medical Doctor,Clinical Officer,lateral,derived,synthetic,true
-CAREER-037,Medical Doctor,Radiographer,lateral,derived,synthetic,true
 CAREER-037,Medical Doctor,Paediatrician,lateral,derived,synthetic,true
-CAREER-037,Medical Doctor,Medical Social Worker,lateral,derived,synthetic,true
+CAREER-037,Medical Doctor,Registered Nurse,lateral,derived,synthetic,true
+CAREER-037,Medical Doctor,Dentist,lateral,derived,synthetic,true
+CAREER-038,Clinical Officer,Registered Clinical Officer,alternative,authored,synthetic,true
+CAREER-038,Clinical Officer,Clinician,alternative,authored,synthetic,true
+CAREER-038,Clinical Officer,Clinical Associate,alternative,authored,synthetic,true
+CAREER-038,Clinical Officer,Physician Assistant,alternative,authored,synthetic,true
+CAREER-038,Clinical Officer,Outpatient Clinician,alternative,authored,synthetic,true
+CAREER-038,Clinical Officer,Clinical Officer Intern,alternative,authored,synthetic,true
+CAREER-038,Clinical Officer,Clinical Officer (outpatient care),specialism,authored,synthetic,true
+CAREER-038,Clinical Officer,Clinical Officer (paediatrics),specialism,authored,synthetic,true
+CAREER-038,Clinical Officer,Clinical Officer (reproductive health),specialism,authored,synthetic,true
+CAREER-038,Clinical Officer,Clinical Officer (anaesthesia),specialism,authored,synthetic,true
+CAREER-038,Clinical Officer,Clinical Officer (ophthalmology),specialism,authored,synthetic,true
+CAREER-038,Clinical Officer,Clinical Officer (HIV and TB care),specialism,authored,synthetic,true
 CAREER-038,Clinical Officer,Student on clinical placement (primary clinical care),entry,derived,synthetic,true
 CAREER-038,Clinical Officer,Intern Clinical Officer,entry,derived,synthetic,true
 CAREER-038,Clinical Officer,Newly registered Clinical Officer,entry,derived,synthetic,true
@@ -1447,9 +1471,21 @@ CAREER-038,Clinical Officer,Lecturer or clinical instructor,beyond,category_defa
 CAREER-038,Clinical Officer,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-038,Clinical Officer,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-038,Clinical Officer,Medical Doctor,lateral,derived,synthetic,true
-CAREER-038,Clinical Officer,Emergency Medical Technician,lateral,derived,synthetic,true
-CAREER-038,Clinical Officer,Optometrist,lateral,derived,synthetic,true
-CAREER-038,Clinical Officer,Paediatrician,lateral,derived,synthetic,true
+CAREER-038,Clinical Officer,Medical Social Worker,lateral,derived,synthetic,true
+CAREER-038,Clinical Officer,Registered Nurse,lateral,derived,synthetic,true
+CAREER-038,Clinical Officer,Health Records and Information Officer,lateral,derived,synthetic,true
+CAREER-039,Registered Nurse,Nursing Officer,alternative,authored,synthetic,true
+CAREER-039,Registered Nurse,Staff Nurse,alternative,authored,synthetic,true
+CAREER-039,Registered Nurse,Ward Nurse,alternative,authored,synthetic,true
+CAREER-039,Registered Nurse,Community Health Nurse,alternative,authored,synthetic,true
+CAREER-039,Registered Nurse,Nurse Practitioner,alternative,authored,synthetic,true
+CAREER-039,Registered Nurse,Theatre Nurse,alternative,authored,synthetic,true
+CAREER-039,Registered Nurse,Registered Nurse (medical-surgical nursing),specialism,authored,synthetic,true
+CAREER-039,Registered Nurse,Registered Nurse (critical care),specialism,authored,synthetic,true
+CAREER-039,Registered Nurse,Registered Nurse (theatre nursing),specialism,authored,synthetic,true
+CAREER-039,Registered Nurse,Registered Nurse (paediatric nursing),specialism,authored,synthetic,true
+CAREER-039,Registered Nurse,Registered Nurse (community health nursing),specialism,authored,synthetic,true
+CAREER-039,Registered Nurse,Registered Nurse (renal nursing),specialism,authored,synthetic,true
 CAREER-039,Registered Nurse,Student on clinical placement (nursing care),entry,derived,synthetic,true
 CAREER-039,Registered Nurse,Intern Registered Nurse,entry,derived,synthetic,true
 CAREER-039,Registered Nurse,Newly registered Registered Nurse,entry,derived,synthetic,true
@@ -1474,8 +1510,20 @@ CAREER-039,Registered Nurse,Health consultant for a non-governmental organisatio
 CAREER-039,Registered Nurse,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-039,Registered Nurse,Midwife,lateral,derived,synthetic,true
 CAREER-039,Registered Nurse,Community Health Promoter,lateral,derived,synthetic,true
-CAREER-039,Registered Nurse,Health Services Manager,lateral,derived,synthetic,true
-CAREER-039,Registered Nurse,Optometrist,lateral,derived,synthetic,true
+CAREER-039,Registered Nurse,Paediatrician,lateral,derived,synthetic,true
+CAREER-039,Registered Nurse,Clinical Officer,lateral,derived,synthetic,true
+CAREER-040,Pharmacist,Clinical Pharmacist,alternative,authored,synthetic,true
+CAREER-040,Pharmacist,Community Pharmacist,alternative,authored,synthetic,true
+CAREER-040,Pharmacist,Hospital Pharmacist,alternative,authored,synthetic,true
+CAREER-040,Pharmacist,Dispensing Pharmacist,alternative,authored,synthetic,true
+CAREER-040,Pharmacist,Regulatory Affairs Pharmacist,alternative,authored,synthetic,true
+CAREER-040,Pharmacist,Superintendent Pharmacist,alternative,authored,synthetic,true
+CAREER-040,Pharmacist,Pharmacist (community pharmacy),specialism,authored,synthetic,true
+CAREER-040,Pharmacist,Pharmacist (hospital and clinical pharmacy),specialism,authored,synthetic,true
+CAREER-040,Pharmacist,Pharmacist (pharmaceutical industry),specialism,authored,synthetic,true
+CAREER-040,Pharmacist,Pharmacist (regulatory affairs),specialism,authored,synthetic,true
+CAREER-040,Pharmacist,Pharmacist (pharmacovigilance),specialism,authored,synthetic,true
+CAREER-040,Pharmacist,Pharmacist (supply chain),specialism,authored,synthetic,true
 CAREER-040,Pharmacist,Student on clinical placement (pharmaceutical care),entry,derived,synthetic,true
 CAREER-040,Pharmacist,Intern Pharmacist,entry,derived,synthetic,true
 CAREER-040,Pharmacist,Newly registered Pharmacist,entry,derived,synthetic,true
@@ -1502,6 +1550,18 @@ CAREER-040,Pharmacist,Pharmaceutical Technologist,lateral,derived,synthetic,true
 CAREER-040,Pharmacist,Warehouse Manager,lateral,derived,synthetic,true
 CAREER-040,Pharmacist,Retail Manager,lateral,derived,synthetic,true
 CAREER-040,Pharmacist,Food and Beverage Manager,lateral,derived,synthetic,true
+CAREER-041,Dentist,Dental Surgeon,alternative,authored,synthetic,true
+CAREER-041,Dentist,Dental Officer,alternative,authored,synthetic,true
+CAREER-041,Dentist,General Dental Practitioner,alternative,authored,synthetic,true
+CAREER-041,Dentist,Community Dentist,alternative,authored,synthetic,true
+CAREER-041,Dentist,Dental Intern,alternative,authored,synthetic,true
+CAREER-041,Dentist,Associate Dentist,alternative,authored,synthetic,true
+CAREER-041,Dentist,Dentist (general dentistry),specialism,authored,synthetic,true
+CAREER-041,Dentist,Dentist (restorative dentistry),specialism,authored,synthetic,true
+CAREER-041,Dentist,Dentist (oral surgery),specialism,authored,synthetic,true
+CAREER-041,Dentist,Dentist (orthodontics),specialism,authored,synthetic,true
+CAREER-041,Dentist,Dentist (paediatric dentistry),specialism,authored,synthetic,true
+CAREER-041,Dentist,Dentist (community oral health),specialism,authored,synthetic,true
 CAREER-041,Dentist,Student on clinical placement (oral health),entry,derived,synthetic,true
 CAREER-041,Dentist,Intern Dentist,entry,derived,synthetic,true
 CAREER-041,Dentist,Newly registered Dentist,entry,derived,synthetic,true
@@ -1525,9 +1585,21 @@ CAREER-041,Dentist,Lecturer or clinical instructor,beyond,category_default,synth
 CAREER-041,Dentist,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-041,Dentist,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-041,Dentist,Medical Doctor,lateral,derived,synthetic,true
+CAREER-041,Dentist,Surgeon,lateral,derived,synthetic,true
 CAREER-041,Dentist,Clinical Officer,lateral,derived,synthetic,true
-CAREER-041,Dentist,Paediatrician,lateral,derived,synthetic,true
-CAREER-041,Dentist,Community Health Promoter,lateral,derived,synthetic,true
+CAREER-041,Dentist,Occupational Therapist,lateral,derived,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Medical Laboratory Scientist,alternative,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Laboratory Technician,alternative,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Clinical Laboratory Technologist,alternative,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Laboratory Officer,alternative,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Phlebotomist,alternative,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Blood Bank Technologist,alternative,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Medical Laboratory Technologist (haematology),specialism,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Medical Laboratory Technologist (clinical chemistry),specialism,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Medical Laboratory Technologist (microbiology),specialism,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Medical Laboratory Technologist (parasitology),specialism,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Medical Laboratory Technologist (blood transfusion),specialism,authored,synthetic,true
+CAREER-042,Medical Laboratory Technologist,Medical Laboratory Technologist (histology),specialism,authored,synthetic,true
 CAREER-042,Medical Laboratory Technologist,Student on clinical placement (diagnostic laboratory),entry,derived,synthetic,true
 CAREER-042,Medical Laboratory Technologist,Intern Medical Laboratory Technologist,entry,derived,synthetic,true
 CAREER-042,Medical Laboratory Technologist,Newly registered Medical Laboratory Technologist,entry,derived,synthetic,true
@@ -1551,9 +1623,20 @@ CAREER-042,Medical Laboratory Technologist,Lecturer or clinical instructor,beyon
 CAREER-042,Medical Laboratory Technologist,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-042,Medical Laboratory Technologist,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-042,Medical Laboratory Technologist,Leather Technologist,lateral,derived,synthetic,true
-CAREER-042,Medical Laboratory Technologist,Laboratory Technician,lateral,derived,synthetic,true
 CAREER-042,Medical Laboratory Technologist,Biologist,lateral,derived,synthetic,true
 CAREER-042,Medical Laboratory Technologist,Textile and Garment Technologist,lateral,derived,synthetic,true
+CAREER-043,Radiographer,Diagnostic Radiographer,alternative,authored,synthetic,true
+CAREER-043,Radiographer,Imaging Technologist,alternative,authored,synthetic,true
+CAREER-043,Radiographer,X-ray Technologist,alternative,authored,synthetic,true
+CAREER-043,Radiographer,CT Radiographer,alternative,authored,synthetic,true
+CAREER-043,Radiographer,Sonographer,alternative,authored,synthetic,true
+CAREER-043,Radiographer,MRI Technologist,alternative,authored,synthetic,true
+CAREER-043,Radiographer,Radiographer (general X-ray),specialism,authored,synthetic,true
+CAREER-043,Radiographer,Radiographer (CT scanning),specialism,authored,synthetic,true
+CAREER-043,Radiographer,Radiographer (MRI),specialism,authored,synthetic,true
+CAREER-043,Radiographer,Radiographer (ultrasound),specialism,authored,synthetic,true
+CAREER-043,Radiographer,Radiographer (mammography),specialism,authored,synthetic,true
+CAREER-043,Radiographer,Radiographer (radiotherapy),specialism,authored,synthetic,true
 CAREER-043,Radiographer,Student on clinical placement (medical imaging),entry,derived,synthetic,true
 CAREER-043,Radiographer,Intern Radiographer,entry,derived,synthetic,true
 CAREER-043,Radiographer,Newly registered Radiographer,entry,derived,synthetic,true
@@ -1576,10 +1659,22 @@ CAREER-043,Radiographer,Clinical researcher,beyond,category_default,synthetic,tr
 CAREER-043,Radiographer,Lecturer or clinical instructor,beyond,category_default,synthetic,true
 CAREER-043,Radiographer,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-043,Radiographer,Regulator or policy adviser,beyond,category_default,synthetic,true
+CAREER-043,Radiographer,Surgeon,lateral,derived,synthetic,true
 CAREER-043,Radiographer,Medical Doctor,lateral,derived,synthetic,true
-CAREER-043,Radiographer,Clinical Officer,lateral,derived,synthetic,true
-CAREER-043,Radiographer,Medical Social Worker,lateral,derived,synthetic,true
 CAREER-043,Radiographer,Medical Laboratory Technologist,lateral,derived,synthetic,true
+CAREER-043,Radiographer,Clinical Officer,lateral,derived,synthetic,true
+CAREER-044,Physiotherapist,Physical Therapist,alternative,authored,synthetic,true
+CAREER-044,Physiotherapist,Rehabilitation Therapist,alternative,authored,synthetic,true
+CAREER-044,Physiotherapist,Sports Physiotherapist,alternative,authored,synthetic,true
+CAREER-044,Physiotherapist,Musculoskeletal Physiotherapist,alternative,authored,synthetic,true
+CAREER-044,Physiotherapist,Community Physiotherapist,alternative,authored,synthetic,true
+CAREER-044,Physiotherapist,Physiotherapy Officer,alternative,authored,synthetic,true
+CAREER-044,Physiotherapist,Physiotherapist (musculoskeletal rehabilitation),specialism,authored,synthetic,true
+CAREER-044,Physiotherapist,Physiotherapist (sports injuries),specialism,authored,synthetic,true
+CAREER-044,Physiotherapist,Physiotherapist (neurological rehabilitation),specialism,authored,synthetic,true
+CAREER-044,Physiotherapist,Physiotherapist (paediatric physiotherapy),specialism,authored,synthetic,true
+CAREER-044,Physiotherapist,Physiotherapist (cardiorespiratory care),specialism,authored,synthetic,true
+CAREER-044,Physiotherapist,Physiotherapist (community rehabilitation),specialism,authored,synthetic,true
 CAREER-044,Physiotherapist,Student on clinical placement (rehabilitation),entry,derived,synthetic,true
 CAREER-044,Physiotherapist,Intern Physiotherapist,entry,derived,synthetic,true
 CAREER-044,Physiotherapist,Newly registered Physiotherapist,entry,derived,synthetic,true
@@ -1603,9 +1698,21 @@ CAREER-044,Physiotherapist,Lecturer or clinical instructor,beyond,category_defau
 CAREER-044,Physiotherapist,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-044,Physiotherapist,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-044,Physiotherapist,Occupational Therapist,lateral,derived,synthetic,true
+CAREER-044,Physiotherapist,Nutritionist and Dietitian,lateral,derived,synthetic,true
 CAREER-044,Physiotherapist,Speech and Language Therapist,lateral,derived,synthetic,true
-CAREER-044,Physiotherapist,Rehabilitation Officer,lateral,derived,synthetic,true
-CAREER-044,Physiotherapist,Medical Social Worker,lateral,derived,synthetic,true
+CAREER-044,Physiotherapist,Midwife,lateral,derived,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Clinical Dietitian,alternative,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Community Nutritionist,alternative,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Nutrition Officer,alternative,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Public Health Nutritionist,alternative,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Food Service Dietitian,alternative,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Sports Nutritionist,alternative,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Nutritionist and Dietitian (clinical dietetics),specialism,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Nutritionist and Dietitian (community nutrition),specialism,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Nutritionist and Dietitian (maternal and child nutrition),specialism,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Nutritionist and Dietitian (sports nutrition),specialism,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Nutritionist and Dietitian (food service management),specialism,authored,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Nutritionist and Dietitian (nutrition in emergencies),specialism,authored,synthetic,true
 CAREER-045,Nutritionist and Dietitian,Student on clinical placement (clinical and community nutrition),entry,derived,synthetic,true
 CAREER-045,Nutritionist and Dietitian,Intern Nutritionist and Dietitian,entry,derived,synthetic,true
 CAREER-045,Nutritionist and Dietitian,Newly registered Nutritionist and Dietitian,entry,derived,synthetic,true
@@ -1631,7 +1738,19 @@ CAREER-045,Nutritionist and Dietitian,Regulator or policy adviser,beyond,categor
 CAREER-045,Nutritionist and Dietitian,Environmental Educator,lateral,derived,synthetic,true
 CAREER-045,Nutritionist and Dietitian,Community Mobiliser,lateral,derived,synthetic,true
 CAREER-045,Nutritionist and Dietitian,Legal Aid Officer,lateral,derived,synthetic,true
-CAREER-045,Nutritionist and Dietitian,Medical Social Worker,lateral,derived,synthetic,true
+CAREER-045,Nutritionist and Dietitian,Community Health Promoter,lateral,derived,synthetic,true
+CAREER-046,Occupational Therapist,Occupational Therapy Officer,alternative,authored,synthetic,true
+CAREER-046,Occupational Therapist,Rehabilitation Therapist,alternative,authored,synthetic,true
+CAREER-046,Occupational Therapist,Paediatric Occupational Therapist,alternative,authored,synthetic,true
+CAREER-046,Occupational Therapist,Hand Therapist,alternative,authored,synthetic,true
+CAREER-046,Occupational Therapist,Mental Health Occupational Therapist,alternative,authored,synthetic,true
+CAREER-046,Occupational Therapist,Community Occupational Therapist,alternative,authored,synthetic,true
+CAREER-046,Occupational Therapist,Occupational Therapist (paediatric therapy),specialism,authored,synthetic,true
+CAREER-046,Occupational Therapist,Occupational Therapist (hand therapy),specialism,authored,synthetic,true
+CAREER-046,Occupational Therapist,Occupational Therapist (mental health),specialism,authored,synthetic,true
+CAREER-046,Occupational Therapist,Occupational Therapist (neurological rehabilitation),specialism,authored,synthetic,true
+CAREER-046,Occupational Therapist,Occupational Therapist (assistive technology),specialism,authored,synthetic,true
+CAREER-046,Occupational Therapist,Occupational Therapist (vocational rehabilitation),specialism,authored,synthetic,true
 CAREER-046,Occupational Therapist,Student on clinical placement (functional rehabilitation),entry,derived,synthetic,true
 CAREER-046,Occupational Therapist,Intern Occupational Therapist,entry,derived,synthetic,true
 CAREER-046,Occupational Therapist,Newly registered Occupational Therapist,entry,derived,synthetic,true
@@ -1657,7 +1776,19 @@ CAREER-046,Occupational Therapist,Regulator or policy adviser,beyond,category_de
 CAREER-046,Occupational Therapist,Sports and Recreation Officer,lateral,derived,synthetic,true
 CAREER-046,Occupational Therapist,Speech and Language Therapist,lateral,derived,synthetic,true
 CAREER-046,Occupational Therapist,Physiotherapist,lateral,derived,synthetic,true
-CAREER-046,Occupational Therapist,Rehabilitation Officer,lateral,derived,synthetic,true
+CAREER-046,Occupational Therapist,Nutritionist and Dietitian,lateral,derived,synthetic,true
+CAREER-047,Psychologist,Clinical Psychologist,alternative,authored,synthetic,true
+CAREER-047,Psychologist,Counselling Psychologist,alternative,authored,synthetic,true
+CAREER-047,Psychologist,Psychotherapist,alternative,authored,synthetic,true
+CAREER-047,Psychologist,Educational Psychologist,alternative,authored,synthetic,true
+CAREER-047,Psychologist,Mental Health Counsellor,alternative,authored,synthetic,true
+CAREER-047,Psychologist,Assistant Psychologist,alternative,authored,synthetic,true
+CAREER-047,Psychologist,Psychologist (clinical psychology),specialism,authored,synthetic,true
+CAREER-047,Psychologist,Psychologist (counselling),specialism,authored,synthetic,true
+CAREER-047,Psychologist,Psychologist (child and adolescent psychology),specialism,authored,synthetic,true
+CAREER-047,Psychologist,Psychologist (educational psychology),specialism,authored,synthetic,true
+CAREER-047,Psychologist,Psychologist (organisational psychology),specialism,authored,synthetic,true
+CAREER-047,Psychologist,Psychologist (trauma and addiction),specialism,authored,synthetic,true
 CAREER-047,Psychologist,Student on clinical placement (mental health),entry,derived,synthetic,true
 CAREER-047,Psychologist,Intern Psychologist,entry,derived,synthetic,true
 CAREER-047,Psychologist,Newly registered Psychologist,entry,derived,synthetic,true
@@ -1680,10 +1811,22 @@ CAREER-047,Psychologist,Clinical researcher,beyond,category_default,synthetic,tr
 CAREER-047,Psychologist,Lecturer or clinical instructor,beyond,category_default,synthetic,true
 CAREER-047,Psychologist,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-047,Psychologist,Regulator or policy adviser,beyond,category_default,synthetic,true
-CAREER-047,Psychologist,Social Worker,lateral,derived,synthetic,true
-CAREER-047,Psychologist,Counsellor,lateral,derived,synthetic,true
 CAREER-047,Psychologist,Medical Social Worker,lateral,derived,synthetic,true
-CAREER-047,Psychologist,Probation Officer,lateral,derived,synthetic,true
+CAREER-047,Psychologist,Counsellor,lateral,derived,synthetic,true
+CAREER-047,Psychologist,Social Worker,lateral,derived,synthetic,true
+CAREER-047,Psychologist,School Counsellor,lateral,derived,synthetic,true
+CAREER-048,Public Health Officer,Environmental Health Officer,alternative,authored,synthetic,true
+CAREER-048,Public Health Officer,Public Health Inspector,alternative,authored,synthetic,true
+CAREER-048,Public Health Officer,Health Promotion Officer,alternative,authored,synthetic,true
+CAREER-048,Public Health Officer,Port Health Officer,alternative,authored,synthetic,true
+CAREER-048,Public Health Officer,Sanitation Officer,alternative,authored,synthetic,true
+CAREER-048,Public Health Officer,Disease Control Officer,alternative,authored,synthetic,true
+CAREER-048,Public Health Officer,Public Health Officer (environmental health),specialism,authored,synthetic,true
+CAREER-048,Public Health Officer,Public Health Officer (food safety),specialism,authored,synthetic,true
+CAREER-048,Public Health Officer,Public Health Officer (water and sanitation),specialism,authored,synthetic,true
+CAREER-048,Public Health Officer,Public Health Officer (disease control),specialism,authored,synthetic,true
+CAREER-048,Public Health Officer,Public Health Officer (port health),specialism,authored,synthetic,true
+CAREER-048,Public Health Officer,Public Health Officer (occupational health and safety),specialism,authored,synthetic,true
 CAREER-048,Public Health Officer,Student on clinical placement (disease prevention),entry,derived,synthetic,true
 CAREER-048,Public Health Officer,Intern Public Health Officer,entry,derived,synthetic,true
 CAREER-048,Public Health Officer,Newly registered Public Health Officer,entry,derived,synthetic,true
@@ -1710,6 +1853,18 @@ CAREER-048,Public Health Officer,County Government Officer,lateral,derived,synth
 CAREER-048,Public Health Officer,School Head and Administrator,lateral,derived,synthetic,true
 CAREER-048,Public Health Officer,Cultural Heritage Officer,lateral,derived,synthetic,true
 CAREER-048,Public Health Officer,Wildlife Conservation Officer,lateral,derived,synthetic,true
+CAREER-049,Epidemiologist,Disease Surveillance Officer,alternative,authored,synthetic,true
+CAREER-049,Epidemiologist,Field Epidemiologist,alternative,authored,synthetic,true
+CAREER-049,Epidemiologist,Public Health Analyst,alternative,authored,synthetic,true
+CAREER-049,Epidemiologist,Infection Control Epidemiologist,alternative,authored,synthetic,true
+CAREER-049,Epidemiologist,Research Epidemiologist,alternative,authored,synthetic,true
+CAREER-049,Epidemiologist,Outbreak Investigator,alternative,authored,synthetic,true
+CAREER-049,Epidemiologist,Epidemiologist (infectious disease surveillance),specialism,authored,synthetic,true
+CAREER-049,Epidemiologist,Epidemiologist (outbreak investigation),specialism,authored,synthetic,true
+CAREER-049,Epidemiologist,Epidemiologist (chronic disease epidemiology),specialism,authored,synthetic,true
+CAREER-049,Epidemiologist,Epidemiologist (maternal and child health),specialism,authored,synthetic,true
+CAREER-049,Epidemiologist,Epidemiologist (biostatistics),specialism,authored,synthetic,true
+CAREER-049,Epidemiologist,Epidemiologist (one health),specialism,authored,synthetic,true
 CAREER-049,Epidemiologist,Student on clinical placement (disease surveillance),entry,derived,synthetic,true
 CAREER-049,Epidemiologist,Intern Epidemiologist,entry,derived,synthetic,true
 CAREER-049,Epidemiologist,Newly registered Epidemiologist,entry,derived,synthetic,true
@@ -1732,10 +1887,22 @@ CAREER-049,Epidemiologist,Clinical researcher,beyond,category_default,synthetic,
 CAREER-049,Epidemiologist,Lecturer or clinical instructor,beyond,category_default,synthetic,true
 CAREER-049,Epidemiologist,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-049,Epidemiologist,Regulator or policy adviser,beyond,category_default,synthetic,true
-CAREER-049,Epidemiologist,Chemist,lateral,derived,synthetic,true
 CAREER-049,Epidemiologist,Environmental Scientist,lateral,derived,synthetic,true
+CAREER-049,Epidemiologist,Chemist,lateral,derived,synthetic,true
 CAREER-049,Epidemiologist,Public Health Officer,lateral,derived,synthetic,true
-CAREER-049,Epidemiologist,Health Records and Information Officer,lateral,derived,synthetic,true
+CAREER-049,Epidemiologist,Health Economist,lateral,derived,synthetic,true
+CAREER-050,Health Records and Information Officer,Medical Records Officer,alternative,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Health Information Officer,alternative,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Clinical Coder,alternative,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Records Clerk,alternative,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Health Data Clerk,alternative,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,HMIS Officer,alternative,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Health Records and Information Officer (medical records management),specialism,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Health Records and Information Officer (clinical coding),specialism,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Health Records and Information Officer (health statistics),specialism,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Health Records and Information Officer (data quality),specialism,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Health Records and Information Officer (patient registration),specialism,authored,synthetic,true
+CAREER-050,Health Records and Information Officer,Health Records and Information Officer (records archiving),specialism,authored,synthetic,true
 CAREER-050,Health Records and Information Officer,Student on clinical placement (health information),entry,derived,synthetic,true
 CAREER-050,Health Records and Information Officer,Intern Health Records and Information Officer,entry,derived,synthetic,true
 CAREER-050,Health Records and Information Officer,Newly registered Health Records and Information Officer,entry,derived,synthetic,true
@@ -1758,10 +1925,22 @@ CAREER-050,Health Records and Information Officer,Clinical researcher,beyond,cat
 CAREER-050,Health Records and Information Officer,Lecturer or clinical instructor,beyond,category_default,synthetic,true
 CAREER-050,Health Records and Information Officer,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-050,Health Records and Information Officer,Regulator or policy adviser,beyond,category_default,synthetic,true
-CAREER-050,Health Records and Information Officer,Research Data Manager,lateral,derived,synthetic,true
+CAREER-050,Health Records and Information Officer,Government Statistician,lateral,derived,synthetic,true
 CAREER-050,Health Records and Information Officer,Risk Analyst,lateral,derived,synthetic,true
+CAREER-050,Health Records and Information Officer,Research Data Manager,lateral,derived,synthetic,true
 CAREER-050,Health Records and Information Officer,Research Assistant,lateral,derived,synthetic,true
-CAREER-050,Health Records and Information Officer,Market Research Analyst,lateral,derived,synthetic,true
+CAREER-051,Health Informatics Specialist,Digital Health Specialist,alternative,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Health Information Systems Officer,alternative,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,EMR Implementation Specialist,alternative,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Clinical Systems Analyst,alternative,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Health Data Analyst,alternative,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,eHealth Officer,alternative,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Health Informatics Specialist (electronic medical records),specialism,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Health Informatics Specialist (health data analytics),specialism,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Health Informatics Specialist (interoperability),specialism,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Health Informatics Specialist (telemedicine),specialism,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Health Informatics Specialist (mobile health),specialism,authored,synthetic,true
+CAREER-051,Health Informatics Specialist,Health Informatics Specialist (system implementation),specialism,authored,synthetic,true
 CAREER-051,Health Informatics Specialist,Student on clinical placement (digital health),entry,derived,synthetic,true
 CAREER-051,Health Informatics Specialist,Intern Health Informatics Specialist,entry,derived,synthetic,true
 CAREER-051,Health Informatics Specialist,Newly registered Health Informatics Specialist,entry,derived,synthetic,true
@@ -1784,10 +1963,22 @@ CAREER-051,Health Informatics Specialist,Clinical researcher,beyond,category_def
 CAREER-051,Health Informatics Specialist,Lecturer or clinical instructor,beyond,category_default,synthetic,true
 CAREER-051,Health Informatics Specialist,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-051,Health Informatics Specialist,Regulator or policy adviser,beyond,category_default,synthetic,true
+CAREER-051,Health Informatics Specialist,Technology Product Manager,lateral,derived,synthetic,true
 CAREER-051,Health Informatics Specialist,Digital Marketing Specialist,lateral,derived,synthetic,true
 CAREER-051,Health Informatics Specialist,Health Records and Information Officer,lateral,derived,synthetic,true
-CAREER-051,Health Informatics Specialist,Technology Product Manager,lateral,derived,synthetic,true
 CAREER-051,Health Informatics Specialist,Social Media Manager,lateral,derived,synthetic,true
+CAREER-052,Biomedical Scientist,Research Scientist,alternative,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Laboratory Scientist,alternative,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Molecular Biologist,alternative,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Research Assistant,alternative,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Clinical Research Scientist,alternative,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Immunologist,alternative,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Biomedical Scientist (molecular biology),specialism,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Biomedical Scientist (immunology),specialism,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Biomedical Scientist (microbiology),specialism,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Biomedical Scientist (genomics),specialism,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Biomedical Scientist (vaccine research),specialism,authored,synthetic,true
+CAREER-052,Biomedical Scientist,Biomedical Scientist (clinical trials laboratory work),specialism,authored,synthetic,true
 CAREER-052,Biomedical Scientist,Student on clinical placement (biomedical research),entry,derived,synthetic,true
 CAREER-052,Biomedical Scientist,Intern Biomedical Scientist,entry,derived,synthetic,true
 CAREER-052,Biomedical Scientist,Newly registered Biomedical Scientist,entry,derived,synthetic,true
@@ -1810,10 +2001,21 @@ CAREER-052,Biomedical Scientist,Clinical researcher,beyond,category_default,synt
 CAREER-052,Biomedical Scientist,Lecturer or clinical instructor,beyond,category_default,synthetic,true
 CAREER-052,Biomedical Scientist,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-052,Biomedical Scientist,Regulator or policy adviser,beyond,category_default,synthetic,true
-CAREER-052,Biomedical Scientist,Research Scientist,lateral,derived,synthetic,true
-CAREER-052,Biomedical Scientist,Pharmacologist,lateral,derived,synthetic,true
 CAREER-052,Biomedical Scientist,Biologist,lateral,derived,synthetic,true
+CAREER-052,Biomedical Scientist,Pharmacologist,lateral,derived,synthetic,true
 CAREER-052,Biomedical Scientist,Astronomer,lateral,derived,synthetic,true
+CAREER-053,Health Services Manager,Hospital Administrator,alternative,authored,synthetic,true
+CAREER-053,Health Services Manager,Health Administrator,alternative,authored,synthetic,true
+CAREER-053,Health Services Manager,Facility Manager,alternative,authored,synthetic,true
+CAREER-053,Health Services Manager,Clinic Manager,alternative,authored,synthetic,true
+CAREER-053,Health Services Manager,Medical Superintendent,alternative,authored,synthetic,true
+CAREER-053,Health Services Manager,Health Programme Manager,alternative,authored,synthetic,true
+CAREER-053,Health Services Manager,Health Services Manager (hospital administration),specialism,authored,synthetic,true
+CAREER-053,Health Services Manager,Health Services Manager (primary care management),specialism,authored,synthetic,true
+CAREER-053,Health Services Manager,Health Services Manager (health programme management),specialism,authored,synthetic,true
+CAREER-053,Health Services Manager,Health Services Manager (quality improvement),specialism,authored,synthetic,true
+CAREER-053,Health Services Manager,Health Services Manager (health financing),specialism,authored,synthetic,true
+CAREER-053,Health Services Manager,Health Services Manager (human resources for health),specialism,authored,synthetic,true
 CAREER-053,Health Services Manager,Student on clinical placement (health administration),entry,derived,synthetic,true
 CAREER-053,Health Services Manager,Intern Health Services Manager,entry,derived,synthetic,true
 CAREER-053,Health Services Manager,Newly registered Health Services Manager,entry,derived,synthetic,true
@@ -1826,9 +2028,7 @@ CAREER-053,Health Services Manager,Consultant in health administration,progressi
 CAREER-053,Health Services Manager,In-charge of health administration,progression,derived,synthetic,true
 CAREER-053,Health Services Manager,Unit or ward in-charge,leadership,category_default,synthetic,true
 CAREER-053,Health Services Manager,Head of Department,leadership,category_default,synthetic,true
-CAREER-053,Health Services Manager,Hospital Administrator,leadership,category_default,synthetic,true
 CAREER-053,Health Services Manager,County Director of Health,leadership,category_default,synthetic,true
-CAREER-053,Health Services Manager,Medical Superintendent,leadership,category_default,synthetic,true
 CAREER-053,Health Services Manager,Programme Director,leadership,category_default,synthetic,true
 CAREER-053,Health Services Manager,Private practice,beyond,category_default,synthetic,true
 CAREER-053,Health Services Manager,Public health programme officer,beyond,category_default,synthetic,true
@@ -1836,10 +2036,22 @@ CAREER-053,Health Services Manager,Clinical researcher,beyond,category_default,s
 CAREER-053,Health Services Manager,Lecturer or clinical instructor,beyond,category_default,synthetic,true
 CAREER-053,Health Services Manager,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-053,Health Services Manager,Regulator or policy adviser,beyond,category_default,synthetic,true
+CAREER-053,Health Services Manager,NGO Programme Officer,lateral,derived,synthetic,true
 CAREER-053,Health Services Manager,Office Manager,lateral,derived,synthetic,true
 CAREER-053,Health Services Manager,Events Planner,lateral,derived,synthetic,true
-CAREER-053,Health Services Manager,NGO Programme Officer,lateral,derived,synthetic,true
 CAREER-053,Health Services Manager,Conference and Meetings Coordinator,lateral,derived,synthetic,true
+CAREER-054,Community Health Promoter,Community Health Volunteer,alternative,authored,synthetic,true
+CAREER-054,Community Health Promoter,Community Health Worker,alternative,authored,synthetic,true
+CAREER-054,Community Health Promoter,Community Health Assistant,alternative,authored,synthetic,true
+CAREER-054,Community Health Promoter,Health Educator,alternative,authored,synthetic,true
+CAREER-054,Community Health Promoter,Outreach Worker,alternative,authored,synthetic,true
+CAREER-054,Community Health Promoter,Peer Educator,alternative,authored,synthetic,true
+CAREER-054,Community Health Promoter,Community Health Promoter (household health visits),specialism,authored,synthetic,true
+CAREER-054,Community Health Promoter,Community Health Promoter (maternal and child health),specialism,authored,synthetic,true
+CAREER-054,Community Health Promoter,Community Health Promoter (nutrition screening),specialism,authored,synthetic,true
+CAREER-054,Community Health Promoter,Community Health Promoter (malaria and hygiene promotion),specialism,authored,synthetic,true
+CAREER-054,Community Health Promoter,Community Health Promoter (HIV and TB follow-up),specialism,authored,synthetic,true
+CAREER-054,Community Health Promoter,Community Health Promoter (immunisation mobilisation),specialism,authored,synthetic,true
 CAREER-054,Community Health Promoter,Student on clinical placement (community health),entry,derived,synthetic,true
 CAREER-054,Community Health Promoter,Intern Community Health Promoter,entry,derived,synthetic,true
 CAREER-054,Community Health Promoter,Newly registered Community Health Promoter,entry,derived,synthetic,true
@@ -1862,16 +2074,27 @@ CAREER-054,Community Health Promoter,Clinical researcher,beyond,category_default
 CAREER-054,Community Health Promoter,Lecturer or clinical instructor,beyond,category_default,synthetic,true
 CAREER-054,Community Health Promoter,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-054,Community Health Promoter,Regulator or policy adviser,beyond,category_default,synthetic,true
+CAREER-054,Community Health Promoter,Medical Social Worker,lateral,derived,synthetic,true
 CAREER-054,Community Health Promoter,Midwife,lateral,derived,synthetic,true
 CAREER-054,Community Health Promoter,Registered Nurse,lateral,derived,synthetic,true
 CAREER-054,Community Health Promoter,Optometrist,lateral,derived,synthetic,true
-CAREER-054,Community Health Promoter,Medical Social Worker,lateral,derived,synthetic,true
+CAREER-055,Accountant,Financial Accountant,alternative,authored,synthetic,true
+CAREER-055,Accountant,Accounts Assistant,alternative,authored,synthetic,true
+CAREER-055,Accountant,Bookkeeper,alternative,authored,synthetic,true
+CAREER-055,Accountant,General Ledger Accountant,alternative,authored,synthetic,true
+CAREER-055,Accountant,Accounts Payable Accountant,alternative,authored,synthetic,true
+CAREER-055,Accountant,Assistant Accountant,alternative,authored,synthetic,true
+CAREER-055,Accountant,Accountant (financial reporting),specialism,authored,synthetic,true
+CAREER-055,Accountant,Accountant (accounts payable and receivable),specialism,authored,synthetic,true
+CAREER-055,Accountant,Accountant (general ledger),specialism,authored,synthetic,true
+CAREER-055,Accountant,Accountant (payroll),specialism,authored,synthetic,true
+CAREER-055,Accountant,Accountant (tax compliance),specialism,authored,synthetic,true
+CAREER-055,Accountant,Accountant (NGO and grant accounting),specialism,authored,synthetic,true
 CAREER-055,Accountant,Accountant intern,entry,derived,synthetic,true
 CAREER-055,Accountant,Graduate trainee (financial accounting),entry,derived,synthetic,true
 CAREER-055,Accountant,Management trainee,entry,derived,synthetic,true
 CAREER-055,Accountant,Trainee Accountant,entry,derived,synthetic,true
 CAREER-055,Accountant,Junior Accountant,entry,derived,synthetic,true
-CAREER-055,Accountant,Assistant Accountant,entry,derived,synthetic,true
 CAREER-055,Accountant,Associate Accountant,entry,derived,synthetic,true
 CAREER-055,Accountant,Senior Accountant,progression,derived,synthetic,true
 CAREER-055,Accountant,Accountant Supervisor,progression,derived,synthetic,true
@@ -1889,10 +2112,22 @@ CAREER-055,Accountant,Fintech founder,beyond,category_default,synthetic,true
 CAREER-055,Accountant,Lecturer or professional trainer,beyond,category_default,synthetic,true
 CAREER-055,Accountant,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-055,Accountant,Board or audit committee member,beyond,category_default,synthetic,true
-CAREER-055,Accountant,SACCO Manager,lateral,derived,synthetic,true
 CAREER-055,Accountant,Financial Controller,lateral,derived,synthetic,true
-CAREER-055,Accountant,Public Finance Officer,lateral,derived,synthetic,true
+CAREER-055,Accountant,SACCO Manager,lateral,derived,synthetic,true
+CAREER-055,Accountant,Bank Operations Officer,lateral,derived,synthetic,true
 CAREER-055,Accountant,Mobile Money and Payments Specialist,lateral,derived,synthetic,true
+CAREER-056,Auditor,External Auditor,alternative,authored,synthetic,true
+CAREER-056,Auditor,Internal Auditor,alternative,authored,synthetic,true
+CAREER-056,Auditor,Audit Associate,alternative,authored,synthetic,true
+CAREER-056,Auditor,Audit Senior,alternative,authored,synthetic,true
+CAREER-056,Auditor,Assurance Associate,alternative,authored,synthetic,true
+CAREER-056,Auditor,IT Auditor,alternative,authored,synthetic,true
+CAREER-056,Auditor,Auditor (external audit),specialism,authored,synthetic,true
+CAREER-056,Auditor,Auditor (internal audit),specialism,authored,synthetic,true
+CAREER-056,Auditor,Auditor (IT audit),specialism,authored,synthetic,true
+CAREER-056,Auditor,Auditor (public-sector audit),specialism,authored,synthetic,true
+CAREER-056,Auditor,Auditor (risk-based audit),specialism,authored,synthetic,true
+CAREER-056,Auditor,Auditor (compliance audit),specialism,authored,synthetic,true
 CAREER-056,Auditor,Auditor intern,entry,derived,synthetic,true
 CAREER-056,Auditor,Graduate trainee (assurance and audit),entry,derived,synthetic,true
 CAREER-056,Auditor,Management trainee,entry,derived,synthetic,true
@@ -1919,7 +2154,18 @@ CAREER-056,Auditor,Board or audit committee member,beyond,category_default,synth
 CAREER-056,Auditor,Public Auditor,lateral,derived,synthetic,true
 CAREER-056,Auditor,Anti-Corruption Investigator,lateral,derived,synthetic,true
 CAREER-056,Auditor,Financial Controller,lateral,derived,synthetic,true
-CAREER-056,Auditor,Development Planning Officer,lateral,derived,synthetic,true
+CAREER-057,Financial Analyst,Finance Analyst,alternative,authored,synthetic,true
+CAREER-057,Financial Analyst,FP&A Analyst,alternative,authored,synthetic,true
+CAREER-057,Financial Analyst,Business Analyst (Finance),alternative,authored,synthetic,true
+CAREER-057,Financial Analyst,Corporate Finance Analyst,alternative,authored,synthetic,true
+CAREER-057,Financial Analyst,Management Reporting Analyst,alternative,authored,synthetic,true
+CAREER-057,Financial Analyst,Planning Analyst,alternative,authored,synthetic,true
+CAREER-057,Financial Analyst,Financial Analyst (financial planning and analysis),specialism,authored,synthetic,true
+CAREER-057,Financial Analyst,Financial Analyst (budgeting and forecasting),specialism,authored,synthetic,true
+CAREER-057,Financial Analyst,Financial Analyst (management reporting),specialism,authored,synthetic,true
+CAREER-057,Financial Analyst,Financial Analyst (valuation),specialism,authored,synthetic,true
+CAREER-057,Financial Analyst,Financial Analyst (project appraisal),specialism,authored,synthetic,true
+CAREER-057,Financial Analyst,Financial Analyst (performance analysis),specialism,authored,synthetic,true
 CAREER-057,Financial Analyst,Financial Analyst intern,entry,derived,synthetic,true
 CAREER-057,Financial Analyst,Graduate trainee (financial analysis),entry,derived,synthetic,true
 CAREER-057,Financial Analyst,Management trainee,entry,derived,synthetic,true
@@ -1943,10 +2189,22 @@ CAREER-057,Financial Analyst,Fintech founder,beyond,category_default,synthetic,t
 CAREER-057,Financial Analyst,Lecturer or professional trainer,beyond,category_default,synthetic,true
 CAREER-057,Financial Analyst,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-057,Financial Analyst,Board or audit committee member,beyond,category_default,synthetic,true
-CAREER-057,Financial Analyst,Investment Analyst,lateral,derived,synthetic,true
-CAREER-057,Financial Analyst,Actuarial Analyst,lateral,derived,synthetic,true
 CAREER-057,Financial Analyst,Budget Analyst,lateral,derived,synthetic,true
-CAREER-057,Financial Analyst,Supply Chain Analyst,lateral,derived,synthetic,true
+CAREER-057,Financial Analyst,Data Analyst,lateral,derived,synthetic,true
+CAREER-057,Financial Analyst,Actuarial Analyst,lateral,derived,synthetic,true
+CAREER-057,Financial Analyst,Investment Analyst,lateral,derived,synthetic,true
+CAREER-058,Investment Analyst,Research Analyst,alternative,authored,synthetic,true
+CAREER-058,Investment Analyst,Equity Research Analyst,alternative,authored,synthetic,true
+CAREER-058,Investment Analyst,Portfolio Analyst,alternative,authored,synthetic,true
+CAREER-058,Investment Analyst,Fund Analyst,alternative,authored,synthetic,true
+CAREER-058,Investment Analyst,Buy-Side Analyst,alternative,authored,synthetic,true
+CAREER-058,Investment Analyst,Fixed Income Analyst,alternative,authored,synthetic,true
+CAREER-058,Investment Analyst,Investment Analyst (equity research),specialism,authored,synthetic,true
+CAREER-058,Investment Analyst,Investment Analyst (fixed income),specialism,authored,synthetic,true
+CAREER-058,Investment Analyst,Investment Analyst (fund management),specialism,authored,synthetic,true
+CAREER-058,Investment Analyst,Investment Analyst (private equity),specialism,authored,synthetic,true
+CAREER-058,Investment Analyst,Investment Analyst (real estate investment),specialism,authored,synthetic,true
+CAREER-058,Investment Analyst,Investment Analyst (macroeconomic research),specialism,authored,synthetic,true
 CAREER-058,Investment Analyst,Investment Analyst intern,entry,derived,synthetic,true
 CAREER-058,Investment Analyst,Graduate trainee (investment research),entry,derived,synthetic,true
 CAREER-058,Investment Analyst,Management trainee,entry,derived,synthetic,true
@@ -1972,8 +2230,20 @@ CAREER-058,Investment Analyst,Regulator or supervisory role,beyond,category_defa
 CAREER-058,Investment Analyst,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-058,Investment Analyst,Venture Capital Analyst,lateral,derived,synthetic,true
 CAREER-058,Investment Analyst,Financial Analyst,lateral,derived,synthetic,true
+CAREER-058,Investment Analyst,Securities Dealer,lateral,derived,synthetic,true
 CAREER-058,Investment Analyst,Equity Trader,lateral,derived,synthetic,true
-CAREER-058,Investment Analyst,Compliance Officer,lateral,derived,synthetic,true
+CAREER-059,Banking Relationship Officer,Relationship Manager,alternative,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Personal Banker,alternative,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Customer Relationship Officer,alternative,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Corporate Banking Officer,alternative,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,SME Banker,alternative,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Business Banker,alternative,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Banking Relationship Officer (retail banking),specialism,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Banking Relationship Officer (SME banking),specialism,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Banking Relationship Officer (corporate banking),specialism,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Banking Relationship Officer (agribusiness banking),specialism,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Banking Relationship Officer (diaspora banking),specialism,authored,synthetic,true
+CAREER-059,Banking Relationship Officer,Banking Relationship Officer (bancassurance),specialism,authored,synthetic,true
 CAREER-059,Banking Relationship Officer,Banking Relationship Officer intern,entry,derived,synthetic,true
 CAREER-059,Banking Relationship Officer,Graduate trainee (retail and corporate banking),entry,derived,synthetic,true
 CAREER-059,Banking Relationship Officer,Management trainee,entry,derived,synthetic,true
@@ -1998,9 +2268,21 @@ CAREER-059,Banking Relationship Officer,Lecturer or professional trainer,beyond,
 CAREER-059,Banking Relationship Officer,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-059,Banking Relationship Officer,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-059,Banking Relationship Officer,Medical Sales Representative,lateral,derived,synthetic,true
-CAREER-059,Banking Relationship Officer,Travel Consultant,lateral,derived,synthetic,true
 CAREER-059,Banking Relationship Officer,Customer Service Representative,lateral,derived,synthetic,true
-CAREER-059,Banking Relationship Officer,Bartender and Mixologist,lateral,derived,synthetic,true
+CAREER-059,Banking Relationship Officer,Credit Analyst,lateral,derived,synthetic,true
+CAREER-059,Banking Relationship Officer,Travel Consultant,lateral,derived,synthetic,true
+CAREER-060,Credit Analyst,Credit Officer,alternative,authored,synthetic,true
+CAREER-060,Credit Analyst,Credit Risk Analyst,alternative,authored,synthetic,true
+CAREER-060,Credit Analyst,Loan Analyst,alternative,authored,synthetic,true
+CAREER-060,Credit Analyst,Credit Appraisal Officer,alternative,authored,synthetic,true
+CAREER-060,Credit Analyst,Underwriting Analyst,alternative,authored,synthetic,true
+CAREER-060,Credit Analyst,Credit Administrator,alternative,authored,synthetic,true
+CAREER-060,Credit Analyst,Credit Analyst (SME credit),specialism,authored,synthetic,true
+CAREER-060,Credit Analyst,Credit Analyst (corporate credit),specialism,authored,synthetic,true
+CAREER-060,Credit Analyst,Credit Analyst (consumer lending),specialism,authored,synthetic,true
+CAREER-060,Credit Analyst,Credit Analyst (agricultural lending),specialism,authored,synthetic,true
+CAREER-060,Credit Analyst,Credit Analyst (credit scoring),specialism,authored,synthetic,true
+CAREER-060,Credit Analyst,Credit Analyst (loan portfolio monitoring),specialism,authored,synthetic,true
 CAREER-060,Credit Analyst,Credit Analyst intern,entry,derived,synthetic,true
 CAREER-060,Credit Analyst,Graduate trainee (credit assessment),entry,derived,synthetic,true
 CAREER-060,Credit Analyst,Management trainee,entry,derived,synthetic,true
@@ -2025,9 +2307,21 @@ CAREER-060,Credit Analyst,Lecturer or professional trainer,beyond,category_defau
 CAREER-060,Credit Analyst,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-060,Credit Analyst,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-060,Credit Analyst,Risk Analyst,lateral,derived,synthetic,true
-CAREER-060,Credit Analyst,Contracts Manager,lateral,derived,synthetic,true
-CAREER-060,Credit Analyst,Safeguarding Adviser,lateral,derived,synthetic,true
-CAREER-060,Credit Analyst,Disaster Risk Management Officer,lateral,derived,synthetic,true
+CAREER-060,Credit Analyst,Radiation Protection Officer,lateral,derived,synthetic,true
+CAREER-060,Credit Analyst,Banking Relationship Officer,lateral,derived,synthetic,true
+CAREER-060,Credit Analyst,Cybersecurity Analyst,lateral,derived,synthetic,true
+CAREER-061,Risk Analyst,Risk Officer,alternative,authored,synthetic,true
+CAREER-061,Risk Analyst,Enterprise Risk Analyst,alternative,authored,synthetic,true
+CAREER-061,Risk Analyst,Operational Risk Analyst,alternative,authored,synthetic,true
+CAREER-061,Risk Analyst,Market Risk Analyst,alternative,authored,synthetic,true
+CAREER-061,Risk Analyst,Risk and Compliance Analyst,alternative,authored,synthetic,true
+CAREER-061,Risk Analyst,Risk Associate,alternative,authored,synthetic,true
+CAREER-061,Risk Analyst,Risk Analyst (credit risk),specialism,authored,synthetic,true
+CAREER-061,Risk Analyst,Risk Analyst (market risk),specialism,authored,synthetic,true
+CAREER-061,Risk Analyst,Risk Analyst (operational risk),specialism,authored,synthetic,true
+CAREER-061,Risk Analyst,Risk Analyst (liquidity risk),specialism,authored,synthetic,true
+CAREER-061,Risk Analyst,Risk Analyst (enterprise risk management),specialism,authored,synthetic,true
+CAREER-061,Risk Analyst,Risk Analyst (model risk),specialism,authored,synthetic,true
 CAREER-061,Risk Analyst,Risk Analyst intern,entry,derived,synthetic,true
 CAREER-061,Risk Analyst,Graduate trainee (enterprise risk),entry,derived,synthetic,true
 CAREER-061,Risk Analyst,Management trainee,entry,derived,synthetic,true
@@ -2052,9 +2346,21 @@ CAREER-061,Risk Analyst,Lecturer or professional trainer,beyond,category_default
 CAREER-061,Risk Analyst,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-061,Risk Analyst,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-061,Risk Analyst,Market Research Analyst,lateral,derived,synthetic,true
-CAREER-061,Risk Analyst,Credit Analyst,lateral,derived,synthetic,true
 CAREER-061,Risk Analyst,Budget Analyst,lateral,derived,synthetic,true
-CAREER-061,Risk Analyst,Monitoring and Evaluation Officer,lateral,derived,synthetic,true
+CAREER-061,Risk Analyst,Credit Analyst,lateral,derived,synthetic,true
+CAREER-061,Risk Analyst,Forensic Accountant,lateral,derived,synthetic,true
+CAREER-062,Actuarial Analyst,Actuarial Associate,alternative,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Actuarial Assistant,alternative,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Pricing Analyst,alternative,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Reserving Analyst,alternative,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Pensions Analyst,alternative,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Trainee Actuary,alternative,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Actuarial Analyst (life insurance),specialism,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Actuarial Analyst (general insurance pricing),specialism,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Actuarial Analyst (pensions valuation),specialism,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Actuarial Analyst (reserving),specialism,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Actuarial Analyst (health insurance),specialism,authored,synthetic,true
+CAREER-062,Actuarial Analyst,Actuarial Analyst (investment and risk modelling),specialism,authored,synthetic,true
 CAREER-062,Actuarial Analyst,Actuarial Analyst intern,entry,derived,synthetic,true
 CAREER-062,Actuarial Analyst,Graduate trainee (insurance and pensions modelling),entry,derived,synthetic,true
 CAREER-062,Actuarial Analyst,Management trainee,entry,derived,synthetic,true
@@ -2081,7 +2387,19 @@ CAREER-062,Actuarial Analyst,Board or audit committee member,beyond,category_def
 CAREER-062,Actuarial Analyst,Data Analyst,lateral,derived,synthetic,true
 CAREER-062,Actuarial Analyst,Financial Analyst,lateral,derived,synthetic,true
 CAREER-062,Actuarial Analyst,Budget Analyst,lateral,derived,synthetic,true
-CAREER-062,Actuarial Analyst,Economist,lateral,derived,synthetic,true
+CAREER-062,Actuarial Analyst,Data Scientist,lateral,derived,synthetic,true
+CAREER-063,Insurance Underwriter,Underwriting Officer,alternative,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Underwriting Assistant,alternative,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Risk Underwriter,alternative,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Medical Underwriter,alternative,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Motor Underwriter,alternative,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Commercial Underwriter,alternative,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Insurance Underwriter (motor insurance),specialism,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Insurance Underwriter (medical insurance),specialism,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Insurance Underwriter (life insurance),specialism,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Insurance Underwriter (property and fire),specialism,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Insurance Underwriter (marine and cargo),specialism,authored,synthetic,true
+CAREER-063,Insurance Underwriter,Insurance Underwriter (agricultural insurance),specialism,authored,synthetic,true
 CAREER-063,Insurance Underwriter,Insurance Underwriter intern,entry,derived,synthetic,true
 CAREER-063,Insurance Underwriter,Graduate trainee (insurance underwriting),entry,derived,synthetic,true
 CAREER-063,Insurance Underwriter,Management trainee,entry,derived,synthetic,true
@@ -2105,10 +2423,22 @@ CAREER-063,Insurance Underwriter,Fintech founder,beyond,category_default,synthet
 CAREER-063,Insurance Underwriter,Lecturer or professional trainer,beyond,category_default,synthetic,true
 CAREER-063,Insurance Underwriter,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-063,Insurance Underwriter,Board or audit committee member,beyond,category_default,synthetic,true
+CAREER-063,Insurance Underwriter,Insurance Claims Analyst,lateral,derived,synthetic,true
 CAREER-063,Insurance Underwriter,Customs Officer,lateral,derived,synthetic,true
+CAREER-063,Insurance Underwriter,Intellectual Property Specialist,lateral,derived,synthetic,true
 CAREER-063,Insurance Underwriter,Logistics Coordinator,lateral,derived,synthetic,true
-CAREER-063,Insurance Underwriter,Toxicologist,lateral,derived,synthetic,true
-CAREER-063,Insurance Underwriter,Legal Officer,lateral,derived,synthetic,true
+CAREER-064,Tax Consultant,Tax Advisor,alternative,authored,synthetic,true
+CAREER-064,Tax Consultant,Tax Associate,alternative,authored,synthetic,true
+CAREER-064,Tax Consultant,Tax Accountant,alternative,authored,synthetic,true
+CAREER-064,Tax Consultant,Tax Analyst,alternative,authored,synthetic,true
+CAREER-064,Tax Consultant,Tax Compliance Officer,alternative,authored,synthetic,true
+CAREER-064,Tax Consultant,Transfer Pricing Analyst,alternative,authored,synthetic,true
+CAREER-064,Tax Consultant,Tax Consultant (corporate tax),specialism,authored,synthetic,true
+CAREER-064,Tax Consultant,Tax Consultant (VAT and indirect tax),specialism,authored,synthetic,true
+CAREER-064,Tax Consultant,Tax Consultant (personal tax),specialism,authored,synthetic,true
+CAREER-064,Tax Consultant,Tax Consultant (transfer pricing),specialism,authored,synthetic,true
+CAREER-064,Tax Consultant,Tax Consultant (tax audits and disputes),specialism,authored,synthetic,true
+CAREER-064,Tax Consultant,Tax Consultant (customs and excise),specialism,authored,synthetic,true
 CAREER-064,Tax Consultant,Tax Consultant intern,entry,derived,synthetic,true
 CAREER-064,Tax Consultant,Graduate trainee (taxation),entry,derived,synthetic,true
 CAREER-064,Tax Consultant,Management trainee,entry,derived,synthetic,true
@@ -2132,10 +2462,22 @@ CAREER-064,Tax Consultant,Fintech founder,beyond,category_default,synthetic,true
 CAREER-064,Tax Consultant,Lecturer or professional trainer,beyond,category_default,synthetic,true
 CAREER-064,Tax Consultant,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-064,Tax Consultant,Board or audit committee member,beyond,category_default,synthetic,true
+CAREER-064,Tax Consultant,Financial Planner,lateral,derived,synthetic,true
 CAREER-064,Tax Consultant,Islamic Finance Specialist,lateral,derived,synthetic,true
 CAREER-064,Tax Consultant,Securities Dealer,lateral,derived,synthetic,true
-CAREER-064,Tax Consultant,Financial Planner,lateral,derived,synthetic,true
 CAREER-064,Tax Consultant,Revenue Officer,lateral,derived,synthetic,true
+CAREER-065,Treasury Officer,Treasury Analyst,alternative,authored,synthetic,true
+CAREER-065,Treasury Officer,Treasury Dealer,alternative,authored,synthetic,true
+CAREER-065,Treasury Officer,Cash Management Officer,alternative,authored,synthetic,true
+CAREER-065,Treasury Officer,Liquidity Analyst,alternative,authored,synthetic,true
+CAREER-065,Treasury Officer,Treasury Operations Officer,alternative,authored,synthetic,true
+CAREER-065,Treasury Officer,Treasury Accountant,alternative,authored,synthetic,true
+CAREER-065,Treasury Officer,Treasury Officer (cash and liquidity management),specialism,authored,synthetic,true
+CAREER-065,Treasury Officer,Treasury Officer (foreign exchange),specialism,authored,synthetic,true
+CAREER-065,Treasury Officer,Treasury Officer (money markets),specialism,authored,synthetic,true
+CAREER-065,Treasury Officer,Treasury Officer (treasury operations),specialism,authored,synthetic,true
+CAREER-065,Treasury Officer,Treasury Officer (asset and liability management),specialism,authored,synthetic,true
+CAREER-065,Treasury Officer,Treasury Officer (debt management),specialism,authored,synthetic,true
 CAREER-065,Treasury Officer,Treasury Officer intern,entry,derived,synthetic,true
 CAREER-065,Treasury Officer,Graduate trainee (treasury operations),entry,derived,synthetic,true
 CAREER-065,Treasury Officer,Management trainee,entry,derived,synthetic,true
@@ -2159,10 +2501,22 @@ CAREER-065,Treasury Officer,Fintech founder,beyond,category_default,synthetic,tr
 CAREER-065,Treasury Officer,Lecturer or professional trainer,beyond,category_default,synthetic,true
 CAREER-065,Treasury Officer,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-065,Treasury Officer,Board or audit committee member,beyond,category_default,synthetic,true
-CAREER-065,Treasury Officer,Financial Planner,lateral,derived,synthetic,true
-CAREER-065,Treasury Officer,Financial Controller,lateral,derived,synthetic,true
-CAREER-065,Treasury Officer,Auditor,lateral,derived,synthetic,true
 CAREER-065,Treasury Officer,Bank Operations Officer,lateral,derived,synthetic,true
+CAREER-065,Treasury Officer,Anti-Money Laundering Analyst,lateral,derived,synthetic,true
+CAREER-065,Treasury Officer,Securities Dealer,lateral,derived,synthetic,true
+CAREER-065,Treasury Officer,Accountant,lateral,derived,synthetic,true
+CAREER-066,Fintech Product Analyst,Product Analyst,alternative,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Digital Product Analyst,alternative,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Business Analyst,alternative,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Growth Analyst,alternative,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Product Associate,alternative,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Digital Banking Analyst,alternative,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Fintech Product Analyst (mobile lending),specialism,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Fintech Product Analyst (payments products),specialism,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Fintech Product Analyst (digital wallets),specialism,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Fintech Product Analyst (savings and investment apps),specialism,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Fintech Product Analyst (merchant products),specialism,authored,synthetic,true
+CAREER-066,Fintech Product Analyst,Fintech Product Analyst (API and open banking),specialism,authored,synthetic,true
 CAREER-066,Fintech Product Analyst,Fintech Product Analyst intern,entry,derived,synthetic,true
 CAREER-066,Fintech Product Analyst,Graduate trainee (digital financial services),entry,derived,synthetic,true
 CAREER-066,Fintech Product Analyst,Management trainee,entry,derived,synthetic,true
@@ -2188,8 +2542,20 @@ CAREER-066,Fintech Product Analyst,Regulator or supervisory role,beyond,category
 CAREER-066,Fintech Product Analyst,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-066,Fintech Product Analyst,Customer Experience Manager,lateral,derived,synthetic,true
 CAREER-066,Fintech Product Analyst,Biomedical Engineer,lateral,derived,synthetic,true
-CAREER-066,Fintech Product Analyst,Anti-Money Laundering Analyst,lateral,derived,synthetic,true
-CAREER-066,Fintech Product Analyst,Compliance Officer,lateral,derived,synthetic,true
+CAREER-066,Fintech Product Analyst,Mobile Money and Payments Specialist,lateral,derived,synthetic,true
+CAREER-066,Fintech Product Analyst,Microfinance Officer,lateral,derived,synthetic,true
+CAREER-067,Compliance Officer,Compliance Analyst,alternative,authored,synthetic,true
+CAREER-067,Compliance Officer,Regulatory Compliance Officer,alternative,authored,synthetic,true
+CAREER-067,Compliance Officer,Compliance Associate,alternative,authored,synthetic,true
+CAREER-067,Compliance Officer,KYC Analyst,alternative,authored,synthetic,true
+CAREER-067,Compliance Officer,Compliance Monitoring Officer,alternative,authored,synthetic,true
+CAREER-067,Compliance Officer,Ethics and Compliance Officer,alternative,authored,synthetic,true
+CAREER-067,Compliance Officer,Compliance Officer (regulatory compliance),specialism,authored,synthetic,true
+CAREER-067,Compliance Officer,Compliance Officer (know-your-customer),specialism,authored,synthetic,true
+CAREER-067,Compliance Officer,Compliance Officer (anti-money laundering),specialism,authored,synthetic,true
+CAREER-067,Compliance Officer,Compliance Officer (data protection),specialism,authored,synthetic,true
+CAREER-067,Compliance Officer,Compliance Officer (conduct and ethics),specialism,authored,synthetic,true
+CAREER-067,Compliance Officer,Compliance Officer (compliance monitoring),specialism,authored,synthetic,true
 CAREER-067,Compliance Officer,Compliance Officer intern,entry,derived,synthetic,true
 CAREER-067,Compliance Officer,Graduate trainee (financial compliance),entry,derived,synthetic,true
 CAREER-067,Compliance Officer,Management trainee,entry,derived,synthetic,true
@@ -2214,9 +2580,21 @@ CAREER-067,Compliance Officer,Lecturer or professional trainer,beyond,category_d
 CAREER-067,Compliance Officer,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-067,Compliance Officer,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-067,Compliance Officer,Compliance and Regulatory Officer,lateral,derived,synthetic,true
+CAREER-067,Compliance Officer,Anti-Money Laundering Analyst,lateral,derived,synthetic,true
 CAREER-067,Compliance Officer,Transport Planner,lateral,derived,synthetic,true
-CAREER-067,Compliance Officer,Urban Development Officer,lateral,derived,synthetic,true
 CAREER-067,Compliance Officer,Climate Change Analyst,lateral,derived,synthetic,true
+CAREER-068,Microfinance Officer,Loan Officer,alternative,authored,synthetic,true
+CAREER-068,Microfinance Officer,Credit Officer,alternative,authored,synthetic,true
+CAREER-068,Microfinance Officer,Field Officer,alternative,authored,synthetic,true
+CAREER-068,Microfinance Officer,Group Lending Officer,alternative,authored,synthetic,true
+CAREER-068,Microfinance Officer,Business Development Officer,alternative,authored,synthetic,true
+CAREER-068,Microfinance Officer,Relationship Officer,alternative,authored,synthetic,true
+CAREER-068,Microfinance Officer,Microfinance Officer (group lending),specialism,authored,synthetic,true
+CAREER-068,Microfinance Officer,Microfinance Officer (individual business loans),specialism,authored,synthetic,true
+CAREER-068,Microfinance Officer,Microfinance Officer (agricultural microfinance),specialism,authored,synthetic,true
+CAREER-068,Microfinance Officer,Microfinance Officer (savings mobilisation),specialism,authored,synthetic,true
+CAREER-068,Microfinance Officer,Microfinance Officer (digital microfinance),specialism,authored,synthetic,true
+CAREER-068,Microfinance Officer,Microfinance Officer (women and youth enterprise lending),specialism,authored,synthetic,true
 CAREER-068,Microfinance Officer,Microfinance Officer intern,entry,derived,synthetic,true
 CAREER-068,Microfinance Officer,Graduate trainee (inclusive finance),entry,derived,synthetic,true
 CAREER-068,Microfinance Officer,Management trainee,entry,derived,synthetic,true
@@ -2241,9 +2619,21 @@ CAREER-068,Microfinance Officer,Lecturer or professional trainer,beyond,category
 CAREER-068,Microfinance Officer,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-068,Microfinance Officer,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-068,Microfinance Officer,Credit Analyst,lateral,derived,synthetic,true
-CAREER-068,Microfinance Officer,Financial Planner,lateral,derived,synthetic,true
-CAREER-068,Microfinance Officer,Compliance Officer,lateral,derived,synthetic,true
+CAREER-068,Microfinance Officer,Banking Relationship Officer,lateral,derived,synthetic,true
 CAREER-068,Microfinance Officer,SACCO Manager,lateral,derived,synthetic,true
+CAREER-068,Microfinance Officer,Fintech Product Analyst,lateral,derived,synthetic,true
+CAREER-069,Securities Dealer,Stockbroker,alternative,authored,synthetic,true
+CAREER-069,Securities Dealer,Dealer,alternative,authored,synthetic,true
+CAREER-069,Securities Dealer,Trading Desk Officer,alternative,authored,synthetic,true
+CAREER-069,Securities Dealer,Investment Dealer,alternative,authored,synthetic,true
+CAREER-069,Securities Dealer,Fixed Income Dealer,alternative,authored,synthetic,true
+CAREER-069,Securities Dealer,Brokerage Officer,alternative,authored,synthetic,true
+CAREER-069,Securities Dealer,Securities Dealer (equities dealing),specialism,authored,synthetic,true
+CAREER-069,Securities Dealer,Securities Dealer (bonds and fixed income),specialism,authored,synthetic,true
+CAREER-069,Securities Dealer,Securities Dealer (client brokerage),specialism,authored,synthetic,true
+CAREER-069,Securities Dealer,Securities Dealer (institutional sales),specialism,authored,synthetic,true
+CAREER-069,Securities Dealer,Securities Dealer (derivatives),specialism,authored,synthetic,true
+CAREER-069,Securities Dealer,Securities Dealer (settlement and custody),specialism,authored,synthetic,true
 CAREER-069,Securities Dealer,Securities Dealer intern,entry,derived,synthetic,true
 CAREER-069,Securities Dealer,Graduate trainee (capital markets),entry,derived,synthetic,true
 CAREER-069,Securities Dealer,Management trainee,entry,derived,synthetic,true
@@ -2268,9 +2658,21 @@ CAREER-069,Securities Dealer,Lecturer or professional trainer,beyond,category_de
 CAREER-069,Securities Dealer,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-069,Securities Dealer,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-069,Securities Dealer,Equity Trader,lateral,derived,synthetic,true
-CAREER-069,Securities Dealer,Tax Consultant,lateral,derived,synthetic,true
 CAREER-069,Securities Dealer,Islamic Finance Specialist,lateral,derived,synthetic,true
+CAREER-069,Securities Dealer,Tax Consultant,lateral,derived,synthetic,true
 CAREER-069,Securities Dealer,Financial Planner,lateral,derived,synthetic,true
+CAREER-070,Financial Planner,Financial Advisor,alternative,authored,synthetic,true
+CAREER-070,Financial Planner,Wealth Advisor,alternative,authored,synthetic,true
+CAREER-070,Financial Planner,Personal Financial Consultant,alternative,authored,synthetic,true
+CAREER-070,Financial Planner,Investment Advisor,alternative,authored,synthetic,true
+CAREER-070,Financial Planner,Retirement Planner,alternative,authored,synthetic,true
+CAREER-070,Financial Planner,Wealth Management Associate,alternative,authored,synthetic,true
+CAREER-070,Financial Planner,Financial Planner (retirement planning),specialism,authored,synthetic,true
+CAREER-070,Financial Planner,Financial Planner (investment planning),specialism,authored,synthetic,true
+CAREER-070,Financial Planner,Financial Planner (insurance planning),specialism,authored,synthetic,true
+CAREER-070,Financial Planner,Financial Planner (education savings),specialism,authored,synthetic,true
+CAREER-070,Financial Planner,Financial Planner (estate planning),specialism,authored,synthetic,true
+CAREER-070,Financial Planner,Financial Planner (debt management),specialism,authored,synthetic,true
 CAREER-070,Financial Planner,Financial Planner intern,entry,derived,synthetic,true
 CAREER-070,Financial Planner,Graduate trainee (personal finance),entry,derived,synthetic,true
 CAREER-070,Financial Planner,Management trainee,entry,derived,synthetic,true
@@ -2294,10 +2696,22 @@ CAREER-070,Financial Planner,Fintech founder,beyond,category_default,synthetic,t
 CAREER-070,Financial Planner,Lecturer or professional trainer,beyond,category_default,synthetic,true
 CAREER-070,Financial Planner,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-070,Financial Planner,Board or audit committee member,beyond,category_default,synthetic,true
-CAREER-070,Financial Planner,Financial Controller,lateral,derived,synthetic,true
+CAREER-070,Financial Planner,Tax Consultant,lateral,derived,synthetic,true
 CAREER-070,Financial Planner,Islamic Finance Specialist,lateral,derived,synthetic,true
-CAREER-070,Financial Planner,Events Planner,lateral,derived,synthetic,true
-CAREER-070,Financial Planner,Public Finance Officer,lateral,derived,synthetic,true
+CAREER-070,Financial Planner,Financial Controller,lateral,derived,synthetic,true
+CAREER-070,Financial Planner,Securities Dealer,lateral,derived,synthetic,true
+CAREER-071,Forensic Accountant,Fraud Examiner,alternative,authored,synthetic,true
+CAREER-071,Forensic Accountant,Forensic Auditor,alternative,authored,synthetic,true
+CAREER-071,Forensic Accountant,Fraud Investigator,alternative,authored,synthetic,true
+CAREER-071,Forensic Accountant,Financial Investigator,alternative,authored,synthetic,true
+CAREER-071,Forensic Accountant,Forensic Analyst,alternative,authored,synthetic,true
+CAREER-071,Forensic Accountant,Investigations Associate,alternative,authored,synthetic,true
+CAREER-071,Forensic Accountant,Forensic Accountant (fraud investigation),specialism,authored,synthetic,true
+CAREER-071,Forensic Accountant,Forensic Accountant (asset tracing),specialism,authored,synthetic,true
+CAREER-071,Forensic Accountant,Forensic Accountant (litigation support),specialism,authored,synthetic,true
+CAREER-071,Forensic Accountant,Forensic Accountant (insurance claims investigation),specialism,authored,synthetic,true
+CAREER-071,Forensic Accountant,Forensic Accountant (procurement fraud),specialism,authored,synthetic,true
+CAREER-071,Forensic Accountant,Forensic Accountant (digital forensics support),specialism,authored,synthetic,true
 CAREER-071,Forensic Accountant,Forensic Accountant intern,entry,derived,synthetic,true
 CAREER-071,Forensic Accountant,Graduate trainee (financial investigation),entry,derived,synthetic,true
 CAREER-071,Forensic Accountant,Management trainee,entry,derived,synthetic,true
@@ -2324,7 +2738,19 @@ CAREER-071,Forensic Accountant,Board or audit committee member,beyond,category_d
 CAREER-071,Forensic Accountant,Risk Analyst,lateral,derived,synthetic,true
 CAREER-071,Forensic Accountant,Research and Learning Officer,lateral,derived,synthetic,true
 CAREER-071,Forensic Accountant,Research Scientist,lateral,derived,synthetic,true
-CAREER-071,Forensic Accountant,Biomedical Scientist,lateral,derived,synthetic,true
+CAREER-071,Forensic Accountant,Energy Auditor,lateral,derived,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Payments Analyst,alternative,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Mobile Money Officer,alternative,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Payments Operations Officer,alternative,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Digital Payments Specialist,alternative,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Merchant Services Officer,alternative,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Payments Product Officer,alternative,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Mobile Money and Payments Specialist (mobile money operations),specialism,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Mobile Money and Payments Specialist (merchant payments),specialism,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Mobile Money and Payments Specialist (card payments),specialism,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Mobile Money and Payments Specialist (remittances),specialism,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Mobile Money and Payments Specialist (payment integrations),specialism,authored,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Mobile Money and Payments Specialist (agent network management),specialism,authored,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,Mobile Money and Payments Specialist intern,entry,derived,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,Graduate trainee (payment systems),entry,derived,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,Management trainee,entry,derived,synthetic,true
@@ -2348,10 +2774,10 @@ CAREER-072,Mobile Money and Payments Specialist,Fintech founder,beyond,category_
 CAREER-072,Mobile Money and Payments Specialist,Lecturer or professional trainer,beyond,category_default,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,Board or audit committee member,beyond,category_default,synthetic,true
-CAREER-072,Mobile Money and Payments Specialist,Accountant,lateral,derived,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,Bank Operations Officer,lateral,derived,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Accountant,lateral,derived,synthetic,true
 CAREER-072,Mobile Money and Payments Specialist,Cash Transfer Programme Officer,lateral,derived,synthetic,true
-CAREER-072,Mobile Money and Payments Specialist,Anti-Money Laundering Analyst,lateral,derived,synthetic,true
+CAREER-072,Mobile Money and Payments Specialist,Fintech Product Analyst,lateral,derived,synthetic,true
 CAREER-073,Marketing Executive,Marketing Executive intern,entry,derived,synthetic,true
 CAREER-073,Marketing Executive,Graduate trainee (marketing),entry,derived,synthetic,true
 CAREER-073,Marketing Executive,Management trainee,entry,derived,synthetic,true
@@ -2404,8 +2830,8 @@ CAREER-074,Digital Marketing Specialist,Non-executive director,beyond,category_d
 CAREER-074,Digital Marketing Specialist,Investor or mentor,beyond,category_default,synthetic,true
 CAREER-074,Digital Marketing Specialist,Social Media Manager,lateral,derived,synthetic,true
 CAREER-074,Digital Marketing Specialist,Content Creator,lateral,derived,synthetic,true
-CAREER-074,Digital Marketing Specialist,Health Informatics Specialist,lateral,derived,synthetic,true
 CAREER-074,Digital Marketing Specialist,Revenue Manager,lateral,derived,synthetic,true
+CAREER-074,Digital Marketing Specialist,Technology Product Manager,lateral,derived,synthetic,true
 CAREER-075,Brand Manager,Brand Manager intern,entry,derived,synthetic,true
 CAREER-075,Brand Manager,Graduate trainee (brand management),entry,derived,synthetic,true
 CAREER-075,Brand Manager,Management trainee,entry,derived,synthetic,true
@@ -2513,7 +2939,7 @@ CAREER-078,Entrepreneur and Startup Founder,Investor or mentor,beyond,category_d
 CAREER-078,Entrepreneur and Startup Founder,Social Enterprise Manager,lateral,derived,synthetic,true
 CAREER-078,Entrepreneur and Startup Founder,Humanitarian Aid Worker,lateral,derived,synthetic,true
 CAREER-078,Entrepreneur and Startup Founder,Business Development Officer,lateral,derived,synthetic,true
-CAREER-078,Entrepreneur and Startup Founder,Venture Capital Analyst,lateral,derived,synthetic,true
+CAREER-078,Entrepreneur and Startup Founder,Business Analyst,lateral,derived,synthetic,true
 CAREER-079,Business Analyst,Business Analyst intern,entry,derived,synthetic,true
 CAREER-079,Business Analyst,Graduate trainee (business analysis),entry,derived,synthetic,true
 CAREER-079,Business Analyst,Management trainee,entry,derived,synthetic,true
@@ -2675,7 +3101,7 @@ CAREER-084,Market Research Analyst,Investor or mentor,beyond,category_default,sy
 CAREER-084,Market Research Analyst,Risk Analyst,lateral,derived,synthetic,true
 CAREER-084,Market Research Analyst,Research Scientist,lateral,derived,synthetic,true
 CAREER-084,Market Research Analyst,Monitoring and Evaluation Officer,lateral,derived,synthetic,true
-CAREER-084,Market Research Analyst,Biomedical Scientist,lateral,derived,synthetic,true
+CAREER-084,Market Research Analyst,Materials Scientist,lateral,derived,synthetic,true
 CAREER-085,Project Manager,Project Manager intern,entry,derived,synthetic,true
 CAREER-085,Project Manager,Graduate trainee (project delivery),entry,derived,synthetic,true
 CAREER-085,Project Manager,Management trainee,entry,derived,synthetic,true
@@ -2810,7 +3236,7 @@ CAREER-089,Corporate Strategy Analyst,Investor or mentor,beyond,category_default
 CAREER-089,Corporate Strategy Analyst,Corporate Trainer,lateral,derived,synthetic,true
 CAREER-089,Corporate Strategy Analyst,Management Consultant,lateral,derived,synthetic,true
 CAREER-089,Corporate Strategy Analyst,Hotel Sales Manager,lateral,derived,synthetic,true
-CAREER-089,Corporate Strategy Analyst,Medical Sales Representative,lateral,derived,synthetic,true
+CAREER-089,Corporate Strategy Analyst,Equity Trader,lateral,derived,synthetic,true
 CAREER-090,Social Enterprise Manager,Social Enterprise Manager intern,entry,derived,synthetic,true
 CAREER-090,Social Enterprise Manager,Graduate trainee (social enterprise),entry,derived,synthetic,true
 CAREER-090,Social Enterprise Manager,Management trainee,entry,derived,synthetic,true
@@ -2891,7 +3317,7 @@ CAREER-092,Corporate Lawyer,Elected or appointed public office,beyond,category_d
 CAREER-092,Corporate Lawyer,Contracts Manager,lateral,derived,synthetic,true
 CAREER-092,Corporate Lawyer,Company Secretary,lateral,derived,synthetic,true
 CAREER-092,Corporate Lawyer,Mediator and Arbitrator,lateral,derived,synthetic,true
-CAREER-092,Corporate Lawyer,Venture Capital Analyst,lateral,derived,synthetic,true
+CAREER-092,Corporate Lawyer,Sales Executive,lateral,derived,synthetic,true
 CAREER-093,Legal Officer,Law student on attachment (in-house legal support),entry,derived,synthetic,true
 CAREER-093,Legal Officer,Legal intern,entry,derived,synthetic,true
 CAREER-093,Legal Officer,Pupil or trainee advocate,entry,derived,synthetic,true
@@ -3024,9 +3450,9 @@ CAREER-097,Compliance and Regulatory Officer,Lecturer in law,beyond,category_def
 CAREER-097,Compliance and Regulatory Officer,Policy adviser,beyond,category_default,synthetic,true
 CAREER-097,Compliance and Regulatory Officer,Elected or appointed public office,beyond,category_default,synthetic,true
 CAREER-097,Compliance and Regulatory Officer,Compliance Officer,lateral,derived,synthetic,true
-CAREER-097,Compliance and Regulatory Officer,Pension Fund Administrator,lateral,derived,synthetic,true
 CAREER-097,Compliance and Regulatory Officer,Grants Manager,lateral,derived,synthetic,true
 CAREER-097,Compliance and Regulatory Officer,Research Assistant,lateral,derived,synthetic,true
+CAREER-097,Compliance and Regulatory Officer,Transport Planner,lateral,derived,synthetic,true
 CAREER-098,Human Rights Officer,Law student on attachment (human rights),entry,derived,synthetic,true
 CAREER-098,Human Rights Officer,Legal intern,entry,derived,synthetic,true
 CAREER-098,Human Rights Officer,Pupil or trainee advocate,entry,derived,synthetic,true
@@ -3105,9 +3531,9 @@ CAREER-100,Contracts Manager,Lecturer in law,beyond,category_default,synthetic,t
 CAREER-100,Contracts Manager,Policy adviser,beyond,category_default,synthetic,true
 CAREER-100,Contracts Manager,Elected or appointed public office,beyond,category_default,synthetic,true
 CAREER-100,Contracts Manager,Corporate Lawyer,lateral,derived,synthetic,true
-CAREER-100,Contracts Manager,Risk Analyst,lateral,derived,synthetic,true
 CAREER-100,Contracts Manager,Safeguarding Adviser,lateral,derived,synthetic,true
-CAREER-100,Contracts Manager,Credit Analyst,lateral,derived,synthetic,true
+CAREER-100,Contracts Manager,Disaster Risk Management Officer,lateral,derived,synthetic,true
+CAREER-100,Contracts Manager,Toxicologist,lateral,derived,synthetic,true
 CAREER-101,Mediator and Arbitrator,Law student on attachment (dispute resolution),entry,derived,synthetic,true
 CAREER-101,Mediator and Arbitrator,Legal intern,entry,derived,synthetic,true
 CAREER-101,Mediator and Arbitrator,Pupil or trainee advocate,entry,derived,synthetic,true
@@ -3590,10 +4016,10 @@ CAREER-118,Librarian and Information Officer,School owner,beyond,category_defaul
 CAREER-118,Librarian and Information Officer,Teacher trainer,beyond,category_default,synthetic,true
 CAREER-118,Librarian and Information Officer,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-118,Librarian and Information Officer,Education policy adviser,beyond,category_default,synthetic,true
-CAREER-118,Librarian and Information Officer,Health Informatics Specialist,lateral,derived,synthetic,true
 CAREER-118,Librarian and Information Officer,E-learning Content Developer,lateral,derived,synthetic,true
 CAREER-118,Librarian and Information Officer,Educational Technologist,lateral,derived,synthetic,true
 CAREER-118,Librarian and Information Officer,UI/UX Designer,lateral,derived,synthetic,true
+CAREER-118,Librarian and Information Officer,Illustrator,lateral,derived,synthetic,true
 CAREER-119,School Head and Administrator,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-119,School Head and Administrator,Intern teacher,entry,derived,synthetic,true
 CAREER-119,School Head and Administrator,Teaching assistant,entry,derived,synthetic,true
@@ -3620,7 +4046,7 @@ CAREER-119,School Head and Administrator,Education policy adviser,beyond,categor
 CAREER-119,School Head and Administrator,County Government Officer,lateral,derived,synthetic,true
 CAREER-119,School Head and Administrator,Adult Education Facilitator,lateral,derived,synthetic,true
 CAREER-119,School Head and Administrator,Cultural Heritage Officer,lateral,derived,synthetic,true
-CAREER-119,School Head and Administrator,Public Health Officer,lateral,derived,synthetic,true
+CAREER-119,School Head and Administrator,Wildlife Conservation Officer,lateral,derived,synthetic,true
 CAREER-120,Language Teacher,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-120,Language Teacher,Intern teacher,entry,derived,synthetic,true
 CAREER-120,Language Teacher,Teaching assistant,entry,derived,synthetic,true
@@ -3782,7 +4208,7 @@ CAREER-125,Agricultural Extension Officer,Policy or regulatory officer,beyond,ca
 CAREER-125,Agricultural Extension Officer,Apiculturist,lateral,derived,synthetic,true
 CAREER-125,Agricultural Extension Officer,Compliance and Regulatory Officer,lateral,derived,synthetic,true
 CAREER-125,Agricultural Extension Officer,Grants Manager,lateral,derived,synthetic,true
-CAREER-125,Agricultural Extension Officer,Health Records and Information Officer,lateral,derived,synthetic,true
+CAREER-125,Agricultural Extension Officer,Journalist,lateral,derived,synthetic,true
 CAREER-126,Agribusiness Manager,Attachment student (agricultural value chains),entry,derived,synthetic,true
 CAREER-126,Agribusiness Manager,Agribusiness Manager intern,entry,derived,synthetic,true
 CAREER-126,Agribusiness Manager,Field assistant,entry,derived,synthetic,true
@@ -3835,8 +4261,8 @@ CAREER-127,Veterinary Doctor,Input supplier or agro-dealer,beyond,category_defau
 CAREER-127,Veterinary Doctor,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-127,Veterinary Doctor,Animal Health Technician,lateral,derived,synthetic,true
 CAREER-127,Veterinary Doctor,Plant Pathologist,lateral,derived,synthetic,true
-CAREER-127,Veterinary Doctor,Dentist,lateral,derived,synthetic,true
 CAREER-127,Veterinary Doctor,Livestock Production Officer,lateral,derived,synthetic,true
+CAREER-127,Veterinary Doctor,Greenhouse Manager,lateral,derived,synthetic,true
 CAREER-128,Animal Health Technician,Attachment student (livestock health support),entry,derived,synthetic,true
 CAREER-128,Animal Health Technician,Animal Health Technician intern,entry,derived,synthetic,true
 CAREER-128,Animal Health Technician,Field assistant,entry,derived,synthetic,true
@@ -4535,9 +4961,9 @@ CAREER-153,Social Media Manager,Lecturer or trainer,beyond,category_default,synt
 CAREER-153,Social Media Manager,Brand or communications consultant,beyond,category_default,synthetic,true
 CAREER-153,Social Media Manager,Festival or arts programme director,beyond,category_default,synthetic,true
 CAREER-153,Social Media Manager,Digital Marketing Specialist,lateral,derived,synthetic,true
-CAREER-153,Social Media Manager,Health Informatics Specialist,lateral,derived,synthetic,true
 CAREER-153,Social Media Manager,Revenue Manager,lateral,derived,synthetic,true
 CAREER-153,Social Media Manager,Technology Product Manager,lateral,derived,synthetic,true
+CAREER-153,Social Media Manager,Health Informatics Specialist,lateral,derived,synthetic,true
 CAREER-154,Sound Engineer,Sound Engineer intern,entry,derived,synthetic,true
 CAREER-154,Sound Engineer,Attachment student (audio engineering),entry,derived,synthetic,true
 CAREER-154,Sound Engineer,Junior Sound Engineer,entry,derived,synthetic,true
@@ -4995,7 +5421,7 @@ CAREER-170,Conference and Meetings Coordinator,Events entrepreneur,beyond,catego
 CAREER-170,Conference and Meetings Coordinator,NGO Programme Officer,lateral,derived,synthetic,true
 CAREER-170,Conference and Meetings Coordinator,Events Planner,lateral,derived,synthetic,true
 CAREER-170,Conference and Meetings Coordinator,Project Manager,lateral,derived,synthetic,true
-CAREER-170,Conference and Meetings Coordinator,Health Services Manager,lateral,derived,synthetic,true
+CAREER-170,Conference and Meetings Coordinator,Office Manager,lateral,derived,synthetic,true
 CAREER-171,Revenue Manager,Attachment student (hospitality revenue),entry,derived,synthetic,true
 CAREER-171,Revenue Manager,Revenue Manager intern,entry,derived,synthetic,true
 CAREER-171,Revenue Manager,Trainee Revenue Manager,entry,derived,synthetic,true
@@ -5022,7 +5448,7 @@ CAREER-171,Revenue Manager,Events entrepreneur,beyond,category_default,synthetic
 CAREER-171,Revenue Manager,Demand Planner,lateral,derived,synthetic,true
 CAREER-171,Revenue Manager,Tourism Product Developer,lateral,derived,synthetic,true
 CAREER-171,Revenue Manager,Supply Chain Analyst,lateral,derived,synthetic,true
-CAREER-171,Revenue Manager,Health Informatics Specialist,lateral,derived,synthetic,true
+CAREER-171,Revenue Manager,Social Media Manager,lateral,derived,synthetic,true
 CAREER-172,Safari Lodge Manager,Attachment student (lodge and camp operations),entry,derived,synthetic,true
 CAREER-172,Safari Lodge Manager,Safari Lodge Manager intern,entry,derived,synthetic,true
 CAREER-172,Safari Lodge Manager,Trainee Safari Lodge Manager,entry,derived,synthetic,true
@@ -5237,8 +5663,8 @@ CAREER-179,Cultural Heritage Officer,Cruise or international hotel roles,beyond,
 CAREER-179,Cultural Heritage Officer,Events entrepreneur,beyond,category_default,synthetic,true
 CAREER-179,Cultural Heritage Officer,School Head and Administrator,lateral,derived,synthetic,true
 CAREER-179,Cultural Heritage Officer,Curator,lateral,derived,synthetic,true
-CAREER-179,Cultural Heritage Officer,Public Health Officer,lateral,derived,synthetic,true
 CAREER-179,Cultural Heritage Officer,Wildlife Conservation Officer,lateral,derived,synthetic,true
+CAREER-179,Cultural Heritage Officer,County Government Officer,lateral,derived,synthetic,true
 CAREER-180,Research Scientist,Attachment student (scientific research),entry,derived,synthetic,true
 CAREER-180,Research Scientist,Research intern,entry,derived,synthetic,true
 CAREER-180,Research Scientist,Laboratory assistant,entry,derived,synthetic,true
@@ -5290,9 +5716,9 @@ CAREER-181,Laboratory Technician,Science communicator,beyond,category_default,sy
 CAREER-181,Laboratory Technician,Consultant,beyond,category_default,synthetic,true
 CAREER-181,Laboratory Technician,Science-based entrepreneur,beyond,category_default,synthetic,true
 CAREER-181,Laboratory Technician,Radiation Protection Officer,lateral,derived,synthetic,true
-CAREER-181,Laboratory Technician,Medical Laboratory Technologist,lateral,derived,synthetic,true
 CAREER-181,Laboratory Technician,Animal Health Technician,lateral,derived,synthetic,true
 CAREER-181,Laboratory Technician,Community Mobiliser,lateral,derived,synthetic,true
+CAREER-181,Laboratory Technician,Poultry Farm Manager,lateral,derived,synthetic,true
 CAREER-182,Chemist,Attachment student (chemistry),entry,derived,synthetic,true
 CAREER-182,Chemist,Research intern,entry,derived,synthetic,true
 CAREER-182,Chemist,Laboratory assistant,entry,derived,synthetic,true
@@ -5318,8 +5744,8 @@ CAREER-182,Chemist,Consultant,beyond,category_default,synthetic,true
 CAREER-182,Chemist,Science-based entrepreneur,beyond,category_default,synthetic,true
 CAREER-182,Chemist,Geothermal Technician,lateral,derived,synthetic,true
 CAREER-182,Chemist,Environmental Scientist,lateral,derived,synthetic,true
-CAREER-182,Chemist,Epidemiologist,lateral,derived,synthetic,true
 CAREER-182,Chemist,Air Traffic Controller,lateral,derived,synthetic,true
+CAREER-182,Chemist,Locomotive Driver,lateral,derived,synthetic,true
 CAREER-183,Biologist,Attachment student (biological sciences),entry,derived,synthetic,true
 CAREER-183,Biologist,Research intern,entry,derived,synthetic,true
 CAREER-183,Biologist,Laboratory assistant,entry,derived,synthetic,true
@@ -5533,9 +5959,9 @@ CAREER-190,Meteorologist,Science communicator,beyond,category_default,synthetic,
 CAREER-190,Meteorologist,Consultant,beyond,category_default,synthetic,true
 CAREER-190,Meteorologist,Science-based entrepreneur,beyond,category_default,synthetic,true
 CAREER-190,Meteorologist,Climate Change Analyst,lateral,derived,synthetic,true
-CAREER-190,Meteorologist,Financial Analyst,lateral,derived,synthetic,true
 CAREER-190,Meteorologist,Inventory Planner,lateral,derived,synthetic,true
 CAREER-190,Meteorologist,Flight Dispatcher,lateral,derived,synthetic,true
+CAREER-190,Meteorologist,Volunteer Coordinator,lateral,derived,synthetic,true
 CAREER-191,Bioinformatician,Attachment student (computational biology),entry,derived,synthetic,true
 CAREER-191,Bioinformatician,Research intern,entry,derived,synthetic,true
 CAREER-191,Bioinformatician,Laboratory assistant,entry,derived,synthetic,true
@@ -5640,8 +6066,8 @@ CAREER-194,Materials Scientist,Consultant,beyond,category_default,synthetic,true
 CAREER-194,Materials Scientist,Science-based entrepreneur,beyond,category_default,synthetic,true
 CAREER-194,Materials Scientist,Pharmacologist,lateral,derived,synthetic,true
 CAREER-194,Materials Scientist,Research Scientist,lateral,derived,synthetic,true
-CAREER-194,Materials Scientist,Biomedical Scientist,lateral,derived,synthetic,true
 CAREER-194,Materials Scientist,Marine Scientist,lateral,derived,synthetic,true
+CAREER-194,Materials Scientist,Market Research Analyst,lateral,derived,synthetic,true
 CAREER-195,Forensic Scientist,Attachment student (forensic analysis),entry,derived,synthetic,true
 CAREER-195,Forensic Scientist,Research intern,entry,derived,synthetic,true
 CAREER-195,Forensic Scientist,Laboratory assistant,entry,derived,synthetic,true
@@ -5775,8 +6201,8 @@ CAREER-199,Logistics Coordinator,Regulator or port authority roles,beyond,catego
 CAREER-199,Logistics Coordinator,International postings,beyond,category_default,synthetic,true
 CAREER-199,Logistics Coordinator,Clearing and Forwarding Agent,lateral,derived,synthetic,true
 CAREER-199,Logistics Coordinator,Customs Officer,lateral,derived,synthetic,true
-CAREER-199,Logistics Coordinator,Insurance Underwriter,lateral,derived,synthetic,true
 CAREER-199,Logistics Coordinator,Legal Officer,lateral,derived,synthetic,true
+CAREER-199,Logistics Coordinator,Intellectual Property Specialist,lateral,derived,synthetic,true
 CAREER-200,Supply Chain Analyst,Attachment student (supply chain planning),entry,derived,synthetic,true
 CAREER-200,Supply Chain Analyst,Supply Chain Analyst intern,entry,derived,synthetic,true
 CAREER-200,Supply Chain Analyst,Graduate trainee (supply chain planning),entry,derived,synthetic,true
@@ -5801,9 +6227,9 @@ CAREER-200,Supply Chain Analyst,Humanitarian logistics roles,beyond,category_def
 CAREER-200,Supply Chain Analyst,Regulator or port authority roles,beyond,category_default,synthetic,true
 CAREER-200,Supply Chain Analyst,International postings,beyond,category_default,synthetic,true
 CAREER-200,Supply Chain Analyst,Demand Planner,lateral,derived,synthetic,true
-CAREER-200,Supply Chain Analyst,Financial Analyst,lateral,derived,synthetic,true
 CAREER-200,Supply Chain Analyst,Transport Planner,lateral,derived,synthetic,true
 CAREER-200,Supply Chain Analyst,Development Planning Officer,lateral,derived,synthetic,true
+CAREER-200,Supply Chain Analyst,Financial Analyst,lateral,derived,synthetic,true
 CAREER-201,Procurement Officer,Attachment student (procurement),entry,derived,synthetic,true
 CAREER-201,Procurement Officer,Procurement Officer intern,entry,derived,synthetic,true
 CAREER-201,Procurement Officer,Graduate trainee (procurement),entry,derived,synthetic,true
@@ -5936,8 +6362,8 @@ CAREER-205,Operations Manager,Regulator or port authority roles,beyond,category_
 CAREER-205,Operations Manager,International postings,beyond,category_default,synthetic,true
 CAREER-205,Operations Manager,Office Manager,lateral,derived,synthetic,true
 CAREER-205,Operations Manager,Call Centre Team Leader,lateral,derived,synthetic,true
-CAREER-205,Operations Manager,Health Services Manager,lateral,derived,synthetic,true
-CAREER-205,Operations Manager,Financial Controller,lateral,derived,synthetic,true
+CAREER-205,Operations Manager,Children's Home Manager,lateral,derived,synthetic,true
+CAREER-205,Operations Manager,Project Manager,lateral,derived,synthetic,true
 CAREER-206,Fleet Manager,Attachment student (fleet operations),entry,derived,synthetic,true
 CAREER-206,Fleet Manager,Fleet Manager intern,entry,derived,synthetic,true
 CAREER-206,Fleet Manager,Graduate trainee (fleet operations),entry,derived,synthetic,true
@@ -6285,10 +6711,10 @@ CAREER-218,Social Worker,Researcher or evaluator,beyond,category_default,synthet
 CAREER-218,Social Worker,Lecturer or trainer,beyond,category_default,synthetic,true
 CAREER-218,Social Worker,Policy adviser,beyond,category_default,synthetic,true
 CAREER-218,Social Worker,International organisation roles,beyond,category_default,synthetic,true
-CAREER-218,Social Worker,Medical Social Worker,lateral,derived,synthetic,true
 CAREER-218,Social Worker,School Counsellor,lateral,derived,synthetic,true
+CAREER-218,Social Worker,Medical Social Worker,lateral,derived,synthetic,true
 CAREER-218,Social Worker,Probation Officer,lateral,derived,synthetic,true
-CAREER-218,Social Worker,Psychologist,lateral,derived,synthetic,true
+CAREER-218,Social Worker,Refugee Protection Officer,lateral,derived,synthetic,true
 CAREER-219,Community Development Officer,Attachment student (community development),entry,derived,synthetic,true
 CAREER-219,Community Development Officer,Volunteer in community development,entry,derived,synthetic,true
 CAREER-219,Community Development Officer,Community Development Officer intern,entry,derived,synthetic,true
@@ -6423,7 +6849,7 @@ CAREER-223,NGO Programme Officer,International organisation roles,beyond,categor
 CAREER-223,NGO Programme Officer,Conference and Meetings Coordinator,lateral,derived,synthetic,true
 CAREER-223,NGO Programme Officer,Development Project Coordinator,lateral,derived,synthetic,true
 CAREER-223,NGO Programme Officer,Project Manager,lateral,derived,synthetic,true
-CAREER-223,NGO Programme Officer,Health Services Manager,lateral,derived,synthetic,true
+CAREER-223,NGO Programme Officer,Events Planner,lateral,derived,synthetic,true
 CAREER-224,Monitoring and Evaluation Officer,Attachment student (monitoring and evaluation),entry,derived,synthetic,true
 CAREER-224,Monitoring and Evaluation Officer,Volunteer in monitoring and evaluation,entry,derived,synthetic,true
 CAREER-224,Monitoring and Evaluation Officer,Monitoring and Evaluation Officer intern,entry,derived,synthetic,true
@@ -6448,9 +6874,9 @@ CAREER-224,Monitoring and Evaluation Officer,Lecturer or trainer,beyond,category
 CAREER-224,Monitoring and Evaluation Officer,Policy adviser,beyond,category_default,synthetic,true
 CAREER-224,Monitoring and Evaluation Officer,International organisation roles,beyond,category_default,synthetic,true
 CAREER-224,Monitoring and Evaluation Officer,Market Research Analyst,lateral,derived,synthetic,true
-CAREER-224,Monitoring and Evaluation Officer,Risk Analyst,lateral,derived,synthetic,true
 CAREER-224,Monitoring and Evaluation Officer,Research Assistant,lateral,derived,synthetic,true
 CAREER-224,Monitoring and Evaluation Officer,Research and Learning Officer,lateral,derived,synthetic,true
+CAREER-224,Monitoring and Evaluation Officer,Research Scientist,lateral,derived,synthetic,true
 CAREER-225,Humanitarian Aid Worker,Attachment student (humanitarian response),entry,derived,synthetic,true
 CAREER-225,Humanitarian Aid Worker,Volunteer in humanitarian response,entry,derived,synthetic,true
 CAREER-225,Humanitarian Aid Worker,Humanitarian Aid Worker intern,entry,derived,synthetic,true
@@ -6557,8 +6983,8 @@ CAREER-228,Peacebuilding Officer,Policy adviser,beyond,category_default,syntheti
 CAREER-228,Peacebuilding Officer,International organisation roles,beyond,category_default,synthetic,true
 CAREER-228,Peacebuilding Officer,Community Development Officer,lateral,derived,synthetic,true
 CAREER-228,Peacebuilding Officer,National Government Administration Officer,lateral,derived,synthetic,true
-CAREER-228,Peacebuilding Officer,Risk Analyst,lateral,derived,synthetic,true
-CAREER-228,Peacebuilding Officer,Budget Analyst,lateral,derived,synthetic,true
+CAREER-228,Peacebuilding Officer,Market Research Analyst,lateral,derived,synthetic,true
+CAREER-228,Peacebuilding Officer,Fundraising Officer,lateral,derived,synthetic,true
 CAREER-229,Psychosocial Support Officer,Attachment student (psychosocial support),entry,derived,synthetic,true
 CAREER-229,Psychosocial Support Officer,Volunteer in psychosocial support,entry,derived,synthetic,true
 CAREER-229,Psychosocial Support Officer,Psychosocial Support Officer intern,entry,derived,synthetic,true
@@ -6720,7 +7146,7 @@ CAREER-234,Probation Officer,International organisation roles,beyond,category_de
 CAREER-234,Probation Officer,Social Worker,lateral,derived,synthetic,true
 CAREER-234,Probation Officer,Sociologist,lateral,derived,synthetic,true
 CAREER-234,Probation Officer,Quality Assurance and Standards Officer,lateral,derived,synthetic,true
-CAREER-234,Probation Officer,Psychologist,lateral,derived,synthetic,true
+CAREER-234,Probation Officer,Environmental Consultant,lateral,derived,synthetic,true
 CAREER-235,Sociologist,Attachment student (social research),entry,derived,synthetic,true
 CAREER-235,Sociologist,Volunteer in social research,entry,derived,synthetic,true
 CAREER-235,Sociologist,Sociologist intern,entry,derived,synthetic,true
@@ -6825,8 +7251,8 @@ CAREER-238,Economist,Researcher at a policy institute,beyond,category_default,sy
 CAREER-238,Economist,Lecturer,beyond,category_default,synthetic,true
 CAREER-238,Economist,Elected office,beyond,category_default,synthetic,true
 CAREER-238,Economist,Board or commission member,beyond,category_default,synthetic,true
-CAREER-238,Economist,Health Economist,lateral,derived,synthetic,true
 CAREER-238,Economist,Intelligence Analyst,lateral,derived,synthetic,true
+CAREER-238,Economist,Health Economist,lateral,derived,synthetic,true
 CAREER-238,Economist,Development Planning Officer,lateral,derived,synthetic,true
 CAREER-238,Economist,Trade Policy Analyst,lateral,derived,synthetic,true
 CAREER-239,Development Economist,Attachment student (development economics),entry,derived,synthetic,true
@@ -6882,7 +7308,7 @@ CAREER-240,County Government Officer,Board or commission member,beyond,category_
 CAREER-240,County Government Officer,Project Manager,lateral,derived,synthetic,true
 CAREER-240,County Government Officer,Public Finance Officer,lateral,derived,synthetic,true
 CAREER-240,County Government Officer,School Head and Administrator,lateral,derived,synthetic,true
-CAREER-240,County Government Officer,Public Health Officer,lateral,derived,synthetic,true
+CAREER-240,County Government Officer,Range Management Officer,lateral,derived,synthetic,true
 CAREER-241,Diplomat and Foreign Service Officer,Attachment student (foreign affairs),entry,derived,synthetic,true
 CAREER-241,Diplomat and Foreign Service Officer,Public service intern,entry,derived,synthetic,true
 CAREER-241,Diplomat and Foreign Service Officer,Graduate trainee (foreign affairs),entry,derived,synthetic,true
@@ -6962,8 +7388,8 @@ CAREER-243,Revenue Officer,Elected office,beyond,category_default,synthetic,true
 CAREER-243,Revenue Officer,Board or commission member,beyond,category_default,synthetic,true
 CAREER-243,Revenue Officer,Development Planning Officer,lateral,derived,synthetic,true
 CAREER-243,Revenue Officer,Public Policy Analyst,lateral,derived,synthetic,true
-CAREER-243,Revenue Officer,Tax Consultant,lateral,derived,synthetic,true
-CAREER-243,Revenue Officer,Risk Analyst,lateral,derived,synthetic,true
+CAREER-243,Revenue Officer,Statistician,lateral,derived,synthetic,true
+CAREER-243,Revenue Officer,Market Research Analyst,lateral,derived,synthetic,true
 CAREER-244,Immigration Officer,Attachment student (border and immigration services),entry,derived,synthetic,true
 CAREER-244,Immigration Officer,Public service intern,entry,derived,synthetic,true
 CAREER-244,Immigration Officer,Graduate trainee (border and immigration services),entry,derived,synthetic,true
@@ -7097,8 +7523,8 @@ CAREER-248,Public Finance Officer,Elected office,beyond,category_default,synthet
 CAREER-248,Public Finance Officer,Board or commission member,beyond,category_default,synthetic,true
 CAREER-248,Public Finance Officer,Financial Controller,lateral,derived,synthetic,true
 CAREER-248,Public Finance Officer,Grants Manager,lateral,derived,synthetic,true
-CAREER-248,Public Finance Officer,SACCO Manager,lateral,derived,synthetic,true
 CAREER-248,Public Finance Officer,County Government Officer,lateral,derived,synthetic,true
+CAREER-248,Public Finance Officer,NGO Programme Officer,lateral,derived,synthetic,true
 CAREER-249,Parliamentary Researcher,Attachment student (legislative research),entry,derived,synthetic,true
 CAREER-249,Parliamentary Researcher,Public service intern,entry,derived,synthetic,true
 CAREER-249,Parliamentary Researcher,Graduate trainee (legislative research),entry,derived,synthetic,true
@@ -7150,9 +7576,9 @@ CAREER-250,Government Statistician,Lecturer,beyond,category_default,synthetic,tr
 CAREER-250,Government Statistician,Elected office,beyond,category_default,synthetic,true
 CAREER-250,Government Statistician,Board or commission member,beyond,category_default,synthetic,true
 CAREER-250,Government Statistician,Market Research Analyst,lateral,derived,synthetic,true
-CAREER-250,Government Statistician,Risk Analyst,lateral,derived,synthetic,true
 CAREER-250,Government Statistician,National Government Administration Officer,lateral,derived,synthetic,true
 CAREER-250,Government Statistician,Environmental Scientist,lateral,derived,synthetic,true
+CAREER-250,Government Statistician,Grants Manager,lateral,derived,synthetic,true
 CAREER-251,Grants Manager,Attachment student (grants and funding),entry,derived,synthetic,true
 CAREER-251,Grants Manager,Public service intern,entry,derived,synthetic,true
 CAREER-251,Grants Manager,Graduate trainee (grants and funding),entry,derived,synthetic,true
@@ -7178,8 +7604,8 @@ CAREER-251,Grants Manager,Elected office,beyond,category_default,synthetic,true
 CAREER-251,Grants Manager,Board or commission member,beyond,category_default,synthetic,true
 CAREER-251,Grants Manager,Public Finance Officer,lateral,derived,synthetic,true
 CAREER-251,Grants Manager,Compliance and Regulatory Officer,lateral,derived,synthetic,true
-CAREER-251,Grants Manager,Budget Analyst,lateral,derived,synthetic,true
 CAREER-251,Grants Manager,NGO Programme Officer,lateral,derived,synthetic,true
+CAREER-251,Grants Manager,Labour Officer,lateral,derived,synthetic,true
 CAREER-252,Urban Development Officer,Attachment student (urban development),entry,derived,synthetic,true
 CAREER-252,Urban Development Officer,Public service intern,entry,derived,synthetic,true
 CAREER-252,Urban Development Officer,Graduate trainee (urban development),entry,derived,synthetic,true
@@ -7231,9 +7657,9 @@ CAREER-253,Disaster Risk Management Officer,Lecturer,beyond,category_default,syn
 CAREER-253,Disaster Risk Management Officer,Elected office,beyond,category_default,synthetic,true
 CAREER-253,Disaster Risk Management Officer,Board or commission member,beyond,category_default,synthetic,true
 CAREER-253,Disaster Risk Management Officer,Safeguarding Adviser,lateral,derived,synthetic,true
-CAREER-253,Disaster Risk Management Officer,Risk Analyst,lateral,derived,synthetic,true
 CAREER-253,Disaster Risk Management Officer,Contracts Manager,lateral,derived,synthetic,true
-CAREER-253,Disaster Risk Management Officer,Credit Analyst,lateral,derived,synthetic,true
+CAREER-253,Disaster Risk Management Officer,Humanitarian Aid Worker,lateral,derived,synthetic,true
+CAREER-253,Disaster Risk Management Officer,Toxicologist,lateral,derived,synthetic,true
 CAREER-254,ICT Policy Officer,Attachment student (digital government),entry,derived,synthetic,true
 CAREER-254,ICT Policy Officer,Public service intern,entry,derived,synthetic,true
 CAREER-254,ICT Policy Officer,Graduate trainee (digital government),entry,derived,synthetic,true
@@ -7745,8 +8171,8 @@ CAREER-272,Textile and Garment Technologist,Supplier or dealer,beyond,category_d
 CAREER-272,Textile and Garment Technologist,Work abroad on contracts,beyond,category_default,synthetic,true
 CAREER-272,Textile and Garment Technologist,Production Supervisor,lateral,derived,synthetic,true
 CAREER-272,Textile and Garment Technologist,Leather Technologist,lateral,derived,synthetic,true
-CAREER-272,Textile and Garment Technologist,Medical Laboratory Technologist,lateral,derived,synthetic,true
 CAREER-272,Textile and Garment Technologist,Video Producer,lateral,derived,synthetic,true
+CAREER-272,Textile and Garment Technologist,Pastry Chef,lateral,derived,synthetic,true
 CAREER-273,Instrumentation Technician,Apprentice Instrumentation Technician,entry,derived,synthetic,true
 CAREER-273,Instrumentation Technician,Attachment student (industrial instrumentation),entry,derived,synthetic,true
 CAREER-273,Instrumentation Technician,Trainee Instrumentation Technician,entry,derived,synthetic,true
@@ -8280,9 +8706,9 @@ CAREER-287,IT Auditor,Start-up founder,beyond,category_default,synthetic,true
 CAREER-287,IT Auditor,Technical trainer or lecturer,beyond,category_default,synthetic,true
 CAREER-287,IT Auditor,Developer advocate,beyond,category_default,synthetic,true
 CAREER-287,IT Auditor,Product Manager,beyond,category_default,synthetic,true
+CAREER-287,IT Auditor,Auditor,lateral,derived,synthetic,true
 CAREER-287,IT Auditor,Cybersecurity Analyst,lateral,derived,synthetic,true
 CAREER-287,IT Auditor,Penetration Tester,lateral,derived,synthetic,true
-CAREER-287,IT Auditor,Auditor,lateral,derived,synthetic,true
 CAREER-287,IT Auditor,Risk Analyst,lateral,derived,synthetic,true
 CAREER-288,Technical Writer,Documentation Specialist,alternative,authored,synthetic,true
 CAREER-288,Technical Writer,API Writer,alternative,authored,synthetic,true
@@ -8750,6 +9176,18 @@ CAREER-299,Facilities Manager,Office Manager,lateral,derived,synthetic,true
 CAREER-299,Facilities Manager,Events Planner,lateral,derived,synthetic,true
 CAREER-299,Facilities Manager,Wedding Planner,lateral,derived,synthetic,true
 CAREER-299,Facilities Manager,Construction Project Manager,lateral,derived,synthetic,true
+CAREER-300,Surgeon,General Surgeon,alternative,authored,synthetic,true
+CAREER-300,Surgeon,Consultant Surgeon,alternative,authored,synthetic,true
+CAREER-300,Surgeon,Surgical Registrar,alternative,authored,synthetic,true
+CAREER-300,Surgeon,Orthopaedic Surgeon,alternative,authored,synthetic,true
+CAREER-300,Surgeon,Surgical Resident,alternative,authored,synthetic,true
+CAREER-300,Surgeon,Specialist Surgeon,alternative,authored,synthetic,true
+CAREER-300,Surgeon,Surgeon (general surgery),specialism,authored,synthetic,true
+CAREER-300,Surgeon,Surgeon (orthopaedics),specialism,authored,synthetic,true
+CAREER-300,Surgeon,Surgeon (neurosurgery),specialism,authored,synthetic,true
+CAREER-300,Surgeon,Surgeon (cardiothoracic surgery),specialism,authored,synthetic,true
+CAREER-300,Surgeon,Surgeon (paediatric surgery),specialism,authored,synthetic,true
+CAREER-300,Surgeon,Surgeon (urology),specialism,authored,synthetic,true
 CAREER-300,Surgeon,Student on clinical placement (surgical care),entry,derived,synthetic,true
 CAREER-300,Surgeon,Intern Surgeon,entry,derived,synthetic,true
 CAREER-300,Surgeon,Newly registered Surgeon,entry,derived,synthetic,true
@@ -8757,7 +9195,6 @@ CAREER-300,Surgeon,Locum Surgeon,entry,derived,synthetic,true
 CAREER-300,Surgeon,Assistant in surgical care,entry,derived,synthetic,true
 CAREER-300,Surgeon,Volunteer in surgical care,entry,derived,synthetic,true
 CAREER-300,Surgeon,Senior Surgeon,progression,derived,synthetic,true
-CAREER-300,Surgeon,Specialist Surgeon,progression,derived,synthetic,true
 CAREER-300,Surgeon,Consultant in surgical care,progression,derived,synthetic,true
 CAREER-300,Surgeon,In-charge of surgical care,progression,derived,synthetic,true
 CAREER-300,Surgeon,Unit or ward in-charge,leadership,category_default,synthetic,true
@@ -8773,9 +9210,21 @@ CAREER-300,Surgeon,Lecturer or clinical instructor,beyond,category_default,synth
 CAREER-300,Surgeon,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-300,Surgeon,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-300,Surgeon,Commercial Pilot,lateral,derived,synthetic,true
-CAREER-300,Surgeon,Optometrist,lateral,derived,synthetic,true
-CAREER-300,Surgeon,Clinical Officer,lateral,derived,synthetic,true
-CAREER-300,Surgeon,Pharmacist,lateral,derived,synthetic,true
+CAREER-300,Surgeon,Paediatrician,lateral,derived,synthetic,true
+CAREER-300,Surgeon,Registered Nurse,lateral,derived,synthetic,true
+CAREER-300,Surgeon,Radiographer,lateral,derived,synthetic,true
+CAREER-301,Paediatrician,Child Health Specialist,alternative,authored,synthetic,true
+CAREER-301,Paediatrician,Consultant Paediatrician,alternative,authored,synthetic,true
+CAREER-301,Paediatrician,Paediatric Registrar,alternative,authored,synthetic,true
+CAREER-301,Paediatrician,Neonatologist,alternative,authored,synthetic,true
+CAREER-301,Paediatrician,Paediatric Medical Officer,alternative,authored,synthetic,true
+CAREER-301,Paediatrician,Paediatric Resident,alternative,authored,synthetic,true
+CAREER-301,Paediatrician,Paediatrician (general paediatrics),specialism,authored,synthetic,true
+CAREER-301,Paediatrician,Paediatrician (neonatology),specialism,authored,synthetic,true
+CAREER-301,Paediatrician,Paediatrician (paediatric emergency care),specialism,authored,synthetic,true
+CAREER-301,Paediatrician,Paediatrician (paediatric infectious disease),specialism,authored,synthetic,true
+CAREER-301,Paediatrician,Paediatrician (child development),specialism,authored,synthetic,true
+CAREER-301,Paediatrician,Paediatrician (adolescent health),specialism,authored,synthetic,true
 CAREER-301,Paediatrician,Student on clinical placement (child health),entry,derived,synthetic,true
 CAREER-301,Paediatrician,Intern Paediatrician,entry,derived,synthetic,true
 CAREER-301,Paediatrician,Newly registered Paediatrician,entry,derived,synthetic,true
@@ -8799,9 +9248,21 @@ CAREER-301,Paediatrician,Lecturer or clinical instructor,beyond,category_default
 CAREER-301,Paediatrician,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-301,Paediatrician,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-301,Paediatrician,Geriatric Care Worker,lateral,derived,synthetic,true
-CAREER-301,Paediatrician,Speech and Language Therapist,lateral,derived,synthetic,true
 CAREER-301,Paediatrician,Medical Doctor,lateral,derived,synthetic,true
-CAREER-301,Paediatrician,Clinical Officer,lateral,derived,synthetic,true
+CAREER-301,Paediatrician,Surgeon,lateral,derived,synthetic,true
+CAREER-301,Paediatrician,Registered Nurse,lateral,derived,synthetic,true
+CAREER-302,Midwife,Registered Midwife,alternative,authored,synthetic,true
+CAREER-302,Midwife,Nurse Midwife,alternative,authored,synthetic,true
+CAREER-302,Midwife,Maternity Nurse,alternative,authored,synthetic,true
+CAREER-302,Midwife,Community Midwife,alternative,authored,synthetic,true
+CAREER-302,Midwife,Labour Ward Midwife,alternative,authored,synthetic,true
+CAREER-302,Midwife,Midwifery Officer,alternative,authored,synthetic,true
+CAREER-302,Midwife,Midwife (antenatal care),specialism,authored,synthetic,true
+CAREER-302,Midwife,Midwife (labour and delivery),specialism,authored,synthetic,true
+CAREER-302,Midwife,Midwife (postnatal care),specialism,authored,synthetic,true
+CAREER-302,Midwife,Midwife (newborn care),specialism,authored,synthetic,true
+CAREER-302,Midwife,Midwife (family planning),specialism,authored,synthetic,true
+CAREER-302,Midwife,Midwife (community midwifery),specialism,authored,synthetic,true
 CAREER-302,Midwife,Student on clinical placement (maternal and newborn care),entry,derived,synthetic,true
 CAREER-302,Midwife,Intern Midwife,entry,derived,synthetic,true
 CAREER-302,Midwife,Newly registered Midwife,entry,derived,synthetic,true
@@ -8826,8 +9287,20 @@ CAREER-302,Midwife,Health consultant for a non-governmental organisation,beyond,
 CAREER-302,Midwife,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-302,Midwife,Registered Nurse,lateral,derived,synthetic,true
 CAREER-302,Midwife,Community Health Promoter,lateral,derived,synthetic,true
-CAREER-302,Midwife,Health Records and Information Officer,lateral,derived,synthetic,true
-CAREER-302,Midwife,Health Informatics Specialist,lateral,derived,synthetic,true
+CAREER-302,Midwife,Nutritionist and Dietitian,lateral,derived,synthetic,true
+CAREER-302,Midwife,Medical Social Worker,lateral,derived,synthetic,true
+CAREER-303,Optometrist,Eye Care Practitioner,alternative,authored,synthetic,true
+CAREER-303,Optometrist,Clinical Optometrist,alternative,authored,synthetic,true
+CAREER-303,Optometrist,Refractionist,alternative,authored,synthetic,true
+CAREER-303,Optometrist,Optometry Officer,alternative,authored,synthetic,true
+CAREER-303,Optometrist,Low Vision Specialist,alternative,authored,synthetic,true
+CAREER-303,Optometrist,Contact Lens Practitioner,alternative,authored,synthetic,true
+CAREER-303,Optometrist,Optometrist (refraction and prescribing),specialism,authored,synthetic,true
+CAREER-303,Optometrist,Optometrist (contact lenses),specialism,authored,synthetic,true
+CAREER-303,Optometrist,Optometrist (low vision),specialism,authored,synthetic,true
+CAREER-303,Optometrist,Optometrist (paediatric eye care),specialism,authored,synthetic,true
+CAREER-303,Optometrist,Optometrist (school eye screening),specialism,authored,synthetic,true
+CAREER-303,Optometrist,Optometrist (ocular disease detection),specialism,authored,synthetic,true
 CAREER-303,Optometrist,Student on clinical placement (eye care),entry,derived,synthetic,true
 CAREER-303,Optometrist,Intern Optometrist,entry,derived,synthetic,true
 CAREER-303,Optometrist,Newly registered Optometrist,entry,derived,synthetic,true
@@ -8851,9 +9324,21 @@ CAREER-303,Optometrist,Lecturer or clinical instructor,beyond,category_default,s
 CAREER-303,Optometrist,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-303,Optometrist,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-303,Optometrist,Medical Social Worker,lateral,derived,synthetic,true
-CAREER-303,Optometrist,Social Worker,lateral,derived,synthetic,true
 CAREER-303,Optometrist,Community Health Promoter,lateral,derived,synthetic,true
 CAREER-303,Optometrist,School Counsellor,lateral,derived,synthetic,true
+CAREER-303,Optometrist,Social Worker,lateral,derived,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Pharmacy Technologist,alternative,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Pharmacy Technician,alternative,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Dispensing Technologist,alternative,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Pharmacy Assistant,alternative,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Medical Stores Technologist,alternative,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Chemist Attendant,alternative,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Pharmaceutical Technologist (dispensing),specialism,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Pharmaceutical Technologist (pharmacy stock management),specialism,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Pharmaceutical Technologist (compounding),specialism,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Pharmaceutical Technologist (hospital pharmacy stores),specialism,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Pharmaceutical Technologist (community pharmacy retail),specialism,authored,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Pharmaceutical Technologist (medicines supply),specialism,authored,synthetic,true
 CAREER-304,Pharmaceutical Technologist,Student on clinical placement (pharmacy practice support),entry,derived,synthetic,true
 CAREER-304,Pharmaceutical Technologist,Intern Pharmaceutical Technologist,entry,derived,synthetic,true
 CAREER-304,Pharmaceutical Technologist,Newly registered Pharmaceutical Technologist,entry,derived,synthetic,true
@@ -8877,9 +9362,21 @@ CAREER-304,Pharmaceutical Technologist,Lecturer or clinical instructor,beyond,ca
 CAREER-304,Pharmaceutical Technologist,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-304,Pharmaceutical Technologist,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-304,Pharmaceutical Technologist,Pharmacist,lateral,derived,synthetic,true
+CAREER-304,Pharmaceutical Technologist,Community Mobiliser,lateral,derived,synthetic,true
 CAREER-304,Pharmaceutical Technologist,Animal Health Technician,lateral,derived,synthetic,true
 CAREER-304,Pharmaceutical Technologist,Laboratory Technician,lateral,derived,synthetic,true
-CAREER-304,Pharmaceutical Technologist,Community Mobiliser,lateral,derived,synthetic,true
+CAREER-305,Dental Technologist,Dental Technician,alternative,authored,synthetic,true
+CAREER-305,Dental Technologist,Dental Laboratory Technologist,alternative,authored,synthetic,true
+CAREER-305,Dental Technologist,Prosthetic Technician,alternative,authored,synthetic,true
+CAREER-305,Dental Technologist,Ceramist,alternative,authored,synthetic,true
+CAREER-305,Dental Technologist,Orthodontic Technician,alternative,authored,synthetic,true
+CAREER-305,Dental Technologist,Denture Technician,alternative,authored,synthetic,true
+CAREER-305,Dental Technologist,Dental Technologist (dentures),specialism,authored,synthetic,true
+CAREER-305,Dental Technologist,Dental Technologist (crowns and bridges),specialism,authored,synthetic,true
+CAREER-305,Dental Technologist,Dental Technologist (orthodontic appliances),specialism,authored,synthetic,true
+CAREER-305,Dental Technologist,Dental Technologist (dental ceramics),specialism,authored,synthetic,true
+CAREER-305,Dental Technologist,Dental Technologist (implant prosthetics),specialism,authored,synthetic,true
+CAREER-305,Dental Technologist,Dental Technologist (maxillofacial prosthetics),specialism,authored,synthetic,true
 CAREER-305,Dental Technologist,Student on clinical placement (dental laboratory),entry,derived,synthetic,true
 CAREER-305,Dental Technologist,Intern Dental Technologist,entry,derived,synthetic,true
 CAREER-305,Dental Technologist,Newly registered Dental Technologist,entry,derived,synthetic,true
@@ -8906,6 +9403,18 @@ CAREER-305,Dental Technologist,Biomedical Scientist,lateral,derived,synthetic,tr
 CAREER-305,Dental Technologist,Research Scientist,lateral,derived,synthetic,true
 CAREER-305,Dental Technologist,Toxicologist,lateral,derived,synthetic,true
 CAREER-305,Dental Technologist,Pharmacologist,lateral,derived,synthetic,true
+CAREER-306,Orthopaedic Technologist,Prosthetist and Orthotist,alternative,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Orthopaedic Technician,alternative,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Plaster Technician,alternative,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Orthotic Technologist,alternative,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Prosthetic Technologist,alternative,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Rehabilitation Technologist,alternative,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Orthopaedic Technologist (prosthetic limbs),specialism,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Orthopaedic Technologist (orthotic braces),specialism,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Orthopaedic Technologist (plaster casting),specialism,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Orthopaedic Technologist (mobility aids),specialism,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Orthopaedic Technologist (paediatric orthotics),specialism,authored,synthetic,true
+CAREER-306,Orthopaedic Technologist,Orthopaedic Technologist (footwear modification),specialism,authored,synthetic,true
 CAREER-306,Orthopaedic Technologist,Student on clinical placement (orthopaedic devices),entry,derived,synthetic,true
 CAREER-306,Orthopaedic Technologist,Intern Orthopaedic Technologist,entry,derived,synthetic,true
 CAREER-306,Orthopaedic Technologist,Newly registered Orthopaedic Technologist,entry,derived,synthetic,true
@@ -8929,9 +9438,21 @@ CAREER-306,Orthopaedic Technologist,Lecturer or clinical instructor,beyond,categ
 CAREER-306,Orthopaedic Technologist,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-306,Orthopaedic Technologist,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-306,Orthopaedic Technologist,Mason,lateral,derived,synthetic,true
+CAREER-306,Orthopaedic Technologist,Occupational Therapist,lateral,derived,synthetic,true
 CAREER-306,Orthopaedic Technologist,Dental Technologist,lateral,derived,synthetic,true
-CAREER-306,Orthopaedic Technologist,Medical Laboratory Technologist,lateral,derived,synthetic,true
-CAREER-306,Orthopaedic Technologist,Medical Doctor,lateral,derived,synthetic,true
+CAREER-306,Orthopaedic Technologist,Dentist,lateral,derived,synthetic,true
+CAREER-307,Speech and Language Therapist,Speech Therapist,alternative,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Speech-Language Pathologist,alternative,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Communication Therapist,alternative,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Paediatric Speech Therapist,alternative,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Swallowing Therapist,alternative,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Speech Therapy Assistant,alternative,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Speech and Language Therapist (child speech and language delay),specialism,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Speech and Language Therapist (stammering),specialism,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Speech and Language Therapist (autism communication support),specialism,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Speech and Language Therapist (swallowing disorders),specialism,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Speech and Language Therapist (stroke and brain injury),specialism,authored,synthetic,true
+CAREER-307,Speech and Language Therapist,Speech and Language Therapist (voice disorders),specialism,authored,synthetic,true
 CAREER-307,Speech and Language Therapist,Student on clinical placement (communication disorders),entry,derived,synthetic,true
 CAREER-307,Speech and Language Therapist,Intern Speech and Language Therapist,entry,derived,synthetic,true
 CAREER-307,Speech and Language Therapist,Newly registered Speech and Language Therapist,entry,derived,synthetic,true
@@ -8958,6 +9479,18 @@ CAREER-307,Speech and Language Therapist,Toxicologist,lateral,derived,synthetic,
 CAREER-307,Speech and Language Therapist,Clearing and Forwarding Agent,lateral,derived,synthetic,true
 CAREER-307,Speech and Language Therapist,Systems Analyst,lateral,derived,synthetic,true
 CAREER-307,Speech and Language Therapist,Legal Officer,lateral,derived,synthetic,true
+CAREER-308,Emergency Medical Technician,Paramedic,alternative,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Ambulance Technician,alternative,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Emergency Care Assistant,alternative,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,First Responder,alternative,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Ambulance Crew,alternative,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Emergency Medical Responder,alternative,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Emergency Medical Technician (ambulance response),specialism,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Emergency Medical Technician (trauma care),specialism,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Emergency Medical Technician (cardiac emergencies),specialism,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Emergency Medical Technician (inter-facility transfers),specialism,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Emergency Medical Technician (event medical cover),specialism,authored,synthetic,true
+CAREER-308,Emergency Medical Technician,Emergency Medical Technician (disaster response),specialism,authored,synthetic,true
 CAREER-308,Emergency Medical Technician,Student on clinical placement (pre-hospital care),entry,derived,synthetic,true
 CAREER-308,Emergency Medical Technician,Intern Emergency Medical Technician,entry,derived,synthetic,true
 CAREER-308,Emergency Medical Technician,Newly registered Emergency Medical Technician,entry,derived,synthetic,true
@@ -8982,8 +9515,20 @@ CAREER-308,Emergency Medical Technician,Health consultant for a non-governmental
 CAREER-308,Emergency Medical Technician,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-308,Emergency Medical Technician,Clinical Officer,lateral,derived,synthetic,true
 CAREER-308,Emergency Medical Technician,Medical Doctor,lateral,derived,synthetic,true
-CAREER-308,Emergency Medical Technician,Optometrist,lateral,derived,synthetic,true
+CAREER-308,Emergency Medical Technician,Health Services Manager,lateral,derived,synthetic,true
 CAREER-308,Emergency Medical Technician,Medical Social Worker,lateral,derived,synthetic,true
+CAREER-309,Health Economist,Health Financing Analyst,alternative,authored,synthetic,true
+CAREER-309,Health Economist,Health Policy Analyst,alternative,authored,synthetic,true
+CAREER-309,Health Economist,Economic Evaluation Analyst,alternative,authored,synthetic,true
+CAREER-309,Health Economist,Health Financing Officer,alternative,authored,synthetic,true
+CAREER-309,Health Economist,Research Economist,alternative,authored,synthetic,true
+CAREER-309,Health Economist,Outcomes Research Analyst,alternative,authored,synthetic,true
+CAREER-309,Health Economist,Health Economist (health financing),specialism,authored,synthetic,true
+CAREER-309,Health Economist,Health Economist (cost-effectiveness analysis),specialism,authored,synthetic,true
+CAREER-309,Health Economist,Health Economist (health insurance design),specialism,authored,synthetic,true
+CAREER-309,Health Economist,Health Economist (budget analysis),specialism,authored,synthetic,true
+CAREER-309,Health Economist,Health Economist (health policy),specialism,authored,synthetic,true
+CAREER-309,Health Economist,Health Economist (pharmaceutical pricing),specialism,authored,synthetic,true
 CAREER-309,Health Economist,Student on clinical placement (health financing),entry,derived,synthetic,true
 CAREER-309,Health Economist,Intern Health Economist,entry,derived,synthetic,true
 CAREER-309,Health Economist,Newly registered Health Economist,entry,derived,synthetic,true
@@ -9008,8 +9553,20 @@ CAREER-309,Health Economist,Health consultant for a non-governmental organisatio
 CAREER-309,Health Economist,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-309,Health Economist,Economist,lateral,derived,synthetic,true
 CAREER-309,Health Economist,Agricultural Economist,lateral,derived,synthetic,true
-CAREER-309,Health Economist,Human Rights Officer,lateral,derived,synthetic,true
-CAREER-309,Health Economist,Public Administrator,lateral,derived,synthetic,true
+CAREER-309,Health Economist,Data Analyst,lateral,derived,synthetic,true
+CAREER-309,Health Economist,Actuarial Analyst,lateral,derived,synthetic,true
+CAREER-310,Medical Social Worker,Hospital Social Worker,alternative,authored,synthetic,true
+CAREER-310,Medical Social Worker,Clinical Social Worker,alternative,authored,synthetic,true
+CAREER-310,Medical Social Worker,Patient Support Officer,alternative,authored,synthetic,true
+CAREER-310,Medical Social Worker,Psychosocial Counsellor,alternative,authored,synthetic,true
+CAREER-310,Medical Social Worker,Palliative Care Social Worker,alternative,authored,synthetic,true
+CAREER-310,Medical Social Worker,Social Welfare Officer,alternative,authored,synthetic,true
+CAREER-310,Medical Social Worker,Medical Social Worker (hospital discharge planning),specialism,authored,synthetic,true
+CAREER-310,Medical Social Worker,Medical Social Worker (palliative care),specialism,authored,synthetic,true
+CAREER-310,Medical Social Worker,Medical Social Worker (child protection),specialism,authored,synthetic,true
+CAREER-310,Medical Social Worker,Medical Social Worker (HIV psychosocial support),specialism,authored,synthetic,true
+CAREER-310,Medical Social Worker,Medical Social Worker (mental health),specialism,authored,synthetic,true
+CAREER-310,Medical Social Worker,Medical Social Worker (waiver and welfare assessment),specialism,authored,synthetic,true
 CAREER-310,Medical Social Worker,Student on clinical placement (hospital social services),entry,derived,synthetic,true
 CAREER-310,Medical Social Worker,Intern Medical Social Worker,entry,derived,synthetic,true
 CAREER-310,Medical Social Worker,Newly registered Medical Social Worker,entry,derived,synthetic,true
@@ -9034,8 +9591,20 @@ CAREER-310,Medical Social Worker,Health consultant for a non-governmental organi
 CAREER-310,Medical Social Worker,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-310,Medical Social Worker,Social Worker,lateral,derived,synthetic,true
 CAREER-310,Medical Social Worker,School Counsellor,lateral,derived,synthetic,true
-CAREER-310,Medical Social Worker,Optometrist,lateral,derived,synthetic,true
 CAREER-310,Medical Social Worker,Psychologist,lateral,derived,synthetic,true
+CAREER-310,Medical Social Worker,Community Health Promoter,lateral,derived,synthetic,true
+CAREER-311,Medical Sales Representative,Medical Representative,alternative,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Pharmaceutical Sales Representative,alternative,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Medical Devices Sales Representative,alternative,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Product Specialist,alternative,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Territory Sales Officer,alternative,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Key Account Representative,alternative,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Medical Sales Representative (prescription medicines),specialism,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Medical Sales Representative (over-the-counter products),specialism,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Medical Sales Representative (medical devices),specialism,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Medical Sales Representative (diagnostics),specialism,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Medical Sales Representative (hospital tenders),specialism,authored,synthetic,true
+CAREER-311,Medical Sales Representative,Medical Sales Representative (pharmacy channel sales),specialism,authored,synthetic,true
 CAREER-311,Medical Sales Representative,Student on clinical placement (healthcare products),entry,derived,synthetic,true
 CAREER-311,Medical Sales Representative,Intern Medical Sales Representative,entry,derived,synthetic,true
 CAREER-311,Medical Sales Representative,Newly registered Medical Sales Representative,entry,derived,synthetic,true
@@ -9059,9 +9628,21 @@ CAREER-311,Medical Sales Representative,Lecturer or clinical instructor,beyond,c
 CAREER-311,Medical Sales Representative,Health consultant for a non-governmental organisation,beyond,category_default,synthetic,true
 CAREER-311,Medical Sales Representative,Regulator or policy adviser,beyond,category_default,synthetic,true
 CAREER-311,Medical Sales Representative,Banking Relationship Officer,lateral,derived,synthetic,true
-CAREER-311,Medical Sales Representative,Corporate Strategy Analyst,lateral,derived,synthetic,true
 CAREER-311,Medical Sales Representative,Customer Service Representative,lateral,derived,synthetic,true
+CAREER-311,Medical Sales Representative,Corporate Strategy Analyst,lateral,derived,synthetic,true
 CAREER-311,Medical Sales Representative,Fundraising Officer,lateral,derived,synthetic,true
+CAREER-312,Bank Operations Officer,Operations Officer,alternative,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Bank Teller,alternative,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Back-Office Officer,alternative,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Customer Service Officer,alternative,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Clearing Officer,alternative,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Branch Operations Officer,alternative,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Bank Operations Officer (branch operations),specialism,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Bank Operations Officer (cash management),specialism,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Bank Operations Officer (account opening),specialism,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Bank Operations Officer (clearing and payments),specialism,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Bank Operations Officer (trade operations),specialism,authored,synthetic,true
+CAREER-312,Bank Operations Officer,Bank Operations Officer (reconciliations),specialism,authored,synthetic,true
 CAREER-312,Bank Operations Officer,Bank Operations Officer intern,entry,derived,synthetic,true
 CAREER-312,Bank Operations Officer,Graduate trainee (branch and back-office operations),entry,derived,synthetic,true
 CAREER-312,Bank Operations Officer,Management trainee,entry,derived,synthetic,true
@@ -9085,10 +9666,22 @@ CAREER-312,Bank Operations Officer,Fintech founder,beyond,category_default,synth
 CAREER-312,Bank Operations Officer,Lecturer or professional trainer,beyond,category_default,synthetic,true
 CAREER-312,Bank Operations Officer,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-312,Bank Operations Officer,Board or audit committee member,beyond,category_default,synthetic,true
-CAREER-312,Bank Operations Officer,Accountant,lateral,derived,synthetic,true
 CAREER-312,Bank Operations Officer,Mobile Money and Payments Specialist,lateral,derived,synthetic,true
+CAREER-312,Bank Operations Officer,Accountant,lateral,derived,synthetic,true
 CAREER-312,Bank Operations Officer,Public Transport Operations Manager,lateral,derived,synthetic,true
 CAREER-312,Bank Operations Officer,Automotive Technician,lateral,derived,synthetic,true
+CAREER-313,Financial Controller,Finance Manager,alternative,authored,synthetic,true
+CAREER-313,Financial Controller,Head of Finance,alternative,authored,synthetic,true
+CAREER-313,Financial Controller,Group Financial Controller,alternative,authored,synthetic,true
+CAREER-313,Financial Controller,Chief Accountant,alternative,authored,synthetic,true
+CAREER-313,Financial Controller,Finance Director,alternative,authored,synthetic,true
+CAREER-313,Financial Controller,Finance Business Partner,alternative,authored,synthetic,true
+CAREER-313,Financial Controller,Financial Controller (financial reporting),specialism,authored,synthetic,true
+CAREER-313,Financial Controller,Financial Controller (internal controls),specialism,authored,synthetic,true
+CAREER-313,Financial Controller,Financial Controller (budgeting),specialism,authored,synthetic,true
+CAREER-313,Financial Controller,Financial Controller (group consolidation),specialism,authored,synthetic,true
+CAREER-313,Financial Controller,Financial Controller (audit management),specialism,authored,synthetic,true
+CAREER-313,Financial Controller,Financial Controller (finance team leadership),specialism,authored,synthetic,true
 CAREER-313,Financial Controller,Financial Controller intern,entry,derived,synthetic,true
 CAREER-313,Financial Controller,Graduate trainee (finance leadership),entry,derived,synthetic,true
 CAREER-313,Financial Controller,Management trainee,entry,derived,synthetic,true
@@ -9101,7 +9694,6 @@ CAREER-313,Financial Controller,Financial Controller Supervisor,progression,deri
 CAREER-313,Financial Controller,"Manager, finance leadership",progression,derived,synthetic,true
 CAREER-313,Financial Controller,Head of finance leadership,progression,derived,synthetic,true
 CAREER-313,Financial Controller,Branch Manager,leadership,category_default,synthetic,true
-CAREER-313,Financial Controller,Finance Manager,leadership,category_default,synthetic,true
 CAREER-313,Financial Controller,Head of Department,leadership,category_default,synthetic,true
 CAREER-313,Financial Controller,Chief Finance Officer,leadership,category_default,synthetic,true
 CAREER-313,Financial Controller,Chief Risk Officer,leadership,category_default,synthetic,true
@@ -9113,9 +9705,21 @@ CAREER-313,Financial Controller,Lecturer or professional trainer,beyond,category
 CAREER-313,Financial Controller,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-313,Financial Controller,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-313,Financial Controller,Public Finance Officer,lateral,derived,synthetic,true
-CAREER-313,Financial Controller,SACCO Manager,lateral,derived,synthetic,true
-CAREER-313,Financial Controller,Financial Planner,lateral,derived,synthetic,true
+CAREER-313,Financial Controller,Cost Accountant,lateral,derived,synthetic,true
 CAREER-313,Financial Controller,Accountant,lateral,derived,synthetic,true
+CAREER-313,Financial Controller,SACCO Manager,lateral,derived,synthetic,true
+CAREER-314,Pension Fund Administrator,Pensions Administrator,alternative,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Retirement Benefits Officer,alternative,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Pensions Officer,alternative,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Scheme Administrator,alternative,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Benefits Administrator,alternative,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Pensions Analyst,alternative,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Pension Fund Administrator (occupational pension schemes),specialism,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Pension Fund Administrator (individual pension plans),specialism,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Pension Fund Administrator (benefits processing),specialism,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Pension Fund Administrator (member records),specialism,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Pension Fund Administrator (scheme compliance),specialism,authored,synthetic,true
+CAREER-314,Pension Fund Administrator,Pension Fund Administrator (trustee support),specialism,authored,synthetic,true
 CAREER-314,Pension Fund Administrator,Pension Fund Administrator intern,entry,derived,synthetic,true
 CAREER-314,Pension Fund Administrator,Graduate trainee (retirement benefits),entry,derived,synthetic,true
 CAREER-314,Pension Fund Administrator,Management trainee,entry,derived,synthetic,true
@@ -9139,10 +9743,22 @@ CAREER-314,Pension Fund Administrator,Fintech founder,beyond,category_default,sy
 CAREER-314,Pension Fund Administrator,Lecturer or professional trainer,beyond,category_default,synthetic,true
 CAREER-314,Pension Fund Administrator,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-314,Pension Fund Administrator,Board or audit committee member,beyond,category_default,synthetic,true
-CAREER-314,Pension Fund Administrator,Compliance and Regulatory Officer,lateral,derived,synthetic,true
-CAREER-314,Pension Fund Administrator,Securities Dealer,lateral,derived,synthetic,true
 CAREER-314,Pension Fund Administrator,Risk Analyst,lateral,derived,synthetic,true
+CAREER-314,Pension Fund Administrator,Securities Dealer,lateral,derived,synthetic,true
 CAREER-314,Pension Fund Administrator,Budget Analyst,lateral,derived,synthetic,true
+CAREER-314,Pension Fund Administrator,Compliance and Regulatory Officer,lateral,derived,synthetic,true
+CAREER-315,Insurance Claims Analyst,Claims Officer,alternative,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Claims Assessor,alternative,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Claims Adjuster,alternative,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Claims Handler,alternative,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Medical Claims Analyst,alternative,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Motor Claims Officer,alternative,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Insurance Claims Analyst (motor claims),specialism,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Insurance Claims Analyst (medical claims),specialism,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Insurance Claims Analyst (property claims),specialism,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Insurance Claims Analyst (life claims),specialism,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Insurance Claims Analyst (liability claims),specialism,authored,synthetic,true
+CAREER-315,Insurance Claims Analyst,Insurance Claims Analyst (claims fraud detection),specialism,authored,synthetic,true
 CAREER-315,Insurance Claims Analyst,Insurance Claims Analyst intern,entry,derived,synthetic,true
 CAREER-315,Insurance Claims Analyst,Graduate trainee (claims),entry,derived,synthetic,true
 CAREER-315,Insurance Claims Analyst,Management trainee,entry,derived,synthetic,true
@@ -9167,9 +9783,21 @@ CAREER-315,Insurance Claims Analyst,Lecturer or professional trainer,beyond,cate
 CAREER-315,Insurance Claims Analyst,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-315,Insurance Claims Analyst,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-315,Insurance Claims Analyst,Anti-Money Laundering Analyst,lateral,derived,synthetic,true
+CAREER-315,Insurance Claims Analyst,Insurance Underwriter,lateral,derived,synthetic,true
 CAREER-315,Insurance Claims Analyst,Last-Mile Delivery Manager,lateral,derived,synthetic,true
 CAREER-315,Insurance Claims Analyst,Anti-Corruption Investigator,lateral,derived,synthetic,true
-CAREER-315,Insurance Claims Analyst,Insurance Underwriter,lateral,derived,synthetic,true
+CAREER-316,Islamic Finance Specialist,Islamic Banking Officer,alternative,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Sharia Compliance Officer,alternative,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Islamic Finance Analyst,alternative,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Takaful Officer,alternative,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Islamic Products Officer,alternative,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Sharia Auditor,alternative,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Islamic Finance Specialist (Islamic retail banking),specialism,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Islamic Finance Specialist (Sharia compliance),specialism,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Islamic Finance Specialist (takaful insurance),specialism,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Islamic Finance Specialist (sukuk),specialism,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Islamic Finance Specialist (Islamic trade finance),specialism,authored,synthetic,true
+CAREER-316,Islamic Finance Specialist,Islamic Finance Specialist (product structuring),specialism,authored,synthetic,true
 CAREER-316,Islamic Finance Specialist,Islamic Finance Specialist intern,entry,derived,synthetic,true
 CAREER-316,Islamic Finance Specialist,Graduate trainee (Sharia-compliant finance),entry,derived,synthetic,true
 CAREER-316,Islamic Finance Specialist,Management trainee,entry,derived,synthetic,true
@@ -9193,10 +9821,22 @@ CAREER-316,Islamic Finance Specialist,Fintech founder,beyond,category_default,sy
 CAREER-316,Islamic Finance Specialist,Lecturer or professional trainer,beyond,category_default,synthetic,true
 CAREER-316,Islamic Finance Specialist,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-316,Islamic Finance Specialist,Board or audit committee member,beyond,category_default,synthetic,true
-CAREER-316,Islamic Finance Specialist,Tax Consultant,lateral,derived,synthetic,true
 CAREER-316,Islamic Finance Specialist,Financial Planner,lateral,derived,synthetic,true
 CAREER-316,Islamic Finance Specialist,Securities Dealer,lateral,derived,synthetic,true
+CAREER-316,Islamic Finance Specialist,Tax Consultant,lateral,derived,synthetic,true
 CAREER-316,Islamic Finance Specialist,Advocate,lateral,derived,synthetic,true
+CAREER-317,SACCO Manager,SACCO Chief Executive,alternative,authored,synthetic,true
+CAREER-317,SACCO Manager,Co-operative Manager,alternative,authored,synthetic,true
+CAREER-317,SACCO Manager,Credit Union Manager,alternative,authored,synthetic,true
+CAREER-317,SACCO Manager,Branch Manager,alternative,authored,synthetic,true
+CAREER-317,SACCO Manager,General Manager,alternative,authored,synthetic,true
+CAREER-317,SACCO Manager,Operations Manager,alternative,authored,synthetic,true
+CAREER-317,SACCO Manager,SACCO Manager (savings and credit management),specialism,authored,synthetic,true
+CAREER-317,SACCO Manager,SACCO Manager (member services),specialism,authored,synthetic,true
+CAREER-317,SACCO Manager,SACCO Manager (credit administration),specialism,authored,synthetic,true
+CAREER-317,SACCO Manager,SACCO Manager (front-office operations),specialism,authored,synthetic,true
+CAREER-317,SACCO Manager,SACCO Manager (governance and board support),specialism,authored,synthetic,true
+CAREER-317,SACCO Manager,SACCO Manager (regulatory reporting),specialism,authored,synthetic,true
 CAREER-317,SACCO Manager,SACCO Manager intern,entry,derived,synthetic,true
 CAREER-317,SACCO Manager,Graduate trainee (co-operative finance),entry,derived,synthetic,true
 CAREER-317,SACCO Manager,Management trainee,entry,derived,synthetic,true
@@ -9208,7 +9848,6 @@ CAREER-317,SACCO Manager,Senior SACCO Manager,progression,derived,synthetic,true
 CAREER-317,SACCO Manager,SACCO Manager Supervisor,progression,derived,synthetic,true
 CAREER-317,SACCO Manager,"Manager, co-operative finance",progression,derived,synthetic,true
 CAREER-317,SACCO Manager,Head of co-operative finance,progression,derived,synthetic,true
-CAREER-317,SACCO Manager,Branch Manager,leadership,category_default,synthetic,true
 CAREER-317,SACCO Manager,Finance Manager,leadership,category_default,synthetic,true
 CAREER-317,SACCO Manager,Head of Department,leadership,category_default,synthetic,true
 CAREER-317,SACCO Manager,Chief Finance Officer,leadership,category_default,synthetic,true
@@ -9222,8 +9861,20 @@ CAREER-317,SACCO Manager,Regulator or supervisory role,beyond,category_default,s
 CAREER-317,SACCO Manager,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-317,SACCO Manager,Financial Controller,lateral,derived,synthetic,true
 CAREER-317,SACCO Manager,Accountant,lateral,derived,synthetic,true
-CAREER-317,SACCO Manager,Public Finance Officer,lateral,derived,synthetic,true
 CAREER-317,SACCO Manager,Company Secretary,lateral,derived,synthetic,true
+CAREER-317,SACCO Manager,Public Finance Officer,lateral,derived,synthetic,true
+CAREER-318,Equity Trader,Stock Trader,alternative,authored,synthetic,true
+CAREER-318,Equity Trader,Trader,alternative,authored,synthetic,true
+CAREER-318,Equity Trader,Execution Trader,alternative,authored,synthetic,true
+CAREER-318,Equity Trader,Proprietary Trader,alternative,authored,synthetic,true
+CAREER-318,Equity Trader,Trading Analyst,alternative,authored,synthetic,true
+CAREER-318,Equity Trader,Sales Trader,alternative,authored,synthetic,true
+CAREER-318,Equity Trader,Equity Trader (cash equities),specialism,authored,synthetic,true
+CAREER-318,Equity Trader,Equity Trader (execution trading),specialism,authored,synthetic,true
+CAREER-318,Equity Trader,Equity Trader (proprietary trading),specialism,authored,synthetic,true
+CAREER-318,Equity Trader,Equity Trader (algorithmic trading),specialism,authored,synthetic,true
+CAREER-318,Equity Trader,Equity Trader (derivatives),specialism,authored,synthetic,true
+CAREER-318,Equity Trader,Equity Trader (market making),specialism,authored,synthetic,true
 CAREER-318,Equity Trader,Equity Trader intern,entry,derived,synthetic,true
 CAREER-318,Equity Trader,Graduate trainee (securities trading),entry,derived,synthetic,true
 CAREER-318,Equity Trader,Management trainee,entry,derived,synthetic,true
@@ -9248,9 +9899,21 @@ CAREER-318,Equity Trader,Lecturer or professional trainer,beyond,category_defaul
 CAREER-318,Equity Trader,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-318,Equity Trader,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-318,Equity Trader,Securities Dealer,lateral,derived,synthetic,true
-CAREER-318,Equity Trader,Corporate Strategy Analyst,lateral,derived,synthetic,true
 CAREER-318,Equity Trader,Hotel Sales Manager,lateral,derived,synthetic,true
+CAREER-318,Equity Trader,Corporate Strategy Analyst,lateral,derived,synthetic,true
 CAREER-318,Equity Trader,Project Manager,lateral,derived,synthetic,true
+CAREER-319,Budget Analyst,Budget Officer,alternative,authored,synthetic,true
+CAREER-319,Budget Analyst,Planning and Budget Analyst,alternative,authored,synthetic,true
+CAREER-319,Budget Analyst,Fiscal Analyst,alternative,authored,synthetic,true
+CAREER-319,Budget Analyst,Finance Officer (Budget),alternative,authored,synthetic,true
+CAREER-319,Budget Analyst,Cost and Budget Analyst,alternative,authored,synthetic,true
+CAREER-319,Budget Analyst,Programme Budget Officer,alternative,authored,synthetic,true
+CAREER-319,Budget Analyst,Budget Analyst (public-sector budgeting),specialism,authored,synthetic,true
+CAREER-319,Budget Analyst,Budget Analyst (programme budgets),specialism,authored,synthetic,true
+CAREER-319,Budget Analyst,Budget Analyst (donor and grant budgets),specialism,authored,synthetic,true
+CAREER-319,Budget Analyst,Budget Analyst (capital budgeting),specialism,authored,synthetic,true
+CAREER-319,Budget Analyst,Budget Analyst (budget monitoring),specialism,authored,synthetic,true
+CAREER-319,Budget Analyst,Budget Analyst (forecasting),specialism,authored,synthetic,true
 CAREER-319,Budget Analyst,Budget Analyst intern,entry,derived,synthetic,true
 CAREER-319,Budget Analyst,Graduate trainee (budgeting),entry,derived,synthetic,true
 CAREER-319,Budget Analyst,Management trainee,entry,derived,synthetic,true
@@ -9276,8 +9939,20 @@ CAREER-319,Budget Analyst,Regulator or supervisory role,beyond,category_default,
 CAREER-319,Budget Analyst,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-319,Budget Analyst,Financial Analyst,lateral,derived,synthetic,true
 CAREER-319,Budget Analyst,Risk Analyst,lateral,derived,synthetic,true
-CAREER-319,Budget Analyst,Grants Manager,lateral,derived,synthetic,true
-CAREER-319,Budget Analyst,Actuarial Analyst,lateral,derived,synthetic,true
+CAREER-319,Budget Analyst,Data Analyst,lateral,derived,synthetic,true
+CAREER-319,Budget Analyst,Pension Fund Administrator,lateral,derived,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,AML Analyst,alternative,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Financial Crime Analyst,alternative,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Transaction Monitoring Analyst,alternative,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,KYC Analyst,alternative,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Sanctions Analyst,alternative,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,AML Investigator,alternative,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Anti-Money Laundering Analyst (transaction monitoring),specialism,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Anti-Money Laundering Analyst (customer due diligence),specialism,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Anti-Money Laundering Analyst (sanctions screening),specialism,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Anti-Money Laundering Analyst (suspicious activity reporting),specialism,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Anti-Money Laundering Analyst (financial crime investigations),specialism,authored,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Anti-Money Laundering Analyst (correspondent banking),specialism,authored,synthetic,true
 CAREER-320,Anti-Money Laundering Analyst,Anti-Money Laundering Analyst intern,entry,derived,synthetic,true
 CAREER-320,Anti-Money Laundering Analyst,Graduate trainee (financial crime),entry,derived,synthetic,true
 CAREER-320,Anti-Money Laundering Analyst,Management trainee,entry,derived,synthetic,true
@@ -9302,9 +9977,21 @@ CAREER-320,Anti-Money Laundering Analyst,Lecturer or professional trainer,beyond
 CAREER-320,Anti-Money Laundering Analyst,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-320,Anti-Money Laundering Analyst,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-320,Anti-Money Laundering Analyst,Insurance Claims Analyst,lateral,derived,synthetic,true
-CAREER-320,Anti-Money Laundering Analyst,Anti-Corruption Investigator,lateral,derived,synthetic,true
 CAREER-320,Anti-Money Laundering Analyst,Compliance Officer,lateral,derived,synthetic,true
-CAREER-320,Anti-Money Laundering Analyst,Fintech Product Analyst,lateral,derived,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Anti-Corruption Investigator,lateral,derived,synthetic,true
+CAREER-320,Anti-Money Laundering Analyst,Treasury Officer,lateral,derived,synthetic,true
+CAREER-321,Cost Accountant,Management Accountant,alternative,authored,synthetic,true
+CAREER-321,Cost Accountant,Cost Analyst,alternative,authored,synthetic,true
+CAREER-321,Cost Accountant,Cost Controller,alternative,authored,synthetic,true
+CAREER-321,Cost Accountant,Factory Accountant,alternative,authored,synthetic,true
+CAREER-321,Cost Accountant,Inventory Accountant,alternative,authored,synthetic,true
+CAREER-321,Cost Accountant,Project Accountant,alternative,authored,synthetic,true
+CAREER-321,Cost Accountant,Cost Accountant (product costing),specialism,authored,synthetic,true
+CAREER-321,Cost Accountant,Cost Accountant (inventory valuation),specialism,authored,synthetic,true
+CAREER-321,Cost Accountant,Cost Accountant (variance analysis),specialism,authored,synthetic,true
+CAREER-321,Cost Accountant,Cost Accountant (budgeting),specialism,authored,synthetic,true
+CAREER-321,Cost Accountant,Cost Accountant (project costing),specialism,authored,synthetic,true
+CAREER-321,Cost Accountant,Cost Accountant (profitability analysis),specialism,authored,synthetic,true
 CAREER-321,Cost Accountant,Cost Accountant intern,entry,derived,synthetic,true
 CAREER-321,Cost Accountant,Graduate trainee (cost and management accounting),entry,derived,synthetic,true
 CAREER-321,Cost Accountant,Management trainee,entry,derived,synthetic,true
@@ -9329,9 +10016,21 @@ CAREER-321,Cost Accountant,Lecturer or professional trainer,beyond,category_defa
 CAREER-321,Cost Accountant,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-321,Cost Accountant,Board or audit committee member,beyond,category_default,synthetic,true
 CAREER-321,Cost Accountant,Financial Controller,lateral,derived,synthetic,true
-CAREER-321,Cost Accountant,Grants Manager,lateral,derived,synthetic,true
 CAREER-321,Cost Accountant,Financial Planner,lateral,derived,synthetic,true
-CAREER-321,Cost Accountant,NGO Programme Officer,lateral,derived,synthetic,true
+CAREER-321,Cost Accountant,Construction Project Manager,lateral,derived,synthetic,true
+CAREER-321,Cost Accountant,Project Manager,lateral,derived,synthetic,true
+CAREER-322,Venture Capital Analyst,Investment Associate,alternative,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,VC Associate,alternative,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Private Equity Analyst,alternative,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Deal Analyst,alternative,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Investment Analyst,alternative,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Portfolio Associate,alternative,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Venture Capital Analyst (deal sourcing),specialism,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Venture Capital Analyst (due diligence),specialism,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Venture Capital Analyst (startup valuation),specialism,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Venture Capital Analyst (portfolio support),specialism,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Venture Capital Analyst (impact investing),specialism,authored,synthetic,true
+CAREER-322,Venture Capital Analyst,Venture Capital Analyst (fund reporting),specialism,authored,synthetic,true
 CAREER-322,Venture Capital Analyst,Venture Capital Analyst intern,entry,derived,synthetic,true
 CAREER-322,Venture Capital Analyst,Graduate trainee (startup investment),entry,derived,synthetic,true
 CAREER-322,Venture Capital Analyst,Management trainee,entry,derived,synthetic,true
@@ -9355,7 +10054,6 @@ CAREER-322,Venture Capital Analyst,Fintech founder,beyond,category_default,synth
 CAREER-322,Venture Capital Analyst,Lecturer or professional trainer,beyond,category_default,synthetic,true
 CAREER-322,Venture Capital Analyst,Regulator or supervisory role,beyond,category_default,synthetic,true
 CAREER-322,Venture Capital Analyst,Board or audit committee member,beyond,category_default,synthetic,true
-CAREER-322,Venture Capital Analyst,Investment Analyst,lateral,derived,synthetic,true
 CAREER-322,Venture Capital Analyst,Financial Analyst,lateral,derived,synthetic,true
 CAREER-322,Venture Capital Analyst,Brand Manager,lateral,derived,synthetic,true
 CAREER-322,Venture Capital Analyst,Marketing Executive,lateral,derived,synthetic,true
@@ -9385,7 +10083,7 @@ CAREER-323,Real Estate Agent,Investor or mentor,beyond,category_default,syntheti
 CAREER-323,Real Estate Agent,Sales Executive,lateral,derived,synthetic,true
 CAREER-323,Real Estate Agent,Business Development Officer,lateral,derived,synthetic,true
 CAREER-323,Real Estate Agent,Advocate,lateral,derived,synthetic,true
-CAREER-323,Real Estate Agent,Tax Consultant,lateral,derived,synthetic,true
+CAREER-323,Real Estate Agent,Influencer Marketing Manager,lateral,derived,synthetic,true
 CAREER-324,Property Manager,Property Manager intern,entry,derived,synthetic,true
 CAREER-324,Property Manager,Graduate trainee (property management),entry,derived,synthetic,true
 CAREER-324,Property Manager,Management trainee,entry,derived,synthetic,true
@@ -9464,9 +10162,9 @@ CAREER-326,Executive Assistant,Lecturer or corporate trainer,beyond,category_def
 CAREER-326,Executive Assistant,Non-executive director,beyond,category_default,synthetic,true
 CAREER-326,Executive Assistant,Investor or mentor,beyond,category_default,synthetic,true
 CAREER-326,Executive Assistant,Counsellor,lateral,derived,synthetic,true
-CAREER-326,Executive Assistant,Psychologist,lateral,derived,synthetic,true
 CAREER-326,Executive Assistant,Examinations Officer,lateral,derived,synthetic,true
 CAREER-326,Executive Assistant,Marriage and Family Therapist,lateral,derived,synthetic,true
+CAREER-326,Executive Assistant,Sign Language Interpreter,lateral,derived,synthetic,true
 CAREER-327,Customer Service Representative,Customer Service Representative intern,entry,derived,synthetic,true
 CAREER-327,Customer Service Representative,Graduate trainee (customer support),entry,derived,synthetic,true
 CAREER-327,Customer Service Representative,Management trainee,entry,derived,synthetic,true
@@ -9492,8 +10190,8 @@ CAREER-327,Customer Service Representative,Non-executive director,beyond,categor
 CAREER-327,Customer Service Representative,Investor or mentor,beyond,category_default,synthetic,true
 CAREER-327,Customer Service Representative,Sales Executive,lateral,derived,synthetic,true
 CAREER-327,Customer Service Representative,Counsellor,lateral,derived,synthetic,true
-CAREER-327,Customer Service Representative,Banking Relationship Officer,lateral,derived,synthetic,true
 CAREER-327,Customer Service Representative,Psychosocial Support Officer,lateral,derived,synthetic,true
+CAREER-327,Customer Service Representative,Bartender and Mixologist,lateral,derived,synthetic,true
 CAREER-328,Call Centre Team Leader,Call Centre Team Leader intern,entry,derived,synthetic,true
 CAREER-328,Call Centre Team Leader,Graduate trainee (contact centre operations),entry,derived,synthetic,true
 CAREER-328,Call Centre Team Leader,Management trainee,entry,derived,synthetic,true
@@ -9922,8 +10620,8 @@ CAREER-343,Anti-Corruption Investigator,Legal consultant,beyond,category_default
 CAREER-343,Anti-Corruption Investigator,Lecturer in law,beyond,category_default,synthetic,true
 CAREER-343,Anti-Corruption Investigator,Policy adviser,beyond,category_default,synthetic,true
 CAREER-343,Anti-Corruption Investigator,Elected or appointed public office,beyond,category_default,synthetic,true
-CAREER-343,Anti-Corruption Investigator,Auditor,lateral,derived,synthetic,true
 CAREER-343,Anti-Corruption Investigator,Public Auditor,lateral,derived,synthetic,true
+CAREER-343,Anti-Corruption Investigator,Auditor,lateral,derived,synthetic,true
 CAREER-343,Anti-Corruption Investigator,Ombudsman Officer,lateral,derived,synthetic,true
 CAREER-343,Anti-Corruption Investigator,Human Rights Officer,lateral,derived,synthetic,true
 CAREER-344,Land Registrar,Law student on attachment (land registration),entry,derived,synthetic,true
@@ -9977,9 +10675,9 @@ CAREER-345,Legal Technologist,Lecturer in law,beyond,category_default,synthetic,
 CAREER-345,Legal Technologist,Policy adviser,beyond,category_default,synthetic,true
 CAREER-345,Legal Technologist,Elected or appointed public office,beyond,category_default,synthetic,true
 CAREER-345,Legal Technologist,Business Analyst,lateral,derived,synthetic,true
-CAREER-345,Legal Technologist,Risk Analyst,lateral,derived,synthetic,true
 CAREER-345,Legal Technologist,Statistician,lateral,derived,synthetic,true
 CAREER-345,Legal Technologist,Market Research Analyst,lateral,derived,synthetic,true
+CAREER-345,Legal Technologist,Development Planning Officer,lateral,derived,synthetic,true
 CAREER-346,Examinations Officer,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-346,Examinations Officer,Intern teacher,entry,derived,synthetic,true
 CAREER-346,Examinations Officer,Teaching assistant,entry,derived,synthetic,true
@@ -10006,7 +10704,7 @@ CAREER-346,Examinations Officer,Education policy adviser,beyond,category_default
 CAREER-346,Examinations Officer,Administrative Assistant,lateral,derived,synthetic,true
 CAREER-346,Examinations Officer,Court Clerk,lateral,derived,synthetic,true
 CAREER-346,Examinations Officer,Sign Language Interpreter,lateral,derived,synthetic,true
-CAREER-346,Examinations Officer,Psychologist,lateral,derived,synthetic,true
+CAREER-346,Examinations Officer,Volunteer Coordinator,lateral,derived,synthetic,true
 CAREER-347,Education Researcher,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-347,Education Researcher,Intern teacher,entry,derived,synthetic,true
 CAREER-347,Education Researcher,Teaching assistant,entry,derived,synthetic,true
@@ -10033,7 +10731,7 @@ CAREER-347,Education Researcher,Education policy adviser,beyond,category_default
 CAREER-347,Education Researcher,Public Policy Analyst,lateral,derived,synthetic,true
 CAREER-347,Education Researcher,Research Scientist,lateral,derived,synthetic,true
 CAREER-347,Education Researcher,Sociologist,lateral,derived,synthetic,true
-CAREER-347,Education Researcher,Biomedical Scientist,lateral,derived,synthetic,true
+CAREER-347,Education Researcher,Legal Researcher,lateral,derived,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,Intern teacher,entry,derived,synthetic,true
 CAREER-348,Sports Coach and PE Teacher,Teaching assistant,entry,derived,synthetic,true
@@ -10167,8 +10865,8 @@ CAREER-352,Quality Assurance and Standards Officer,Ed-tech content developer,bey
 CAREER-352,Quality Assurance and Standards Officer,Education policy adviser,beyond,category_default,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,Environmental Consultant,lateral,derived,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,Education Officer,lateral,derived,synthetic,true
-CAREER-352,Quality Assurance and Standards Officer,Auditor,lateral,derived,synthetic,true
 CAREER-352,Quality Assurance and Standards Officer,Probation Officer,lateral,derived,synthetic,true
+CAREER-352,Quality Assurance and Standards Officer,Human Rights Officer,lateral,derived,synthetic,true
 CAREER-353,Dean of Students,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-353,Dean of Students,Intern teacher,entry,derived,synthetic,true
 CAREER-353,Dean of Students,Teaching assistant,entry,derived,synthetic,true
@@ -10194,7 +10892,7 @@ CAREER-353,Dean of Students,Ed-tech content developer,beyond,category_default,sy
 CAREER-353,Dean of Students,Education policy adviser,beyond,category_default,synthetic,true
 CAREER-353,Dean of Students,School Counsellor,lateral,derived,synthetic,true
 CAREER-353,Dean of Students,Social Worker,lateral,derived,synthetic,true
-CAREER-353,Dean of Students,Psychologist,lateral,derived,synthetic,true
+CAREER-353,Dean of Students,Medical Social Worker,lateral,derived,synthetic,true
 CAREER-353,Dean of Students,Probation Officer,lateral,derived,synthetic,true
 CAREER-354,E-learning Content Developer,Student teacher on teaching practice,entry,derived,synthetic,true
 CAREER-354,E-learning Content Developer,Intern teacher,entry,derived,synthetic,true
@@ -10274,9 +10972,9 @@ CAREER-356,Admissions Officer,Teacher trainer,beyond,category_default,synthetic,
 CAREER-356,Admissions Officer,Ed-tech content developer,beyond,category_default,synthetic,true
 CAREER-356,Admissions Officer,Education policy adviser,beyond,category_default,synthetic,true
 CAREER-356,Admissions Officer,Administrative Assistant,lateral,derived,synthetic,true
-CAREER-356,Admissions Officer,Health Records and Information Officer,lateral,derived,synthetic,true
 CAREER-356,Admissions Officer,Court Clerk,lateral,derived,synthetic,true
 CAREER-356,Admissions Officer,Public Procurement Officer,lateral,derived,synthetic,true
+CAREER-356,Admissions Officer,Lands Officer,lateral,derived,synthetic,true
 CAREER-357,Dairy Technologist,Attachment student (milk processing),entry,derived,synthetic,true
 CAREER-357,Dairy Technologist,Dairy Technologist intern,entry,derived,synthetic,true
 CAREER-357,Dairy Technologist,Field assistant,entry,derived,synthetic,true
@@ -10303,7 +11001,7 @@ CAREER-357,Dairy Technologist,Policy or regulatory officer,beyond,category_defau
 CAREER-357,Dairy Technologist,Food Scientist,lateral,derived,synthetic,true
 CAREER-357,Dairy Technologist,Hairdresser and Beauty Therapist,lateral,derived,synthetic,true
 CAREER-357,Dairy Technologist,Crane and Plant Operator,lateral,derived,synthetic,true
-CAREER-357,Dairy Technologist,Medical Laboratory Technologist,lateral,derived,synthetic,true
+CAREER-357,Dairy Technologist,Seed Technologist,lateral,derived,synthetic,true
 CAREER-358,Poultry Farm Manager,Attachment student (poultry production),entry,derived,synthetic,true
 CAREER-358,Poultry Farm Manager,Poultry Farm Manager intern,entry,derived,synthetic,true
 CAREER-358,Poultry Farm Manager,Field assistant,entry,derived,synthetic,true
@@ -10492,7 +11190,7 @@ CAREER-364,Environmental Educator,Policy or regulatory officer,beyond,category_d
 CAREER-364,Environmental Educator,Community Mobiliser,lateral,derived,synthetic,true
 CAREER-364,Environmental Educator,Innovation Manager,lateral,derived,synthetic,true
 CAREER-364,Environmental Educator,Legal Aid Officer,lateral,derived,synthetic,true
-CAREER-364,Environmental Educator,Nutritionist and Dietitian,lateral,derived,synthetic,true
+CAREER-364,Environmental Educator,Adult Education Facilitator,lateral,derived,synthetic,true
 CAREER-365,Carbon Project Officer,Attachment student (carbon markets),entry,derived,synthetic,true
 CAREER-365,Carbon Project Officer,Carbon Project Officer intern,entry,derived,synthetic,true
 CAREER-365,Carbon Project Officer,Field assistant,entry,derived,synthetic,true
@@ -10544,9 +11242,9 @@ CAREER-366,Plant Pathologist,Lecturer or trainer,beyond,category_default,synthet
 CAREER-366,Plant Pathologist,Input supplier or agro-dealer,beyond,category_default,synthetic,true
 CAREER-366,Plant Pathologist,Policy or regulatory officer,beyond,category_default,synthetic,true
 CAREER-366,Plant Pathologist,Entomologist,lateral,derived,synthetic,true
-CAREER-366,Plant Pathologist,Dental Technologist,lateral,derived,synthetic,true
 CAREER-366,Plant Pathologist,Research Scientist,lateral,derived,synthetic,true
 CAREER-366,Plant Pathologist,Toxicologist,lateral,derived,synthetic,true
+CAREER-366,Plant Pathologist,Pharmacologist,lateral,derived,synthetic,true
 CAREER-367,Livestock Production Officer,Attachment student (livestock systems),entry,derived,synthetic,true
 CAREER-367,Livestock Production Officer,Livestock Production Officer intern,entry,derived,synthetic,true
 CAREER-367,Livestock Production Officer,Field assistant,entry,derived,synthetic,true
@@ -11139,7 +11837,7 @@ CAREER-388,Wedding Planner,Events entrepreneur,beyond,category_default,synthetic
 CAREER-388,Wedding Planner,Events Planner,lateral,derived,synthetic,true
 CAREER-388,Wedding Planner,Office Manager,lateral,derived,synthetic,true
 CAREER-388,Wedding Planner,Facilities Manager,lateral,derived,synthetic,true
-CAREER-388,Wedding Planner,Financial Planner,lateral,derived,synthetic,true
+CAREER-388,Wedding Planner,Conference and Meetings Coordinator,lateral,derived,synthetic,true
 CAREER-389,Sports and Recreation Officer,Attachment student (leisure and recreation),entry,derived,synthetic,true
 CAREER-389,Sports and Recreation Officer,Sports and Recreation Officer intern,entry,derived,synthetic,true
 CAREER-389,Sports and Recreation Officer,Trainee Sports and Recreation Officer,entry,derived,synthetic,true
@@ -11164,9 +11862,9 @@ CAREER-389,Sports and Recreation Officer,Destination marketing role,beyond,categ
 CAREER-389,Sports and Recreation Officer,Cruise or international hotel roles,beyond,category_default,synthetic,true
 CAREER-389,Sports and Recreation Officer,Events entrepreneur,beyond,category_default,synthetic,true
 CAREER-389,Sports and Recreation Officer,Sports Coach and PE Teacher,lateral,derived,synthetic,true
-CAREER-389,Sports and Recreation Officer,Occupational Therapist,lateral,derived,synthetic,true
 CAREER-389,Sports and Recreation Officer,Port Operations Officer,lateral,derived,synthetic,true
 CAREER-389,Sports and Recreation Officer,Mining Engineer,lateral,derived,synthetic,true
+CAREER-389,Sports and Recreation Officer,Production Supervisor,lateral,derived,synthetic,true
 CAREER-390,Catering Manager,Attachment student (catering operations),entry,derived,synthetic,true
 CAREER-390,Catering Manager,Catering Manager intern,entry,derived,synthetic,true
 CAREER-390,Catering Manager,Trainee Catering Manager,entry,derived,synthetic,true
@@ -11406,8 +12104,8 @@ CAREER-398,Pharmacologist,Science communicator,beyond,category_default,synthetic
 CAREER-398,Pharmacologist,Consultant,beyond,category_default,synthetic,true
 CAREER-398,Pharmacologist,Science-based entrepreneur,beyond,category_default,synthetic,true
 CAREER-398,Pharmacologist,Research Scientist,lateral,derived,synthetic,true
-CAREER-398,Pharmacologist,Biomedical Scientist,lateral,derived,synthetic,true
 CAREER-398,Pharmacologist,Materials Scientist,lateral,derived,synthetic,true
+CAREER-398,Pharmacologist,Biomedical Scientist,lateral,derived,synthetic,true
 CAREER-398,Pharmacologist,Entomologist,lateral,derived,synthetic,true
 CAREER-399,Radiation Protection Officer,Attachment student (radiation safety),entry,derived,synthetic,true
 CAREER-399,Radiation Protection Officer,Research intern,entry,derived,synthetic,true
@@ -11434,8 +12132,8 @@ CAREER-399,Radiation Protection Officer,Consultant,beyond,category_default,synth
 CAREER-399,Radiation Protection Officer,Science-based entrepreneur,beyond,category_default,synthetic,true
 CAREER-399,Radiation Protection Officer,Laboratory Technician,lateral,derived,synthetic,true
 CAREER-399,Radiation Protection Officer,Toxicologist,lateral,derived,synthetic,true
-CAREER-399,Radiation Protection Officer,Risk Analyst,lateral,derived,synthetic,true
 CAREER-399,Radiation Protection Officer,Contracts Manager,lateral,derived,synthetic,true
+CAREER-399,Radiation Protection Officer,Safeguarding Adviser,lateral,derived,synthetic,true
 CAREER-400,Laboratory Manager,Attachment student (laboratory management),entry,derived,synthetic,true
 CAREER-400,Laboratory Manager,Research intern,entry,derived,synthetic,true
 CAREER-400,Laboratory Manager,Laboratory assistant,entry,derived,synthetic,true
@@ -11703,7 +12401,7 @@ CAREER-409,Stores Clerk,International postings,beyond,category_default,synthetic
 CAREER-409,Stores Clerk,Aircraft Maintenance Engineer,lateral,derived,synthetic,true
 CAREER-409,Stores Clerk,Court Clerk,lateral,derived,synthetic,true
 CAREER-409,Stores Clerk,Inventory Planner,lateral,derived,synthetic,true
-CAREER-409,Stores Clerk,Administrative Assistant,lateral,derived,synthetic,true
+CAREER-409,Stores Clerk,Health Records and Information Officer,lateral,derived,synthetic,true
 CAREER-410,Category Manager,Attachment student (category procurement),entry,derived,synthetic,true
 CAREER-410,Category Manager,Category Manager intern,entry,derived,synthetic,true
 CAREER-410,Category Manager,Graduate trainee (category procurement),entry,derived,synthetic,true
@@ -11891,8 +12589,8 @@ CAREER-416,Marriage and Family Therapist,Policy adviser,beyond,category_default,
 CAREER-416,Marriage and Family Therapist,International organisation roles,beyond,category_default,synthetic,true
 CAREER-416,Marriage and Family Therapist,Counsellor,lateral,derived,synthetic,true
 CAREER-416,Marriage and Family Therapist,Addiction Counsellor,lateral,derived,synthetic,true
-CAREER-416,Marriage and Family Therapist,Psychologist,lateral,derived,synthetic,true
 CAREER-416,Marriage and Family Therapist,National Government Administration Officer,lateral,derived,synthetic,true
+CAREER-416,Marriage and Family Therapist,Psychologist,lateral,derived,synthetic,true
 CAREER-417,Geriatric Care Worker,Attachment student (care for older people),entry,derived,synthetic,true
 CAREER-417,Geriatric Care Worker,Volunteer in care for older people,entry,derived,synthetic,true
 CAREER-417,Geriatric Care Worker,Geriatric Care Worker intern,entry,derived,synthetic,true
@@ -11917,9 +12615,9 @@ CAREER-417,Geriatric Care Worker,Lecturer or trainer,beyond,category_default,syn
 CAREER-417,Geriatric Care Worker,Policy adviser,beyond,category_default,synthetic,true
 CAREER-417,Geriatric Care Worker,International organisation roles,beyond,category_default,synthetic,true
 CAREER-417,Geriatric Care Worker,Paediatrician,lateral,derived,synthetic,true
-CAREER-417,Geriatric Care Worker,Registered Nurse,lateral,derived,synthetic,true
 CAREER-417,Geriatric Care Worker,Social Worker,lateral,derived,synthetic,true
 CAREER-417,Geriatric Care Worker,Volunteer Coordinator,lateral,derived,synthetic,true
+CAREER-417,Geriatric Care Worker,Youth Worker,lateral,derived,synthetic,true
 CAREER-418,Rehabilitation Officer,Attachment student (rehabilitation services),entry,derived,synthetic,true
 CAREER-418,Rehabilitation Officer,Volunteer in rehabilitation services,entry,derived,synthetic,true
 CAREER-418,Rehabilitation Officer,Rehabilitation Officer intern,entry,derived,synthetic,true
@@ -11973,7 +12671,7 @@ CAREER-419,Safeguarding Adviser,International organisation roles,beyond,category
 CAREER-419,Safeguarding Adviser,Disability Inclusion Officer,lateral,derived,synthetic,true
 CAREER-419,Safeguarding Adviser,Gender and Inclusion Officer,lateral,derived,synthetic,true
 CAREER-419,Safeguarding Adviser,Disaster Risk Management Officer,lateral,derived,synthetic,true
-CAREER-419,Safeguarding Adviser,Risk Analyst,lateral,derived,synthetic,true
+CAREER-419,Safeguarding Adviser,Contracts Manager,lateral,derived,synthetic,true
 CAREER-420,Chaplain,Attachment student (pastoral care),entry,derived,synthetic,true
 CAREER-420,Chaplain,Volunteer in pastoral care,entry,derived,synthetic,true
 CAREER-420,Chaplain,Chaplain intern,entry,derived,synthetic,true
@@ -12051,9 +12749,9 @@ CAREER-422,Livelihoods Officer,Researcher or evaluator,beyond,category_default,s
 CAREER-422,Livelihoods Officer,Lecturer or trainer,beyond,category_default,synthetic,true
 CAREER-422,Livelihoods Officer,Policy adviser,beyond,category_default,synthetic,true
 CAREER-422,Livelihoods Officer,International organisation roles,beyond,category_default,synthetic,true
-CAREER-422,Livelihoods Officer,Compliance Officer,lateral,derived,synthetic,true
 CAREER-422,Livelihoods Officer,Human Rights Officer,lateral,derived,synthetic,true
 CAREER-422,Livelihoods Officer,Elections and Governance Officer,lateral,derived,synthetic,true
+CAREER-422,Livelihoods Officer,Compliance Officer,lateral,derived,synthetic,true
 CAREER-422,Livelihoods Officer,Cloud Engineer,lateral,derived,synthetic,true
 CAREER-423,Cash Transfer Programme Officer,Attachment student (social protection),entry,derived,synthetic,true
 CAREER-423,Cash Transfer Programme Officer,Volunteer in social protection,entry,derived,synthetic,true
@@ -12267,10 +12965,10 @@ CAREER-430,Fire and Rescue Officer,Researcher at a policy institute,beyond,categ
 CAREER-430,Fire and Rescue Officer,Lecturer,beyond,category_default,synthetic,true
 CAREER-430,Fire and Rescue Officer,Elected office,beyond,category_default,synthetic,true
 CAREER-430,Fire and Rescue Officer,Board or commission member,beyond,category_default,synthetic,true
-CAREER-430,Fire and Rescue Officer,Emergency Medical Technician,lateral,derived,synthetic,true
 CAREER-430,Fire and Rescue Officer,Lands Officer,lateral,derived,synthetic,true
 CAREER-430,Fire and Rescue Officer,Disaster Risk Management Officer,lateral,derived,synthetic,true
-CAREER-430,Fire and Rescue Officer,Dental Technologist,lateral,derived,synthetic,true
+CAREER-430,Fire and Rescue Officer,Humanitarian Aid Worker,lateral,derived,synthetic,true
+CAREER-430,Fire and Rescue Officer,Psychosocial Support Officer,lateral,derived,synthetic,true
 CAREER-431,National Government Administration Officer,Attachment student (local administration),entry,derived,synthetic,true
 CAREER-431,National Government Administration Officer,Public service intern,entry,derived,synthetic,true
 CAREER-431,National Government Administration Officer,Graduate trainee (local administration),entry,derived,synthetic,true
@@ -12511,9 +13209,9 @@ CAREER-439,Painter and Decorator,Inspector or assessor,beyond,category_default,s
 CAREER-439,Painter and Decorator,Supplier or dealer,beyond,category_default,synthetic,true
 CAREER-439,Painter and Decorator,Work abroad on contracts,beyond,category_default,synthetic,true
 CAREER-439,Painter and Decorator,Carpenter and Joiner,lateral,derived,synthetic,true
-CAREER-439,Painter and Decorator,Budget Analyst,lateral,derived,synthetic,true
 CAREER-439,Painter and Decorator,Admissions Officer,lateral,derived,synthetic,true
 CAREER-439,Painter and Decorator,Barista and Coffee Specialist,lateral,derived,synthetic,true
+CAREER-439,Painter and Decorator,Laboratory Technician,lateral,derived,synthetic,true
 CAREER-440,Tailor and Dressmaker,Apprentice Tailor and Dressmaker,entry,derived,synthetic,true
 CAREER-440,Tailor and Dressmaker,Attachment student (garment making),entry,derived,synthetic,true
 CAREER-440,Tailor and Dressmaker,Trainee Tailor and Dressmaker,entry,derived,synthetic,true
@@ -12727,8 +13425,8 @@ CAREER-447,Leather Technologist,Inspector or assessor,beyond,category_default,sy
 CAREER-447,Leather Technologist,Supplier or dealer,beyond,category_default,synthetic,true
 CAREER-447,Leather Technologist,Work abroad on contracts,beyond,category_default,synthetic,true
 CAREER-447,Leather Technologist,Textile and Garment Technologist,lateral,derived,synthetic,true
-CAREER-447,Leather Technologist,Medical Laboratory Technologist,lateral,derived,synthetic,true
 CAREER-447,Leather Technologist,Food Scientist,lateral,derived,synthetic,true
+CAREER-447,Leather Technologist,Medical Laboratory Technologist,lateral,derived,synthetic,true
 CAREER-447,Leather Technologist,Manufacturing Engineer,lateral,derived,synthetic,true
 CAREER-448,Motorcycle Mechanic,Apprentice Motorcycle Mechanic,entry,derived,synthetic,true
 CAREER-448,Motorcycle Mechanic,Attachment student (motorcycle repair),entry,derived,synthetic,true
