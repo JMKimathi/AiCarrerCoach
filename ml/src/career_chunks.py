@@ -34,6 +34,10 @@ def _read_csv(path: Path) -> list[dict]:
         return list(csv.DictReader(handle))
 
 
+def _read_optional(path: Path) -> list[dict]:
+    return _read_csv(path) if path.is_file() else []
+
+
 def _group(rows: list[dict]) -> dict[str, list[dict]]:
     grouped: dict[str, list[dict]] = defaultdict(list)
     for row in rows:
@@ -74,6 +78,11 @@ def build_career_chunks(careers_dir: Path, max_chars: int = 1500) -> list[dict]:
     resources = _group(_read_csv(careers_dir / "career_resources.csv"))
     questions = _group(_read_csv(careers_dir / "interview_questions.csv"))
     opportunities = _group(_read_csv(careers_dir / "opportunity_templates.csv"))
+    titles = _group(_read_optional(careers_dir / "career_titles.csv"))
+    tasks = _group(_read_optional(careers_dir / "career_tasks.csv"))
+    tools = _group(_read_optional(careers_dir / "career_tools.csv"))
+    related = _group(_read_optional(careers_dir / "career_related.csv"))
+    settings = _group(_read_optional(careers_dir / "career_work_settings.csv"))
     templates = {}
     for line in (careers_dir / "cv_templates.jsonl").read_text(encoding="utf-8").splitlines():
         if line.strip():
@@ -87,11 +96,25 @@ def build_career_chunks(careers_dir: Path, max_chars: int = 1500) -> list[dict]:
         for row in skills[career_id]:
             by_type[row["skill_type"]].append(row["skill"])
         study = education[career_id]
+        titles_by_type: dict[str, list[str]] = defaultdict(list)
+        for row in titles.get(career_id, []):
+            titles_by_type[row["title_type"]].append(row["title"])
 
-        overview = "\n".join([
+        def listed(label: str, items: list[str]) -> str:
+            return f"{label}: {'; '.join(items)}." if items else ""
+
+        overview = "\n".join(line for line in [
             f"Career: {title} ({category}). {CAVEAT}",
             f"Overview: {role['description']}",
             f"Focus area: {role['specialisation']}.",
+            listed("Also known as", titles_by_type["alternative"]),
+            listed("Specialisms", titles_by_type["specialism"]),
+            listed("Day-to-day tasks", [row["task"] for row in tasks.get(career_id, [])]),
+            listed("Tools and technologies", [row["tool"] for row in tools.get(career_id, [])]),
+            listed("Where people in this role work", [row["setting"] for row in settings.get(career_id, [])
+                                                      if row["setting_type"] == "employer"]),
+            listed("Working patterns", [row["setting"] for row in settings.get(career_id, [])
+                                        if row["setting_type"] == "working pattern"]),
             f"Core skills: {', '.join(by_type['core'])}.",
             f"Helpful skills: {', '.join(by_type['preferred'] + by_type['transferable'])}.",
             f"Typical study areas: {study['typical_study_areas']}.",
@@ -99,7 +122,7 @@ def build_career_chunks(careers_dir: Path, max_chars: int = 1500) -> list[dict]:
             f"Certifications to explore: {study['example_certifications']}.",
             f"Regulation: {study['verification_note']}",
             f"Markets: {role['market_scope']}.",
-        ])
+        ] if line)
 
         stage_lines = [
             f"Stage {row['stage_number']} - {row['stage_name']}: {row['example_title']} "
@@ -117,16 +140,21 @@ def build_career_chunks(careers_dir: Path, max_chars: int = 1500) -> list[dict]:
         general = [row for row in resources[career_id] if row["link_reason"] == "general"]
         source_lines = [f"{row['source_name']} ({row['url']}): {row['what_to_check']}"
                         for row in specific + general[:3]]
-        getting_in = "\n".join([
+        getting_in = "\n".join(line for line in [
             f"How to get into {title} ({category}): attachment, internship, graduate programme and job routes. {CAVEAT}",
             *stage_lines,
+            listed("Entry-level job titles", titles_by_type["entry"]),
+            listed("Progression titles", titles_by_type["progression"]),
+            listed("Leadership destinations", titles_by_type["leadership"]),
+            listed("Where this path can also lead", titles_by_type["beyond"]),
+            listed("Related careers to consider", [row["related_role_title"] for row in related.get(career_id, [])]),
             "Typical opportunities in Kenya (patterns, not live vacancies):",
             *opportunity_lines,
             f"Where openings are usually advertised: {kenya[0]['where_advertised']}." if kenya else "",
             "International roles: check visa and work-permit rules and whether your qualification is recognised.",
             "Official sources to check:",
             *source_lines,
-        ])
+        ] if line)
 
         template = templates[career_id]
         sample = []
