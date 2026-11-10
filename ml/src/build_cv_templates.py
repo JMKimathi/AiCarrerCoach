@@ -215,6 +215,8 @@ def render_cv(template: dict, profile: dict) -> dict:
     projects [{title, description}], experience [{title, organisation, period,
     highlights}], certifications, activities, referees.
     """
+    # Callers may send null for anything the student left blank.
+    profile = {key: ("" if value is None else value) for key, value in profile.items()}
     name = str(profile.get("full_name", "")).strip()
     if not name:
         raise ValueError("full_name is required to build a CV")
