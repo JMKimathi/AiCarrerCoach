@@ -1,0 +1,20 @@
+{
+  "profiles": 13560,
+  "by_origin": {
+    "synthetic": 13560
+  },
+  "by_split": {
+    "train": 9517,
+    "test": 1973,
+    "validation": 2070
+  },
+  "target_careers": 452,
+  "real_data": {
+    "file_found": false,
+    "rows_read": 0,
+    "rows_used": 0,
+    "skipped_no_consent": 0,
+    "skipped_unknown_career": 0
+  },
+  "caveat": "Synthetic rows follow generator rules. Scores on them do not measure real-world accuracy; evaluate synthetic and real rows separately."
+}
