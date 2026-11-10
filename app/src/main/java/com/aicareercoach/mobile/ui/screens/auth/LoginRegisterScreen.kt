@@ -83,7 +83,7 @@ fun LoginRegisterScreen(
         Spacer(Modifier.height(6.dp))
         Text(
             when {
-                !isLoginMode -> "Sign up to get personalized, AI-powered career guidance."
+                !isLoginMode -> "Create an account to explore careers, build your CV and practise interviews."
                 else -> "Log in to continue your career coaching journey."
             },
             style = MaterialTheme.typography.bodyMedium,
