@@ -36,7 +36,10 @@ private const val CAREER_PAGE_SIZE = 50
 @Composable
 fun CareerExplorerScreen(
     session: UserSession,
-    onBack: () -> Unit = {},
+    title: String = "Explore Careers",
+    subtitle: String = "Roles, skills and how to get in",
+    showAssessmentCard: Boolean = true,
+    onBack: (() -> Unit)? = null,
     onOpenCareer: (String) -> Unit = {},
     onOpenAssessment: () -> Unit = {}
 ) {
@@ -75,8 +78,8 @@ fun CareerExplorerScreen(
 
     Column(modifier = Modifier.fillMaxSize().background(SurfaceAlt)) {
         AppTopBar(
-            title = "Explore Careers",
-            subtitle = "Roles, skills and how to get in",
+            title = title,
+            subtitle = subtitle,
             onBack = onBack,
             showProfile = false
         )
@@ -129,7 +132,7 @@ fun CareerExplorerScreen(
             verticalArrangement = Arrangement.spacedBy(10.dp),
             contentPadding = PaddingValues(bottom = 20.dp)
         ) {
-            item {
+            if (showAssessmentCard) item {
                 SectionCard(onClick = onOpenAssessment) {
                     Text("Not sure where to start?", style = MaterialTheme.typography.titleMedium)
                     Spacer(Modifier.height(4.dp))

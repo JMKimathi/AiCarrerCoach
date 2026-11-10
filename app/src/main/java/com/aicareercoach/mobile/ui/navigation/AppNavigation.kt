@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Chat
+import androidx.compose.material.icons.filled.Explore
 import androidx.compose.material.icons.filled.Group
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Insights
@@ -75,6 +76,7 @@ object Routes {
     const val CareerAssessment = "careerAssessment"
     const val CareerExplorer = "careerExplorer"
     const val CareerDetail = "careerDetail/{careerId}"
+    const val CareerPicker = "careerPicker/{next}"
     const val CvBuilder = "cvBuilder/{careerId}"
     const val MockInterview = "mockInterview/{careerId}"
     const val ResourceDetail = "resourceDetail/{id}"
@@ -94,6 +96,7 @@ object Routes {
     fun resourceDetail(id: String) = "resourceDetail/$id"
     fun adminEditResource(id: String) = "adminEditResource/$id"
     fun careerDetail(id: String) = "careerDetail/$id"
+    fun careerPicker(next: String) = "careerPicker/$next"
     fun cvBuilder(id: String) = "cvBuilder/$id"
     fun mockInterview(id: String) = "mockInterview/$id"
 }
@@ -102,6 +105,7 @@ private data class TabItem(val route: String, val label: String, val icon: Image
 
 private val studentTabs = listOf(
     TabItem(Routes.Dashboard, "Home", Icons.Default.Home),
+    TabItem(Routes.CareerExplorer, "Careers", Icons.Default.Explore),
     TabItem(Routes.Chat, "Coach", Icons.Default.Chat),
     TabItem(Routes.Resources, "Resources", Icons.Default.MenuBook),
     TabItem(Routes.Profile, "Profile", Icons.Default.Person),
@@ -275,15 +279,10 @@ private fun StudentHome(
                     onOpenChat = { tabNav.navigateToTab(Routes.Chat) },
                     onOpenResources = { tabNav.navigateToTab(Routes.Resources) },
                     onOpenProfile = { tabNav.navigateToTab(Routes.Profile) },
-                    onReviewCv = {
-                        chatSeed = "How can I improve my CV for internship applications?"
-                        tabNav.navigateToTab(Routes.Chat)
-                    },
-                    onInterviewPrep = {
-                        chatSeed = "Help me with interview prep"
-                        tabNav.navigateToTab(Routes.Chat)
-                    },
-                    onExploreCareers = { tabNav.navigate(Routes.CareerExplorer) }
+                    onExploreCareers = { tabNav.navigateToTab(Routes.CareerExplorer) },
+                    onBuildCv = { tabNav.navigate(Routes.careerPicker("cv")) },
+                    onMockInterview = { tabNav.navigate(Routes.careerPicker("interview")) },
+                    onOpenAssessment = { tabNav.navigate(Routes.CareerAssessment) }
                 )
             }
             composable(Routes.Chat) {
@@ -299,9 +298,26 @@ private fun StudentHome(
             composable(Routes.CareerExplorer) {
                 CareerExplorerScreen(
                     session = session,
-                    onBack = { tabNav.popBackStack() },
                     onOpenCareer = { careerId -> tabNav.navigate(Routes.careerDetail(careerId)) },
                     onOpenAssessment = { tabNav.navigate(Routes.CareerAssessment) }
+                )
+            }
+            composable(
+                route = Routes.CareerPicker,
+                arguments = listOf(navArgument("next") { type = NavType.StringType })
+            ) { entry ->
+                val forInterview = entry.arguments?.getString("next") == "interview"
+                CareerExplorerScreen(
+                    session = session,
+                    title = if (forInterview) "Practise an interview" else "Build my CV",
+                    subtitle = "Choose the career you are aiming for",
+                    showAssessmentCard = false,
+                    onBack = { tabNav.popBackStack() },
+                    onOpenCareer = { careerId ->
+                        tabNav.navigate(
+                            if (forInterview) Routes.mockInterview(careerId) else Routes.cvBuilder(careerId)
+                        )
+                    }
                 )
             }
             composable(
