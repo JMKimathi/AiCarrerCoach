@@ -32,7 +32,37 @@ data class StudentAccount(
     val email: String,
     val course: String,
     val status: String,
-    val userId: String = ""
+    val userId: String = "",
+    val joined: String = "",
+    val chatCount: Int = 0,
+    val interviewCount: Int = 0,
+    val assessmentCount: Int = 0,
+    val lastActive: String = ""
+) {
+    val isActive: Boolean get() = status == "Active"
+    val initials: String
+        get() = name.split(" ")
+            .mapNotNull { it.firstOrNull()?.uppercaseChar() }
+            .take(2)
+            .joinToString("")
+            .ifBlank { "ST" }
+}
+
+data class AdminFeedback(
+    val id: String,
+    val studentName: String,
+    val studentEmail: String,
+    val rating: Int,
+    val isAccurate: Boolean,
+    val comments: String,
+    val createdAt: String
+)
+
+data class DailyActivity(
+    val label: String,
+    val chats: Int,
+    val interviews: Int,
+    val newStudents: Int
 )
 
 data class AdminOverview(
@@ -40,7 +70,15 @@ data class AdminOverview(
     val careerResources: Int,
     val chatsThisWeek: Int,
     val flaggedResponses: Int,
-    val topResources: List<String>
+    val topResources: List<String>,
+    val totalStudents: Int = 0,
+    val inactiveStudents: Int = 0,
+    val newStudentsThisWeek: Int = 0,
+    val interviewsThisWeek: Int = 0,
+    val interviewsCompleted: Int = 0,
+    val assessmentsTotal: Int = 0,
+    val feedbackCount: Int = 0,
+    val averageRating: Double? = null
 )
 
 data class CareerPathMatch(

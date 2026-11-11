@@ -7,13 +7,17 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import android.util.Log
 import com.aicareercoach.mobile.data.AuthResult
+import com.aicareercoach.mobile.data.AdminFeedback
 import com.aicareercoach.mobile.data.AdminOverview
+import com.aicareercoach.mobile.data.DailyActivity
 import com.aicareercoach.mobile.data.CareerResource
 import com.aicareercoach.mobile.data.CareerAssessmentResult
 import com.aicareercoach.mobile.data.CareerCategory
 import com.aicareercoach.mobile.data.CareerDetail
 import com.aicareercoach.mobile.data.CareerPage
 import com.aicareercoach.mobile.data.CareerSummary
+import com.aicareercoach.mobile.data.ChatLine
+import com.aicareercoach.mobile.data.ChatSessionSummary
 import com.aicareercoach.mobile.data.CvRequest
 import com.aicareercoach.mobile.data.CvResult
 import com.aicareercoach.mobile.data.InterviewState
@@ -37,7 +41,8 @@ import java.net.URLEncoder
 data class NetworkChatResponse(
     val sessionId: String,
     val response: String,
-    val sources: List<String>
+    val sources: List<String>,
+    val stopped: Boolean = false
 )
 
 object ApiClient {
@@ -240,7 +245,15 @@ object ApiClient {
             AdminOverview(
                 json.optInt("active_students"), json.optInt("career_resources"),
                 json.optInt("chats_this_week"), json.optInt("flagged_responses"),
-                (0 until top.length()).map { top.getString(it) }
+                (0 until top.length()).map { top.getString(it) },
+                totalStudents = json.optInt("total_students"),
+                inactiveStudents = json.optInt("inactive_students"),
+                newStudentsThisWeek = json.optInt("new_students_this_week"),
+                interviewsThisWeek = json.optInt("interviews_this_week"),
+                interviewsCompleted = json.optInt("interviews_completed"),
+                assessmentsTotal = json.optInt("assessments_total"),
+                feedbackCount = json.optInt("feedback_count"),
+                averageRating = if (json.isNull("average_rating")) null else json.optDouble("average_rating")
             )
         } catch (_: Exception) { null }
     }
@@ -261,7 +274,12 @@ object ApiClient {
                         user.optString("full_name"), user.optString("email"),
                         user.optString("course").takeUnless { it == "null" }.orEmpty(),
                         if (user.optBoolean("is_active")) "Active" else "Inactive",
-                        userId = user.optString("user_id")
+                        userId = user.optString("user_id"),
+                        joined = jsonText(user, "created_at"),
+                        chatCount = user.optInt("chat_count"),
+                        interviewCount = user.optInt("interview_count"),
+                        assessmentCount = user.optInt("assessment_count"),
+                        lastActive = jsonText(user, "last_active")
                     ))
                 }
             }
@@ -693,6 +711,52 @@ object ApiClient {
             JSONObject().put("is_active", active)
         ) != null
 
+    /** Sets a temporary password for a student who is locked out. */
+    suspend fun resetStudentPassword(token: String, userId: String, newPassword: String): Boolean =
+        sendJsonText(
+            "PUT", "/admin/students/" + URLEncoder.encode(userId, "UTF-8") + "/password", token,
+            JSONObject().put("new_password", newPassword)
+        ) != null
+
+    /** Removes a student account and everything saved under it. */
+    suspend fun deleteStudent(token: String, userId: String): Boolean =
+        sendJsonText("DELETE", "/admin/students/" + URLEncoder.encode(userId, "UTF-8"), token, null) != null
+
+    suspend fun getAdminFeedback(token: String): List<AdminFeedback>? {
+        val text = getJsonText("/admin/feedback", token) ?: return null
+        return runCatching {
+            val array = JSONArray(text)
+            (0 until array.length()).map { index ->
+                val item = array.getJSONObject(index)
+                AdminFeedback(
+                    id = item.optString("feedback_id"),
+                    studentName = item.optString("student_name"),
+                    studentEmail = item.optString("student_email"),
+                    rating = item.optInt("rating"),
+                    isAccurate = item.optBoolean("is_accurate", true),
+                    comments = jsonText(item, "comments"),
+                    createdAt = jsonText(item, "created_at")
+                )
+            }
+        }.getOrNull()
+    }
+
+    suspend fun getAdminActivity(token: String): List<DailyActivity>? {
+        val text = getJsonText("/admin/activity", token) ?: return null
+        return runCatching {
+            val array = JSONArray(text)
+            (0 until array.length()).map { index ->
+                val day = array.getJSONObject(index)
+                DailyActivity(
+                    label = day.optString("label"),
+                    chats = day.optInt("chats"),
+                    interviews = day.optInt("interviews"),
+                    newStudents = day.optInt("new_students")
+                )
+            }
+        }.getOrNull()
+    }
+
     suspend fun checkHealth(): Boolean = withContext(Dispatchers.IO) {
         candidateBaseUrls.any { checkHealthAt(it) }
     }
@@ -702,7 +766,47 @@ object ApiClient {
         return checkHealthAt(normalized)
     }
 
-    suspend fun sendChatMessage(query: String, token: String, sessionId: String? = null): NetworkChatResponse? = withContext(Dispatchers.IO) {
+    /** Asks the backend to drop a reply that is still being written. The student's question is kept. */
+    suspend fun stopChatReply(token: String, requestId: String): Boolean =
+        sendJsonText("POST", "/chat/stop", token, JSONObject().put("request_id", requestId)) != null
+
+    /** The student's earlier conversations, newest first. */
+    suspend fun getChatSessions(token: String): List<ChatSessionSummary>? {
+        val text = getJsonText("/chat/sessions", token) ?: return null
+        return runCatching {
+            val array = JSONArray(text)
+            (0 until array.length()).map { index ->
+                val item = array.getJSONObject(index)
+                ChatSessionSummary(
+                    id = item.optString("session_id"),
+                    title = jsonText(item, "title").ifBlank { "Conversation" },
+                    startedAt = jsonText(item, "started_at"),
+                    messageCount = item.optInt("message_count")
+                )
+            }
+        }.getOrNull()
+    }
+
+    /** Every message of one conversation, oldest first. */
+    suspend fun getChatMessages(token: String, sessionId: String): List<ChatLine>? {
+        val path = "/chat/sessions/" + URLEncoder.encode(sessionId, "UTF-8") + "/messages"
+        val text = getJsonText(path, token) ?: return null
+        return runCatching {
+            val array = JSONArray(text)
+            (0 until array.length()).map { index ->
+                val item = array.getJSONObject(index)
+                ChatLine(
+                    text = item.optString("content"),
+                    fromUser = item.optString("sender_type") == "user",
+                    sources = jsonStrings(item, "sources")
+                )
+            }
+        }.getOrNull()
+    }
+
+    suspend fun sendChatMessage(
+        query: String, token: String, sessionId: String? = null, requestId: String? = null
+    ): NetworkChatResponse? = withContext(Dispatchers.IO) {
         try {
             val url = endpointUrl("/chat")
             val conn = (url.openConnection() as HttpURLConnection).apply {
@@ -720,6 +824,9 @@ object ApiClient {
                 put("query", query)
                 if (!sessionId.isNullOrBlank()) {
                     put("session_id", sessionId)
+                }
+                if (!requestId.isNullOrBlank()) {
+                    put("request_id", requestId)
                 }
             }
 
@@ -739,7 +846,7 @@ object ApiClient {
                 for (i in 0 until sourcesArray.length()) {
                     sourcesList.add(sourcesArray.getString(i))
                 }
-                NetworkChatResponse(sessId, resp, sourcesList)
+                NetworkChatResponse(sessId, resp, sourcesList, stopped = json.optBoolean("stopped", false))
             } else {
                 Log.w("ApiClient", "Chat endpoint returned HTTP $statusCode")
                 null
