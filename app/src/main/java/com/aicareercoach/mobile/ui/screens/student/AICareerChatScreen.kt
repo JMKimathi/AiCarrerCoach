@@ -16,7 +16,9 @@ import androidx.compose.material.icons.filled.ArrowUpward
 import androidx.compose.material.icons.filled.Description
 import androidx.compose.material.icons.filled.Explore
 import androidx.compose.material.icons.filled.Forum
+import androidx.compose.material.icons.filled.History
 import androidx.compose.material.icons.filled.RecordVoiceOver
+import androidx.compose.material.icons.filled.Stop
 import androidx.compose.material.icons.filled.TrendingUp
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -26,25 +28,23 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.aicareercoach.mobile.data.ChatLine
+import com.aicareercoach.mobile.data.ChatMemory
+import com.aicareercoach.mobile.data.ChatSessionSummary
 import com.aicareercoach.mobile.data.UserSession
 import com.aicareercoach.mobile.data.network.ApiClient
 import com.aicareercoach.mobile.ui.theme.AICareerCoachTheme
 import com.aicareercoach.mobile.ui.theme.BlueLight
 import com.aicareercoach.mobile.ui.theme.BluePrimary
+import com.aicareercoach.mobile.ui.theme.DangerRed
 import com.aicareercoach.mobile.ui.theme.SuccessGreen
 import com.aicareercoach.mobile.ui.theme.SurfaceAlt
 import com.aicareercoach.mobile.ui.theme.TextMuted
 import com.aicareercoach.mobile.ui.theme.TextSecondary
 import com.aicareercoach.mobile.ui.theme.WarningAmber
-import kotlinx.coroutines.launch
-
-private data class ChatMessage(
-    val text: String,
-    val fromUser: Boolean,
-    val sources: List<String> = emptyList()
-)
 
 private data class ChatStarter(
     val icon: ImageVector,
@@ -54,22 +54,26 @@ private data class ChatStarter(
 )
 
 private val ChatViolet = Color(0xFF7C3AED)
-private val followUpPrompts = listOf("Tell me more", "Give me an example", "What should I do first?")
+private val followUpPrompts = listOf("Continue", "Give me an example", "What should I do first?")
 
+/**
+ * The chat with the coach. The conversation itself is kept in [ChatMemory], so it is still
+ * here after visiting another tab, and it is brought back from the server when the app reopens.
+ */
 @Composable
 fun AICareerChatScreen(
     session: UserSession = UserSession("John Mwiti", "john.mwiti@strathmore.edu"),
     seedQuestion: String? = null,
     onSeedConsumed: () -> Unit = {}
 ) {
-    val messages = remember {
-        mutableStateListOf<ChatMessage>()
-    }
+    // Runs before anything is shown, so one student never sees another's conversation.
+    remember(session.email) { ChatMemory.useFor(session.email) }
+    val messages = ChatMemory.messages
+    val typing = ChatMemory.waiting
+    val loading = ChatMemory.loading
     var input by remember { mutableStateOf("") }
-    var typing by remember { mutableStateOf(false) }
-    var currentSessionId by remember { mutableStateOf<String?>(null) }
+    var showHistory by remember { mutableStateOf(false) }
     val listState = rememberLazyListState()
-    val scope = rememberCoroutineScope()
 
     // Starting points shaped by what the student has told us about themselves.
     val starters = listOf(
@@ -94,35 +98,13 @@ fun AICareerChatScreen(
     )
 
     fun send(text: String) {
-        val trimmed = text.trim()
-        if (trimmed.isEmpty() || typing) return
-        messages.add(ChatMessage(trimmed, fromUser = true))
+        if (text.isBlank()) return
+        ChatMemory.send(text, session.token)
         input = ""
-        typing = true
-        scope.launch {
-            val netResp = ApiClient.sendChatMessage(trimmed, token = session.token, sessionId = currentSessionId)
-            if (netResp != null && netResp.response.isNotBlank()) {
-                currentSessionId = netResp.sessionId
-                messages.add(
-                    ChatMessage(
-                        text = netResp.response,
-                        fromUser = false,
-                        sources = netResp.sources
-                    )
-                )
-            } else {
-                messages.add(ChatMessage("The coach could not reach the backend. Check that the API is running, then try again.", fromUser = false))
-            }
-            typing = false
-            listState.animateScrollToItem(messages.lastIndex)
-        }
     }
 
-    fun startNewChat() {
-        if (typing) return
-        messages.clear()
-        currentSessionId = null
-        input = ""
+    LaunchedEffect(session.email) {
+        if (seedQuestion.isNullOrBlank()) ChatMemory.restoreLatest(session.token)
     }
 
     LaunchedEffect(seedQuestion) {
@@ -131,6 +113,11 @@ fun AICareerChatScreen(
             send(question)
             onSeedConsumed()
         }
+    }
+
+    // Keep the newest message in view as the conversation grows.
+    LaunchedEffect(messages.size, typing) {
+        if (messages.isNotEmpty()) listState.animateScrollToItem(messages.lastIndex)
     }
 
     Column(
@@ -142,7 +129,7 @@ fun AICareerChatScreen(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 20.dp, vertical = 12.dp),
+                .padding(start = 20.dp, end = 8.dp, top = 12.dp, bottom = 12.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Box(
@@ -157,15 +144,23 @@ fun AICareerChatScreen(
             Spacer(Modifier.width(10.dp))
             Column(modifier = Modifier.weight(1f)) {
                 Text("Career Coach", style = MaterialTheme.typography.titleMedium)
-                Text("Ask about careers, CVs and interviews", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                Text(
+                    if (messages.isEmpty()) "Ask about careers, CVs and interviews" else "Remembers this conversation",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = TextSecondary
+                )
             }
             if (messages.isNotEmpty()) {
-                TextButton(onClick = { startNewChat() }, enabled = !typing) {
+                TextButton(onClick = { ChatMemory.startNew(); input = "" }, enabled = !typing) {
                     Text("New chat")
                 }
             }
+            IconButton(onClick = { showHistory = true }, enabled = !typing) {
+                Icon(Icons.Default.History, contentDescription = "Earlier conversations", tint = BluePrimary)
+            }
         }
         HorizontalDivider()
+        if (loading) LinearProgressIndicator(modifier = Modifier.fillMaxWidth())
 
         if (messages.isEmpty() && !typing) {
             Column(
@@ -197,7 +192,7 @@ fun AICareerChatScreen(
                 }
                 Spacer(Modifier.height(4.dp))
                 Text(
-                    "Tap a card to start, or type your own question below.",
+                    "Tap a card to start, or type your own question below. Earlier conversations are under the clock icon.",
                     style = MaterialTheme.typography.bodySmall,
                     color = TextMuted
                 )
@@ -216,11 +211,16 @@ fun AICareerChatScreen(
                 }
                 if (typing) {
                     item {
-                        Text("Coach is thinking…", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                        Text(
+                            "Coach is writing… You can stop it, or just send more detail.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = TextSecondary
+                        )
                     }
                 }
                 // Quick replies under the coach's latest answer keep the conversation moving.
-                if (!typing && messages.lastOrNull()?.fromUser == false) {
+                val last = messages.lastOrNull()
+                if (!typing && last != null && !last.fromUser && !last.note) {
                     item {
                         Row(
                             modifier = Modifier.horizontalScroll(rememberScrollState()),
@@ -244,25 +244,106 @@ fun AICareerChatScreen(
             OutlinedTextField(
                 value = input,
                 onValueChange = { input = it },
-                placeholder = { Text("Ask anything about your career") },
+                placeholder = { Text(if (typing) "Add more detail, or stop the reply" else "Ask anything about your career") },
                 shape = RoundedCornerShape(24.dp),
                 modifier = Modifier.weight(1f),
                 maxLines = 4
             )
             Spacer(Modifier.width(8.dp))
-            val canSend = input.isNotBlank() && !typing
+            // While the coach is writing and nothing is typed, the button stops the reply.
+            val stopMode = typing && input.isBlank()
+            val enabled = stopMode || input.isNotBlank()
             Box(
                 modifier = Modifier
                     .size(48.dp)
                     .clip(RoundedCornerShape(24.dp))
-                    .background(MaterialTheme.colorScheme.primary.copy(alpha = if (canSend) 1f else 0.4f))
-                    .clickable(enabled = canSend, onClick = { send(input) }),
+                    .background(
+                        if (stopMode) DangerRed
+                        else MaterialTheme.colorScheme.primary.copy(alpha = if (enabled) 1f else 0.4f)
+                    )
+                    .clickable(
+                        enabled = enabled,
+                        onClick = { if (stopMode) ChatMemory.stop(session.token) else send(input) }
+                    ),
                 contentAlignment = Alignment.Center
             ) {
-                Icon(Icons.Default.ArrowUpward, contentDescription = "Send", tint = Color.White)
+                Icon(
+                    if (stopMode) Icons.Default.Stop else Icons.Default.ArrowUpward,
+                    contentDescription = if (stopMode) "Stop the reply" else "Send",
+                    tint = Color.White
+                )
             }
         }
     }
+
+    if (showHistory) {
+        ChatHistoryDialog(
+            token = session.token,
+            currentSessionId = ChatMemory.sessionId,
+            onOpen = { chosen ->
+                showHistory = false
+                ChatMemory.open(chosen, session.token)
+            },
+            onDismiss = { showHistory = false }
+        )
+    }
+}
+
+/** Lists the student's earlier conversations so one can be reopened and carried on. */
+@Composable
+private fun ChatHistoryDialog(
+    token: String,
+    currentSessionId: String?,
+    onOpen: (ChatSessionSummary) -> Unit,
+    onDismiss: () -> Unit
+) {
+    var sessions by remember { mutableStateOf<List<ChatSessionSummary>?>(null) }
+    var failed by remember { mutableStateOf(false) }
+    LaunchedEffect(token) {
+        val loaded = ApiClient.getChatSessions(token)
+        if (loaded == null) failed = true else sessions = loaded.filter { it.messageCount > 0 }
+    }
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text("Earlier conversations") },
+        text = {
+            val loaded = sessions
+            when {
+                failed -> Text("Your conversations could not be loaded. Check that the backend is running.")
+                loaded == null -> LinearProgressIndicator(modifier = Modifier.fillMaxWidth())
+                loaded.isEmpty() -> Text("You have no earlier conversations yet.")
+                else -> LazyColumn(modifier = Modifier.heightIn(max = 360.dp)) {
+                    items(loaded, key = { it.id }) { item ->
+                        Column(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clip(RoundedCornerShape(10.dp))
+                                .clickable { onOpen(item) }
+                                .padding(vertical = 10.dp, horizontal = 6.dp)
+                        ) {
+                            Text(
+                                item.title,
+                                style = MaterialTheme.typography.bodyLarge,
+                                maxLines = 2,
+                                overflow = TextOverflow.Ellipsis
+                            )
+                            Text(
+                                listOf(
+                                    item.startedAt.take(10),
+                                    "${item.messageCount} messages",
+                                    if (item.id == currentSessionId) "open now" else ""
+                                ).filter { it.isNotBlank() }.joinToString("  •  "),
+                                style = MaterialTheme.typography.bodySmall,
+                                color = TextSecondary
+                            )
+                        }
+                        HorizontalDivider()
+                    }
+                }
+            }
+        },
+        confirmButton = { TextButton(onClick = onDismiss) { Text("Close") } }
+    )
 }
 
 @Composable
@@ -310,7 +391,17 @@ private fun FollowUpChip(label: String, onClick: () -> Unit) {
 }
 
 @Composable
-private fun ChatBubble(message: ChatMessage) {
+private fun ChatBubble(message: ChatLine) {
+    if (message.note) {
+        Text(
+            message.text,
+            style = MaterialTheme.typography.bodySmall,
+            color = TextMuted,
+            textAlign = TextAlign.Center,
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 24.dp)
+        )
+        return
+    }
     Column(
         modifier = Modifier.fillMaxWidth(),
         horizontalAlignment = if (message.fromUser) Alignment.End else Alignment.Start

@@ -15,6 +15,50 @@ from embedding_cache import load_or_create_embeddings
 
 logger = logging.getLogger(__name__)
 
+# Messages that only ask the coach to carry on with what it was already saying.
+_CONTINUE_PHRASES = {
+    "continue", "please continue", "continue please", "go on", "go ahead", "carry on", "keep going",
+    "proceed", "more", "tell me more", "next", "and then", "then", "finish", "finish it", "resume",
+    "continue from where you left off", "continue where you left off", "continue from there",
+    "proceed from where you left off", "pick up where you left off", "what next", "what else",
+    "endelea", "endelea tafadhali", "tafadhali endelea", "endelea hapo", "halafu", "kisha",
+}
+# Words that point back at something said earlier, so the message cannot be understood alone.
+_REFERENCE_WORDS = {
+    "it", "its", "that", "this", "those", "these", "them", "they", "one", "ones", "first", "second",
+    "third", "last", "above", "same", "former", "latter", "previous", "earlier", "again", "also",
+    "instead", "more", "another", "other", "hiyo", "hilo", "hizo", "hayo", "huyo", "pia", "tena",
+}
+
+
+def _normalise(text: str) -> str:
+    return re.sub(r"[.!?,…]+$", "", " ".join(text.lower().strip().split()))
+
+
+def is_continuation(query: str) -> bool:
+    """True when the student is only asking the coach to carry on."""
+    return _normalise(query) in _CONTINUE_PHRASES
+
+
+def is_follow_up(query: str) -> bool:
+    """True when a message leans on the earlier conversation: it is short or points back at it."""
+    words = re.findall(r"[a-z']+", query.lower())
+    return is_continuation(query) or len(words) <= 6 or any(word in _REFERENCE_WORDS for word in words[:12])
+
+
+def build_retrieval_query(query: str, conversation_history: Optional[List[Dict[str, str]]]) -> str:
+    """Give the retriever the topic of the conversation, not just the latest words.
+
+    Searching for "continue" or "tell me more about the second one" alone returns passages
+    about nothing in particular. For a follow-up, the search uses the student's most recent
+    message that stated a topic, together with the new message.
+    """
+    earlier = [turn["text"] for turn in (conversation_history or []) if turn.get("role") == "student"]
+    if not earlier or not is_follow_up(query):
+        return query
+    topic = next((text for text in reversed(earlier) if not is_follow_up(text)), earlier[-1])[:400]
+    return topic if is_continuation(query) else f"{topic} {query}"
+
 
 class RAGEngine:
     """
@@ -133,7 +177,10 @@ class RAGEngine:
                 "source_details": [],
             }
 
-        retrieved_docs = self.retrieve(query, top_k=top_k)
+        history = conversation_history or []
+        continuing = bool(history) and is_continuation(query)
+        follow_up = bool(history) and is_follow_up(query)
+        retrieved_docs = self.retrieve(build_retrieval_query(query, history), top_k=top_k)
         seen_titles = {doc.get("title", "Career Resource") for doc in retrieved_docs}
         for doc in supplemental_docs or []:
             title = doc.get("title", "Career Resource")
@@ -188,13 +235,37 @@ class RAGEngine:
                     "Only state a section when the retrieved sources support it; clearly say when local requirements or current "
                     "application details are not in the knowledge base. If the course and goal are both missing and the student "
                     "asks for personal recommendations, ask one focused question about their course or the field they want to explore. "
-                    "Be encouraging, specific, and professional, with a focus on students and Kenya."
+                    "Be encouraging, specific, and professional, with a focus on students and Kenya. "
+                    "You are in one continuing conversation and you remember it: the recent conversation is what you and "
+                    "the student have already said. Work out what words such as 'it', 'that', 'the second one' or 'more' "
+                    "refer to from that conversation, and stay on the same subject unless the student changes it. "
+                    "When the student asks you to continue, go on or proceed, carry on from exactly where your last reply "
+                    "stopped: do not start again, do not repeat what you already said, and do not switch topic. "
+                    "If a student message in the conversation has no coach reply after it, the student stopped you before "
+                    "reading it; treat their newer message as extra instructions for that same request. "
+                    "If the retrieved passages do not relate to the conversation, ignore them rather than changing the subject."
                 )
 
                 history_text = "\n".join(
                     f"{turn['role'].title()}: {turn['text']}"
-                    for turn in (conversation_history or [])
+                    for turn in history
                 ) or "No earlier messages in this conversation."
+                if continuing:
+                    closing = (
+                        "The student is asking you to carry on. Continue from exactly where your last reply in the "
+                        "conversation ended, without repeating it. If that reply was already complete, add the next "
+                        "most useful detail on the same subject."
+                    )
+                elif follow_up:
+                    closing = (
+                        "This is a follow-up. Answer it in the light of the conversation so far and stay on the same "
+                        "subject. Keep it useful and conversational, and do not dump or quote the source passages."
+                    )
+                else:
+                    closing = (
+                        "Reply naturally to that latest message. Keep it useful and conversational, and do not dump "
+                        "or quote the source passages."
+                    )
 
                 prompt = (
                     f"Student Profile:\n"
@@ -205,7 +276,7 @@ class RAGEngine:
                     f"Career guidance context (written guides and synthetic illustrative pathways; verify local facts):\n"
                     f"{full_context}\n\n"
                     f"Student's latest message: {query}\n\n"
-                    f"Reply naturally to that latest message. Keep it useful and conversational, and do not dump or quote the source passages."
+                    f"{closing}"
                 )
 
                 response = None
@@ -216,7 +287,7 @@ class RAGEngine:
                             contents=prompt,
                             config=types.GenerateContentConfig(
                                 system_instruction=system_instruction,
-                                max_output_tokens=700,
+                                max_output_tokens=1500,
                             ),
                         )
                         break
@@ -235,10 +306,28 @@ class RAGEngine:
                 answer_text = (response.text or "").strip()
                 if not answer_text:
                     raise ValueError("Gemini returned an empty response")
+                # A reply that ran out of room is trimmed to its last full sentence, and the
+                # student is told they can ask for the rest.
+                try:
+                    finish_reason = str(response.candidates[0].finish_reason or "")
+                except (AttributeError, IndexError, TypeError):
+                    finish_reason = ""
+                if "MAX_TOKENS" in finish_reason.upper():
+                    cut = max(answer_text.rfind(". "), answer_text.rfind(".\n"), answer_text.rfind("? "), answer_text.rfind("! "))
+                    if cut > len(answer_text) // 2:
+                        answer_text = answer_text[:cut + 1]
+                    answer_text += "\n\nThere is more to say on this. Send \"continue\" and I will carry on from here."
             except Exception as e:
                 logger.exception("Gemini response generation failed")
                 best_doc = retrieved_docs[0] if retrieved_docs else None
-                if best_doc:
+                if follow_up:
+                    # A guide excerpt would look like a change of subject in the middle of a conversation.
+                    answer_text = (
+                        "I could not write a reply just now, so I have not lost our place. "
+                        "Please send that again in a moment."
+                    )
+                    unique_sources, source_details = [], []
+                elif best_doc:
                     excerpt = best_doc["content"].strip()
                     excerpt = re.sub(r"(?m)^#{1,6}\s*", "", excerpt)
                     excerpt = re.sub(r"\*\*(.*?)\*\*", r"\1", excerpt)

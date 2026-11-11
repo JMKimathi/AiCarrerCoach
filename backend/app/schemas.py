@@ -62,6 +62,8 @@ class AuthResponse(BaseModel):
 class ChatQueryRequest(BaseModel):
     query: str
     session_id: Optional[str] = None
+    # Chosen by the app for each message so that reply can be stopped while it is being written.
+    request_id: Optional[str] = Field(default=None, max_length=64)
 
 
 class SourceDetail(BaseModel):
@@ -75,6 +77,8 @@ class ChatQueryResponse(BaseModel):
     response: str
     sources: List[str]
     source_details: List[SourceDetail]
+    # True when the student stopped this reply; `response` is then empty and nothing was saved.
+    stopped: bool = False
 
 
 class MessageResponse(BaseModel):
@@ -152,6 +156,14 @@ class AdminOverviewResponse(BaseModel):
     chats_this_week: int
     flagged_responses: int
     top_resources: List[str]
+    total_students: int = 0
+    inactive_students: int = 0
+    new_students_this_week: int = 0
+    interviews_this_week: int = 0
+    interviews_completed: int = 0
+    assessments_total: int = 0
+    feedback_count: int = 0
+    average_rating: Optional[float] = None
 
 
 # --- ML Career Prediction Schemas ---
