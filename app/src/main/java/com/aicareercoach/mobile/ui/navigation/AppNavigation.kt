@@ -35,7 +35,10 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.aicareercoach.mobile.data.CareerResource
+import com.aicareercoach.mobile.data.ChatMemory
+import com.aicareercoach.mobile.data.AdminFeedback
 import com.aicareercoach.mobile.data.AdminOverview
+import com.aicareercoach.mobile.data.DailyActivity
 import com.aicareercoach.mobile.data.StudentAccount
 import com.aicareercoach.mobile.data.UserSession
 import com.aicareercoach.mobile.data.network.ApiClient
@@ -141,6 +144,7 @@ fun AppNavigation(
 
     fun logOut(from: String) {
         session = null
+        ChatMemory.signOut()
         resources.clear()
         navController.navigate(Routes.Landing) {
             popUpTo(from) { inclusive = true }
@@ -220,6 +224,7 @@ fun AppNavigation(
             val current = session
             if (current != null && current.isAdmin) AdminHome(
                 token = current.token,
+                adminName = current.firstName,
                 resources = resources,
                 onResourceAdded = { resources.add(0, it) },
                 onResourceUpdated = { updated ->
@@ -429,6 +434,7 @@ private fun StudentHome(
 @Composable
 private fun AdminHome(
     token: String,
+    adminName: String,
     resources: List<CareerResource>,
     onResourceAdded: (CareerResource) -> Unit,
     onResourceUpdated: (CareerResource) -> Unit,
@@ -438,11 +444,48 @@ private fun AdminHome(
     val scope = rememberCoroutineScope()
     var overview by remember { mutableStateOf<AdminOverview?>(null) }
     val students = remember { mutableStateListOf<StudentAccount>() }
-    LaunchedEffect(token) {
+    var activity by remember { mutableStateOf<List<DailyActivity>>(emptyList()) }
+    var feedback by remember { mutableStateOf<List<AdminFeedback>>(emptyList()) }
+    var adminBusy by remember { mutableStateOf(false) }
+    var adminMessage by remember { mutableStateOf<String?>(null) }
+
+    // Everything the admin screens show is read from the server again, so the list
+    // always matches what is actually saved.
+    suspend fun reload(): Boolean {
         overview = ApiClient.getAdminOverview(token)
-        students.clear()
-        ApiClient.getAdminStudents(token)?.let(students::addAll)
+        val latest = ApiClient.getAdminStudents(token)
+        if (latest != null) {
+            students.clear()
+            students.addAll(latest)
+        }
+        ApiClient.getAdminActivity(token)?.let { activity = it }
+        ApiClient.getAdminFeedback(token)?.let { feedback = it }
+        return latest != null
     }
+
+    // Runs one account action, then reloads and reports what happened.
+    fun runAccountAction(done: String, failed: String, action: suspend () -> Boolean) {
+        if (adminBusy) return
+        adminBusy = true
+        adminMessage = null
+        scope.launch {
+            val ok = action()
+            reload()
+            adminMessage = if (ok) done else failed
+            adminBusy = false
+        }
+    }
+
+    fun refresh() {
+        if (adminBusy) return
+        adminBusy = true
+        scope.launch {
+            adminMessage = if (reload()) null else "Could not reach the backend. Check that it is running, then refresh."
+            adminBusy = false
+        }
+    }
+
+    LaunchedEffect(token) { reload() }
     val tabNav = rememberNavController()
     val backStack by tabNav.currentBackStackEntryAsState()
     val currentRoute = backStack?.destination?.route
@@ -472,7 +515,9 @@ private fun AdminHome(
         ) {
             composable(Routes.AdminHome) {
                 AdminDashboardScreen(
+                    adminName = adminName,
                     overview = overview,
+                    onRefresh = { refresh() },
                     onOpenResources = { tabNav.navigateToTab(Routes.AdminResources) },
                     onOpenUsers = { tabNav.navigateToTab(Routes.AdminUsers) },
                     onOpenAnalytics = { tabNav.navigateToTab(Routes.AdminAnalytics) },
@@ -495,16 +540,27 @@ private fun AdminHome(
             composable(Routes.AdminUsers) {
                 AdminUsersScreen(
                     students = students,
+                    message = adminMessage,
+                    busy = adminBusy,
+                    onRefresh = { refresh() },
                     onToggleActive = { student ->
-                        scope.launch {
-                            val makeActive = student.status != "Active"
-                            if (ApiClient.setStudentActive(token, student.userId, makeActive)) {
-                                val index = students.indexOfFirst { it.userId == student.userId }
-                                if (index >= 0) {
-                                    students[index] = student.copy(status = if (makeActive) "Active" else "Inactive")
-                                }
-                            }
-                        }
+                        val makeActive = !student.isActive
+                        runAccountAction(
+                            done = if (makeActive) "${student.name} can sign in again." else "${student.name} has been deactivated.",
+                            failed = "The change was not saved. Check that the backend is running and try again."
+                        ) { ApiClient.setStudentActive(token, student.userId, makeActive) }
+                    },
+                    onResetPassword = { student, newPassword ->
+                        runAccountAction(
+                            done = "A temporary password was set for ${student.name}.",
+                            failed = "The password was not changed. Check that the backend is running and try again."
+                        ) { ApiClient.resetStudentPassword(token, student.userId, newPassword) }
+                    },
+                    onDelete = { student ->
+                        runAccountAction(
+                            done = "${student.name}'s account was deleted.",
+                            failed = "The account was not deleted. Check that the backend is running and try again."
+                        ) { ApiClient.deleteStudent(token, student.userId) }
                     }
                 )
             }
@@ -529,7 +585,12 @@ private fun AdminHome(
                 )
             }
             composable(Routes.AdminAnalytics) {
-                AdminAnalyticsScreen(overview = overview)
+                AdminAnalyticsScreen(
+                    overview = overview,
+                    activity = activity,
+                    feedback = feedback,
+                    onRefresh = { refresh() }
+                )
             }
             composable(Routes.AdminUpload) {
                 AdminUploadScreen(
