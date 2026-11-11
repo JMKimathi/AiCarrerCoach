@@ -28,8 +28,14 @@ def update_profile(payload: ProfileUpdateRequest, user: User = Depends(get_curre
 def login(payload: LoginRequest, db: Session = Depends(get_db)):
     email_clean = payload.email.strip().lower()
     user = db.query(User).filter(User.email == email_clean).first()
-    if not user or not user.is_active or not verify_password(payload.password, user.password_hash):
+    if not user or not verify_password(payload.password, user.password_hash):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Incorrect email or password")
+    # Checked after the password so the message is only shown to the account's owner.
+    if not user.is_active:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="This account has been deactivated. Ask an administrator to reactivate it.",
+        )
 
     if not is_password_hashed(user.password_hash):
         user.password_hash = hash_password(payload.password)
