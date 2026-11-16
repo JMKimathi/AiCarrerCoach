@@ -26,6 +26,7 @@ import kotlinx.coroutines.launch
 @Composable
 fun FeedbackScreen(
     sessionToken: String = "",
+    chatSessionId: String? = null,
     topic: String = "General feedback about your career coach experience",
     onBack: () -> Unit = {},
     onSubmit: () -> Unit = {}
@@ -138,7 +139,8 @@ fun FeedbackScreen(
                             rating = rating,
                             isAccurate = accurate ?: false,
                             comments = comments,
-                            token = sessionToken
+                            token = sessionToken,
+                            sessionId = chatSessionId
                         )
                         submitting = false
                         if (saved) submitted = true else submitError = "Feedback was not saved. Check your connection and try again."

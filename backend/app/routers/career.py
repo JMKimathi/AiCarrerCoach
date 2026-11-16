@@ -17,6 +17,7 @@ import json
 import uuid
 from backend.app.rag_engine import RAGEngine
 from backend.app.career_assessment import ASSESSMENT_OPTIONS, ASSESSMENT_VERSION, CAREER_PATHS, assess_career_paths
+from backend.app import recommender
 
 router = APIRouter(prefix="/career", tags=["Career Prediction & Assessment"])
 
@@ -47,6 +48,18 @@ def assess_career_path(request: CareerAssessmentRequest, user: User = Depends(ge
     except Exception:
         # Assessment remains usable if optional retrieval assets are not installed.
         pass
+
+    # Hybrid recommender: the specific careers from the 452-career catalogue that fit this profile best.
+    try:
+        result["career_matches"] = recommender.recommend({
+            "course": request.course or "",
+            "specialisation": request.career_goal or "",
+            "skills": request.skills,
+            "interests": list(request.interests) + list(request.preferred_activities),
+        })
+    except Exception as exc:
+        print(f"[Recommender] Skipped: {exc}")
+        result["career_matches"] = []
 
     record = CareerAssessmentRecord(
         assessment_id=str(uuid.uuid4()),

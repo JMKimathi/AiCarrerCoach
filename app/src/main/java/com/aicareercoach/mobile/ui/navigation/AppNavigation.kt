@@ -204,6 +204,7 @@ fun AppNavigation(
                 resources = resources,
                 onSessionChange = { session = it },
                 onOpenFeedback = { navController.navigate(Routes.Feedback) },
+                onRateChat = { id -> navController.navigate(if (id != null) "${Routes.Feedback}?session=$id" else Routes.Feedback) },
                 onLogOut = { logOut(Routes.Student) }
             ) else LandingScreen(
                 onGetStarted = { navController.navigate("${Routes.Auth}?register=true") },
@@ -212,9 +213,16 @@ fun AppNavigation(
             )
         }
 
-        composable(Routes.Feedback) {
+        composable(
+            "${Routes.Feedback}?session={session}",
+            arguments = listOf(navArgument("session") { type = NavType.StringType; nullable = true; defaultValue = null })
+        ) { entry ->
+            val chatSessionId = entry.arguments?.getString("session")
             FeedbackScreen(
                 sessionToken = session?.token.orEmpty(),
+                chatSessionId = chatSessionId,
+                topic = if (chatSessionId != null) "Your latest conversation with the career coach"
+                        else "General feedback about your career coach experience",
                 onBack = { navController.popBackStack() },
                 onSubmit = { navController.popBackStack() }
             )
@@ -248,6 +256,7 @@ private fun StudentHome(
     resources: List<CareerResource>,
     onSessionChange: (UserSession) -> Unit,
     onOpenFeedback: () -> Unit,
+    onRateChat: (String?) -> Unit,
     onLogOut: () -> Unit
 ) {
     val tabNav = rememberNavController()
@@ -294,11 +303,16 @@ private fun StudentHome(
                 AICareerChatScreen(
                     session = session,
                     seedQuestion = chatSeed,
-                    onSeedConsumed = { chatSeed = null }
+                    onSeedConsumed = { chatSeed = null },
+                    onRateAnswer = onRateChat
                 )
             }
             composable(Routes.CareerAssessment) {
-                CareerAssessmentScreen(session = session, onBack = { tabNav.popBackStack() })
+                CareerAssessmentScreen(
+                    session = session,
+                    onBack = { tabNav.popBackStack() },
+                    onOpenCareer = { id -> tabNav.navigate(Routes.careerDetail(id)) }
+                )
             }
             composable(Routes.CareerExplorer) {
                 CareerExplorerScreen(

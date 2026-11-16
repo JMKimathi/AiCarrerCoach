@@ -215,9 +215,20 @@ class CareerPathMatch(BaseModel):
     requirements_and_qualification_notes: str = ""
 
 
+class CareerMatch(BaseModel):
+    """One career from the 452-career catalogue, ranked by the hybrid recommender."""
+    career_id: str
+    role_title: str
+    category: str
+    match_score: int = Field(ge=0, le=100, description="Relative to the best match for this profile, not a probability")
+    match_label: str
+    reasons: List[str]
+
+
 class CareerAssessmentResponse(BaseModel):
     assessment_version: str
     profile_completeness: str
     summary: str
     recommendations: List[CareerPathMatch]
+    career_matches: List[CareerMatch] = Field(default_factory=list)
     information_note: str

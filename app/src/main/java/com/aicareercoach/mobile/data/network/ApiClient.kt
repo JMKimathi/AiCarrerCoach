@@ -26,6 +26,7 @@ import com.aicareercoach.mobile.data.OfficialSource
 import com.aicareercoach.mobile.data.OpportunityTemplate
 import com.aicareercoach.mobile.data.PathwayStage
 import com.aicareercoach.mobile.data.RelatedCareer
+import com.aicareercoach.mobile.data.CareerMatch
 import com.aicareercoach.mobile.data.CareerPathMatch
 import com.aicareercoach.mobile.data.StudentAccount
 import com.aicareercoach.mobile.data.UserSession
@@ -294,7 +295,7 @@ object ApiClient {
             val conn = (endpointUrl("/career/assess").openConnection() as HttpURLConnection).apply {
                 requestMethod = "POST"
                 connectTimeout = 5000
-                readTimeout = 15000
+                readTimeout = 45000  // the first assessment after a fresh install may train the recommender
                 doOutput = true
                 setRequestProperty("Content-Type", "application/json")
                 setRequestProperty("Authorization", "Bearer $token")
@@ -327,9 +328,22 @@ object ApiClient {
                     ))
                 }
             }
+            val careerMatches = json.optJSONArray("career_matches") ?: JSONArray()
+            val ranked = (0 until careerMatches.length()).map { i ->
+                val item = careerMatches.getJSONObject(i)
+                val reasons = item.optJSONArray("reasons") ?: JSONArray()
+                CareerMatch(
+                    careerId = item.optString("career_id"),
+                    roleTitle = item.optString("role_title"),
+                    category = item.optString("category"),
+                    matchScore = item.optInt("match_score"),
+                    matchLabel = item.optString("match_label"),
+                    reasons = (0 until reasons.length()).map { reasons.getString(it) }
+                )
+            }
             CareerAssessmentResult(
                 json.optString("profile_completeness"), json.optString("summary"),
-                results, json.optString("information_note")
+                results, json.optString("information_note"), ranked
             )
         } catch (_: Exception) { null }
     }
@@ -786,6 +800,10 @@ object ApiClient {
             }
         }.getOrNull()
     }
+
+    /** Deletes one of the student's conversations and its messages. */
+    suspend fun deleteChatSession(token: String, sessionId: String): Boolean =
+        sendJsonText("DELETE", "/chat/sessions/" + URLEncoder.encode(sessionId, "UTF-8"), token, null) != null
 
     /** Every message of one conversation, oldest first. */
     suspend fun getChatMessages(token: String, sessionId: String): List<ChatLine>? {

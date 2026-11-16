@@ -13,11 +13,13 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowUpward
+import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Description
 import androidx.compose.material.icons.filled.Explore
 import androidx.compose.material.icons.filled.Forum
 import androidx.compose.material.icons.filled.History
 import androidx.compose.material.icons.filled.RecordVoiceOver
+import androidx.compose.material.icons.filled.StarBorder
 import androidx.compose.material.icons.filled.Stop
 import androidx.compose.material.icons.filled.TrendingUp
 import androidx.compose.material3.*
@@ -37,6 +39,7 @@ import com.aicareercoach.mobile.data.ChatSessionSummary
 import com.aicareercoach.mobile.data.UserSession
 import com.aicareercoach.mobile.data.network.ApiClient
 import com.aicareercoach.mobile.ui.theme.AICareerCoachTheme
+import kotlinx.coroutines.launch
 import com.aicareercoach.mobile.ui.theme.BlueLight
 import com.aicareercoach.mobile.ui.theme.BluePrimary
 import com.aicareercoach.mobile.ui.theme.DangerRed
@@ -64,7 +67,8 @@ private val followUpPrompts = listOf("Continue", "Give me an example", "What sho
 fun AICareerChatScreen(
     session: UserSession = UserSession("John Mwiti", "john.mwiti@strathmore.edu"),
     seedQuestion: String? = null,
-    onSeedConsumed: () -> Unit = {}
+    onSeedConsumed: () -> Unit = {},
+    onRateAnswer: (String?) -> Unit = {}
 ) {
     // Runs before anything is shown, so one student never sees another's conversation.
     remember(session.email) { ChatMemory.useFor(session.email) }
@@ -231,6 +235,13 @@ fun AICareerChatScreen(
                             }
                         }
                     }
+                    item {
+                        TextButton(onClick = { onRateAnswer(ChatMemory.sessionId) }) {
+                            Icon(Icons.Default.StarBorder, contentDescription = null, modifier = Modifier.size(18.dp))
+                            Spacer(Modifier.width(6.dp))
+                            Text("Rate this answer")
+                        }
+                    }
                 }
             }
         }
@@ -284,6 +295,7 @@ fun AICareerChatScreen(
                 showHistory = false
                 ChatMemory.open(chosen, session.token)
             },
+            onDeleted = { ChatMemory.forget(it) },
             onDismiss = { showHistory = false }
         )
     }
@@ -295,10 +307,14 @@ private fun ChatHistoryDialog(
     token: String,
     currentSessionId: String?,
     onOpen: (ChatSessionSummary) -> Unit,
+    onDeleted: (String) -> Unit,
     onDismiss: () -> Unit
 ) {
     var sessions by remember { mutableStateOf<List<ChatSessionSummary>?>(null) }
     var failed by remember { mutableStateOf(false) }
+    var toDelete by remember { mutableStateOf<ChatSessionSummary?>(null) }
+    var deleteError by remember { mutableStateOf(false) }
+    val scope = rememberCoroutineScope()
     LaunchedEffect(token) {
         val loaded = ApiClient.getChatSessions(token)
         if (loaded == null) failed = true else sessions = loaded.filter { it.messageCount > 0 }
@@ -314,9 +330,10 @@ private fun ChatHistoryDialog(
                 loaded.isEmpty() -> Text("You have no earlier conversations yet.")
                 else -> LazyColumn(modifier = Modifier.heightIn(max = 360.dp)) {
                     items(loaded, key = { it.id }) { item ->
+                        Row(verticalAlignment = Alignment.CenterVertically) {
                         Column(
                             modifier = Modifier
-                                .fillMaxWidth()
+                                .weight(1f)
                                 .clip(RoundedCornerShape(10.dp))
                                 .clickable { onOpen(item) }
                                 .padding(vertical = 10.dp, horizontal = 6.dp)
@@ -337,6 +354,10 @@ private fun ChatHistoryDialog(
                                 color = TextSecondary
                             )
                         }
+                        IconButton(onClick = { deleteError = false; toDelete = item }) {
+                            Icon(Icons.Default.Delete, contentDescription = "Delete conversation", tint = TextSecondary)
+                        }
+                        }
                         HorizontalDivider()
                     }
                 }
@@ -344,6 +365,30 @@ private fun ChatHistoryDialog(
         },
         confirmButton = { TextButton(onClick = onDismiss) { Text("Close") } }
     )
+    toDelete?.let { item ->
+        AlertDialog(
+            onDismissRequest = { toDelete = null },
+            title = { Text("Delete this conversation?") },
+            text = {
+                Text(if (deleteError) "It could not be deleted. Check that the backend is running and try again."
+                     else "\"${item.title}\" and all its messages will be removed. This cannot be undone.")
+            },
+            confirmButton = {
+                TextButton(onClick = {
+                    scope.launch {
+                        if (ApiClient.deleteChatSession(token, item.id)) {
+                            sessions = sessions?.filterNot { it.id == item.id }
+                            onDeleted(item.id)
+                            toDelete = null
+                        } else {
+                            deleteError = true
+                        }
+                    }
+                }) { Text("Delete") }
+            },
+            dismissButton = { TextButton(onClick = { toDelete = null }) { Text("Cancel") } }
+        )
+    }
 }
 
 @Composable
