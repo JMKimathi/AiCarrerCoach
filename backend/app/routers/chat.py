@@ -239,6 +239,24 @@ def list_chat_sessions(
     return result
 
 
+@router.delete("/sessions/{session_id}", status_code=204)
+def delete_chat_session(
+    session_id: str,
+    student: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """Delete one of the student's conversations and its messages."""
+    session = db.query(ChatSession).filter(
+        ChatSession.session_id == session_id,
+        ChatSession.user_id == student.user_id,
+    ).first()
+    if not session:
+        raise HTTPException(status_code=404, detail="Chat session not found.")
+    db.query(Message).filter(Message.session_id == session_id).delete(synchronize_session=False)
+    db.delete(session)
+    db.commit()
+
+
 @router.get("/sessions/{session_id}/messages", response_model=List[MessageResponse])
 def get_session_messages(
     session_id: str,
