@@ -21,7 +21,7 @@ import com.aicareercoach.mobile.ui.theme.TextSecondary
 import kotlinx.coroutines.launch
 
 @Composable
-fun CareerAssessmentScreen(session: UserSession, onBack: () -> Unit = {}) {
+fun CareerAssessmentScreen(session: UserSession, onBack: () -> Unit = {}, onOpenCareer: (String) -> Unit = {}) {
     var skills by remember { mutableStateOf("") }
     var interests by remember { mutableStateOf("") }
     var activities by remember { mutableStateOf("") }
@@ -65,6 +65,19 @@ fun CareerAssessmentScreen(session: UserSession, onBack: () -> Unit = {}) {
             result?.let { assessment ->
                 Text(assessment.summary, style = MaterialTheme.typography.titleMedium)
                 Text("Profile detail: ${assessment.profileCompleteness}", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                if (assessment.careerMatches.isNotEmpty()) {
+                    Text("Careers that fit you best", style = MaterialTheme.typography.titleMedium)
+                    Text("Ranked from 452 careers using your course, skills and interests.", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                    assessment.careerMatches.forEach { career ->
+                        SectionCard {
+                            Text(career.roleTitle, style = MaterialTheme.typography.titleLarge)
+                            Text("${career.matchLabel}  •  ${career.category}", style = MaterialTheme.typography.labelLarge)
+                            career.reasons.forEach { Text("• $it", style = MaterialTheme.typography.bodySmall) }
+                            TextButton(onClick = { onOpenCareer(career.careerId) }) { Text("View this career") }
+                        }
+                    }
+                    Text("Broader career paths", style = MaterialTheme.typography.titleMedium)
+                }
                 assessment.recommendations.forEach { match ->
                     SectionCard {
                         Text(match.role, style = MaterialTheme.typography.titleLarge)

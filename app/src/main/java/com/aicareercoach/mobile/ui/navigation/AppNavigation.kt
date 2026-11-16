@@ -298,7 +298,11 @@ private fun StudentHome(
                 )
             }
             composable(Routes.CareerAssessment) {
-                CareerAssessmentScreen(session = session, onBack = { tabNav.popBackStack() })
+                CareerAssessmentScreen(
+                    session = session,
+                    onBack = { tabNav.popBackStack() },
+                    onOpenCareer = { id -> tabNav.navigate(Routes.careerDetail(id)) }
+                )
             }
             composable(Routes.CareerExplorer) {
                 CareerExplorerScreen(

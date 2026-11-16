@@ -97,11 +97,22 @@ data class CareerPathMatch(
     val requirementsAndQualificationNotes: String = ""
 )
 
+/** A specific catalogue career ranked by the hybrid recommender, with the reasons behind it. */
+data class CareerMatch(
+    val careerId: String,
+    val roleTitle: String,
+    val category: String,
+    val matchScore: Int,
+    val matchLabel: String,
+    val reasons: List<String>
+)
+
 data class CareerAssessmentResult(
     val profileCompleteness: String,
     val summary: String,
     val recommendations: List<CareerPathMatch>,
-    val informationNote: String
+    val informationNote: String,
+    val careerMatches: List<CareerMatch> = emptyList()
 )
 
 data class CareerCategory(val name: String, val careerCount: Int)
