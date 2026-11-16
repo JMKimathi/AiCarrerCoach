@@ -111,6 +111,11 @@ object ChatMemory {
         sessionId = null
     }
 
+    /** Called after a conversation is deleted; clears the screen if it was the one open. */
+    fun forget(id: String) {
+        if (sessionId == id && !waiting) startNew()
+    }
+
     fun send(text: String, token: String) {
         val trimmed = text.trim()
         if (trimmed.isEmpty()) return

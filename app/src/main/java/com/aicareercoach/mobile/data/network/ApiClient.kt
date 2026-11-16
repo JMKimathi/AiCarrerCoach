@@ -787,6 +787,10 @@ object ApiClient {
         }.getOrNull()
     }
 
+    /** Deletes one of the student's conversations and its messages. */
+    suspend fun deleteChatSession(token: String, sessionId: String): Boolean =
+        sendJsonText("DELETE", "/chat/sessions/" + URLEncoder.encode(sessionId, "UTF-8"), token, null) != null
+
     /** Every message of one conversation, oldest first. */
     suspend fun getChatMessages(token: String, sessionId: String): List<ChatLine>? {
         val path = "/chat/sessions/" + URLEncoder.encode(sessionId, "UTF-8") + "/messages"
