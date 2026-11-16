@@ -19,6 +19,7 @@ import androidx.compose.material.icons.filled.Explore
 import androidx.compose.material.icons.filled.Forum
 import androidx.compose.material.icons.filled.History
 import androidx.compose.material.icons.filled.RecordVoiceOver
+import androidx.compose.material.icons.filled.StarBorder
 import androidx.compose.material.icons.filled.Stop
 import androidx.compose.material.icons.filled.TrendingUp
 import androidx.compose.material3.*
@@ -66,7 +67,8 @@ private val followUpPrompts = listOf("Continue", "Give me an example", "What sho
 fun AICareerChatScreen(
     session: UserSession = UserSession("John Mwiti", "john.mwiti@strathmore.edu"),
     seedQuestion: String? = null,
-    onSeedConsumed: () -> Unit = {}
+    onSeedConsumed: () -> Unit = {},
+    onRateAnswer: (String?) -> Unit = {}
 ) {
     // Runs before anything is shown, so one student never sees another's conversation.
     remember(session.email) { ChatMemory.useFor(session.email) }
@@ -231,6 +233,13 @@ fun AICareerChatScreen(
                             followUpPrompts.forEach { prompt ->
                                 FollowUpChip(prompt) { send(prompt) }
                             }
+                        }
+                    }
+                    item {
+                        TextButton(onClick = { onRateAnswer(ChatMemory.sessionId) }) {
+                            Icon(Icons.Default.StarBorder, contentDescription = null, modifier = Modifier.size(18.dp))
+                            Spacer(Modifier.width(6.dp))
+                            Text("Rate this answer")
                         }
                     }
                 }
