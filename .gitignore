@@ -38,3 +38,6 @@ chapter5_render/
 # Real student profiles stay on this computer; only the empty template is shared
 ml/data/careers/real/*.csv
 !ml/data/careers/real/*.template.csv
+
+# Old files waiting to be deleted
+Redundant/
