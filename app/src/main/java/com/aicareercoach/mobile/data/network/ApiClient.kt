@@ -511,7 +511,32 @@ object ApiClient {
                     }
                 },
                 employers = jsonStrings(json, "employers"),
-                workingPatterns = jsonStrings(json, "working_patterns")
+                workingPatterns = jsonStrings(json, "working_patterns"),
+                pay = json.optJSONObject("pay")?.let { pay ->
+                    val schemes = pay.optJSONArray("internships") ?: JSONArray()
+                    CareerPay(
+                        surveyArea = pay.optString("survey_area"),
+                        typicalLowKes = pay.optInt("typical_low_kes"),
+                        typicalHighKes = pay.optInt("typical_high_kes"),
+                        averageKes = pay.optInt("average_kes"),
+                        sourceName = pay.optString("source_name"),
+                        sourceUrl = pay.optString("source_url"),
+                        checked = pay.optString("checked"),
+                        note = pay.optString("note"),
+                        internships = (0 until schemes.length()).map { index ->
+                            val item = schemes.getJSONObject(index)
+                            InternshipPay(item.optString("scheme"), item.optString("detail"),
+                                item.optString("source_name"), item.optString("source_url"))
+                        }
+                    )
+                },
+                whereToLook = (json.optJSONArray("where_to_look") ?: JSONArray()).let { items ->
+                    (0 until items.length()).map { index ->
+                        val item = items.getJSONObject(index)
+                        JobSource(item.optString("name"), item.optString("url"), item.optString("kind"),
+                            item.optString("note"), item.optString("checked"))
+                    }
+                }
             )
         }.getOrNull()
     }

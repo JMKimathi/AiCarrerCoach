@@ -182,8 +182,27 @@ data class CareerDetail(
     val tools: List<String> = emptyList(),
     val relatedCareers: List<RelatedCareer> = emptyList(),
     val employers: List<String> = emptyList(),
-    val workingPatterns: List<String> = emptyList()
+    val workingPatterns: List<String> = emptyList(),
+    val pay: CareerPay? = null,
+    val whereToLook: List<JobSource> = emptyList()
 )
+
+/** Indicative monthly gross pay for the career's field in Kenya, with where the figures come from. */
+data class CareerPay(
+    val surveyArea: String,
+    val typicalLowKes: Int,
+    val typicalHighKes: Int,
+    val averageKes: Int,
+    val sourceName: String,
+    val sourceUrl: String,
+    val checked: String,
+    val note: String,
+    val internships: List<InternshipPay>
+)
+
+data class InternshipPay(val scheme: String, val detail: String, val sourceName: String, val sourceUrl: String)
+
+data class JobSource(val name: String, val url: String, val kind: String, val note: String, val checked: String)
 
 data class RelatedCareer(
     val careerId: String,
