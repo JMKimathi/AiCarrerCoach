@@ -76,6 +76,9 @@ def load_catalogue() -> dict:
         "tools": _group(_read_optional_csv("career_tools.csv")),
         "related": _group(_read_optional_csv("career_related.csv")),
         "settings": _group(_read_optional_csv("career_work_settings.csv")),
+        "salaries": {row["category"]: row for row in _read_optional_csv("salary_guide.csv")},
+        "internship_pay": _read_optional_csv("internship_pay.csv"),
+        "job_sources": _read_optional_csv("job_sources.csv"),
         "cv_templates": templates,
     }
 
@@ -171,7 +174,36 @@ def get_career(career_id: str) -> dict | None:
              "role_specific": item["link_reason"] == "role-specific"}
             for item in catalogue["resources"].get(career_id, [])
         ],
+        "pay": _pay_for(catalogue, row["category"]),
+        "where_to_look": [
+            {"name": item["name"], "url": item["url"], "kind": item["kind"], "note": item["note"], "checked": item["checked"]}
+            for item in catalogue["job_sources"]
+            if item["categories"] == "all" or row["category"] in item["categories"].split(";")
+        ],
         "information_note": INFORMATION_NOTE,
+    }
+
+
+def _pay_for(catalogue: dict, category: str) -> dict | None:
+    """Indicative monthly gross pay for the career's field, with its source and the date it was checked."""
+    salary = catalogue["salaries"].get(category)
+    if salary is None:
+        return None
+    return {
+        "survey_area": salary["survey_area"],
+        "typical_low_kes": int(salary["typical_low_kes"]),
+        "typical_high_kes": int(salary["typical_high_kes"]),
+        "average_kes": int(salary["average_kes"]),
+        "source_name": salary["source_name"],
+        "source_url": salary["source_url"],
+        "checked": salary["checked"],
+        "note": "Middle 80% of monthly gross pay reported for this field in Kenya. Starting salaries usually sit near the "
+                "lower figure and experienced staff nearer the upper one; pay varies by employer, sector and location.",
+        "internships": [
+            {"scheme": item["scheme"], "detail": item["detail"], "source_name": item["source_name"],
+             "source_url": item["source_url"], "checked": item["checked"]}
+            for item in catalogue["internship_pay"]
+        ],
     }
 
 
