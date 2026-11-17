@@ -30,8 +30,15 @@ def get_assessment_options():
 @router.post("/assess", response_model=CareerAssessmentResponse)
 def assess_career_path(request: CareerAssessmentRequest, user: User = Depends(get_current_user), db: Session = Depends(get_db)):
     """Rank career families from multiple student signals with visible evidence."""
+    profile = {"course": request.course or "", "specialisation": request.career_goal or "",
+               "skills": request.skills, "interests": list(request.interests) + list(request.preferred_activities)}
     try:
-        result = assess_career_paths(request.model_dump())
+        order = recommender.rank_pathways(profile, CAREER_PATHS)
+    except Exception as exc:
+        print(f"[Recommender] Pathway ranking skipped: {exc}")
+        order = None
+    try:
+        result = assess_career_paths(request.model_dump(), top_k=2, order=order)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
@@ -51,12 +58,7 @@ def assess_career_path(request: CareerAssessmentRequest, user: User = Depends(ge
 
     # Hybrid recommender: the specific careers from the 452-career catalogue that fit this profile best.
     try:
-        result["career_matches"] = recommender.recommend({
-            "course": request.course or "",
-            "specialisation": request.career_goal or "",
-            "skills": request.skills,
-            "interests": list(request.interests) + list(request.preferred_activities),
-        })
+        result["career_matches"] = recommender.recommend(profile)
     except Exception as exc:
         print(f"[Recommender] Skipped: {exc}")
         result["career_matches"] = []

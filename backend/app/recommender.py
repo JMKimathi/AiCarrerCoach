@@ -95,9 +95,47 @@ def _load() -> dict:
             "class_index": [list(model.classes_).index(c) for c in career_ids],
             "skills": skills, "doc_vectorizer": doc_vectorizer, "doc_matrix": doc_vectorizer.transform(documents),
             "skill_totals": np.array([sum(w for _, w in skills.get(c, [])) or 1.0 for c in career_ids]),
+            "career_words": {c: _stems(" ".join([catalog[c]["role_title"], catalog[c].get("specialisation", ""),
+                                                 catalog[c].get("description", ""), " ".join(tasks.get(c, [])),
+                                                 " ".join(s for s, _ in skills.get(c, []))]))
+                             for c in career_ids},
         }
         print(f"[Recommender] Ready: {len(career_ids)} careers.")
         return _state
+
+
+_STOP = {"with", "from", "that", "this", "your", "work", "working", "about", "into", "other", "their", "them", "have",
+         "using", "skills", "people", "things", "being", "more", "they", "such", "will", "able", "also"}
+
+
+def _stems(text: str) -> set[str]:
+    """Rough word roots so that 'analysis', 'analyse' and 'analytical' count as the same idea."""
+    words = re.findall(r"[a-z]{4,}", text.lower())
+    return {w[:5] for w in words if w not in _STOP}
+
+
+def _reasons(clean: dict, career_id: str, state: dict, student_skills: set[str]) -> list[str]:
+    """Explain a suggestion only with answers the student actually gave."""
+    reasons = []
+    shared = sorted(((w, s) for s, w in state["skills"].get(career_id, []) if s.lower() in student_skills), reverse=True)
+    if shared:
+        reasons.append("Uses your skills in " + ", ".join(s for _, s in shared[:3]))
+    words = state["career_words"].get(career_id, set())
+    linked = [item.strip() for item in clean.get("interests", "").split(";")
+              if item.strip() and _stems(item) & words][:3]
+    if linked:
+        reasons.append("Linked to what you said you enjoy: " + ", ".join(linked))
+    course = clean.get("course", "").strip()
+    if course and _stems(course) & words:
+        reasons.append(f"Related to your course ({course})")
+    return reasons
+
+
+def _label(rank: int, score: int, cut: int) -> str:
+    """Scores are relative to this student's best match, so the wording avoids sounding certain."""
+    if rank == 0:
+        return "Top suggestion"
+    return "Also worth exploring" if score >= cut else "Related option"
 
 
 def _scale(values: np.ndarray) -> np.ndarray:
@@ -137,6 +175,23 @@ def _load_matcher() -> dict | None:
         return _matcher
 
 
+def rank_pathways(profile: dict, paths: list[dict]) -> list[str] | None:
+    """Order the broad career pathways with the same model that ranks the roles, so both agree.
+    Returns None when the career matcher is not installed (the word-overlap order is then kept)."""
+    matcher = _load_matcher()
+    if matcher is None or not paths:
+        return None
+    if "path_vectors" not in matcher:
+        texts = [f"{p['occupation_title']}. {p.get('sector', '')}. Skills: {', '.join(p.get('skills', []))}. {p.get('role_summary', '')}"
+                 for p in paths]
+        matcher["path_titles"] = [p["occupation_title"] for p in paths]
+        matcher["path_vectors"] = matcher["model"].encode(texts, batch_size=64, normalize_embeddings=True)
+    clean = {key: "; ".join(value) if isinstance(value, (list, tuple)) else (value or "") for key, value in profile.items()}
+    query = matcher["model"].encode([_profile_sentence(clean)], normalize_embeddings=True)[0]
+    similarity = matcher["path_vectors"] @ query
+    return [matcher["path_titles"][i] for i in np.argsort(-similarity)]
+
+
 def warm_up() -> None:
     """Load the models at start-up so the first assessment does not wait for them."""
     try:
@@ -161,18 +216,16 @@ def recommend(profile: dict, top_k: int = 5) -> list[dict]:
         similarity = matcher["vectors"] @ query
         top, middle = float(similarity.max()), float(np.median(similarity))
         results = []
-        for index in np.argsort(-similarity)[:top_k]:
+        for rank, index in enumerate(np.argsort(-similarity)[:top_k]):
             career_id = state["career_ids"][index]
             row = state["catalog"][career_id]
             score = int(round(100 * max(0.0, (float(similarity[index]) - middle) / (top - middle)))) if top > middle else 0
-            shared = sorted(((w, s) for s, w in state["skills"].get(career_id, []) if s.lower() in student_skills), reverse=True)
-            reasons = (["Uses your skills in " + ", ".join(s for _, s in shared[:3])] if shared else []) + \
-                      ["Its description and tasks closely match your profile"]
+            reasons = _reasons(clean, career_id, state, student_skills)
+            if len(reasons) < 2:
+                reasons.append("Its description and tasks are close to your answers overall")
             results.append({
                 "career_id": str(career_id), "role_title": row["role_title"], "category": row.get("category", ""),
-                "match_score": score,
-                "match_label": "Strong match" if score >= 85 else "Good match" if score >= 65 else "Worth exploring",
-                "reasons": reasons,
+                "match_score": score, "match_label": _label(rank, score, 65), "reasons": reasons,
             })
         return results
 
@@ -187,13 +240,11 @@ def recommend(profile: dict, top_k: int = 5) -> list[dict]:
     scores = trust * (CLASSIFIER_SHARE * _scale(probabilities) + (1 - CLASSIFIER_SHARE) * content) + (1 - trust) * content
 
     results = []
-    for index in np.argsort(-scores)[:top_k]:
+    for rank, index in enumerate(np.argsort(-scores)[:top_k]):
         career_id = state["career_ids"][index]
         row = state["catalog"][career_id]
-        shared = sorted(((w, s) for s, w in state["skills"].get(career_id, []) if s.lower() in student_skills), reverse=True)
-        reasons = []
-        if shared:
-            reasons.append("Uses your skills in " + ", ".join(s for _, s in shared[:3]))
+        reasons = _reasons(clean, career_id, state, student_skills)
+        shared = bool(reasons)
         if trust >= 0.5 and probabilities[index] >= 0.05:
             reasons.append("Students with a profile like yours chose this career")
         if similarity[index] > 0 and (not shared or trust < 0.5):
@@ -204,7 +255,7 @@ def recommend(profile: dict, top_k: int = 5) -> list[dict]:
             "role_title": row["role_title"],
             "category": row.get("category", ""),
             "match_score": score,
-            "match_label": "Strong match" if score >= 60 else "Good match" if score >= 25 else "Worth exploring",
+            "match_label": _label(rank, score, 25),
             "reasons": reasons or ["A partial match to your profile; add more skills for better suggestions"],
         })
     return results

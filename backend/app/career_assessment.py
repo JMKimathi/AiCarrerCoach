@@ -42,7 +42,9 @@ def _matches(values: Iterable[str], terms: Iterable[str]) -> list[str]:
     return matched
 
 
-def assess_career_paths(profile: dict, top_k: int = 4) -> dict:
+def assess_career_paths(profile: dict, top_k: int = 4, order: list[str] | None = None) -> dict:
+    """`order`, when given, is a ranking of pathway titles from the career matcher; it replaces the word-overlap order
+    so that the broad career areas agree with the specific roles suggested by the same model."""
     dimensions = (("course", 0.15, "related_courses"), ("career_goal", 0.10, "goal_terms"),
                   ("skills", 0.35, "skills"), ("interests", 0.25, "interest_signals"),
                   ("preferred_activities", 0.15, "preferred_activities"))
@@ -84,8 +86,12 @@ def assess_career_paths(profile: dict, top_k: int = 4) -> dict:
             "requirements_and_qualification_notes": path["requirements_and_qualification_notes"],
             "related_resources": [],
         })
-    recommendations.sort(key=lambda item: (item["fit_score"], item["role"]), reverse=True)
-    recommendations = [item for item in recommendations if item["fit_score"] > 0]
+    if order:
+        position = {title: rank for rank, title in enumerate(order)}
+        recommendations.sort(key=lambda item: position.get(item["role"], len(position)))
+    else:
+        recommendations.sort(key=lambda item: (item["fit_score"], item["role"]), reverse=True)
+        recommendations = [item for item in recommendations if item["fit_score"] > 0]
     if not recommendations:
         summary = "I could not match those answers to a pathway yet. Try a suggested option or add a skill, interest, or activity in your own words."
         completeness = "needs more detail"
