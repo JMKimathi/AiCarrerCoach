@@ -14,6 +14,9 @@ import com.aicareercoach.mobile.data.CareerResource
 import com.aicareercoach.mobile.data.CareerAssessmentResult
 import com.aicareercoach.mobile.data.CareerCategory
 import com.aicareercoach.mobile.data.CareerDetail
+import com.aicareercoach.mobile.data.CareerPay
+import com.aicareercoach.mobile.data.InternshipPay
+import com.aicareercoach.mobile.data.JobSource
 import com.aicareercoach.mobile.data.CareerPage
 import com.aicareercoach.mobile.data.CareerSummary
 import com.aicareercoach.mobile.data.ChatLine
@@ -512,7 +515,8 @@ object ApiClient {
                 },
                 employers = jsonStrings(json, "employers"),
                 workingPatterns = jsonStrings(json, "working_patterns"),
-                pay = json.optJSONObject("pay")?.let { pay ->
+                pay =
+                    json.optJSONObject("pay")?.let { pay ->
                     val schemes = pay.optJSONArray("internships") ?: JSONArray()
                     CareerPay(
                         surveyArea = pay.optString("survey_area"),
