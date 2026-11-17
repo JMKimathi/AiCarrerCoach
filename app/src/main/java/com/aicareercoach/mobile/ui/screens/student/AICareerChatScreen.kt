@@ -29,7 +29,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.style.TextOverflow
+import com.aicareercoach.mobile.ui.components.markdownToStyled
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -465,7 +467,7 @@ private fun ChatBubble(message: ChatLine) {
                 .padding(12.dp)
         ) {
             Text(
-                message.text,
+                if (message.fromUser) AnnotatedString(message.text) else markdownToStyled(message.text),
                 color = if (message.fromUser) Color.White else Color(0xFF111827),
                 style = MaterialTheme.typography.bodyMedium
             )

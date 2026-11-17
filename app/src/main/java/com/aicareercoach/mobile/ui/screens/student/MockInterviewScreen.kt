@@ -1,5 +1,6 @@
 package com.aicareercoach.mobile.ui.screens.student
 
+import com.aicareercoach.mobile.ui.components.markdownToStyled
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
@@ -225,7 +226,7 @@ fun MockInterviewScreen(
                         SectionCard {
                             Text("Your feedback", style = MaterialTheme.typography.titleMedium)
                             Spacer(Modifier.height(8.dp))
-                            Text(feedback, style = MaterialTheme.typography.bodyMedium)
+                            Text(markdownToStyled(feedback), style = MaterialTheme.typography.bodyMedium)
                         }
                     }
                 }
