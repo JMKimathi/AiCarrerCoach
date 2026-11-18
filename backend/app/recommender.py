@@ -114,10 +114,23 @@ _STOP = {"with", "from", "that", "this", "your", "work", "working", "about", "in
          "using", "skills", "people", "things", "being", "more", "they", "such", "will", "able", "also"}
 
 
+_SUFFIXES = ("ations", "ation", "ings", "ing", "ical", "ists", "ist", "ers", "er", "ies", "es", "ed", "al", "s")
+
+
+def _root(word: str) -> str:
+    """Strip one common ending so 'farming', 'farmer' and 'farms' all become 'farm'.
+
+    We used to cut every word to its first five letters, but that made unrelated words collide
+    ('community' and 'communication' both became 'commu'), which produced reasons that weren't true."""
+    for suffix in _SUFFIXES:
+        if word.endswith(suffix) and len(word) - len(suffix) >= 4:
+            return word[:-len(suffix)]
+    return word
+
+
 def _stems(text: str) -> set[str]:
-    """Rough word roots so that 'analysis', 'analyse' and 'analytical' count as the same idea."""
-    words = re.findall(r"[a-z]{4,}", text.lower())
-    return {w[:5] for w in words if w not in _STOP}
+    """Word roots of a piece of text, ignoring very short and very common words."""
+    return {_root(w) for w in re.findall(r"[a-z]{4,}", text.lower()) if w not in _STOP}
 
 
 def _reasons(clean: dict, career_id: str, state: dict, student_skills: set[str]) -> list[str]:
@@ -228,9 +241,9 @@ def recommend(profile: dict, top_k: int = 5) -> list[dict]:
             career_id = state["all_ids"][index]
             row = state["catalog"][career_id]
             score = int(round(100 * max(0.0, (float(similarity[index]) - middle) / (top - middle)))) if top > middle else 0
+            # Only reasons we can point to in the student's own answers. If there are none, the app says the
+            # role was suggested from the answers as a whole rather than inventing a reason.
             reasons = _reasons(clean, career_id, state, student_skills)
-            if len(reasons) < 2:
-                reasons.append("Its description and tasks are close to your answers overall")
             results.append({
                 "career_id": str(career_id), "role_title": row["role_title"], "category": row.get("category", ""),
                 "match_score": score, "match_label": _label(rank, score, 65), "reasons": reasons,

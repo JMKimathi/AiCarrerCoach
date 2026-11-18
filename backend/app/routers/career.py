@@ -37,6 +37,24 @@ def assess_career_path(request: CareerAssessmentRequest, user: User = Depends(ge
     except Exception as exc:
         print(f"[Recommender] Pathway ranking skipped: {exc}")
         order = None
+    # The specific careers from the catalogue that fit this profile best, with reasons from the student's answers.
+    try:
+        career_matches = recommender.recommend(profile)
+    except Exception as exc:
+        print(f"[Recommender] Skipped: {exc}")
+        career_matches = []
+
+    # Make the career areas follow the roles shown above them: first the best area in each role's field
+    # (in the order the roles were ranked), then everything else in the matcher's order.
+    if order and career_matches:
+        sector_of = {path["occupation_title"]: path["sector"] for path in CAREER_PATHS}
+        first = []
+        for field in dict.fromkeys(match["category"] for match in career_matches):
+            best = next((title for title in order if sector_of.get(title) == field and title not in first), None)
+            if best:
+                first.append(best)
+        order = first + [title for title in order if title not in first]
+
     try:
         result = assess_career_paths(request.model_dump(), top_k=2, order=order)
     except ValueError as exc:
@@ -56,12 +74,7 @@ def assess_career_path(request: CareerAssessmentRequest, user: User = Depends(ge
         # Assessment remains usable if optional retrieval assets are not installed.
         pass
 
-    # The specific careers from the catalogue that fit this profile best, with reasons from the student's answers.
-    try:
-        result["career_matches"] = recommender.recommend(profile)
-    except Exception as exc:
-        print(f"[Recommender] Skipped: {exc}")
-        result["career_matches"] = []
+    result["career_matches"] = career_matches
 
     record = CareerAssessmentRecord(
         assessment_id=str(uuid.uuid4()),
