@@ -44,8 +44,18 @@ def assess_career_path(request: CareerAssessmentRequest, user: User = Depends(ge
         print(f"[Recommender] Skipped: {exc}")
         career_matches = []
 
+    # Without the matcher there is no model ranking for the areas, so start from the answer-overlap order
+    # (best first) and let the alignment step below put the roles' fields first in the same way.
+    if not order and career_matches:
+        try:
+            by_overlap = assess_career_paths(request.model_dump(), top_k=len(CAREER_PATHS))["recommendations"]
+            order = [item["role"] for item in by_overlap]
+            order += [path["occupation_title"] for path in CAREER_PATHS if path["occupation_title"] not in order]
+        except ValueError:
+            order = None
+
     # Make the career areas follow the roles shown above them: first the best area in each role's field
-    # (in the order the roles were ranked), then everything else in the matcher's order.
+    # (in the order the roles were ranked), then everything else in the order above.
     if order and career_matches:
         sector_of = {path["occupation_title"]: path["sector"] for path in CAREER_PATHS}
         first = []
