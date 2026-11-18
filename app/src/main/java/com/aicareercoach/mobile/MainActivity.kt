@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import com.aicareercoach.mobile.ui.navigation.AppNavigation
 import com.aicareercoach.mobile.ui.theme.AICareerCoachTheme
 
+/** The app's only activity. It sets the theme and hands over to the navigation graph. */
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

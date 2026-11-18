@@ -1,3 +1,5 @@
+"""Shared paths and settings for the ML scripts."""
+
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -13,6 +15,7 @@ METRICS = ROOT / "metrics" / "retrieval_metrics.json"
 
 
 def chunk_text(text: str, max_chars: int = 420) -> list[str]:
+    """Split a long text into passages of roughly max_chars, keeping paragraphs together."""
     paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
     chunks: list[str] = []
     buf = ""

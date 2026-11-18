@@ -21,6 +21,7 @@ import java.util.UUID
 import com.aicareercoach.mobile.data.network.ApiClient
 import kotlinx.coroutines.launch
 
+/** Form for the admin to add a new career guide. */
 @Composable
 fun AdminUploadScreen(
     token: String = "",
@@ -76,6 +77,7 @@ fun AdminUploadScreen(
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true)
 @Composable
 private fun AdminUploadScreenPreview() {

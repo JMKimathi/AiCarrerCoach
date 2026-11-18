@@ -584,6 +584,71 @@ EXTENDED_CATALOGUE = {
     ],
 }
 
+# Third wave (November 2026): newer and in-demand roles. Added after the evaluation, so these careers
+# have no synthetic student profiles yet; the career matcher ranks them from their descriptions alone.
+RECENT_ADDITIONS = {
+    "Technology and Data": [
+        ("Data Annotation Specialist", "AI training data", "data labelling; attention to detail; annotation tools; quality checking"),
+        ("Cloud Security Engineer", "cloud protection", "cloud platforms; identity and access management; security monitoring; incident response"),
+    ],
+    "Engineering and Built Environment": [
+        ("BIM Coordinator", "building information modelling", "BIM software; technical drawing; model coordination; construction documentation"),
+        ("Building Inspector", "building compliance", "building codes; site inspection; technical drawing; report writing"),
+    ],
+    "Health and Medicine": [
+        ("Telemedicine Coordinator", "digital health services", "patient communication; health information systems; scheduling; data privacy"),
+        ("Genetic Counsellor", "genetic health guidance", "genetics knowledge; patient counselling; risk assessment; ethics"),
+    ],
+    "Banking and Finance": [
+        ("Digital Lending Analyst", "mobile and online credit", "credit analysis; data analysis; SQL; risk monitoring"),
+        ("Bancassurance Officer", "insurance through banks", "insurance products; customer advice; sales; regulatory compliance"),
+    ],
+    "Business and Entrepreneurship": [
+        ("Customer Success Manager", "customer retention", "customer relationship management; communication; problem solving; data analysis"),
+        ("Small Business Advisor", "enterprise support", "business planning; financial literacy; coaching; market research"),
+    ],
+    "Law and Governance": [
+        ("Legal Operations Coordinator", "law firm operations", "legal administration; matter management; billing; document management"),
+        ("Court Interpreter", "court language services", "language fluency; legal terminology; listening; confidentiality"),
+    ],
+    "Education and Teaching": [
+        ("Education Technology Specialist", "digital learning", "learning platforms; instructional design; teacher training; troubleshooting"),
+        ("Coding and Robotics Instructor", "STEM education", "programming; robotics kits; lesson planning; learner engagement"),
+    ],
+    "Agriculture and Environment": [
+        ("Agricultural Insurance Officer", "farm risk cover", "agricultural knowledge; insurance products; field assessment; customer advice"),
+        ("Agripreneur", "agricultural enterprise", "farm management; business planning; marketing; record keeping"),
+    ],
+    "Media and Creative Industries": [
+        ("Podcast Producer", "audio storytelling", "audio editing; storytelling; interviewing; project planning"),
+        ("Video Editor", "video post-production", "video editing software; storytelling; colour correction; sound editing"),
+    ],
+    "Tourism and Hospitality": [
+        ("Safari Guide", "wildlife guiding", "wildlife knowledge; customer service; driving; first aid"),
+        ("Hospitality Sales Executive", "hotel and venue sales", "sales; negotiation; customer relationship management; presentation"),
+    ],
+    "Science and Research": [
+        ("Genomics Laboratory Technician", "DNA sequencing", "laboratory techniques; DNA extraction; quality control; data recording"),
+        ("Environmental Laboratory Analyst", "environmental testing", "laboratory analysis; water and soil testing; quality control; report writing"),
+    ],
+    "Logistics and Operations": [
+        ("Courier Operations Supervisor", "parcel delivery", "operations planning; team supervision; route planning; customer service"),
+        ("E-commerce Fulfilment Coordinator", "online order fulfilment", "inventory management; order processing; warehouse operations; attention to detail"),
+    ],
+    "Social and Community Services": [
+        ("Mental Health Peer Supporter", "peer mental health support", "active listening; empathy; mental health awareness; referral"),
+        ("Social Protection Officer", "social safety nets", "case management; data collection; community engagement; report writing"),
+    ],
+    "Public Service and Development": [
+        ("Climate Finance Analyst", "climate funding", "financial analysis; climate policy; project appraisal; report writing"),
+        ("Public Participation Officer", "citizen engagement", "community engagement; facilitation; communication; report writing"),
+    ],
+    "Energy, Manufacturing and Skilled Trades": [
+        ("Mini-Grid Technician", "off-grid power", "solar systems; electrical installation; battery systems; customer service"),
+        ("Upholsterer", "furniture upholstery", "upholstery techniques; fabric cutting; sewing; measuring"),
+    ],
+}
+
 CATALOG_COLUMNS = [
     "career_id", "category", "role_title", "specialisation", "description",
     "commonly_regulated", "market_scope", "opportunity_types", "description_status",
@@ -593,24 +658,27 @@ SKILL_COLUMNS = ["career_id", "skill", "skill_type", "importance", "data_origin"
 
 
 def _clean_title(raw: str) -> tuple[str, bool]:
+    """Tidy a role title (spacing and capitals) before it goes into the catalogue."""
     regulated = raw.endswith("*")
     return raw.rstrip("*").strip(), regulated
 
 
 def _join(items: list[str]) -> str:
+    """Join a list into one '; '-separated cell for the CSV."""
     if len(items) <= 1:
         return "".join(items)
     return ", ".join(items[:-1]) + " and " + items[-1]
 
 
 def build_rows() -> tuple[list[dict], list[dict]]:
+    """Turn the role lists above into catalogue rows with stable CAREER-xxx ids."""
     catalog: list[dict] = []
     skills: list[dict] = []
     counter = 0
-    # Base roles first, then the extended wave, so earlier career_id values stay stable.
+    # Base roles first, then the extended wave, then the recent additions, so earlier career_id values stay stable.
     ordered_roles = [
         (category, role)
-        for wave in (CATALOGUE, EXTENDED_CATALOGUE)
+        for wave in (CATALOGUE, EXTENDED_CATALOGUE, RECENT_ADDITIONS)
         for category in CATEGORIES
         for role in wave.get(category, [])
     ]
@@ -644,6 +712,7 @@ def build_rows() -> tuple[list[dict], list[dict]]:
             seen: set[str] = set()
 
             def add(skill: str, skill_type: str, importance: int) -> None:
+                """Add one skill to the current career, skipping duplicates."""
                 key = skill.casefold()
                 if key in seen:
                     return
@@ -663,6 +732,7 @@ def build_rows() -> tuple[list[dict], list[dict]]:
 
 
 def validate(catalog: list[dict], skills: list[dict]) -> None:
+    """Stop the build if any career is missing fields or ids repeat."""
     ids = [row["career_id"] for row in catalog]
     if len(ids) != len(set(ids)):
         raise ValueError("Duplicate career_id values")
@@ -683,6 +753,7 @@ def validate(catalog: list[dict], skills: list[dict]) -> None:
 
 
 def write_csv(path: Path, columns: list[str], rows: list[dict]) -> None:
+    """Write rows to a CSV with the given column order."""
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=columns)
         writer.writeheader()
@@ -690,6 +761,7 @@ def write_csv(path: Path, columns: list[str], rows: list[dict]) -> None:
 
 
 def main() -> None:
+    """Build and check the catalogue, then write the CSV files."""
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--check", action="store_true", help="Validate the generated tables without writing files.")

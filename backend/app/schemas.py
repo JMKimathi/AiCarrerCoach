@@ -1,3 +1,7 @@
+"""Request and response shapes for the API (Pydantic models).
+
+FastAPI uses these to check incoming data and to describe responses."""
+
 from datetime import datetime
 from typing import List, Optional
 import re
@@ -5,6 +9,7 @@ from pydantic import BaseModel, Field, ConfigDict, field_validator
 
 
 def _normalize_email(value: str) -> str:
+    """Trim and lower-case an email so logins are not case sensitive."""
     normalized = value.strip().lower()
     if len(normalized) > 254 or not re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", normalized):
         raise ValueError("Enter a valid email address")
@@ -13,16 +18,19 @@ def _normalize_email(value: str) -> str:
 
 # --- Auth Schemas ---
 class LoginRequest(BaseModel):
+    """What the app sends when someone logs in."""
     email: str = Field(max_length=254)
     password: str = Field(min_length=1, max_length=128)
 
     @field_validator("email")
     @classmethod
     def validate_email(cls, value: str) -> str:
+        """Normalise the email before it is used."""
         return _normalize_email(value)
 
 
 class RegisterRequest(BaseModel):
+    """What the app sends when a student signs up."""
     full_name: str = Field(min_length=2, max_length=150)
     email: str = Field(max_length=254)
     password: str = Field(min_length=8, max_length=128)
@@ -32,16 +40,19 @@ class RegisterRequest(BaseModel):
     @field_validator("email")
     @classmethod
     def validate_email(cls, value: str) -> str:
+        """Normalise the email before it is used."""
         return _normalize_email(value)
 
 
 class ProfileUpdateRequest(BaseModel):
+    """Fields a student can change on their profile."""
     full_name: str = Field(min_length=2, max_length=150)
     course: Optional[str] = Field(default=None, max_length=100)
     career_goal: Optional[str] = Field(default=None, max_length=150)
 
 
 class UserResponse(BaseModel):
+    """A user's details as returned to the app (never the password)."""
     user_id: str
     full_name: str
     email: str
@@ -54,12 +65,14 @@ class UserResponse(BaseModel):
 
 
 class AuthResponse(BaseModel):
+    """Token plus user details returned after login or sign up."""
     token: str
     user: UserResponse
 
 
 # --- Chat Schemas ---
 class ChatQueryRequest(BaseModel):
+    """A question sent to the chat coach."""
     query: str
     session_id: Optional[str] = None
     # Chosen by the app for each message so that reply can be stopped while it is being written.
@@ -67,12 +80,14 @@ class ChatQueryRequest(BaseModel):
 
 
 class SourceDetail(BaseModel):
+    """A knowledge-base passage the coach used for its answer."""
     title: str
     score: float
     content_snippet: str
 
 
 class ChatQueryResponse(BaseModel):
+    """The coach's answer and the sources behind it."""
     session_id: str
     response: str
     sources: List[str]
@@ -82,6 +97,7 @@ class ChatQueryResponse(BaseModel):
 
 
 class MessageResponse(BaseModel):
+    """One stored chat message."""
     message_id: str
     sender_type: str
     content: str
@@ -93,6 +109,7 @@ class MessageResponse(BaseModel):
 
 
 class ChatSessionResponse(BaseModel):
+    """A conversation as listed in the chat history."""
     session_id: str
     title: str
     started_at: datetime
@@ -104,6 +121,7 @@ class ChatSessionResponse(BaseModel):
 
 # --- Resource Schemas ---
 class ResourceListItem(BaseModel):
+    """A guide as shown in the list (title and summary only)."""
     resource_id: str
     title: str
     category: str
@@ -114,6 +132,7 @@ class ResourceListItem(BaseModel):
 
 
 class ResourceDetail(BaseModel):
+    """A guide with its full content."""
     resource_id: str
     title: str
     category: str
@@ -125,6 +144,7 @@ class ResourceDetail(BaseModel):
 
 
 class ResourceCreate(BaseModel):
+    """What an admin sends to add a guide."""
     title: str = Field(min_length=3, max_length=200)
     category: str = Field(min_length=2, max_length=100)
     content: str = Field(min_length=10, max_length=30000)
@@ -132,6 +152,7 @@ class ResourceCreate(BaseModel):
 
 # --- Feedback Schemas ---
 class FeedbackCreate(BaseModel):
+    """What a student sends as feedback."""
     rating: int
     is_accurate: bool = True
     comments: Optional[str] = ""
@@ -139,6 +160,7 @@ class FeedbackCreate(BaseModel):
 
 
 class FeedbackResponse(BaseModel):
+    """A stored feedback entry."""
     feedback_id: str
     rating: int
     is_accurate: bool
@@ -151,6 +173,7 @@ class FeedbackResponse(BaseModel):
 
 # --- Admin Analytics ---
 class AdminOverviewResponse(BaseModel):
+    """Headline numbers for the admin dashboard."""
     active_students: int
     career_resources: int
     chats_this_week: int
@@ -168,18 +191,21 @@ class AdminOverviewResponse(BaseModel):
 
 # --- ML Career Prediction Schemas ---
 class CareerPredictionRequest(BaseModel):
+    """The student's assessment answers."""
     skills: str
     qualifications: Optional[str] = "BSc Computer Science"
     experience: Optional[str] = "0 to 1 Years"
 
 
 class RoleConfidence(BaseModel):
+    """One suggested role with how confident the model is."""
     role: str
     confidence_score: float = Field(description="Legacy field containing relative overlap with supplied wording, not confidence")
     confidence_percentage: str = Field(description="Legacy field containing formatted relative answer overlap, not a probability")
 
 
 class CareerPredictionResponse(BaseModel):
+    """The roles suggested for a student."""
     primary_role: str
     confidence: float = Field(description="Legacy field containing relative answer overlap, not a probability")
     confidence_percentage: str
@@ -200,6 +226,7 @@ class CareerAssessmentRequest(BaseModel):
 
 
 class CareerPathMatch(BaseModel):
+    """A broad career area with the reasons it fits."""
     role: str
     fit_score: int = Field(ge=0, le=100, description="Relative match score, not probability of career success")
     matching_evidence: List[str]
@@ -216,7 +243,7 @@ class CareerPathMatch(BaseModel):
 
 
 class CareerMatch(BaseModel):
-    """One career from the 452-career catalogue, ranked by the hybrid recommender."""
+    """One career from the catalogue, ranked by the career matcher (or the hybrid fallback)."""
     career_id: str
     role_title: str
     category: str
@@ -226,6 +253,7 @@ class CareerMatch(BaseModel):
 
 
 class CareerAssessmentResponse(BaseModel):
+    """The full assessment result shown in the app."""
     assessment_version: str
     profile_completeness: str
     summary: str

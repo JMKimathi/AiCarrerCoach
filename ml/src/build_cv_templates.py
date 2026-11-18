@@ -169,6 +169,7 @@ OPPORTUNITY_LABELS = {
 
 
 def build_templates() -> list[dict]:
+    """Write one CV template per career using its skills, tasks and tools."""
     catalog, skills = build_rows()
     skills_by_career: dict[str, dict[str, list[str]]] = {}
     for row in skills:
@@ -202,6 +203,7 @@ def build_templates() -> list[dict]:
 
 
 def _clean_list(value) -> list[str]:
+    """Turn a cell into a clean list with no blanks or repeats."""
     if isinstance(value, str):
         value = value.replace(";", ",").split(",")
     return [str(item).strip() for item in (value or []) if str(item).strip()]
@@ -472,6 +474,7 @@ DEMO_PROFILE = {
 
 
 def main() -> None:
+    """Build and save the CV templates."""
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--check", action="store_true", help="Validate templates without writing files.")

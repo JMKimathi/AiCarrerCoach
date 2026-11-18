@@ -1,3 +1,5 @@
+"""Standalone version of the retriever, handy for testing outside the backend."""
+
 import json
 import os
 import sys

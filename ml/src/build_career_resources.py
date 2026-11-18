@@ -139,6 +139,7 @@ LINK_COLUMNS = ["career_id", "role_title", "source_id", "source_name", "url", "s
 
 
 def build_links(catalog: list[dict]) -> list[dict]:
+    """Attach useful learning and job-search links to each career."""
     by_role: dict[str, list[str]] = {}
     for source_id, titles in ROLE_SOURCES.items():
         for title in titles:
@@ -164,6 +165,7 @@ def build_links(catalog: list[dict]) -> list[dict]:
 
 
 def validate(catalog: list[dict], links: list[dict]) -> dict:
+    """Check every source used is defined and every career ends up with links."""
     titles = {role["role_title"] for role in catalog}
     for source_id, names in ROLE_SOURCES.items():
         if source_id not in SOURCES:
@@ -194,6 +196,7 @@ def validate(catalog: list[dict], links: list[dict]) -> dict:
 
 
 def main() -> None:
+    """Build, check and write the resource links."""
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--check", action="store_true", help="Validate the tables without writing files.")

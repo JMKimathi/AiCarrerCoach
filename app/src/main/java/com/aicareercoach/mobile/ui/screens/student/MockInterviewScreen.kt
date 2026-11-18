@@ -1,5 +1,6 @@
 package com.aicareercoach.mobile.ui.screens.student
 
+import com.aicareercoach.mobile.ui.components.markdownToStyled
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
@@ -29,6 +30,7 @@ import com.aicareercoach.mobile.ui.components.SectionCard
 import com.aicareercoach.mobile.ui.theme.*
 import kotlinx.coroutines.launch
 
+/** One line in the interview chat, from the interviewer or the student. */
 private data class InterviewMessage(val text: String, val fromCandidate: Boolean)
 
 private val interviewOpportunityChoices = listOf(
@@ -225,7 +227,7 @@ fun MockInterviewScreen(
                         SectionCard {
                             Text("Your feedback", style = MaterialTheme.typography.titleMedium)
                             Spacer(Modifier.height(8.dp))
-                            Text(feedback, style = MaterialTheme.typography.bodyMedium)
+                            Text(markdownToStyled(feedback), style = MaterialTheme.typography.bodyMedium)
                         }
                     }
                 }
@@ -285,6 +287,7 @@ fun MockInterviewScreen(
     }
 }
 
+/** Shows one interview message as a chat bubble. */
 @Composable
 private fun InterviewBubble(message: InterviewMessage) {
     Column(
@@ -313,6 +316,7 @@ private fun InterviewBubble(message: InterviewMessage) {
     }
 }
 
+/** A chip for picking the interview type. */
 @Composable
 private fun InterviewChoiceChip(label: String, selected: Boolean, onClick: () -> Unit) {
     Box(

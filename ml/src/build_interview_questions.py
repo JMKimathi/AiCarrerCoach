@@ -12,6 +12,7 @@ drawn from eight question styles:
   market       Kenya and international context
   ethics       only for commonly regulated roles
   curveball    reflective or unexpected questions
+  task         walks through one of the role's real day-to-day tasks (from career_role_details.py)
 
 The wording a role receives is chosen by a stable hash of its career_id, so two
 roles rarely share the same set and rebuilding gives the same file. Every row
@@ -39,6 +40,7 @@ from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parent))
 from build_career_catalogue import CATEGORIES, DATA_ORIGIN, DEFAULT_OUTPUT_DIR, build_rows, write_csv  # noqa: E402
+from career_role_details import ROLE_DETAILS  # noqa: E402
 
 # Each frame is (question, what a strong answer shows).
 # Placeholders: {skill}, {role}, {a_role}, {focus}, {sector}.
@@ -356,6 +358,19 @@ SITUATIONAL = {
     ],
 }
 
+# Task questions use a real task from the role's authored detail, so the interview feels specific to the job.
+# Placeholder {task} is a short phrase such as "write automated tests".
+TASK_FRAMES = [
+    ("Walk me through how you would {task} in your first few months as {a_role}.",
+     "A clear, step-by-step approach, the checks they would make and who they would involve."),
+    ("One part of this job is to {task}. What would a good day of doing that look like?",
+     "A realistic picture of the work, with priorities and how they would know it went well."),
+    ("Have you ever had to {task}, even in a small way at school or on attachment? Tell me about it.",
+     "An honest example, what they did themselves and what they learnt from it."),
+    ("If you were asked to {task} with very little guidance, how would you get started?",
+     "Sensible first steps, finding the right information and knowing when to ask for help."),
+]
+
 # Follow-up probes are worded so that any probe fits any question of its type.
 FOLLOW_UPS = {
     "skill": ["Give me a specific example.", "Why that approach rather than another?",
@@ -376,12 +391,14 @@ FOLLOW_UPS = {
     "ethics": ["What could go wrong if that were handled badly?", "Who would you turn to for guidance?",
                "Where would you look to confirm the rule?"],
     "curveball": ["Why that one?", "Tell me more about that.", "What does that say about how you work?"],
+    "task": ["What tools would you use for that?", "What could go wrong, and how would you notice?",
+             "How long do you think that would take you at first?", "Who would you check your work with?"],
 }
 
 DIFFICULTY = {
     "behavioural": "entry", "motivation": "entry", "opportunity": "entry",
     "skill": "intermediate", "situational": "intermediate", "market": "intermediate",
-    "ethics": "stretch", "curveball": "stretch",
+    "ethics": "stretch", "curveball": "stretch", "task": "intermediate",
 }
 
 COLUMNS = [
@@ -391,6 +408,7 @@ COLUMNS = [
 
 
 def _rank(key: str) -> int:
+    """Hash-based sort key, so the question order looks mixed but is the same every run."""
     return int(hashlib.md5(key.encode("utf-8")).hexdigest(), 16)
 
 
@@ -401,10 +419,12 @@ def _pick(pool: list, key: str, count: int) -> list:
 
 
 def _article(text: str) -> str:
+    """Pick 'a' or 'an' for a job title."""
     return ("an " if text[:1].lower() in "aeiou" else "a ") + text
 
 
 def build_questions() -> list[dict]:
+    """Write the interview question bank for every career from the question frames."""
     catalog, skills = build_rows()
     core: dict[str, list[str]] = {}
     for row in skills:
@@ -436,6 +456,10 @@ def build_questions() -> list[dict]:
                 selected.append(("ethics", "any", "", frame))
         for frame in _pick(CURVEBALL_FRAMES, f"{career_id}:curveball", 3):
             selected.append(("curveball", "any", "", frame))
+        # Added last so the question ids of the older question types stay the same.
+        tasks = [item.strip() for item in ROLE_DETAILS.get(title, ("", "", "", ""))[2].split(";") if item.strip()]
+        for task, frame in zip(_pick(tasks, f"{career_id}:tasks", 3), _pick(TASK_FRAMES, f"{career_id}:task", 3)):
+            selected.append(("task", "any", task, (frame[0].replace("{task}", task), frame[1])))
 
         seen: set[str] = set()
         number = 0
@@ -496,6 +520,7 @@ def pick_interview_set(rows: list[dict], career_id: str, count: int = 8,
 
 
 def validate(rows: list[dict]) -> dict:
+    """Check every career has enough questions and none repeat."""
     missing = set(CATEGORIES) - set(SITUATIONAL)
     if missing:
         raise ValueError(f"Categories without situational scenarios: {sorted(missing)}")
@@ -517,6 +542,7 @@ def validate(rows: list[dict]) -> dict:
 
 
 def main() -> None:
+    """Build, check and write the question bank (use --check to only check)."""
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--check", action="store_true", help="Validate the question bank without writing files.")

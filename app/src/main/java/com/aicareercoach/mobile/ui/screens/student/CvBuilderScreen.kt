@@ -54,11 +54,14 @@ private data class ExperienceDraft(
     val achievements: String = ""
 )
 
+/** A project the student is still filling in. */
 private data class ProjectDraft(val title: String = "", val description: String = "")
 
+/** Split comma-separated text into a clean list. */
 private fun splitList(text: String): List<String> =
     text.split(",", "\n").map { it.trim() }.filter { it.isNotEmpty() }
 
+/** Split text into a list, one item per line. */
 private fun splitLines(text: String): List<String> =
     text.lines().map { it.trim().removePrefix("-").trim() }.filter { it.isNotEmpty() }
 
@@ -395,6 +398,7 @@ fun CvBuilderScreen(
     }
 }
 
+/** A titled group of fields in the CV form. */
 @Composable
 private fun FormSection(title: String, content: @Composable ColumnScope.() -> Unit) {
     SectionCard {
@@ -404,6 +408,7 @@ private fun FormSection(title: String, content: @Composable ColumnScope.() -> Un
     }
 }
 
+/** Header for a project or experience entry, with a remove button. */
 @Composable
 private fun EntryHeader(label: String, canRemove: Boolean, onRemove: () -> Unit) {
     Row(
@@ -423,6 +428,7 @@ private fun EntryHeader(label: String, canRemove: Boolean, onRemove: () -> Unit)
     Spacer(Modifier.height(4.dp))
 }
 
+/** A text field styled for the CV form. */
 @Composable
 private fun CvField(
     label: String,
@@ -444,6 +450,7 @@ private fun CvField(
     Spacer(Modifier.height(8.dp))
 }
 
+/** A chip for picking an option, e.g. the career to build the CV for. */
 @Composable
 private fun CvChoiceChip(label: String, selected: Boolean, onClick: () -> Unit) {
     Box(

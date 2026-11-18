@@ -1,3 +1,5 @@
+"""Career guide endpoints for the Knowledge section."""
+
 from typing import List, Optional
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
@@ -16,6 +18,7 @@ def list_career_resources(
     _user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
+    """List the guides, optionally within one category."""
     query = db.query(CareerResource)
     if category and category.lower() != "all":
         query = query.filter(CareerResource.category.ilike(f"%{category}%"))
@@ -41,6 +44,7 @@ def list_career_resources(
 
 @router.get("/{resource_id}", response_model=ResourceDetail)
 def get_resource_detail(resource_id: str, db: Session = Depends(get_db), _user: User = Depends(get_current_user)):
+    """Return the full text of one guide."""
     res = db.query(CareerResource).filter(CareerResource.resource_id == resource_id).first()
     if not res:
         raise HTTPException(status_code=404, detail="Career resource not found.")
@@ -49,6 +53,7 @@ def get_resource_detail(resource_id: str, db: Session = Depends(get_db), _user: 
 
 @router.post("", response_model=ResourceDetail)
 def create_resource(payload: ResourceCreate, db: Session = Depends(get_db), _admin=Depends(require_admin)):
+    """Let an admin add a new guide."""
     import re
     title = payload.title.strip()
     category = payload.category.strip()

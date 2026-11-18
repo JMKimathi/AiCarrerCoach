@@ -158,10 +158,12 @@ COLUMNS = [
 
 
 def _choose(pool: list[str], key: str) -> str:
+    """Pick an item from a list in a repeatable way, so reruns give the same output."""
     return pool[int(hashlib.md5(key.encode("utf-8")).hexdigest(), 16) % len(pool)]
 
 
 def build_opportunities() -> list[dict]:
+    """Write example internship and job openings for each career."""
     catalog, skills = build_rows()
     core: dict[str, list[str]] = {}
     for row in skills:
@@ -216,6 +218,7 @@ def build_opportunities() -> list[dict]:
 
 
 def validate(rows: list[dict]) -> dict:
+    """Check every career has openings and the fields are filled."""
     missing = set(CATEGORIES) - set(CATEGORY_MARKET)
     if missing:
         raise ValueError(f"Categories without market defaults: {sorted(missing)}")
@@ -237,6 +240,7 @@ def validate(rows: list[dict]) -> dict:
 
 
 def main() -> None:
+    """Build, check and write the opportunities table."""
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--check", action="store_true", help="Validate the templates without writing files.")

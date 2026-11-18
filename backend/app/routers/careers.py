@@ -24,11 +24,13 @@ OPPORTUNITY_TYPES = {"internship", "industrial attachment", "graduate programme"
 
 
 class CVProject(BaseModel):
+    """A project the student lists on their CV."""
     title: str = Field(min_length=1, max_length=120)
     description: str = Field(default="", max_length=600)
 
 
 class CVExperience(BaseModel):
+    """A job, internship or attachment the student lists on their CV."""
     title: str = Field(min_length=1, max_length=120)
     organisation: str = Field(default="", max_length=120)
     period: str = Field(default="", max_length=60)
@@ -58,6 +60,7 @@ class CVRequest(BaseModel):
 
 
 class CVResponse(BaseModel):
+    """The CV the builder sends back, as markdown."""
     career_id: str
     role_title: str
     markdown: str
@@ -72,6 +75,7 @@ class CVResponse(BaseModel):
 
 
 def _catalogue_call(function, *args, **kwargs):
+    """Run a catalogue lookup and turn missing data into a clear error."""
     try:
         return function(*args, **kwargs)
     except career_catalogue.CatalogueUnavailable as exc:
@@ -80,6 +84,7 @@ def _catalogue_call(function, *args, **kwargs):
 
 @router.get("/categories")
 def get_categories(_user: User = Depends(get_current_user)):
+    """List the career categories for the Career Explorer."""
     return {"categories": _catalogue_call(career_catalogue.list_categories)}
 
 
@@ -91,11 +96,13 @@ def list_careers(
     offset: int = Query(0, ge=0),
     _user: User = Depends(get_current_user),
 ):
+    """Search and page through the careers, optionally within one category."""
     return _catalogue_call(career_catalogue.search_careers, category=category, query=q, limit=limit, offset=offset)
 
 
 @router.get("/{career_id}")
 def get_career_detail(career_id: str, _user: User = Depends(get_current_user)):
+    """Everything about one career for the detail screen."""
     career = _catalogue_call(career_catalogue.get_career, career_id.strip().upper())
     if career is None:
         raise HTTPException(status_code=404, detail="Career not found.")
@@ -103,6 +110,7 @@ def get_career_detail(career_id: str, _user: User = Depends(get_current_user)):
 
 
 def _render(career_id: str, payload: CVRequest, user: User, final: bool) -> dict:
+    """Fill the career's CV template with the student's details."""
     template = _catalogue_call(career_catalogue.get_cv_template, career_id.strip().upper())
     if template is None:
         raise HTTPException(status_code=404, detail="Career not found.")

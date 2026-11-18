@@ -30,15 +30,18 @@ INTERVIEW_TYPES_SHOWN = ("skill", "situational", "behavioural", "motivation", "e
 
 
 def _read_csv(path: Path) -> list[dict]:
+    """Read a CSV into a list of rows."""
     with path.open("r", encoding="utf-8-sig", newline="") as handle:
         return list(csv.DictReader(handle))
 
 
 def _read_optional(path: Path) -> list[dict]:
+    """Read a CSV if it exists, otherwise return nothing."""
     return _read_csv(path) if path.is_file() else []
 
 
 def _group(rows: list[dict]) -> dict[str, list[dict]]:
+    """Group rows by career_id."""
     grouped: dict[str, list[dict]] = defaultdict(list)
     for row in rows:
         grouped[row["career_id"]].append(row)
@@ -69,6 +72,7 @@ def _split(text: str, max_chars: int) -> list[str]:
 
 
 def build_career_chunks(careers_dir: Path, max_chars: int = 1500) -> list[dict]:
+    """Turn each career's data into short passages the chat coach can search."""
     if not all((careers_dir / name).is_file() for name in REQUIRED_FILES):
         return []
     catalog = _read_csv(careers_dir / "career_catalog.csv")
@@ -101,6 +105,7 @@ def build_career_chunks(careers_dir: Path, max_chars: int = 1500) -> list[dict]:
             titles_by_type[row["title_type"]].append(row["title"])
 
         def listed(label: str, items: list[str]) -> str:
+            """Write a labelled line like 'Skills: a, b, c' if the list is not empty."""
             return f"{label}: {'; '.join(items)}." if items else ""
 
         overview = "\n".join(line for line in [

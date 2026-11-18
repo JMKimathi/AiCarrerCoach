@@ -35,6 +35,7 @@ OPTIONAL_ONET_ALIASES = {
 
 
 def open_csv(path: Path):
+    """Open a CSV, coping with the different encodings the source files use."""
     return path.open("r", encoding="utf-8-sig", newline="", errors="replace")
 
 
@@ -63,6 +64,7 @@ def read_rows(path: Path):
 
 
 def validate_columns(path: Path, required: set[str]) -> set[str]:
+    """Make sure a source file has the columns we rely on."""
     with open_csv(path) as handle:
         reader = csv.DictReader(handle)
         available = set(reader.fieldnames or [])
@@ -73,6 +75,7 @@ def validate_columns(path: Path, required: set[str]) -> set[str]:
 
 
 def clean_id(value: str | None) -> str:
+    """Strip spaces and odd characters from an occupation code."""
     if value is None:
         return ""
     value = value.strip()
@@ -80,6 +83,7 @@ def clean_id(value: str | None) -> str:
 
 
 def find_optional_onet_files(input_dir: Path) -> dict[str, Path]:
+    """Look for the extra O*NET files; the build still works without them."""
     found = {}
     for path in (*input_dir.glob("*.csv"), *input_dir.glob("*.xlsx")):
         normalized_name = re.sub(r"[^a-z]", "", path.stem.casefold())
@@ -90,6 +94,7 @@ def find_optional_onet_files(input_dir: Path) -> dict[str, Path]:
 
 
 def ensure_profile(profiles: dict[str, dict], code: str, title: str) -> dict:
+    """Get the profile for an occupation code, creating an empty one if needed."""
     return profiles.setdefault(code, {
         "onet_soc_code": code,
         "occupation_title": title,
@@ -105,6 +110,7 @@ def ensure_profile(profiles: dict[str, dict], code: str, title: str) -> dict:
 
 
 def build_onet_profiles(input_dir: Path, output_dir: Path, optional_files: dict[str, Path]) -> dict:
+    """Combine the O*NET files into one profile per occupation."""
     essential_path = input_dir / "essential_skills.csv"
     software_path = input_dir / "software_skills.csv"
     profiles: dict[str, dict] = {}
@@ -205,6 +211,7 @@ def build_onet_profiles(input_dir: Path, output_dir: Path, optional_files: dict[
 
 
 def likely_kenya_location(location: str) -> bool:
+    """Rough check for whether a job posting's location is in Kenya."""
     value = location.casefold()
     if "kenya" in value:
         return True
@@ -213,6 +220,7 @@ def likely_kenya_location(location: str) -> bool:
 
 
 def build_linkedin_skill_demand(input_dir: Path, output_dir: Path) -> dict:
+    """Count how often each skill appears in the LinkedIn postings."""
     skills_path = input_dir / "skills.csv"
     job_skills_path = input_dir / "job_skills.csv"
     postings_path = input_dir / "postings.csv"
@@ -457,6 +465,7 @@ def build_career_catalogue(output_dir: Path) -> dict:
 
 
 def main() -> None:
+    """Build the processed datasets from the raw downloads."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input-dir", type=Path, default=DEFAULT_INPUT_DIR)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)

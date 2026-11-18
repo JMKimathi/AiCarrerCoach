@@ -1,3 +1,5 @@
+"""App settings read from backend/.env (database URL, Gemini key, token secret and so on)."""
+
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -13,6 +15,7 @@ load_dotenv(ROOT_DIR / ".env")
 
 
 class Settings:
+    """All the settings the backend needs, with safe defaults for local development."""
     PROJECT_NAME: str = "Strathmore Intelligent AI Career Coach API"
     VERSION: str = "1.0.0"
     API_PREFIX: str = "/api"

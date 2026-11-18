@@ -50,16 +50,19 @@ _STYLES = (
 
 
 def _run(text: str, bold: bool = False, size: int | None = None) -> str:
+    """One piece of text inside a Word paragraph, optionally bold or resized."""
     properties = ("<w:b/>" if bold else "") + (f'<w:sz w:val="{size}"/><w:szCs w:val="{size}"/>' if size else "")
     return (f"<w:r>{'<w:rPr>' + properties + '</w:rPr>' if properties else ''}"
             f'<w:t xml:space="preserve">{escape(text)}</w:t></w:r>')
 
 
 def _paragraph(runs: str, properties: str = "") -> str:
+    """Wrap a list of runs into a Word paragraph."""
     return f"<w:p>{'<w:pPr>' + properties + '</w:pPr>' if properties else ''}{runs}</w:p>"
 
 
 def _line(raw: str) -> str:
+    """Turn one markdown line from the CV builder into a Word paragraph."""
     line = raw.rstrip()
     if line.startswith("## "):
         rule = '<w:pBdr><w:bottom w:val="single" w:sz="6" w:space="1" w:color="808080"/></w:pBdr>'
@@ -75,6 +78,7 @@ def _line(raw: str) -> str:
 
 
 def markdown_to_docx(markdown: str) -> bytes:
+    """Convert the generated CV markdown into a .docx file the student can download."""
     body = "".join(_line(line) for line in markdown.splitlines() if line.strip())
     document = (
         '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'

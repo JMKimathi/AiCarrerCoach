@@ -35,7 +35,11 @@ private val titleGroups = listOf(
     "lateral" to "Sideways moves"
 )
 
+/** Show a list as bullet points. */
 private fun bulleted(items: List<String>): String = items.joinToString("\n") { "•  $it" }
+
+/** Format a number as Kenyan shillings, e.g. KES 45,000. */
+private fun kes(amount: Int): String = "%,d".format(amount)
 
 /** Everything the catalogue holds about one career: skills, study routes, pathway, opportunities and sources. */
 @Composable
@@ -237,6 +241,67 @@ fun CareerDetailScreen(
                     }
                 }
 
+                current.pay?.let { pay ->
+                    DetailSection("Typical pay in Kenya") {
+                        Text(
+                            "KES ${kes(pay.typicalLowKes)} – ${kes(pay.typicalHighKes)} a month",
+                            style = MaterialTheme.typography.titleLarge
+                        )
+                        Text(
+                            "Average about KES ${kes(pay.averageKes)} · ${pay.surveyArea}",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = TextSecondary
+                        )
+                        Spacer(Modifier.height(6.dp))
+                        Text(pay.note, style = MaterialTheme.typography.bodySmall)
+                        pay.internships.forEach { scheme ->
+                            Spacer(Modifier.height(8.dp))
+                            Text(scheme.scheme, style = MaterialTheme.typography.labelLarge)
+                            Text(scheme.detail, style = MaterialTheme.typography.bodySmall)
+                            if (scheme.sourceUrl.isNotBlank()) {
+                                Text(
+                                    "Source: ${scheme.sourceName}",
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = BluePrimary,
+                                    modifier = Modifier.clickable { runCatching { uriHandler.openUri(scheme.sourceUrl) } }
+                                )
+                            }
+                        }
+                        Spacer(Modifier.height(8.dp))
+                        Text(
+                            "Source: ${pay.sourceName} · checked ${pay.checked}. Indicative survey figures, before tax.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = BluePrimary,
+                            modifier = Modifier.clickable { runCatching { uriHandler.openUri(pay.sourceUrl) } }
+                        )
+                    }
+                }
+
+                if (current.whereToLook.isNotEmpty()) {
+                    DetailSection("Where to look for jobs and internships") {
+                        current.whereToLook.forEach { place ->
+                            Column(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .then(if (place.url.isNotBlank()) Modifier.clickable { runCatching { uriHandler.openUri(place.url) } } else Modifier)
+                                    .padding(vertical = 6.dp)
+                            ) {
+                                Text(
+                                    place.name,
+                                    style = MaterialTheme.typography.titleSmall,
+                                    color = if (place.url.isNotBlank()) BluePrimary else MaterialTheme.colorScheme.onSurface
+                                )
+                                Text("${place.kind} · ${place.note}", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                            }
+                        }
+                        Text(
+                            "Links checked ${current.whereToLook.first().checked}. Never pay to apply for a job or internship.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = TextMuted
+                        )
+                    }
+                }
+
                 DetailSection("Official sources to check") {
                     current.officialSources.forEach { source ->
                         Column(
@@ -269,6 +334,7 @@ fun CareerDetailScreen(
     }
 }
 
+/** Small pill at the top of the detail screen, e.g. the category. */
 @Composable
 private fun HeroPill(text: String) {
     Box(
@@ -281,6 +347,7 @@ private fun HeroPill(text: String) {
     }
 }
 
+/** A titled section on the career detail screen. */
 @Composable
 private fun DetailSection(title: String, content: @Composable ColumnScope.() -> Unit) {
     SectionCard {
@@ -290,6 +357,7 @@ private fun DetailSection(title: String, content: @Composable ColumnScope.() -> 
     }
 }
 
+/** A label with its value underneath. */
 @Composable
 private fun LabeledText(label: String, value: String) {
     if (value.isBlank()) return

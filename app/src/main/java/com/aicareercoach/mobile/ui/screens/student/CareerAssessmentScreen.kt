@@ -20,6 +20,7 @@ import com.aicareercoach.mobile.ui.theme.SurfaceAlt
 import com.aicareercoach.mobile.ui.theme.TextSecondary
 import kotlinx.coroutines.launch
 
+/** The assessment form and its results: roles to explore and the career areas that fit. */
 @Composable
 fun CareerAssessmentScreen(session: UserSession, onBack: () -> Unit = {}, onOpenCareer: (String) -> Unit = {}) {
     var skills by remember { mutableStateOf("") }
@@ -66,17 +67,19 @@ fun CareerAssessmentScreen(session: UserSession, onBack: () -> Unit = {}, onOpen
                 Text(assessment.summary, style = MaterialTheme.typography.titleMedium)
                 Text("Profile detail: ${assessment.profileCompleteness}", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
                 if (assessment.careerMatches.isNotEmpty()) {
-                    Text("Careers that fit you best", style = MaterialTheme.typography.titleMedium)
-                    Text("Ranked from 452 careers using your course, skills and interests.", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                    Text("Roles to explore", style = MaterialTheme.typography.titleMedium)
+                    Text("Ranked from every career in the catalogue using your answers. The relative match compares these roles with your top suggestion; it is guidance, not a final decision.", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
                     assessment.careerMatches.forEach { career ->
                         SectionCard {
                             Text(career.roleTitle, style = MaterialTheme.typography.titleLarge)
-                            Text("${career.matchLabel}  •  ${career.category}", style = MaterialTheme.typography.labelLarge)
+                            Text("${career.matchLabel}  •  Relative match ${career.matchScore}/100", style = MaterialTheme.typography.labelLarge)
+                            Text(career.category, style = MaterialTheme.typography.bodySmall, color = TextSecondary)
                             career.reasons.forEach { Text("• $it", style = MaterialTheme.typography.bodySmall) }
                             TextButton(onClick = { onOpenCareer(career.careerId) }) { Text("View this career") }
                         }
                     }
-                    Text("Broader career paths", style = MaterialTheme.typography.titleMedium)
+                    Text("Career areas", style = MaterialTheme.typography.titleMedium)
+                    Text("The broader fields the roles above belong to, with preparation ideas for each.", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
                 }
                 assessment.recommendations.forEach { match ->
                     SectionCard {
@@ -133,6 +136,7 @@ fun CareerAssessmentScreen(session: UserSession, onBack: () -> Unit = {}, onOpen
     }
 }
 
+/** A titled list of points, e.g. skills to build. */
 @Composable
 private fun GuidanceListSection(title: String, items: List<String>) {
     Spacer(Modifier.height(8.dp))
@@ -140,6 +144,7 @@ private fun GuidanceListSection(title: String, items: List<String>) {
     items.forEach { Text("• $it", style = MaterialTheme.typography.bodySmall) }
 }
 
+/** A titled paragraph of advice. */
 @Composable
 private fun GuidanceTextSection(title: String, content: String) {
     Spacer(Modifier.height(8.dp))
@@ -147,12 +152,14 @@ private fun GuidanceTextSection(title: String, content: String) {
     Text(content, style = MaterialTheme.typography.bodySmall)
 }
 
+/** Split what the student typed into separate items on commas or new lines. */
 private fun splitAnswers(value: String): List<String> = value.split(",")
     .map { it.trim() }
     .filter { it.isNotEmpty() }
     .distinctBy { it.lowercase() }
     .take(20)
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true)
 @Composable
 private fun CareerAssessmentPreview() {

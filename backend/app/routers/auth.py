@@ -1,3 +1,5 @@
+"""Sign up, log in and profile endpoints."""
+
 import uuid
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.exc import IntegrityError
@@ -11,11 +13,13 @@ router = APIRouter(prefix="/auth", tags=["Authentication"])
 
 @router.get("/me", response_model=UserResponse)
 def get_profile(user: User = Depends(get_current_user)):
+    """Return the signed-in user's profile."""
     return UserResponse.model_validate(user)
 
 
 @router.put("/me", response_model=UserResponse)
 def update_profile(payload: ProfileUpdateRequest, user: User = Depends(get_current_user), db: Session = Depends(get_db)):
+    """Save changes the student makes on the Edit Profile screen."""
     user.full_name = payload.full_name.strip()
     user.course = payload.course.strip() if payload.course else None
     user.career_goal = payload.career_goal.strip() if payload.career_goal else None
@@ -26,6 +30,7 @@ def update_profile(payload: ProfileUpdateRequest, user: User = Depends(get_curre
 
 @router.post("/login", response_model=AuthResponse)
 def login(payload: LoginRequest, db: Session = Depends(get_db)):
+    """Check the email and password and hand back a token."""
     email_clean = payload.email.strip().lower()
     user = db.query(User).filter(User.email == email_clean).first()
     if not user or not verify_password(payload.password, user.password_hash):
@@ -50,6 +55,7 @@ def login(payload: LoginRequest, db: Session = Depends(get_db)):
 
 @router.post("/register", response_model=AuthResponse)
 def register(payload: RegisterRequest, db: Session = Depends(get_db)):
+    """Create a new student account and log them straight in."""
     email_clean = payload.email.strip().lower()
     if len(payload.full_name.strip()) < 2:
         raise HTTPException(status_code=422, detail="Full name must contain at least 2 characters")

@@ -22,11 +22,13 @@ CATALOGUE_STEPS = [
 
 
 def run_step(label: str, command: list[str], cwd: Path) -> None:
+    """Run one build script and stop everything if it fails."""
     print(f"\n=== {label} ===", flush=True)
     subprocess.run(command, cwd=cwd, check=True)
 
 
 def main() -> None:
+    """Rebuild all the career data files in the right order."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--skip-data-build", action="store_true",
                         help="Use the already generated synthetic dataset.")

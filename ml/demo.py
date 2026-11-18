@@ -14,6 +14,7 @@ from rag_service import CareerCoachRAG
 
 
 def main():
+    """Ask a few sample questions and print what the retriever finds."""
     print("=" * 65)
     print("   STRATHMORE UNIVERSITY — AI CAREER COACH (RAG DEMO)   ")
     print("=" * 65)

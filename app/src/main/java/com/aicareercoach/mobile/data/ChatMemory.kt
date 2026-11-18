@@ -19,6 +19,7 @@ data class ChatLine(
     val note: Boolean = false
 )
 
+/** A past conversation as shown in the chat history list. */
 data class ChatSessionSummary(
     val id: String,
     val title: String,

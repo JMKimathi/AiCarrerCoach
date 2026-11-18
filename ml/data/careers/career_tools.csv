@@ -3170,3 +3170,213 @@ CAREER-452,Electric Vehicle and Battery Technician,multimeters and oscilloscopes
 CAREER-452,Electric Vehicle and Battery Technician,spot welders for battery packs,authored,synthetic,true
 CAREER-452,Electric Vehicle and Battery Technician,battery management system tools,authored,synthetic,true
 CAREER-452,Electric Vehicle and Battery Technician,charging equipment,authored,synthetic,true
+CAREER-453,Data Annotation Specialist,annotation platforms such as Label Studio or CVAT,authored,synthetic,true
+CAREER-453,Data Annotation Specialist,spreadsheets,authored,synthetic,true
+CAREER-453,Data Annotation Specialist,guideline documents,authored,synthetic,true
+CAREER-453,Data Annotation Specialist,quality dashboards,authored,synthetic,true
+CAREER-453,Data Annotation Specialist,transcription tools,authored,synthetic,true
+CAREER-453,Data Annotation Specialist,chat tools for team updates,authored,synthetic,true
+CAREER-453,Data Annotation Specialist,secure company laptops,authored,synthetic,true
+CAREER-454,Cloud Security Engineer,"AWS, Azure or Google Cloud consoles",authored,synthetic,true
+CAREER-454,Cloud Security Engineer,cloud security posture tools,authored,synthetic,true
+CAREER-454,Cloud Security Engineer,SIEM platforms,authored,synthetic,true
+CAREER-454,Cloud Security Engineer,Terraform,authored,synthetic,true
+CAREER-454,Cloud Security Engineer,vulnerability scanners,authored,synthetic,true
+CAREER-454,Cloud Security Engineer,key management services,authored,synthetic,true
+CAREER-454,Cloud Security Engineer,Linux command line,authored,synthetic,true
+CAREER-455,BIM Coordinator,Autodesk Revit,authored,synthetic,true
+CAREER-455,BIM Coordinator,Navisworks,authored,synthetic,true
+CAREER-455,BIM Coordinator,AutoCAD,authored,synthetic,true
+CAREER-455,BIM Coordinator,BIM 360 or similar common data environments,authored,synthetic,true
+CAREER-455,BIM Coordinator,IFC viewers,authored,synthetic,true
+CAREER-455,BIM Coordinator,spreadsheets,authored,synthetic,true
+CAREER-455,BIM Coordinator,laser scan point clouds,authored,synthetic,true
+CAREER-456,Building Inspector,building codes and planning regulations,authored,synthetic,true
+CAREER-456,Building Inspector,approved drawings,authored,synthetic,true
+CAREER-456,Building Inspector,measuring tapes and laser meters,authored,synthetic,true
+CAREER-456,Building Inspector,moisture meters,authored,synthetic,true
+CAREER-456,Building Inspector,cameras for site evidence,authored,synthetic,true
+CAREER-456,Building Inspector,inspection checklists,authored,synthetic,true
+CAREER-456,Building Inspector,county approval systems,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,telemedicine platforms,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,electronic medical records,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,scheduling software,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,video and phone systems,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,SMS reminder tools,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,spreadsheets,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,data protection checklists,authored,synthetic,true
+CAREER-458,Genetic Counsellor,pedigree drawing software,authored,synthetic,true
+CAREER-458,Genetic Counsellor,genetic test reports,authored,synthetic,true
+CAREER-458,Genetic Counsellor,electronic medical records,authored,synthetic,true
+CAREER-458,Genetic Counsellor,risk assessment tools,authored,synthetic,true
+CAREER-458,Genetic Counsellor,counselling rooms and visual aids,authored,synthetic,true
+CAREER-458,Genetic Counsellor,reference databases,authored,synthetic,true
+CAREER-458,Genetic Counsellor,consent forms,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,SQL,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,Excel,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,Python or R,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,dashboard tools,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,loan management systems,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,credit bureau reports,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,mobile money data,authored,synthetic,true
+CAREER-460,Bancassurance Officer,core banking systems,authored,synthetic,true
+CAREER-460,Bancassurance Officer,insurer policy systems,authored,synthetic,true
+CAREER-460,Bancassurance Officer,customer relationship management tools,authored,synthetic,true
+CAREER-460,Bancassurance Officer,product brochures,authored,synthetic,true
+CAREER-460,Bancassurance Officer,premium calculators,authored,synthetic,true
+CAREER-460,Bancassurance Officer,compliance checklists,authored,synthetic,true
+CAREER-460,Bancassurance Officer,mobile phones and email,authored,synthetic,true
+CAREER-461,Customer Success Manager,CRM software such as HubSpot or Salesforce,authored,synthetic,true
+CAREER-461,Customer Success Manager,help desk tools,authored,synthetic,true
+CAREER-461,Customer Success Manager,spreadsheets,authored,synthetic,true
+CAREER-461,Customer Success Manager,video meeting tools,authored,synthetic,true
+CAREER-461,Customer Success Manager,product analytics dashboards,authored,synthetic,true
+CAREER-461,Customer Success Manager,email,authored,synthetic,true
+CAREER-461,Customer Success Manager,survey tools,authored,synthetic,true
+CAREER-462,Small Business Advisor,business plan templates,authored,synthetic,true
+CAREER-462,Small Business Advisor,spreadsheets,authored,synthetic,true
+CAREER-462,Small Business Advisor,record-keeping apps,authored,synthetic,true
+CAREER-462,Small Business Advisor,training materials,authored,synthetic,true
+CAREER-462,Small Business Advisor,mobile money tools,authored,synthetic,true
+CAREER-462,Small Business Advisor,survey and reporting tools,authored,synthetic,true
+CAREER-462,Small Business Advisor,presentation software,authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,practice management software,authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,court e-filing systems,authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,document management systems,authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,spreadsheets,authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,calendar and diary tools,authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,e-signature tools,authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,accounting software,authored,synthetic,true
+CAREER-464,Court Interpreter,legal dictionaries and glossaries,authored,synthetic,true
+CAREER-464,Court Interpreter,court case files,authored,synthetic,true
+CAREER-464,Court Interpreter,note-taking materials,authored,synthetic,true
+CAREER-464,Court Interpreter,translation software for documents,authored,synthetic,true
+CAREER-464,Court Interpreter,recording equipment,authored,synthetic,true
+CAREER-464,Court Interpreter,sign language resources,authored,synthetic,true
+CAREER-464,Court Interpreter,court schedules,authored,synthetic,true
+CAREER-465,Education Technology Specialist,Moodle or Google Classroom,authored,synthetic,true
+CAREER-465,Education Technology Specialist,video and screen recording tools,authored,synthetic,true
+CAREER-465,Education Technology Specialist,presentation software,authored,synthetic,true
+CAREER-465,Education Technology Specialist,tablets and laptops,authored,synthetic,true
+CAREER-465,Education Technology Specialist,projectors and smart boards,authored,synthetic,true
+CAREER-465,Education Technology Specialist,quiz tools,authored,synthetic,true
+CAREER-465,Education Technology Specialist,spreadsheets,authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,Scratch,authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,Python,authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,Arduino or micro:bit kits,authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,LEGO robotics sets,authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,laptops,authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,3D printers,authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,lesson plan templates,authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,mobile data collection apps,authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,GPS and mapping tools,authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,insurer policy systems,authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,weather data platforms,authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,spreadsheets,authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,cameras,authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,mobile money,authored,synthetic,true
+CAREER-468,Agripreneur,record-keeping apps,authored,synthetic,true
+CAREER-468,Agripreneur,mobile money,authored,synthetic,true
+CAREER-468,Agripreneur,farm equipment,authored,synthetic,true
+CAREER-468,Agripreneur,market price apps,authored,synthetic,true
+CAREER-468,Agripreneur,social media for marketing,authored,synthetic,true
+CAREER-468,Agripreneur,spreadsheets,authored,synthetic,true
+CAREER-468,Agripreneur,extension service resources,authored,synthetic,true
+CAREER-469,Podcast Producer,"Audacity, Adobe Audition or Reaper",authored,synthetic,true
+CAREER-469,Podcast Producer,microphones and audio interfaces,authored,synthetic,true
+CAREER-469,Podcast Producer,headphones,authored,synthetic,true
+CAREER-469,Podcast Producer,remote recording tools,authored,synthetic,true
+CAREER-469,Podcast Producer,podcast hosting platforms,authored,synthetic,true
+CAREER-469,Podcast Producer,music libraries,authored,synthetic,true
+CAREER-469,Podcast Producer,social media tools,authored,synthetic,true
+CAREER-470,Video Editor,Adobe Premiere Pro,authored,synthetic,true
+CAREER-470,Video Editor,DaVinci Resolve,authored,synthetic,true
+CAREER-470,Video Editor,Final Cut Pro,authored,synthetic,true
+CAREER-470,Video Editor,After Effects,authored,synthetic,true
+CAREER-470,Video Editor,external hard drives,authored,synthetic,true
+CAREER-470,Video Editor,headphones,authored,synthetic,true
+CAREER-470,Video Editor,cloud storage,authored,synthetic,true
+CAREER-471,Safari Guide,4x4 safari vehicles,authored,synthetic,true
+CAREER-471,Safari Guide,binoculars,authored,synthetic,true
+CAREER-471,Safari Guide,field guides and bird books,authored,synthetic,true
+CAREER-471,Safari Guide,two-way radios,authored,synthetic,true
+CAREER-471,Safari Guide,first aid kits,authored,synthetic,true
+CAREER-471,Safari Guide,GPS and park maps,authored,synthetic,true
+CAREER-471,Safari Guide,cameras,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,hotel property management systems,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,CRM software,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,proposal templates,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,spreadsheets,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,presentation tools,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,online travel agency extranets,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,email and phone,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,pipettes and centrifuges,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,PCR machines,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,sequencing platforms,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,spectrophotometers,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,biosafety cabinets,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,laboratory information management systems,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,freezers and sample storage,authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,pH and conductivity meters,authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,spectrophotometers,authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,incubators,authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,sampling bottles and kits,authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,chromatography equipment,authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,laboratory information systems,authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,safety equipment,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,delivery tracking apps,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,route planning software,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,barcode scanners,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,motorbikes and vans,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,mobile phones,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,spreadsheets,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,customer service platforms,authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,warehouse management systems,authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,e-commerce dashboards,authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,barcode scanners and label printers,authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,spreadsheets,authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,packaging materials,authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,delivery partner portals,authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,email,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,referral directories,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,helpline numbers,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,group session guides,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,messaging apps,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,record forms,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,awareness materials,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,supervision notes,authored,synthetic,true
+CAREER-478,Social Protection Officer,social protection management information systems,authored,synthetic,true
+CAREER-478,Social Protection Officer,mobile data collection apps,authored,synthetic,true
+CAREER-478,Social Protection Officer,spreadsheets,authored,synthetic,true
+CAREER-478,Social Protection Officer,beneficiary registers,authored,synthetic,true
+CAREER-478,Social Protection Officer,complaint logs,authored,synthetic,true
+CAREER-478,Social Protection Officer,mobile money platforms,authored,synthetic,true
+CAREER-478,Social Protection Officer,report templates,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,spreadsheets and financial models,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,climate fund guidelines,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,budget systems,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,GIS and climate data tools,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,proposal templates,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,presentation software,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,reporting dashboards,authored,synthetic,true
+CAREER-480,Public Participation Officer,public notice templates,authored,synthetic,true
+CAREER-480,Public Participation Officer,meeting registers,authored,synthetic,true
+CAREER-480,Public Participation Officer,sound systems and projectors,authored,synthetic,true
+CAREER-480,Public Participation Officer,online survey tools,authored,synthetic,true
+CAREER-480,Public Participation Officer,social media,authored,synthetic,true
+CAREER-480,Public Participation Officer,report templates,authored,synthetic,true
+CAREER-480,Public Participation Officer,translation and sign language services,authored,synthetic,true
+CAREER-481,Mini-Grid Technician,multimeters and clamp meters,authored,synthetic,true
+CAREER-481,Mini-Grid Technician,insulated hand tools,authored,synthetic,true
+CAREER-481,Mini-Grid Technician,inverter and battery monitoring software,authored,synthetic,true
+CAREER-481,Mini-Grid Technician,smart meters,authored,synthetic,true
+CAREER-481,Mini-Grid Technician,safety harnesses and protective equipment,authored,synthetic,true
+CAREER-481,Mini-Grid Technician,mobile apps for customer records,authored,synthetic,true
+CAREER-481,Mini-Grid Technician,wiring diagrams,authored,synthetic,true
+CAREER-482,Upholsterer,industrial sewing machines,authored,synthetic,true
+CAREER-482,Upholsterer,staple guns,authored,synthetic,true
+CAREER-482,Upholsterer,foam cutters,authored,synthetic,true
+CAREER-482,Upholsterer,measuring tapes,authored,synthetic,true
+CAREER-482,Upholsterer,scissors and knives,authored,synthetic,true
+CAREER-482,Upholsterer,webbing stretchers,authored,synthetic,true
+CAREER-482,Upholsterer,hand tools,authored,synthetic,true

@@ -14,6 +14,9 @@ import com.aicareercoach.mobile.data.CareerResource
 import com.aicareercoach.mobile.data.CareerAssessmentResult
 import com.aicareercoach.mobile.data.CareerCategory
 import com.aicareercoach.mobile.data.CareerDetail
+import com.aicareercoach.mobile.data.CareerPay
+import com.aicareercoach.mobile.data.InternshipPay
+import com.aicareercoach.mobile.data.JobSource
 import com.aicareercoach.mobile.data.CareerPage
 import com.aicareercoach.mobile.data.CareerSummary
 import com.aicareercoach.mobile.data.ChatLine
@@ -39,6 +42,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import java.net.URLEncoder
 
+/** The coach's reply and the sources behind it. */
 data class NetworkChatResponse(
     val sessionId: String,
     val response: String,
@@ -46,6 +50,7 @@ data class NetworkChatResponse(
     val stopped: Boolean = false
 )
 
+/** All the calls to the backend live here. Each one runs off the main thread and returns a Result. */
 object ApiClient {
     // Confirmed laptop address on the current home Wi-Fi. The hotspot address is saved from the settings screen.
     private const val DEFAULT_BASE_URL = "http://192.168.100.3:8000/api"
@@ -511,7 +516,33 @@ object ApiClient {
                     }
                 },
                 employers = jsonStrings(json, "employers"),
-                workingPatterns = jsonStrings(json, "working_patterns")
+                workingPatterns = jsonStrings(json, "working_patterns"),
+                pay =
+                    json.optJSONObject("pay")?.let { pay ->
+                    val schemes = pay.optJSONArray("internships") ?: JSONArray()
+                    CareerPay(
+                        surveyArea = pay.optString("survey_area"),
+                        typicalLowKes = pay.optInt("typical_low_kes"),
+                        typicalHighKes = pay.optInt("typical_high_kes"),
+                        averageKes = pay.optInt("average_kes"),
+                        sourceName = pay.optString("source_name"),
+                        sourceUrl = pay.optString("source_url"),
+                        checked = pay.optString("checked"),
+                        note = pay.optString("note"),
+                        internships = (0 until schemes.length()).map { index ->
+                            val item = schemes.getJSONObject(index)
+                            InternshipPay(item.optString("scheme"), item.optString("detail"),
+                                item.optString("source_name"), item.optString("source_url"))
+                        }
+                    )
+                },
+                whereToLook = (json.optJSONArray("where_to_look") ?: JSONArray()).let { items ->
+                    (0 until items.length()).map { index ->
+                        val item = items.getJSONObject(index)
+                        JobSource(item.optString("name"), item.optString("url"), item.optString("kind"),
+                            item.optString("note"), item.optString("checked"))
+                    }
+                }
             )
         }.getOrNull()
     }

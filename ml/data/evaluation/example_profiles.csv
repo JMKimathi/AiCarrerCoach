@@ -1,0 +1,21 @@
+profile_id,course,skills,interests,expected_category
+EX01,BSc Informatics,python; sql; data analysis,working with data; solving problems,Technology and Data
+EX02,BSc Computer Science,java; android development; git,building apps,Technology and Data
+EX03,BSc Nursing,patient care; first aid,helping people,Health and Medicine
+EX04,Bachelor of Pharmacy,pharmacology; dispensing,medicines; health,Health and Medicine
+EX05,Bachelor of Laws,legal research; drafting,justice; debating,Law and Governance
+EX06,Diploma in Hospitality,cooking; menu planning,food; hospitality,Tourism and Hospitality
+EX07,BSc Tourism Management,tour guiding; customer service,travel; wildlife,Tourism and Hospitality
+EX08,BCom Finance,financial analysis; excel; accounting,investments; numbers,Banking and Finance
+EX09,BA Design,graphic design; adobe illustrator,art; branding,Media and Creative Industries
+EX10,BA Communication,writing; interviewing; editing,news; storytelling,Media and Creative Industries
+EX11,BEd Arts,lesson planning; public speaking,teaching; children,Education and Teaching
+EX12,BSc Civil Engineering,autocad; structural analysis,building; construction,Engineering and Built Environment
+EX13,BSc Agriculture,crop management; soil analysis,farming; environment,Agriculture and Environment
+EX14,BSc Environmental Science,environmental impact assessment; gis,climate change; conservation,Agriculture and Environment
+EX15,BSc Supply Chain Management,inventory management; procurement,logistics; planning,Logistics and Operations
+EX16,BA Social Work,case management; counselling,helping families; community,Social and Community Services
+EX17,BA Development Studies,project management; report writing,public policy; community development,Public Service and Development
+EX18,BSc Biochemistry,laboratory techniques; data analysis,research; science,Science and Research
+EX19,BBA Entrepreneurship,business planning; sales; marketing,starting a business,Business and Entrepreneurship
+EX20,Diploma in Electrical Engineering,electrical installation; wiring,fixing things; energy,"Energy, Manufacturing and Skilled Trades"

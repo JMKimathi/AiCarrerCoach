@@ -31,6 +31,7 @@ import com.aicareercoach.mobile.ui.components.SectionCard
 import com.aicareercoach.mobile.ui.components.Tag
 import com.aicareercoach.mobile.ui.theme.*
 
+/** Filters for the student list (all, active, deactivated). */
 private enum class StudentFilter(val label: String) { All("All"), Active("Active"), Inactive("Deactivated") }
 
 /**
@@ -210,6 +211,7 @@ fun AdminUsersScreen(
     }
 }
 
+/** One student with their activity and account actions. */
 @Composable
 private fun StudentCard(
     student: StudentAccount,
@@ -284,6 +286,7 @@ private fun StudentCard(
     }
 }
 
+/** A small number with a label, used inside the student card. */
 @Composable
 private fun MiniStat(label: String, value: Int, modifier: Modifier = Modifier) {
     Column(
@@ -298,6 +301,7 @@ private fun MiniStat(label: String, value: Int, modifier: Modifier = Modifier) {
     }
 }
 
+/** A tappable pill for choosing a filter. */
 @Composable
 private fun FilterPill(label: String, selected: Boolean, onClick: () -> Unit) {
     Box(
@@ -315,6 +319,7 @@ private fun FilterPill(label: String, selected: Boolean, onClick: () -> Unit) {
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true)
 @Composable
 private fun AdminUsersScreenPreview() {

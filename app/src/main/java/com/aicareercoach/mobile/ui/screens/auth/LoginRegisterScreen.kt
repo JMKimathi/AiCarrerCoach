@@ -25,6 +25,7 @@ import com.aicareercoach.mobile.ui.theme.AICareerCoachTheme
 import com.aicareercoach.mobile.ui.theme.TextSecondary
 import kotlinx.coroutines.launch
 
+/** Log in and sign up on one screen, switched with tabs. */
 @Composable
 fun LoginRegisterScreen(
     startInRegister: Boolean = false,
@@ -179,6 +180,7 @@ fun LoginRegisterScreen(
     }
 }
 
+/** The Log in / Sign up tab. */
 @Composable
 private fun ModeTab(label: String, selected: Boolean, modifier: Modifier = Modifier, onClick: () -> Unit) {
     val bg = if (selected) Color.White else Color.Transparent
@@ -198,6 +200,7 @@ private fun ModeTab(label: String, selected: Boolean, modifier: Modifier = Modif
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true, widthDp = 360, heightDp = 780)
 @Composable
 private fun LoginRegisterScreenPreview() {

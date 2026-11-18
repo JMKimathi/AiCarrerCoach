@@ -29,7 +29,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.style.TextOverflow
+import com.aicareercoach.mobile.ui.components.markdownToStyled
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -49,6 +51,7 @@ import com.aicareercoach.mobile.ui.theme.TextMuted
 import com.aicareercoach.mobile.ui.theme.TextSecondary
 import com.aicareercoach.mobile.ui.theme.WarningAmber
 
+/** Suggested questions shown before the first message. */
 private data class ChatStarter(
     val icon: ImageVector,
     val accent: Color,
@@ -391,6 +394,7 @@ private fun ChatHistoryDialog(
     }
 }
 
+/** One suggested question the student can tap. */
 @Composable
 private fun StarterCard(starter: ChatStarter, modifier: Modifier = Modifier, onClick: () -> Unit) {
     Column(
@@ -422,6 +426,7 @@ private fun StarterCard(starter: ChatStarter, modifier: Modifier = Modifier, onC
     }
 }
 
+/** A follow-up question shown under the coach's answer. */
 @Composable
 private fun FollowUpChip(label: String, onClick: () -> Unit) {
     Box(
@@ -435,6 +440,7 @@ private fun FollowUpChip(label: String, onClick: () -> Unit) {
     }
 }
 
+/** One message in the chat, styled for the student or the coach. */
 @Composable
 private fun ChatBubble(message: ChatLine) {
     if (message.note) {
@@ -465,7 +471,7 @@ private fun ChatBubble(message: ChatLine) {
                 .padding(12.dp)
         ) {
             Text(
-                message.text,
+                if (message.fromUser) AnnotatedString(message.text) else markdownToStyled(message.text),
                 color = if (message.fromUser) Color.White else Color(0xFF111827),
                 style = MaterialTheme.typography.bodyMedium
             )
@@ -482,6 +488,7 @@ private fun ChatBubble(message: ChatLine) {
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true, widthDp = 360, heightDp = 780)
 @Composable
 private fun AICareerChatScreenPreview() {

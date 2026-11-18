@@ -1,3 +1,8 @@
+"""The retrieval part of the chat coach (RAG).
+
+It finds the knowledge-base passages closest to the student's question and
+hands them to Gemini so the answer is grounded in our own career data."""
+
 import json
 import logging
 import os
@@ -32,6 +37,7 @@ _REFERENCE_WORDS = {
 
 
 def _normalise(text: str) -> str:
+    """Tidy up text before comparing it (lower case, single spaces)."""
     return re.sub(r"[.!?,…]+$", "", " ".join(text.lower().strip().split()))
 
 
@@ -91,11 +97,13 @@ class RAGEngine:
 
     @classmethod
     def get_instance(cls) -> "RAGEngine":
+        """Load the retriever once and share it, since loading the model is slow."""
         if cls._instance is None:
             cls._instance = cls()
         return cls._instance
 
     def retrieve(self, query: str, top_k: int = 3) -> List[Dict[str, Any]]:
+        """Return the top_k passages that best match the question."""
         query_emb = self.model.encode([query], convert_to_numpy=True, normalize_embeddings=True)[0]
         scores = self.corpus_embeddings @ query_emb
         top_indices = np.argsort(-scores)[:top_k]
@@ -117,6 +125,7 @@ class RAGEngine:
         supplemental_docs: Optional[List[Dict[str, Any]]] = None,
         conversation_history: Optional[List[Dict[str, str]]] = None,
     ) -> Dict[str, Any]:
+        """Build the prompt from the student's profile, the retrieved passages and the chat so far, then ask Gemini for an answer."""
         normalized_query = " ".join(query.lower().strip().split())
         normalized_query = re.sub(r"[.!?,…]+$", "", normalized_query)
         english_greetings = {

@@ -1,3 +1,5 @@
+"""Chat coach endpoints: send a message, list conversations, read one back."""
+
 import json
 import threading
 import uuid
@@ -31,6 +33,7 @@ _REMEMBERED_REQUESTS = 500
 
 
 def _remember(store: OrderedDict, key: str, value) -> None:
+    """Remember a recent request id, dropping the oldest once the store is full."""
     store[key] = value
     while len(store) > _REMEMBERED_REQUESTS:
         store.popitem(last=False)
@@ -50,6 +53,7 @@ def chat_with_coach(
     student: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
+    """Answer a student's question using the knowledge base and save both messages."""
     query_text = payload.query.strip()
     if not query_text:
         raise HTTPException(status_code=400, detail="Query message cannot be empty.")
@@ -190,6 +194,7 @@ def chat_with_coach(
 
 
 class StopRequest(BaseModel):
+    """Body sent when the student taps stop while an answer is generating."""
     request_id: str = Field(min_length=8, max_length=64)
 
 
@@ -223,6 +228,7 @@ def list_chat_sessions(
     student: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
+    """List the student's past conversations, newest first."""
     sessions = db.query(ChatSession).filter(ChatSession.user_id == student.user_id).order_by(ChatSession.started_at.desc()).all()
 
     result = []
@@ -263,6 +269,7 @@ def get_session_messages(
     student: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
+    """Return all messages in one conversation."""
     session = db.query(ChatSession).filter(
         ChatSession.session_id == session_id,
         ChatSession.user_id == student.user_id,

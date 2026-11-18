@@ -162,6 +162,7 @@ EXPERIENCE_LEVELS = [
 
 
 def generate_curated_dataset():
+    """Sample real Kaggle job postings per tech category and save them as a smaller dataset."""
     random.seed(42)
     print(f"Reading source Kaggle dataset: {SOURCE_CSV}")
 

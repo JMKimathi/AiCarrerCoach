@@ -6,6 +6,7 @@ from pathlib import Path
 
 
 def _chunk_digest(chunks_path: Path) -> str:
+    """Fingerprint chunks.json so we know when it has changed."""
     digest = hashlib.sha256()
     with chunks_path.open("rb") as handle:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
@@ -14,6 +15,7 @@ def _chunk_digest(chunks_path: Path) -> str:
 
 
 def _model_files(model_dir: Path) -> list[dict]:
+    """List the model files with their sizes and dates, for the same reason."""
     return [
         {
             "path": str(path.relative_to(model_dir)),
@@ -26,6 +28,7 @@ def _model_files(model_dir: Path) -> list[dict]:
 
 
 def cache_is_current(chunks_path: Path, model_dir: Path, cache_path: Path, manifest_path: Path) -> bool:
+    """True if the saved embeddings still match the current chunks and model."""
     if not all(path.is_file() for path in (chunks_path, cache_path, manifest_path)):
         return False
     try:

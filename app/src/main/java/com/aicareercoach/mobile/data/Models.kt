@@ -1,5 +1,6 @@
 package com.aicareercoach.mobile.data
 
+/** Who is signed in, plus the token we send with every request. */
 data class UserSession(
     val name: String,
     val email: String,
@@ -18,6 +19,7 @@ data class UserSession(
             .ifBlank { "ST" }
 }
 
+/** A career guide from the Knowledge section. */
 data class CareerResource(
     val id: String,
     val title: String,
@@ -25,8 +27,10 @@ data class CareerResource(
     val summary: String
 )
 
+/** What comes back after logging in or signing up. */
 data class AuthResult(val session: UserSession?, val error: String? = null)
 
+/** A student as the admin sees them, with their activity counts. */
 data class StudentAccount(
     val name: String,
     val email: String,
@@ -48,6 +52,7 @@ data class StudentAccount(
             .ifBlank { "ST" }
 }
 
+/** One piece of feedback in the admin list. */
 data class AdminFeedback(
     val id: String,
     val studentName: String,
@@ -58,6 +63,7 @@ data class AdminFeedback(
     val createdAt: String
 )
 
+/** Activity for one day, used by the admin charts. */
 data class DailyActivity(
     val label: String,
     val chats: Int,
@@ -65,6 +71,7 @@ data class DailyActivity(
     val newStudents: Int
 )
 
+/** Headline numbers for the admin dashboard. */
 data class AdminOverview(
     val activeStudents: Int,
     val careerResources: Int,
@@ -81,6 +88,7 @@ data class AdminOverview(
     val averageRating: Double? = null
 )
 
+/** A broad career area and why it fits the student. */
 data class CareerPathMatch(
     val role: String,
     val fitScore: Int,
@@ -107,6 +115,7 @@ data class CareerMatch(
     val reasons: List<String>
 )
 
+/** Everything the assessment screen shows after the student submits. */
 data class CareerAssessmentResult(
     val profileCompleteness: String,
     val summary: String,
@@ -115,8 +124,10 @@ data class CareerAssessmentResult(
     val careerMatches: List<CareerMatch> = emptyList()
 )
 
+/** A category in the Career Explorer and how many careers it has. */
 data class CareerCategory(val name: String, val careerCount: Int)
 
+/** A career as shown in a list (title, category, short summary). */
 data class CareerSummary(
     val careerId: String,
     val roleTitle: String,
@@ -126,8 +137,10 @@ data class CareerSummary(
     val commonlyRegulated: Boolean
 )
 
+/** One page of careers from the backend, for scrolling through the list. */
 data class CareerPage(val total: Int, val items: List<CareerSummary>)
 
+/** One step in a career path, e.g. intern to junior to senior. */
 data class PathwayStage(
     val stageNumber: Int,
     val stageName: String,
@@ -137,6 +150,7 @@ data class PathwayStage(
     val whatToBuild: String
 )
 
+/** An example internship or job opening for a career. */
 data class OpportunityTemplate(
     val opportunityType: String,
     val market: String,
@@ -151,6 +165,7 @@ data class OpportunityTemplate(
     val notes: String
 )
 
+/** A trusted website where students can read more about a career. */
 data class OfficialSource(
     val name: String,
     val url: String,
@@ -158,6 +173,7 @@ data class OfficialSource(
     val roleSpecific: Boolean
 )
 
+/** All the details shown on the career detail screen. */
 data class CareerDetail(
     val careerId: String,
     val roleTitle: String,
@@ -182,9 +198,31 @@ data class CareerDetail(
     val tools: List<String> = emptyList(),
     val relatedCareers: List<RelatedCareer> = emptyList(),
     val employers: List<String> = emptyList(),
-    val workingPatterns: List<String> = emptyList()
+    val workingPatterns: List<String> = emptyList(),
+    val pay: CareerPay? = null,
+    val whereToLook: List<JobSource> = emptyList()
 )
 
+/** Indicative monthly gross pay for the career's field in Kenya, with where the figures come from. */
+data class CareerPay(
+    val surveyArea: String,
+    val typicalLowKes: Int,
+    val typicalHighKes: Int,
+    val averageKes: Int,
+    val sourceName: String,
+    val sourceUrl: String,
+    val checked: String,
+    val note: String,
+    val internships: List<InternshipPay>
+)
+
+/** Typical monthly stipend range for interns in this field. */
+data class InternshipPay(val scheme: String, val detail: String, val sourceName: String, val sourceUrl: String)
+
+/** A place to look for openings in this field. */
+data class JobSource(val name: String, val url: String, val kind: String, val note: String, val checked: String)
+
+/** A career close to this one that the student might also like. */
 data class RelatedCareer(
     val careerId: String,
     val roleTitle: String,
@@ -192,8 +230,10 @@ data class RelatedCareer(
     val commonGround: String
 )
 
+/** A project the student adds in the CV builder. */
 data class CvProject(val title: String, val description: String)
 
+/** A job, internship or attachment the student adds in the CV builder. */
 data class CvExperience(
     val title: String,
     val organisation: String,
@@ -201,6 +241,7 @@ data class CvExperience(
     val highlights: List<String>
 )
 
+/** Everything the CV builder sends to the backend. */
 data class CvRequest(
     val phone: String = "",
     val location: String = "",
@@ -218,6 +259,7 @@ data class CvRequest(
     val referees: List<String> = emptyList()
 )
 
+/** The finished CV that comes back from the backend. */
 data class CvResult(
     val roleTitle: String,
     val markdown: String,
@@ -228,8 +270,10 @@ data class CvResult(
     val checklist: List<String> = emptyList()
 )
 
+/** One question and answer in a mock interview. */
 data class InterviewTurn(val speaker: String, val kind: String, val text: String)
 
+/** The current state of a mock interview: question, transcript and feedback. */
 data class InterviewState(
     val interviewId: String,
     val roleTitle: String,
@@ -241,6 +285,7 @@ data class InterviewState(
     val feedback: String
 )
 
+/** Made-up data used only by the Android Studio previews. */
 object SampleData {
     val resources = listOf(
         CareerResource(

@@ -15,11 +15,13 @@ BACKEND_CHUNKS_PATH = Path("backend/app") / "chunks.json"  # If any
 
 
 def slugify(text: str) -> str:
+    """Turn a title into a short file-friendly name."""
     text = text.lower().strip()
     return re.sub(r"[^a-z0-9]+", "_", text).strip("_")
 
 
 def ingest_questions():
+    """Load the software interview questions into the knowledge base."""
     if not CSV_PATH.exists():
         raise FileNotFoundError(f"Software Questions CSV not found at {CSV_PATH}")
 
