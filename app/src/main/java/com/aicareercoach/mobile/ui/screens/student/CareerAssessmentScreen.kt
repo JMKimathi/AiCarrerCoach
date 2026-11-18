@@ -68,23 +68,27 @@ fun CareerAssessmentScreen(session: UserSession, onBack: () -> Unit = {}, onOpen
                 Text("Profile detail: ${assessment.profileCompleteness}", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
                 if (assessment.careerMatches.isNotEmpty()) {
                     Text("Roles to explore", style = MaterialTheme.typography.titleMedium)
-                    Text("Ranked from every career in the catalogue using your answers. The relative match compares these roles with your top suggestion; it is guidance, not a final decision.", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
-                    assessment.careerMatches.forEach { career ->
+                    Text("Ranked by how closely each career matches your answers, closest first. This is guidance to explore, not a final decision.", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                    // We show the rank rather than a score out of 100: the top role would always get 100,
+                    // which reads like a perfect fit when it only means "closest of these".
+                    assessment.careerMatches.forEachIndexed { index, career ->
                         SectionCard {
                             Text(career.roleTitle, style = MaterialTheme.typography.titleLarge)
-                            Text("${career.matchLabel}  •  Relative match ${career.matchScore}/100", style = MaterialTheme.typography.labelLarge)
+                            Text("#${index + 1}  •  ${career.matchLabel}", style = MaterialTheme.typography.labelLarge)
                             Text(career.category, style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                            if (career.reasons.isEmpty()) {
+                                Text("Suggested from your answers as a whole rather than one specific answer.", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                            }
                             career.reasons.forEach { Text("• $it", style = MaterialTheme.typography.bodySmall) }
                             TextButton(onClick = { onOpenCareer(career.careerId) }) { Text("View this career") }
                         }
                     }
                     Text("Career areas", style = MaterialTheme.typography.titleMedium)
-                    Text("The broader fields the roles above belong to, with preparation ideas for each.", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
+                    Text("Broader fields close to your answers, starting with the fields of the roles above where we have a guide for them.", style = MaterialTheme.typography.bodySmall, color = TextSecondary)
                 }
                 assessment.recommendations.forEach { match ->
                     SectionCard {
                         Text(match.role, style = MaterialTheme.typography.titleLarge)
-                        Text("Answer overlap: ${match.fitScore}/100", style = MaterialTheme.typography.labelLarge)
                         match.roleSummary.takeIf { it.isNotBlank() }?.let {
                             Text(it, style = MaterialTheme.typography.bodySmall, color = TextSecondary)
                         }
