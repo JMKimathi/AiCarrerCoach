@@ -14,6 +14,7 @@ import com.aicareercoach.mobile.ui.components.SectionCard
 import com.aicareercoach.mobile.ui.theme.SurfaceAlt
 import com.aicareercoach.mobile.ui.theme.TextSecondary
 
+/** A plain screen with a title and some text, used for help and about pages. */
 @Composable
 fun SimpleInfoScreen(
     title: String,

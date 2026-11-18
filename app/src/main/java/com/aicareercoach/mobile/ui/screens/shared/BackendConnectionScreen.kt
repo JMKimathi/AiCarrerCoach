@@ -34,6 +34,7 @@ import androidx.compose.ui.unit.dp
 import com.aicareercoach.mobile.data.network.ApiClient
 import kotlinx.coroutines.launch
 
+/** Lets you set the backend address and checks it can be reached. */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BackendConnectionScreen(onBack: () -> Unit) {

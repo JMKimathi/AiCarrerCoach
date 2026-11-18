@@ -23,6 +23,7 @@ import com.aicareercoach.mobile.ui.theme.TextSecondary
 import com.aicareercoach.mobile.ui.theme.WarningAmber
 import kotlinx.coroutines.launch
 
+/** Where students rate the app and leave comments. */
 @Composable
 fun FeedbackScreen(
     sessionToken: String = "",
@@ -151,6 +152,7 @@ fun FeedbackScreen(
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true, widthDp = 360, heightDp = 780)
 @Composable
 private fun FeedbackScreenPreview() {

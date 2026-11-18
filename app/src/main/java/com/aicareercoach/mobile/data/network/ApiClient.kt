@@ -42,6 +42,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import java.net.URLEncoder
 
+/** The coach's reply and the sources behind it. */
 data class NetworkChatResponse(
     val sessionId: String,
     val response: String,
@@ -49,6 +50,7 @@ data class NetworkChatResponse(
     val stopped: Boolean = false
 )
 
+/** All the calls to the backend live here. Each one runs off the main thread and returns a Result. */
 object ApiClient {
     // Confirmed laptop address on the current home Wi-Fi. The hotspot address is saved from the settings screen.
     private const val DEFAULT_BASE_URL = "http://192.168.100.3:8000/api"

@@ -21,6 +21,7 @@ import com.aicareercoach.mobile.ui.theme.BluePrimary
 import com.aicareercoach.mobile.ui.theme.SurfaceAlt
 import com.aicareercoach.mobile.ui.theme.TextSecondary
 
+/** Shows the full text of one career guide. */
 @Composable
 fun ResourceDetailScreen(
     resource: CareerResource,
@@ -63,6 +64,7 @@ fun ResourceDetailScreen(
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true)
 @Composable
 private fun ResourceDetailScreenPreview() {

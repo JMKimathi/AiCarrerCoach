@@ -39,6 +39,7 @@ private val DarkColors = darkColorScheme(
     error = DangerRed,
 )
 
+/** The app's colours and text styles, wrapped around every screen. */
 @Composable
 fun AICareerCoachTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),

@@ -23,6 +23,7 @@ import com.aicareercoach.mobile.ui.components.AppTopBar
 import com.aicareercoach.mobile.ui.components.SectionCard
 import com.aicareercoach.mobile.ui.theme.*
 
+/** One number shown on the dashboard. */
 private data class AdminStat(
     val label: String,
     val value: String,
@@ -204,6 +205,7 @@ fun AdminDashboardScreen(
     }
 }
 
+/** The large number at the top of the dashboard. */
 @Composable
 private fun HeroFigure(label: String, value: String, modifier: Modifier = Modifier) {
     Column(
@@ -218,6 +220,7 @@ private fun HeroFigure(label: String, value: String, modifier: Modifier = Modifi
     }
 }
 
+/** A card holding one dashboard number. */
 @Composable
 private fun StatCard(stat: AdminStat, modifier: Modifier = Modifier) {
     Column(
@@ -239,6 +242,7 @@ private fun StatCard(stat: AdminStat, modifier: Modifier = Modifier) {
     }
 }
 
+/** A row pointing the admin to something that needs a look. */
 @Composable
 private fun AttentionRow(icon: ImageVector, color: Color, title: String, hint: String, onClick: () -> Unit) {
     Row(
@@ -255,6 +259,7 @@ private fun AttentionRow(icon: ImageVector, color: Color, title: String, hint: S
     }
 }
 
+/** A shortcut row to one of the admin screens. */
 @Composable
 private fun AdminManageRow(icon: ImageVector, label: String, hint: String, onClick: () -> Unit) {
     Row(
@@ -273,6 +278,7 @@ private fun AdminManageRow(icon: ImageVector, label: String, hint: String, onCli
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true, widthDp = 360, heightDp = 800)
 @Composable
 private fun AdminDashboardScreenPreview() {

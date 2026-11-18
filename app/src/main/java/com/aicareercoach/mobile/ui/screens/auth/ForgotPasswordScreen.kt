@@ -15,6 +15,7 @@ import com.aicareercoach.mobile.ui.components.PrimaryButton
 import com.aicareercoach.mobile.ui.theme.AICareerCoachTheme
 import com.aicareercoach.mobile.ui.theme.TextSecondary
 
+/** Explains how to get a password reset from the admin. */
 @Composable
 fun ForgotPasswordScreen(
     onBack: () -> Unit = {},
@@ -38,6 +39,7 @@ fun ForgotPasswordScreen(
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true)
 @Composable
 private fun ForgotPasswordScreenPreview() {

@@ -67,6 +67,7 @@ import com.aicareercoach.mobile.ui.screens.student.StudentDashboardScreen
 import com.aicareercoach.mobile.ui.screens.student.StudentProfileScreen
 import kotlinx.coroutines.launch
 
+/** Names of every screen, used when navigating. */
 object Routes {
     const val Landing = "landing"
     const val Auth = "auth"
@@ -104,6 +105,7 @@ object Routes {
     fun mockInterview(id: String) = "mockInterview/$id"
 }
 
+/** One tab in the bottom bar. */
 private data class TabItem(val route: String, val label: String, val icon: ImageVector)
 
 private val studentTabs = listOf(
@@ -121,6 +123,7 @@ private val adminTabs = listOf(
     TabItem(Routes.AdminAnalytics, "Insights", Icons.Default.Insights),
 )
 
+/** Decides which screen to show and moves between them. */
 @Composable
 fun AppNavigation(
     modifier: Modifier = Modifier,
@@ -250,6 +253,7 @@ fun AppNavigation(
     }
 }
 
+/** The student's home with the bottom tabs. */
 @Composable
 private fun StudentHome(
     session: UserSession,
@@ -445,6 +449,7 @@ private fun StudentHome(
     }
 }
 
+/** The admin's home with the bottom tabs. */
 @Composable
 private fun AdminHome(
     token: String,
@@ -620,6 +625,7 @@ private fun AdminHome(
     }
 }
 
+/** Switch tabs without piling up copies of the same screen. */
 private fun NavHostController.navigateToTab(route: String) {
     navigate(route) {
         popUpTo(graph.findStartDestination().id) { saveState = true }

@@ -24,6 +24,7 @@ import com.aicareercoach.mobile.data.UserSession
 import com.aicareercoach.mobile.ui.components.SectionCard
 import com.aicareercoach.mobile.ui.theme.*
 
+/** Shows the student's details with buttons to edit or log out. */
 @Composable
 fun StudentProfileScreen(
     session: UserSession = UserSession("John Mwiti", "john.mwiti@strathmore.edu"),
@@ -113,6 +114,7 @@ fun StudentProfileScreen(
     }
 }
 
+/** One label and value on the profile screen. */
 @Composable
 private fun ProfileRow(icon: ImageVector, label: String, onClick: (() -> Unit)? = null) {
     Row(
@@ -128,6 +130,7 @@ private fun ProfileRow(icon: ImageVector, label: String, onClick: (() -> Unit)? 
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true, widthDp = 360, heightDp = 780)
 @Composable
 private fun StudentProfileScreenPreview() {

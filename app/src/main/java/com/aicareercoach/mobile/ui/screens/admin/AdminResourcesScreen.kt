@@ -33,6 +33,7 @@ import com.aicareercoach.mobile.ui.theme.DangerRed
 import com.aicareercoach.mobile.ui.theme.SurfaceAlt
 import com.aicareercoach.mobile.ui.theme.TextSecondary
 
+/** Lets the admin see, edit and remove career guides. */
 @Composable
 fun AdminResourcesScreen(
     resources: List<CareerResource>,
@@ -104,6 +105,7 @@ fun AdminResourcesScreen(
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true)
 @Composable
 private fun AdminResourcesScreenPreview() {

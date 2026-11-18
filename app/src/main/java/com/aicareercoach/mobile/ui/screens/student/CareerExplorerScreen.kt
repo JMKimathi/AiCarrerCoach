@@ -203,6 +203,7 @@ fun CareerExplorerScreen(
     }
 }
 
+/** A category chip for filtering careers. */
 @Composable
 private fun ExplorerChip(label: String, selected: Boolean, onClick: () -> Unit) {
     Box(

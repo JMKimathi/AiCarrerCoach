@@ -35,6 +35,7 @@ import com.aicareercoach.mobile.ui.theme.WarningAmber
 
 private val DashboardViolet = Color(0xFF7C3AED)
 
+/** The student's home screen with shortcuts to each feature. */
 @Composable
 fun StudentDashboardScreen(
     session: UserSession = UserSession("John Mwiti", "john.mwiti@strathmore.edu"),
@@ -161,6 +162,7 @@ fun StudentDashboardScreen(
     }
 }
 
+/** A big tile that opens one feature. */
 @Composable
 private fun ActionTile(
     icon: ImageVector,
@@ -194,6 +196,7 @@ private fun ActionTile(
     }
 }
 
+/** A smaller row link on the dashboard. */
 @Composable
 private fun DashboardRow(icon: ImageVector, title: String, subtitle: String) {
     Row(verticalAlignment = Alignment.CenterVertically) {
@@ -207,6 +210,7 @@ private fun DashboardRow(icon: ImageVector, title: String, subtitle: String) {
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true, widthDp = 360, heightDp = 780)
 @Composable
 private fun StudentDashboardScreenPreview() {

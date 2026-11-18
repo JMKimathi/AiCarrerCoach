@@ -106,6 +106,7 @@ fun AdminAnalyticsScreen(
     }
 }
 
+/** Bar chart of chats and interviews per day. */
 @Composable
 private fun ActivityChart(activity: List<DailyActivity>) {
     val highest = activity.maxOf { maxOf(it.chats, it.interviews, it.newStudents) }.coerceAtLeast(1)
@@ -132,6 +133,7 @@ private fun ActivityChart(activity: List<DailyActivity>) {
     }
 }
 
+/** One bar in the activity chart. */
 @Composable
 private fun Bar(value: Int, highest: Int, color: Color) {
     // A day with no activity still shows a thin line so the columns stay aligned.
@@ -145,6 +147,7 @@ private fun Bar(value: Int, highest: Int, color: Color) {
     )
 }
 
+/** Small key that explains the chart colours. */
 @Composable
 private fun Legend(label: String, color: Color, total: Int) {
     Row(verticalAlignment = Alignment.CenterVertically) {
@@ -154,6 +157,7 @@ private fun Legend(label: String, color: Color, total: Int) {
     }
 }
 
+/** A big number with a label underneath. */
 @Composable
 private fun Figure(label: String, value: String, modifier: Modifier = Modifier) {
     Column(
@@ -168,6 +172,7 @@ private fun Figure(label: String, value: String, modifier: Modifier = Modifier) 
     }
 }
 
+/** Switch the feedback list between all entries and the ones marked inaccurate. */
 @Composable
 private fun Toggle(label: String, selected: Boolean, onClick: () -> Unit) {
     Box(
@@ -181,6 +186,7 @@ private fun Toggle(label: String, selected: Boolean, onClick: () -> Unit) {
     }
 }
 
+/** One feedback entry with its rating and date. */
 @Composable
 private fun FeedbackCard(item: AdminFeedback) {
     SectionCard {
@@ -212,6 +218,7 @@ private fun FeedbackCard(item: AdminFeedback) {
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true)
 @Composable
 private fun AdminAnalyticsScreenPreview() {

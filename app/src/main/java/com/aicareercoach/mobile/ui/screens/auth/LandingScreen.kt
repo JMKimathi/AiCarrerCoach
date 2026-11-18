@@ -34,6 +34,7 @@ import com.aicareercoach.mobile.ui.theme.WarningAmber
 
 private val AccentViolet = Color(0xFF7C3AED)
 
+/** First screen people see, with a short intro and the sign-in buttons. */
 @Composable
 fun LandingScreen(
     onGetStarted: () -> Unit = {},
@@ -117,6 +118,7 @@ fun LandingScreen(
     }
 }
 
+/** One feature line on the landing screen. */
 @Composable
 private fun LandingFeature(icon: ImageVector, accent: Color, title: String, caption: String) {
     SectionCard {
@@ -140,6 +142,7 @@ private fun LandingFeature(icon: ImageVector, accent: Color, title: String, capt
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true, widthDp = 360, heightDp = 780)
 @Composable
 private fun LandingScreenPreview() {

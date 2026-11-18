@@ -19,6 +19,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import kotlinx.coroutines.launch
 
+/** Lets the student update their course, skills and goals. */
 @Composable
 fun EditProfileScreen(
     session: UserSession,
@@ -67,6 +68,7 @@ fun EditProfileScreen(
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true)
 @Composable
 private fun EditProfileScreenPreview() {

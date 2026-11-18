@@ -51,6 +51,7 @@ import com.aicareercoach.mobile.ui.theme.TextMuted
 import com.aicareercoach.mobile.ui.theme.TextSecondary
 import com.aicareercoach.mobile.ui.theme.WarningAmber
 
+/** Suggested questions shown before the first message. */
 private data class ChatStarter(
     val icon: ImageVector,
     val accent: Color,
@@ -393,6 +394,7 @@ private fun ChatHistoryDialog(
     }
 }
 
+/** One suggested question the student can tap. */
 @Composable
 private fun StarterCard(starter: ChatStarter, modifier: Modifier = Modifier, onClick: () -> Unit) {
     Column(
@@ -424,6 +426,7 @@ private fun StarterCard(starter: ChatStarter, modifier: Modifier = Modifier, onC
     }
 }
 
+/** A follow-up question shown under the coach's answer. */
 @Composable
 private fun FollowUpChip(label: String, onClick: () -> Unit) {
     Box(
@@ -437,6 +440,7 @@ private fun FollowUpChip(label: String, onClick: () -> Unit) {
     }
 }
 
+/** One message in the chat, styled for the student or the coach. */
 @Composable
 private fun ChatBubble(message: ChatLine) {
     if (message.note) {
@@ -484,6 +488,7 @@ private fun ChatBubble(message: ChatLine) {
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true, widthDp = 360, heightDp = 780)
 @Composable
 private fun AICareerChatScreenPreview() {

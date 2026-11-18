@@ -25,6 +25,7 @@ import com.aicareercoach.mobile.ui.components.SectionCard
 import com.aicareercoach.mobile.ui.components.Tag
 import com.aicareercoach.mobile.ui.theme.*
 
+/** The Knowledge section: career guides grouped by category. */
 @Composable
 fun CareerResourcesScreen(
     resources: List<CareerResource> = SampleData.resources,
@@ -107,6 +108,7 @@ fun CareerResourcesScreen(
     }
 }
 
+/** A chip for picking a guide category. */
 @Composable
 private fun CategoryChip(label: String, selected: Boolean, onClick: () -> Unit) {
     Box(
@@ -124,6 +126,7 @@ private fun CategoryChip(label: String, selected: Boolean, onClick: () -> Unit) 
     }
 }
 
+/** Preview for Android Studio's design view. */
 @Preview(showBackground = true, widthDp = 360, heightDp = 780)
 @Composable
 private fun CareerResourcesScreenPreview() {

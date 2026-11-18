@@ -28,6 +28,7 @@ import androidx.compose.ui.unit.dp
 import com.aicareercoach.mobile.ui.theme.BorderLight
 import com.aicareercoach.mobile.ui.theme.TextSecondary
 
+/** The main filled button used across the app. */
 @Composable
 fun PrimaryButton(
     text: String,
@@ -47,6 +48,7 @@ fun PrimaryButton(
     }
 }
 
+/** Outlined button for less important actions. */
 @Composable
 fun SecondaryButton(
     text: String,
@@ -64,6 +66,7 @@ fun SecondaryButton(
     }
 }
 
+/** Text field with the app's styling; password fields get a show/hide button. */
 @Composable
 fun AppTextField(
     label: String,
@@ -101,6 +104,7 @@ fun AppTextField(
     )
 }
 
+/** A rounded card used to group related content. */
 @Composable
 fun SectionCard(
     modifier: Modifier = Modifier,
@@ -119,6 +123,7 @@ fun SectionCard(
     )
 }
 
+/** Top bar with the screen title and an optional back arrow. */
 @Composable
 fun AppTopBar(
     title: String,
@@ -166,6 +171,7 @@ fun AppTopBar(
     }
 }
 
+/** A small rounded label, e.g. for a skill or category. */
 @Composable
 fun Tag(text: String, color: Color) {
     Box(

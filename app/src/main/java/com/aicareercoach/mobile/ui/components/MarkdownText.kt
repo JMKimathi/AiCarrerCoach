@@ -31,6 +31,7 @@ fun markdownToStyled(text: String): AnnotatedString = buildAnnotatedString {
     }
 }
 
+/** Add one line of text, turning **bold** and *italic* markers into real styling. */
 private fun AnnotatedString.Builder.appendInline(line: String) {
     // **bold** or __bold__, then *italic*; anything unmatched is shown as it is.
     val pattern = Regex("(\\*\\*|__)(.+?)\\1|(?<![*\\w])\\*(?!\\s)(.+?)(?<!\\s)\\*(?![*\\w])")

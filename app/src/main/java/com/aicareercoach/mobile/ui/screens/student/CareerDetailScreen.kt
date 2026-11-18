@@ -35,8 +35,10 @@ private val titleGroups = listOf(
     "lateral" to "Sideways moves"
 )
 
+/** Show a list as bullet points. */
 private fun bulleted(items: List<String>): String = items.joinToString("\n") { "•  $it" }
 
+/** Format a number as Kenyan shillings, e.g. KES 45,000. */
 private fun kes(amount: Int): String = "%,d".format(amount)
 
 /** Everything the catalogue holds about one career: skills, study routes, pathway, opportunities and sources. */
@@ -332,6 +334,7 @@ fun CareerDetailScreen(
     }
 }
 
+/** Small pill at the top of the detail screen, e.g. the category. */
 @Composable
 private fun HeroPill(text: String) {
     Box(
@@ -344,6 +347,7 @@ private fun HeroPill(text: String) {
     }
 }
 
+/** A titled section on the career detail screen. */
 @Composable
 private fun DetailSection(title: String, content: @Composable ColumnScope.() -> Unit) {
     SectionCard {
@@ -353,6 +357,7 @@ private fun DetailSection(title: String, content: @Composable ColumnScope.() -> 
     }
 }
 
+/** A label with its value underneath. */
 @Composable
 private fun LabeledText(label: String, value: String) {
     if (value.isBlank()) return
