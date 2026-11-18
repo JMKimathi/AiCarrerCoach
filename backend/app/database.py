@@ -1,3 +1,7 @@
+"""Database tables and the start-up seeding of career guides.
+
+We use SQLAlchemy on top of PostgreSQL. Each class below is one table."""
+
 import uuid
 from datetime import datetime
 from typing import Generator
@@ -15,6 +19,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker, relationship, Session
 from backend.app.config import settings, ROOT_DIR
 
 def _create_engine():
+    """Connect to PostgreSQL using the URL from the settings."""
     db_url = settings.DATABASE_URL
     kwargs = {"pool_pre_ping": True}
     if db_url.startswith("postgresql://"):
@@ -30,6 +35,7 @@ Base = declarative_base()
 
 
 class User(Base):
+    """A student or admin account."""
     __tablename__ = "users"
 
     user_id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
@@ -47,6 +53,7 @@ class User(Base):
 
 
 class ChatSession(Base):
+    """One conversation between a student and the coach."""
     __tablename__ = "chat_sessions"
 
     session_id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
@@ -61,6 +68,7 @@ class ChatSession(Base):
 
 
 class Message(Base):
+    """A single message in a chat session, from either the student or the coach."""
     __tablename__ = "messages"
 
     message_id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
@@ -74,6 +82,7 @@ class Message(Base):
 
 
 class CareerResource(Base):
+    """A career guide shown in the Knowledge section."""
     __tablename__ = "career_resources"
 
     resource_id = Column(String(50), primary_key=True)
@@ -85,6 +94,7 @@ class CareerResource(Base):
 
 
 class Feedback(Base):
+    """Feedback a student leaves about the app or a resource."""
     __tablename__ = "feedback"
 
     feedback_id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
@@ -99,6 +109,7 @@ class Feedback(Base):
 
 
 class CareerAssessmentRecord(Base):
+    """A saved career assessment so students can look back at past results."""
     __tablename__ = "career_assessments"
 
     assessment_id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
@@ -132,6 +143,7 @@ class MockInterview(Base):
 
 
 def get_db() -> Generator[Session, None, None]:
+    """Give each request its own database session and close it afterwards."""
     db = SessionLocal()
     try:
         yield db
@@ -140,34 +152,45 @@ def get_db() -> Generator[Session, None, None]:
 
 
 def seed_database():
-    """Create schema and import authored career resources; never create demo users."""
+    """Create schema and import authored career resources; never create demo users.
+
+    Guides added to ml/data/resources later are picked up on the next start, but a resource that is
+    already in the database is left alone, so edits made by an administrator are never overwritten.
+    """
     Base.metadata.create_all(bind=engine)
     db = SessionLocal()
     try:
-        # Check resources
-        if db.query(CareerResource).count() == 0:
-            print("Seeding career knowledge base resources...")
-            resources_dir = ROOT_DIR / "ml" / "data" / "resources"
-            if resources_dir.exists():
-                category_map = {
-                    "software_engineer_cv": ("Software Engineer CV Template", "CV Templates"),
-                    "cover_letter_guide": ("Cover Letter Writing Guide", "CV Templates"),
-                    "behavioural_interviews": ("Behavioural Interview Question Bank", "Interview Prep"),
-                    "technical_interviews": ("Technical Interview Practice: Algorithms", "Interview Prep"),
-                    "careers_data_science": ("Careers in Data Science", "Career Paths"),
-                    "portfolio_website": ("Building a Portfolio Website", "Skill Building"),
-                }
-                for md_file in resources_dir.glob("*.md"):
-                    stem = md_file.stem
-                    title, category = category_map.get(stem, (stem.replace("_", " ").title(), "General"))
-                    content = md_file.read_text(encoding="utf-8")
-                    res = CareerResource(
-                        resource_id=stem,
-                        title=title,
-                        category=category,
-                        content=content,
-                    )
-                    db.add(res)
+        resources_dir = ROOT_DIR / "ml" / "data" / "resources"
+        if resources_dir.exists():
+            # Friendly titles and the category each guide is filed under in the app.
+            category_map = {
+                "software_engineer_cv": ("Software Engineer CV Template", "CV Templates"),
+                "cover_letter_guide": ("Cover Letter Writing Guide", "CV Templates"),
+                "general_cv_guide": ("Writing a CV for Any Field", "CV Templates"),
+                "behavioural_interviews": ("Behavioural Interview Question Bank", "Interview Prep"),
+                "technical_interviews": ("Technical Interview Practice: Algorithms", "Interview Prep"),
+                "careers_data_science": ("Careers in Data Science", "Career Paths"),
+                "choosing_a_career_path": ("Choosing a Career Path", "Career Paths"),
+                "portfolio_website": ("Building a Portfolio Website", "Skill Building"),
+                "linkedin_and_networking": ("Using LinkedIn and Networking", "Skill Building"),
+                "finding_internships_and_attachments": ("Finding Internships and Attachments", "Job Search"),
+                "avoiding_job_scams": ("Avoiding Job and Internship Scams", "Job Search"),
+                "online_and_freelance_work": ("Online and Freelance Work", "Job Search"),
+                "understanding_pay_and_offers": ("Understanding Pay and Job Offers", "Workplace"),
+                "starting_your_first_job": ("Starting Your First Job", "Workplace"),
+            }
+            existing = {row[0] for row in db.query(CareerResource.resource_id).all()}
+            added = 0
+            for md_file in sorted(resources_dir.glob("*.md")):
+                stem = md_file.stem
+                if stem in existing:
+                    continue
+                title, category = category_map.get(stem, (stem.replace("_", " ").title(), "General"))
+                db.add(CareerResource(resource_id=stem, title=title, category=category,
+                                      content=md_file.read_text(encoding="utf-8")))
+                added += 1
+            if added:
                 db.commit()
+                print(f"Added {added} career guide(s) to the knowledge base.")
     finally:
         db.close()

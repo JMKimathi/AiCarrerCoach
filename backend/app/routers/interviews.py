@@ -20,22 +20,26 @@ MAX_CANDIDATE_TURNS = 30  # hard stop so a session can never run forever
 
 
 class InterviewStart(BaseModel):
+    """Body for starting a mock interview (role and type)."""
     career_id: str = Field(min_length=1, max_length=20)
     opportunity_type: Optional[str] = Field(default=None, max_length=40)
     question_count: int = Field(default=6, ge=3, le=10)
 
 
 class InterviewAnswer(BaseModel):
+    """The student's answer to the current question."""
     answer: str = Field(min_length=1, max_length=4000)
 
 
 class InterviewTurn(BaseModel):
+    """One question and answer pair in the transcript."""
     speaker: str
     kind: str
     text: str
 
 
 class InterviewState(BaseModel):
+    """What the app needs to show the interview screen."""
     interview_id: str
     career_id: str
     role_title: str
@@ -51,6 +55,7 @@ class InterviewState(BaseModel):
 
 
 def _state(record: MockInterview, interviewer_message: Optional[str] = None, include_transcript: bool = True) -> InterviewState:
+    """Turn a saved interview into the response the app expects."""
     plan = json.loads(record.plan_json)
     transcript = json.loads(record.transcript_json)
     return InterviewState(
@@ -65,6 +70,7 @@ def _state(record: MockInterview, interviewer_message: Optional[str] = None, inc
 
 
 def _own_interview(interview_id: str, user: User, db: Session) -> MockInterview:
+    """Fetch an interview, making sure it belongs to this student."""
     record = db.query(MockInterview).filter(
         MockInterview.interview_id == interview_id, MockInterview.user_id == user.user_id).first()
     if record is None:
@@ -74,6 +80,7 @@ def _own_interview(interview_id: str, user: User, db: Session) -> MockInterview:
 
 @router.post("", response_model=InterviewState, status_code=201)
 def start_interview(payload: InterviewStart, user: User = Depends(get_current_user), db: Session = Depends(get_db)):
+    """Start a new mock interview and return the first question."""
     career_id = payload.career_id.strip().upper()
     opportunity = (payload.opportunity_type or "").strip().lower() or None
     if opportunity and opportunity not in OPPORTUNITY_TYPES:
@@ -106,6 +113,7 @@ def start_interview(payload: InterviewStart, user: User = Depends(get_current_us
 
 @router.get("")
 def list_interviews(user: User = Depends(get_current_user), db: Session = Depends(get_db)):
+    """List the student's past interviews."""
     records = db.query(MockInterview).filter(MockInterview.user_id == user.user_id).order_by(
         MockInterview.created_at.desc()).limit(50).all()
     return [
@@ -118,12 +126,14 @@ def list_interviews(user: User = Depends(get_current_user), db: Session = Depend
 
 @router.get("/{interview_id}", response_model=InterviewState)
 def get_interview(interview_id: str, user: User = Depends(get_current_user), db: Session = Depends(get_db)):
+    """Return one interview with its transcript."""
     return _state(_own_interview(interview_id, user, db))
 
 
 @router.post("/{interview_id}/answer", response_model=InterviewState)
 def answer_question(interview_id: str, payload: InterviewAnswer, user: User = Depends(get_current_user),
                     db: Session = Depends(get_db)):
+    """Save the answer and get the next question, or the feedback once it is done."""
     record = _own_interview(interview_id, user, db)
     if record.status != "in_progress":
         raise HTTPException(status_code=409, detail="This interview has ended. Start a new one to keep practising.")

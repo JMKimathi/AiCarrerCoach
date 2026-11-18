@@ -64,6 +64,7 @@ CAVEAT = (
 
 
 def sha256_file(path: Path) -> str:
+    """Fingerprint a file so the saved model records which data it was trained on."""
     digest = hashlib.sha256()
     with path.open("rb") as source:
         for block in iter(lambda: source.read(1024 * 1024), b""):
@@ -72,6 +73,7 @@ def sha256_file(path: Path) -> str:
 
 
 def feature_text(frame: pd.DataFrame, columns: list[str]) -> pd.Series:
+    """Join the chosen profile columns into one text per student."""
     parts = [frame[column].fillna("").astype(str).str.replace(";", ",") for column in columns]
     labelled = [column.replace("_", " ") + ": " + part for column, part in zip(columns, parts)]
     text = labelled[0]
@@ -81,6 +83,7 @@ def feature_text(frame: pd.DataFrame, columns: list[str]) -> pd.Series:
 
 
 def make_models() -> dict:
+    """The candidate classifiers we compare."""
     return {
         "Logistic Regression": LogisticRegression(C=5.0, max_iter=400),
         "Multinomial Naive Bayes": MultinomialNB(alpha=0.3),
@@ -89,6 +92,7 @@ def make_models() -> dict:
 
 
 def make_pipeline(classifier) -> Pipeline:
+    """TF-IDF features followed by the given classifier."""
     return Pipeline([
         ("tfidf", TfidfVectorizer(sublinear_tf=True, ngram_range=(1, 2), min_df=2, max_features=20000)),
         ("clf", classifier),
@@ -103,6 +107,7 @@ def class_scores(pipeline: Pipeline, texts: pd.Series) -> np.ndarray:
 
 
 def evaluate(pipeline: Pipeline, texts: pd.Series, labels: pd.Series) -> dict:
+    """Score a trained pipeline on held-out profiles."""
     if len(labels) == 0:
         return {"rows": 0}
     scores = class_scores(pipeline, texts)
@@ -119,6 +124,7 @@ def evaluate(pipeline: Pipeline, texts: pd.Series, labels: pd.Series) -> dict:
 
 
 def main() -> None:
+    """Train, compare and save the best catalogue model."""
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--no-save-model", action="store_true", help="Write metrics only.")
     args = parser.parse_args()

@@ -21,6 +21,7 @@ _PASSWORD_ROUNDS = 310_000
 
 
 def hash_password(password: str) -> str:
+    """Hash a password with a random salt before storing it."""
     salt = secrets.token_bytes(16)
     digest = hashlib.pbkdf2_hmac("sha256", password.encode(), salt, _PASSWORD_ROUNDS)
     return f"pbkdf2_sha256${_PASSWORD_ROUNDS}${_b64(salt)}${_b64(digest)}"
@@ -28,6 +29,7 @@ def hash_password(password: str) -> str:
 
 def verify_password(password: str, encoded: str) -> bool:
     # Upgrade prototype plaintext credentials on the next successful sign-in.
+    """Check a typed password against the stored hash."""
     if not encoded.startswith("pbkdf2_sha256$"):
         return hmac.compare_digest(password.encode(), encoded.encode())
     try:
@@ -41,10 +43,12 @@ def verify_password(password: str, encoded: str) -> bool:
 
 
 def is_password_hashed(encoded: str) -> bool:
+    """Tell apart hashed passwords from any old plain ones."""
     return encoded.startswith("pbkdf2_sha256$")
 
 
 def create_access_token(user: User) -> str:
+    """Make a signed token that identifies the user for a while."""
     now = int(time.time())
     header = {"alg": "HS256", "typ": "JWT"}
     payload = {
@@ -59,18 +63,22 @@ def create_access_token(user: User) -> str:
 
 
 def _b64(value: bytes) -> str:
+    """URL-safe base64 without padding."""
     return base64.urlsafe_b64encode(value).rstrip(b"=").decode()
 
 
 def _unb64(value: str) -> bytes:
+    """Reverse of _b64."""
     return base64.urlsafe_b64decode(value + "=" * (-len(value) % 4))
 
 
 def _json_b64(value: dict) -> str:
+    """Encode a dictionary as base64 JSON."""
     return _b64(json.dumps(value, separators=(",", ":")).encode())
 
 
 def _decode_token(token: str) -> dict:
+    """Check a token's signature and expiry and return what is inside."""
     try:
         header_part, payload_part, signature_part = token.split(".")
         unsigned = f"{header_part}.{payload_part}"
@@ -90,6 +98,7 @@ def get_current_user(
     credentials: HTTPAuthorizationCredentials | None = Depends(_bearer),
     db: Session = Depends(get_db),
 ) -> User:
+    """Find the signed-in user from the request's token."""
     if credentials is None:
         raise HTTPException(status_code=401, detail="Authentication required", headers={"WWW-Authenticate": "Bearer"})
     payload = _decode_token(credentials.credentials)
@@ -100,6 +109,7 @@ def get_current_user(
 
 
 def require_admin(user: User = Depends(get_current_user)) -> User:
+    """Stop the request unless the user is an admin."""
     if user.role != "admin":
         raise HTTPException(status_code=403, detail="Administrator access required")
     return user

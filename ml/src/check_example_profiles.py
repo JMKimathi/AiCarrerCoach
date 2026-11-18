@@ -18,6 +18,7 @@ rows = list(csv.DictReader(open(ROOT / "ml" / "data" / "evaluation" / "example_p
 
 
 def run(label):
+    """Score the example profiles and print how often the right category is first and in the top three."""
     first = top3 = 0
     for row in rows:
         profile = {"course": row["course"], "skills": row["skills"], "interests": row["interests"]}

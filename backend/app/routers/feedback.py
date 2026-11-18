@@ -1,3 +1,5 @@
+"""Feedback endpoints: students send it, admins read it."""
+
 import uuid
 from typing import List
 from fastapi import APIRouter, Depends, HTTPException
@@ -15,6 +17,7 @@ def submit_feedback(
     user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
+    """Save feedback from a student."""
     if not 1 <= payload.rating <= 5:
         raise HTTPException(status_code=422, detail="Rating must be between 1 and 5")
     if payload.session_id:
@@ -42,4 +45,5 @@ def submit_feedback(
 
 @router.get("", response_model=List[FeedbackResponse])
 def list_feedbacks(db: Session = Depends(get_db), _admin: User = Depends(require_admin)):
+    """Show all feedback to the admin, newest first."""
     return db.query(Feedback).order_by(Feedback.created_at.desc()).all()

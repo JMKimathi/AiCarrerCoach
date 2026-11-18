@@ -1,3 +1,5 @@
+"""Full retriever pipeline: prepare the knowledge base, train, evaluate, then try it out."""
+
 import json
 import sys
 import argparse
@@ -29,6 +31,7 @@ def load_cached_base_retriever():
 
 
 def step_1_prepare_knowledge_base():
+    """Split the guides and career data into passages and save chunks.json."""
     print("=" * 60)
     print("STEP 1: Preparing knowledge base (chunking documents)...")
     print("=" * 60)
@@ -115,6 +118,7 @@ def step_1_prepare_knowledge_base():
 
 
 def _format_profile_values(values):
+    """Turn a list of profile values into readable text."""
     formatted = []
     for value in values:
         name = value.get("name") or value.get("title") or ""
@@ -133,6 +137,7 @@ def _format_profile_values(values):
 def _select_profile_values(values, limit):
     """Keep the strongest O*NET entries so the runtime index stays compact."""
     def score(value):
+        """Sort key that puts hot and in-demand items first."""
         if value.get("hot_technology", "").casefold() in {"y", "yes", "true"}:
             return (2, 0.0)
         if value.get("in_demand", "").casefold() in {"y", "yes", "true"}:
@@ -168,6 +173,7 @@ def _split_profile_text(text, max_chars=700):
 
 
 def step_2_train_retriever():
+    """Fine-tune the retriever on the question and passage pairs."""
     import pandas as pd
     import random
     import torch
@@ -234,6 +240,7 @@ def step_2_train_retriever():
 
 
 def step_3_evaluate_retrieval():
+    """Compare the base and fine-tuned retriever on held-out questions."""
     import matplotlib.pyplot as plt
     import numpy as np
     import pandas as pd
@@ -282,6 +289,7 @@ def step_3_evaluate_retrieval():
     resource_ids = [c["resource_id"] for c in chunks]
 
     def compute_ranking_metrics(model):
+        """Work out Recall@k, MRR and nDCG for a model on the evaluation questions."""
         if not evaluation_pairs:
             raise ValueError("qa_pairs.csv must contain at least one row with split='eval'.")
         doc_emb = model.encode(corpus, convert_to_numpy=True, normalize_embeddings=True)
@@ -390,6 +398,7 @@ def step_3_evaluate_retrieval():
 
 
 def step_4_interactive_test():
+    """Type questions and see which passages come back."""
     import numpy as np
     from sentence_transformers import SentenceTransformer
 
@@ -419,6 +428,7 @@ def step_4_interactive_test():
 
 
 def main():
+    """Run the steps in order."""
     parser = argparse.ArgumentParser(description="Prepare or train the career knowledge retrieval pipeline.")
     parser.add_argument("--prepare-only", action="store_true",
                         help="Rebuild searchable chunks without training the retriever.")

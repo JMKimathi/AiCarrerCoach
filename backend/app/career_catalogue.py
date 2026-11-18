@@ -28,6 +28,7 @@ class CatalogueUnavailable(RuntimeError):
 
 
 def _read_csv(name: str) -> list[dict]:
+    """Load one CSV from ml/data/careers as a list of dictionaries."""
     path = CAREERS_DIR / name
     if not path.is_file():
         raise CatalogueUnavailable(
@@ -46,6 +47,7 @@ TITLE_TYPES = ("alternative", "specialism", "entry", "progression", "leadership"
 
 
 def _group(rows: list[dict]) -> dict[str, list[dict]]:
+    """Group rows by career_id so each career's details can be looked up quickly."""
     grouped: dict[str, list[dict]] = defaultdict(list)
     for row in rows:
         grouped[row["career_id"]].append(row)
@@ -54,6 +56,7 @@ def _group(rows: list[dict]) -> dict[str, list[dict]]:
 
 @lru_cache(maxsize=1)
 def load_catalogue() -> dict:
+    """Build the full catalogue (careers plus their skills, pay, tasks and so on) and cache it."""
     careers = {row["career_id"]: row for row in _read_csv("career_catalog.csv")}
     templates_path = CAREERS_DIR / "cv_templates.jsonl"
     if not templates_path.is_file():
@@ -84,6 +87,7 @@ def load_catalogue() -> dict:
 
 
 def list_categories() -> list[dict]:
+    """Return each category with how many careers sit under it."""
     counts: dict[str, int] = defaultdict(int)
     for row in load_catalogue()["careers"].values():
         counts[row["category"]] += 1
@@ -112,6 +116,7 @@ def search_careers(category: str | None = None, query: str | None = None, limit:
 
 
 def get_career(career_id: str) -> dict | None:
+    """Return everything we know about one career, or None if the id is unknown."""
     catalogue = load_catalogue()
     row = catalogue["careers"].get(career_id)
     if row is None:
@@ -208,4 +213,5 @@ def _pay_for(catalogue: dict, category: str) -> dict | None:
 
 
 def get_cv_template(career_id: str) -> dict | None:
+    """Return the CV template written for this career, if there is one."""
     return load_catalogue()["cv_templates"].get(career_id)

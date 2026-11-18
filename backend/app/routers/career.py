@@ -56,7 +56,7 @@ def assess_career_path(request: CareerAssessmentRequest, user: User = Depends(ge
         # Assessment remains usable if optional retrieval assets are not installed.
         pass
 
-    # Hybrid recommender: the specific careers from the 452-career catalogue that fit this profile best.
+    # The specific careers from the catalogue that fit this profile best, with reasons from the student's answers.
     try:
         result["career_matches"] = recommender.recommend(profile)
     except Exception as exc:
@@ -80,6 +80,7 @@ def predict_career_path(
     request: CareerPredictionRequest,
     _user: User = Depends(get_current_user),
 ):
+    """Run the career assessment for the answers the student submitted."""
     skills = request.skills.strip()
     if not skills:
         raise HTTPException(status_code=400, detail="Please provide at least one skill or career-related detail.")

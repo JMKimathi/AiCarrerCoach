@@ -5367,3 +5367,347 @@ CAREER-452,teamwork,transferable,2,synthetic,true
 CAREER-452,problem solving,transferable,2,synthetic,true
 CAREER-452,digital literacy,transferable,2,synthetic,true
 CAREER-452,time management,transferable,2,synthetic,true
+CAREER-453,data labelling,core,5,synthetic,true
+CAREER-453,attention to detail,core,5,synthetic,true
+CAREER-453,annotation tools,core,4,synthetic,true
+CAREER-453,quality checking,core,4,synthetic,true
+CAREER-453,analytical thinking,preferred,3,synthetic,true
+CAREER-453,continuous learning,preferred,3,synthetic,true
+CAREER-453,documentation,preferred,3,synthetic,true
+CAREER-453,communication,transferable,2,synthetic,true
+CAREER-453,teamwork,transferable,2,synthetic,true
+CAREER-453,problem solving,transferable,2,synthetic,true
+CAREER-453,digital literacy,transferable,2,synthetic,true
+CAREER-453,time management,transferable,2,synthetic,true
+CAREER-454,cloud platforms,core,5,synthetic,true
+CAREER-454,identity and access management,core,5,synthetic,true
+CAREER-454,security monitoring,core,4,synthetic,true
+CAREER-454,incident response,core,4,synthetic,true
+CAREER-454,analytical thinking,preferred,3,synthetic,true
+CAREER-454,continuous learning,preferred,3,synthetic,true
+CAREER-454,documentation,preferred,3,synthetic,true
+CAREER-454,communication,transferable,2,synthetic,true
+CAREER-454,teamwork,transferable,2,synthetic,true
+CAREER-454,problem solving,transferable,2,synthetic,true
+CAREER-454,digital literacy,transferable,2,synthetic,true
+CAREER-454,time management,transferable,2,synthetic,true
+CAREER-455,BIM software,core,5,synthetic,true
+CAREER-455,technical drawing,core,5,synthetic,true
+CAREER-455,model coordination,core,4,synthetic,true
+CAREER-455,construction documentation,core,4,synthetic,true
+CAREER-455,mathematics,preferred,3,synthetic,true
+CAREER-455,safety awareness,preferred,3,synthetic,true
+CAREER-455,communication,transferable,2,synthetic,true
+CAREER-455,teamwork,transferable,2,synthetic,true
+CAREER-455,problem solving,transferable,2,synthetic,true
+CAREER-455,digital literacy,transferable,2,synthetic,true
+CAREER-455,time management,transferable,2,synthetic,true
+CAREER-456,building codes,core,5,synthetic,true
+CAREER-456,site inspection,core,5,synthetic,true
+CAREER-456,technical drawing,core,4,synthetic,true
+CAREER-456,report writing,core,4,synthetic,true
+CAREER-456,mathematics,preferred,3,synthetic,true
+CAREER-456,safety awareness,preferred,3,synthetic,true
+CAREER-456,communication,transferable,2,synthetic,true
+CAREER-456,teamwork,transferable,2,synthetic,true
+CAREER-456,problem solving,transferable,2,synthetic,true
+CAREER-456,digital literacy,transferable,2,synthetic,true
+CAREER-456,time management,transferable,2,synthetic,true
+CAREER-457,patient communication,core,5,synthetic,true
+CAREER-457,health information systems,core,5,synthetic,true
+CAREER-457,scheduling,core,4,synthetic,true
+CAREER-457,data privacy,core,4,synthetic,true
+CAREER-457,biology,preferred,3,synthetic,true
+CAREER-457,ethics,preferred,3,synthetic,true
+CAREER-457,communication,transferable,2,synthetic,true
+CAREER-457,teamwork,transferable,2,synthetic,true
+CAREER-457,problem solving,transferable,2,synthetic,true
+CAREER-457,digital literacy,transferable,2,synthetic,true
+CAREER-457,time management,transferable,2,synthetic,true
+CAREER-458,genetics knowledge,core,5,synthetic,true
+CAREER-458,patient counselling,core,5,synthetic,true
+CAREER-458,risk assessment,core,4,synthetic,true
+CAREER-458,ethics,core,4,synthetic,true
+CAREER-458,biology,preferred,3,synthetic,true
+CAREER-458,patient communication,preferred,3,synthetic,true
+CAREER-458,communication,transferable,2,synthetic,true
+CAREER-458,teamwork,transferable,2,synthetic,true
+CAREER-458,problem solving,transferable,2,synthetic,true
+CAREER-458,digital literacy,transferable,2,synthetic,true
+CAREER-458,time management,transferable,2,synthetic,true
+CAREER-459,credit analysis,core,5,synthetic,true
+CAREER-459,data analysis,core,5,synthetic,true
+CAREER-459,SQL,core,4,synthetic,true
+CAREER-459,risk monitoring,core,4,synthetic,true
+CAREER-459,numeracy,preferred,3,synthetic,true
+CAREER-459,attention to detail,preferred,3,synthetic,true
+CAREER-459,regulatory awareness,preferred,3,synthetic,true
+CAREER-459,communication,transferable,2,synthetic,true
+CAREER-459,teamwork,transferable,2,synthetic,true
+CAREER-459,problem solving,transferable,2,synthetic,true
+CAREER-459,digital literacy,transferable,2,synthetic,true
+CAREER-459,time management,transferable,2,synthetic,true
+CAREER-460,insurance products,core,5,synthetic,true
+CAREER-460,customer advice,core,5,synthetic,true
+CAREER-460,sales,core,4,synthetic,true
+CAREER-460,regulatory compliance,core,4,synthetic,true
+CAREER-460,numeracy,preferred,3,synthetic,true
+CAREER-460,attention to detail,preferred,3,synthetic,true
+CAREER-460,regulatory awareness,preferred,3,synthetic,true
+CAREER-460,communication,transferable,2,synthetic,true
+CAREER-460,teamwork,transferable,2,synthetic,true
+CAREER-460,problem solving,transferable,2,synthetic,true
+CAREER-460,digital literacy,transferable,2,synthetic,true
+CAREER-460,time management,transferable,2,synthetic,true
+CAREER-461,customer relationship management,core,5,synthetic,true
+CAREER-461,communication,core,5,synthetic,true
+CAREER-461,problem solving,core,4,synthetic,true
+CAREER-461,data analysis,core,4,synthetic,true
+CAREER-461,customer insight,preferred,3,synthetic,true
+CAREER-461,negotiation,preferred,3,synthetic,true
+CAREER-461,planning,preferred,3,synthetic,true
+CAREER-461,teamwork,transferable,2,synthetic,true
+CAREER-461,digital literacy,transferable,2,synthetic,true
+CAREER-461,time management,transferable,2,synthetic,true
+CAREER-462,business planning,core,5,synthetic,true
+CAREER-462,financial literacy,core,5,synthetic,true
+CAREER-462,coaching,core,4,synthetic,true
+CAREER-462,market research,core,4,synthetic,true
+CAREER-462,customer insight,preferred,3,synthetic,true
+CAREER-462,negotiation,preferred,3,synthetic,true
+CAREER-462,planning,preferred,3,synthetic,true
+CAREER-462,communication,transferable,2,synthetic,true
+CAREER-462,teamwork,transferable,2,synthetic,true
+CAREER-462,problem solving,transferable,2,synthetic,true
+CAREER-462,digital literacy,transferable,2,synthetic,true
+CAREER-462,time management,transferable,2,synthetic,true
+CAREER-463,legal administration,core,5,synthetic,true
+CAREER-463,matter management,core,5,synthetic,true
+CAREER-463,billing,core,4,synthetic,true
+CAREER-463,document management,core,4,synthetic,true
+CAREER-463,legal research,preferred,3,synthetic,true
+CAREER-463,critical reading,preferred,3,synthetic,true
+CAREER-463,ethics,preferred,3,synthetic,true
+CAREER-463,communication,transferable,2,synthetic,true
+CAREER-463,teamwork,transferable,2,synthetic,true
+CAREER-463,problem solving,transferable,2,synthetic,true
+CAREER-463,digital literacy,transferable,2,synthetic,true
+CAREER-463,time management,transferable,2,synthetic,true
+CAREER-464,language fluency,core,5,synthetic,true
+CAREER-464,legal terminology,core,5,synthetic,true
+CAREER-464,listening,core,4,synthetic,true
+CAREER-464,confidentiality,core,4,synthetic,true
+CAREER-464,legal research,preferred,3,synthetic,true
+CAREER-464,critical reading,preferred,3,synthetic,true
+CAREER-464,ethics,preferred,3,synthetic,true
+CAREER-464,communication,transferable,2,synthetic,true
+CAREER-464,teamwork,transferable,2,synthetic,true
+CAREER-464,problem solving,transferable,2,synthetic,true
+CAREER-464,digital literacy,transferable,2,synthetic,true
+CAREER-464,time management,transferable,2,synthetic,true
+CAREER-465,learning platforms,core,5,synthetic,true
+CAREER-465,instructional design,core,5,synthetic,true
+CAREER-465,teacher training,core,4,synthetic,true
+CAREER-465,troubleshooting,core,4,synthetic,true
+CAREER-465,lesson planning,preferred,3,synthetic,true
+CAREER-465,learner engagement,preferred,3,synthetic,true
+CAREER-465,assessment design,preferred,3,synthetic,true
+CAREER-465,communication,transferable,2,synthetic,true
+CAREER-465,teamwork,transferable,2,synthetic,true
+CAREER-465,problem solving,transferable,2,synthetic,true
+CAREER-465,digital literacy,transferable,2,synthetic,true
+CAREER-465,time management,transferable,2,synthetic,true
+CAREER-466,programming,core,5,synthetic,true
+CAREER-466,robotics kits,core,5,synthetic,true
+CAREER-466,lesson planning,core,4,synthetic,true
+CAREER-466,learner engagement,core,4,synthetic,true
+CAREER-466,assessment design,preferred,3,synthetic,true
+CAREER-466,communication,transferable,2,synthetic,true
+CAREER-466,teamwork,transferable,2,synthetic,true
+CAREER-466,problem solving,transferable,2,synthetic,true
+CAREER-466,digital literacy,transferable,2,synthetic,true
+CAREER-466,time management,transferable,2,synthetic,true
+CAREER-467,agricultural knowledge,core,5,synthetic,true
+CAREER-467,insurance products,core,5,synthetic,true
+CAREER-467,field assessment,core,4,synthetic,true
+CAREER-467,customer advice,core,4,synthetic,true
+CAREER-467,field observation,preferred,3,synthetic,true
+CAREER-467,sustainability,preferred,3,synthetic,true
+CAREER-467,data recording,preferred,3,synthetic,true
+CAREER-467,communication,transferable,2,synthetic,true
+CAREER-467,teamwork,transferable,2,synthetic,true
+CAREER-467,problem solving,transferable,2,synthetic,true
+CAREER-467,digital literacy,transferable,2,synthetic,true
+CAREER-467,time management,transferable,2,synthetic,true
+CAREER-468,farm management,core,5,synthetic,true
+CAREER-468,business planning,core,5,synthetic,true
+CAREER-468,marketing,core,4,synthetic,true
+CAREER-468,record keeping,core,4,synthetic,true
+CAREER-468,field observation,preferred,3,synthetic,true
+CAREER-468,sustainability,preferred,3,synthetic,true
+CAREER-468,data recording,preferred,3,synthetic,true
+CAREER-468,communication,transferable,2,synthetic,true
+CAREER-468,teamwork,transferable,2,synthetic,true
+CAREER-468,problem solving,transferable,2,synthetic,true
+CAREER-468,digital literacy,transferable,2,synthetic,true
+CAREER-468,time management,transferable,2,synthetic,true
+CAREER-469,audio editing,core,5,synthetic,true
+CAREER-469,storytelling,core,5,synthetic,true
+CAREER-469,interviewing,core,4,synthetic,true
+CAREER-469,project planning,core,4,synthetic,true
+CAREER-469,creativity,preferred,3,synthetic,true
+CAREER-469,audience awareness,preferred,3,synthetic,true
+CAREER-469,communication,transferable,2,synthetic,true
+CAREER-469,teamwork,transferable,2,synthetic,true
+CAREER-469,problem solving,transferable,2,synthetic,true
+CAREER-469,digital literacy,transferable,2,synthetic,true
+CAREER-469,time management,transferable,2,synthetic,true
+CAREER-470,video editing software,core,5,synthetic,true
+CAREER-470,storytelling,core,5,synthetic,true
+CAREER-470,colour correction,core,4,synthetic,true
+CAREER-470,sound editing,core,4,synthetic,true
+CAREER-470,creativity,preferred,3,synthetic,true
+CAREER-470,audience awareness,preferred,3,synthetic,true
+CAREER-470,communication,transferable,2,synthetic,true
+CAREER-470,teamwork,transferable,2,synthetic,true
+CAREER-470,problem solving,transferable,2,synthetic,true
+CAREER-470,digital literacy,transferable,2,synthetic,true
+CAREER-470,time management,transferable,2,synthetic,true
+CAREER-471,wildlife knowledge,core,5,synthetic,true
+CAREER-471,customer service,core,5,synthetic,true
+CAREER-471,driving,core,4,synthetic,true
+CAREER-471,first aid,core,4,synthetic,true
+CAREER-471,cultural awareness,preferred,3,synthetic,true
+CAREER-471,service coordination,preferred,3,synthetic,true
+CAREER-471,communication,transferable,2,synthetic,true
+CAREER-471,teamwork,transferable,2,synthetic,true
+CAREER-471,problem solving,transferable,2,synthetic,true
+CAREER-471,digital literacy,transferable,2,synthetic,true
+CAREER-471,time management,transferable,2,synthetic,true
+CAREER-472,sales,core,5,synthetic,true
+CAREER-472,negotiation,core,5,synthetic,true
+CAREER-472,customer relationship management,core,4,synthetic,true
+CAREER-472,presentation,core,4,synthetic,true
+CAREER-472,customer service,preferred,3,synthetic,true
+CAREER-472,cultural awareness,preferred,3,synthetic,true
+CAREER-472,service coordination,preferred,3,synthetic,true
+CAREER-472,communication,transferable,2,synthetic,true
+CAREER-472,teamwork,transferable,2,synthetic,true
+CAREER-472,problem solving,transferable,2,synthetic,true
+CAREER-472,digital literacy,transferable,2,synthetic,true
+CAREER-472,time management,transferable,2,synthetic,true
+CAREER-473,laboratory techniques,core,5,synthetic,true
+CAREER-473,DNA extraction,core,5,synthetic,true
+CAREER-473,quality control,core,4,synthetic,true
+CAREER-473,data recording,core,4,synthetic,true
+CAREER-473,scientific method,preferred,3,synthetic,true
+CAREER-473,data analysis,preferred,3,synthetic,true
+CAREER-473,laboratory safety,preferred,3,synthetic,true
+CAREER-473,communication,transferable,2,synthetic,true
+CAREER-473,teamwork,transferable,2,synthetic,true
+CAREER-473,problem solving,transferable,2,synthetic,true
+CAREER-473,digital literacy,transferable,2,synthetic,true
+CAREER-473,time management,transferable,2,synthetic,true
+CAREER-474,laboratory analysis,core,5,synthetic,true
+CAREER-474,water and soil testing,core,5,synthetic,true
+CAREER-474,quality control,core,4,synthetic,true
+CAREER-474,report writing,core,4,synthetic,true
+CAREER-474,scientific method,preferred,3,synthetic,true
+CAREER-474,data analysis,preferred,3,synthetic,true
+CAREER-474,laboratory safety,preferred,3,synthetic,true
+CAREER-474,communication,transferable,2,synthetic,true
+CAREER-474,teamwork,transferable,2,synthetic,true
+CAREER-474,problem solving,transferable,2,synthetic,true
+CAREER-474,digital literacy,transferable,2,synthetic,true
+CAREER-474,time management,transferable,2,synthetic,true
+CAREER-475,operations planning,core,5,synthetic,true
+CAREER-475,team supervision,core,5,synthetic,true
+CAREER-475,route planning,core,4,synthetic,true
+CAREER-475,customer service,core,4,synthetic,true
+CAREER-475,process improvement,preferred,3,synthetic,true
+CAREER-475,planning,preferred,3,synthetic,true
+CAREER-475,regulatory compliance,preferred,3,synthetic,true
+CAREER-475,communication,transferable,2,synthetic,true
+CAREER-475,teamwork,transferable,2,synthetic,true
+CAREER-475,problem solving,transferable,2,synthetic,true
+CAREER-475,digital literacy,transferable,2,synthetic,true
+CAREER-475,time management,transferable,2,synthetic,true
+CAREER-476,inventory management,core,5,synthetic,true
+CAREER-476,order processing,core,5,synthetic,true
+CAREER-476,warehouse operations,core,4,synthetic,true
+CAREER-476,attention to detail,core,4,synthetic,true
+CAREER-476,process improvement,preferred,3,synthetic,true
+CAREER-476,planning,preferred,3,synthetic,true
+CAREER-476,regulatory compliance,preferred,3,synthetic,true
+CAREER-476,communication,transferable,2,synthetic,true
+CAREER-476,teamwork,transferable,2,synthetic,true
+CAREER-476,problem solving,transferable,2,synthetic,true
+CAREER-476,digital literacy,transferable,2,synthetic,true
+CAREER-476,time management,transferable,2,synthetic,true
+CAREER-477,active listening,core,5,synthetic,true
+CAREER-477,empathy,core,5,synthetic,true
+CAREER-477,mental health awareness,core,4,synthetic,true
+CAREER-477,referral,core,4,synthetic,true
+CAREER-477,case documentation,preferred,3,synthetic,true
+CAREER-477,community engagement,preferred,3,synthetic,true
+CAREER-477,communication,transferable,2,synthetic,true
+CAREER-477,teamwork,transferable,2,synthetic,true
+CAREER-477,problem solving,transferable,2,synthetic,true
+CAREER-477,digital literacy,transferable,2,synthetic,true
+CAREER-477,time management,transferable,2,synthetic,true
+CAREER-478,case management,core,5,synthetic,true
+CAREER-478,data collection,core,5,synthetic,true
+CAREER-478,community engagement,core,4,synthetic,true
+CAREER-478,report writing,core,4,synthetic,true
+CAREER-478,empathy,preferred,3,synthetic,true
+CAREER-478,case documentation,preferred,3,synthetic,true
+CAREER-478,communication,transferable,2,synthetic,true
+CAREER-478,teamwork,transferable,2,synthetic,true
+CAREER-478,problem solving,transferable,2,synthetic,true
+CAREER-478,digital literacy,transferable,2,synthetic,true
+CAREER-478,time management,transferable,2,synthetic,true
+CAREER-479,financial analysis,core,5,synthetic,true
+CAREER-479,climate policy,core,5,synthetic,true
+CAREER-479,project appraisal,core,4,synthetic,true
+CAREER-479,report writing,core,4,synthetic,true
+CAREER-479,policy literacy,preferred,3,synthetic,true
+CAREER-479,stakeholder engagement,preferred,3,synthetic,true
+CAREER-479,communication,transferable,2,synthetic,true
+CAREER-479,teamwork,transferable,2,synthetic,true
+CAREER-479,problem solving,transferable,2,synthetic,true
+CAREER-479,digital literacy,transferable,2,synthetic,true
+CAREER-479,time management,transferable,2,synthetic,true
+CAREER-480,community engagement,core,5,synthetic,true
+CAREER-480,facilitation,core,5,synthetic,true
+CAREER-480,communication,core,4,synthetic,true
+CAREER-480,report writing,core,4,synthetic,true
+CAREER-480,policy literacy,preferred,3,synthetic,true
+CAREER-480,stakeholder engagement,preferred,3,synthetic,true
+CAREER-480,teamwork,transferable,2,synthetic,true
+CAREER-480,problem solving,transferable,2,synthetic,true
+CAREER-480,digital literacy,transferable,2,synthetic,true
+CAREER-480,time management,transferable,2,synthetic,true
+CAREER-481,solar systems,core,5,synthetic,true
+CAREER-481,electrical installation,core,5,synthetic,true
+CAREER-481,battery systems,core,4,synthetic,true
+CAREER-481,customer service,core,4,synthetic,true
+CAREER-481,technical safety,preferred,3,synthetic,true
+CAREER-481,equipment handling,preferred,3,synthetic,true
+CAREER-481,quality checking,preferred,3,synthetic,true
+CAREER-481,communication,transferable,2,synthetic,true
+CAREER-481,teamwork,transferable,2,synthetic,true
+CAREER-481,problem solving,transferable,2,synthetic,true
+CAREER-481,digital literacy,transferable,2,synthetic,true
+CAREER-481,time management,transferable,2,synthetic,true
+CAREER-482,upholstery techniques,core,5,synthetic,true
+CAREER-482,fabric cutting,core,5,synthetic,true
+CAREER-482,sewing,core,4,synthetic,true
+CAREER-482,measuring,core,4,synthetic,true
+CAREER-482,technical safety,preferred,3,synthetic,true
+CAREER-482,equipment handling,preferred,3,synthetic,true
+CAREER-482,quality checking,preferred,3,synthetic,true
+CAREER-482,communication,transferable,2,synthetic,true
+CAREER-482,teamwork,transferable,2,synthetic,true
+CAREER-482,problem solving,transferable,2,synthetic,true
+CAREER-482,digital literacy,transferable,2,synthetic,true
+CAREER-482,time management,transferable,2,synthetic,true

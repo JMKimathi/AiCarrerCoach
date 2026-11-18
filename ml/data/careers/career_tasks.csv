@@ -3615,3 +3615,243 @@ CAREER-452,Electric Vehicle and Battery Technician,Install and maintain chargers
 CAREER-452,Electric Vehicle and Battery Technician,Update vehicle software,authored,synthetic,true
 CAREER-452,Electric Vehicle and Battery Technician,Follow high-voltage safety procedures,authored,synthetic,true
 CAREER-452,Electric Vehicle and Battery Technician,Record service history,authored,synthetic,true
+CAREER-453,Data Annotation Specialist,Read and follow annotation guidelines,authored,synthetic,true
+CAREER-453,Data Annotation Specialist,"Label images, text or audio accurately",authored,synthetic,true
+CAREER-453,Data Annotation Specialist,Flag unclear or harmful content,authored,synthetic,true
+CAREER-453,Data Annotation Specialist,Check other annotators' work,authored,synthetic,true
+CAREER-453,Data Annotation Specialist,Meet daily quality and speed targets,authored,synthetic,true
+CAREER-453,Data Annotation Specialist,Report problems with the guidelines,authored,synthetic,true
+CAREER-453,Data Annotation Specialist,Track your accuracy scores,authored,synthetic,true
+CAREER-453,Data Annotation Specialist,Keep client data confidential,authored,synthetic,true
+CAREER-454,Cloud Security Engineer,Review cloud accounts for risky settings,authored,synthetic,true
+CAREER-454,Cloud Security Engineer,Set up access rules so people have only the rights they need,authored,synthetic,true
+CAREER-454,Cloud Security Engineer,Configure logging and security alerts,authored,synthetic,true
+CAREER-454,Cloud Security Engineer,Investigate suspicious activity,authored,synthetic,true
+CAREER-454,Cloud Security Engineer,Patch and harden servers and containers,authored,synthetic,true
+CAREER-454,Cloud Security Engineer,Write security guidelines for developers,authored,synthetic,true
+CAREER-454,Cloud Security Engineer,Check systems against compliance standards,authored,synthetic,true
+CAREER-454,Cloud Security Engineer,Run drills for security incidents,authored,synthetic,true
+CAREER-455,BIM Coordinator,Build and update 3D models of buildings,authored,synthetic,true
+CAREER-455,BIM Coordinator,Combine models from architects and engineers,authored,synthetic,true
+CAREER-455,BIM Coordinator,Run clash checks and report conflicts,authored,synthetic,true
+CAREER-455,BIM Coordinator,Produce drawings from the model,authored,synthetic,true
+CAREER-455,BIM Coordinator,Keep files named and stored to the agreed standard,authored,synthetic,true
+CAREER-455,BIM Coordinator,Attend design coordination meetings,authored,synthetic,true
+CAREER-455,BIM Coordinator,Extract quantities for cost estimates,authored,synthetic,true
+CAREER-455,BIM Coordinator,Train colleagues on the model,authored,synthetic,true
+CAREER-456,Building Inspector,Check building plans against the building code,authored,synthetic,true
+CAREER-456,Building Inspector,Visit sites at key stages of construction,authored,synthetic,true
+CAREER-456,Building Inspector,"Inspect foundations, structure and materials",authored,synthetic,true
+CAREER-456,Building Inspector,Confirm fire exits and safety features,authored,synthetic,true
+CAREER-456,Building Inspector,Write inspection reports and notices,authored,synthetic,true
+CAREER-456,Building Inspector,Advise developers on what must be corrected,authored,synthetic,true
+CAREER-456,Building Inspector,Recommend occupation certificates,authored,synthetic,true
+CAREER-456,Building Inspector,Keep records of approvals and enforcement,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,Schedule virtual consultations between patients and clinicians,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,Help patients connect by phone or video,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,Check that records and consent are in place,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,Troubleshoot connection problems,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,Follow up patients after consultations,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,Keep data on usage and missed appointments,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,Train staff on the telemedicine system,authored,synthetic,true
+CAREER-457,Telemedicine Coordinator,Protect patient privacy,authored,synthetic,true
+CAREER-458,Genetic Counsellor,Take detailed family health histories,authored,synthetic,true
+CAREER-458,Genetic Counsellor,Explain genetic conditions in plain language,authored,synthetic,true
+CAREER-458,Genetic Counsellor,Discuss the benefits and limits of genetic tests,authored,synthetic,true
+CAREER-458,Genetic Counsellor,Help families understand test results,authored,synthetic,true
+CAREER-458,Genetic Counsellor,Support people through difficult decisions,authored,synthetic,true
+CAREER-458,Genetic Counsellor,Refer patients to specialists,authored,synthetic,true
+CAREER-458,Genetic Counsellor,"Keep careful, confidential records",authored,synthetic,true
+CAREER-458,Genetic Counsellor,Educate health workers and communities,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,Analyse loan applications and repayment data,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,Monitor default rates and portfolio health,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,Test and improve credit scoring rules,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,Build reports for management,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,Spot unusual patterns that may be fraud,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,Check products against lending regulations,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,Support collections strategy,authored,synthetic,true
+CAREER-459,Digital Lending Analyst,Explain results to product and risk teams,authored,synthetic,true
+CAREER-460,Bancassurance Officer,Explain insurance products to bank customers,authored,synthetic,true
+CAREER-460,Bancassurance Officer,Assess what cover a customer needs,authored,synthetic,true
+CAREER-460,Bancassurance Officer,Complete proposal forms and checks,authored,synthetic,true
+CAREER-460,Bancassurance Officer,Work with branch staff to identify customers,authored,synthetic,true
+CAREER-460,Bancassurance Officer,Follow up renewals and premiums,authored,synthetic,true
+CAREER-460,Bancassurance Officer,Help customers with claims,authored,synthetic,true
+CAREER-460,Bancassurance Officer,Keep sales and compliance records,authored,synthetic,true
+CAREER-460,Bancassurance Officer,Meet sales targets ethically,authored,synthetic,true
+CAREER-461,Customer Success Manager,Help new customers set up and start using the product,authored,synthetic,true
+CAREER-461,Customer Success Manager,Check in regularly with key accounts,authored,synthetic,true
+CAREER-461,Customer Success Manager,Track how customers use the product,authored,synthetic,true
+CAREER-461,Customer Success Manager,Spot accounts at risk of leaving,authored,synthetic,true
+CAREER-461,Customer Success Manager,Handle escalated problems with the support team,authored,synthetic,true
+CAREER-461,Customer Success Manager,Gather feedback for the product team,authored,synthetic,true
+CAREER-461,Customer Success Manager,Prepare renewal conversations,authored,synthetic,true
+CAREER-461,Customer Success Manager,Report on retention and satisfaction,authored,synthetic,true
+CAREER-462,Small Business Advisor,Meet entrepreneurs to understand their businesses,authored,synthetic,true
+CAREER-462,Small Business Advisor,Help them write simple business plans,authored,synthetic,true
+CAREER-462,Small Business Advisor,Teach basic record keeping and budgeting,authored,synthetic,true
+CAREER-462,Small Business Advisor,"Link them to credit, grants and markets",authored,synthetic,true
+CAREER-462,Small Business Advisor,Run group training sessions,authored,synthetic,true
+CAREER-462,Small Business Advisor,Follow up on progress,authored,synthetic,true
+CAREER-462,Small Business Advisor,Collect data for programme reports,authored,synthetic,true
+CAREER-462,Small Business Advisor,Refer them to specialist services,authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,Open and track client matters in the practice system,authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,Keep the court and deadline diary up to date,authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,Prepare fee notes and follow up payments,authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,Organise and secure case documents,authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,"Coordinate between advocates, clients and courts",authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,Set up and support legal software,authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,Keep compliance and conflict-check records,authored,synthetic,true
+CAREER-463,Legal Operations Coordinator,Produce reports on workload and billing,authored,synthetic,true
+CAREER-464,Court Interpreter,Interpret what is said in court accurately and completely,authored,synthetic,true
+CAREER-464,Court Interpreter,Translate statements and documents,authored,synthetic,true
+CAREER-464,Court Interpreter,Keep strictly neutral between the parties,authored,synthetic,true
+CAREER-464,Court Interpreter,Learn legal terms and procedures,authored,synthetic,true
+CAREER-464,Court Interpreter,Prepare for cases with the court file,authored,synthetic,true
+CAREER-464,Court Interpreter,Take an oath to interpret faithfully,authored,synthetic,true
+CAREER-464,Court Interpreter,Keep all case information confidential,authored,synthetic,true
+CAREER-464,Court Interpreter,Tell the court when a term needs clarification,authored,synthetic,true
+CAREER-465,Education Technology Specialist,Set up and run learning platforms for schools or colleges,authored,synthetic,true
+CAREER-465,Education Technology Specialist,Train teachers to use digital tools in class,authored,synthetic,true
+CAREER-465,Education Technology Specialist,Build and adapt digital lessons,authored,synthetic,true
+CAREER-465,Education Technology Specialist,Support learners with access problems,authored,synthetic,true
+CAREER-465,Education Technology Specialist,Track how platforms are used,authored,synthetic,true
+CAREER-465,Education Technology Specialist,Recommend suitable devices and software,authored,synthetic,true
+CAREER-465,Education Technology Specialist,Prepare online tests and quizzes,authored,synthetic,true
+CAREER-465,Education Technology Specialist,Keep up with new education technology,authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,"Plan fun, hands-on coding and robotics lessons",authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,Teach learners to build and program simple robots,authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,Guide project work and debug with learners,authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,Prepare teams for competitions,authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,Keep equipment safe and working,authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,Assess progress and give feedback,authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,Adapt lessons for different ages,authored,synthetic,true
+CAREER-466,Coding and Robotics Instructor,Share learner work with parents and schools,authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,Explain farm insurance products to farmers and groups,authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,Register farmers and their farms,authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,"Visit farms to assess losses after floods, drought or disease",authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,Process and follow up claims,authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,Work with cooperatives and input suppliers,authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,Collect field data and photographs,authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,Train farmers on managing risk,authored,synthetic,true
+CAREER-467,Agricultural Insurance Officer,Report on uptake and claims,authored,synthetic,true
+CAREER-468,Agripreneur,Choose a farm or agribusiness idea with a real market,authored,synthetic,true
+CAREER-468,Agripreneur,Write a simple business plan and budget,authored,synthetic,true
+CAREER-468,Agripreneur,"Source inputs, land or equipment",authored,synthetic,true
+CAREER-468,Agripreneur,Manage production and quality,authored,synthetic,true
+CAREER-468,Agripreneur,Find buyers and negotiate prices,authored,synthetic,true
+CAREER-468,Agripreneur,"Keep records of costs, sales and profit",authored,synthetic,true
+CAREER-468,Agripreneur,Apply for credit or grants,authored,synthetic,true
+CAREER-468,Agripreneur,Comply with licensing and food safety rules,authored,synthetic,true
+CAREER-469,Podcast Producer,Plan episodes and research topics,authored,synthetic,true
+CAREER-469,Podcast Producer,Book and prepare guests,authored,synthetic,true
+CAREER-469,Podcast Producer,Record interviews in studio or on location,authored,synthetic,true
+CAREER-469,Podcast Producer,Edit audio and add music and effects,authored,synthetic,true
+CAREER-469,Podcast Producer,Write show notes and episode descriptions,authored,synthetic,true
+CAREER-469,Podcast Producer,Publish episodes to podcast platforms,authored,synthetic,true
+CAREER-469,Podcast Producer,Promote episodes on social media,authored,synthetic,true
+CAREER-469,Podcast Producer,Track listener numbers and feedback,authored,synthetic,true
+CAREER-470,Video Editor,Review raw footage and organise clips,authored,synthetic,true
+CAREER-470,Video Editor,Cut footage into a clear story,authored,synthetic,true
+CAREER-470,Video Editor,"Add music, sound effects and captions",authored,synthetic,true
+CAREER-470,Video Editor,Correct colour and balance sound,authored,synthetic,true
+CAREER-470,Video Editor,Work with directors and clients on changes,authored,synthetic,true
+CAREER-470,Video Editor,Export videos in the right formats,authored,synthetic,true
+CAREER-470,Video Editor,Meet tight deadlines,authored,synthetic,true
+CAREER-470,Video Editor,Keep project files backed up,authored,synthetic,true
+CAREER-471,Safari Guide,Lead game drives and explain wildlife behaviour,authored,synthetic,true
+CAREER-471,Safari Guide,Drive safely on park roads and follow park rules,authored,synthetic,true
+CAREER-471,Safari Guide,Plan daily routes with the camp or tour company,authored,synthetic,true
+CAREER-471,Safari Guide,Brief guests on safety,authored,synthetic,true
+CAREER-471,Safari Guide,Give first aid when needed,authored,synthetic,true
+CAREER-471,Safari Guide,Share conservation and cultural knowledge,authored,synthetic,true
+CAREER-471,Safari Guide,Keep the vehicle clean and checked,authored,synthetic,true
+CAREER-471,Safari Guide,Handle guest questions and feedback,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,Find and visit corporate clients and event organisers,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,Prepare quotations and proposals,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,Show clients around rooms and venues,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,Negotiate rates and contracts,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,Coordinate with operations for confirmed events,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,Follow up on payments,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,Keep client records in the CRM,authored,synthetic,true
+CAREER-472,Hospitality Sales Executive,Report on sales against targets,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,Receive and log samples,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,Extract DNA and RNA following protocols,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,Run PCR and quality checks,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,Prepare libraries for sequencing,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,Operate and maintain sequencers,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,Record results in the laboratory system,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,Follow biosafety rules,authored,synthetic,true
+CAREER-473,Genomics Laboratory Technician,Help scientists troubleshoot experiments,authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,"Collect water, soil or air samples correctly",authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,Test samples for chemicals and microbes,authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,Calibrate and maintain instruments,authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,Check results against environmental standards,authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,Record data accurately,authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,Write test reports for clients,authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,Follow laboratory safety and quality procedures,authored,synthetic,true
+CAREER-474,Environmental Laboratory Analyst,Take part in proficiency tests,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,Plan daily delivery routes and assign riders,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,Supervise sorting of parcels at the hub,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,Track deliveries and solve delays,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,Handle customer complaints and failed deliveries,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,Check that riders follow safety rules,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,Manage returns and proof of delivery,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,Report on delivery times and costs,authored,synthetic,true
+CAREER-475,Courier Operations Supervisor,Train new riders and staff,authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,Receive and check incoming stock,authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,Keep stock records accurate in the system,authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,Process online orders on time,authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,"Organise picking, packing and labelling",authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,Hand parcels to delivery partners,authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,Handle returns and refunds,authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,Investigate missing or damaged items,authored,synthetic,true
+CAREER-476,E-commerce Fulfilment Coordinator,Report stock levels and order performance,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,Listen to people going through difficult times without judging them,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,Share coping strategies from lived experience,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,Run or support peer groups,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,Recognise warning signs and refer to professionals,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,Follow safeguarding and confidentiality rules,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,Organise awareness activities,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,Keep simple records of contacts and referrals,authored,synthetic,true
+CAREER-477,Mental Health Peer Supporter,Attend supervision and training,authored,synthetic,true
+CAREER-478,Social Protection Officer,Register and verify beneficiaries for support programmes,authored,synthetic,true
+CAREER-478,Social Protection Officer,Explain programme rules to communities,authored,synthetic,true
+CAREER-478,Social Protection Officer,Monitor payments and resolve problems,authored,synthetic,true
+CAREER-478,Social Protection Officer,Handle complaints and appeals,authored,synthetic,true
+CAREER-478,Social Protection Officer,Visit households for follow-up,authored,synthetic,true
+CAREER-478,Social Protection Officer,Keep beneficiary data accurate and confidential,authored,synthetic,true
+CAREER-478,Social Protection Officer,Work with chiefs and community leaders,authored,synthetic,true
+CAREER-478,Social Protection Officer,Prepare monitoring reports,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,Track climate funding flows to governments and projects,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,Assess whether projects qualify for climate finance,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,Prepare funding proposals and budgets,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,Analyse costs and benefits of climate projects,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,Tag climate spending in budgets,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,Report to funders on results,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,Follow national and international climate policy,authored,synthetic,true
+CAREER-479,Climate Finance Analyst,Brief managers on funding opportunities,authored,synthetic,true
+CAREER-480,Public Participation Officer,Plan public participation forums for budgets and policies,authored,synthetic,true
+CAREER-480,Public Participation Officer,Publish notices so people know when and where to attend,authored,synthetic,true
+CAREER-480,Public Participation Officer,Facilitate meetings so different voices are heard,authored,synthetic,true
+CAREER-480,Public Participation Officer,Record views and questions accurately,authored,synthetic,true
+CAREER-480,Public Participation Officer,Prepare reports on what the public said,authored,synthetic,true
+CAREER-480,Public Participation Officer,Feed results back to communities,authored,synthetic,true
+CAREER-480,Public Participation Officer,Run civic education sessions,authored,synthetic,true
+CAREER-480,Public Participation Officer,Make sure people with disabilities can take part,authored,synthetic,true
+CAREER-481,Mini-Grid Technician,"Install and maintain solar panels, inverters and batteries",authored,synthetic,true
+CAREER-481,Mini-Grid Technician,Connect households and businesses to the mini-grid,authored,synthetic,true
+CAREER-481,Mini-Grid Technician,Install and check smart meters,authored,synthetic,true
+CAREER-481,Mini-Grid Technician,Monitor system performance remotely,authored,synthetic,true
+CAREER-481,Mini-Grid Technician,Fix faults and power outages,authored,synthetic,true
+CAREER-481,Mini-Grid Technician,Carry out routine maintenance,authored,synthetic,true
+CAREER-481,Mini-Grid Technician,Explain safe electricity use to customers,authored,synthetic,true
+CAREER-481,Mini-Grid Technician,Record faults and repairs,authored,synthetic,true
+CAREER-482,Upholsterer,Measure furniture and cut fabric and foam,authored,synthetic,true
+CAREER-482,Upholsterer,Strip and repair old frames and springs,authored,synthetic,true
+CAREER-482,Upholsterer,"Fit padding, webbing and covers",authored,synthetic,true
+CAREER-482,Upholsterer,Sew seams and cushions,authored,synthetic,true
+CAREER-482,Upholsterer,Finish with trims and buttons,authored,synthetic,true
+CAREER-482,Upholsterer,Advise customers on fabrics and costs,authored,synthetic,true
+CAREER-482,Upholsterer,Keep the workshop safe and tidy,authored,synthetic,true
+CAREER-482,Upholsterer,Deliver work on time,authored,synthetic,true

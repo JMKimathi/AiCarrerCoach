@@ -1,3 +1,5 @@
+"""Run the three retriever notebooks in order, top to bottom."""
+
 from pathlib import Path
 import nbformat
 from nbclient import NotebookClient

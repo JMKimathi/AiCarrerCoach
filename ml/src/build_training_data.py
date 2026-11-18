@@ -86,10 +86,12 @@ def _split(profile_id: str) -> str:
 
 
 def _split_list(text: str) -> list[str]:
+    """Split a '; '-separated cell into a list."""
     return [item.strip() for item in text.split(";") if item.strip()]
 
 
 def build_synthetic(profiles_per_career: int) -> list[dict]:
+    """Make example student profiles for each career to train the models on."""
     catalog, skills = build_rows()
     by_career: dict[str, dict[str, list[str]]] = {}
     for row in skills:
@@ -184,6 +186,7 @@ def load_real(path: Path) -> tuple[list[dict], dict]:
 
 
 def validate(rows: list[dict]) -> dict:
+    """Check every category has interest signals and the profile ids are unique."""
     missing = set(CATEGORIES) - set(CATEGORY_INTERESTS)
     if missing:
         raise ValueError(f"Categories without interest signals: {sorted(missing)}")
@@ -203,6 +206,7 @@ def validate(rows: list[dict]) -> dict:
 
 
 def main() -> None:
+    """Build, check and write the training data."""
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--profiles-per-career", type=int, default=30)

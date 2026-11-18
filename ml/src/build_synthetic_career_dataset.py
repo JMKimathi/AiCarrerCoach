@@ -16,6 +16,7 @@ OUTPUT = ROOT / "ml" / "data" / "synthetic" / "career_feedback_dataset.jsonl"
 def pathway(id, sector, role, aliases, courses, interests, skills, activities,
             summary, entry_roles, preparation, projects, applications, interviews,
             cv, progression, verify):
+    """Bundle the details of one career pathway into a single record."""
     return {
         "record_id": id,
         "record_type": "career_pathway",
@@ -125,6 +126,7 @@ for record in PATHWAYS:
 
 
 def main():
+    """Write the synthetic pathway dataset used for testing."""
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text("\n".join(json.dumps(record, ensure_ascii=False) for record in PATHWAYS) + "\n", encoding="utf-8")
     print(f"Wrote {len(PATHWAYS)} synthetic pathway records to {OUTPUT}")

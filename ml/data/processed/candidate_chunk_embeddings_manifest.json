@@ -1,5 +1,5 @@
 {
-  "chunks_sha256": "60f1b8e4075decf038540931aadeae9f56cc78643491e3a471414e5111d1a212",
+  "chunks_sha256": "16ff6bfa9585e60244693288394a4c0d256f8efc18cd7904fc8400c1bbd5c6b2",
   "model_files": [
     {
       "path": "1_Pooling\\config.json",
@@ -53,7 +53,7 @@
     }
   ],
   "shape": [
-    3686,
+    3961,
     384
   ]
 }

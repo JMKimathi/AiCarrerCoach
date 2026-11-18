@@ -18,6 +18,7 @@ REQUIRED_FIELDS = {"Role", "Country", "Job Posting Date", "skills"}
 
 
 def audit(path: Path, max_rows: int | None) -> dict:
+    """Read the job descriptions file and count rows by role, country, job type and year."""
     role_counts: Counter[str] = Counter()
     country_counts: Counter[str] = Counter()
     type_counts: Counter[str] = Counter()
@@ -65,6 +66,7 @@ def audit(path: Path, max_rows: int | None) -> dict:
 
 
 def main() -> None:
+    """Run the audit from the command line."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("csv_path", type=Path)
     parser.add_argument("--max-rows", type=int, default=50_000,

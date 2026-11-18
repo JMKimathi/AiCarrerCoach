@@ -176,6 +176,7 @@ PATHWAY_COLUMNS = [
 
 
 def build_education(catalog: list[dict]) -> list[dict]:
+    """Work out the typical education route for each career."""
     rows = []
     for role in catalog:
         study, levels, certifications, _ = CATEGORY_EDUCATION[role["category"]]
@@ -199,6 +200,7 @@ def build_education(catalog: list[dict]) -> list[dict]:
 
 
 def build_pathways(catalog: list[dict]) -> list[dict]:
+    """Write the step-by-step path (entry role to senior role) for each career."""
     rows = []
     for role in catalog:
         title, focus = role["role_title"], role["specialisation"]
@@ -233,6 +235,7 @@ def build_pathways(catalog: list[dict]) -> list[dict]:
 
 
 def validate(catalog: list[dict], education: list[dict], pathways: list[dict]) -> None:
+    """Check every career has an education row and at least one pathway step."""
     missing = set(CATEGORIES) - set(CATEGORY_EDUCATION)
     if missing:
         raise ValueError(f"Categories without education defaults: {sorted(missing)}")
@@ -251,6 +254,7 @@ def validate(catalog: list[dict], education: list[dict], pathways: list[dict]) -
 
 
 def main() -> None:
+    """Build, check and write the education and pathway tables."""
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--check", action="store_true", help="Validate the generated tables without writing files.")

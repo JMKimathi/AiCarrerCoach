@@ -1,3 +1,8 @@
+"""Entry point for the FastAPI backend.
+
+This file wires up the routers, creates the tables, seeds the guides and
+warms up the models in the background so the first request is not slow."""
+
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
 from sqlalchemy import text
@@ -12,6 +17,7 @@ from backend.app.routers import auth, chat, resources, feedback, admin, career, 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    """Run start-up work (tables, seeding, model warm-up) before the API takes requests."""
     print("=" * 60)
     print("Starting the AI Career Coach API...")
     if len(settings.SECRET_KEY) < 32:
@@ -63,6 +69,7 @@ app.include_router(interviews.router, prefix=settings.API_PREFIX)
 
 @app.get("/")
 def root():
+    """Simple welcome message so you can see the API is running."""
     return {
         "status": "online",
         "service": settings.PROJECT_NAME,
@@ -73,6 +80,7 @@ def root():
 
 @app.get(f"{settings.API_PREFIX}/health")
 def health_check():
+    """Used by the app's connection screen to check the backend is reachable."""
     try:
         with engine.connect() as connection:
             connection.execute(text("SELECT 1"))

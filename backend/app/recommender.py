@@ -1,4 +1,4 @@
-"""Hybrid career recommender: ranks the 452 catalogue careers for one student profile.
+"""Career recommender: ranks every career in the catalogue for one student profile.
 
 Three signals are combined (see Section 5.4.2 of the report and Part 9 of the evaluation notebook):
   - classifier: Logistic Regression trained on labelled synthetic profiles (probability per career);
@@ -40,6 +40,7 @@ _matcher: dict | None = None
 
 
 def _rows(name: str) -> list[dict]:
+    """Read one of the career CSV files into a list of rows."""
     with open(CAREERS_DIR / name, encoding="utf-8-sig", newline="") as handle:
         return list(csv.DictReader(handle))
 
@@ -57,6 +58,7 @@ def _profile_text(profile: dict) -> str:
 
 
 def train_classifier() -> dict:
+    """Train the backup Logistic Regression model if the saved one is missing."""
     rows = [row for row in _rows("career_training_data.csv") if row.get("split") == "train"]
     vectorizer = TfidfVectorizer(ngram_range=(1, 2), sublinear_tf=True, min_df=2, max_features=15000)
     features = vectorizer.fit_transform([_profile_text(row) for row in rows])
@@ -69,6 +71,7 @@ def train_classifier() -> dict:
 
 
 def _load() -> dict:
+    """Load everything the recommender needs once and keep it in memory."""
     global _state
     with _lock:
         if _state is not None:
@@ -92,15 +95,18 @@ def _load() -> dict:
         model = bundle["model"]
         _state = {
             "vectorizer": bundle["vectorizer"], "model": model, "catalog": catalog, "career_ids": career_ids,
+            # The classifier only knows careers it was trained on; the career matcher can rank every career in
+            # the catalogue, including ones added later, because it works from their descriptions.
+            "all_ids": list(catalog),
             "class_index": [list(model.classes_).index(c) for c in career_ids],
             "skills": skills, "doc_vectorizer": doc_vectorizer, "doc_matrix": doc_vectorizer.transform(documents),
             "skill_totals": np.array([sum(w for _, w in skills.get(c, [])) or 1.0 for c in career_ids]),
             "career_words": {c: _stems(" ".join([catalog[c]["role_title"], catalog[c].get("specialisation", ""),
                                                  catalog[c].get("description", ""), " ".join(tasks.get(c, [])),
                                                  " ".join(s for s, _ in skills.get(c, []))]))
-                             for c in career_ids},
+                             for c in catalog},
         }
-        print(f"[Recommender] Ready: {len(career_ids)} careers.")
+        print(f"[Recommender] Ready: {len(catalog)} careers ({len(career_ids)} known to the classifier).")
         return _state
 
 
@@ -139,6 +145,7 @@ def _label(rank: int, score: int, cut: int) -> str:
 
 
 def _scale(values: np.ndarray) -> np.ndarray:
+    """Squash a list of scores into the 0 to 1 range so they can be combined."""
     low, high = values.min(), values.max()
     return (values - low) / (high - low) if high > low else np.zeros_like(values)
 
@@ -158,6 +165,7 @@ def _profile_sentence(profile: dict) -> str:
 
 
 def _load_matcher() -> dict | None:
+    """Load the fine-tuned career matcher if it is available on disk."""
     global _matcher
     if not (MATCHER_DIR / "modules.json").is_file():
         return None
@@ -169,7 +177,7 @@ def _load_matcher() -> dict | None:
             tasks: dict[str, list[str]] = {}
             for row in _rows("career_tasks.csv"):
                 tasks.setdefault(row["career_id"], []).append(row["task"])
-            texts = [_career_text(state["catalog"][c], state["skills"].get(c, []), tasks.get(c, [])) for c in state["career_ids"]]
+            texts = [_career_text(state["catalog"][c], state["skills"].get(c, []), tasks.get(c, [])) for c in state["all_ids"]]
             _matcher = {"model": model, "vectors": model.encode(texts, batch_size=64, normalize_embeddings=True)}
             print(f"[Recommender] Career matcher loaded from {MATCHER_DIR}")
         return _matcher
@@ -217,7 +225,7 @@ def recommend(profile: dict, top_k: int = 5) -> list[dict]:
         top, middle = float(similarity.max()), float(np.median(similarity))
         results = []
         for rank, index in enumerate(np.argsort(-similarity)[:top_k]):
-            career_id = state["career_ids"][index]
+            career_id = state["all_ids"][index]
             row = state["catalog"][career_id]
             score = int(round(100 * max(0.0, (float(similarity[index]) - middle) / (top - middle)))) if top > middle else 0
             reasons = _reasons(clean, career_id, state, student_skills)

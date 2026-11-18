@@ -48,7 +48,7 @@ The training and retrieval workflows do not run automatically when the app start
 
 ## Career catalogue
 
-`ml/data/careers/` holds a synthetic career catalogue covering 452 roles in 15 categories, for Kenya and international markets. Every table shares a `career_id` key.
+`ml/data/careers/` holds a synthetic career catalogue covering 482 roles in 15 categories, for Kenya and international markets. Every table shares a `career_id` key. The last 30 roles (CAREER-453 to CAREER-482) were added after the models were evaluated and have no synthetic student profiles; the career matcher ranks them from their descriptions.
 
 | File | Contents |
 | --- | --- |
@@ -94,7 +94,7 @@ The mock interview uses Gemini to react to each answer. Without a `GEMINI_API_KE
 
 After the career assessment, `POST /api/career/assess` returns two things:
 
-- **Roles to explore**: five careers from the 452-career catalogue, ranked by the career matcher. The matcher is a small sentence-transformer (all-MiniLM-L6-v2) fine-tuned in `ml/notebooks/career_matcher_training.ipynb` to place a student's profile close to the description of a suitable career. Put the trained model in `ml/models/career-matcher/`; without it the backend falls back to a hybrid of a Logistic Regression classifier with skills-overlap and text-similarity scores (`backend/app/recommender.py`).
+- **Roles to explore**: five careers from the 482-career catalogue, ranked by the career matcher. The matcher is a small sentence-transformer (all-MiniLM-L6-v2) fine-tuned in `ml/notebooks/career_matcher_training.ipynb` to place a student's profile close to the description of a suitable career. Put the trained model in `ml/models/career-matcher/`; without it the backend falls back to a hybrid of a Logistic Regression classifier with skills-overlap and text-similarity scores (`backend/app/recommender.py`).
 - **Career areas**: the two broader pathways closest to the same profile, ranked by the same model so that they agree with the roles.
 
 The **relative match** shown with each role compares it with the student's top suggestion; it is not a probability or a prediction of success. Each suggestion lists only reasons taken from the student's own answers (shared skills, interests and course).

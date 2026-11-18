@@ -1,3 +1,5 @@
+"""Start the backend with `python run.py` (runs uvicorn on port 8000)."""
+
 import sys
 from pathlib import Path
 import uvicorn

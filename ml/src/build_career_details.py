@@ -208,6 +208,7 @@ SETTING_COLUMNS = ["career_id", "role_title", "setting_type", "setting", "data_o
 
 
 def _split(text: str) -> list[str]:
+    """Split a '; '-separated cell back into a list."""
     return [item.strip() for item in text.split(";") if item.strip()]
 
 
@@ -226,6 +227,7 @@ COMMON_WORDS = {
 
 
 def _words(*texts: str) -> set[str]:
+    """Small helper for turning text into a set of lower-case words."""
     cleaned = " ".join(texts).lower()
     for mark in ",;()/.-":
         cleaned = cleaned.replace(mark, " ")
@@ -233,6 +235,7 @@ def _words(*texts: str) -> set[str]:
 
 
 def build_details() -> dict:
+    """Build the titles, tasks, tools and related-career tables for every role."""
     catalog, skills = build_rows()
     core: dict[str, list[str]] = {}
     for row in skills:
@@ -259,6 +262,7 @@ def build_details() -> dict:
         seen = {title.casefold()}
 
         def add_title(text: str, title_type: str, source: str) -> None:
+            """Record one title for the current career, ignoring repeats."""
             text = _capital(text.strip())
             if text.casefold() in seen:
                 return
@@ -321,6 +325,7 @@ def build_details() -> dict:
 
 
 def validate(details: dict) -> dict:
+    """Check that every career got its details and nothing is duplicated."""
     catalog = details["catalog"]
     missing = set(CATEGORIES) - set(CATEGORY_DETAILS)
     if missing:
@@ -362,6 +367,7 @@ def validate(details: dict) -> dict:
 
 
 def main() -> None:
+    """Build, check and write the career detail tables."""
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--check", action="store_true", help="Validate the tables without writing files.")

@@ -1,3 +1,5 @@
+"""Admin-only endpoints: overview numbers, student accounts, feedback and analytics."""
+
 import json
 from collections import Counter
 from datetime import datetime, timedelta
@@ -19,6 +21,7 @@ router = APIRouter(prefix="/admin", tags=["Administrator Management"], dependenc
 
 @router.get("/overview", response_model=AdminOverviewResponse)
 def get_admin_overview(db: Session = Depends(get_db)):
+    """Headline numbers for the admin dashboard."""
     week_ago = datetime.utcnow() - timedelta(days=7)
     students = db.query(User).filter(User.role == "student")
     total_students = students.count()
@@ -58,11 +61,13 @@ class StudentSummary(UserResponse):
 
 
 def _counts(db: Session, column, *filters) -> dict:
+    """Count rows per student for one column (chats, interviews and so on)."""
     query = db.query(column, func.count()).group_by(column)
     return dict(query.filter(*filters).all() if filters else query.all())
 
 
 def _summaries(db: Session, students: List[User]) -> List[StudentSummary]:
+    """Build a short activity summary for each student."""
     chats = _counts(db, ChatSession.user_id)
     interviews = _counts(db, MockInterview.user_id)
     assessments = _counts(db, CareerAssessmentRecord.user_id)
@@ -84,6 +89,7 @@ def _summaries(db: Session, students: List[User]) -> List[StudentSummary]:
 
 
 def _student_or_404(db: Session, user_id: str) -> User:
+    """Fetch a student account or return a 404 if it does not exist."""
     student = db.query(User).filter(User.user_id == user_id, User.role == "student").first()
     if not student:
         raise HTTPException(status_code=404, detail="Student account not found.")
@@ -92,11 +98,13 @@ def _student_or_404(db: Session, user_id: str) -> User:
 
 @router.get("/students", response_model=List[StudentSummary])
 def get_students(db: Session = Depends(get_db)):
+    """List all student accounts with their activity."""
     students = db.query(User).filter(User.role == "student").order_by(User.created_at.desc()).all()
     return _summaries(db, students)
 
 
 class StudentStatusUpdate(BaseModel):
+    """Body for activating or deactivating a student account."""
     is_active: bool
 
 
@@ -111,6 +119,7 @@ def set_student_status(user_id: str, payload: StudentStatusUpdate, db: Session =
 
 
 class PasswordReset(BaseModel):
+    """Body for an admin setting a new password for a student."""
     new_password: str = Field(min_length=8, max_length=128)
 
 
@@ -135,6 +144,7 @@ def delete_student(user_id: str, db: Session = Depends(get_db)):
 
 
 class FeedbackItem(BaseModel):
+    """One feedback entry as shown to the admin."""
     feedback_id: str
     student_name: str
     student_email: str
@@ -162,6 +172,7 @@ def list_feedback(flagged_only: bool = False, limit: int = 50, db: Session = Dep
 
 
 class DailyActivity(BaseModel):
+    """Activity counts for one day, used by the analytics charts."""
     date: str
     label: str
     chats: int
@@ -178,6 +189,7 @@ def get_activity(days: int = 7, db: Session = Depends(get_db)):
     since = datetime.combine(first_day, datetime.min.time())
 
     def per_day(column, *filters) -> Counter:
+        """Count how many rows were created on each day."""
         moments = db.query(column).filter(column >= since, *filters).all()
         return Counter(moment.date() for (moment,) in moments if moment)
 

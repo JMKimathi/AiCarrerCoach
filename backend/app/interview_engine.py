@@ -75,39 +75,63 @@ FEEDBACK_INSTRUCTION = (
 
 
 def _article(text: str) -> str:
+    """Pick 'a' or 'an' for a job title, e.g. 'an Accountant'."""
     return ("an " if text[:1].lower() in "aeiou" else "a ") + text
 
 
-def _generate(system_instruction: str, prompt: str, max_output_tokens: int) -> Optional[str]:
-    """Call Gemini with the same model fallback the chat uses. Returns None when unavailable."""
+# Interview turns should feel like a conversation, so they get a short time limit and little "thinking".
+# If Gemini is slow or unavailable the interviewer falls back to the question bank instead of making the
+# student wait. Feedback at the end is longer and allowed a bit more time.
+TURN_TIMEOUT_MS = 12_000
+FEEDBACK_TIMEOUT_MS = 40_000
+_clients: dict[int, object] = {}
+
+
+def _client(api_key: str, timeout_ms: int):
+    """Reuse one Gemini client per time limit instead of opening a new connection on every turn."""
+    from google import genai
+    from google.genai import types
+
+    if timeout_ms not in _clients:
+        _clients[timeout_ms] = genai.Client(api_key=api_key, http_options=types.HttpOptions(timeout=timeout_ms))
+    return _clients[timeout_ms]
+
+
+def _generate(system_instruction: str, prompt: str, max_output_tokens: int,
+              timeout_ms: int = TURN_TIMEOUT_MS) -> Optional[str]:
+    """Call Gemini with the same model fallback the chat uses. Returns None when unavailable or too slow."""
     api_key = settings.GEMINI_API_KEY or os.getenv("GEMINI_API_KEY")
     if not api_key:
         return None
     try:
-        from google import genai
         from google.genai import types
 
-        client = genai.Client(api_key=api_key)
+        client = _client(api_key, timeout_ms)
         for model_index, model_name in enumerate(GEMINI_MODELS):
-            try:
-                response = client.models.generate_content(
-                    model=model_name,
-                    contents=prompt,
-                    config=types.GenerateContentConfig(
-                        system_instruction=system_instruction,
-                        max_output_tokens=max_output_tokens,
-                    ),
-                )
-                text = (response.text or "").strip()
-                return text or None
-            except Exception as model_error:
-                status_code = getattr(model_error, "code", None) or getattr(model_error, "status_code", None)
-                if model_index == 0 and status_code in (429, 503):
-                    logger.warning("Gemini model %s returned %s; trying the fallback model", model_name, status_code)
-                    continue
-                raise
+            # Ask for low thinking first; older models that do not accept the setting are retried without it.
+            for thinking in (types.ThinkingConfig(thinking_level="LOW"), None):
+                try:
+                    response = client.models.generate_content(
+                        model=model_name,
+                        contents=prompt,
+                        config=types.GenerateContentConfig(
+                            system_instruction=system_instruction,
+                            max_output_tokens=max_output_tokens,
+                            thinking_config=thinking,
+                        ),
+                    )
+                    text = (response.text or "").strip()
+                    return text or None
+                except Exception as model_error:
+                    status_code = getattr(model_error, "code", None) or getattr(model_error, "status_code", None)
+                    if thinking is not None and status_code == 400:
+                        continue  # this model does not support the thinking setting; try once without it
+                    if model_index == 0 and status_code in (429, 503):
+                        logger.warning("Gemini model %s returned %s; trying the fallback model", model_name, status_code)
+                        break
+                    raise
     except Exception:
-        logger.exception("Gemini interview generation failed; using the built-in fallback")
+        logger.exception("Gemini interview generation failed or timed out; using the built-in fallback")
     return None
 
 
@@ -124,11 +148,13 @@ def plan_interview(question_rows: list[dict], career_id: str, count: int,
 
 
 def opening_turn(role_title: str, opportunity_type: Optional[str], plan: list[dict]) -> str:
+    """The interviewer's first message: a short greeting and the first question."""
     role_phrase = f"{_article(role_title)} {opportunity_type}" if opportunity_type else f"{_article(role_title)} role"
     return f"{random.choice(OPENINGS).format(role_phrase=role_phrase)} {plan[0]['question']}"
 
 
 def _transcript_text(transcript: list[dict], last: int = 8) -> str:
+    """Flatten the recent interview turns into plain text for the model prompt."""
     lines = []
     for turn in transcript[-last:]:
         speaker = "Interviewer" if turn["speaker"] == "interviewer" else "Candidate"
@@ -220,7 +246,7 @@ def build_feedback(role_title: str, opportunity_type: Optional[str], plan: list[
     )
     generated = _generate(
         FEEDBACK_INSTRUCTION.format(role=role_title, opportunity=opportunity_type or "entry-level role"),
-        prompt, max_output_tokens=900,
+        prompt, max_output_tokens=900, timeout_ms=FEEDBACK_TIMEOUT_MS,
     )
     if generated:
         return {"text": f"{generated}\n\n{FEEDBACK_NOTE}", "generated_by": "gemini"}
