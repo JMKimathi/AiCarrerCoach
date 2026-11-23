@@ -261,6 +261,12 @@ fun CareerDetailScreen(
                         )
                         Spacer(Modifier.height(6.dp))
                         Text(pay.note, style = MaterialTheme.typography.bodySmall)
+                        // The internship schemes are national programmes open to many fields, so they get their
+                        // own heading to make clear they are not a stipend for this particular role.
+                        if (pay.internships.isNotEmpty()) {
+                            Spacer(Modifier.height(10.dp))
+                            Text("General internship programmes (not specific to this role)", style = MaterialTheme.typography.titleSmall)
+                        }
                         pay.internships.forEach { scheme ->
                             Spacer(Modifier.height(8.dp))
                             Text(scheme.scheme, style = MaterialTheme.typography.labelLarge)
