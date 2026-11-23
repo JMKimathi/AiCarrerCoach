@@ -110,7 +110,7 @@ def build_synthetic(profiles_per_career: int) -> list[dict]:
         certifications = _split_list(CATEGORY_EDUCATION[category][2])
         for index in range(1, profiles_per_career + 1):
             chosen = rng.sample(role_skills["core"], k=rng.randint(2, len(role_skills["core"])))
-            chosen += rng.sample(role_skills["preferred"], k=rng.randint(0, 2))
+            chosen += rng.sample(role_skills["preferred"], k=rng.randint(0, min(2, len(role_skills["preferred"]))))
             chosen += rng.sample(role_skills["transferable"], k=rng.randint(1, 3))
             if rng.random() < 0.45:  # a skill picked up from a neighbouring role in the same sector
                 chosen.append(rng.choice(core_by_category[category]))

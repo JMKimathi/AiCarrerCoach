@@ -106,5 +106,5 @@ def assess_career_paths(profile: dict, top_k: int = 4, order: list[str] | None =
         "profile_completeness": completeness,
         "summary": summary,
         "recommendations": recommendations[:top_k],
-        "information_note": "Pathways come from a synthetic illustrative dataset. Fit scores show overlap with your answers only; they are not probabilities, qualifications, admission criteria, or predictions of job success. Verify local course, licensing, and employer requirements.",
+        "information_note": "Pathways come from a synthetic illustrative dataset. The matching answers listed under each area are the words you gave that appear in it; they are not probabilities, qualifications, admission criteria, or predictions of job success. Verify local course, licensing, and employer requirements.",
     }

@@ -94,12 +94,22 @@ The mock interview uses Gemini to react to each answer. Without a `GEMINI_API_KE
 
 After the career assessment, `POST /api/career/assess` returns two things:
 
-- **Roles to explore**: five careers from the 482-career catalogue, ranked by the career matcher. The matcher is a small sentence-transformer (all-MiniLM-L6-v2) fine-tuned in `ml/notebooks/career_matcher_training.ipynb` to place a student's profile close to the description of a suitable career. Put the trained model in `ml/models/career-matcher/`; without it the backend falls back to a hybrid of a Logistic Regression classifier with skills-overlap and text-similarity scores (`backend/app/recommender.py`).
-- **Career areas**: the two broader pathways closest to the same profile, ranked by the same model so that they agree with the roles.
+- **Roles to explore**: five careers from the 482-career catalogue, ranked by the career matcher. The matcher is a small sentence-transformer (all-MiniLM-L6-v2) fine-tuned in `ml/notebooks/career_matcher_training.ipynb` to place a student's profile close to the description of a suitable career. Put the trained model in `ml/models/career-matcher/`; without it the backend falls back to a hybrid of a Logistic Regression classifier with skills-overlap and text-similarity scores (`backend/app/recommender.py`). The fallback can only suggest the 452 careers its classifier was trained on, so the 30 newer roles appear only when the matcher is installed.
+- **Career areas**: two broader pathways. The backend puts first the best area in the field of each suggested role (in the order the roles were ranked), then the rest ordered by the matcher, or by overlap with the student's answers when the matcher is missing. The areas cover 14 of the 15 fields (there is no area for skilled trades), so for a trades role, or if the role list is empty, the areas are not guaranteed to match the roles.
 
-The **relative match** shown with each role compares it with the student's top suggestion; it is not a probability or a prediction of success. Each suggestion lists only reasons taken from the student's own answers (shared skills, interests and course).
+Roles are shown by rank (#1, #2 ...) rather than a score out of 100, because the scores are relative to the student's own top suggestion. Each suggestion lists only reasons that can be traced to the student's answers: shared skills, and interests or a course whose words appear in the career's description, tasks or skills. That last check is a simple word match (common endings such as -ing and -er are removed first), so it can occasionally link words that are related in spelling but not in meaning. When no answer matches, the app says the role was suggested from the answers as a whole.
 
 `ml/src/check_example_profiles.py` runs 20 hand-written example profiles and reports how often a career from the expected category comes first and in the top three. The profiles and the training data are synthetic, so these checks describe behaviour on controlled examples, not accuracy for real students.
+
+`ml/src/check_new_careers.py` tests the matcher on the 30 careers added after the evaluation, which it was never trained on. It makes 30 profiles per career with the training-data generator, damages them with the evaluation notebook's rules and ranks each against all 482 careers. Last run:
+
+| Damage to each profile | Hit@1 | Hit@3 | MRR |
+|---|---|---|---|
+| 0% | 97.7% | 99.7% | 98.6 |
+| 50% | 79.3% | 88.3% | 84.7 |
+| 80% | 44.0% | 57.7% | 53.8 |
+
+The profiles are built from the same catalogue text the matcher compares against, so this shows the matcher can rank new catalogue entries under controlled inputs; it does not measure recommendation quality for real students. The undamaged figure in particular is optimistic.
 
 ## Android source layout
 

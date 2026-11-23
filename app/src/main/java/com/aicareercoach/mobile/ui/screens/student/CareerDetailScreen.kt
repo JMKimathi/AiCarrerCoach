@@ -242,18 +242,31 @@ fun CareerDetailScreen(
                 }
 
                 current.pay?.let { pay ->
-                    DetailSection("Typical pay in Kenya") {
+                    // The survey reports pay for broad fields, not single roles, so the heading and the
+                    // first line say which field the figures are for.
+                    DetailSection("Indicative pay for the wider field") {
+                        Text(
+                            "Survey field: ${pay.surveyArea}. Pay for this exact role can be higher or lower.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = TextSecondary
+                        )
                         Text(
                             "KES ${kes(pay.typicalLowKes)} – ${kes(pay.typicalHighKes)} a month",
                             style = MaterialTheme.typography.titleLarge
                         )
                         Text(
-                            "Average about KES ${kes(pay.averageKes)} · ${pay.surveyArea}",
+                            "Field average about KES ${kes(pay.averageKes)}",
                             style = MaterialTheme.typography.bodySmall,
                             color = TextSecondary
                         )
                         Spacer(Modifier.height(6.dp))
                         Text(pay.note, style = MaterialTheme.typography.bodySmall)
+                        // The internship schemes are national programmes open to many fields, so they get their
+                        // own heading to make clear they are not a stipend for this particular role.
+                        if (pay.internships.isNotEmpty()) {
+                            Spacer(Modifier.height(10.dp))
+                            Text("General internship programmes (not specific to this role)", style = MaterialTheme.typography.titleSmall)
+                        }
                         pay.internships.forEach { scheme ->
                             Spacer(Modifier.height(8.dp))
                             Text(scheme.scheme, style = MaterialTheme.typography.labelLarge)

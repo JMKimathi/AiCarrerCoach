@@ -114,10 +114,28 @@ _STOP = {"with", "from", "that", "this", "your", "work", "working", "about", "in
          "using", "skills", "people", "things", "being", "more", "they", "such", "will", "able", "also"}
 
 
+_SUFFIXES = ("ations", "ation", "ings", "ing", "ical", "ists", "ist", "ers", "er", "ies", "es", "ed", "al", "s")
+
+
+def _root(word: str) -> str:
+    """Strip one common ending so 'farming', 'farmer' and 'farms' all become 'farm'.
+
+    We used to cut every word to its first five letters, but that made unrelated words collide
+    ('community' and 'communication' both became 'commu'), which produced reasons that weren't true."""
+    for suffix in _SUFFIXES:
+        if word.endswith(suffix) and len(word) - len(suffix) >= 4:
+            return word[:-len(suffix)]
+    return word
+
+
+# Words that appear in many course names and say nothing about a particular career.
+_COURSE_WORDS = {"science", "sciences", "studies", "bachelor", "bachelors", "master", "masters", "diploma",
+                 "certificate", "degree", "applied", "general", "honours", "program", "programme"}
+
+
 def _stems(text: str) -> set[str]:
-    """Rough word roots so that 'analysis', 'analyse' and 'analytical' count as the same idea."""
-    words = re.findall(r"[a-z]{4,}", text.lower())
-    return {w[:5] for w in words if w not in _STOP}
+    """Word roots of a piece of text, ignoring very short and very common words."""
+    return {_root(w) for w in re.findall(r"[a-z]{4,}", text.lower()) if w not in _STOP}
 
 
 def _reasons(clean: dict, career_id: str, state: dict, student_skills: set[str]) -> list[str]:
@@ -127,12 +145,16 @@ def _reasons(clean: dict, career_id: str, state: dict, student_skills: set[str])
     if shared:
         reasons.append("Uses your skills in " + ", ".join(s for _, s in shared[:3]))
     words = state["career_words"].get(career_id, set())
-    linked = [item.strip() for item in clean.get("interests", "").split(";")
-              if item.strip() and _stems(item) & words][:3]
+    # An interest or course only counts when every meaningful word in it appears in the career's text,
+    # so "community events" needs both "community" and "event", not just one of them.
+    def found(phrase: str, ignore: set[str] = frozenset()) -> bool:
+        roots = _stems(" ".join(w for w in phrase.lower().split() if w not in ignore))
+        return bool(roots) and roots <= words
+    linked = [item.strip() for item in clean.get("interests", "").split(";") if item.strip() and found(item)][:3]
     if linked:
         reasons.append("Linked to what you said you enjoy: " + ", ".join(linked))
     course = clean.get("course", "").strip()
-    if course and _stems(course) & words:
+    if course and found(course, _COURSE_WORDS):
         reasons.append(f"Related to your course ({course})")
     return reasons
 
@@ -215,7 +237,8 @@ def recommend(profile: dict, top_k: int = 5) -> list[dict]:
     state = _load()
     clean = {key: "; ".join(value) if isinstance(value, (list, tuple)) else (value or "") for key, value in profile.items()}
     student_skills = {s.strip().lower() for s in clean.get("skills", "").split(";") if s.strip()}
-    if not student_skills and not clean.get("interests", "").strip() and not clean.get("course", "").strip():
+    # A career goal on its own is enough to rank careers, so it counts as an answer here too.
+    if not student_skills and not any(clean.get(key, "").strip() for key in ("interests", "course", "specialisation")):
         return []
 
     matcher = _load_matcher()
@@ -228,9 +251,9 @@ def recommend(profile: dict, top_k: int = 5) -> list[dict]:
             career_id = state["all_ids"][index]
             row = state["catalog"][career_id]
             score = int(round(100 * max(0.0, (float(similarity[index]) - middle) / (top - middle)))) if top > middle else 0
+            # Only reasons we can point to in the student's own answers. If there are none, the app says the
+            # role was suggested from the answers as a whole rather than inventing a reason.
             reasons = _reasons(clean, career_id, state, student_skills)
-            if len(reasons) < 2:
-                reasons.append("Its description and tasks are close to your answers overall")
             results.append({
                 "career_id": str(career_id), "role_title": row["role_title"], "category": row.get("category", ""),
                 "match_score": score, "match_label": _label(rank, score, 65), "reasons": reasons,
@@ -251,12 +274,8 @@ def recommend(profile: dict, top_k: int = 5) -> list[dict]:
     for rank, index in enumerate(np.argsort(-scores)[:top_k]):
         career_id = state["career_ids"][index]
         row = state["catalog"][career_id]
+        # Same rule as the matcher: only reasons we can point to in the student's answers.
         reasons = _reasons(clean, career_id, state, student_skills)
-        shared = bool(reasons)
-        if trust >= 0.5 and probabilities[index] >= 0.05:
-            reasons.append("Students with a profile like yours chose this career")
-        if similarity[index] > 0 and (not shared or trust < 0.5):
-            reasons.append("Its description and tasks match what you told us")
         score = int(round(float(scores[index]) * 100))
         results.append({
             "career_id": str(career_id),
@@ -264,6 +283,6 @@ def recommend(profile: dict, top_k: int = 5) -> list[dict]:
             "category": row.get("category", ""),
             "match_score": score,
             "match_label": _label(rank, score, 25),
-            "reasons": reasons or ["A partial match to your profile; add more skills for better suggestions"],
+            "reasons": reasons,
         })
     return results
