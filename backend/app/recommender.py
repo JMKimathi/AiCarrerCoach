@@ -237,7 +237,8 @@ def recommend(profile: dict, top_k: int = 5) -> list[dict]:
     state = _load()
     clean = {key: "; ".join(value) if isinstance(value, (list, tuple)) else (value or "") for key, value in profile.items()}
     student_skills = {s.strip().lower() for s in clean.get("skills", "").split(";") if s.strip()}
-    if not student_skills and not clean.get("interests", "").strip() and not clean.get("course", "").strip():
+    # A career goal on its own is enough to rank careers, so it counts as an answer here too.
+    if not student_skills and not any(clean.get(key, "").strip() for key in ("interests", "course", "specialisation")):
         return []
 
     matcher = _load_matcher()

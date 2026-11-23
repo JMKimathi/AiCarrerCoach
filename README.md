@@ -101,6 +101,16 @@ Roles are shown by rank (#1, #2 ...) rather than a score out of 100, because the
 
 `ml/src/check_example_profiles.py` runs 20 hand-written example profiles and reports how often a career from the expected category comes first and in the top three. The profiles and the training data are synthetic, so these checks describe behaviour on controlled examples, not accuracy for real students.
 
+`ml/src/check_new_careers.py` tests the matcher on the 30 careers added after the evaluation, which it was never trained on. It makes 30 profiles per career with the training-data generator, damages them with the evaluation notebook's rules and ranks each against all 482 careers. Last run:
+
+| Damage to each profile | Hit@1 | Hit@3 | MRR |
+|---|---|---|---|
+| 0% | 97.7% | 99.7% | 98.6 |
+| 50% | 79.3% | 88.3% | 84.7 |
+| 80% | 44.0% | 57.7% | 53.8 |
+
+The profiles are built from the same catalogue text the matcher compares against, so this shows the matcher can rank new catalogue entries under controlled inputs; it does not measure recommendation quality for real students. The undamaged figure in particular is optimistic.
+
 ## Android source layout
 
 ```text
