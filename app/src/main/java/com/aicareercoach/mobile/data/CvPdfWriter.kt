@@ -17,6 +17,7 @@ object CvPdfWriter {
     private const val PAGE_HEIGHT = 842
     private const val MARGIN = 48f
 
+    // Text style used when drawing the CV onto the PDF page.
     private fun textPaint(size: Float, bold: Boolean, textColor: Int): TextPaint =
         TextPaint(Paint.ANTI_ALIAS_FLAG).apply {
             textSize = size
@@ -24,6 +25,7 @@ object CvPdfWriter {
             color = textColor
         }
 
+    // Draws the CV (written in markdown) onto A4 pages and writes the PDF to the given stream.
     fun write(markdown: String, output: OutputStream) {
         val namePaint = textPaint(20f, true, Color.BLACK)
         val headingPaint = textPaint(13f, true, Color.rgb(37, 99, 235))

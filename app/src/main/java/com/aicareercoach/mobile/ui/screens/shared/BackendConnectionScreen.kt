@@ -45,6 +45,7 @@ fun BackendConnectionScreen(onBack: () -> Unit) {
     var checking by remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
 
+    // Saves the Wi-Fi and hotspot addresses the user entered.
     fun save() {
         ApiClient.saveEndpoints(listOf(wifiAddress, hotspotAddress))
     }

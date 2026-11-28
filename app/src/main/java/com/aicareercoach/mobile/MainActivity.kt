@@ -13,6 +13,7 @@ import com.aicareercoach.mobile.ui.theme.AICareerCoachTheme
 
 /** The app's only activity. It sets the theme and hands over to the navigation graph. */
 class MainActivity : ComponentActivity() {
+    // Sets up the network client, then shows the app inside our theme.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         com.aicareercoach.mobile.data.network.ApiClient.initialize(applicationContext)
