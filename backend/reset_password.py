@@ -8,6 +8,7 @@ from backend.app.security import hash_password
 
 
 def main() -> int:
+    """Ask for an account's email and a new password, then save it."""
     email = input("Account email: ").strip().lower()
     password = getpass.getpass("New password (minimum 8 characters): ")
     confirm = getpass.getpass("Confirm new password: ")

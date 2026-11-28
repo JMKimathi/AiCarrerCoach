@@ -245,6 +245,7 @@ def render_cv(template: dict, profile: dict) -> dict:
         lines += [" | ".join(item for item in contact if item), ""]
 
     def summary() -> list[str]:
+        """The profile summary at the top of the CV."""
         study = f"{course} student" if course else "Student"
         if institution:
             study += f" at {institution}"
@@ -258,6 +259,7 @@ def render_cv(template: dict, profile: dict) -> dict:
         return [text]
 
     def skills() -> list[str]:
+        """The skills section, putting the skills this career asks for first."""
         if not student_skills:
             return [f"[List skills you can show evidence for. Relevant ones for this role: {', '.join(template['skills_to_highlight'][:5])}.]"]
         out = []
@@ -268,6 +270,7 @@ def render_cv(template: dict, profile: dict) -> dict:
         return out
 
     def projects() -> list[str]:
+        """The projects section, from what the student entered."""
         out = []
         for item in profile.get("projects") or []:
             title = str(item.get("title", "")).strip()
@@ -276,12 +279,14 @@ def render_cv(template: dict, profile: dict) -> dict:
         return out or [f"- Example to adapt: {template['bullet_starters'][0]}"]
 
     def education() -> list[str]:
+        """The education section: course, institution, year and grade."""
         if not (course or institution):
             return ["- [Course, institution, graduation year, and grade or class if strong.]"]
         entry = " | ".join(part for part in (course, institution, f"Expected {year}" if year else "") if part)
         return [f"- {entry}", "- [Add relevant units, your final-year project title, or awards.]"]
 
     def experience() -> list[str]:
+        """The experience section: jobs, internships and attachments."""
         out = []
         for item in profile.get("experience") or []:
             title = str(item.get("title", "")).strip()
@@ -298,14 +303,17 @@ def render_cv(template: dict, profile: dict) -> dict:
         return [f"- Example to adapt: {starter}" for starter in template["bullet_starters"][1:]]
 
     def certifications() -> list[str]:
+        """The certifications section, or a prompt to add some."""
         items = _clean_list(profile.get("certifications"))
         return [f"- {item}" for item in items] or ["- [List certificates or professional exams you have passed, with dates.]"]
 
     def extras() -> list[str]:
+        """Clubs, volunteering, leadership, languages or awards."""
         items = _clean_list(profile.get("activities"))
         return [f"- {item}" for item in items] or ["- [Clubs, volunteering, leadership roles, languages or awards.]"]
 
     def referees() -> list[str]:
+        """The referees section ("Available on request" if none given)."""
         items = _clean_list(profile.get("referees"))
         return [f"- {item}" for item in items] or ["Available on request."]
 
@@ -357,6 +365,7 @@ def render_final_cv(template: dict, profile: dict) -> dict:
     to_build = [skill for skill in template["skills_to_highlight"] if skill.casefold() not in student_keys]
 
     def text(key: str) -> str:
+        """Read one field from the student's details as tidy single-spaced text."""
         return " ".join(str(profile.get(key, "")).split())
 
     course, institution, year, grade = text("course"), text("institution"), text("graduation_year"), text("grade")
@@ -367,6 +376,7 @@ def render_final_cv(template: dict, profile: dict) -> dict:
     project_items = [item for item in (profile.get("projects") or []) if str(item.get("title", "")).strip()]
 
     def summary() -> list[str]:
+        """The profile summary at the top of the CV."""
         if own_summary:
             return [own_summary]
         if not (course or institution):
@@ -383,9 +393,11 @@ def render_final_cv(template: dict, profile: dict) -> dict:
         return [sentence]
 
     def skills() -> list[str]:
+        """The skills section, putting the skills this career asks for first."""
         return [", ".join(matched + other)] if student_skills else []
 
     def education() -> list[str]:
+        """The education section: course, institution, year and grade."""
         if not (course or institution):
             return []
         entry = f"**{course or 'Studies'}**" + (f", {institution}" if institution else "")
@@ -393,6 +405,7 @@ def render_final_cv(template: dict, profile: dict) -> dict:
         return [entry + (f" | {details}" if details else "")]
 
     def experience() -> list[str]:
+        """The experience section: jobs, internships and attachments."""
         out: list[str] = []
         for item in experience_items:
             heading = f"**{' '.join(str(item['title']).split())}**"
@@ -405,6 +418,7 @@ def render_final_cv(template: dict, profile: dict) -> dict:
         return out[:-1]
 
     def projects() -> list[str]:
+        """The projects section, from what the student entered."""
         out: list[str] = []
         for item in project_items:
             out.append(f"**{' '.join(str(item['title']).split())}**")
@@ -415,6 +429,7 @@ def render_final_cv(template: dict, profile: dict) -> dict:
         return out[:-1]
 
     def bullets(key: str) -> list[str]:
+        """Turn a list from the student's details into bullet points."""
         return [f"- {item}" for item in _clean_list(profile.get(key))]
 
     builders = {

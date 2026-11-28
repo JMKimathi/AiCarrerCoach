@@ -23,6 +23,7 @@ class CareerCoachRAG:
     """
 
     def __init__(self, model_dir: Path = TRAINED_DIR, chunks_path: Path = CHUNKS):
+        """Load the fine-tuned retriever and the passages it searches."""
         print(f"Loading fine-tuned retriever from: {model_dir}")
         self.retriever = SentenceTransformer(str(model_dir))
 

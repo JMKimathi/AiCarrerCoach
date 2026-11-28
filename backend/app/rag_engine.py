@@ -75,6 +75,7 @@ class RAGEngine:
     _instance: Optional["RAGEngine"] = None
 
     def __init__(self):
+        """Load the fine-tuned retriever, the passages and their vectors (rebuilding the vectors if the passages changed)."""
         print(f"[RAG] Loading fine-tuned retriever from: {settings.MODEL_DIR}")
         self.model = SentenceTransformer(str(settings.MODEL_DIR))
 
