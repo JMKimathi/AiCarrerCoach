@@ -104,6 +104,7 @@ fun AICareerChatScreen(
         ),
     )
 
+    // Sends the typed (or tapped) question to the coach.
     fun send(text: String) {
         if (text.isBlank()) return
         ChatMemory.send(text, session.token)

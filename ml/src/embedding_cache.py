@@ -54,9 +54,12 @@ def load_or_create_embeddings(
 
     if cache_is_current(chunks_path, model_dir, cache_path, manifest_path):
         try:
-            cached = np.load(cache_path, mmap_mode="r")
+            # Read the whole file instead of memory-mapping it: a memory-mapped file stays open,
+            # and on Windows an open file cannot be replaced when the cache has to be rebuilt.
+            cached = np.load(cache_path)
             if cached.ndim == 2 and cached.shape[0] == len(chunks):
                 return cached
+            del cached
         except (OSError, ValueError):
             pass
 

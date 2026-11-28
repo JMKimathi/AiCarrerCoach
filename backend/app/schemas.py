@@ -105,6 +105,7 @@ class MessageResponse(BaseModel):
     created_at: datetime
 
     class Config:
+        """Lets this model be built straight from a database row."""
         from_attributes = True
 
 
@@ -116,6 +117,7 @@ class ChatSessionResponse(BaseModel):
     message_count: int
 
     class Config:
+        """Lets this model be built straight from a database row."""
         from_attributes = True
 
 
@@ -128,6 +130,7 @@ class ResourceListItem(BaseModel):
     summary: str
 
     class Config:
+        """Lets this model be built straight from a database row."""
         from_attributes = True
 
 
@@ -140,6 +143,7 @@ class ResourceDetail(BaseModel):
     created_at: datetime
 
     class Config:
+        """Lets this model be built straight from a database row."""
         from_attributes = True
 
 
@@ -168,6 +172,7 @@ class FeedbackResponse(BaseModel):
     created_at: datetime
 
     class Config:
+        """Lets this model be built straight from a database row."""
         from_attributes = True
 
 

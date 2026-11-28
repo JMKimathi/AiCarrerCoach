@@ -64,6 +64,7 @@ object ChatMemory {
         triedRestore = false
     }
 
+    // Empties the current conversation so a new one can start.
     private fun clear() {
         messages.clear()
         sessionId = null
@@ -106,6 +107,7 @@ object ChatMemory {
         }
     }
 
+    // Starts a fresh conversation, unless a reply is still on its way.
     fun startNew() {
         if (waiting) return
         messages.clear()
@@ -117,6 +119,7 @@ object ChatMemory {
         if (sessionId == id && !waiting) startNew()
     }
 
+    // Sends the student's message to the coach and adds the reply when it arrives.
     fun send(text: String, token: String) {
         val trimmed = text.trim()
         if (trimmed.isEmpty()) return

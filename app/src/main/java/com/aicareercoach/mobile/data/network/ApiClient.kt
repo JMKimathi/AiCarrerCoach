@@ -63,6 +63,7 @@ object ApiClient {
     @Volatile private var checkedAt: Long = 0L
     @Volatile private var appContext: Context? = null
 
+    // Called once at app start: loads the saved backend addresses and listens for network changes.
     fun initialize(context: Context) {
         val applicationContext = context.applicationContext
         appContext = applicationContext
@@ -79,8 +80,11 @@ object ApiClient {
         val connectivity = applicationContext.getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager
         runCatching {
             connectivity?.registerDefaultNetworkCallback(object : ConnectivityManager.NetworkCallback() {
+                // A new network appeared, so check the backend address again on the next request.
                 override fun onAvailable(network: Network) { checkedAt = 0L }
+                // The network dropped, so check the backend address again on the next request.
                 override fun onLost(network: Network) { checkedAt = 0L }
+                // The network changed (for example Wi-Fi to hotspot), so check the address again.
                 override fun onCapabilitiesChanged(network: Network, networkCapabilities: android.net.NetworkCapabilities) {
                     checkedAt = 0L
                 }
@@ -88,8 +92,10 @@ object ApiClient {
         }
     }
 
+    // The backend addresses the user has saved.
     fun configuredEndpoints(): List<String> = candidateBaseUrls
 
+    // Saves the backend addresses entered on the connection screen.
     fun saveEndpoints(endpoints: List<String>) {
         val normalized = endpoints.mapNotNull(::normalizeEndpoint).distinct()
         candidateBaseUrls = normalized.ifEmpty { listOf(DEFAULT_BASE_URL) }
@@ -100,6 +106,7 @@ object ApiClient {
         checkedAt = 0L
     }
 
+    // Tidies an address the user typed (adds http:// and /api where missing).
     private fun normalizeEndpoint(value: String): String? {
         var endpoint = value.trim().trimEnd('/')
         if (endpoint.isBlank()) return null
@@ -114,6 +121,7 @@ object ApiClient {
         return endpoint
     }
 
+    // Picks a saved address whose health check answers, reusing the last good one for a short while.
     private suspend fun resolveBaseUrl(): String {
         val now = System.currentTimeMillis()
         if (now - checkedAt < HEALTH_CACHE_MS) return baseUrl
@@ -128,6 +136,7 @@ object ApiClient {
         return baseUrl
     }
 
+    // Returns true if the backend at this address answers its health check.
     private suspend fun checkHealthAt(endpoint: String): Boolean = withContext(Dispatchers.IO) {
         try {
             val conn = (URL("$endpoint/health").openConnection() as HttpURLConnection).apply {
@@ -141,8 +150,10 @@ object ApiClient {
         }
     }
 
+    // Builds the full URL for an API path on the current backend.
     private suspend fun endpointUrl(path: String): URL = URL("${resolveBaseUrl()}$path")
 
+    // Logs in or registers, and returns the signed-in user with their token.
     suspend fun authenticate(
         register: Boolean, name: String, email: String, password: String, course: String = "", careerGoal: String = ""
     ): AuthResult = withContext(Dispatchers.IO) {
@@ -192,6 +203,7 @@ object ApiClient {
         }
     }
 
+    // Saves changes from the Edit Profile screen and returns the updated user.
     suspend fun updateProfile(session: UserSession, name: String, course: String, careerGoal: String): UserSession? = withContext(Dispatchers.IO) {
         try {
             val conn = (endpointUrl("/auth/me").openConnection() as HttpURLConnection).apply {
@@ -219,6 +231,7 @@ object ApiClient {
         } catch (_: Exception) { null }
     }
 
+    // Downloads the list of career guides for the Knowledge section.
     suspend fun getResources(token: String): List<CareerResource>? = withContext(Dispatchers.IO) {
         try {
             val conn = (endpointUrl("/resources").openConnection() as HttpURLConnection).apply {
@@ -238,6 +251,7 @@ object ApiClient {
         } catch (_: Exception) { null }
     }
 
+    // Gets the headline numbers for the admin dashboard.
     suspend fun getAdminOverview(token: String): AdminOverview? = withContext(Dispatchers.IO) {
         try {
             val conn = (endpointUrl("/admin/overview").openConnection() as HttpURLConnection).apply {
@@ -264,6 +278,7 @@ object ApiClient {
         } catch (_: Exception) { null }
     }
 
+    // Gets every student account with its activity, for the admin.
     suspend fun getAdminStudents(token: String): List<StudentAccount>? = withContext(Dispatchers.IO) {
         try {
             val conn = (endpointUrl("/admin/students").openConnection() as HttpURLConnection).apply {
@@ -292,6 +307,7 @@ object ApiClient {
         } catch (_: Exception) { null }
     }
 
+    // Sends the assessment answers and returns the recommended careers and career areas.
     suspend fun assessCareer(
         token: String, skills: List<String>, interests: List<String>, activities: List<String>,
         course: String = "", careerGoal: String = ""
@@ -318,6 +334,7 @@ object ApiClient {
             val results = buildList {
                 for (i in 0 until matches.length()) {
                     val match = matches.getJSONObject(i)
+                    // Reads a list of text values from the JSON reply.
                     fun strings(key: String): List<String> {
                         val values = match.optJSONArray(key) ?: JSONArray()
                         return (0 until values.length()).map { values.getString(it) }
@@ -353,6 +370,7 @@ object ApiClient {
         } catch (_: Exception) { null }
     }
 
+    // Lets an admin add a new career guide.
     suspend fun createResource(token: String, title: String, category: String, content: String): CareerResource? = withContext(Dispatchers.IO) {
         try {
             val conn = (endpointUrl("/resources").openConnection() as HttpURLConnection).apply {
@@ -373,6 +391,7 @@ object ApiClient {
 
     // ---- Career catalogue ----
 
+    // Sends a GET request and returns the reply as text, or null if it failed.
     private suspend fun getJsonText(path: String, token: String, readTimeoutMs: Int = 10000): String? = withContext(Dispatchers.IO) {
         try {
             val conn = (endpointUrl(path).openConnection() as HttpURLConnection).apply {
@@ -393,11 +412,13 @@ object ApiClient {
         }
     }
 
+    // Reads a list of text values from a JSON object.
     private fun jsonStrings(json: JSONObject, key: String): List<String> {
         val values = json.optJSONArray(key) ?: JSONArray()
         return (0 until values.length()).map { values.optString(it) }
     }
 
+    // Gets the career categories for the Career Explorer.
     suspend fun getCareerCategories(token: String): List<CareerCategory>? {
         val text = getJsonText("/careers/categories", token) ?: return null
         return runCatching {
@@ -409,6 +430,7 @@ object ApiClient {
         }.getOrNull()
     }
 
+    // Searches the career catalogue, one page at a time, optionally within a category.
     suspend fun searchCareers(
         token: String, category: String?, query: String, offset: Int = 0, limit: Int = 50
     ): CareerPage? {
@@ -439,6 +461,7 @@ object ApiClient {
         }.getOrNull()
     }
 
+    // Gets everything about one career for the detail screen (tasks, pathway, pay, where to look).
     suspend fun getCareerDetail(token: String, careerId: String): CareerDetail? {
         val text = getJsonText("/careers/" + URLEncoder.encode(careerId, "UTF-8"), token) ?: return null
         return runCatching {
@@ -549,6 +572,7 @@ object ApiClient {
 
     // ---- CV builder and mock interviews ----
 
+    // Sends a POST request with a JSON body and returns the reply as text.
     private suspend fun postJsonText(
         path: String, token: String, body: JSONObject, readTimeoutMs: Int = 15000
     ): String? = withContext(Dispatchers.IO) {
@@ -578,6 +602,7 @@ object ApiClient {
     private fun jsonText(json: JSONObject, key: String): String =
         if (json.isNull(key)) "" else json.optString(key)
 
+    // Turns the CV form into the JSON the backend expects.
     private fun cvBody(request: CvRequest): JSONObject {
         val projects = JSONArray()
         request.projects.take(8).forEach { project ->
@@ -659,6 +684,7 @@ object ApiClient {
             }
         }
 
+    // Reads a mock interview's state (questions, transcript, feedback) from the reply.
     private fun parseInterview(text: String): InterviewState? = runCatching {
         val json = JSONObject(text)
         val turns = json.optJSONArray("transcript") ?: JSONArray()
@@ -677,6 +703,7 @@ object ApiClient {
         )
     }.getOrNull()
 
+    // Starts a mock interview for a career and returns the first question.
     suspend fun startInterview(
         token: String, careerId: String, opportunityType: String, questionCount: Int
     ): InterviewState? {
@@ -685,17 +712,20 @@ object ApiClient {
         return postJsonText("/interviews", token, body, readTimeoutMs = 20000)?.let(::parseInterview)
     }
 
+    // Sends the student's answer and returns the interviewer's next message.
     suspend fun answerInterview(token: String, interviewId: String, answer: String): InterviewState? {
         val body = JSONObject().put("answer", answer.trim().take(4000))
         // The interviewer's reply may wait on Gemini and its fallback model.
         return postJsonText("/interviews/$interviewId/answer", token, body, readTimeoutMs = 90000)?.let(::parseInterview)
     }
 
+    // Ends the interview and asks for the written feedback.
     suspend fun finishInterview(token: String, interviewId: String): InterviewState? =
         postJsonText("/interviews/$interviewId/finish", token, JSONObject(), readTimeoutMs = 90000)?.let(::parseInterview)
 
     // ---- Administrator actions ----
 
+    // Sends a request with any method (PUT, DELETE...) and returns the reply as text.
     private suspend fun sendJsonText(
         method: String, path: String, token: String, body: JSONObject?
     ): String? = withContext(Dispatchers.IO) {
@@ -727,11 +757,13 @@ object ApiClient {
         }
     }
 
+    // Gets the full text of one career guide.
     suspend fun getResourceContent(token: String, resourceId: String): String? {
         val text = getJsonText("/resources/" + URLEncoder.encode(resourceId, "UTF-8"), token) ?: return null
         return runCatching { JSONObject(text).getString("content") }.getOrNull()
     }
 
+    // Lets an admin edit an existing guide.
     suspend fun updateResource(
         token: String, resourceId: String, title: String, category: String, content: String
     ): CareerResource? {
@@ -747,9 +779,11 @@ object ApiClient {
         }.getOrNull()
     }
 
+    // Lets an admin delete a guide. Returns true when it worked.
     suspend fun deleteResource(token: String, resourceId: String): Boolean =
         sendJsonText("DELETE", "/resources/" + URLEncoder.encode(resourceId, "UTF-8"), token, null) != null
 
+    // Lets an admin deactivate or reactivate a student account.
     suspend fun setStudentActive(token: String, userId: String, active: Boolean): Boolean =
         sendJsonText(
             "PUT", "/admin/students/" + URLEncoder.encode(userId, "UTF-8") + "/status", token,
@@ -767,6 +801,7 @@ object ApiClient {
     suspend fun deleteStudent(token: String, userId: String): Boolean =
         sendJsonText("DELETE", "/admin/students/" + URLEncoder.encode(userId, "UTF-8"), token, null) != null
 
+    // Gets the feedback students have left, for the admin.
     suspend fun getAdminFeedback(token: String): List<AdminFeedback>? {
         val text = getJsonText("/admin/feedback", token) ?: return null
         return runCatching {
@@ -786,6 +821,7 @@ object ApiClient {
         }.getOrNull()
     }
 
+    // Gets chats and interviews per day for the admin charts.
     suspend fun getAdminActivity(token: String): List<DailyActivity>? {
         val text = getJsonText("/admin/activity", token) ?: return null
         return runCatching {
@@ -802,10 +838,12 @@ object ApiClient {
         }.getOrNull()
     }
 
+    // True if any saved backend address is reachable.
     suspend fun checkHealth(): Boolean = withContext(Dispatchers.IO) {
         candidateBaseUrls.any { checkHealthAt(it) }
     }
 
+    // True if this one address is reachable (used by the connection screen's Test button).
     suspend fun checkHealth(endpoint: String): Boolean {
         val normalized = normalizeEndpoint(endpoint) ?: return false
         return checkHealthAt(normalized)
@@ -853,6 +891,7 @@ object ApiClient {
         }.getOrNull()
     }
 
+    // Sends a question to the career coach and returns the answer with its sources.
     suspend fun sendChatMessage(
         query: String, token: String, sessionId: String? = null, requestId: String? = null
     ): NetworkChatResponse? = withContext(Dispatchers.IO) {
@@ -906,6 +945,7 @@ object ApiClient {
         }
     }
 
+    // Sends a rating (and whether the answer was accurate) for a coach reply.
     suspend fun submitFeedback(
         rating: Int,
         isAccurate: Boolean,

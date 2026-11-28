@@ -97,11 +97,17 @@ object Routes {
     const val AdminUpload = "adminUpload"
     const val AdminEditResource = "adminEditResource/{id}"
 
+    // Route to one career guide.
     fun resourceDetail(id: String) = "resourceDetail/$id"
+    // Route to the admin's edit screen for one guide.
     fun adminEditResource(id: String) = "adminEditResource/$id"
+    // Route to one career's detail screen.
     fun careerDetail(id: String) = "careerDetail/$id"
+    // Route to the career picker, then on to the given screen.
     fun careerPicker(next: String) = "careerPicker/$next"
+    // Route to the CV builder for a career.
     fun cvBuilder(id: String) = "cvBuilder/$id"
+    // Route to the mock interview for a career.
     fun mockInterview(id: String) = "mockInterview/$id"
 }
 
@@ -138,6 +144,7 @@ fun AppNavigation(
         if (!token.isNullOrBlank()) ApiClient.getResources(token)?.let(resources::addAll)
     }
 
+    // Goes to the user's home screen and clears the login screens from the back stack.
     fun goHome(destination: String) {
         navController.navigate(destination) {
             popUpTo(Routes.Landing) { inclusive = true }
@@ -145,6 +152,7 @@ fun AppNavigation(
         }
     }
 
+    // Signs out: clears the session and the chat, then returns to the landing screen.
     fun logOut(from: String) {
         session = null
         ChatMemory.signOut()
@@ -495,6 +503,7 @@ private fun AdminHome(
         }
     }
 
+    // Reloads the admin numbers, students and feedback from the backend.
     fun refresh() {
         if (adminBusy) return
         adminBusy = true

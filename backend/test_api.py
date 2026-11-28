@@ -18,6 +18,7 @@ from backend.app.security import hash_password
 
 
 def run_tests() -> None:
+    """Run every API check in order against a fresh test database; stops at the first failure."""
     with TestClient(app) as client:
         assert client.get("/api/health").status_code == 200
         assert client.get("/api/resources").status_code == 401

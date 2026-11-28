@@ -45,6 +45,7 @@ fun AdminDashboardScreen(
     onLogOut: () -> Unit = {}
 ) {
     var confirmLogOut by remember { mutableStateOf(false) }
+    // Shows a number, or a dash while it is still loading.
     fun shown(value: Int?): String = value?.toString() ?: "—"
 
     val stats = listOf(

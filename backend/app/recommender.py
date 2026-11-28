@@ -148,6 +148,7 @@ def _reasons(clean: dict, career_id: str, state: dict, student_skills: set[str])
     # An interest or course only counts when every meaningful word in it appears in the career's text,
     # so "community events" needs both "community" and "event", not just one of them.
     def found(phrase: str, ignore: set[str] = frozenset()) -> bool:
+        """True when every meaningful word of the phrase appears in this career's text."""
         roots = _stems(" ".join(w for w in phrase.lower().split() if w not in ignore))
         return bool(roots) and roots <= words
     linked = [item.strip() for item in clean.get("interests", "").split(";") if item.strip() and found(item)][:3]

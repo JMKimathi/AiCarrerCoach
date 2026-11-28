@@ -11,7 +11,7 @@ from backend.app.config import settings
 from backend.app.database import seed_database, engine
 import threading
 from backend.app.rag_engine import RAGEngine
-from backend.app import recommender
+from backend.app import career_catalogue, recommender
 from backend.app.routers import auth, chat, resources, feedback, admin, career, careers, interviews
 
 
@@ -34,6 +34,8 @@ async def lifespan(app: FastAPI):
         print(f"[RAG] Retriever unavailable; continuing without resource retrieval: {exc}")
     print("3. Loading the career recommender in the background...")
     threading.Thread(target=recommender.warm_up, daemon=True).start()
+    # Read the career catalogue now too, so the first visit to the Career Explorer does not wait for it.
+    threading.Thread(target=career_catalogue.load_catalogue, daemon=True).start()
     print("System initialization complete. API is ready to accept requests.")
     print("=" * 60)
     yield

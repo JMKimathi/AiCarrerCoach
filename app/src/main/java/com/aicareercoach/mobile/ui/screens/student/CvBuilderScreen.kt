@@ -105,6 +105,7 @@ fun CvBuilderScreen(
         ApiClient.getCareerDetail(session.token, careerId)?.let { roleTitle = it.roleTitle }
     }
 
+    // Collects everything typed in the form into one CV request.
     fun currentRequest(): CvRequest = CvRequest(
         phone = phone,
         location = location,
@@ -125,6 +126,7 @@ fun CvBuilderScreen(
         referees = splitLines(refereesText)
     )
 
+    // Asks the backend to build the CV and shows the preview.
     fun build() {
         if (building) return
         building = true

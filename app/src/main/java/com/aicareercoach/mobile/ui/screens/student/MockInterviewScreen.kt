@@ -75,6 +75,7 @@ fun MockInterviewScreen(
         if (last >= 0) listState.animateScrollToItem(last)
     }
 
+    // Updates the screen from the latest interview state.
     fun applyState(state: InterviewState) {
         interviewId = state.interviewId
         status = state.status
@@ -86,6 +87,7 @@ fun MockInterviewScreen(
         if (state.feedback.isNotBlank()) feedback = state.feedback
     }
 
+    // Starts the interview and shows the first question.
     fun start() {
         if (busy) return
         busy = true
@@ -97,6 +99,7 @@ fun MockInterviewScreen(
         }
     }
 
+    // Sends the student's answer and shows the interviewer's reply.
     fun sendAnswer() {
         val id = interviewId ?: return
         val answer = input.trim()
@@ -112,6 +115,7 @@ fun MockInterviewScreen(
         }
     }
 
+    // Ends the interview and shows the feedback.
     fun finish() {
         val id = interviewId ?: return
         if (busy) return
@@ -124,6 +128,7 @@ fun MockInterviewScreen(
         }
     }
 
+    // Clears everything so a new interview can be started.
     fun reset() {
         interviewId = null
         status = ""

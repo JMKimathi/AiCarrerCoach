@@ -8,6 +8,7 @@ from backend.app.security import hash_password
 
 
 def main() -> int:
+    """Ask for the admin's name, email and password, then create the account."""
     Base.metadata.create_all(bind=engine)
     name = input("Administrator full name: ").strip()
     email = input("Administrator email: ").strip().lower()

@@ -45,6 +45,7 @@ fun LoginRegisterScreen(
     var submitting by remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
 
+    // Checks the form, then logs in or creates the account.
     fun submit() {
         if (email.isBlank() || password.isBlank() || (!isLoginMode && name.isBlank())) {
             error = "Please fill in all required fields."
